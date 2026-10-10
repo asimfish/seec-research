@@ -5,7 +5,8 @@ demonstrations can become executable supervision at the student's information
 boundary. This repository is the public presentation package, separate from
 the private scientific working repository.
 
-**Website:** https://asimfish.github.io/seec-research/?lang=en&view=overview  
+**Website:** https://asimfish.github.io/seec-research/?lang=en&view=overview
+
 **中文:** https://asimfish.github.io/seec-research/?lang=zh&view=overview
 
 The site has a method overview, categorized experiment records, a research
