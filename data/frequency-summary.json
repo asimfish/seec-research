@@ -1,0 +1,217 @@
+{
+  "aborted": 0,
+  "cells": [
+    {
+      "cell_id": "frequency_majority/w0",
+      "direct_weight": 3,
+      "outcomes": {
+        "diagnostic_validation": {
+          "success": 32,
+          "total": 96
+        },
+        "source": {
+          "success": 8,
+          "total": 24
+        }
+      },
+      "probe_weight": 1,
+      "rho": 0.1,
+      "rule": "frequency_majority"
+    },
+    {
+      "cell_id": "frequency_neutral/w0",
+      "direct_weight": 3,
+      "outcomes": {
+        "diagnostic_validation": {
+          "success": 96,
+          "total": 96
+        },
+        "source": {
+          "success": 24,
+          "total": 24
+        }
+      },
+      "probe_weight": 1,
+      "rho": 0.1,
+      "rule": "frequency_neutral"
+    },
+    {
+      "cell_id": "seec_fixed_view/w0",
+      "direct_weight": 3,
+      "outcomes": {
+        "diagnostic_validation": {
+          "success": 96,
+          "total": 96
+        },
+        "source": {
+          "success": 24,
+          "total": 24
+        }
+      },
+      "probe_weight": 1,
+      "rho": 0.1,
+      "rule": "seec_fixed_view"
+    },
+    {
+      "cell_id": "frequency_majority/w1",
+      "direct_weight": 1,
+      "outcomes": {
+        "diagnostic_validation": {
+          "success": 96,
+          "total": 96
+        },
+        "source": {
+          "success": 24,
+          "total": 24
+        }
+      },
+      "probe_weight": 1,
+      "rho": 0.25,
+      "rule": "frequency_majority"
+    },
+    {
+      "cell_id": "frequency_neutral/w1",
+      "direct_weight": 1,
+      "outcomes": {
+        "diagnostic_validation": {
+          "success": 96,
+          "total": 96
+        },
+        "source": {
+          "success": 24,
+          "total": 24
+        }
+      },
+      "probe_weight": 1,
+      "rho": 0.25,
+      "rule": "frequency_neutral"
+    },
+    {
+      "cell_id": "seec_fixed_view/w1",
+      "direct_weight": 1,
+      "outcomes": {
+        "diagnostic_validation": {
+          "success": 96,
+          "total": 96
+        },
+        "source": {
+          "success": 24,
+          "total": 24
+        }
+      },
+      "probe_weight": 1,
+      "rho": 0.25,
+      "rule": "seec_fixed_view"
+    },
+    {
+      "cell_id": "frequency_majority/w2",
+      "direct_weight": 1,
+      "outcomes": {
+        "diagnostic_validation": {
+          "success": 96,
+          "total": 96
+        },
+        "source": {
+          "success": 24,
+          "total": 24
+        }
+      },
+      "probe_weight": 3,
+      "rho": 0.5,
+      "rule": "frequency_majority"
+    },
+    {
+      "cell_id": "frequency_neutral/w2",
+      "direct_weight": 1,
+      "outcomes": {
+        "diagnostic_validation": {
+          "success": 96,
+          "total": 96
+        },
+        "source": {
+          "success": 24,
+          "total": 24
+        }
+      },
+      "probe_weight": 3,
+      "rho": 0.5,
+      "rule": "frequency_neutral"
+    },
+    {
+      "cell_id": "seec_fixed_view/w2",
+      "direct_weight": 1,
+      "outcomes": {
+        "diagnostic_validation": {
+          "success": 96,
+          "total": 96
+        },
+        "source": {
+          "success": 24,
+          "total": 24
+        }
+      },
+      "probe_weight": 3,
+      "rho": 0.5,
+      "rule": "seec_fixed_view"
+    },
+    {
+      "cell_id": "frequency_majority/w3",
+      "direct_weight": 1,
+      "outcomes": {
+        "diagnostic_validation": {
+          "success": 96,
+          "total": 96
+        },
+        "source": {
+          "success": 24,
+          "total": 24
+        }
+      },
+      "probe_weight": 9,
+      "rho": 0.75,
+      "rule": "frequency_majority"
+    },
+    {
+      "cell_id": "frequency_neutral/w3",
+      "direct_weight": 1,
+      "outcomes": {
+        "diagnostic_validation": {
+          "success": 96,
+          "total": 96
+        },
+        "source": {
+          "success": 24,
+          "total": 24
+        }
+      },
+      "probe_weight": 9,
+      "rho": 0.75,
+      "rule": "frequency_neutral"
+    },
+    {
+      "cell_id": "seec_fixed_view/w3",
+      "direct_weight": 1,
+      "outcomes": {
+        "diagnostic_validation": {
+          "success": 96,
+          "total": 96
+        },
+        "source": {
+          "success": 24,
+          "total": 24
+        }
+      },
+      "probe_weight": 9,
+      "rho": 0.75,
+      "rule": "seec_fixed_view"
+    }
+  ],
+  "completed": 360,
+  "execution_revision": "2011eee906f2d60b281035db1ded4609156773af",
+  "freeze_revision": "2011eee906f2d60b281035db1ded4609156773af",
+  "gradient_updates": 0,
+  "missing": 0,
+  "plan_id": "frequency-prior-v1-28f2719ccfb01225",
+  "scope": "Registered finite frequency intervention on already-used conditions; not learned-policy efficacy.",
+  "simulator_steps": 4680
+}

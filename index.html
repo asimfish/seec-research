@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SEEC research progress: student-boundary experience consolidation, preregistered experiments, failure analysis, and source-linked evidence.">
+  <meta name="theme-color" content="#f7f8f5">
+  <meta property="og:title" content="SEEC · Research in progress">
+  <meta property="og:description" content="From successful teacher traces to student-executable experience. Explore the method, experiments, open questions, and research record.">
+  <meta property="og:type" content="website">
+  <title>SEEC · Research in progress</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="?lang=en&view=overview" aria-label="SEEC home"><img src="assets/mark.svg" alt="" width="30" height="30"><b>SEEC</b><span id="brand-subtitle">Research journal</span></a>
+      <nav id="navigation" aria-label="Main navigation"></nav>
+      <div class="header-tools"><span class="live-dot" aria-hidden="true"></span><span id="header-state">In progress</span><button id="language" type="button" aria-label="Switch to Chinese">中文</button></div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <div id="load-state" class="container load-state" role="status">Loading the research record…</div>
+    <section id="overview" class="page" aria-labelledby="overview-title" hidden></section>
+    <section id="experiments" class="page" aria-labelledby="experiments-title" hidden></section>
+    <section id="roadmap" class="page" aria-labelledby="roadmap-title" hidden></section>
+    <section id="resources" class="page" aria-labelledby="resources-title" hidden></section>
+  </main>
+  <footer class="footer container"><div><b>SEEC</b><p id="footer-description"></p></div><div id="footer-links"></div><p class="footer-meta" id="footer-meta"></p></footer>
+  <dialog id="figure-dialog"><div class="dialog-toolbar"><h2 id="dialog-title"></h2><button id="close-dialog" type="button" aria-label="Close figure">✕</button></div><img id="dialog-image" alt=""><p id="dialog-caption"></p></dialog>
+  <noscript><div class="container notice">This interactive report uses JavaScript. The <a href="assets/seec-paper.pdf">paper PDF</a> and <a href="data/progress.json">research record</a> remain available directly.</div></noscript>
+</body>
+</html>

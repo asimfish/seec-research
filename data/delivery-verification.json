@@ -1,0 +1,43 @@
+{
+  "criteria": {
+    "all_480_preregistered_endpoint_predictions": true,
+    "all_51_previous_figure_assets_unchanged": true,
+    "bounded_cost_no_training_test_or_certification": true,
+    "compiled_without_undefined_or_overfull": true,
+    "complete_planned_coverage": true,
+    "editable_vector_with_embedded_fonts": true,
+    "eight_page_body_reference_boundary": true,
+    "exact_attempt_and_condition_ids": true,
+    "failure_and_threshold_disagreement_retained": true,
+    "figure_bound_to_current_evidence": true,
+    "gallery_18_and_index_bound": true,
+    "input_bytes_bound": true,
+    "preexisting_user_edits_byte_preserved": true,
+    "registered_code_unchanged": true,
+    "registration_before_execution": true,
+    "regression_and_writing_guards": true,
+    "separate_process_exact_readback": true,
+    "stopped_studies_not_reopened": true
+  },
+  "freeze_revision": "3f835457e653fb17eb56d301fa456f9075fcb8a7",
+  "paper_layout": {
+    "observable_feedback_appendix_start_page": 25,
+    "references_start_pages": [
+      9
+    ],
+    "total_pages": 26
+  },
+  "paper_sha256": "7a963288be38608258e2c9be0828f3082d90701b8f917e0559437d811bae7dcd",
+  "passed": 18,
+  "plan_id": "observable-feedback-v1-af388b4bdd267e37",
+  "scope": "artifact/protocol checks; not scientific efficacy or conference readiness",
+  "status": "PASS",
+  "total": 18,
+  "unavailable": [
+    "new independent manuscript review",
+    "neural efficacy",
+    "independent validation",
+    "remote CI",
+    "conference acceptance"
+  ]
+}

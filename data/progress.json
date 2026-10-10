@@ -1,0 +1,664 @@
+{
+  "feedback": {
+    "cost": {
+      "certificate_calls": 0,
+      "conditions_per_policy": 120,
+      "gradient_updates": 0,
+      "heldout_calls": 0,
+      "new_source_episodes": 0,
+      "policies": 5,
+      "resets": 600,
+      "simulator_steps": 7800,
+      "wall_seconds": 1.6201292017940432
+    },
+    "outcomes": {
+      "full_mean_observed": {
+        "diagnostic_reused": {
+          "success": 78,
+          "total": 96
+        },
+        "source": {
+          "success": 24,
+          "total": 24
+        }
+      },
+      "half_mean_nominal": {
+        "diagnostic_reused": {
+          "success": 32,
+          "total": 96
+        },
+        "source": {
+          "success": 8,
+          "total": 24
+        }
+      },
+      "half_mean_observed": {
+        "diagnostic_reused": {
+          "success": 96,
+          "total": 96
+        },
+        "source": {
+          "success": 24,
+          "total": 24
+        }
+      },
+      "raw_retrieval": {
+        "diagnostic_reused": {
+          "success": 0,
+          "total": 96
+        },
+        "source": {
+          "success": 0,
+          "total": 24
+        }
+      },
+      "zero_observed": {
+        "diagnostic_reused": {
+          "success": 0,
+          "total": 96
+        },
+        "source": {
+          "success": 0,
+          "total": 24
+        }
+      }
+    }
+  },
+  "figures": [
+    {
+      "caption": {
+        "en": "A source-bound routing specification. The efficacy question stays separate.",
+        "zh": "源绑定路由规范，效果问题单独验证。"
+      },
+      "group": "method",
+      "id": "seec_overview",
+      "number": 1,
+      "title": {
+        "en": "The student-boundary problem",
+        "zh": "学生边界上的问题"
+      }
+    },
+    {
+      "caption": {
+        "en": "Historical contract counts; not training benefit.",
+        "zh": "历史合同计数，不是训练收益。"
+      },
+      "group": "audit",
+      "id": "route_audit",
+      "number": 2,
+      "title": {
+        "en": "Source-route accounting",
+        "zh": "源行路由记账"
+      }
+    },
+    {
+      "caption": {
+        "en": "Retained prototype semantics versus the contract.",
+        "zh": "保留原型的语义与合同要求。"
+      },
+      "group": "audit",
+      "id": "replay_path_contract",
+      "number": 3,
+      "title": {
+        "en": "Replay-path binding",
+        "zh": "重放路径绑定"
+      }
+    },
+    {
+      "caption": {
+        "en": "Zero variance permits source fitting, not task success.",
+        "zh": "零方差允许源拟合，不保证任务成功。"
+      },
+      "group": "learning",
+      "id": "source_label_variance",
+      "number": 4,
+      "title": {
+        "en": "Exact-key target variance",
+        "zh": "同键目标方差"
+      }
+    },
+    {
+      "caption": {
+        "en": "Low global loss and terminal failure coexist.",
+        "zh": "低全局损失与终局失败并存。"
+      },
+      "group": "learning",
+      "id": "pilot_diagnostics",
+      "number": 5,
+      "title": {
+        "en": "Pilot failure diagnostics",
+        "zh": "Pilot 失败诊断"
+      }
+    },
+    {
+      "caption": {
+        "en": "Signed contributions are not causal shares.",
+        "zh": "有符号贡献不是因果份额。"
+      },
+      "group": "learning",
+      "id": "action_residuals",
+      "number": 6,
+      "title": {
+        "en": "Force-residual accumulation",
+        "zh": "力残差累积"
+      }
+    },
+    {
+      "caption": {
+        "en": "Both objectives fail the registered neural gate.",
+        "zh": "两种目标均未通过登记的神经可行性门。"
+      },
+      "group": "learning",
+      "id": "learner_feasibility",
+      "number": 7,
+      "title": {
+        "en": "Clean-input learning control",
+        "zh": "干净输入学习对照"
+      }
+    },
+    {
+      "caption": {
+        "en": "New execution does not rewrite the old pilot.",
+        "zh": "新执行不改写旧 pilot。"
+      },
+      "group": "audit",
+      "id": "physical_replay",
+      "number": 8,
+      "title": {
+        "en": "Physical source replay",
+        "zh": "物理源重放"
+      }
+    },
+    {
+      "caption": {
+        "en": "Two binding repairs are jointly necessary.",
+        "zh": "两处绑定修复需要共同完成。"
+      },
+      "group": "audit",
+      "id": "admission_time_boundary",
+      "number": 9,
+      "title": {
+        "en": "Admission at the correct boundary",
+        "zh": "正确边界上的准入"
+      }
+    },
+    {
+      "caption": {
+        "en": "Different inputs and memory; a separate study.",
+        "zh": "输入与记忆不同，属于独立研究。"
+      },
+      "group": "reference",
+      "id": "official_reference_v1",
+      "number": 10,
+      "title": {
+        "en": "Public learner reference",
+        "zh": "公开学习器参考"
+      }
+    },
+    {
+      "caption": {
+        "en": "Reference-task outcomes, not SEEC effects.",
+        "zh": "参考任务结果，不是 SEEC 效果。"
+      },
+      "group": "reference",
+      "id": "official_three_task_reference_v1",
+      "number": 11,
+      "title": {
+        "en": "Three-task reference",
+        "zh": "三任务参考"
+      }
+    },
+    {
+      "caption": {
+        "en": "Budgets and endpoints are reported separately.",
+        "zh": "预算与端点单独报告。"
+      },
+      "group": "reference",
+      "id": "official_task_training_curves_v1",
+      "number": 12,
+      "title": {
+        "en": "Reference training curves",
+        "zh": "参考训练曲线"
+      }
+    },
+    {
+      "caption": {
+        "en": "No cross-task or cross-boundary pooling.",
+        "zh": "不跨任务或跨边界合并。"
+      },
+      "group": "reference",
+      "id": "official_reference_full_v2",
+      "number": 13,
+      "title": {
+        "en": "Full-budget reference",
+        "zh": "完整预算参考"
+      }
+    },
+    {
+      "caption": {
+        "en": "Better source fit still fails closed-loop execution.",
+        "zh": "更好的源拟合仍未成功闭环执行。"
+      },
+      "group": "learning",
+      "id": "neural_fit_diagnostic_v1",
+      "number": 14,
+      "title": {
+        "en": "Optimizer and neural-fit control",
+        "zh": "优化器与神经拟合对照"
+      }
+    },
+    {
+      "caption": {
+        "en": "Assisted execution is not teacher-free success.",
+        "zh": "辅助执行不是无教师成功。"
+      },
+      "group": "learning",
+      "id": "action_residual_diagnostic_v1",
+      "number": 15,
+      "title": {
+        "en": "Assisted-input intervention",
+        "zh": "辅助输入干预"
+      }
+    },
+    {
+      "caption": {
+        "en": "A stronger certificate-free rival survives.",
+        "zh": "更强的无证书对照仍然成功。"
+      },
+      "group": "diagnostic",
+      "id": "action_origin_diagnostic_v1",
+      "number": 16,
+      "title": {
+        "en": "Action-origin intervention",
+        "zh": "动作原点干预"
+      }
+    },
+    {
+      "caption": {
+        "en": "The threshold does not identify certificate value.",
+        "zh": "阈值不能识别证书价值。"
+      },
+      "group": "diagnostic",
+      "id": "frequency_prior_diagnostic_v1",
+      "number": 17,
+      "title": {
+        "en": "Frequency-prior intervention",
+        "zh": "票频先验干预"
+      }
+    },
+    {
+      "caption": {
+        "en": "A known-model feasibility witness; no neural training.",
+        "zh": "已知模型的可行性见证，没有神经训练。"
+      },
+      "group": "diagnostic",
+      "id": "observable_feedback_diagnostic_v1",
+      "number": 18,
+      "title": {
+        "en": "Observable-feedback control",
+        "zh": "可见反馈控制"
+      }
+    }
+  ],
+  "main_status": "DEFERRED",
+  "milestones": [
+    {
+      "state": "checked",
+      "text": {
+        "en": "Plans, role separation, source lineage, target weights and restoration evidence.",
+        "zh": "计划、角色隔离、源血缘、目标权重与恢复证据。"
+      },
+      "title": {
+        "en": "Auditable data contracts",
+        "zh": "可审计的数据合同"
+      }
+    },
+    {
+      "state": "checked",
+      "text": {
+        "en": "Candidate replay, source-support rivals and observable-feedback controls.",
+        "zh": "候选重放、源支持对照与可见反馈控制。"
+      },
+      "title": {
+        "en": "Bounded mechanism diagnostics",
+        "zh": "有范围的机制诊断"
+      }
+    },
+    {
+      "state": "open",
+      "text": {
+        "en": "Still missing under the declared fresh-window boundary. Previous routes remain stopped.",
+        "zh": "在登记的新窗口边界下仍未关闭，原学习器路线保持停止。"
+      },
+      "title": {
+        "en": "Neural closed-loop feasibility",
+        "zh": "神经策略闭环可行性"
+      }
+    },
+    {
+      "state": "deferred",
+      "text": {
+        "en": "Needs informative paired learner outcomes against strong certificate-free controls.",
+        "zh": "需要能区分强无证书对照的、有信息量的配对学习器结果。"
+      },
+      "title": {
+        "en": "Identifiable main comparison",
+        "zh": "可辨识的主实验比较"
+      }
+    }
+  ],
+  "project": "Student-Executable Experience Consolidation",
+  "provenance": {
+    "chain_head": "d7225c669dee292c62116dcf15e8d201657e36165b185fd489d698ee74522c54",
+    "delivery_passed": 18,
+    "delivery_total": 18,
+    "freeze_revision": "3f835457e653fb17eb56d301fa456f9075fcb8a7",
+    "paper_sha256": "7a963288be38608258e2c9be0828f3082d90701b8f917e0559437d811bae7dcd",
+    "plan_id": "observable-feedback-v1-af388b4bdd267e37",
+    "research_revision": "0ba83f896ce58dd1e7f93e16057d599095cdf05c"
+  },
+  "publication_status": "research-in-progress",
+  "questions": [
+    {
+      "text": {
+        "en": "Design a new prospectively frozen study. Preserve the stopped studies, window boundary and terminal thresholds.",
+        "zh": "设计全新的事前冻结研究，保留旧研究的停止结果、窗口边界与终局阈值。"
+      },
+      "title": {
+        "en": "Close the learner feasibility gap",
+        "zh": "关闭学习器可行性缺口"
+      }
+    },
+    {
+      "text": {
+        "en": "Construct a preregistered intervention with different predictions for source-support rules, feedback control and source-bound certification.",
+        "zh": "构造预登记的干预，让源支持规则、反馈控制与源绑定认证产生可区分的预测。"
+      },
+      "title": {
+        "en": "Discriminate evidence from successful heuristics",
+        "zh": "区分证据作用与成功启发式"
+      }
+    },
+    {
+      "text": {
+        "en": "Independent conditions and contact restoration need their own evidence. Lift E4 remains failed; real-robot and VLA results are not claimed.",
+        "zh": "独立条件与接触恢复需要各自证据。Lift E4 仍失败，不主张真机或 VLA 结果。"
+      },
+      "title": {
+        "en": "Validate breadth and restoration",
+        "zh": "验证任务广度与恢复"
+      }
+    }
+  ],
+  "references": [
+    {
+      "name": "Anonymous research report",
+      "url": "https://anonymous-report-421.github.io/public-website/?lang=en&view="
+    },
+    {
+      "name": "RoboDojo evaluation report",
+      "url": "https://robodojo-benchmark.com/report/gpt-6-astra-eval"
+    },
+    {
+      "name": "Awesome Astra Embodied AI",
+      "url": "https://github.com/zjwzcx/Awesome-Astra-Embodied-AI"
+    }
+  ],
+  "repository_url": "https://github.com/asimfish/seec-research",
+  "short_name": "SEEC",
+  "studies": [
+    {
+      "category": "diagnostic",
+      "description": {
+        "en": "Five preregistered controls on the unchanged carrier. Estimate hidden gain from the observed response, correct position, then brake.",
+        "zh": "在不改变载体的条件下预登记五个控制器：从可见响应估计增益，修正位置，再制动。"
+      },
+      "figure": "observable_feedback_diagnostic_v1",
+      "id": "feedback",
+      "outcome": {
+        "en": "Observed gain 120/120; nominal gain 40/120",
+        "zh": "可见增益反馈 120/120；名义增益对照 40/120"
+      },
+      "report": "data/feedback-summary.json",
+      "scope": {
+        "en": "Known-model, hand-designed control. 600 records on reused conditions, zero training. Not a learned SEEC effect.",
+        "zh": "使用已知动力学的手工控制器。600 条记录、复用条件、零训练，不是学得的 SEEC 效果。"
+      },
+      "state": "complete",
+      "title": {
+        "en": "Can visible feedback rescue a failed fixed action?",
+        "zh": "可见反馈能否挽救失败的固定动作？"
+      }
+    },
+    {
+      "category": "learning",
+      "description": {
+        "en": "Paired SEEC, raw success-only and matched random-deletion views; the deletion arm crosses five deletion seeds with five training seeds.",
+        "zh": "配对比较 SEEC、raw success-only 与匹配随机删除视图；删除臂交叉五个删除种子和五个训练种子。"
+      },
+      "figure": "pilot_diagnostics",
+      "id": "pilot",
+      "outcome": {
+        "en": "0/1715 selected held-out rollouts",
+        "zh": "选定检查点的留出 rollout：0/1715"
+      },
+      "report": "assets/seec-paper.pdf#page=4",
+      "scope": {
+        "en": "35 optimizer runs, five paired training seeds. Historical replay defects also prevent an efficacy comparison. Main study deferred.",
+        "zh": "35 次优化运行，统计单位为五个配对训练种子。历史重放缺陷也阻止了效果比较，主实验暂缓。"
+      },
+      "state": "stopped",
+      "title": {
+        "en": "Five-seed feasibility pilot",
+        "zh": "五种子学习器可行性 pilot"
+      }
+    },
+    {
+      "category": "learning",
+      "description": {
+        "en": "A separate probe-only pool compares seven-output and active-two-output objectives under a common BCRNN initialization and budget.",
+        "zh": "独立的 probe-only 池，在相同 BCRNN 初始化与预算下比较七维输出和有效二维输出目标。"
+      },
+      "figure": "learner_feasibility",
+      "id": "clean",
+      "outcome": {
+        "en": "Every unit: source 0/24; development 0/21",
+        "zh": "每个单元：源条件 0/24；development 0/21"
+      },
+      "report": "assets/seec-paper.pdf",
+      "scope": {
+        "en": "Three paired seeds, two objectives, 6000 updates each. The registered learner route stopped; no held-out calls.",
+        "zh": "三个配对种子、两种目标，每次 6000 更新。登记的学习器路线已停止，没有留出评测调用。"
+      },
+      "state": "stopped",
+      "title": {
+        "en": "Conflict-free, clean-input neural control",
+        "zh": "无冲突的干净输入神经对照"
+      }
+    },
+    {
+      "category": "diagnostic",
+      "description": {
+        "en": "Source-fitted nearest-window control succeeds after filtering. A minimum-norm action-mode rule without role or certificate inputs matches it.",
+        "zh": "源数据拟合的最近窗口控制在过滤后成功；不读取角色或证书的最小范数动作模式规则取得相同成功结果。"
+      },
+      "figure": "action_origin_diagnostic_v1",
+      "id": "retrieval",
+      "outcome": {
+        "en": "SEEC retrieval 120/120; no-certificate rule 120/120",
+        "zh": "SEEC 检索 120/120；无证书规则 120/120"
+      },
+      "report": "assets/seec-paper.pdf",
+      "scope": {
+        "en": "24 source and 96 reused diagnostic conditions. A finite control result, not neural efficacy or certificate necessity.",
+        "zh": "24 个源条件与 96 个复用诊断条件。仅为有限控制结果，不是神经策略效果或证书必要性。"
+      },
+      "state": "complete",
+      "title": {
+        "en": "Finite retrieval and a stronger certificate-free rival",
+        "zh": "有限检索与更强的无证书对照"
+      }
+    },
+    {
+      "category": "diagnostic",
+      "description": {
+        "en": "Four registered episode-weight settings change the majority rule. A frequency-neutral physical-null rule succeeds throughout.",
+        "zh": "四组登记的 episode 权重改变多数规则选择；不依赖票频的物理零动作先验规则在所有设置下均成功。"
+      },
+      "figure": "frequency_prior_diagnostic_v1",
+      "id": "frequency",
+      "outcome": {
+        "en": "Majority switches at probe fraction 0.25",
+        "zh": "多数规则在 probe 比例 0.25 处切换"
+      },
+      "report": "data/frequency-summary.json",
+      "scope": {
+        "en": "360 rollouts, zero updates. More reweighting of this archive cannot separate certificate benefit from strong support-only priors.",
+        "zh": "360 次 rollout，零更新。继续对同一档案重加权，无法区分证书收益与强源支持先验。"
+      },
+      "state": "complete",
+      "title": {
+        "en": "Does a vote-frequency threshold identify certificate value?",
+        "zh": "票频阈值能否识别证书的价值？"
+      }
+    },
+    {
+      "category": "learning",
+      "description": {
+        "en": "A fresh-window MLP compares Adam and LBFGS in a separately registered, bounded optimizer diagnostic.",
+        "zh": "独立预登记、有预算上限的优化诊断，用新窗口 MLP 比较 Adam 与 LBFGS。"
+      },
+      "figure": "neural_fit_diagnostic_v1",
+      "id": "optimizer",
+      "outcome": {
+        "en": "Both optimizers: zero closed-loop success",
+        "zh": "两种优化器的闭环成功均为零"
+      },
+      "report": "assets/seec-paper.pdf",
+      "scope": {
+        "en": "Three paired seeds. Improved source fit under LBFGS did not meet the unchanged terminal tolerance. Stopping decision retained.",
+        "zh": "三个配对种子。LBFGS 改善源拟合，但未达到不变的终局容差，停止决定保留。"
+      },
+      "state": "stopped",
+      "title": {
+        "en": "Lower source error is not closed-loop success",
+        "zh": "源误差下降不等于闭环成功"
+      }
+    },
+    {
+      "category": "audit",
+      "description": {
+        "en": "The opt-in v3.3 contract binds the actual direct reset state and each probe's visibility-evidence identity. Each repair is necessary in the reproduced integration defect.",
+        "zh": "可选 v3.3 合同绑定真实 direct 恢复状态与每条 probe 的可见性证据身份；复现的集成缺陷需要两处共同修复。"
+      },
+      "figure": "admission_time_boundary",
+      "id": "binding",
+      "outcome": {
+        "en": "1080 executable / 24 INFO / 144 ESC",
+        "zh": "1080 executable / 24 INFO / 144 ESC"
+      },
+      "report": "assets/seec-paper.pdf",
+      "scope": {
+        "en": "162 new physical trajectories; 1104 admitted targets. A technical contract check; historical certificates and pilot outcomes remain unchanged.",
+        "zh": "162 条新物理轨迹，1104 个准入目标。仅为技术合同检查，不改写历史证书或 pilot 结局。"
+      },
+      "state": "checked",
+      "title": {
+        "en": "Source-bound replay and strict admission",
+        "zh": "源绑定重放与严格准入"
+      }
+    },
+    {
+      "category": "reference",
+      "description": {
+        "en": "Official Can-task reference learners run with their disclosed memory and evaluation boundaries. They are neither SEEC arms nor substitutes for its failed window-policy controls.",
+        "zh": "官方 Can 任务参考学习器按其记忆与评测边界运行。它们不是 SEEC 实验臂，也不能替代失败的窗口策略对照。"
+      },
+      "figure": "official_reference_full_v2",
+      "id": "reference",
+      "outcome": {
+        "en": "Different task and memory boundary; no pooling",
+        "zh": "任务与记忆边界不同，不合并比较"
+      },
+      "report": "assets/seec-paper.pdf",
+      "scope": {
+        "en": "Reference learning records and budget curves are reported independently of the engineered Planar carrier.",
+        "zh": "参考学习记录与预算曲线独立于为机制测试构造的 Planar 载体报告。"
+      },
+      "state": "complete",
+      "title": {
+        "en": "Public-task learner references, separately scoped",
+        "zh": "单独报告的公开任务学习器参考"
+      }
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-10-10",
+      "text": {
+        "en": "Pre-execution freeze, 600 trajectories, five controls and all failures retained. Appendix R and Figure 18 separate feedback feasibility from learned benefit.",
+        "zh": "先冻结再执行，600 条轨迹、五个控制器，全部失败保留。附录 R 与图 18 区分反馈可行性与学习收益。"
+      },
+      "title": {
+        "en": "Observable-feedback witness and constructive proof",
+        "zh": "可见反馈见证与构造性证明"
+      }
+    },
+    {
+      "date": "2026-10-09",
+      "text": {
+        "en": "The vote-frequency switch is predicted exactly, while a stronger certificate-free rule continues to succeed. The overview now begins at the identical-input conflict.",
+        "zh": "精确预测票频切换，但更强的无证书规则仍成功。主图重新从同输入冲突展开。"
+      },
+      "title": {
+        "en": "Frequency-prior study and overview redesign",
+        "zh": "票频先验研究与主图重绘"
+      }
+    },
+    {
+      "date": "Research record",
+      "text": {
+        "en": "Opt-in v3.3 admission restores the intended row counts. It does not replace historical replay records or lift learning stop decisions.",
+        "zh": "可选 v3.3 准入恢复了预期行数；它不替换历史重放记录，也不解除学习停止决定。"
+      },
+      "title": {
+        "en": "Source-bound physical execution closes two consumer defects",
+        "zh": "源绑定物理执行关闭两处消费侧缺陷"
+      }
+    },
+    {
+      "date": "Separate follow-ups",
+      "text": {
+        "en": "Target consistency and improved source loss do not produce successful neural closed-loop execution in these bounded studies.",
+        "zh": "在这些有界研究中，目标一致与源损失改善仍未产生成功的神经闭环执行。"
+      },
+      "title": {
+        "en": "Clean-input and optimizer controls retain negative outcomes",
+        "zh": "干净输入与优化器对照保留阴性结果"
+      }
+    },
+    {
+      "date": "Five-seed pilot",
+      "text": {
+        "en": "All selected pilot endpoints fail. Results are retained without relabeling, checkpoint reselection or pooling pilot data into a main study.",
+        "zh": "所有选定 pilot 端点失败。保留结果，不重新标注、不重选检查点，也不把 pilot 数据并入主实验。"
+      },
+      "title": {
+        "en": "All-arms-at-floor rule defers the main study",
+        "zh": "所有臂处于地板，按规则暂缓主实验"
+      }
+    },
+    {
+      "date": "Version history",
+      "text": {
+        "en": "v1 was smoke. v2 stopped because neither source teacher had terminal success and no V existed. v3 introduces explicit termination and an independent verifier; later method revisions are disclosed.",
+        "zh": "v1 是冒烟；v2 因两个源教师均无终局成功且没有 V 而停止。v3 引入明确终止与独立验证器，后续方法修订如实披露。"
+      },
+      "title": {
+        "en": "From smoke to a terminally defined carrier",
+        "zh": "从冒烟到终局定义明确的载体"
+      }
+    }
+  ],
+  "updated": "2026-10-10"
+}

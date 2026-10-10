@@ -1,0 +1,98 @@
+{
+  "chain_head": "d7225c669dee292c62116dcf15e8d201657e36165b185fd489d698ee74522c54",
+  "confusion": {
+    "V0_E0": 338,
+    "V0_E1": 1,
+    "V1_E0": 0,
+    "V1_E1": 261
+  },
+  "cost": {
+    "certificate_calls": 0,
+    "conditions_per_policy": 120,
+    "gradient_updates": 0,
+    "heldout_calls": 0,
+    "new_source_episodes": 0,
+    "policies": 5,
+    "resets": 600,
+    "simulator_steps": 7800,
+    "wall_seconds": 1.6201292017940432
+  },
+  "coverage": {
+    "aborted": 0,
+    "completed": 600,
+    "missing": 0,
+    "planned": 600
+  },
+  "execution_revision": "3f835457e653fb17eb56d301fa456f9075fcb8a7",
+  "forecast_mismatches": [],
+  "freeze_revision": "3f835457e653fb17eb56d301fa456f9075fcb8a7",
+  "max_forecast_state_residual": 0.0,
+  "outcomes": {
+    "full_mean_observed": {
+      "diagnostic_reused": {
+        "success": 78,
+        "total": 96
+      },
+      "source": {
+        "success": 24,
+        "total": 24
+      }
+    },
+    "half_mean_nominal": {
+      "diagnostic_reused": {
+        "success": 32,
+        "total": 96
+      },
+      "source": {
+        "success": 8,
+        "total": 24
+      }
+    },
+    "half_mean_observed": {
+      "diagnostic_reused": {
+        "success": 96,
+        "total": 96
+      },
+      "source": {
+        "success": 24,
+        "total": 24
+      }
+    },
+    "raw_retrieval": {
+      "diagnostic_reused": {
+        "success": 0,
+        "total": 96
+      },
+      "source": {
+        "success": 0,
+        "total": 24
+      }
+    },
+    "zero_observed": {
+      "diagnostic_reused": {
+        "success": 0,
+        "total": 96
+      },
+      "source": {
+        "success": 0,
+        "total": 24
+      }
+    }
+  },
+  "plan_id": "observable-feedback-v1-af388b4bdd267e37",
+  "plan_sha256": "1bb3b659eb0d1bd4d6ac5b9f944878a2c7df85ee909e9b4eaff523e37c2cccdd",
+  "publication_scope": "Curated summary; full source records remain in the private research repository.",
+  "rollouts_sha256": "c3236c9c301f3a4278c8fbe2de262a3935379f610765a73bfb59e9bd855ada3f",
+  "runtime": {
+    "mujoco": "3.3.7",
+    "numpy": "2.2.6",
+    "python": "3.10.12"
+  },
+  "schema": "seec-observable-feedback-diagnostic-v1-result",
+  "scope": "known-model constructive diagnostic; reused starts; no learned-policy effect",
+  "stops": {
+    "extension": "NONE",
+    "main": "DEFERRED",
+    "old_neural": "STOPPED"
+  }
+}
