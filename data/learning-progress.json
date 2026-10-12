@@ -1,0 +1,418 @@
+{
+  "schema": "interactive-learning-public-v1",
+  "updated": "2026-10-13",
+  "verified_papers": 18,
+  "status": "COMPLETED_DIAGNOSTIC_NOT_METHOD_EFFICACY",
+  "result": {
+    "schema": "interactive-cooking-diagnostic-v1",
+    "plan_sha256": "2df82215046e3d0da7b7ee4bd4f501baa94ae9d1c0bc8419a3f8026637064484",
+    "upstream_revision": "d52204c94067641df6e6649b19abb359b87ff028",
+    "runner_sha256": "9a1703ab0d076c7f2b9b23e02d0d21b45407d8b4e98d588c443fbf03b8134aaa",
+    "source_revision": "83909dd7dacbd148c3c1b0d2cb734d3b010d5c46",
+    "task_count": 125,
+    "seeds": [
+      13,
+      29,
+      43,
+      71,
+      101
+    ],
+    "trials": 5,
+    "gradient_updates": 0,
+    "teacher_model_calls": 0,
+    "steps": 279120,
+    "resets": 22500,
+    "chain_head": "f375eb0bb833abbf36f686d95da719690b65431fe163c032e187d59acd21934b",
+    "arms": {
+      "reset_history": {
+        "episodes": 3125,
+        "successes": 3125,
+        "mean_steps": 12.8896,
+        "seed_mean_steps": [
+          12.736,
+          12.736,
+          13.12,
+          12.736,
+          13.12
+        ],
+        "by_trial": [
+          {
+            "trial": 1,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 12.8896
+          },
+          {
+            "trial": 2,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 12.8896
+          },
+          {
+            "trial": 3,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 12.8896
+          },
+          {
+            "trial": 4,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 12.8896
+          },
+          {
+            "trial": 5,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 12.8896
+          }
+        ]
+      },
+      "terminal_success_only": {
+        "episodes": 3125,
+        "successes": 3125,
+        "mean_steps": 10.82112,
+        "seed_mean_steps": [
+          10.7904,
+          10.7904,
+          10.8672,
+          10.7904,
+          10.8672
+        ],
+        "by_trial": [
+          {
+            "trial": 1,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 12.8896
+          },
+          {
+            "trial": 2,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          },
+          {
+            "trial": 3,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          },
+          {
+            "trial": 4,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          },
+          {
+            "trial": 5,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          }
+        ]
+      },
+      "full_history": {
+        "episodes": 3125,
+        "successes": 3125,
+        "mean_steps": 10.304,
+        "seed_mean_steps": [
+          10.304,
+          10.304,
+          10.304,
+          10.304,
+          10.304
+        ],
+        "by_trial": [
+          {
+            "trial": 1,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          },
+          {
+            "trial": 2,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          },
+          {
+            "trial": 3,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          },
+          {
+            "trial": 4,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          },
+          {
+            "trial": 5,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          }
+        ]
+      },
+      "utility_memory": {
+        "episodes": 3125,
+        "successes": 3125,
+        "mean_steps": 10.304,
+        "seed_mean_steps": [
+          10.304,
+          10.304,
+          10.304,
+          10.304,
+          10.304
+        ],
+        "by_trial": [
+          {
+            "trial": 1,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          },
+          {
+            "trial": 2,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          },
+          {
+            "trial": 3,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          },
+          {
+            "trial": 4,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          },
+          {
+            "trial": 5,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          }
+        ]
+      },
+      "random_exploration": {
+        "episodes": 3125,
+        "successes": 3125,
+        "mean_steps": 10.69568,
+        "seed_mean_steps": [
+          10.6048,
+          10.6944,
+          10.8416,
+          10.7264,
+          10.6112
+        ],
+        "by_trial": [
+          {
+            "trial": 1,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 11.9552
+          },
+          {
+            "trial": 2,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.3808
+          },
+          {
+            "trial": 3,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.3808
+          },
+          {
+            "trial": 4,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.3808
+          },
+          {
+            "trial": 5,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.3808
+          }
+        ]
+      },
+      "privileged_oracle": {
+        "episodes": 3125,
+        "successes": 3125,
+        "mean_steps": 10.304,
+        "seed_mean_steps": [
+          10.304,
+          10.304,
+          10.304,
+          10.304,
+          10.304
+        ],
+        "by_trial": [
+          {
+            "trial": 1,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          },
+          {
+            "trial": 2,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          },
+          {
+            "trial": 3,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          },
+          {
+            "trial": 4,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          },
+          {
+            "trial": 5,
+            "successes": 625,
+            "total": 625,
+            "mean_steps": 10.304
+          }
+        ]
+      }
+    },
+    "scope": "Modified evaluation protocol on original DREAM Cooking transitions. Hand-coded skill-level memory policies; not trained DREAM, AD, RL2, VLA, or a robot efficacy result.",
+    "runtime_seconds": 13.214,
+    "coverage": {
+      "planned_records": 22500,
+      "completed_records": 22500,
+      "missing": 0,
+      "aborted": 0
+    },
+    "artifacts": {
+      "episodes.jsonl": "f234a6fb8c8f865efe696739e9dad4513234270d46c3ea87ee661bb3bd4387ae",
+      "events.jsonl": "fe10b8702186638e2a0b105fe17ec56ed09f7d8cc9d5cec7d5de1769975607c6",
+      "plan.json": "75eecf630aa3fb77e141c22f512da0a38394193b3b8ca1d9cb3ed8b0b67c5a29"
+    }
+  },
+  "verification": {
+    "status": "PASS",
+    "checks": [
+      "plan/hash binding",
+      "complete unique record keys",
+      "full hash chain",
+      "summary counts and means independently recomputed",
+      "all stored observations and rewards replay exactly",
+      "terminal outcomes recomputed",
+      "same sufficient-fact arms equal",
+      "all physical steps accounted"
+    ],
+    "replayed_episodes": 22500,
+    "replayed_steps": 279120,
+    "raw_observation_max_difference": 0,
+    "full_history_utility_memory_equal_records": 3750,
+    "mapping_clusters": 24,
+    "paired_step_saving": 2.5856,
+    "cluster_bootstrap_95_percentile_interval": [
+      2.251851851851852,
+      2.8225352112676054
+    ],
+    "bootstrap_seed": 20261014,
+    "bootstrap_replicates": 4000,
+    "inference_scope": "Descriptive mapping-cluster bootstrap; not independent learned-model seeds or a method superiority test.",
+    "summary_sha256": "d0221a27287af14e67c2b051b590746b9ddb310a91782a2ad3d18d8903a6d7c2"
+  },
+  "priors": [
+    {
+      "name": "RL²",
+      "year": "2016",
+      "status": "arXiv",
+      "url": "https://arxiv.org/abs/1611.02779",
+      "topic": "快慢回路 · 学会学习",
+      "overlap": "慢速训练循环策略，在新任务的多次 episode 之间保留状态，学得快速适应程序。",
+      "boundary": "任务内学习与经验吸收的分层不是首次。"
+    },
+    {
+      "name": "DREAM",
+      "year": "2021",
+      "status": "ICML",
+      "url": "https://proceedings.mlr.press/v139/liu21s.html",
+      "topic": "任务相关探索 · 后续信息价值",
+      "overlap": "区分探索与利用，获得完成任务所需的信息，避免无关探索。Cooking 是其公开环境。",
+      "boundary": "‘交互辨认规则’与‘获取任务知识’已有直接方法。"
+    },
+    {
+      "name": "Algorithm Distillation",
+      "year": "2023",
+      "status": "ICLR；标识首次公开于 2022",
+      "url": "https://arxiv.org/abs/2210.14215",
+      "topic": "学习历史蒸馏 · 跨 episode 适应",
+      "overlap": "用因果序列模型吸收 RL 学习历史，使新任务适应发生在上下文中。",
+      "boundary": "不能把保留学习过程、而非只模仿最后成功称为新发明。"
+    },
+    {
+      "name": "LMPC",
+      "year": "2024",
+      "status": "arXiv / 官方项目",
+      "url": "https://robot-teaching.github.io/",
+      "topic": "机器人可教性 · 教学历史吸收",
+      "overlap": "微调机器人教学历史，并用模型预测控制改善未见任务上的教学效率。",
+      "boundary": "这是‘完成知识 vs 获得知识能力’最直接的机器人先例。"
+    },
+    {
+      "name": "Oudeyer & Kaplan",
+      "year": "2007",
+      "status": "Frontiers in Neurorobotics",
+      "url": "https://www.frontiersin.org/journals/neurorobotics/articles/10.3389/neuro.12.006.2007/full",
+      "topic": "内在动机 · 学习价值",
+      "overlap": "对计算式内在动机进行分类，区分信息和学习驱动的目标与外部任务奖励。",
+      "boundary": "当前完成价值与学习价值的区分远早于本项目。"
+    },
+    {
+      "name": "RE-0 / RE-OPD",
+      "year": "2026",
+      "status": "arXiv 预印本",
+      "url": "https://arxiv.org/html/2609.32416v1",
+      "topic": "局部反事实验证 · on-policy 蒸馏",
+      "overlap": "在学生失败历史上验证局部教师修复，只吸收有正信用的干预。",
+      "boundary": "‘验证 + 局部收益 + OPD’不能单独作为新机制。"
+    },
+    {
+      "name": "RoboTTT",
+      "year": "2026",
+      "status": "arXiv 预印本 / 官方项目",
+      "url": "https://research.nvidia.com/labs/gear/robottt/",
+      "topic": "机器人长上下文 · 快权重",
+      "overlap": "通过快权重和 test-time training 将交互历史带入策略，支持长程反馈。",
+      "boundary": "不能笼统声称别人只学动作而不学交互过程。"
+    },
+    {
+      "name": "RoboHarn-Evo",
+      "year": "2026",
+      "status": "arXiv 预印本",
+      "url": "https://arxiv.org/html/2609.37583v1",
+      "topic": "验证物理经验 · 外部知识双回路",
+      "overlap": "在固定基础模型之外维护并改进层次物理知识，利用执行反馈。",
+      "boundary": "双回路与 verified experience 系统框架已有直接近邻。"
+    }
+  ],
+  "novelty_verdict": "All four motivating ideas have direct precedents. Novelty of the narrower candidate mechanism remains unestablished.",
+  "not_run": [
+    "neural learning-program distillation",
+    "DREAM/RL2/AD retraining",
+    "new-rule robotics",
+    "VLA",
+    "real robot",
+    "new-method efficacy"
+  ],
+  "historical_archive_public_revision": "90d923d69e7728f376ae3d3e4ea9cc81dc7bc545",
+  "reference_layout": "https://asimfish.github.io/psibot-dashboard/pick_place.html"
+}

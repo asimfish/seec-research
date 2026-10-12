@@ -1,5 +1,9 @@
 # SEEC · Research in progress
 
+**Latest research update (2026-10-13):** https://asimfish.github.io/seec-research/learning.html
+
+The new page separates direct prior art, a candidate interactive-learning mechanism, and a completed DREAM Cooking diagnostic. All four background ideas have precedents. Six hand-coded controls solve all goals; preserving information reduces steps but ties the full-history reference. No gradient updates or new robot experiments are claimed. The original SEEC site, manuscript and stops below are historical.
+
 **Student-Executable Experience Consolidation** studies which teacher
 demonstrations can become executable supervision at the student's information
 boundary. This repository is the public presentation package, separate from

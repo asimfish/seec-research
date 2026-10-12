@@ -1,0 +1,300 @@
+{
+  "schema": "interactive-cooking-diagnostic-v1",
+  "plan_sha256": "2df82215046e3d0da7b7ee4bd4f501baa94ae9d1c0bc8419a3f8026637064484",
+  "upstream_revision": "d52204c94067641df6e6649b19abb359b87ff028",
+  "runner_sha256": "9a1703ab0d076c7f2b9b23e02d0d21b45407d8b4e98d588c443fbf03b8134aaa",
+  "source_revision": "83909dd7dacbd148c3c1b0d2cb734d3b010d5c46",
+  "task_count": 125,
+  "seeds": [
+    13,
+    29,
+    43,
+    71,
+    101
+  ],
+  "trials": 5,
+  "gradient_updates": 0,
+  "teacher_model_calls": 0,
+  "steps": 279120,
+  "resets": 22500,
+  "chain_head": "f375eb0bb833abbf36f686d95da719690b65431fe163c032e187d59acd21934b",
+  "arms": {
+    "reset_history": {
+      "episodes": 3125,
+      "successes": 3125,
+      "mean_steps": 12.8896,
+      "seed_mean_steps": [
+        12.736,
+        12.736,
+        13.12,
+        12.736,
+        13.12
+      ],
+      "by_trial": [
+        {
+          "trial": 1,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 12.8896
+        },
+        {
+          "trial": 2,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 12.8896
+        },
+        {
+          "trial": 3,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 12.8896
+        },
+        {
+          "trial": 4,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 12.8896
+        },
+        {
+          "trial": 5,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 12.8896
+        }
+      ]
+    },
+    "terminal_success_only": {
+      "episodes": 3125,
+      "successes": 3125,
+      "mean_steps": 10.82112,
+      "seed_mean_steps": [
+        10.7904,
+        10.7904,
+        10.8672,
+        10.7904,
+        10.8672
+      ],
+      "by_trial": [
+        {
+          "trial": 1,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 12.8896
+        },
+        {
+          "trial": 2,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        },
+        {
+          "trial": 3,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        },
+        {
+          "trial": 4,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        },
+        {
+          "trial": 5,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        }
+      ]
+    },
+    "full_history": {
+      "episodes": 3125,
+      "successes": 3125,
+      "mean_steps": 10.304,
+      "seed_mean_steps": [
+        10.304,
+        10.304,
+        10.304,
+        10.304,
+        10.304
+      ],
+      "by_trial": [
+        {
+          "trial": 1,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        },
+        {
+          "trial": 2,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        },
+        {
+          "trial": 3,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        },
+        {
+          "trial": 4,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        },
+        {
+          "trial": 5,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        }
+      ]
+    },
+    "utility_memory": {
+      "episodes": 3125,
+      "successes": 3125,
+      "mean_steps": 10.304,
+      "seed_mean_steps": [
+        10.304,
+        10.304,
+        10.304,
+        10.304,
+        10.304
+      ],
+      "by_trial": [
+        {
+          "trial": 1,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        },
+        {
+          "trial": 2,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        },
+        {
+          "trial": 3,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        },
+        {
+          "trial": 4,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        },
+        {
+          "trial": 5,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        }
+      ]
+    },
+    "random_exploration": {
+      "episodes": 3125,
+      "successes": 3125,
+      "mean_steps": 10.69568,
+      "seed_mean_steps": [
+        10.6048,
+        10.6944,
+        10.8416,
+        10.7264,
+        10.6112
+      ],
+      "by_trial": [
+        {
+          "trial": 1,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 11.9552
+        },
+        {
+          "trial": 2,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.3808
+        },
+        {
+          "trial": 3,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.3808
+        },
+        {
+          "trial": 4,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.3808
+        },
+        {
+          "trial": 5,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.3808
+        }
+      ]
+    },
+    "privileged_oracle": {
+      "episodes": 3125,
+      "successes": 3125,
+      "mean_steps": 10.304,
+      "seed_mean_steps": [
+        10.304,
+        10.304,
+        10.304,
+        10.304,
+        10.304
+      ],
+      "by_trial": [
+        {
+          "trial": 1,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        },
+        {
+          "trial": 2,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        },
+        {
+          "trial": 3,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        },
+        {
+          "trial": 4,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        },
+        {
+          "trial": 5,
+          "successes": 625,
+          "total": 625,
+          "mean_steps": 10.304
+        }
+      ]
+    }
+  },
+  "scope": "Modified evaluation protocol on original DREAM Cooking transitions. Hand-coded skill-level memory policies; not trained DREAM, AD, RL2, VLA, or a robot efficacy result.",
+  "runtime_seconds": 13.214,
+  "coverage": {
+    "planned_records": 22500,
+    "completed_records": 22500,
+    "missing": 0,
+    "aborted": 0
+  },
+  "artifacts": {
+    "episodes.jsonl": "f234a6fb8c8f865efe696739e9dad4513234270d46c3ea87ee661bb3bd4387ae",
+    "events.jsonl": "fe10b8702186638e2a0b105fe17ec56ed09f7d8cc9d5cec7d5de1769975607c6",
+    "plan.json": "75eecf630aa3fb77e141c22f512da0a38394193b3b8ca1d9cb3ed8b0b67c5a29"
+  }
+}

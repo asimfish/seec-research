@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "checks": [
+    "plan/hash binding",
+    "complete unique record keys",
+    "full hash chain",
+    "summary counts and means independently recomputed",
+    "all stored observations and rewards replay exactly",
+    "terminal outcomes recomputed",
+    "same sufficient-fact arms equal",
+    "all physical steps accounted"
+  ],
+  "replayed_episodes": 22500,
+  "replayed_steps": 279120,
+  "raw_observation_max_difference": 0,
+  "full_history_utility_memory_equal_records": 3750,
+  "mapping_clusters": 24,
+  "paired_step_saving": 2.5856,
+  "cluster_bootstrap_95_percentile_interval": [
+    2.251851851851852,
+    2.8225352112676054
+  ],
+  "bootstrap_seed": 20261014,
+  "bootstrap_replicates": 4000,
+  "inference_scope": "Descriptive mapping-cluster bootstrap; not independent learned-model seeds or a method superiority test.",
+  "summary_sha256": "d0221a27287af14e67c2b051b590746b9ddb310a91782a2ad3d18d8903a6d7c2"
+}

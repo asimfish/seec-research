@@ -1,0 +1,185 @@
+{
+  "scope": "16 primary identifiers verified 2026-10-12 and reused; 2 additions checked 2026-10-13. Existence checks do not prove novelty.",
+  "papers": [
+    {
+      "id": "task_recognition_learning",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2305.09731"
+      }
+    },
+    {
+      "id": "instant_policy",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2411.12633"
+      }
+    },
+    {
+      "id": "icrt",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2408.15980"
+      }
+    },
+    {
+      "id": "rl2",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "1611.02779"
+      }
+    },
+    {
+      "id": "algorithm_distillation",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2210.14215"
+      }
+    },
+    {
+      "id": "vintix_ii",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2604.05112"
+      }
+    },
+    {
+      "id": "zeva",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2608.30880"
+      }
+    },
+    {
+      "id": "flux_opd",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2607.28022"
+      }
+    },
+    {
+      "id": "re0",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2609.32416"
+      }
+    },
+    {
+      "id": "rv_icl",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2610.06843"
+      }
+    },
+    {
+      "id": "simple_icl",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2609.38173"
+      }
+    },
+    {
+      "id": "dagger",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "1011.0686"
+      }
+    },
+    {
+      "id": "lmpc",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2402.11450"
+      }
+    },
+    {
+      "id": "robottt",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2607.15275"
+      }
+    },
+    {
+      "id": "roboharn_evo",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2609.37583"
+      }
+    },
+    {
+      "id": "experience_distillation",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2607.21051"
+      }
+    },
+    {
+      "id": "dream",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2008.02790"
+      }
+    },
+    {
+      "id": "intrinsic",
+      "status": "verified",
+      "method": "crossref",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "doi": "10.3389/neuro.12.006.2007"
+      }
+    }
+  ]
+}
