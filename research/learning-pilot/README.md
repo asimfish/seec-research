@@ -42,6 +42,18 @@ would generate a new internal registration rather than reproduce its timestamp.
 The adapter tests currently expect the pinned checkout at
 `/tmp/robot-task-dream-20261013`.
 
+From the public repository root, the full tested boundary suite is:
+
+```bash
+python -m pytest -q research/test_cooking_diagnostic.py \
+  research/learning-pilot/test_learning_pilot.py \
+  research/learning-pilot/test_matched_history_check.py
+```
+
+It has 15 tests. Install the stated runtime dependencies and place the pinned
+official checkout at the fixture path before invoking them. No upstream code
+is included in the public repository.
+
 All nine final checkpoints were completed before development/test evaluation;
 development did not select a checkpoint. A separate registered post-pilot probe
 (`matched_plan.json`) holds the 20-step prefix constant across checkpoints and

@@ -370,8 +370,8 @@
       "bytes": 3960
     },
     "research/learning-pilot/README.md": {
-      "sha256": "a3e87ee2ae98b8c46c26e05f26e818d154c6a9102394e0b2004e49d7709c9c8f",
-      "bytes": 3651
+      "sha256": "00b4ca23e84788d30f501b2c9b540cd9f996e9a0bffd0bef201f12a84669d859",
+      "bytes": 4092
     },
     "research/learning-pilot/RESULTS.md": {
       "sha256": "eb17f0c0ce9ba9eb7f7433a26bd91adc6e7b98a4ddde8ccb840cc9d1ae0d785e",
@@ -436,6 +436,10 @@
     "research/run_cooking_diagnostic.py": {
       "sha256": "9a1703ab0d076c7f2b9b23e02d0d21b45407d8b4e98d588c443fbf03b8134aaa",
       "bytes": 10746
+    },
+    "research/test_cooking_diagnostic.py": {
+      "sha256": "ee101606cc6774062cb6e2116fa27f07d8f0d6147d34ee2c2fcdf553718997fa",
+      "bytes": 2127
     },
     "research/verify_cooking_diagnostic.py": {
       "sha256": "156cec0d7ea86821614e54d05d738da0ca148fa45abec8e9cf9eab860bcccaa2",
