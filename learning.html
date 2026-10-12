@@ -22,14 +22,15 @@
 <section id="learned" class="card section"><div class="section-head"><div><div class="eyebrow">04 / COMPLETED LEARNING PILOT</div><h2>真实学习器：事实监督能否优于完整历史？</h2><p class="muted">3 个优化器种子 × 3 个训练臂。循环行为克隆，固定最终 checkpoint；不是 DREAM / AD 复现或 OPD。</p></div><span class="pill green">学习诊断完成</span></div>
 <div class="setup-grid"><div><span>学生输入</span><strong>可见观测与实际反馈</strong><small>无隐藏映射、事实标签、符号记忆或教师</small></div><div><span>同等预算</span><strong>每臂 800 次更新</strong><small>同一 GRU、初始化、源历史与抽样顺序</small></div><div><span>自主执行</span><strong>从第 0 步学习探索</strong><small>20 步探索上限 + 5 次任务尝试</small></div><div><span>对照问题</span><strong>历史事实 vs 当前状态</strong><small>区别事实学习与泛化的额外辅助监督</small></div></div>
 <div class="chart-header"><h3>完整保留所有种子与失败。</h3><label>显示种子 <select id="learning-seed"><option value="mean">三个种子的均值</option><option value="7">训练 seed 7</option><option value="19">训练 seed 19</option><option value="41">训练 seed 41</option></select></label></div>
-<div id="learner-chart" class="chart" aria-live="polite"></div><p class="small">成功率取五次尝试的均值；种子间波动在下表完整报告。符号完整历史参考仍为 100%，没有参与梯度训练。</p>
+<div id="learner-chart" class="chart" aria-live="polite"></div><p class="small">成功率取五次尝试的均值；种子间波动在下表完整报告。第 1 次执行之前已有 20 步交互探索，不是零样本。符号完整历史参考仍为 100%，没有参与梯度训练。</p>
 <div class="table-scroll"><table><caption>学习策略在 24 个未知映射上的完整结果</caption><thead><tr><th>训练臂</th><th>平均成功率</th><th>三个种子</th><th>第 1 → 5 次</th><th>清空记忆后</th></tr></thead><tbody id="learner-results"></tbody></table></div>
 <div class="note" id="learner-verdict">读取完整学习结果…</div>
 <div class="chart-header"><h3>相同历史下，模型有没有利用反馈？</h3><span class="pill amber">主结果后的机制检查</span></div>
 <p class="muted">冻结九个模型，提供同一段真实 20 步探索前缀，再仅遮蔽其中的食材反馈。执行期仍读原始观测，没有梯度更新。外部提供前缀的检查与上方自主执行结果分开。</p>
 <div class="table-scroll"><table><caption>共同前缀与反馈遮蔽：三个种子的均值</caption><thead><tr><th>模型</th><th>真实前缀</th><th>遮蔽食材反馈</th><th>真实 − 遮蔽</th></tr></thead><tbody id="matched-results"></tbody></table></div>
 <p id="matched-note" class="small"></p>
-<p class="small">结果图：<a href="assets/figures/cooking_learned_pilot.svg">SVG</a> · <a href="assets/figures/cooking_learned_pilot.pdf">PDF</a> · <a href="research/learning-pilot/RESULTS.md">完整分析</a></p>
+<p class="note">事实辅助的第 1 → 5 次仅增加 2.67 个百分点。现有证据主要支持“更会利用已获得的信息”，没有证明更好的主动探索、持续自我改进或 OPD。</p>
+<p class="small">结果图：<a href="assets/figures/cooking_learned_pilot.svg">SVG</a> · <a href="assets/figures/cooking_learned_pilot.pdf">PDF</a> · <a href="research/learning-pilot/RESULTS.md">完整分析</a> · <a href="research/learning-pilot/working-note.pdf">ICML 双栏初步研究稿</a>（未投稿）</p>
 <details><summary>预登记条件、无效运行与独立核验</summary><div id="learner-integrity"></div><p>第一轮在核验器设计时发现缺少终局反馈输入，已中止并标 INVALID。修复补上真实终局观测与奖励，不新增环境动作；任务、期限、切分、种子和更新预算不变。</p><p>本轮使用统一的教师与固定动作扰动历史，是离线行为克隆。学生状态蒸馏、未来学习信用、DREAM / AD 强方法复现和机器人任务尚未运行。24 个映射复用前一轮诊断切分，是探索性 pilot，不是独立主实验。</p></details></section>
 
 <section id="results" class="card section"><div class="section-head"><div><div class="eyebrow">05 / PREVIOUS SYMBOLIC DIAGNOSTIC</div><h2>DREAM Cooking：先把问题测清楚。</h2><p class="muted">原版环境，新的显式诊断协议。手工策略；不是原作者方法成绩复现。</p></div><span class="pill green">诊断完成</span></div>

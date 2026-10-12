@@ -1,0 +1,44 @@
+{
+  "scope": "Learned pilot and exploratory shared-history diagnostic, separate from the previous symbolic ledger",
+  "registered_primary_plan": "cooking-learned-v1-29bf00c0b57b1c9f",
+  "registered_followup_plan": "matched-history-606bcdf9e3a93062",
+  "parameter_comparability": "All three arms have 63576 parameters, matched seed initialization and minibatch indices; 800 updates each",
+  "rivals": [
+    {
+      "explanation": "Action-only full history is sufficient under this fixed learning budget",
+      "observation": "24.21% action-only vs 56.80% factual auxiliary",
+      "judgment": "Not supported for this pilot's trained baseline; not a rejection of all full-history learning methods"
+    },
+    {
+      "explanation": "Any extra current-state supervision explains the factual gain",
+      "observation": "34.29% current-state auxiliary, 22.51 points below factual auxiliary at matched head size and loss weight",
+      "judgment": "This specific auxiliary control does not explain the full gain; target difficulty and other auxiliary designs remain open"
+    },
+    {
+      "explanation": "Different exploration information causes the primary advantage",
+      "observation": "All 1125 autonomous prefixes exactly match the common prefix",
+      "judgment": "Ruled out on these recorded cases"
+    },
+    {
+      "explanation": "The factual learner uses historical identifying feedback",
+      "observation": "56.80% real vs 29.81% redacted prefix; 24.00% when memory resets",
+      "judgment": "Supported in the registered pilot and exploratory intervention, without a causal-credit theorem"
+    },
+    {
+      "explanation": "The auxiliary head is a novel task-learning algorithm",
+      "observation": "Humplik task inference, VariBAD and UNREAL are direct precedents",
+      "judgment": "Rejected as a novelty claim"
+    }
+  ],
+  "retained_explanation": "Task-fact auxiliary supervision improves use of acquired information at this finite offline learning budget",
+  "unresolved": [
+    "Strong trained task-inference and AD/DREAM comparisons",
+    "Student-state labeling versus offline recovery coverage",
+    "Execution uncertainty and hypothesis-update calibration",
+    "Future learning-credit selection",
+    "Robot and new-prerequisite task-space transfer"
+  ],
+  "stop_reason": "Registered 9-run budget completed; no tuning of this panel",
+  "failure_record": "run1 invalid terminal-input boundary; code-only corrected registration; no evaluation artifact from invalid run",
+  "curve_limit": "Factual first-to-fifth success increases only 2.67 points; first execution follows 20 exploration steps, not zero-shot"
+}

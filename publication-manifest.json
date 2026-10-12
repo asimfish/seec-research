@@ -338,8 +338,8 @@
       "bytes": 9402
     },
     "learning.html": {
-      "sha256": "2e9b818439a66fa2ee3db53ee4da62160d500a831c89acbc93dee75249808d7f",
-      "bytes": 15352
+      "sha256": "d0bfc302e62cd007094da732ee498622ceca14bfd7952fbb926631549004082b",
+      "bytes": 15727
     },
     "learning.js": {
       "sha256": "0bbb77bac7dc945699e0c208ce8f849c235ee4b52990cd1768f526bca41e61ee",
@@ -362,8 +362,8 @@
       "bytes": 2865
     },
     "research/interactive-learning-update.md": {
-      "sha256": "05b59c4c4ea97f171d510ae5b0c2e3dd7c5717183c8f20097f867354c855f788",
-      "bytes": 15223
+      "sha256": "9f151c567274b06b1c737395996a0725de4ac6af2585cca8a9f148d6e20f422c",
+      "bytes": 15592
     },
     "research/learning-pilot/PROTOCOL.md": {
       "sha256": "1ad5150ac3394ed9a69b9159ca7fb3fb6218b38aab48171d39d714f1416f31e6",
@@ -380,6 +380,10 @@
     "research/learning-pilot/analyze_learning_pilot.py": {
       "sha256": "336b9bbdd905389582d43623faaf45d0cadb969774a331c3687ec1bcd5a23f5d",
       "bytes": 9793
+    },
+    "research/learning-pilot/hypothesis_ledger.json": {
+      "sha256": "9c0de444d2ce5f9aa1dcc1d48cff958dd20c5f8f7ad7a938bb2c6c91c6512a63",
+      "bytes": 2640
     },
     "research/learning-pilot/invalid_run_cost.json": {
       "sha256": "7de58de120ff82d788b406d00ec6be19a1ea225bb926c99a24655a8ecfee7e15",
@@ -424,6 +428,10 @@
     "research/learning-pilot/verify_matched_history_check.py": {
       "sha256": "e54f57b8b2184a1380668e2dd926d6032f366658392005ef7f63b4fc8d66efb9",
       "bytes": 8887
+    },
+    "research/learning-pilot/working-note.pdf": {
+      "sha256": "4692da78b75355a45dfcd1d2add5a301b5cadd21c575ad4a1759a2c9d11e5dd9",
+      "bytes": 253279
     },
     "research/run_cooking_diagnostic.py": {
       "sha256": "9a1703ab0d076c7f2b9b23e02d0d21b45407d8b4e98d588c443fbf03b8134aaa",
