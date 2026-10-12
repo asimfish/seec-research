@@ -1,0 +1,53 @@
+{
+  "schema": "matched-history-analysis-v1",
+  "arms": {
+    "action_only": {
+      "shared_success_mean": 0.2421333333333333,
+      "redacted_success_mean": 0.26986666666666664,
+      "shared_seed_values": [
+        0.2784,
+        0.248,
+        0.2
+      ],
+      "redacted_seed_values": [
+        0.2512,
+        0.248,
+        0.3104
+      ],
+      "information_effect": -0.027733333333333332
+    },
+    "current_state_aux": {
+      "shared_success_mean": 0.3429333333333333,
+      "redacted_success_mean": 0.3290666666666667,
+      "shared_seed_values": [
+        0.3456,
+        0.3648,
+        0.3184
+      ],
+      "redacted_seed_values": [
+        0.3216,
+        0.3392,
+        0.3264
+      ],
+      "information_effect": 0.013866666666666638
+    },
+    "observed_facts_aux": {
+      "shared_success_mean": 0.5680000000000001,
+      "redacted_success_mean": 0.2981333333333333,
+      "shared_seed_values": [
+        0.5792,
+        0.608,
+        0.5168
+      ],
+      "redacted_seed_values": [
+        0.2944,
+        0.2976,
+        0.3024
+      ],
+      "information_effect": 0.26986666666666675
+    }
+  },
+  "H_information_use_registered_check": true,
+  "optimizer_updates": 0,
+  "scope": "External shared prefix and input redaction; exploratory mechanism probe, not primary teacher-free success."
+}

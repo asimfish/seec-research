@@ -7,15 +7,15 @@
     "unselected logs",
     "user working-tree edits"
   ],
-  "export_scope": "Existing public scientific archive preserved; new curated research report, diagnostic summaries, registered protocol, authored figure and selected reproducible diagnostic adapters. No raw logs or checkpoints.",
+  "export_scope": "Existing public scientific archive preserved; curated literature, symbolic diagnostic, three-seed learned pilot and separately registered feedback-redaction diagnostic, authored figures, protocols, costs and reproducible adapters. No raw logs or checkpoints.",
   "files": {
     ".nojekyll": {
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
     },
     "README.md": {
-      "sha256": "348d3eb5bf235c6cf0261e1aa21252bf34f778d305016c72a240177862d7a99f",
-      "bytes": 3350
+      "sha256": "cb313bbaa9b5cec425b1662e318c33d4e7a8c4cf06989fed2c05de6f85dd2e03",
+      "bytes": 3536
     },
     "app.js": {
       "sha256": "eb431cc202bd3048d2cf6a12cd07265631710347ff9d4191de29f08dbe21fb45",
@@ -80,6 +80,18 @@
     "assets/figures/cooking_adaptation.svg": {
       "sha256": "222ddcf58fcde73a0b8b02ee2b57645d38d0e966568baaa3fdc171b89ce7558a",
       "bytes": 27291
+    },
+    "assets/figures/cooking_learned_pilot.pdf": {
+      "sha256": "f3a02afe0e10d58f927b72d1a1cce9ef88a5067f0e78aea11f9e15702df845e0",
+      "bytes": 23319
+    },
+    "assets/figures/cooking_learned_pilot.png": {
+      "sha256": "d28cf40a59ab2c52804a5aec02afad583adf3962401cb4a8827d099ed031b1da",
+      "bytes": 133093
+    },
+    "assets/figures/cooking_learned_pilot.svg": {
+      "sha256": "d16b48cdad39ac82957a40c3c1480c9a622ad6a99b2dc02c56a24543451a1340",
+      "bytes": 25042
     },
     "assets/figures/frequency_prior_diagnostic_v1.pdf": {
       "sha256": "bcf8a0af75a609601337564141471b2e2a45ed827bde1170b002fabe8629e28f",
@@ -277,17 +289,41 @@
       "sha256": "49bba454069bef82a5c448480fa461c892b06c8bbe1941b7c192bc0a1ed55203",
       "bytes": 4690
     },
+    "data/learned-pilot-analysis.json": {
+      "sha256": "093078137ead3e157b6500015a24cfe8a5717087d6f79079ccc3341090a09eb1",
+      "bytes": 2943
+    },
+    "data/learned-pilot-summary.json": {
+      "sha256": "3f98e408ab5a4f262b5cde11dc0c4cf24060c17a524a8e8cad3cfad022a0644f",
+      "bytes": 59306
+    },
+    "data/learned-pilot-verification.json": {
+      "sha256": "5452429d428cec16a7f33e2dc873a097cef75c1deed6519efbed8fe706ebd75d",
+      "bytes": 1281
+    },
     "data/learning-paper-verification.json": {
-      "sha256": "7fbb9d0cafa1c06e2ea2666344b42347bf831e3ee2551da559cc673f9581a6e0",
-      "bytes": 3875
+      "sha256": "c3a9d49fd5f9ebefe0f1ad37c5b70e904862221fc0c846546488fe320af03f42",
+      "bytes": 4511
     },
     "data/learning-progress.json": {
-      "sha256": "67d2f61f261481030813b5ebbfc6da1c4bd09c7c3a58e35b2b1fcdc01dd64ee1",
-      "bytes": 12211
+      "sha256": "f52c30a191043b683bb5b65e8d7917ea76de881f056e1713fdb709be0094f228",
+      "bytes": 105734
     },
     "data/learning-reading-notes.json": {
-      "sha256": "82c9db756120a79edf7c6abf96dd2d98e266068141c75942c367805317920968",
-      "bytes": 16145
+      "sha256": "5aab42a5706c538708c6f0e0d0f11f9ecddb552b619b7f55de70abe4e7aa1558",
+      "bytes": 18108
+    },
+    "data/matched-history-analysis.json": {
+      "sha256": "e53d98bc7fa84c3a62d0999951ce0a7ae429561ba483b14c5a995018546c1615",
+      "bytes": 1316
+    },
+    "data/matched-history-summary.json": {
+      "sha256": "f215e73bd0ef6f94812147064c8519768cc01711ef1826f1b5820bbddeeca2fc",
+      "bytes": 14634
+    },
+    "data/matched-history-verification.json": {
+      "sha256": "f6aa14d7636c68d4e88a6f0fe0338cb4b1573aa83e96a07081ee463081f775a6",
+      "bytes": 850
     },
     "data/progress.json": {
       "sha256": "ec2abb914f82a3e3ae0e4774acef9f4a5df53a3280bfcb85263921deab8fb3cf",
@@ -302,12 +338,12 @@
       "bytes": 9402
     },
     "learning.html": {
-      "sha256": "5057256b7f566c477c3bc376ed47da01ef312203c32cac33fc0c22a288952756",
-      "bytes": 11261
+      "sha256": "2e9b818439a66fa2ee3db53ee4da62160d500a831c89acbc93dee75249808d7f",
+      "bytes": 15352
     },
     "learning.js": {
-      "sha256": "52adf5d6bb5e559eb614ebbbd916bee3af445376a4130a6796d578e440710e7e",
-      "bytes": 5042
+      "sha256": "0bbb77bac7dc945699e0c208ce8f849c235ee4b52990cd1768f526bca41e61ee",
+      "bytes": 9349
     },
     "research/cooking-plan.json": {
       "sha256": "75eecf630aa3fb77e141c22f512da0a38394193b3b8ca1d9cb3ed8b0b67c5a29",
@@ -318,16 +354,76 @@
       "bytes": 1670
     },
     "research/cooking-reproduction.md": {
-      "sha256": "971bb0414298fa53ccae6b4b6233f42acbd0193823d8b9ad7f2f86c42d6f8418",
-      "bytes": 1942
+      "sha256": "ccb0c7482e417216db4182a6a07103180504d1ae1721ee5a61087ec9281833fe",
+      "bytes": 2180
     },
     "research/cooking-results.md": {
       "sha256": "49b60551de77926769d1d8b3ce0e70930460c21d1781da80edf05f664db37538",
       "bytes": 2865
     },
     "research/interactive-learning-update.md": {
-      "sha256": "ce147c4c79c35777cbb699cd28b229da4a12d3bf8724db5b6af31b9faed8643d",
-      "bytes": 10636
+      "sha256": "05b59c4c4ea97f171d510ae5b0c2e3dd7c5717183c8f20097f867354c855f788",
+      "bytes": 15223
+    },
+    "research/learning-pilot/PROTOCOL.md": {
+      "sha256": "1ad5150ac3394ed9a69b9159ca7fb3fb6218b38aab48171d39d714f1416f31e6",
+      "bytes": 3960
+    },
+    "research/learning-pilot/README.md": {
+      "sha256": "a3e87ee2ae98b8c46c26e05f26e818d154c6a9102394e0b2004e49d7709c9c8f",
+      "bytes": 3651
+    },
+    "research/learning-pilot/RESULTS.md": {
+      "sha256": "eb17f0c0ce9ba9eb7f7433a26bd91adc6e7b98a4ddde8ccb840cc9d1ae0d785e",
+      "bytes": 4293
+    },
+    "research/learning-pilot/analyze_learning_pilot.py": {
+      "sha256": "336b9bbdd905389582d43623faaf45d0cadb969774a331c3687ec1bcd5a23f5d",
+      "bytes": 9793
+    },
+    "research/learning-pilot/invalid_run_cost.json": {
+      "sha256": "7de58de120ff82d788b406d00ec6be19a1ea225bb926c99a24655a8ecfee7e15",
+      "bytes": 617
+    },
+    "research/learning-pilot/matched_plan.json": {
+      "sha256": "cb8670bead5321706daadb3f627d031f3c7595cc36270a3ad7b29b3852a4ed6c",
+      "bytes": 2865
+    },
+    "research/learning-pilot/plan.json": {
+      "sha256": "1410c9c8e72f6e9d5b5edafe40b4b4b98c561a97dd633431c9c58dd6a8274714",
+      "bytes": 5720
+    },
+    "research/learning-pilot/plan_run1_invalid.json": {
+      "sha256": "c85093ec2ab6fea01a5798d96ed87834c0b19ea14766374d3732fa9f35623b56",
+      "bytes": 5159
+    },
+    "research/learning-pilot/register_learning_pilot.py": {
+      "sha256": "08bf95fe37a5f9e43bbb4d7e104c9f6c9003fd90a86066ceae6ce8d3a99f6d68",
+      "bytes": 5960
+    },
+    "research/learning-pilot/run_learning_pilot.py": {
+      "sha256": "40227855a0dd8efe095fe8012a154698d01dd52e962b6f1d827492a06370162d",
+      "bytes": 19817
+    },
+    "research/learning-pilot/run_matched_history_check.py": {
+      "sha256": "96cdc6ef2ec0cab7c54cc7ba2b99415298c2f3b51fd328c88ad5e51c3712d61a",
+      "bytes": 9604
+    },
+    "research/learning-pilot/test_learning_pilot.py": {
+      "sha256": "7fe21cb6757b45499ed40c941177fabc2d4b6dc1453efb0e6aa020be2375eb1c",
+      "bytes": 4512
+    },
+    "research/learning-pilot/test_matched_history_check.py": {
+      "sha256": "95a260cd502232eec62df01a98a8f70bfad0af9d7d60b6e896349a8d45d27ae1",
+      "bytes": 1698
+    },
+    "research/learning-pilot/verify_learning_pilot.py": {
+      "sha256": "238bb4ccb42db5ae5112cc9d1cabf3f1b31274304de4b16a303a3c76fe99f0b4",
+      "bytes": 11544
+    },
+    "research/learning-pilot/verify_matched_history_check.py": {
+      "sha256": "e54f57b8b2184a1380668e2dd926d6032f366658392005ef7f63b4fc8d66efb9",
+      "bytes": 8887
     },
     "research/run_cooking_diagnostic.py": {
       "sha256": "9a1703ab0d076c7f2b9b23e02d0d21b45407d8b4e98d588c443fbf03b8134aaa",
@@ -356,6 +452,11 @@
     "summary_sha256": "d0221a27287af14e67c2b051b590746b9ddb310a91782a2ad3d18d8903a6d7c2",
     "verification_sha256": "b31f3f4fa5632138eff69d3fe9f2907acdf454415e7c69f7fbe93c4b5cf26bfc",
     "runner_sha256": "9a1703ab0d076c7f2b9b23e02d0d21b45407d8b4e98d588c443fbf03b8134aaa",
-    "plan_sha256": "75eecf630aa3fb77e141c22f512da0a38394193b3b8ca1d9cb3ed8b0b67c5a29"
+    "plan_sha256": "75eecf630aa3fb77e141c22f512da0a38394193b3b8ca1d9cb3ed8b0b67c5a29",
+    "learned_summary_sha256": "3f98e408ab5a4f262b5cde11dc0c4cf24060c17a524a8e8cad3cfad022a0644f",
+    "learned_verification_sha256": "5452429d428cec16a7f33e2dc873a097cef75c1deed6519efbed8fe706ebd75d",
+    "learned_plan_file_sha256": "1410c9c8e72f6e9d5b5edafe40b4b4b98c561a97dd633431c9c58dd6a8274714",
+    "matched_summary_sha256": "f215e73bd0ef6f94812147064c8519768cc01711ef1826f1b5820bbddeeca2fc",
+    "matched_verification_sha256": "f6aa14d7636c68d4e88a6f0fe0338cb4b1573aa83e96a07081ee463081f775a6"
   }
 }

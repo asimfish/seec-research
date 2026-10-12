@@ -1,0 +1,38 @@
+{
+  "schema": "matched-history-mechanism-plan-v1",
+  "parent_summary_sha256": "3f98e408ab5a4f262b5cde11dc0c4cf24060c17a524a8e8cad3cfad022a0644f",
+  "parent_plan_sha256": "29bf00c0b57b1c9ff193cb04c4647478b43bbc2fd886f2df9cdd209d6af12086",
+  "runner_sha256": "96cdc6ef2ec0cab7c54cc7ba2b99415298c2f3b51fd328c88ad5e51c3712d61a",
+  "registered_parent_verified": "PASS",
+  "conditions": [
+    "shared_actual_feedback",
+    "shared_inventory_redacted"
+  ],
+  "prefix_seed": 11,
+  "checkpoint_sha256": {
+    "action_only-7": "08e4be060c0b027fd9cbdb36d47578d3591b8a7a17cd57faf81a467ff19afeb7",
+    "current_state_aux-7": "9545bc8a88d690ecbfde0559b85aaf3bcdad4cbb6e5e2f4cc0214c238ad345c8",
+    "observed_facts_aux-7": "1360da950e224aaa8d6764d1aa420fab8db79fa2088b46571050609d1b968395",
+    "action_only-19": "6909970a36b717b8fb88370a17160d37c6b5c6304181577b691ef891c144ddbf",
+    "current_state_aux-19": "c24fcf4ab5ad527f10eafdbdb8650bdcb0619426a3eb18c329e5157164a6dd98",
+    "observed_facts_aux-19": "4906ec70e7fad67fcaa41ea37852aa45618127d8d010aaff559c8da0fa0af1d5",
+    "action_only-41": "a3aea0a658441f8cbc6dd789238a8b846976eee194cdf09f77ca8ca445292f95",
+    "current_state_aux-41": "685ae36c6c635726bc30e097456459e4e5721f03ffecc164573719b273241ba2",
+    "observed_facts_aux-41": "5d0a563521ab0431314bf44c85b2f1b90c9b966b4537ec8b4717d38e8f780b62"
+  },
+  "input_control": "All nine frozen checkpoints consume the same real 20-action exploration prefix for each task. The redacted condition replaces only prefix inventory responses by EMPTY; execution observations remain original. Terminal feedback is included.",
+  "metric": "Five-attempt success, paired by training seed; additional first-attempt success isolates prefix information before new execution evidence.",
+  "hypotheses": {
+    "H_information_use": "Observed-fact model exceeds both controls by >=0.05 under the common real prefix. Removing identifying inventory responses reduces its success by >=0.05; its full-minus-redacted information effect exceeds each control's by >=0.05.",
+    "H_exploration_only": "Auxiliary advantage falls below 0.05 with a common informative prefix; original gain explained by different learned exploration rather than use of common evidence."
+  },
+  "limits": [
+    "Designed after primary pilot results; exploratory mechanism probe, not confirmatory inference.",
+    "External symbolic prefix is a shared diagnostic input, not teacher-free autonomous exploration.",
+    "EMPTY redaction is an input intervention, not a claim that the simulator returned that observation.",
+    "No new gradients, checkpoint selection, task/horizon changes or extra information for one arm."
+  ],
+  "registered_at_utc": "2026-10-12T19:02:01.814035+00:00",
+  "semantic_sha256": "606bcdf9e3a930622706f5ec7a54ab5e978dda5349796b4a387171fbcc7f3c50",
+  "plan_id": "matched-history-606bcdf9e3a93062"
+}

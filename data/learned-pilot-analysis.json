@@ -1,0 +1,118 @@
+{
+  "schema": "cooking-learning-pilot-analysis-v1",
+  "plan_id": "cooking-learned-v1-29bf00c0b57b1c9f",
+  "summary_sha256": "3f98e408ab5a4f262b5cde11dc0c4cf24060c17a524a8e8cad3cfad022a0644f",
+  "verification_sha256": "5452429d428cec16a7f33e2dc873a097cef75c1deed6519efbed8fe706ebd75d",
+  "training_seeds": [
+    7,
+    19,
+    41
+  ],
+  "arms": {
+    "action_only": {
+      "success_mean": 0.2421333333333333,
+      "success_seed_values": [
+        0.2784,
+        0.248,
+        0.2
+      ],
+      "mean_cost_steps": 17.285333333333334,
+      "by_trial": [
+        0.23466666666666666,
+        0.24266666666666667,
+        0.24266666666666667,
+        0.24266666666666667,
+        0.248
+      ],
+      "episodes": 1875,
+      "successes": 454,
+      "reset_success_mean": 0.18666666666666668,
+      "memory_drop": 0.055466666666666636
+    },
+    "current_state_aux": {
+      "success_mean": 0.3429333333333333,
+      "success_seed_values": [
+        0.3456,
+        0.3648,
+        0.3184
+      ],
+      "mean_cost_steps": 16.551466666666666,
+      "by_trial": [
+        0.28,
+        0.328,
+        0.34933333333333333,
+        0.3706666666666667,
+        0.3866666666666667
+      ],
+      "episodes": 1875,
+      "successes": 643,
+      "reset_success_mean": 0.18133333333333335,
+      "memory_drop": 0.16159999999999997
+    },
+    "observed_facts_aux": {
+      "success_mean": 0.5680000000000001,
+      "success_seed_values": [
+        0.5792,
+        0.608,
+        0.5168
+      ],
+      "mean_cost_steps": 14.413866666666665,
+      "by_trial": [
+        0.5493333333333333,
+        0.5653333333333334,
+        0.5733333333333334,
+        0.576,
+        0.576
+      ],
+      "episodes": 1875,
+      "successes": 1065,
+      "reset_success_mean": 0.24,
+      "memory_drop": 0.32800000000000007
+    },
+    "symbolic_full_history": {
+      "success_mean": 1.0,
+      "success_seed_values": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean_cost_steps": 10.304,
+      "by_trial": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "episodes": 1875,
+      "successes": 1875
+    }
+  },
+  "paired_candidate_differences": {
+    "action_only": {
+      "mean": 0.3258666666666667,
+      "by_seed": [
+        0.30080000000000007,
+        0.36,
+        0.3168
+      ],
+      "all_seeds_positive": true
+    },
+    "current_state_aux": {
+      "mean": 0.22506666666666666,
+      "by_seed": [
+        0.23360000000000003,
+        0.24319999999999997,
+        0.19840000000000002
+      ],
+      "all_seeds_positive": true
+    }
+  },
+  "prediction_checks": {
+    "H1_grounded_update_supported_in_this_pilot": true,
+    "H3_all_learned_arms_below_20_percent": false,
+    "symbolic_reference_at_100_percent": true
+  },
+  "stop_reason": "registered-budget-completed",
+  "scope": "Three optimizer seeds; descriptive auxiliary-learning pilot, not new-method, causal-credit, OPD, robot or general task-space efficacy."
+}

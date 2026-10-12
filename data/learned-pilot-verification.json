@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "summary_sha256": "3f98e408ab5a4f262b5cde11dc0c4cf24060c17a524a8e8cad3cfad022a0644f",
+  "verifier_sha256": "238bb4ccb42db5ae5112cc9d1cabf3f1b31274304de4b16a303a3c76fe99f0b4",
+  "plan_sha256": "29bf00c0b57b1c9ff193cb04c4647478b43bbc2fd886f2df9cdd209d6af12086",
+  "checks": [
+    "Complete expected unique source/evaluation records",
+    "Source is train split only",
+    "Known-fact labels derived from actual prior observations",
+    "Terminal feedback reconstructed before reset",
+    "Equal initial weights, sample order, model size and optimizer budget",
+    "All 9 final checkpoint identities",
+    "Every stored observation/reward exactly replayed",
+    "All learned executed actions and auxiliary outputs recomputed from checkpoints",
+    "All terminal outcomes and cost penalties recomputed",
+    "All summary means/counts recomputed",
+    "Full evaluation hash chain"
+  ],
+  "source_sequences": 1062,
+  "source_steps": 79904,
+  "evaluation_records": 19098,
+  "evaluation_steps": 322100,
+  "recomputed_policy_decisions": 295280,
+  "raw_observation_max_difference": 0,
+  "observed_fact_accuracy_on_student_histories": 0.7231651509007704,
+  "scope": "Reset-and-action replay, not simulator snapshot E4, method efficacy, or training reproducibility."
+}

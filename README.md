@@ -2,7 +2,7 @@
 
 **Latest research update (2026-10-13):** https://asimfish.github.io/seec-research/learning.html
 
-The new page separates direct prior art, a candidate interactive-learning mechanism, and a completed DREAM Cooking diagnostic. All four background ideas have precedents. Six hand-coded controls solve all goals; preserving information reduces steps but ties the full-history reference. No gradient updates or new robot experiments are claimed. The original SEEC site, manuscript and stops below are historical.
+Nine recurrent BC models (three optimizer seeds) are now trained and independently replayed. Observed-fact auxiliary success is 56.80%, versus 24.21% action-only and 34.29% current-state auxiliary. A separate shared-prefix feedback-redaction diagnostic reports all models, including the action-only improvement. Task-belief auxiliary learning has direct prior art; this is not new-method, OPD, RSI or robot efficacy. Six earlier hand-coded controls and all historical stops remain separate. Code, plans, results, invalid-run costs and figures are provided; raw logs and checkpoints remain local.
 
 **Student-Executable Experience Consolidation** studies which teacher
 demonstrations can become executable supervision at the student's information

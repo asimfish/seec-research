@@ -1,5 +1,5 @@
 {
-  "scope": "16 primary identifiers verified 2026-10-12 and reused; 2 additions checked 2026-10-13. Existence checks do not prove novelty.",
+  "scope": "21 paper identifiers verified: prior 18 plus three direct auxiliary/belief-learning precedents. Existence verification is not result reproduction.",
   "papers": [
     {
       "id": "task_recognition_learning",
@@ -179,6 +179,36 @@
       "reason": null,
       "identifiers": {
         "doi": "10.3389/neuro.12.006.2007"
+      }
+    },
+    {
+      "id": "unreal",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "1611.05397"
+      }
+    },
+    {
+      "id": "varibad",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "1910.08348"
+      }
+    },
+    {
+      "id": "task_inference",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "1905.06424"
       }
     }
   ]

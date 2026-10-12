@@ -16,3 +16,5 @@ python3 -m venv --system-site-packages /tmp/cooking-runtime
 `plan.json` binds the runner bytes and registered split/seeds before execution. `run1` is INVALID due to an up/down adapter error, and its original plan is preserved. `run2` is the valid result. Its observations/rewards are independently replayed, outcomes and hash chain recomputed. The source revision identifies the base checkout; runner and plan hashes identify the added experiment exactly.
 
 The 5 seeds change a symbolic search tie order. Statistical clusters are the 24 unknown mappings; no learned model was trained. All policies solve 100% of goals. Full-history and sufficient-fact memory are deliberately identical policies on this environment. The result supports an information-retention diagnostic, not algorithmic superiority or robot learning.
+
+A subsequent learned-policy pilot is available in [learner_pilot_v1](learner_pilot_v1/README.md). Its nine neural training runs and separate shared-feedback intervention do not change the scope of the original symbolic diagnostic above.

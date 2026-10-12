@@ -289,5 +289,35 @@
     "reading_depth": "Primary journal taxonomy",
     "method_paraphrase": "Intrinsic learning incentives distinguish information and learning-related objectives from external task reward.",
     "research_boundary": "The learning-value/current-reward distinction cannot be claimed as new."
+  },
+  {
+    "key": "unreal",
+    "title": "Reinforcement Learning with Unsupervised Auxiliary Tasks",
+    "year": "2017",
+    "primary_url": "https://arxiv.org/abs/1611.05397",
+    "additional_primary_url": "https://deepmind.google/blog/reinforcement-learning-with-unsupervised-auxiliary-tasks/",
+    "reading_depth": "Primary abstract and authors’ auxiliary-task explanation; not a reproduction.",
+    "method_paraphrase": "Auxiliary objectives improve shared agent representations beyond the task reward objective.",
+    "research_boundary": "Adding an auxiliary head or loss is not novel."
+  },
+  {
+    "key": "varibad",
+    "title": "VariBAD: A Very Good Method for Bayes-Adaptive Deep RL via Meta-Learning",
+    "year": "2020",
+    "primary_url": "https://arxiv.org/abs/1910.08348",
+    "additional_primary_url": "https://github.com/lmzintgraf/varibad",
+    "reading_depth": "Official accepted paper abstract/background and author implementation README.",
+    "method_paraphrase": "Meta-learn approximate task inference and condition decisions on uncertainty; public code also supports supervised task decoding.",
+    "research_boundary": "Learning task beliefs from history is a direct predecessor and required strong comparator."
+  },
+  {
+    "key": "task_inference",
+    "title": "Meta reinforcement learning as task inference",
+    "year": "2019",
+    "primary_url": "https://arxiv.org/abs/1905.06424",
+    "additional_primary_url": "https://arxiv.org/pdf/1905.06424",
+    "reading_depth": "Primary PDF sections 1–2, Figure 1 and auxiliary-head architecture discussion; publication labeled preprint.",
+    "method_paraphrase": "Separates policy and task belief inference; uses auxiliary task supervision and explicitly compares shared auxiliary prediction heads.",
+    "research_boundary": "The learned factual-head probe substantially overlaps prior auxiliary-belief methods; neither an auxiliary head nor belief updating is a first contribution."
   }
 ]

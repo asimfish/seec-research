@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "summary_sha256": "f215e73bd0ef6f94812147064c8519768cc01711ef1826f1b5820bbddeeca2fc",
+  "verifier_sha256": "e54f57b8b2184a1380668e2dd926d6032f366658392005ef7f63b4fc8d66efb9",
+  "source_prefixes": 125,
+  "prefix_steps": 2500,
+  "recomputed_policy_decisions": 185786,
+  "replayed_records": 11250,
+  "raw_observation_max_difference": 0,
+  "all_checkpoint_identities_unchanged": true,
+  "autonomous_prefix_comparisons": 1125,
+  "autonomous_prefixes_identical_to_shared": 1125,
+  "redacted_prefix_unique_count": 1,
+  "checks": [
+    "Same real prefix for all models",
+    "Redaction removes mapping observations, preserves raw log",
+    "Complete unique configurations",
+    "All actions/outcomes/rewards independently replayed",
+    "Summary metrics recomputed",
+    "All checkpoint hashes unchanged",
+    "Full hash chain"
+  ]
+}

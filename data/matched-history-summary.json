@@ -1,0 +1,623 @@
+{
+  "schema": "matched-history-mechanism-summary-v1",
+  "plan_id": "matched-history-606bcdf9e3a93062",
+  "plan_sha256": "606bcdf9e3a930622706f5ec7a54ab5e978dda5349796b4a387171fbcc7f3c50",
+  "evaluations": {
+    "action_only/7/shared_actual_feedback": {
+      "episodes": 625,
+      "successes": 174,
+      "success_rate": 0.2784,
+      "mean_cost_steps": 16.864,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.256,
+          "mean_cost_steps": 17.088
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.28,
+          "mean_cost_steps": 16.848
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.28,
+          "mean_cost_steps": 16.848
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.28,
+          "mean_cost_steps": 16.848
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.296,
+          "mean_cost_steps": 16.688
+        }
+      ]
+    },
+    "action_only/7/shared_inventory_redacted": {
+      "episodes": 625,
+      "successes": 157,
+      "success_rate": 0.2512,
+      "mean_cost_steps": 17.12,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.152
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.152
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.152
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.152
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.264,
+          "mean_cost_steps": 16.992
+        }
+      ]
+    },
+    "current_state_aux/7/shared_actual_feedback": {
+      "episodes": 625,
+      "successes": 216,
+      "success_rate": 0.3456,
+      "mean_cost_steps": 16.3008,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.28,
+          "mean_cost_steps": 16.88
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.312,
+          "mean_cost_steps": 16.576
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.352,
+          "mean_cost_steps": 16.24
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.384,
+          "mean_cost_steps": 15.984
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.4,
+          "mean_cost_steps": 15.824
+        }
+      ]
+    },
+    "current_state_aux/7/shared_inventory_redacted": {
+      "episodes": 625,
+      "successes": 201,
+      "success_rate": 0.3216,
+      "mean_cost_steps": 16.4352,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.288,
+          "mean_cost_steps": 16.736
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.288,
+          "mean_cost_steps": 16.736
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.312,
+          "mean_cost_steps": 16.512
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.344,
+          "mean_cost_steps": 16.24
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.376,
+          "mean_cost_steps": 15.952
+        }
+      ]
+    },
+    "observed_facts_aux/7/shared_actual_feedback": {
+      "episodes": 625,
+      "successes": 362,
+      "success_rate": 0.5792,
+      "mean_cost_steps": 14.3104,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.576,
+          "mean_cost_steps": 14.336
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.576,
+          "mean_cost_steps": 14.336
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.576,
+          "mean_cost_steps": 14.336
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.584,
+          "mean_cost_steps": 14.272
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.584,
+          "mean_cost_steps": 14.272
+        }
+      ]
+    },
+    "observed_facts_aux/7/shared_inventory_redacted": {
+      "episodes": 625,
+      "successes": 184,
+      "success_rate": 0.2944,
+      "mean_cost_steps": 17.2192,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.68
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.296,
+          "mean_cost_steps": 17.184
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.312,
+          "mean_cost_steps": 17.04
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.304,
+          "mean_cost_steps": 17.12
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.312,
+          "mean_cost_steps": 17.072
+        }
+      ]
+    },
+    "action_only/19/shared_actual_feedback": {
+      "episodes": 625,
+      "successes": 155,
+      "success_rate": 0.248,
+      "mean_cost_steps": 17.184,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.184
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.184
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.184
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.184
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.184
+        }
+      ]
+    },
+    "action_only/19/shared_inventory_redacted": {
+      "episodes": 625,
+      "successes": 155,
+      "success_rate": 0.248,
+      "mean_cost_steps": 17.184,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.184
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.184
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.184
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.184
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.184
+        }
+      ]
+    },
+    "current_state_aux/19/shared_actual_feedback": {
+      "episodes": 625,
+      "successes": 228,
+      "success_rate": 0.3648,
+      "mean_cost_steps": 16.16,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.312,
+          "mean_cost_steps": 16.608
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.36,
+          "mean_cost_steps": 16.208
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.384,
+          "mean_cost_steps": 16.0
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.376,
+          "mean_cost_steps": 16.064
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.392,
+          "mean_cost_steps": 15.92
+        }
+      ]
+    },
+    "current_state_aux/19/shared_inventory_redacted": {
+      "episodes": 625,
+      "successes": 212,
+      "success_rate": 0.3392,
+      "mean_cost_steps": 16.2752,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.296,
+          "mean_cost_steps": 16.656
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.328,
+          "mean_cost_steps": 16.4
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.344,
+          "mean_cost_steps": 16.24
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.36,
+          "mean_cost_steps": 16.08
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.368,
+          "mean_cost_steps": 16.0
+        }
+      ]
+    },
+    "observed_facts_aux/19/shared_actual_feedback": {
+      "episodes": 625,
+      "successes": 380,
+      "success_rate": 0.608,
+      "mean_cost_steps": 14.0864,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.584,
+          "mean_cost_steps": 14.304
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.608,
+          "mean_cost_steps": 14.08
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.616,
+          "mean_cost_steps": 14.016
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.616,
+          "mean_cost_steps": 14.016
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.616,
+          "mean_cost_steps": 14.016
+        }
+      ]
+    },
+    "observed_facts_aux/19/shared_inventory_redacted": {
+      "episodes": 625,
+      "successes": 186,
+      "success_rate": 0.2976,
+      "mean_cost_steps": 17.0432,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.272,
+          "mean_cost_steps": 17.296
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.288,
+          "mean_cost_steps": 17.136
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.304,
+          "mean_cost_steps": 16.976
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.304,
+          "mean_cost_steps": 16.976
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.32,
+          "mean_cost_steps": 16.832
+        }
+      ]
+    },
+    "action_only/41/shared_actual_feedback": {
+      "episodes": 625,
+      "successes": 125,
+      "success_rate": 0.2,
+      "mean_cost_steps": 17.808,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.2,
+          "mean_cost_steps": 17.808
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.2,
+          "mean_cost_steps": 17.808
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.2,
+          "mean_cost_steps": 17.808
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.2,
+          "mean_cost_steps": 17.808
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.2,
+          "mean_cost_steps": 17.808
+        }
+      ]
+    },
+    "action_only/41/shared_inventory_redacted": {
+      "episodes": 625,
+      "successes": 194,
+      "success_rate": 0.3104,
+      "mean_cost_steps": 17.3088,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.216,
+          "mean_cost_steps": 18.24
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.312,
+          "mean_cost_steps": 17.296
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.336,
+          "mean_cost_steps": 17.056
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.344,
+          "mean_cost_steps": 16.976
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.344,
+          "mean_cost_steps": 16.976
+        }
+      ]
+    },
+    "current_state_aux/41/shared_actual_feedback": {
+      "episodes": 625,
+      "successes": 199,
+      "success_rate": 0.3184,
+      "mean_cost_steps": 17.1936,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.248,
+          "mean_cost_steps": 17.824
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.312,
+          "mean_cost_steps": 17.264
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.312,
+          "mean_cost_steps": 17.264
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.352,
+          "mean_cost_steps": 16.896
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.368,
+          "mean_cost_steps": 16.72
+        }
+      ]
+    },
+    "current_state_aux/41/shared_inventory_redacted": {
+      "episodes": 625,
+      "successes": 204,
+      "success_rate": 0.3264,
+      "mean_cost_steps": 17.104,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.264,
+          "mean_cost_steps": 17.664
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.32,
+          "mean_cost_steps": 17.168
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.32,
+          "mean_cost_steps": 17.168
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.36,
+          "mean_cost_steps": 16.8
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.368,
+          "mean_cost_steps": 16.72
+        }
+      ]
+    },
+    "observed_facts_aux/41/shared_actual_feedback": {
+      "episodes": 625,
+      "successes": 323,
+      "success_rate": 0.5168,
+      "mean_cost_steps": 14.8448,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.488,
+          "mean_cost_steps": 15.12
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.512,
+          "mean_cost_steps": 14.88
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.528,
+          "mean_cost_steps": 14.752
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.528,
+          "mean_cost_steps": 14.736
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.528,
+          "mean_cost_steps": 14.736
+        }
+      ]
+    },
+    "observed_facts_aux/41/shared_inventory_redacted": {
+      "episodes": 625,
+      "successes": 189,
+      "success_rate": 0.3024,
+      "mean_cost_steps": 16.816,
+      "by_trial": [
+        {
+          "trial": 1,
+          "success_rate": 0.296,
+          "mean_cost_steps": 16.88
+        },
+        {
+          "trial": 2,
+          "success_rate": 0.304,
+          "mean_cost_steps": 16.8
+        },
+        {
+          "trial": 3,
+          "success_rate": 0.304,
+          "mean_cost_steps": 16.8
+        },
+        {
+          "trial": 4,
+          "success_rate": 0.304,
+          "mean_cost_steps": 16.8
+        },
+        {
+          "trial": 5,
+          "success_rate": 0.304,
+          "mean_cost_steps": 16.8
+        }
+      ]
+    }
+  },
+  "coverage": {
+    "planned_records": 11250,
+    "completed_records": 11250,
+    "missing": 0,
+    "aborted": 0
+  },
+  "checkpoint_changes": 0,
+  "optimizer_updates": 0,
+  "chain_head": "a7169627dd62669c5f8934894a0e6423738ec477bd0ca2486643bd1c9fb906a4",
+  "cost": {
+    "prefix_collection_actions": 2500,
+    "prefix_collection_resets": 125,
+    "execution_actions": 185786,
+    "execution_resets": 11250
+  },
+  "redacted_prefix_unique_count": 1,
+  "artifacts": {
+    "prefixes.jsonl": "0705e6b528a43a4caa41a44548bc926c1394921bccacbd1e2fa156677e25b376",
+    "evaluation.jsonl": "86b14c9aacdab710f24674a9fa142b5df1f33963797ec6e1e4512710f1e53fa2",
+    "plan.json": "cb8670bead5321706daadb3f627d031f3c7595cc36270a3ad7b29b3852a4ed6c"
+  },
+  "scope": "Post-pilot shared-prefix/redaction mechanism diagnostic. External prefix; not teacher-free primary result."
+}

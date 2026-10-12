@@ -1,0 +1,30 @@
+{
+  "status": "INVALID_INPUT_BOUNDARY",
+  "source_steps": 79904,
+  "updates_logged_lower_bound": 2700,
+  "updates_upper_bound": 2799,
+  "logged_groups": [
+    {
+      "arm": "action_only",
+      "seed": 7,
+      "last_logged_update": 800
+    },
+    {
+      "arm": "current_state_aux",
+      "seed": 7,
+      "last_logged_update": 800
+    },
+    {
+      "arm": "observed_facts_aux",
+      "seed": 7,
+      "last_logged_update": 800
+    },
+    {
+      "arm": "action_only",
+      "seed": 19,
+      "last_logged_update": 300
+    }
+  ],
+  "evaluation_artifact_exists": false,
+  "excluded_from_scientific_results": true
+}
