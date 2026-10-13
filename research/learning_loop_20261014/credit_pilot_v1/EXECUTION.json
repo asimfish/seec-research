@@ -1,0 +1,18 @@
+{
+  "status": "REGISTERED_BEFORE_COLLECTION",
+  "plan_id": "cooking-credit-5d8bf5ccf37f8781",
+  "plan_file_sha256": "f095d7833d751b980a794bc1048886ed83fcf05d4267778acc4bd3060811c19f",
+  "semantic_sha256": "5d8bf5ccf37f878104b82f81f8800b7cbe82097dddc65e15592ff108a7efa7ea",
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "torch": "2.13.0+cu130",
+  "gym": "0.23.1",
+  "device": "CPU",
+  "cpu_threads": 2,
+  "source_base_revision": "83909dd7dacbd148c3c1b0d2cb734d3b010d5c46",
+  "source_identity": "Registered script SHA-256 and run snapshots, not an assertion that uncommitted scripts belong to the base commit",
+  "test_evidence": "10 new targeted tests and 20 prior tests passed; Ruff and compilation passed",
+  "main_updates": 11136,
+  "max_source_actions": 217800,
+  "max_evaluation_actions": 402480
+}

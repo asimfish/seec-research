@@ -1,0 +1,57 @@
+{
+  "schema": "experience-credit-metric-diagnostic-v1",
+  "status": "POST_HOC_EXACT_DECOMPOSITION_NOT_A_NEW_PASS_GATE",
+  "registered_credit_supported": false,
+  "identity": "delta_adaptation = delta_later_success - delta_first_success",
+  "by_seed": [
+    {
+      "seed": 101,
+      "candidate": "batch-02",
+      "first_before": 0.8333333333333334,
+      "first_after": 0.7291666666666666,
+      "first_change": -0.10416666666666674,
+      "later_success_change": 0.03472222222222221,
+      "adaptation_metric_change": 0.13888888888888895,
+      "total_performance_change": 0.0,
+      "registered_long_guard": false,
+      "short_feedback_first_change": 0.0625,
+      "short_audit_first_change": -0.16666666666666674
+    },
+    {
+      "seed": 103,
+      "candidate": "batch-01",
+      "first_before": 0.8541666666666666,
+      "first_after": 0.7291666666666666,
+      "first_change": -0.125,
+      "later_success_change": 0.04166666666666663,
+      "adaptation_metric_change": 0.16666666666666663,
+      "total_performance_change": 0.0,
+      "registered_long_guard": false,
+      "short_feedback_first_change": 0.0,
+      "short_audit_first_change": -0.08333333333333326
+    },
+    {
+      "seed": 107,
+      "candidate": "batch-01",
+      "first_before": 0.8958333333333334,
+      "first_after": 0.7291666666666666,
+      "first_change": -0.16666666666666674,
+      "later_success_change": -0.04166666666666663,
+      "adaptation_metric_change": 0.1250000000000001,
+      "total_performance_change": -0.07291666666666663,
+      "registered_long_guard": false,
+      "short_feedback_first_change": 0.0,
+      "short_audit_first_change": -0.16666666666666674
+    }
+  ],
+  "means": {
+    "first_before": 0.8611111111111112,
+    "first_after": 0.7291666666666666,
+    "first_change": -0.1319444444444445,
+    "later_success_change": 0.01157407407407407,
+    "adaptation_metric_change": 0.14351851851851857,
+    "total_performance_change": -0.024305555555555542
+  },
+  "scope": "Three developmental Cooking seeds; first attempt itself allows interaction; no zero-interaction or recursive learning claim",
+  "interpretation": "Predicting a baseline-subtracted adaptation proxy does not establish useful learning improvement. First-attempt degradation contributes to this proxy; do not retune the registered gate on this panel."
+}

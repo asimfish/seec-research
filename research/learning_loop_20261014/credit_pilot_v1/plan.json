@@ -1,0 +1,1755 @@
+{
+  "schema": "experience-credit-ranking-plan-v1",
+  "registered_at_utc": "2026-10-13T18:09:24.471920+00:00",
+  "scope": "Cooking training-side diagnostic; no sealed test, full method reproduction, robot or recursive efficacy claim",
+  "upstream_revision": "d52204c94067641df6e6649b19abb359b87ff028",
+  "code_hashes": {
+    "run_credit.py": "3355602d73484223bc46d051a0b2c5bcaa76083dcc470e41b2e9303eec6df1b3",
+    "register_credit.py": "fcf2b6b5b9f9e25d670f0e55143f3b20b899ed12e47943c9f9b7dfcf0798ac58",
+    "verify_credit.py": "47511ed6f762591791856b64208c4a35157141de8be647368a6c32cec6390f24",
+    "analyze_credit.py": "979b49d1ba9f80f49216dfad199a8207884a9b344026092396827d998dec8930",
+    "test_credit.py": "407719e8bb48947316c355c7f67a1cf34e5e5196e0de511dfbd55779eb11ae07",
+    "PROTOCOL.md": "a2e81b6610efef90b66f5911848005bccd554c1442e55e8e587d45c19fcdf2d3",
+    "../../interactive_learning_20261013/student_coverage_v1/run_coverage.py": "68f49ded70d4853ea5107a05a1418790c2354ad47f2f826c71fe33aa0f64d82f",
+    "../../interactive_learning_20261013/learner_pilot_v1/run_learning_pilot.py": "40227855a0dd8efe095fe8012a154698d01dd52e962b6f1d827492a06370162d",
+    "../../interactive_learning_20261013/run_cooking_diagnostic.py": "9a1703ab0d076c7f2b9b23e02d0d21b45407d8b4e98d588c443fbf03b8134aaa"
+  },
+  "source_ids": [
+    21,
+    11,
+    63,
+    36,
+    43,
+    38,
+    28,
+    2,
+    57,
+    25,
+    14,
+    35,
+    26,
+    5,
+    4,
+    59,
+    3,
+    12,
+    48,
+    49,
+    9,
+    29,
+    51,
+    53,
+    31,
+    33,
+    58,
+    44,
+    45,
+    10,
+    47,
+    46
+  ],
+  "feedback_ids": [
+    7,
+    54,
+    41,
+    17,
+    30,
+    52,
+    19,
+    18
+  ],
+  "audit_ids": [
+    27,
+    40,
+    61,
+    60,
+    20,
+    32,
+    22,
+    1,
+    16,
+    55,
+    34,
+    24,
+    0,
+    23,
+    42,
+    8,
+    39,
+    15,
+    13,
+    56,
+    50,
+    37,
+    6,
+    62
+  ],
+  "feedback_cases": 16,
+  "audit_cases": 46,
+  "candidate_specs": [
+    {
+      "id": "batch-00",
+      "recipe": "one-repeat",
+      "task_pool_size": 2,
+      "sampling": "With replacement; identical copies are weights, not independent data",
+      "tasks": [
+        {
+          "environment_id": 21,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-21-11"
+        },
+        {
+          "environment_id": 63,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-63-33"
+        },
+        {
+          "environment_id": 63,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-63-33"
+        },
+        {
+          "environment_id": 21,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-21-11"
+        },
+        {
+          "environment_id": 21,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-21-11"
+        },
+        {
+          "environment_id": 21,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-21-11"
+        },
+        {
+          "environment_id": 63,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-63-33"
+        },
+        {
+          "environment_id": 21,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-21-11"
+        },
+        {
+          "environment_id": 21,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-21-11"
+        },
+        {
+          "environment_id": 21,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-21-11"
+        },
+        {
+          "environment_id": 63,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-63-33"
+        },
+        {
+          "environment_id": 63,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-63-33"
+        },
+        {
+          "environment_id": 63,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-63-33"
+        },
+        {
+          "environment_id": 21,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-21-11"
+        },
+        {
+          "environment_id": 63,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-63-33"
+        },
+        {
+          "environment_id": 21,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-21-11"
+        },
+        {
+          "environment_id": 63,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-63-33"
+        },
+        {
+          "environment_id": 21,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-21-11"
+        },
+        {
+          "environment_id": 63,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-63-33"
+        },
+        {
+          "environment_id": 63,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-63-33"
+        },
+        {
+          "environment_id": 21,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-21-11"
+        },
+        {
+          "environment_id": 21,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-21-11"
+        },
+        {
+          "environment_id": 63,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-63-33"
+        },
+        {
+          "environment_id": 63,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-63-33"
+        }
+      ]
+    },
+    {
+      "id": "batch-01",
+      "recipe": "two-repeat",
+      "task_pool_size": 38,
+      "sampling": "With replacement; identical copies are weights, not independent data",
+      "tasks": [
+        {
+          "environment_id": 5,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-05-11"
+        },
+        {
+          "environment_id": 38,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-38-22"
+        },
+        {
+          "environment_id": 58,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-58-22"
+        },
+        {
+          "environment_id": 10,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-10-22"
+        },
+        {
+          "environment_id": 53,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-53-11"
+        },
+        {
+          "environment_id": 25,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-25-11"
+        },
+        {
+          "environment_id": 29,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-29-33"
+        },
+        {
+          "environment_id": 53,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-53-11"
+        },
+        {
+          "environment_id": 48,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-48-33"
+        },
+        {
+          "environment_id": 29,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-29-33"
+        },
+        {
+          "environment_id": 2,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-02-22"
+        },
+        {
+          "environment_id": 38,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-38-22"
+        },
+        {
+          "environment_id": 4,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-04-00"
+        },
+        {
+          "environment_id": 12,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-12-00"
+        },
+        {
+          "environment_id": 31,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-31-11"
+        },
+        {
+          "environment_id": 51,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-51-33"
+        },
+        {
+          "environment_id": 31,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-31-33"
+        },
+        {
+          "environment_id": 26,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-26-22"
+        },
+        {
+          "environment_id": 12,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-12-00"
+        },
+        {
+          "environment_id": 26,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-26-22"
+        },
+        {
+          "environment_id": 26,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-26-22"
+        },
+        {
+          "environment_id": 3,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-03-33"
+        },
+        {
+          "environment_id": 59,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-59-22"
+        },
+        {
+          "environment_id": 3,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-03-00"
+        }
+      ]
+    },
+    {
+      "id": "batch-02",
+      "recipe": "two-mixed",
+      "task_pool_size": 38,
+      "sampling": "With replacement; identical copies are weights, not independent data",
+      "tasks": [
+        {
+          "environment_id": 4,
+          "goal": [
+            1,
+            0
+          ],
+          "task_id": "cooking-04-10"
+        },
+        {
+          "environment_id": 10,
+          "goal": [
+            0,
+            2
+          ],
+          "task_id": "cooking-10-02"
+        },
+        {
+          "environment_id": 5,
+          "goal": [
+            0,
+            1
+          ],
+          "task_id": "cooking-05-01"
+        },
+        {
+          "environment_id": 59,
+          "goal": [
+            2,
+            3
+          ],
+          "task_id": "cooking-59-23"
+        },
+        {
+          "environment_id": 38,
+          "goal": [
+            2,
+            1
+          ],
+          "task_id": "cooking-38-21"
+        },
+        {
+          "environment_id": 2,
+          "goal": [
+            0,
+            2
+          ],
+          "task_id": "cooking-02-02"
+        },
+        {
+          "environment_id": 51,
+          "goal": [
+            3,
+            0
+          ],
+          "task_id": "cooking-51-30"
+        },
+        {
+          "environment_id": 38,
+          "goal": [
+            2,
+            1
+          ],
+          "task_id": "cooking-38-21"
+        },
+        {
+          "environment_id": 29,
+          "goal": [
+            3,
+            1
+          ],
+          "task_id": "cooking-29-31"
+        },
+        {
+          "environment_id": 51,
+          "goal": [
+            3,
+            0
+          ],
+          "task_id": "cooking-51-30"
+        },
+        {
+          "environment_id": 5,
+          "goal": [
+            1,
+            0
+          ],
+          "task_id": "cooking-05-10"
+        },
+        {
+          "environment_id": 31,
+          "goal": [
+            1,
+            3
+          ],
+          "task_id": "cooking-31-13"
+        },
+        {
+          "environment_id": 46,
+          "goal": [
+            2,
+            3
+          ],
+          "task_id": "cooking-46-23"
+        },
+        {
+          "environment_id": 2,
+          "goal": [
+            0,
+            2
+          ],
+          "task_id": "cooking-02-02"
+        },
+        {
+          "environment_id": 59,
+          "goal": [
+            2,
+            3
+          ],
+          "task_id": "cooking-59-23"
+        },
+        {
+          "environment_id": 46,
+          "goal": [
+            3,
+            2
+          ],
+          "task_id": "cooking-46-32"
+        },
+        {
+          "environment_id": 3,
+          "goal": [
+            3,
+            0
+          ],
+          "task_id": "cooking-03-30"
+        },
+        {
+          "environment_id": 5,
+          "goal": [
+            1,
+            0
+          ],
+          "task_id": "cooking-05-10"
+        },
+        {
+          "environment_id": 48,
+          "goal": [
+            3,
+            0
+          ],
+          "task_id": "cooking-48-30"
+        },
+        {
+          "environment_id": 25,
+          "goal": [
+            1,
+            2
+          ],
+          "task_id": "cooking-25-12"
+        },
+        {
+          "environment_id": 31,
+          "goal": [
+            1,
+            3
+          ],
+          "task_id": "cooking-31-13"
+        },
+        {
+          "environment_id": 43,
+          "goal": [
+            3,
+            2
+          ],
+          "task_id": "cooking-43-32"
+        },
+        {
+          "environment_id": 43,
+          "goal": [
+            2,
+            3
+          ],
+          "task_id": "cooking-43-23"
+        },
+        {
+          "environment_id": 26,
+          "goal": [
+            2,
+            1
+          ],
+          "task_id": "cooking-26-21"
+        }
+      ]
+    },
+    {
+      "id": "batch-03",
+      "recipe": "three-repeat",
+      "task_pool_size": 33,
+      "sampling": "With replacement; identical copies are weights, not independent data",
+      "tasks": [
+        {
+          "environment_id": 14,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-14-33"
+        },
+        {
+          "environment_id": 36,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-36-00"
+        },
+        {
+          "environment_id": 49,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-49-00"
+        },
+        {
+          "environment_id": 14,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-14-22"
+        },
+        {
+          "environment_id": 44,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-44-22"
+        },
+        {
+          "environment_id": 28,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-28-33"
+        },
+        {
+          "environment_id": 44,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-44-33"
+        },
+        {
+          "environment_id": 35,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-35-33"
+        },
+        {
+          "environment_id": 49,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-49-33"
+        },
+        {
+          "environment_id": 11,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-11-22"
+        },
+        {
+          "environment_id": 11,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-11-00"
+        },
+        {
+          "environment_id": 28,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-28-00"
+        },
+        {
+          "environment_id": 14,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-14-22"
+        },
+        {
+          "environment_id": 49,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-49-33"
+        },
+        {
+          "environment_id": 33,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-33-22"
+        },
+        {
+          "environment_id": 45,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-45-22"
+        },
+        {
+          "environment_id": 33,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-33-00"
+        },
+        {
+          "environment_id": 49,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-49-00"
+        },
+        {
+          "environment_id": 49,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-49-33"
+        },
+        {
+          "environment_id": 9,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-09-11"
+        },
+        {
+          "environment_id": 57,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-57-22"
+        },
+        {
+          "environment_id": 28,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-28-00"
+        },
+        {
+          "environment_id": 44,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-44-00"
+        },
+        {
+          "environment_id": 33,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-33-11"
+        }
+      ]
+    },
+    {
+      "id": "batch-04",
+      "recipe": "three-mixed",
+      "task_pool_size": 66,
+      "sampling": "With replacement; identical copies are weights, not independent data",
+      "tasks": [
+        {
+          "environment_id": 35,
+          "goal": [
+            2,
+            0
+          ],
+          "task_id": "cooking-35-20"
+        },
+        {
+          "environment_id": 44,
+          "goal": [
+            0,
+            2
+          ],
+          "task_id": "cooking-44-02"
+        },
+        {
+          "environment_id": 14,
+          "goal": [
+            3,
+            2
+          ],
+          "task_id": "cooking-14-32"
+        },
+        {
+          "environment_id": 28,
+          "goal": [
+            1,
+            3
+          ],
+          "task_id": "cooking-28-13"
+        },
+        {
+          "environment_id": 36,
+          "goal": [
+            1,
+            0
+          ],
+          "task_id": "cooking-36-10"
+        },
+        {
+          "environment_id": 9,
+          "goal": [
+            0,
+            2
+          ],
+          "task_id": "cooking-09-02"
+        },
+        {
+          "environment_id": 49,
+          "goal": [
+            1,
+            3
+          ],
+          "task_id": "cooking-49-13"
+        },
+        {
+          "environment_id": 36,
+          "goal": [
+            2,
+            0
+          ],
+          "task_id": "cooking-36-20"
+        },
+        {
+          "environment_id": 45,
+          "goal": [
+            2,
+            1
+          ],
+          "task_id": "cooking-45-21"
+        },
+        {
+          "environment_id": 33,
+          "goal": [
+            0,
+            2
+          ],
+          "task_id": "cooking-33-02"
+        },
+        {
+          "environment_id": 11,
+          "goal": [
+            0,
+            2
+          ],
+          "task_id": "cooking-11-02"
+        },
+        {
+          "environment_id": 57,
+          "goal": [
+            2,
+            3
+          ],
+          "task_id": "cooking-57-23"
+        },
+        {
+          "environment_id": 36,
+          "goal": [
+            2,
+            0
+          ],
+          "task_id": "cooking-36-20"
+        },
+        {
+          "environment_id": 9,
+          "goal": [
+            0,
+            2
+          ],
+          "task_id": "cooking-09-02"
+        },
+        {
+          "environment_id": 14,
+          "goal": [
+            2,
+            0
+          ],
+          "task_id": "cooking-14-20"
+        },
+        {
+          "environment_id": 11,
+          "goal": [
+            0,
+            3
+          ],
+          "task_id": "cooking-11-03"
+        },
+        {
+          "environment_id": 33,
+          "goal": [
+            0,
+            1
+          ],
+          "task_id": "cooking-33-01"
+        },
+        {
+          "environment_id": 28,
+          "goal": [
+            0,
+            3
+          ],
+          "task_id": "cooking-28-03"
+        },
+        {
+          "environment_id": 49,
+          "goal": [
+            1,
+            3
+          ],
+          "task_id": "cooking-49-13"
+        },
+        {
+          "environment_id": 35,
+          "goal": [
+            0,
+            3
+          ],
+          "task_id": "cooking-35-03"
+        },
+        {
+          "environment_id": 14,
+          "goal": [
+            0,
+            3
+          ],
+          "task_id": "cooking-14-03"
+        },
+        {
+          "environment_id": 45,
+          "goal": [
+            2,
+            3
+          ],
+          "task_id": "cooking-45-23"
+        },
+        {
+          "environment_id": 14,
+          "goal": [
+            2,
+            0
+          ],
+          "task_id": "cooking-14-20"
+        },
+        {
+          "environment_id": 33,
+          "goal": [
+            1,
+            0
+          ],
+          "task_id": "cooking-33-10"
+        }
+      ]
+    },
+    {
+      "id": "batch-05",
+      "recipe": "all-repeat",
+      "task_pool_size": 73,
+      "sampling": "With replacement; identical copies are weights, not independent data",
+      "tasks": [
+        {
+          "environment_id": 48,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-48-33"
+        },
+        {
+          "environment_id": 35,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-35-00"
+        },
+        {
+          "environment_id": 5,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-05-11"
+        },
+        {
+          "environment_id": 2,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-02-22"
+        },
+        {
+          "environment_id": 11,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-11-33"
+        },
+        {
+          "environment_id": 49,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-49-00"
+        },
+        {
+          "environment_id": 5,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-05-11"
+        },
+        {
+          "environment_id": 46,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-46-33"
+        },
+        {
+          "environment_id": 10,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-10-22"
+        },
+        {
+          "environment_id": 25,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-25-22"
+        },
+        {
+          "environment_id": 28,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-28-33"
+        },
+        {
+          "environment_id": 29,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-29-11"
+        },
+        {
+          "environment_id": 36,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-36-22"
+        },
+        {
+          "environment_id": 26,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-26-22"
+        },
+        {
+          "environment_id": 38,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-38-22"
+        },
+        {
+          "environment_id": 25,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-25-22"
+        },
+        {
+          "environment_id": 58,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-58-22"
+        },
+        {
+          "environment_id": 48,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-48-33"
+        },
+        {
+          "environment_id": 35,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-35-00"
+        },
+        {
+          "environment_id": 4,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-04-11"
+        },
+        {
+          "environment_id": 58,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-58-22"
+        },
+        {
+          "environment_id": 9,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-09-11"
+        },
+        {
+          "environment_id": 58,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-58-22"
+        },
+        {
+          "environment_id": 45,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-45-33"
+        }
+      ]
+    },
+    {
+      "id": "batch-06",
+      "recipe": "all-mixed",
+      "task_pool_size": 104,
+      "sampling": "With replacement; identical copies are weights, not independent data",
+      "tasks": [
+        {
+          "environment_id": 49,
+          "goal": [
+            3,
+            1
+          ],
+          "task_id": "cooking-49-31"
+        },
+        {
+          "environment_id": 28,
+          "goal": [
+            1,
+            3
+          ],
+          "task_id": "cooking-28-13"
+        },
+        {
+          "environment_id": 44,
+          "goal": [
+            2,
+            3
+          ],
+          "task_id": "cooking-44-23"
+        },
+        {
+          "environment_id": 49,
+          "goal": [
+            3,
+            0
+          ],
+          "task_id": "cooking-49-30"
+        },
+        {
+          "environment_id": 35,
+          "goal": [
+            3,
+            0
+          ],
+          "task_id": "cooking-35-30"
+        },
+        {
+          "environment_id": 28,
+          "goal": [
+            0,
+            1
+          ],
+          "task_id": "cooking-28-01"
+        },
+        {
+          "environment_id": 25,
+          "goal": [
+            1,
+            2
+          ],
+          "task_id": "cooking-25-12"
+        },
+        {
+          "environment_id": 48,
+          "goal": [
+            3,
+            0
+          ],
+          "task_id": "cooking-48-30"
+        },
+        {
+          "environment_id": 44,
+          "goal": [
+            3,
+            2
+          ],
+          "task_id": "cooking-44-32"
+        },
+        {
+          "environment_id": 36,
+          "goal": [
+            1,
+            0
+          ],
+          "task_id": "cooking-36-10"
+        },
+        {
+          "environment_id": 45,
+          "goal": [
+            2,
+            3
+          ],
+          "task_id": "cooking-45-23"
+        },
+        {
+          "environment_id": 9,
+          "goal": [
+            0,
+            1
+          ],
+          "task_id": "cooking-09-01"
+        },
+        {
+          "environment_id": 11,
+          "goal": [
+            2,
+            0
+          ],
+          "task_id": "cooking-11-20"
+        },
+        {
+          "environment_id": 9,
+          "goal": [
+            0,
+            1
+          ],
+          "task_id": "cooking-09-01"
+        },
+        {
+          "environment_id": 11,
+          "goal": [
+            2,
+            0
+          ],
+          "task_id": "cooking-11-20"
+        },
+        {
+          "environment_id": 44,
+          "goal": [
+            2,
+            0
+          ],
+          "task_id": "cooking-44-20"
+        },
+        {
+          "environment_id": 49,
+          "goal": [
+            1,
+            3
+          ],
+          "task_id": "cooking-49-13"
+        },
+        {
+          "environment_id": 57,
+          "goal": [
+            1,
+            3
+          ],
+          "task_id": "cooking-57-13"
+        },
+        {
+          "environment_id": 49,
+          "goal": [
+            1,
+            0
+          ],
+          "task_id": "cooking-49-10"
+        },
+        {
+          "environment_id": 44,
+          "goal": [
+            3,
+            2
+          ],
+          "task_id": "cooking-44-32"
+        },
+        {
+          "environment_id": 12,
+          "goal": [
+            3,
+            0
+          ],
+          "task_id": "cooking-12-30"
+        },
+        {
+          "environment_id": 31,
+          "goal": [
+            3,
+            1
+          ],
+          "task_id": "cooking-31-31"
+        },
+        {
+          "environment_id": 14,
+          "goal": [
+            3,
+            2
+          ],
+          "task_id": "cooking-14-32"
+        },
+        {
+          "environment_id": 29,
+          "goal": [
+            1,
+            3
+          ],
+          "task_id": "cooking-29-13"
+        }
+      ]
+    },
+    {
+      "id": "batch-07",
+      "recipe": "all-goals",
+      "task_pool_size": 177,
+      "sampling": "With replacement; identical copies are weights, not independent data",
+      "tasks": [
+        {
+          "environment_id": 28,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-28-33"
+        },
+        {
+          "environment_id": 44,
+          "goal": [
+            0,
+            3
+          ],
+          "task_id": "cooking-44-03"
+        },
+        {
+          "environment_id": 26,
+          "goal": [
+            2,
+            1
+          ],
+          "task_id": "cooking-26-21"
+        },
+        {
+          "environment_id": 11,
+          "goal": [
+            3,
+            2
+          ],
+          "task_id": "cooking-11-32"
+        },
+        {
+          "environment_id": 21,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-21-11"
+        },
+        {
+          "environment_id": 35,
+          "goal": [
+            0,
+            2
+          ],
+          "task_id": "cooking-35-02"
+        },
+        {
+          "environment_id": 57,
+          "goal": [
+            2,
+            3
+          ],
+          "task_id": "cooking-57-23"
+        },
+        {
+          "environment_id": 9,
+          "goal": [
+            2,
+            0
+          ],
+          "task_id": "cooking-09-20"
+        },
+        {
+          "environment_id": 12,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-12-00"
+        },
+        {
+          "environment_id": 28,
+          "goal": [
+            0,
+            0
+          ],
+          "task_id": "cooking-28-00"
+        },
+        {
+          "environment_id": 57,
+          "goal": [
+            3,
+            2
+          ],
+          "task_id": "cooking-57-32"
+        },
+        {
+          "environment_id": 35,
+          "goal": [
+            2,
+            3
+          ],
+          "task_id": "cooking-35-23"
+        },
+        {
+          "environment_id": 36,
+          "goal": [
+            1,
+            2
+          ],
+          "task_id": "cooking-36-12"
+        },
+        {
+          "environment_id": 49,
+          "goal": [
+            0,
+            3
+          ],
+          "task_id": "cooking-49-03"
+        },
+        {
+          "environment_id": 14,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-14-33"
+        },
+        {
+          "environment_id": 25,
+          "goal": [
+            2,
+            1
+          ],
+          "task_id": "cooking-25-21"
+        },
+        {
+          "environment_id": 38,
+          "goal": [
+            1,
+            1
+          ],
+          "task_id": "cooking-38-11"
+        },
+        {
+          "environment_id": 51,
+          "goal": [
+            3,
+            0
+          ],
+          "task_id": "cooking-51-30"
+        },
+        {
+          "environment_id": 3,
+          "goal": [
+            0,
+            3
+          ],
+          "task_id": "cooking-03-03"
+        },
+        {
+          "environment_id": 9,
+          "goal": [
+            1,
+            2
+          ],
+          "task_id": "cooking-09-12"
+        },
+        {
+          "environment_id": 53,
+          "goal": [
+            3,
+            3
+          ],
+          "task_id": "cooking-53-33"
+        },
+        {
+          "environment_id": 43,
+          "goal": [
+            3,
+            2
+          ],
+          "task_id": "cooking-43-32"
+        },
+        {
+          "environment_id": 58,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-58-22"
+        },
+        {
+          "environment_id": 46,
+          "goal": [
+            2,
+            2
+          ],
+          "task_id": "cooking-46-22"
+        }
+      ]
+    }
+  ],
+  "training_seeds": [
+    101,
+    103,
+    107
+  ],
+  "initial_probe_budgets": [
+    0,
+    8,
+    20
+  ],
+  "initial_updates": 800,
+  "short_updates": 64,
+  "long_updates": 300,
+  "batch_sequences": 24,
+  "branch_mixture": "12 base histories + 12 candidate histories per update",
+  "hidden_size": 96,
+  "learning_rate": 0.003,
+  "gradient_clip": 1.0,
+  "cpu_threads": 2,
+  "base_sequences": 1062,
+  "candidate_sequences_per_seed": 192,
+  "evaluation_histories": 3354,
+  "evaluation_episodes": 20124,
+  "total_updates": 11136,
+  "max_source_actions": 217800,
+  "max_evaluation_actions": 402480,
+  "max_wall_seconds": 5400,
+  "adaptation_budgets": [
+    0,
+    1,
+    3,
+    5
+  ],
+  "evaluation": "Six own-policy task attempts; no initial probe, teacher, hidden rule or weight updates",
+  "metrics": "Macro average over rule identity, then goals; q_total mean of R0,R1,R3,R5; q_adapt mean R1,R3,R5 minus R0",
+  "scores": [
+    "source_success",
+    "source_progress",
+    "feedback_cold_gain",
+    "feedback_total_gain",
+    "meta_final_gain",
+    "adaptation_gain"
+  ],
+  "selection": "All scores use the same short-branch competence-eligible set; ties use lexical batch ID; uniform is the mean over this set",
+  "competence_guard": 0.05,
+  "primary_decision": {
+    "adaptation_mean_spearman_min": 0.3,
+    "rank_margin_over_best_other": 0.1,
+    "selected_gain_over_uniform_min": 0.02,
+    "selected_gain_over_best_other_min": 0.02,
+    "adaptation_spearman_positive_all_seeds": true
+  },
+  "statistical_unit": "Three independent training seeds; descriptive development panel, no confirmatory p-values",
+  "limits": [
+    "Same finite rule family and split previously used by other pilots; fresh model seeds do not make a new confirmatory benchmark",
+    "No candidate changes model, teacher label boundary, loss or collector policy",
+    "Sequence/update counts match; valid target counts and action costs differ and are reported",
+    "Fixed candidate bank; this pilot does not run an evolving producer or compare full SOAR/Meta-Teaching implementations",
+    "Short and long branches independently restart the same weights AND Adam state; long branch is not a continuation of short",
+    "All audit cases are training-side analysis only and never influence model/credit/checkpoint selection during this run"
+  ],
+  "stop": "Fixed 51 models and 11136 updates; no score, budget, threshold, data or hyperparameter revision after registered run; infra failures get explicit invalid-run evidence",
+  "semantic_sha256": "5d8bf5ccf37f878104b82f81f8800b7cbe82097dddc65e15592ff108a7efa7ea",
+  "plan_id": "cooking-credit-5d8bf5ccf37f8781"
+}

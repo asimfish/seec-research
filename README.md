@@ -8,6 +8,8 @@ Nine recurrent BC models (three optimizer seeds) are now trained and independent
 
 **Research design update (2026-10-14):** 43 representative literature entries and a 14-row feature matrix locate the proposed loop among CARML, Meta-Teaching, cooperative TSCL, SOAR and feedback learning. The next candidate credits experience by post-training frozen-weight adaptation on new rules; it has NOT RUN. The page links the mechanism, public benchmarks and claim-driven experiments. Earlier numerical evidence and negative results remain unchanged.
 
+**Executed credit diagnostic (2026-10-14):** 51 models and 11,136 updates compare six fixed candidate scores. Adaptation-credit ranking reaches mean Spearman 0.537, but all three selected learners fail competence retention. First-attempt success falls from 86.11% to 72.92%, later success rises only 1.16 percentage points, and total performance falls 2.43 points. The registered gate FAIL is retained beside independent replay PASS, complete cost, exact code, plans and figures. The earlier design paragraph above records its pre-execution state. No successful recursive learner or new robot result is claimed.
+
 **Student-Executable Experience Consolidation** studies which teacher
 demonstrations can become executable supervision at the student's information
 boundary. This repository is the public presentation package, separate from

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "plan_id": "cooking-credit-5d8bf5ccf37f8781",
+  "summary_sha256": "2f3d32d2482d3a60a100aa99cc67b72253a37c2e7e860bd441a068a01836fbe4",
+  "source_histories": 1638,
+  "evaluation_histories": 3354,
+  "source_actions": 123807,
+  "evaluation_actions": 241313,
+  "source_policy_actions": 41302,
+  "evaluation_policy_actions": 241313,
+  "source_resets": 10536,
+  "evaluation_resets": 20124,
+  "raw_observation_max_difference": 0,
+  "checkpoints_bound": 51,
+  "fixed_short_branch_training_repeat": "EXACT",
+  "extra_verification_updates": 64,
+  "extra_verification_actions": 365120,
+  "extra_verification_resets": 30660,
+  "extra_verification_teacher_label_calls": 247614,
+  "scope": "All action/label/policy replay, bound checkpoints and one repeated short training; not snapshot E4 or 51 repeated trainings"
+}
