@@ -1,0 +1,178 @@
+{
+  "schema": "student-coverage-analysis-v1",
+  "summary_sha256": "8ce246a2c9f9134d23968afcad5ed9680cb06194a6bb419b58aa0a2c201805dc",
+  "verification_sha256": "f62efbb5eaa0fb7d736345aa65de7e5e43cac5843a5b03d1692fd38a1e7d6dd2",
+  "plan_id": "cooking-coverage-5f40d4f6df6408d4",
+  "seeds": [
+    7,
+    19,
+    41
+  ],
+  "arms": {
+    "offline_action": {
+      "mean": 0.3002666666666667,
+      "by_seed": [
+        0.272,
+        0.336,
+        0.2928
+      ],
+      "by_trial": [
+        0.2853333333333334,
+        0.30400000000000005,
+        0.30400000000000005,
+        0.30400000000000005,
+        0.30400000000000005
+      ],
+      "mean_cost_steps": 16.69333333333333,
+      "reset_mean": 0.17866666666666667,
+      "collection_actions": 85293,
+      "sequence_counts_per_seed": [
+        1239,
+        1416
+      ],
+      "action_targets_final_per_seed": [
+        107486,
+        108631,
+        108888
+      ]
+    },
+    "offline_facts": {
+      "mean": 0.6053333333333334,
+      "by_seed": [
+        0.5936,
+        0.656,
+        0.5664
+      ],
+      "by_trial": [
+        0.6026666666666667,
+        0.6053333333333333,
+        0.6053333333333333,
+        0.608,
+        0.6053333333333333
+      ],
+      "mean_cost_steps": 14.023466666666666,
+      "reset_mean": 0.21333333333333335,
+      "collection_actions": 85293,
+      "sequence_counts_per_seed": [
+        1239,
+        1416
+      ],
+      "action_targets_final_per_seed": [
+        107486,
+        108631,
+        108888
+      ]
+    },
+    "student_action": {
+      "mean": 0.8133333333333334,
+      "by_seed": [
+        0.6672,
+        0.9456,
+        0.8272
+      ],
+      "by_trial": [
+        0.7226666666666667,
+        0.8186666666666668,
+        0.84,
+        0.84,
+        0.8453333333333334
+      ],
+      "mean_cost_steps": 12.942933333333334,
+      "reset_mean": 0.6773333333333333,
+      "collection_actions": 101383,
+      "sequence_counts_per_seed": [
+        1239,
+        1416
+      ],
+      "action_targets_final_per_seed": [
+        104369,
+        104124,
+        103980
+      ]
+    },
+    "student_facts": {
+      "mean": 0.7850666666666667,
+      "by_seed": [
+        0.8192,
+        0.8256,
+        0.7104
+      ],
+      "by_trial": [
+        0.7200000000000001,
+        0.7919999999999999,
+        0.7973333333333333,
+        0.8026666666666666,
+        0.8133333333333334
+      ],
+      "mean_cost_steps": 13.027733333333332,
+      "reset_mean": 0.6346666666666666,
+      "collection_actions": 101328,
+      "sequence_counts_per_seed": [
+        1239,
+        1416
+      ],
+      "action_targets_final_per_seed": [
+        103759,
+        104010,
+        104507
+      ]
+    }
+  },
+  "contrasts": {
+    "coverage_action": {
+      "mean": 0.5130666666666667,
+      "by_seed": [
+        0.3952,
+        0.6095999999999999,
+        0.5344
+      ],
+      "all_seeds_positive": true
+    },
+    "coverage_facts": {
+      "mean": 0.17973333333333333,
+      "by_seed": [
+        0.22560000000000002,
+        0.16959999999999997,
+        0.14400000000000002
+      ],
+      "all_seeds_positive": true
+    },
+    "facts_offline": {
+      "mean": 0.30506666666666665,
+      "by_seed": [
+        0.3216,
+        0.32,
+        0.2736
+      ],
+      "all_seeds_positive": true
+    },
+    "facts_student": {
+      "mean": -0.028266666666666662,
+      "by_seed": [
+        0.15200000000000002,
+        -0.12,
+        -0.11680000000000001
+      ],
+      "all_seeds_positive": false
+    }
+  },
+  "interaction": {
+    "mean": -0.3333333333333333,
+    "by_seed": [
+      -0.16959999999999997,
+      -0.44,
+      -0.3904
+    ]
+  },
+  "registered_checks": {
+    "coverage_action": true,
+    "facts_student": false
+  },
+  "stop_reason": "registered-12-run-budget-completed",
+  "limits": [
+    "Descriptive three-seed reused-panel diagnostic, not confirmatory inference",
+    "Common post-parent action-label validity guard; no guard ablation in this panel",
+    "Same initial weights, updates and sequence counts, not equal label-token or collection-step cost",
+    "DAgger-style baseline is prior art, not a new OPD algorithm"
+  ]
+}

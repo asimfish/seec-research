@@ -7,15 +7,15 @@
     "unselected logs",
     "user working-tree edits"
   ],
-  "export_scope": "Existing public scientific archive preserved; curated literature, symbolic diagnostic, three-seed learned pilot and separately registered feedback-redaction diagnostic, authored figures, protocols, costs and reproducible adapters. No raw logs or checkpoints.",
+  "export_scope": "Existing public scientific archive preserved; curated literature, symbolic diagnostic, three-seed learned pilot and separately registered feedback-redaction and student-history coverage diagnostics, authored figures, protocols, costs and reproducible adapters. No raw logs or checkpoints.",
   "files": {
     ".nojekyll": {
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
     },
     "README.md": {
-      "sha256": "59c861c8105352198c392125d14a71af7272b079644f52dea98b789dd713f2e3",
-      "bytes": 5446
+      "sha256": "d01dd73f77980d66fea8f104ef70d81baa2d5efc5e9618e88b03a6ce089a83ea",
+      "bytes": 4773
     },
     "app.js": {
       "sha256": "eb431cc202bd3048d2cf6a12cd07265631710347ff9d4191de29f08dbe21fb45",
@@ -92,6 +92,18 @@
     "assets/figures/cooking_learned_pilot.svg": {
       "sha256": "d16b48cdad39ac82957a40c3c1480c9a622ad6a99b2dc02c56a24543451a1340",
       "bytes": 25042
+    },
+    "assets/figures/cooking_student_coverage.pdf": {
+      "sha256": "f639ae547e3f3171bde0c7d1ff7617319296fc395325f57af7912d69b93b5a45",
+      "bytes": 23127
+    },
+    "assets/figures/cooking_student_coverage.png": {
+      "sha256": "711812b3ad5572a9427e1578d7c4efc9938dc1917b828cf4a029cd4181a15292",
+      "bytes": 113152
+    },
+    "assets/figures/cooking_student_coverage.svg": {
+      "sha256": "1fe130c704b5380e681a3e0a7f6a83e6ad1189840ab654116cf690c60642cf90",
+      "bytes": 20286
     },
     "assets/figures/frequency_prior_diagnostic_v1.pdf": {
       "sha256": "bcf8a0af75a609601337564141471b2e2a45ed827bde1170b002fabe8629e28f",
@@ -350,16 +362,16 @@
       "bytes": 1281
     },
     "data/learning-paper-verification.json": {
-      "sha256": "c3a9d49fd5f9ebefe0f1ad37c5b70e904862221fc0c846546488fe320af03f42",
-      "bytes": 4511
+      "sha256": "659d30beb57e5e997a5421dfa774402b7df3b8f1e4583f1bc1c5a754968ac3da",
+      "bytes": 5498
     },
     "data/learning-progress.json": {
-      "sha256": "52253d35b272beef9b1dcb7a879f1c58a345aa97523ccc78e81fb8027ded4026",
-      "bytes": 105814
+      "sha256": "9e2506525f1a310448ded6311dfb5b7d53e80eebf55dcdbaf7faa1eef29faf6e",
+      "bytes": 205946
     },
     "data/learning-reading-notes.json": {
-      "sha256": "5aab42a5706c538708c6f0e0d0f11f9ecddb552b619b7f55de70abe4e7aa1558",
-      "bytes": 18108
+      "sha256": "11ca9cb906656b647bfdfd16708227ff61caf6b0d53fb4836ecbbf3bec65ccea",
+      "bytes": 21138
     },
     "data/matched-history-analysis.json": {
       "sha256": "e53d98bc7fa84c3a62d0999951ce0a7ae429561ba483b14c5a995018546c1615",
@@ -385,6 +397,18 @@
       "sha256": "7d3402d5645be38afd5ebe9bf8826b61abe8e4019915385872b724e4018aad74",
       "bytes": 16245
     },
+    "data/student-coverage-analysis.json": {
+      "sha256": "e269b5f74cecd0e8d6a0239d664a479400b74608bdad1a4cc2ce72cd3275d0ed",
+      "bytes": 4106
+    },
+    "data/student-coverage-summary.json": {
+      "sha256": "8ce246a2c9f9134d23968afcad5ed9680cb06194a6bb419b58aa0a2c201805dc",
+      "bytes": 81413
+    },
+    "data/student-coverage-verification.json": {
+      "sha256": "f62efbb5eaa0fb7d736345aa65de7e5e43cac5843a5b03d1692fd38a1e7d6dd2",
+      "bytes": 1277
+    },
     "index.html": {
       "sha256": "eeac61e968851a7b0fa4c335eb0c19ee35338459780cedc580ec563f4eb5f173",
       "bytes": 3167
@@ -394,12 +418,12 @@
       "bytes": 9402
     },
     "learning.html": {
-      "sha256": "94789868dcb3a883162c3faa1292f670f5a74a4f0af8d2207c54aa431e99c038",
-      "bytes": 15947
+      "sha256": "5d6c3d9ad1e045ac2938e727629f13846bbc2b5b64781cb9c95b90bff5b0e6c8",
+      "bytes": 19951
     },
     "learning.js": {
-      "sha256": "0bbb77bac7dc945699e0c208ce8f849c235ee4b52990cd1768f526bca41e61ee",
-      "bytes": 9349
+      "sha256": "3387265ffa2b6816742513de5352ff70efe6f3f53ea681979efabd541940cc93",
+      "bytes": 12440
     },
     "research/audit_recovered_assets.py": {
       "sha256": "bf497ea1f17bf5232f52bd60eaefae63b3bce19c39e5cf9c1723d361a616f9f1",
@@ -422,8 +446,12 @@
       "bytes": 2865
     },
     "research/interactive-learning-update.md": {
-      "sha256": "4b10394ede81fabf43c926cac7d2daea4e13963435de38a99b3babc4078a9fc5",
-      "bytes": 16336
+      "sha256": "a4c56626d5f9809a679de7f429a2345f316003c4f5728c1f947e6011b8c11d7d",
+      "bytes": 20397
+    },
+    "research/learner_pilot_v1/run_learning_pilot.py": {
+      "sha256": "40227855a0dd8efe095fe8012a154698d01dd52e962b6f1d827492a06370162d",
+      "bytes": 19817
     },
     "research/learning-pilot/PROTOCOL.md": {
       "sha256": "1ad5150ac3394ed9a69b9159ca7fb3fb6218b38aab48171d39d714f1416f31e6",
@@ -490,8 +518,8 @@
       "bytes": 8887
     },
     "research/learning-pilot/working-note.pdf": {
-      "sha256": "4692da78b75355a45dfcd1d2add5a301b5cadd21c575ad4a1759a2c9d11e5dd9",
-      "bytes": 253279
+      "sha256": "7e82e12c3ef0bea21eba556b90d2af24c184c4459af53dd07aaa4babd03aae4a",
+      "bytes": 275103
     },
     "research/run_cooking_diagnostic.py": {
       "sha256": "9a1703ab0d076c7f2b9b23e02d0d21b45407d8b4e98d588c443fbf03b8134aaa",
@@ -500,6 +528,74 @@
     "research/scene-recovery-report.md": {
       "sha256": "39a8c1496c96ac1f0ce039336a03f4d09898d88af94e9446533eef3e8c742221",
       "bytes": 6576
+    },
+    "research/student_coverage_v1/CURRENT_FRONTIER.md": {
+      "sha256": "382ffade284c9f92932925e0abd873a030808447c01ad7875dc0f729e605aa7c",
+      "bytes": 1922
+    },
+    "research/student_coverage_v1/NEXT_MECHANISM_SPEC.md": {
+      "sha256": "d143adc668ab84bfbb9f8f8c957c4ecb9837d091b841d56e86229b0f61bf3ea8",
+      "bytes": 5107
+    },
+    "research/student_coverage_v1/NOVELTY.md": {
+      "sha256": "3b242c96983e3b19d1c17d23ba340f7d03db96088daf83988f0ff3398d7c588c",
+      "bytes": 7780
+    },
+    "research/student_coverage_v1/PROTOCOL.md": {
+      "sha256": "d7be1dcd4e62fe9055feaa88aee43e26943b903ac2516d267a0c0602241277de",
+      "bytes": 4522
+    },
+    "research/student_coverage_v1/README.md": {
+      "sha256": "34e1d2aa183d5f9abf83912f49afddb6154f7fe165f17af22125de4a181c11f6",
+      "bytes": 3314
+    },
+    "research/student_coverage_v1/RESULTS.md": {
+      "sha256": "5ebfcaeefdb667be0a1b5b1a68455bdfd5e1d1d3c94bb66e60982ca8f7823e15",
+      "bytes": 2346
+    },
+    "research/student_coverage_v1/analyze_coverage.py": {
+      "sha256": "b23eef6ec06d479f0f72737abd30899d94a76c121bc89a1925f85405a86b0276",
+      "bytes": 9008
+    },
+    "research/student_coverage_v1/audit_parent.py": {
+      "sha256": "99f1999348f4bbaedd6cb8fca176f6955fcd20f23b382f7cda8827eb5d5d0a87",
+      "bytes": 5544
+    },
+    "research/student_coverage_v1/hypothesis_ledger.json": {
+      "sha256": "a4bf733e948ca5c2ef662ddd232b3067022e98596c11d4c2dca1e2bb8000454b",
+      "bytes": 1826
+    },
+    "research/student_coverage_v1/paper_verification.json": {
+      "sha256": "34fb5eae41d78ca8575ba1e4c2c62fbbfc2db86494a3a45a28a902e137fad8e8",
+      "bytes": 1113
+    },
+    "research/student_coverage_v1/parent_audit.json": {
+      "sha256": "bb06d2dd3d890c351248a811050b641a8c9ee28901d0d4fd4b737748a3f41650",
+      "bytes": 6873
+    },
+    "research/student_coverage_v1/plan.json": {
+      "sha256": "9a48d9898063b7bb377091716e4d257dbb063df9d9e8531a7d7330cedba04257",
+      "bytes": 3861
+    },
+    "research/student_coverage_v1/reading_notes.json": {
+      "sha256": "3e4601ef933169c6d9ca03c4d55aa035f8f8446ca50529c57409458b9383a3eb",
+      "bytes": 3033
+    },
+    "research/student_coverage_v1/register_coverage.py": {
+      "sha256": "491380c05fb2e64427f27f9cb7dd31fd54dba3a7a11bc5ad0fc260aed6ed6496",
+      "bytes": 3367
+    },
+    "research/student_coverage_v1/run_coverage.py": {
+      "sha256": "68f49ded70d4853ea5107a05a1418790c2354ad47f2f826c71fe33aa0f64d82f",
+      "bytes": 12434
+    },
+    "research/student_coverage_v1/test_coverage.py": {
+      "sha256": "28c785bddcf5f5a9d609e373aff194dc3954b1e690daeb4dcd860e7337c98f8b",
+      "bytes": 2698
+    },
+    "research/student_coverage_v1/verify_coverage.py": {
+      "sha256": "75610908454980e9bb2cc1e4d32fc965389ba15ccba865f9f35e95e010b6dca9",
+      "bytes": 11559
     },
     "research/test_cooking_diagnostic.py": {
       "sha256": "ee101606cc6774062cb6e2116fa27f07d8f0d6147d34ee2c2fcdf553718997fa",
@@ -551,5 +647,11 @@
     "audit_sha256": "7d3402d5645be38afd5ebe9bf8826b61abe8e4019915385872b724e4018aad74",
     "media_manifest_sha256": "396c0e91eb21832e3e9a18dc15aa6fbe4534b680a2435173e243c08660bab0b2",
     "source_scope": "Seven recovered histories, closed archived runs and exact original scene renders; fresh physics NOT_RUN"
+  },
+  "student_coverage_inputs": {
+    "summary_sha256": "8ce246a2c9f9134d23968afcad5ed9680cb06194a6bb419b58aa0a2c201805dc",
+    "verification_sha256": "f62efbb5eaa0fb7d736345aa65de7e5e43cac5843a5b03d1692fd38a1e7d6dd2",
+    "plan_file_sha256": "9a48d9898063b7bb377091716e4d257dbb063df9d9e8531a7d7330cedba04257",
+    "novelty_report_sha256": "3b242c96983e3b19d1c17d23ba340f7d03db96088daf83988f0ff3398d7c588c"
   }
 }

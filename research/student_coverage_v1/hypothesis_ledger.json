@@ -1,0 +1,36 @@
+{
+  "scope": "Post-parent registered coverage comparator; exploratory reused seeds/panel",
+  "plan_id": "cooking-coverage-5f40d4f6df6408d4",
+  "summary_sha256": "8ce246a2c9f9134d23968afcad5ed9680cb06194a6bb419b58aa0a2c201805dc",
+  "verification_sha256": "f62efbb5eaa0fb7d736345aa65de7e5e43cac5843a5b03d1692fd38a1e7d6dd2",
+  "registered_checks": {
+    "coverage_action": true,
+    "facts_student": false
+  },
+  "rivals": [
+    {
+      "claim": "Factual supervision retains >=5 percentage point benefit after student coverage, positive in every seed",
+      "result": "-2.83 points; +15.20/-12.00/-11.68",
+      "verdict": "REGISTERED_PREDICTION_FAILED"
+    },
+    {
+      "claim": "Ordinary student-history action supervision improves on equal-update offline action supervision",
+      "result": "+51.31 points; positive in all three seeds",
+      "verdict": "SUPPORTED_IN_THIS_DIAGNOSTIC_NOT_NEW_METHOD"
+    },
+    {
+      "claim": "The auxiliary head is an essential novel task-learning mechanism",
+      "result": "Direct task-belief priors; coverage prediction fails",
+      "verdict": "NOT_ESTABLISHED"
+    },
+    {
+      "claim": "Execution-conditioned update targets plus future-attempt admission add value over Bayes, belief supervision and ordinary DAgger",
+      "result": "No execution-uncertainty or future-credit experiment run",
+      "verdict": "UNTESTED_CANDIDATE"
+    }
+  ],
+  "comparability": "Same per-seed action-only parent, sequences, sampled indices and 600 updates; not matched tokens, annotation sites or interaction actions",
+  "common_guard": "Observed irreversible bowl corruption => action loss abstains; actual input and fact targets retained; no guard-only ablation",
+  "stop_reason": "All 12 registered runs complete; no tuning/second parameter panel",
+  "next_spec": "NEXT_MECHANISM_SPEC.md"
+}

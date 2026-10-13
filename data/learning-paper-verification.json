@@ -1,5 +1,5 @@
 {
-  "scope": "21 paper identifiers verified: prior 18 plus three direct auxiliary/belief-learning precedents. Existence verification is not result reproduction.",
+  "scope": "26 identifier checks; primary reading depth separately recorded. No method reproduction or independent cross-model novelty verdict.",
   "papers": [
     {
       "id": "task_recognition_learning",
@@ -209,6 +209,56 @@
       "reason": null,
       "identifiers": {
         "arxiv_id": "1905.06424"
+      }
+    },
+    {
+      "id": "gmps",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "1904.00956"
+      }
+    },
+    {
+      "id": "bmil",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "1906.09510"
+      }
+    },
+    {
+      "id": "hssm",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2105.06660"
+      }
+    },
+    {
+      "id": "beacon",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2609.22730"
+      }
+    },
+    {
+      "id": "fact",
+      "status": "verified",
+      "method": "arxiv",
+      "confidence": "high",
+      "reason": null,
+      "identifiers": {
+        "arxiv_id": "2608.10232"
       }
     }
   ]

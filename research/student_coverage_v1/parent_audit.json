@@ -1,0 +1,193 @@
+{
+  "status": "COMPLETED_TRACE_DIAGNOSIS",
+  "parent_summary_sha256": "3f98e408ab5a4f262b5cde11dc0c4cf24060c17a524a8e8cad3cfad022a0644f",
+  "audit_sha256": "99f1999348f4bbaedd6cb8fca176f6955fcd20f23b382f7cda8827eb5d5d0a87",
+  "records_checked": 19098,
+  "arms": {
+    "action_only": {
+      "pooled_counts": {
+        "episodes": 1875,
+        "successes": 454,
+        "goal_known_episodes": 1875,
+        "goal_known_successes": 454,
+        "execution_decisions": 32410,
+        "reference_compatible_decisions": 9662,
+        "failed_episodes": 1421,
+        "failed_with_corrupted_bowl": 1421,
+        "failed_with_explicit_early_end": 0
+      },
+      "seeds": [
+        {
+          "seed": 7,
+          "episodes": 625,
+          "successes": 174,
+          "goal_known_episodes": 625,
+          "goal_known_successes": 174,
+          "execution_decisions": 10540,
+          "reference_compatible_decisions": 3172,
+          "failed_episodes": 451,
+          "failed_with_corrupted_bowl": 451,
+          "failed_with_explicit_early_end": 0
+        },
+        {
+          "seed": 19,
+          "episodes": 625,
+          "successes": 155,
+          "goal_known_episodes": 625,
+          "goal_known_successes": 155,
+          "execution_decisions": 10740,
+          "reference_compatible_decisions": 3320,
+          "failed_episodes": 470,
+          "failed_with_corrupted_bowl": 470,
+          "failed_with_explicit_early_end": 0
+        },
+        {
+          "seed": 41,
+          "episodes": 625,
+          "successes": 125,
+          "goal_known_episodes": 625,
+          "goal_known_successes": 125,
+          "execution_decisions": 11130,
+          "reference_compatible_decisions": 3170,
+          "failed_episodes": 500,
+          "failed_with_corrupted_bowl": 500,
+          "failed_with_explicit_early_end": 0
+        }
+      ],
+      "goal_known_success_rate": 0.24213333333333334,
+      "reference_compatible_rate": 0.29811786485652575,
+      "failed_corrupted_bowl_rate": 1.0
+    },
+    "current_state_aux": {
+      "pooled_counts": {
+        "episodes": 1875,
+        "successes": 643,
+        "goal_known_episodes": 1875,
+        "goal_known_successes": 643,
+        "execution_decisions": 31034,
+        "reference_compatible_decisions": 11515,
+        "failed_episodes": 1232,
+        "failed_with_corrupted_bowl": 1232,
+        "failed_with_explicit_early_end": 0
+      },
+      "seeds": [
+        {
+          "seed": 7,
+          "episodes": 625,
+          "successes": 216,
+          "goal_known_episodes": 625,
+          "goal_known_successes": 216,
+          "execution_decisions": 10188,
+          "reference_compatible_decisions": 3669,
+          "failed_episodes": 409,
+          "failed_with_corrupted_bowl": 409,
+          "failed_with_explicit_early_end": 0
+        },
+        {
+          "seed": 19,
+          "episodes": 625,
+          "successes": 228,
+          "goal_known_episodes": 625,
+          "goal_known_successes": 228,
+          "execution_decisions": 10100,
+          "reference_compatible_decisions": 3946,
+          "failed_episodes": 397,
+          "failed_with_corrupted_bowl": 397,
+          "failed_with_explicit_early_end": 0
+        },
+        {
+          "seed": 41,
+          "episodes": 625,
+          "successes": 199,
+          "goal_known_episodes": 625,
+          "goal_known_successes": 199,
+          "execution_decisions": 10746,
+          "reference_compatible_decisions": 3900,
+          "failed_episodes": 426,
+          "failed_with_corrupted_bowl": 426,
+          "failed_with_explicit_early_end": 0
+        }
+      ],
+      "goal_known_success_rate": 0.3429333333333333,
+      "reference_compatible_rate": 0.3710446606947219,
+      "failed_corrupted_bowl_rate": 1.0
+    },
+    "observed_facts_aux": {
+      "pooled_counts": {
+        "episodes": 1875,
+        "successes": 1065,
+        "goal_known_episodes": 1875,
+        "goal_known_successes": 1065,
+        "execution_decisions": 27026,
+        "reference_compatible_decisions": 14147,
+        "all_facts_correct_decisions": 6681,
+        "correct_facts_reference_compatible": 4301,
+        "incorrect_facts_reference_compatible": 9846,
+        "failed_episodes": 810,
+        "failed_with_corrupted_bowl": 810,
+        "failed_with_explicit_early_end": 0
+      },
+      "seeds": [
+        {
+          "seed": 7,
+          "episodes": 625,
+          "successes": 362,
+          "goal_known_episodes": 625,
+          "goal_known_successes": 362,
+          "execution_decisions": 8944,
+          "reference_compatible_decisions": 4777,
+          "all_facts_correct_decisions": 2239,
+          "correct_facts_reference_compatible": 1516,
+          "incorrect_facts_reference_compatible": 3261,
+          "failed_episodes": 263,
+          "failed_with_corrupted_bowl": 263,
+          "failed_with_explicit_early_end": 0
+        },
+        {
+          "seed": 19,
+          "episodes": 625,
+          "successes": 380,
+          "goal_known_episodes": 625,
+          "goal_known_successes": 380,
+          "execution_decisions": 8804,
+          "reference_compatible_decisions": 4908,
+          "all_facts_correct_decisions": 2185,
+          "correct_facts_reference_compatible": 1486,
+          "incorrect_facts_reference_compatible": 3422,
+          "failed_episodes": 245,
+          "failed_with_corrupted_bowl": 245,
+          "failed_with_explicit_early_end": 0
+        },
+        {
+          "seed": 41,
+          "episodes": 625,
+          "successes": 323,
+          "goal_known_episodes": 625,
+          "goal_known_successes": 323,
+          "execution_decisions": 9278,
+          "reference_compatible_decisions": 4462,
+          "all_facts_correct_decisions": 2257,
+          "correct_facts_reference_compatible": 1299,
+          "incorrect_facts_reference_compatible": 3163,
+          "failed_episodes": 302,
+          "failed_with_corrupted_bowl": 302,
+          "failed_with_explicit_early_end": 0
+        }
+      ],
+      "goal_known_success_rate": 0.568,
+      "reference_compatible_rate": 0.5234588914378746,
+      "failed_corrupted_bowl_rate": 1.0,
+      "all_facts_correct_rate": 0.24720639384296603,
+      "reference_compatible_given_facts_correct": 0.6437659033078881,
+      "reference_compatible_given_facts_incorrect": 0.48395183091668714
+    }
+  },
+  "definition": "Reference-compatible means at least one of the six registered symbolic tie orders agrees at the exact observed state with only actual prior pickup facts. Disagreement is not by itself proof of a bad action.",
+  "limits": [
+    "Post-primary trace audit; no hypothesis significance test",
+    "Fact correctness is measured at actual visited states; conditions are not randomized",
+    "A corrupted bowl is an irreversible observed error under the original task, not a root-cause inference"
+  ],
+  "additional_environment_steps": 0,
+  "optimizer_updates": 0
+}

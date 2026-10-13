@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "summary_sha256": "8ce246a2c9f9134d23968afcad5ed9680cb06194a6bb419b58aa0a2c201805dc",
+  "verifier_sha256": "75610908454980e9bb2cc1e4d32fc965389ba15ccba865f9f35e95e010b6dca9",
+  "source_sequences": 4248,
+  "source_actions": 373297,
+  "source_policy_decisions_recomputed": 202711,
+  "valid_action_labels": 315911,
+  "corrupted_action_targets_ignored": 57386,
+  "evaluation_records": 18000,
+  "evaluation_actions": 292359,
+  "evaluation_policy_decisions_recomputed": 292359,
+  "raw_observation_max_difference": 0,
+  "checks": [
+    "Source strictly training tasks",
+    "Known facts from actual preceding pickups only",
+    "Student collection actions from recorded pre-update checkpoints",
+    "Offline epsilon actions from registered RNG and observable teacher",
+    "No action-positive target after irreversible bowl corruption",
+    "All final checkpoints and starting checkpoint bindings",
+    "Same batch indices, parameter count and update count",
+    "Every terminal feedback included",
+    "All transitions/rewards, action outputs, outcomes and aggregates independently reconstructed",
+    "Full source and evaluation chains"
+  ],
+  "scope": "Independent reset/action and checkpoint replay; not optimizer reproducibility or new-method efficacy"
+}

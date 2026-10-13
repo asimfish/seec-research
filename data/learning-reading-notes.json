@@ -319,5 +319,54 @@
     "reading_depth": "Primary PDF sections 1–2, Figure 1 and auxiliary-head architecture discussion; publication labeled preprint.",
     "method_paraphrase": "Separates policy and task belief inference; uses auxiliary task supervision and explicitly compares shared auxiliary prediction heads.",
     "research_boundary": "The learned factual-head probe substantially overlaps prior auxiliary-belief methods; neither an auxiliary head nor belief updating is a first contribution."
+  },
+  {
+    "key": "gmps",
+    "title": "Guided Meta-Policy Search",
+    "year": "2019",
+    "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2019/file/d324a0cc02881779dcda44a675fdcaaa-Paper.pdf",
+    "additional_primary_url": "https://arxiv.org/abs/1904.00956",
+    "reading_depth": "Primary paper §§1–4.1 including DAgger-extension aggregation equations; not reproduced GMPS.",
+    "method_paraphrase": "Imitation meta-objective with task experts and aggregation of adapted-policy states.",
+    "research_boundary": "Student-state aggregation for fast task learning is direct prior art."
+  },
+  {
+    "key": "bmil",
+    "title": "Learning Belief Representations for Imitation Learning in POMDPs",
+    "year": "UAI 2019; PMLR proceedings 2020",
+    "primary_url": "https://proceedings.mlr.press/v115/gangwani20a.html",
+    "additional_primary_url": "https://github.com/tgangwani/BMIL",
+    "reading_depth": "Primary proceedings abstract and author code README; complete implementation not audited.",
+    "method_paraphrase": "Joint belief and imitation learning with task-aware loss and belief regularization.",
+    "research_boundary": "Joint belief-policy learning is not our first contribution."
+  },
+  {
+    "key": "hssm",
+    "title": "Estimating Disentangled Belief about Hidden State and Hidden Task for Meta-RL",
+    "year": "2021",
+    "primary_url": "https://arxiv.org/abs/2105.06660",
+    "reading_depth": "Primary abstract and accepted L4DC statement; detailed likelihood implementation not reproduced.",
+    "method_paraphrase": "Hierarchical global-task/local-state latent inference with amortized belief estimation.",
+    "research_boundary": "Persistent task versus local nuisance disentanglement is already known."
+  },
+  {
+    "key": "beacon",
+    "title": "BEACON: Belief-Enabled Adaptive CONtrol for Imitation Learning under Uncertainty",
+    "year": "2026 preprint",
+    "primary_url": "https://arxiv.org/abs/2609.22730",
+    "additional_primary_url": "https://arxiv.org/html/2609.22730v1",
+    "reading_depth": "Primary full HTML §§1–4, particle filter likelihood, belief summary and latched-door evaluation.",
+    "method_paraphrase": "Structured Bayesian belief and uncertainty condition diffusion policies to probe and commit.",
+    "research_boundary": "Belief-conditioned probing to resolve robot hidden-state aliasing has a direct contemporary neighbor."
+  },
+  {
+    "key": "fact",
+    "title": "FACT: Failure-Aware Causal Training for World-Action Models",
+    "year": "2026 preprint",
+    "primary_url": "https://arxiv.org/abs/2608.10232",
+    "additional_primary_url": "https://arxiv.org/html/2608.10232v1",
+    "reading_depth": "Primary full HTML §§1–3, related work and action/future mask; project venue claim not independently promoted.",
+    "method_paraphrase": "Failure rollouts supervise action-conditioned future/value while excluding failed-action imitation loss.",
+    "research_boundary": "Failed consequence learning without imitating failure is not new."
   }
 ]
