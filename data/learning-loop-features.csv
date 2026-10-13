@@ -1,0 +1,15 @@
+method,experience,learning_operator,producer_adapts,producer_credit,frozen_new_rule_adaptation_credit,primary_source
+DAgger,actual student states,not a meta-adaptation objective,student occupancy changes,not explicit batch-after-training credit,not explicit,https://arxiv.org/abs/1011.0686
+GMPS,adapted student states,explicit meta imitation,aggregation,meta-imitation loss,not verified as producer credit,https://arxiv.org/abs/1904.00956
+AD / DPT,interaction / learning histories,explicit,standard pretraining data,not explicit,"adaptation evaluated, not generator credit",https://arxiv.org/abs/2306.14892
+CEC,ordered cross-episode histories,cross-episode context,curricular data assembly,not explicit,not explicit,https://arxiv.org/abs/2310.08549
+DREAM / VariBAD,student exploration history,explicit,"learned explorer, not outer data teacher",task/meta objective,task adaptation already central; not batch credit,https://proceedings.mlr.press/v139/liu21s.html
+TSCL / ALP-GMM / PLR / ACCEL,student metrics / trajectories,ordinary RL student in inspected settings,explicit,progress / TD error / regret,not explicit in inspected variants,https://proceedings.mlr.press/v139/jiang21b.html
+CARML,meta-learner trajectories,explicit,explicit,information maximization / meta-RL alternating,not explicit batch transfer-adaptation credit,https://arxiv.org/abs/1912.04226
+Meta-Teaching,meta-student adaptation samples,explicit,explicit,meta-student losses,POSSIBLE_OVERLAP_FULL_PDF_PENDING,https://openreview.net/pdf/24330061a8c93283cca9633ffe1ec101a7142a60.pdf
+Meta-ACL / AGAIN,past student curricula / progress,teacher transfers across students,explicit,progress niches / curriculum reuse,different primary transfer object,https://arxiv.org/abs/2011.08463
+Cooperative TSCL,experience units,generic learner framework,explicit,explicit target-metric change,framework can instantiate our metric; not exclusive gap,https://arxiv.org/abs/2404.03084
+SOAR,generated examples / trained student copies,student learnability,"explicit, including promotion",explicit actual training gain,"math target accuracy, not defined frozen-rule adaptation credit",https://arxiv.org/abs/2601.18778
+LMPC / RL2F,multi-turn teaching / feedback,explicit,not inspected as candidate-batch producer credit,teachability / multi-turn RL,adaptation evaluated / trained; not proposed batch credit,https://www.roboticsproceedings.org/rss20/p125.pdf
+RoboHarn-Evo,physical experience,persistent external knowledge,explicit maintenance,claim-specific physical evidence,base learner weights fixed,https://arxiv.org/abs/2609.37583
+PROPOSED_NOT_RUN,actual full histories,proposed,proposed,same-origin short training branches,proposed primary signal with competence guard,PROPOSAL.md

@@ -1,6 +1,6 @@
 {
-  "schema": "interactive-learning-public-v3",
-  "updated": "2026-10-13",
+  "schema": "interactive-learning-public-v4",
+  "updated": "2026-10-14",
   "verified_papers": 26,
   "status": "COMPLETED_COVERAGE_COMPARATOR_NOT_NEW_METHOD_EFFICACY",
   "result": {
@@ -6296,5 +6296,18 @@
   "historical_archive_public_revision": "90d923d69e7728f376ae3d3e4ea9cc81dc7bc545",
   "reference_layout": "https://asimfish.github.io/psibot-dashboard/pick_place.html",
   "scene_page": "scenes.html",
-  "stage_resume_status": "PARTIAL_NOT_COMPLETE"
+  "stage_resume_status": "PARTIAL_NOT_COMPLETE",
+  "learning_loop_proposal": {
+    "status": "PROPOSED_NOT_PREREGISTERED_NOT_RUN",
+    "catalog_entries": 43,
+    "new_identity_checks": 12,
+    "full_method_audit_pending": [
+      "Meta-Teaching",
+      "InFlow",
+      "LaSER"
+    ],
+    "proposal": "research/learning-loop/proposal.md",
+    "feature_matrix": "data/learning-loop-features.csv",
+    "next": "Bounded same-origin candidate-credit diagnostic before multi-generation loop"
+  }
 }

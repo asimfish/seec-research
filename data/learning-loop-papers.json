@@ -1,0 +1,769 @@
+{
+  "schema": "learning-loop-literature-map-v1",
+  "as_of": "2026-10-14",
+  "scope": "Representative route map, not exhaustive priority proof",
+  "papers": [
+    {
+      "number": 1,
+      "key": "task_recognition_learning",
+      "source_id": "b8b81afd9ce678a1",
+      "evidence_id": "171ac3f5c6fe71d9",
+      "title": "What In-Context Learning “Learns” In-Context: Disentangling Task Recognition and Task Learning",
+      "author_citation": "Pan, J. et al.",
+      "year": "2023",
+      "publication_status": "Findings of ACL 2023",
+      "primary_url": "https://arxiv.org/abs/2305.09731",
+      "additional_primary_url": "https://aclanthology.org/2023.findings-acl.527/",
+      "reading_depth": "Official abstract and metadata",
+      "locator": "Abstract; official ACL Anthology metadata",
+      "method_paraphrase": "Task recognition uses pretrained task priors; task learning captures new input-label mappings. Their classification experiments distinguish these mechanisms.",
+      "research_boundary": "Useful conceptual distinction; does not by itself establish either mechanism in robot control.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "conceptual"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "number": 2,
+      "key": "instant_policy",
+      "source_id": "ef3d7d3f686d772b",
+      "evidence_id": "773ea400199a8394",
+      "title": "Instant Policy: In-Context Imitation Learning via Graph Diffusion",
+      "author_citation": "Vosylius, V. and Johns, E.",
+      "year": "2024",
+      "publication_status": "arXiv; author project labels ICLR 2025",
+      "primary_url": "https://arxiv.org/abs/2411.12633",
+      "additional_primary_url": "https://www.robot-learning.uk/instant-policy",
+      "reading_depth": "Paper abstract and author project",
+      "locator": "Abstract; author project Key Idea",
+      "method_paraphrase": "Instant Policy learns in-context imitation from one or two demonstrations using graph representations and diffusion.",
+      "research_boundary": "Demonstration-conditioned skill acquisition is legitimate ICL; it need not require multiple self-attempts.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "robot_experience"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "number": 3,
+      "key": "icrt",
+      "source_id": "fee1c1c3fdc50884",
+      "evidence_id": "c423651f4cb8d93d",
+      "title": "In-Context Imitation Learning via Next-Token Prediction",
+      "author_citation": "Fu, L. et al.",
+      "year": "2024",
+      "publication_status": "arXiv, v2",
+      "primary_url": "https://arxiv.org/abs/2408.15980",
+      "additional_primary_url": "https://icrt.dev/",
+      "reading_depth": "Paper abstract and author project",
+      "locator": "Abstract; author project Inference",
+      "method_paraphrase": "ICRT predicts actions from sensorimotor demonstrations and current observations without test-time policy parameter updates.",
+      "research_boundary": "Demonstration prompting does not establish learning from the robot's own failed attempts.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "robot_experience"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "number": 4,
+      "key": "rl2",
+      "source_id": "75154ba5686a380a",
+      "evidence_id": "6bf08117d3a2d3ff",
+      "title": "RL²: Fast Reinforcement Learning via Slow Reinforcement Learning",
+      "author_citation": "Duan, Y. et al.",
+      "year": "2016",
+      "publication_status": "arXiv, v2",
+      "primary_url": "https://arxiv.org/abs/1611.02779",
+      "additional_primary_url": "https://arxiv.org/abs/1611.02779",
+      "reading_depth": "Primary abstract",
+      "locator": "Abstract",
+      "method_paraphrase": "RL2 uses a recurrent state across episodes of an unseen task; slow training learns a fast adaptation procedure from observations, actions, rewards and termination flags.",
+      "research_boundary": "Fast and slow learning are established ideas; this is not a robotics-specific verification system.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "learning_operator"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "number": 5,
+      "key": "algorithm_distillation",
+      "source_id": "f0c526109ef8e004",
+      "evidence_id": "9bcf13a4f5a8a042",
+      "title": "In-context Reinforcement Learning with Algorithm Distillation",
+      "author_citation": "Laskin, M. et al.",
+      "year": "2022",
+      "publication_status": "arXiv, v1; official ICLR 2023 PDF also located",
+      "primary_url": "https://arxiv.org/abs/2210.14215",
+      "additional_primary_url": "https://openreview.net/pdf?id=hy0a5MMPUv",
+      "reading_depth": "Primary intro/method; source-learning-history distillation inspected previously; full AD not reproduced",
+      "locator": "Abstract",
+      "method_paraphrase": "Algorithm Distillation trains a causal sequence model on reinforcement-learning histories across episodes, enabling adaptation in context without network parameter updates.",
+      "research_boundary": "Learning-history distillation must be a strong baseline rather than claimed as our invention.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "learning_operator"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "number": 6,
+      "key": "vintix_ii",
+      "source_id": "d9aed636730f1640",
+      "evidence_id": "a251e4d98f92a27b",
+      "title": "Vintix II: Decision Pre-Trained Transformer is a Scalable In-Context Reinforcement Learner",
+      "author_citation": "Polubarov, A. et al.",
+      "year": "2026",
+      "publication_status": "ICLR 2026 official proceedings",
+      "primary_url": "https://arxiv.org/abs/2604.05112",
+      "additional_primary_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/5d83bdbcdeba05c276c8720a3f97a049-Abstract-Conference.html",
+      "reading_depth": "Primary abstract and official proceedings",
+      "locator": "Abstract; official proceedings",
+      "method_paraphrase": "Vintix II scales Decision Pre-Trained Transformer in-context reinforcement learning across diverse domains with flow matching.",
+      "research_boundary": "A generalist robot learning claim must address existing cross-domain ICRL, not compare only against BC.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "learning_operator"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "number": 7,
+      "key": "zeva",
+      "source_id": "e0af57c14070d95d",
+      "evidence_id": "f06f9b3c6b2db348",
+      "title": "Zeva: In-Context Causal Learning for Generalizable Embodied Manipulation",
+      "author_citation": "Chen, F. et al.",
+      "year": "2026",
+      "publication_status": "arXiv, v1",
+      "primary_url": "https://arxiv.org/abs/2608.30880",
+      "additional_primary_url": "https://arxiv.org/html/2608.30880v1",
+      "reading_depth": "Abstract and method sections",
+      "locator": "Sections III-A, III-C, III-D and III-F",
+      "method_paraphrase": "Zeva encodes action-effect experience into within-attempt and across-attempt memories while all model parameters remain frozen during deployment.",
+      "research_boundary": "Own-interaction memory adaptation already has a robot precedent. Persistent interaction memory here resets for a new episode; cumulative retry success is not alone proof of learning.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "feedback_teachability"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "number": 8,
+      "key": "flux_opd",
+      "source_id": "03717bff6f470fa8",
+      "evidence_id": "e68220f8b9e6df3b",
+      "title": "Flux-OPD: On-Policy Distillation with Evolving Contexts",
+      "author_citation": "Wang, Y. et al.",
+      "year": "2026",
+      "publication_status": "arXiv, v1",
+      "primary_url": "https://arxiv.org/abs/2607.28022",
+      "additional_primary_url": "https://arxiv.org/html/2607.28022v1",
+      "reading_depth": "Abstract and selected method sections",
+      "locator": "Sections 1, 2.2, 3 and method overview",
+      "method_paraphrase": "Flux-OPD distills evolving contextual supervision using a context-free teacher anchor and conflict-dependent contextual corrections.",
+      "research_boundary": "Its reported domains are open-ended language tasks; it already constrains any novelty claim based only on evolving teacher contexts.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "student_distribution",
+        "recursive_distillation"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "number": 9,
+      "key": "re0",
+      "source_id": "5d9c3850ac4eface",
+      "evidence_id": "1b94923019e883dc",
+      "title": "RE-0: Verified Recursive Improvement of Embodied Code-as-Policy Agents through Local On-Policy Distillation",
+      "author_citation": "Zhang, J. et al.",
+      "year": "2026",
+      "publication_status": "arXiv, v1",
+      "primary_url": "https://arxiv.org/abs/2609.32416",
+      "additional_primary_url": "https://arxiv.org/html/2609.32416v1",
+      "reading_depth": "Abstract and selected framework sections",
+      "locator": "Abstract; Section 1 local counterfactual credit and RE-OPD",
+      "method_paraphrase": "RE-0 checks bounded teacher corrections on student failure histories with paired execution; verified intervention benefit weights subsequent student distillation.",
+      "research_boundary": "Verified correction plus OPD is a direct overlap. The candidate must test future adaptation utility separately from current completion benefit.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "student_distribution",
+        "robot_experience",
+        "recursive_distillation"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "number": 10,
+      "key": "rv_icl",
+      "source_id": "43c56994d720737f",
+      "evidence_id": "811523bb3249e441",
+      "title": "Recursive Video In-Context Learning for Agentic Robot",
+      "author_citation": "Bao, W. et al.",
+      "year": "2026",
+      "publication_status": "arXiv, v1, 5 October",
+      "primary_url": "https://arxiv.org/abs/2610.06843",
+      "additional_primary_url": "https://arxiv.org/html/2610.06843v1",
+      "reading_depth": "Primary §3.1–3.3 and abstract; not reproduced",
+      "locator": "Abstract; Introduction; demonstration hierarchy",
+      "method_paraphrase": "Recursively accesses a hierarchy of video-demonstration phases/moments/clips at action time; recursion concerns access rather than weight generations.",
+      "research_boundary": "Recursive denotes hierarchical access here, not recursive weight improvement or autonomous learning of unknown rules.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "robot_experience"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "number": 11,
+      "key": "simple_icl",
+      "source_id": "716ee02902554801",
+      "evidence_id": "92ed600ffa1dbc3f",
+      "title": "In-context Robot Learning Made Simple: A Democratized Recipe for Manipulation Tasks",
+      "author_citation": "Li, M. et al.",
+      "year": "2026",
+      "publication_status": "arXiv, v1, 29 September",
+      "primary_url": "https://arxiv.org/abs/2609.38173",
+      "additional_primary_url": "https://arxiv.org/html/2609.38173v1",
+      "reading_depth": "Abstract and introduction",
+      "locator": "Abstract; Introduction",
+      "method_paraphrase": "SimpleICL studies ambiguity in the information supplied by visual demonstrations and designs a visual prompt encoder and data protocol.",
+      "research_boundary": "A benchmark must specify what the prompt supplies and what new mapping the student must infer.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "robot_experience"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "number": 12,
+      "key": "dagger",
+      "source_id": "c8aa2e60411a8acf",
+      "evidence_id": "01fe520193add95b",
+      "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+      "author_citation": "Ross, S., Gordon, G. and Bagnell, D.",
+      "year": "2011",
+      "publication_status": "AISTATS 2011, PMLR 15",
+      "primary_url": "https://arxiv.org/abs/1011.0686",
+      "additional_primary_url": "https://proceedings.mlr.press/v15/ross11a.html",
+      "reading_depth": "Official abstract; established algorithm correspondence",
+      "locator": "Official abstract; paper identity",
+      "method_paraphrase": "DAgger addresses policy-induced observation distributions by iterative expert-supervised data aggregation.",
+      "research_boundary": "Student-state expert labeling is established imitation learning; it does not alone identify an ICL mechanism.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "student_distribution"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "number": 13,
+      "key": "lmpc",
+      "source_id": "b7deef0044e08280",
+      "evidence_id": "53b2a2ca61d9d7a6",
+      "title": "Learning to Learn Faster from Human Feedback with Language Model Predictive Control",
+      "author_citation": "Liang, J. et al.",
+      "year": "2024",
+      "publication_status": "arXiv",
+      "primary_url": "https://arxiv.org/abs/2402.11450",
+      "additional_primary_url": "https://robot-teaching.github.io/",
+      "reading_depth": "Primary RSS paper §III and abstract; full implementation not audited",
+      "locator": "Author project LMPC and Experiments",
+      "method_paraphrase": "Fine-tunes interaction dynamics and applies predictive control to improve robot teachability on unseen tasks.",
+      "research_boundary": "Even improved teachability on new tasks is prior art. Autonomous physical feedback and explicit utility estimation require separate evidence.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "feedback_teachability"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "number": 14,
+      "key": "robottt",
+      "source_id": "08d26803ae81ed85",
+      "evidence_id": "572e43c6c94fabcc",
+      "title": "RoboTTT: Context Scaling for Robot Policies",
+      "author_citation": "Jiang, Y. et al.",
+      "year": "2026",
+      "publication_status": "arXiv",
+      "primary_url": "https://arxiv.org/abs/2607.15275",
+      "additional_primary_url": "https://research.nvidia.com/labs/gear/robottt/",
+      "reading_depth": "Primary author method description",
+      "locator": "Author project Sequence Training and Effective Learning from Context",
+      "method_paraphrase": "RoboTTT uses fast-weight recurrent state for long context. In DAgger distillation, suboptimal actions supply context while human corrections supply targets.",
+      "research_boundary": "Failure-as-context and correction-as-target are not new. Fast-weight updates should be distinguished from fixed-weight ICL and durable slow-weight consolidation.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "feedback_teachability"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "number": 15,
+      "key": "roboharn_evo",
+      "source_id": "77a260760f8ad1e5",
+      "evidence_id": "ca9b27c2be8c96ab",
+      "title": "RoboHarn-Evo: Evolving Hierarchical Physical Knowledge for Self-Improving Robotic Manipulation",
+      "author_citation": "Bao, S. et al.",
+      "year": "2026",
+      "publication_status": "arXiv, v1",
+      "primary_url": "https://arxiv.org/abs/2609.37583",
+      "additional_primary_url": "https://arxiv.org/html/2609.37583v1",
+      "reading_depth": "Primary §§3–4.3 and evaluation criteria; not reproduced",
+      "locator": "Abstract; Sections 1 and 4 overview",
+      "method_paraphrase": "Keeps base model/executor fixed while revising task/action knowledge from physical support/opposition evidence.",
+      "research_boundary": "Verified knowledge maintenance and external-memory transfer already exist; their benefits do not by themselves establish weight absorption.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "robot_experience"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "number": 16,
+      "key": "experience_distillation",
+      "source_id": "7417536677d70e17",
+      "evidence_id": "22627c8dc60d7112",
+      "title": "Sample-Efficient Learning from Agent Experience",
+      "author_citation": "Gou, C. et al.",
+      "year": "2026",
+      "publication_status": "arXiv, v1",
+      "primary_url": "https://arxiv.org/abs/2607.21051",
+      "additional_primary_url": "https://arxiv.org/abs/2607.21051",
+      "reading_depth": "Primary abstract; method outline only",
+      "locator": "Abstract; method section headings and scope",
+      "method_paraphrase": "Experience Distillation internalizes trial-and-error interaction context into weights using collected experience, evaluated on software and text-adventure tasks.",
+      "research_boundary": "Experience absorption is not a new concept. We have not reproduced its method or compared its performance in robotics.",
+      "local_reproduction": "NOT_RUN",
+      "categories": [
+        "experience_representation"
+      ],
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "dream",
+      "title": "Decoupling Exploration and Exploitation for Meta-Reinforcement Learning without Sacrifices",
+      "year": "2021",
+      "primary_url": "https://proceedings.mlr.press/v139/liu21s.html",
+      "additional_primary_url": "https://github.com/ezliu/dream",
+      "reading_depth": "Official ICML paper §§1–4 and pinned original Cooking/City/Grid source; learner baselines not reproduced",
+      "method_paraphrase": "Task-information bottleneck trains exploitation and exploration to recover relevant information, decoupling their chicken-and-egg dependence.",
+      "research_boundary": "Learning to identify task-relevant information is already central to DREAM; this diagnostic does not retrain DREAM.",
+      "categories": [
+        "task_inference"
+      ],
+      "local_reproduction": "NOT_RUN",
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "intrinsic",
+      "title": "What is intrinsic motivation? A typology of computational approaches",
+      "year": "2007",
+      "primary_url": "https://www.frontiersin.org/journals/neurorobotics/articles/10.3389/neuro.12.006.2007/full",
+      "reading_depth": "Primary journal taxonomy",
+      "method_paraphrase": "Intrinsic learning incentives distinguish information and learning-related objectives from external task reward.",
+      "research_boundary": "The learning-value/current-reward distinction cannot be claimed as new.",
+      "categories": [
+        "progress_curriculum"
+      ],
+      "local_reproduction": "NOT_RUN",
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "unreal",
+      "title": "Reinforcement Learning with Unsupervised Auxiliary Tasks",
+      "year": "2017",
+      "primary_url": "https://arxiv.org/abs/1611.05397",
+      "additional_primary_url": "https://deepmind.google/blog/reinforcement-learning-with-unsupervised-auxiliary-tasks/",
+      "reading_depth": "Primary abstract and authors’ auxiliary-task explanation; not a reproduction.",
+      "method_paraphrase": "Auxiliary objectives improve shared agent representations beyond the task reward objective.",
+      "research_boundary": "Adding an auxiliary head or loss is not novel.",
+      "categories": [
+        "experience_representation"
+      ],
+      "local_reproduction": "NOT_RUN",
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "varibad",
+      "title": "VariBAD: A Very Good Method for Bayes-Adaptive Deep RL via Meta-Learning",
+      "year": "2020",
+      "primary_url": "https://arxiv.org/abs/1910.08348",
+      "additional_primary_url": "https://github.com/lmzintgraf/varibad",
+      "reading_depth": "Official accepted paper abstract/background and author implementation README.",
+      "method_paraphrase": "Meta-learn approximate task inference and condition decisions on uncertainty; public code also supports supervised task decoding.",
+      "research_boundary": "Learning task beliefs from history is a direct predecessor and required strong comparator.",
+      "categories": [
+        "task_inference"
+      ],
+      "local_reproduction": "NOT_RUN",
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "task_inference",
+      "title": "Meta reinforcement learning as task inference",
+      "year": "2019",
+      "primary_url": "https://arxiv.org/abs/1905.06424",
+      "additional_primary_url": "https://arxiv.org/pdf/1905.06424",
+      "reading_depth": "Primary PDF sections 1–2, Figure 1 and auxiliary-head architecture discussion; publication labeled preprint.",
+      "method_paraphrase": "Separates policy and task belief inference; uses auxiliary task supervision and explicitly compares shared auxiliary prediction heads.",
+      "research_boundary": "The learned factual-head probe substantially overlaps prior auxiliary-belief methods; neither an auxiliary head nor belief updating is a first contribution.",
+      "categories": [
+        "task_inference"
+      ],
+      "local_reproduction": "NOT_RUN",
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "gmps",
+      "title": "Guided Meta-Policy Search",
+      "year": "2019",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2019/file/d324a0cc02881779dcda44a675fdcaaa-Paper.pdf",
+      "additional_primary_url": "https://arxiv.org/abs/1904.00956",
+      "reading_depth": "Primary paper §§1–4.1 including DAgger-extension aggregation equations; not reproduced GMPS.",
+      "method_paraphrase": "Imitation meta-objective with task experts and aggregation of adapted-policy states.",
+      "research_boundary": "Student-state aggregation for fast task learning is direct prior art.",
+      "categories": [
+        "student_distribution"
+      ],
+      "local_reproduction": "NOT_RUN",
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "bmil",
+      "title": "Learning Belief Representations for Imitation Learning in POMDPs",
+      "year": "UAI 2019; PMLR proceedings 2020",
+      "primary_url": "https://proceedings.mlr.press/v115/gangwani20a.html",
+      "additional_primary_url": "https://github.com/tgangwani/BMIL",
+      "reading_depth": "Primary proceedings abstract and author code README; complete implementation not audited.",
+      "method_paraphrase": "Joint belief and imitation learning with task-aware loss and belief regularization.",
+      "research_boundary": "Joint belief-policy learning is not our first contribution.",
+      "categories": [
+        "experience_representation"
+      ],
+      "local_reproduction": "NOT_RUN",
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "hssm",
+      "title": "Estimating Disentangled Belief about Hidden State and Hidden Task for Meta-RL",
+      "year": "2021",
+      "primary_url": "https://arxiv.org/abs/2105.06660",
+      "reading_depth": "Primary abstract and accepted L4DC statement; detailed likelihood implementation not reproduced.",
+      "method_paraphrase": "Hierarchical global-task/local-state latent inference with amortized belief estimation.",
+      "research_boundary": "Persistent task versus local nuisance disentanglement is already known.",
+      "categories": [
+        "task_inference"
+      ],
+      "local_reproduction": "NOT_RUN",
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "beacon",
+      "title": "BEACON: Belief-Enabled Adaptive CONtrol for Imitation Learning under Uncertainty",
+      "year": "2026 preprint",
+      "primary_url": "https://arxiv.org/abs/2609.22730",
+      "additional_primary_url": "https://arxiv.org/html/2609.22730v1",
+      "reading_depth": "Primary full HTML §§1–4, particle filter likelihood, belief summary and latched-door evaluation.",
+      "method_paraphrase": "Structured Bayesian belief and uncertainty condition diffusion policies to probe and commit.",
+      "research_boundary": "Belief-conditioned probing to resolve robot hidden-state aliasing has a direct contemporary neighbor.",
+      "categories": [
+        "task_inference"
+      ],
+      "local_reproduction": "NOT_RUN",
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "fact",
+      "title": "FACT: Failure-Aware Causal Training for World-Action Models",
+      "year": "2026 preprint",
+      "primary_url": "https://arxiv.org/abs/2608.10232",
+      "additional_primary_url": "https://arxiv.org/html/2608.10232v1",
+      "reading_depth": "Primary full HTML §§1–3, related work and action/future mask; project venue claim not independently promoted.",
+      "method_paraphrase": "Failure rollouts supervise action-conditioned future/value while excluding failed-action imitation loss.",
+      "research_boundary": "Failed consequence learning without imitating failure is not new.",
+      "categories": [
+        "experience_representation"
+      ],
+      "local_reproduction": "NOT_RUN",
+      "identity_check": "SEE_PRIOR_IDENTITY_LEDGER",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "tscl",
+      "title": "Teacher-Student Curriculum Learning",
+      "primary_url": "https://arxiv.org/abs/1707.00183",
+      "arxiv_id": "1707.00183",
+      "reading_depth": "Primary abstract and identity; algorithm-family objective checked; not a full reproduction",
+      "local_reproduction": "NOT_RUN",
+      "method_paraphrase": "Teacher task selection prioritizes student performance slope and forgetting.",
+      "categories": [
+        "progress_curriculum"
+      ],
+      "identity_check": "verified",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "alp_gmm",
+      "title": "Teacher algorithms for curriculum learning of Deep RL in continuously parameterized environments",
+      "primary_url": "https://arxiv.org/abs/1910.07224",
+      "arxiv_id": "1910.07224",
+      "reading_depth": "Primary identity and author institutional method description; implementation not audited",
+      "local_reproduction": "NOT_RUN",
+      "method_paraphrase": "Continuous task parameter sampling via a Gaussian mixture weighted by absolute learning progress.",
+      "categories": [
+        "progress_curriculum"
+      ],
+      "identity_check": "verified",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "plr",
+      "title": "Prioritized Level Replay",
+      "primary_url": "https://arxiv.org/abs/2010.03934",
+      "arxiv_id": "2010.03934",
+      "reading_depth": "Official ICML proceedings abstract and author code README; full training not reproduced",
+      "local_reproduction": "NOT_RUN",
+      "method_paraphrase": "Prioritizes level replay by learning-potential proxies including TD error.",
+      "categories": [
+        "progress_curriculum"
+      ],
+      "identity_check": "verified",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "accel",
+      "title": "Evolving Curricula with Regret-Based Environment Design",
+      "primary_url": "https://arxiv.org/abs/2203.01302",
+      "arxiv_id": "2203.01302",
+      "reading_depth": "Primary abstract and official ICML record / author project; full implementation not audited",
+      "local_reproduction": "NOT_RUN",
+      "method_paraphrase": "Mutates replayed levels at student capability frontier using regret-based design.",
+      "categories": [
+        "progress_curriculum"
+      ],
+      "identity_check": "verified",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "carml",
+      "title": "Unsupervised Curricula for Visual Meta-Reinforcement Learning",
+      "primary_url": "https://arxiv.org/abs/1912.04226",
+      "arxiv_id": "1912.04226",
+      "reading_depth": "Primary §§2–3.3 and Algorithm 1; not reproduced",
+      "local_reproduction": "NOT_RUN",
+      "method_paraphrase": "Fits task scaffold to meta-learner trajectories then meta-learns induced tasks, with mutual-information objectives.",
+      "categories": [
+        "meta_curriculum"
+      ],
+      "identity_check": "verified",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "meta_acl",
+      "title": "Meta Automatic Curriculum Learning",
+      "primary_url": "https://arxiv.org/abs/2011.08463",
+      "arxiv_id": "2011.08463",
+      "reading_depth": "Primary §3 and AGAIN subsection plus original abstract; not reproduced",
+      "local_reproduction": "NOT_RUN",
+      "method_paraphrase": "Transfers prior progress-niche curricula to new students and combines them with adaptive ALP-GMM.",
+      "categories": [
+        "meta_curriculum"
+      ],
+      "identity_check": "verified",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "tscl_cooperation",
+      "title": "Rethinking Teacher-Student Curriculum Learning through the Cooperative Mechanics of Experience",
+      "primary_url": "https://arxiv.org/abs/2404.03084",
+      "arxiv_id": "2404.03084",
+      "reading_depth": "Primary §§3–4 and Algorithm 1; experimental algorithm details not reproduced",
+      "local_reproduction": "NOT_RUN",
+      "method_paraphrase": "Experience units control the learner; reward is target metric increase after learning; cooperative values capture composition.",
+      "categories": [
+        "meta_curriculum"
+      ],
+      "identity_check": "verified",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "soar",
+      "title": "Teaching Models to Teach Themselves: Reasoning at the Edge of Learnability",
+      "primary_url": "https://arxiv.org/abs/2601.18778",
+      "arxiv_id": "2601.18778",
+      "reading_depth": "Primary §§3.1–3.3; candidate short training, target progress reward and student promotion inspected; not reproduced",
+      "local_reproduction": "NOT_RUN",
+      "method_paraphrase": "A teacher generates questions, student copies train, resulting target accuracy progress rewards the teacher; student is promoted over rounds.",
+      "categories": [
+        "meta_curriculum"
+      ],
+      "identity_check": "verified",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "rl2f",
+      "title": "Improving Interactive In-Context Learning from Natural Language Feedback",
+      "primary_url": "https://arxiv.org/abs/2602.16066",
+      "arxiv_id": "2602.16066",
+      "reading_depth": "Primary §§2–3.3 and discussion; not reproduced",
+      "local_reproduction": "NOT_RUN",
+      "method_paraphrase": "Multi-turn RL with a privileged feedback teacher trains student feedback learning; auxiliary teacher prediction supports teacher-free transfer.",
+      "categories": [
+        "feedback_teachability"
+      ],
+      "identity_check": "verified",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "cec",
+      "title": "Cross-Episodic Curriculum for Transformer Agents",
+      "primary_url": "https://arxiv.org/abs/2310.08549",
+      "arxiv_id": "2310.08549",
+      "reading_depth": "Primary §§2.2–2.3 and author project experiment description; not reproduced",
+      "local_reproduction": "NOT_RUN",
+      "method_paraphrase": "Orders cross-episode trajectories by learning progress, difficulty or demonstrator expertise; causal NLL trains Transformer-XL.",
+      "categories": [
+        "learning_operator"
+      ],
+      "identity_check": "verified",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "dpt",
+      "title": "Supervised Pretraining Can Learn In-Context Reinforcement Learning",
+      "primary_url": "https://arxiv.org/abs/2306.14892",
+      "arxiv_id": "2306.14892",
+      "reading_depth": "Primary §§1–3 and related-work distinction from AD; not reproduced",
+      "local_reproduction": "NOT_RUN",
+      "method_paraphrase": "Predicts optimal action from query state and interaction dataset; posterior-sampling-like online behavior can emerge without a learning source algorithm.",
+      "categories": [
+        "learning_operator"
+      ],
+      "identity_check": "verified",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "alchemy",
+      "title": "Alchemy: A benchmark and analysis toolkit for meta-reinforcement learning agents",
+      "primary_url": "https://arxiv.org/abs/2102.02926",
+      "arxiv_id": "2102.02926",
+      "reading_depth": "Primary §3.3–3.4 and official symbolic/ideal-observer source availability; runtime not yet tested",
+      "local_reproduction": "NOT_RUN",
+      "method_paraphrase": "Latent chemistry structure with multiple trials and ideal-observer / oracle reference agents.",
+      "categories": [
+        "benchmarks"
+      ],
+      "identity_check": "verified",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "meta_teaching",
+      "title": "Meta-Teaching: Curriculum Generation for Lifelong Learning",
+      "primary_url": "https://openreview.net/pdf/24330061a8c93283cca9633ffe1ec101a7142a60.pdf",
+      "publication_status": "Anonymous preliminary submission; final venue/authors NOT_VERIFIED",
+      "reading_depth": "Search-indexed primary Algorithm 1 and §§3–4 fragments; full PDF request HTTP 403",
+      "method_paraphrase": "Teacher adjusts task difficulty / distribution using meta-student adaptation losses; major possible overlap, not an absence.",
+      "identity_status": "PRIMARY_FRAGMENT_ONLY",
+      "categories": [
+        "meta_curriculum"
+      ],
+      "local_reproduction": "NOT_RUN",
+      "identity_check": "PRIMARY_FRAGMENT_ONLY",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "mewa",
+      "title": "MEWA: A Benchmark For Meta-Learning in Collaborative Working Agents",
+      "primary_url": "https://www.honda-ri.de/pubs/pdf/5532.pdf",
+      "code_url": "https://github.com/RStoican/MEWA",
+      "reading_depth": "Primary benchmark paper and original symbolic/task configuration code; environment training NOT_RUN",
+      "method_paraphrase": "Collaborative task and worker distributions with shared structure and stochastic mistakes; worker-specific adaptation.",
+      "categories": [
+        "benchmarks"
+      ],
+      "local_reproduction": "NOT_RUN",
+      "identity_check": "PRIMARY_SOURCE_LOCATED",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "laser",
+      "title": "Task-Specific Exploration in Meta-Reinforcement Learning via Task Reconstruction",
+      "primary_url": "https://openreview.net/pdf?id=VRRapVcaJH",
+      "code_url": "https://github.com/RStoican/LaSER",
+      "reading_depth": "Primary paper search material and official code README; full method NOT_AUDITED",
+      "method_paraphrase": "Task-reconstruction exploration; official code includes MEWA and Meta-World experiments.",
+      "categories": [
+        "benchmarks"
+      ],
+      "local_reproduction": "NOT_RUN",
+      "identity_check": "PRIMARY_SOURCE_LOCATED",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "dce",
+      "title": "Recursive Self-Improvement via On-Policy Distillation for Reasoning",
+      "primary_url": "https://arxiv.org/abs/2609.30652",
+      "reading_depth": "Primary §§3.1–3.3 read in prior positioning review; not reproduced",
+      "method_paraphrase": "Detached current model with verified solution guidance teaches on-policy student; verified compact rewrites supplement recursive distillation.",
+      "publication_status": "2026 preprint",
+      "categories": [
+        "recursive_distillation"
+      ],
+      "local_reproduction": "NOT_RUN",
+      "identity_check": "PRIMARY_SOURCE_LOCATED",
+      "is_efficacy_evidence_for_our_method": false
+    },
+    {
+      "key": "inflow",
+      "title": "Know Thyself, Teach Thyself: Internal Information Flow for Selective Self-Distillation",
+      "primary_url": "https://arxiv.org/abs/2609.36695",
+      "reading_depth": "Primary abstract only; full method comparison PENDING",
+      "method_paraphrase": "Selects knowledge-synthesis examples via retrieval potential and realized belief change; detailed control comparisons pending.",
+      "publication_status": "2026 preprint",
+      "categories": [
+        "experience_representation"
+      ],
+      "local_reproduction": "NOT_RUN",
+      "identity_check": "PRIMARY_SOURCE_LOCATED",
+      "is_efficacy_evidence_for_our_method": false
+    }
+  ],
+  "prior_ledgers": [
+    "../interactive_learning_20261013/paper_verification.json",
+    "../interactive_learning_20261013/new_paper_verification.json",
+    "../interactive_learning_20261013/student_coverage_v1/paper_verification.json"
+  ],
+  "missing_full_method_audits": [
+    "meta_teaching",
+    "inflow",
+    "laser"
+  ]
+}

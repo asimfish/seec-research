@@ -7,15 +7,15 @@
     "unselected logs",
     "user working-tree edits"
   ],
-  "export_scope": "Existing public scientific archive preserved; curated literature, symbolic diagnostic, three-seed learned pilot and separately registered feedback-redaction and student-history coverage diagnostics, authored figures, protocols, costs and reproducible adapters. No raw logs or checkpoints.",
+  "export_scope": "Existing public scientific archive preserved; curated literature, symbolic diagnostic, three-seed learned pilot and separately registered feedback-redaction and student-history coverage diagnostics, authored figures, protocols, costs and reproducible adapters, plus a separate unrun learning-loop proposal and representative literature map. No raw logs or checkpoints.",
   "files": {
     ".nojekyll": {
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "bytes": 0
     },
     "README.md": {
-      "sha256": "d01dd73f77980d66fea8f104ef70d81baa2d5efc5e9618e88b03a6ce089a83ea",
-      "bytes": 4773
+      "sha256": "c6ba52f5779188065fcf215cb6efd1d1a3e4d3ed9b9a2b88ae0df080069bd375",
+      "bytes": 5233
     },
     "app.js": {
       "sha256": "eb431cc202bd3048d2cf6a12cd07265631710347ff9d4191de29f08dbe21fb45",
@@ -128,6 +128,10 @@
     "assets/figures/learner_feasibility.svg": {
       "sha256": "609953a01db56ff8696b914e8891042ee0ab33f5de44ddd1e39bc2293a1cfa73",
       "bytes": 41780
+    },
+    "assets/figures/learning-loop-mechanism.svg": {
+      "sha256": "aadba0d64ae2718c3e265e8764af648278714135d55810f2c2e058408d4720d4",
+      "bytes": 4804
     },
     "assets/figures/neural_fit_diagnostic_v1.pdf": {
       "sha256": "ffa20a4251342f65bbf105679c9fbc5b72f3e0355db00a834c8d49f2f970e515",
@@ -361,13 +365,29 @@
       "sha256": "5452429d428cec16a7f33e2dc873a097cef75c1deed6519efbed8fe706ebd75d",
       "bytes": 1281
     },
+    "data/learning-loop-benchmarks.json": {
+      "sha256": "3297b822ca1f111314f8c8964869d52fb01f0674b2c63504deb14e6a689974ca",
+      "bytes": 723
+    },
+    "data/learning-loop-features.csv": {
+      "sha256": "ccac4646aaddc3d86c0ee221cf117c065a1c6b48b83b5795167199f7bb20f15c",
+      "bytes": 2749
+    },
+    "data/learning-loop-paper-identity.json": {
+      "sha256": "b1aaac05c444900b245553146d0dd61cc4ff5402af8b82d3e02c0d51d075442b",
+      "bytes": 2532
+    },
+    "data/learning-loop-papers.json": {
+      "sha256": "f1df4229547bda5e0839311693cbe4842b00a85c85e9b2b494c0e504362cb4ba",
+      "bytes": 38487
+    },
     "data/learning-paper-verification.json": {
       "sha256": "659d30beb57e5e997a5421dfa774402b7df3b8f1e4583f1bc1c5a754968ac3da",
       "bytes": 5498
     },
     "data/learning-progress.json": {
-      "sha256": "9e2506525f1a310448ded6311dfb5b7d53e80eebf55dcdbaf7faa1eef29faf6e",
-      "bytes": 205946
+      "sha256": "f6cd71989a7effe8ff89227c369f3a6584c64e3c3efca5f85ec79cb16861c206",
+      "bytes": 206388
     },
     "data/learning-reading-notes.json": {
       "sha256": "11ca9cb906656b647bfdfd16708227ff61caf6b0d53fb4836ecbbf3bec65ccea",
@@ -410,7 +430,7 @@
       "bytes": 1277
     },
     "index.html": {
-      "sha256": "eeac61e968851a7b0fa4c335eb0c19ee35338459780cedc580ec563f4eb5f173",
+      "sha256": "bde2e4c768ed1928adde6286d8c87be6b6e179db28ce304b994d58be73c59b3d",
       "bytes": 3167
     },
     "learning.css": {
@@ -418,8 +438,8 @@
       "bytes": 9402
     },
     "learning.html": {
-      "sha256": "1263ba819702fa7c44afa8f49d1bf4e1ef883580312e50f863ef910a528cb341",
-      "bytes": 20628
+      "sha256": "b11ab3b3b89e9a05876256a4b27513866514ffedfcf983952453934514b45f5a",
+      "bytes": 22796
     },
     "learning.js": {
       "sha256": "3387265ffa2b6816742513de5352ff70efe6f3f53ea681979efabd541940cc93",
@@ -452,6 +472,10 @@
     "research/learner_pilot_v1/run_learning_pilot.py": {
       "sha256": "40227855a0dd8efe095fe8012a154698d01dd52e962b6f1d827492a06370162d",
       "bytes": 19817
+    },
+    "research/learning-loop/proposal.md": {
+      "sha256": "fab17536f02b13221c626b1c65c804f6b9d60de9b766e01ab8cdb5e6fb6c7a3d",
+      "bytes": 27216
     },
     "research/learning-pilot/PROTOCOL.md": {
       "sha256": "1ad5150ac3394ed9a69b9159ca7fb3fb6218b38aab48171d39d714f1416f31e6",
@@ -630,7 +654,7 @@
     "frequency_result_sha256": "eb135042e726cc6d4de1e905daa72d9bf44066db33d474642759dbac34624b68",
     "paper_pdf_sha256": "7a963288be38608258e2c9be0828f3082d90701b8f917e0559437d811bae7dcd"
   },
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "archive_public_revision": "90d923d69e7728f376ae3d3e4ea9cc81dc7bc545",
   "new_research_inputs": {
     "summary_sha256": "d0221a27287af14e67c2b051b590746b9ddb310a91782a2ad3d18d8903a6d7c2",
@@ -653,5 +677,12 @@
     "verification_sha256": "f62efbb5eaa0fb7d736345aa65de7e5e43cac5843a5b03d1692fd38a1e7d6dd2",
     "plan_file_sha256": "9a48d9898063b7bb377091716e4d257dbb063df9d9e8531a7d7330cedba04257",
     "novelty_report_sha256": "3b242c96983e3b19d1c17d23ba340f7d03db96088daf83988f0ff3398d7c588c"
+  },
+  "learning_loop_inputs": {
+    "status": "PROPOSED_NOT_RUN",
+    "proposal_sha256": "fab17536f02b13221c626b1c65c804f6b9d60de9b766e01ab8cdb5e6fb6c7a3d",
+    "papers_sha256": "f1df4229547bda5e0839311693cbe4842b00a85c85e9b2b494c0e504362cb4ba",
+    "features_sha256": "ccac4646aaddc3d86c0ee221cf117c065a1c6b48b83b5795167199f7bb20f15c",
+    "new_identity_sha256": "b1aaac05c444900b245553146d0dd61cc4ff5402af8b82d3e02c0d51d075442b"
   }
 }

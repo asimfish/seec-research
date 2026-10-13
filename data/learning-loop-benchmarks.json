@@ -1,0 +1,23 @@
+{
+  "as_of": "2026-10-14",
+  "benchmarks": [
+    {
+      "name": "DREAM",
+      "code_url": "https://github.com/ezliu/dream",
+      "revision": "d52204c94067641df6e6649b19abb359b87ff028",
+      "runtime": "Cooking already used; other baseline training NOT_RUN"
+    },
+    {
+      "name": "Alchemy",
+      "code_url": "https://github.com/google-deepmind/dm_alchemy",
+      "revision": "68a26254b5c0f15e84fa0c15d66bf0c626ede8e0",
+      "runtime": "Source availability audited; install/train NOT_RUN"
+    },
+    {
+      "name": "MEWA",
+      "code_url": "https://github.com/RStoican/MEWA",
+      "revision": "3dcda1d7623d3bf32dccb5bf1e0fccb6eaae3ced",
+      "runtime": "Source availability audited; train NOT_RUN"
+    }
+  ]
+}

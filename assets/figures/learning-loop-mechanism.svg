@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="610" viewBox="0 0 1200 610" role="img" aria-labelledby="title desc">
+<title id="title">Experience credited by the next learner's adaptation</title>
+<desc id="desc">Proposed method, not run. Candidate histories train copies of the same student. Frozen-weight adaptation on new training-side rules credits the producer. An independent test evaluates promoted generations.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#516276"/></marker></defs>
+<rect width="1200" height="610" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#172c40">
+<text x="40" y="42" font-size="25" fill="#172c40" font-weight="700">What experience makes the next generation learn better?</text>
+<text x="40" y="70" font-size="15" fill="#78654a">METHOD PROPOSAL · NOT RUN · Same learner; all selection costs counted</text>
+<rect x="35" y="95" width="1130" height="310" rx="12" fill="#f4f7fa" stroke="#dce4ec"/>
+<text x="55" y="126" font-size="15" fill="#172c40" font-weight="700">OUTER LOOP · Weights and experience distribution change between generations</text>
+<rect x="60" y="155" width="220" height="140" rx="12" fill="white" stroke="#b6c6d4"/>
+<text x="80" y="185" font-size="18" fill="#172c40" font-weight="700">Experience producer</text>
+<text x="80" y="215" font-size="16" fill="#172c40">Choose training tasks</text>
+<text x="80" y="240" font-size="16" fill="#172c40">and collection budgets</text>
+<text x="80" y="271" font-size="14" fill="#516276">Current student acts</text>
+<rect x="335" y="155" width="230" height="140" rx="12" fill="white" stroke="#b6c6d4"/>
+<text x="355" y="185" font-size="18" fill="#172c40" font-weight="700">Candidate experience</text>
+<text x="355" y="215" font-size="16" fill="#172c40">Full causal histories</text>
+<text x="355" y="240" font-size="16" fill="#172c40">Failures and recovery kept</text>
+<text x="355" y="271" font-size="14" fill="#516276">Same labeling interface</text>
+<rect x="620" y="155" width="235" height="140" rx="12" fill="white" stroke="#b6c6d4"/>
+<text x="640" y="185" font-size="18" fill="#172c40" font-weight="700">Short training branches</text>
+<text x="640" y="215" font-size="16" fill="#172c40">Copy the same learner</text>
+<text x="640" y="240" font-size="16" fill="#172c40">Match updates and data</text>
+<text x="640" y="271" font-size="14" fill="#516276">All branch costs counted</text>
+<rect x="910" y="155" width="230" height="140" rx="12" fill="#eaf5f1" stroke="#b6c6d4"/>
+<text x="930" y="185" font-size="18" fill="#172c40" font-weight="700">Adaptation feedback</text>
+<text x="930" y="215" font-size="16" fill="#172c40">Fresh training-side rules</text>
+<text x="930" y="240" font-size="16" fill="#172c40">Freeze branch weights</text>
+<text x="930" y="271" font-size="14" fill="#516276">Credit actual learning gain</text>
+<path d="M280 225H328" stroke="#516276" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M565 225H613" stroke="#516276" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M855 225H903" stroke="#516276" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<path d="M1025 295V345H170V303" fill="none" stroke="#25766e" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="405" y="325" width="455" height="38" rx="12" fill="#eaf5f1" stroke="#eaf5f1"/>
+<text x="425" y="350" font-size="15" fill="#25766e">Feedback = post-training adaptation improvement</text>
+<text x="55" y="385" font-size="14" fill="#516276">Absorb selected experience → next learner → next collection. Hypothesis, not an established novelty claim.</text>
+<rect x="35" y="430" width="705" height="143" rx="12" fill="#f6f8fb" stroke="#dce4ec"/>
+<text x="55" y="460" font-size="15" fill="#172c40" font-weight="700">INNER LOOP · Same hidden rule; learner weights remain fixed</text>
+<text x="55" y="493" font-size="17" fill="#172c40">Act → observe feedback → update context → act again</text>
+<text x="55" y="523" font-size="15" fill="#516276">Measure first attempt, adaptation curve and interactions to criterion.</text>
+<text x="55" y="551" font-size="14" fill="#516276">Producer feedback belongs to training; it is not the sealed test.</text>
+<rect x="765" y="430" width="400" height="143" rx="12" fill="#fffaf1" stroke="#dbceb5"/>
+<text x="785" y="460" font-size="15" fill="#172c40" font-weight="700">INDEPENDENT TEST · No producer feedback</text>
+<text x="785" y="493" font-size="17" fill="#172c40">Generation 0 / 1 / 2 / 3</text>
+<text x="785" y="523" font-size="15" fill="#516276">New rule identities + matched budgets</text>
+<text x="785" y="551" font-size="14" fill="#516276">Report competence and adaptation separately.</text>
+</g></svg>

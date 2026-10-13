@@ -6,6 +6,8 @@ Nine recurrent BC models (three optimizer seeds) are now trained and independent
 
 **New separating experiment:** twelve paired continuation runs cross student-history coverage with factual auxiliary supervision. Student-history action supervision reaches 81.33%, compared with 78.51% for student-history factual auxiliary, 30.03% offline action supervision and 60.53% offline factual supervision. The registered prediction that factual gains survive student-state coverage fails. Ordinary DAgger-style coverage is retained as the simpler explanation; it is not a new algorithm. The page preserves the earlier pilot, new costs, negative findings, and five additional direct precedents (26 checked identifiers).
 
+**Research design update (2026-10-14):** 43 representative literature entries and a 14-row feature matrix locate the proposed loop among CARML, Meta-Teaching, cooperative TSCL, SOAR and feedback learning. The next candidate credits experience by post-training frozen-weight adaptation on new rules; it has NOT RUN. The page links the mechanism, public benchmarks and claim-driven experiments. Earlier numerical evidence and negative results remain unchanged.
+
 **Student-Executable Experience Consolidation** studies which teacher
 demonstrations can become executable supervision at the student's information
 boundary. This repository is the public presentation package, separate from
