@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "plan_id": "alchemy-e0-321d904e1a98af37",
+  "summary_sha256": "82cc8856a56c9350e8e76bd6b4cf7f955b5df6ce4c6c63624cdb38c0ccdae06a",
+  "records": 6400,
+  "raw_observation_max_difference": 0,
+  "recomputed_policy_actions": 6400,
+  "trial_posterior_counts_compared": 160,
+  "trial_posterior_counts_equal": 160,
+  "extra_verification_actions": 6400,
+  "extra_verification_resets": 32,
+  "gradient_updates": 0,
+  "scope": "All actions, observations, rewards, posterior counts and plan/ledger bindings; not physical snapshot E4"
+}

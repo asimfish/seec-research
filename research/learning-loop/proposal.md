@@ -8,6 +8,12 @@
 完整正反结果见 [结果](../learning_loop_20261014/credit_pilot_v1/RESULTS.md) 与 [当前前沿](../learning_loop_20261014/credit_pilot_v1/CURRENT_FRONTIER.md)。
 后续需要检验固定交互预算下的绝对表现与跨规则的能力保持；尚无多代闭环或机器人效果。
 
+**后续基准检查：** 独立登记的 Alchemy E0 已完成 8 套规则、4 个手工参考、
+6,400 个动作；无梯度训练。保留信念的后五 trial 配对回报仅高出 1.20，
+5/8 为正，未通过登记的差异门。它与特权贪心参考的后五 trial 回报逐规则持平；
+完整规划尚未运行，不能将当前局部决策的结果解释为整个 Alchemy 没有学习空间。
+见 [E0 结果](../learning_loop_20261014/alchemy_e0_v1/RESULTS.md)。
+
 本稿接续 `../interactive_learning_20261013/STORY_REASSESSMENT_20261013.md`。保留已有负结果；不重开历史 Lift/Planar 路线，不把旧 Cooking 验证升级为 Robot RSI。
 
 ## 1. 科学问题与候选主张

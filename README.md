@@ -10,6 +10,8 @@ Nine recurrent BC models (three optimizer seeds) are now trained and independent
 
 **Executed credit diagnostic (2026-10-14):** 51 models and 11,136 updates compare six fixed candidate scores. Adaptation-credit ranking reaches mean Spearman 0.537, but all three selected learners fail competence retention. First-attempt success falls from 86.11% to 72.92%, later success rises only 1.16 percentage points, and total performance falls 2.43 points. The registered gate FAIL is retained beside independent replay PASS, complete cost, exact code, plans and figures. The earlier design paragraph above records its pre-execution state. No successful recursive learner or new robot result is claimed.
 
+**Alchemy E0 qualification (2026-10-14):** the unchanged official symbolic environment now runs in an isolated runtime. Eight chemistries, four hand-coded controls, 6,400 actions and zero gradients completed with exact replay. Retained belief improves last-five trial reward by only 1.20, positive in 5/8 seeds: the registered gap gate FAIL is retained. Retained belief matches the privileged greedy reference in later trials; that reference is not an optimal ceiling. Full ideal-observer planning, learned Alchemy policies and recursive efficacy remain NOT_RUN.
+
 **Student-Executable Experience Consolidation** studies which teacher
 demonstrations can become executable supervision at the student's information
 boundary. This repository is the public presentation package, separate from

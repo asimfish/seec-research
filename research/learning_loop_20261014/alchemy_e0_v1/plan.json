@@ -1,0 +1,48 @@
+{
+  "schema": "alchemy-e0-plan-v1",
+  "scope": "Zero-training domain qualification, not method efficacy",
+  "upstream_revision": "68a26254b5c0f15e84fa0c15d66bf0c626ede8e0",
+  "level": "alchemy/perceptual_mapping_randomized_with_random_bottleneck",
+  "environment_seeds": [
+    4101,
+    4102,
+    4103,
+    4104,
+    4105,
+    4106,
+    4107,
+    4108
+  ],
+  "arms": [
+    "visible_random",
+    "bayes_reset",
+    "bayes_carry",
+    "privileged_greedy"
+  ],
+  "native_trials": 10,
+  "native_steps_per_trial": 20,
+  "native_stones": 3,
+  "native_potions": 12,
+  "expected_actions": 6400,
+  "expected_resets": 32,
+  "gradient_updates": 0,
+  "max_wall_seconds": 1800,
+  "code_hashes": {
+    "policies.py": "6b78fa758194e75d65d729151bab3bfaa8db62b8b9ae78471c9e2073066999dc",
+    "run_e0.py": "e1ddcecfb7255e7095a21f419fd4a6438173c7d4cc36a6316ebca16679064afe",
+    "analyze_e0.py": "c51d84cff94e5fa233841cffc8b54125ddfdd8878fb17aa9bfad1c253203566c",
+    "verify_e0.py": "ba50ed8c412c9406c9f57d52458828b522ea7a92752004a269aaf92f1f78a623",
+    "test_e0.py": "2764c790d506bfb22690fa3f04aea519449fff1dafdc1ea2ce435996bfe65428",
+    "register_e0.py": "115b0fcf0d7f4eee0926b9f74dd89f572a7614af1e31a8dbaa0540f2fc347bf6",
+    "PROTOCOL.md": "2766fa90fbd7d5d628b74caa635d2b907208b7cb7aa9c95c537bbdfb7f262b0b",
+    "RUNTIME.json": "a3a327b8fee1a83729c56f742826c404cb4b2002c478df9b9202bd50c24cadde"
+  },
+  "qualification": {
+    "last_five_mean_reward_gap": 2.0,
+    "positive_seeds": 6,
+    "first_trial_and_all_seeds_reported": true
+  },
+  "full_ideal_observer": "NOT_RUN",
+  "plan_id": "alchemy-e0-321d904e1a98af37",
+  "registered_at_utc": "2026-10-13T19:01:25.762251+00:00"
+}

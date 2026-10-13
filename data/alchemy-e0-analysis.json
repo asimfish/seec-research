@@ -1,0 +1,181 @@
+{
+  "schema": "alchemy-e0-fixed-analysis-v1",
+  "plan_id": "alchemy-e0-321d904e1a98af37",
+  "summary_sha256": "82cc8856a56c9350e8e76bd6b4cf7f955b5df6ce4c6c63624cdb38c0ccdae06a",
+  "by_arm": {
+    "visible_random": {
+      "trial_reward_means": [
+        17.875,
+        15.625,
+        23.5,
+        13.875,
+        14.25,
+        8.25,
+        19.5,
+        21.625,
+        15.875,
+        13.5
+      ],
+      "mean_trial_reward": 16.3875,
+      "mean_last_five_reward": 15.75,
+      "total_reward_by_seed": [
+        113.0,
+        101.0,
+        288.0,
+        230.0,
+        172.0,
+        160.0,
+        174.0,
+        73.0
+      ],
+      "last_five_mean_by_seed": [
+        7.0,
+        9.8,
+        27.4,
+        15.6,
+        24.2,
+        19.2,
+        18.6,
+        4.2
+      ]
+    },
+    "bayes_reset": {
+      "trial_reward_means": [
+        27.125,
+        23.25,
+        27.0,
+        17.75,
+        21.375,
+        23.25,
+        25.625,
+        25.25,
+        21.875,
+        17.375
+      ],
+      "mean_trial_reward": 22.9875,
+      "mean_last_five_reward": 22.675,
+      "total_reward_by_seed": [
+        174.0,
+        218.0,
+        331.0,
+        250.0,
+        248.0,
+        218.0,
+        220.0,
+        180.0
+      ],
+      "last_five_mean_by_seed": [
+        10.6,
+        21.8,
+        36.0,
+        19.4,
+        33.2,
+        30.6,
+        16.2,
+        13.6
+      ]
+    },
+    "bayes_carry": {
+      "trial_reward_means": [
+        27.125,
+        25.0,
+        27.0,
+        21.75,
+        28.75,
+        23.375,
+        27.375,
+        30.625,
+        20.25,
+        17.75
+      ],
+      "mean_trial_reward": 24.9,
+      "mean_last_five_reward": 23.875,
+      "total_reward_by_seed": [
+        191.0,
+        208.0,
+        332.0,
+        307.0,
+        264.0,
+        247.0,
+        235.0,
+        208.0
+      ],
+      "last_five_mean_by_seed": [
+        10.8,
+        19.4,
+        36.0,
+        25.0,
+        33.6,
+        30.6,
+        19.2,
+        16.4
+      ]
+    },
+    "privileged_greedy": {
+      "trial_reward_means": [
+        30.75,
+        25.0,
+        27.0,
+        21.75,
+        30.5,
+        23.375,
+        27.375,
+        30.625,
+        20.25,
+        17.75
+      ],
+      "mean_trial_reward": 25.4375,
+      "mean_last_five_reward": 23.875,
+      "total_reward_by_seed": [
+        177.0,
+        208.0,
+        346.0,
+        307.0,
+        265.0,
+        247.0,
+        249.0,
+        236.0
+      ],
+      "last_five_mean_by_seed": [
+        10.8,
+        19.4,
+        36.0,
+        25.0,
+        33.6,
+        30.6,
+        19.2,
+        16.4
+      ]
+    }
+  },
+  "paired_carry_minus_reset_last_five": {
+    "by_seed": [
+      0.20000000000000107,
+      -2.400000000000002,
+      0.0,
+      5.600000000000001,
+      0.3999999999999986,
+      0.0,
+      3.0,
+      2.799999999999999
+    ],
+    "mean": 1.1999999999999997,
+    "positive_seeds": 5
+  },
+  "registered_checks": {
+    "paired_later_gap_at_least_two_reward_units": false,
+    "gap_positive_at_least_six_of_eight": false,
+    "neither_bayes_arm_all_floor": true,
+    "carry_not_all_at_theoretical_maximum": true
+  },
+  "domain_qualified_for_next_pilot": false,
+  "decision": "E0_GAP_NOT_ESTABLISHED",
+  "statistical_unit": "Eight chemistry/environment seeds, not eighty independent trials",
+  "scope": "Descriptive hand-coded Bayesian-myopic qualification; no gradient training, full ideal-observer score, recursive learner or robot result",
+  "cost": {
+    "environment_actions": 6400,
+    "resets": 32,
+    "gradient_updates": 0,
+    "wall_seconds": 9.975468609947711
+  }
+}
