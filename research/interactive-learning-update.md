@@ -132,6 +132,8 @@ Meta-World 可作为连续控制层验证，但其任务标签或目标变化不
 
 ## 研究状态
 
+2026-10-13 另按用户要求恢复了七段机器人场景 / 子操作历史，并重新检查 NAS 资产。已有 layout v4 的 A/B/C 实验室、四瓶完整 demo 与 20 路视频，没有被本方向废弃；新版 [场景网页](https://asimfish.github.io/seec-research/scenes.html) 与学习页分别展示。checkpoint 容器与恢复 adapter 有实现，但历史局部携行 PASS 使用运动学支撑，全场景恢复门仍 FAIL；任意运动中断点、新进程多阶段链与完整随机 / 任务图继承未闭合。新审计不得升级为学习效果，Cooking 成功率也不证明这些能力。[本次方案判断](https://asimfish.github.io/seec-research/research/scene-recovery-report.md) 明确列出实现与缺口。
+
 - 背景观点新颖性：否定宽泛首次；窄机制新颖性仍未确认。
 - 初步标准环境诊断：符号参考到天花板；学习器 24.21 / 34.29 / 56.80%，事实辅助有探索性收益，仍低于符号参考。
 - 学习程序：三种子的循环 BC 与事实辅助诊断完成；on-policy 参数吸收、学习信用和机器人新规则尚未运行。

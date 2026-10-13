@@ -1,0 +1,451 @@
+{
+  "schema": "scene-recovery-audit-v1",
+  "overall_stage_resume": "PARTIAL_NOT_COMPLETE",
+  "fresh_serialization_roundtrip_exact": true,
+  "fresh_adapter_probe": {
+    "scope": "CPU setter contract probe, not simulator execution",
+    "schema_accepts_nonzero_velocities": true,
+    "saved_joint_velocity_rad_s": 0.25,
+    "restored_joint_velocity_max_rad_s": 0.0,
+    "saved_root_velocity_m_s": 0.25,
+    "restored_articulation_root_velocity_max": 0.0,
+    "preserves_nonzero_joint_velocity": false,
+    "identity_mismatch_rejected_before_writes": true,
+    "missing_identity_rejected": true,
+    "task_graph_position_restored": false,
+    "rng_state_restored": false
+  },
+  "historical_carry": {
+    "status": "PASS",
+    "scope": "Independent file recomputation for this carry diagnostic; not formal scene/workflow acceptance or video stitching",
+    "placement_error_m": {
+      "baseline": 0.00023771278586165426,
+      "resumed": 0.000239524482283398
+    },
+    "settled_relative_pose_difference": {
+      "position_m": 4.1735781510981735e-05,
+      "orientation_rad": 0.000869722007261172
+    },
+    "whole_scene_resume_gate": {
+      "status": "FAIL",
+      "scope": "Whole-scene tolerance check remains separate from localized carry",
+      "checkpoint_body_count": 56,
+      "after_30_tick_tracked_body_count": 19,
+      "failures": {
+        "pestle": {
+          "position_m": 0.00015391211968817742,
+          "orientation_rad": 0.00990632268714227
+        }
+      },
+      "tracked_body_differences": {
+        "paper": {
+          "position_m": 0.0,
+          "orientation_rad": 2.927158556492736e-06
+        },
+        "precursor_1": {
+          "position_m": 4.479779784795355e-05,
+          "orientation_rad": 0.0008736417668199149
+        },
+        "precursor_2": {
+          "position_m": 9.684608464999152e-07,
+          "orientation_rad": 1.0889802855966415e-05
+        },
+        "precursor_3": {
+          "position_m": 2.604797992891809e-05,
+          "orientation_rad": 0.0006064637250387547
+        },
+        "precursor_4": {
+          "position_m": 2.5710337605548863e-05,
+          "orientation_rad": 0.0013596698254619791
+        },
+        "crucible_A0": {
+          "position_m": 0.0,
+          "orientation_rad": 0.0
+        },
+        "ethanol": {
+          "position_m": 5.385001746164968e-05,
+          "orientation_rad": 0.0015415077016182324
+        },
+        "pipette": {
+          "position_m": 2.6656007498500226e-07,
+          "orientation_rad": 1.987946708269578e-05
+        },
+        "stock_1": {
+          "position_m": 4.033803510020468e-05,
+          "orientation_rad": 0.0005222290763966798
+        },
+        "stock_2": {
+          "position_m": 1.93008638538358e-05,
+          "orientation_rad": 0.00042165781337109517
+        },
+        "stock_3": {
+          "position_m": 4.775816350939305e-06,
+          "orientation_rad": 6.435215825399668e-05
+        },
+        "stock_4": {
+          "position_m": 6.552174608069084e-06,
+          "orientation_rad": 8.905226662369533e-05
+        },
+        "pestle": {
+          "position_m": 0.00015391211968817742,
+          "orientation_rad": 0.00990632268714227
+        },
+        "carousel_crucible_0": {
+          "position_m": 6.51192785186926e-06,
+          "orientation_rad": 0.00021542636938613047
+        },
+        "carousel_crucible_1": {
+          "position_m": 1.8519653051265734e-05,
+          "orientation_rad": 0.000455577978377579
+        },
+        "carousel_crucible_2": {
+          "position_m": 6.479196626860397e-06,
+          "orientation_rad": 0.00021597681770504386
+        },
+        "carousel_crucible_3": {
+          "position_m": 6.51192785186926e-06,
+          "orientation_rad": 0.00021542636938613047
+        },
+        "carousel_crucible_4": {
+          "position_m": 1.8519653051265734e-05,
+          "orientation_rad": 0.000455577978377579
+        },
+        "carousel_crucible_5": {
+          "position_m": 6.528311641707363e-06,
+          "orientation_rad": 0.00021715668510576298
+        }
+      }
+    }
+  },
+  "carry_mode": "kinematic_after_verified_grasp",
+  "checkpoint_body_count": 56,
+  "checkpoint_randomness": {
+    "draw_count": 0,
+    "seed": 0
+  },
+  "checkpoint_source_sha256": {
+    "checkpoint_schema.py": "f3e7522b0c8274fb326e60d7bd6f2b500b28fec969b4cb8824b693fd40063b23",
+    "checkpoint_runtime.py": "80d17a39744d01c6e28cdb4a96c831fd01d7c196eba323e8c793cee06afd8392"
+  },
+  "checkpoint_file_sha256": "646fc762cbce37df88828afbc2dfbf2939dc1776aa195191aaae214b2654de39",
+  "episodes": {
+    "precursor_1": {
+      "run_id": "20260921T153124_451119577_scripted",
+      "task_success_recorded": true,
+      "grasp_mode": "physical",
+      "physics_hz": 240,
+      "source_ticks": 13427,
+      "step_rows": 13427,
+      "contact_tick_rows": 13427,
+      "contact_ticks_unique": true,
+      "contact_ticks_contiguous": true,
+      "any_negative_separation_tick_rows": 95,
+      "robot_or_bottle_negative_separation_tick_rows": 0,
+      "deeper_than_3mm_tick_rows": 0,
+      "minimum_separation_m": -0.0017508715391159058,
+      "last_negative_time_s": 0.39166666666666666,
+      "placements_mm": [
+        1.7079738900065422,
+        0.41633384535089135
+      ],
+      "full_views": {
+        "a_front": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "56.000000",
+          "nb_frames": "672",
+          "sha256": "6bd3715d45e539b7edf05eb92dc04cb40f9a4930b3e3c94cb9fa7163156c57f9",
+          "bytes": 4283077
+        },
+        "a_side": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "56.000000",
+          "nb_frames": "672",
+          "sha256": "c8fb4149777e9a3548598df3eb174010b07a983e0f313368c12a34148797f10e",
+          "bytes": 3823006
+        },
+        "a_top": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "56.000000",
+          "nb_frames": "672",
+          "sha256": "1f7430124ba2d6ce1776bdce67f8ec15e0f982931f826bd01666ddf26921f19b",
+          "bytes": 4031489
+        },
+        "station_a": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "56.000000",
+          "nb_frames": "672",
+          "sha256": "8e124a9475f1de1a8588056c073c905e6102d2e1a57e1e7d2518074a10d501da",
+          "bytes": 3115478
+        },
+        "wrist": {
+          "width": 640,
+          "height": 400,
+          "r_frame_rate": "12/1",
+          "duration": "56.000000",
+          "nb_frames": "672",
+          "sha256": "d18de6010c7596446539fd22db60e8438d89ac11d9f0211bffd61821f0d739c4",
+          "bytes": 3606584
+        }
+      },
+      "checkpoint_files_in_episode": 0,
+      "source_sha256": {
+        "meta.json": "f815dcdc3d4b79d5e2053a0f18d267bea08b5f44e9bfda25b56cd4e1a92488da",
+        "steps.npz": "503ba7c9914bc5a172684d97a8b130d8fdea41beb4a49f9ce395917285bdbb88",
+        "contacts.jsonl.gz": "616a3372c53ed0e8cef309fb13dd9674be893833cd4a2996bacbe7b2112bec91"
+      },
+      "scope": "Persisted physical demonstration; not whole-scene zero penetration, formal benchmark qualification or fresh physics replay"
+    },
+    "precursor_2": {
+      "run_id": "20260921T160712_144031545_scripted",
+      "task_success_recorded": true,
+      "grasp_mode": "physical",
+      "physics_hz": 240,
+      "source_ticks": 13426,
+      "step_rows": 13426,
+      "contact_tick_rows": 13426,
+      "contact_ticks_unique": true,
+      "contact_ticks_contiguous": true,
+      "any_negative_separation_tick_rows": 95,
+      "robot_or_bottle_negative_separation_tick_rows": 0,
+      "deeper_than_3mm_tick_rows": 0,
+      "minimum_separation_m": -0.0017508715391159058,
+      "last_negative_time_s": 0.39166666666666666,
+      "placements_mm": [
+        1.706831157207489,
+        0.43673504842445254
+      ],
+      "full_views": {
+        "a_front": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "56.000000",
+          "nb_frames": "672",
+          "sha256": "2d47f9bcbceaeeebbf06616ed7e5c14eb94a26f5a2fb70443557472662fdfc85",
+          "bytes": 4300230
+        },
+        "a_side": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "56.000000",
+          "nb_frames": "672",
+          "sha256": "2285dd9064653def100eeff1b258b685c7e122797f544a6d66804c9d6388c8df",
+          "bytes": 3745768
+        },
+        "a_top": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "56.000000",
+          "nb_frames": "672",
+          "sha256": "da21d936d29b7d76f3bb73215851fd24b360149647e552e3563cdf55c3650fe4",
+          "bytes": 4130501
+        },
+        "station_a": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "56.000000",
+          "nb_frames": "672",
+          "sha256": "980926bba6379ede4be3ba121a95fc26a99f584bb46cce992c218022b7767303",
+          "bytes": 3109083
+        },
+        "wrist": {
+          "width": 640,
+          "height": 400,
+          "r_frame_rate": "12/1",
+          "duration": "56.000000",
+          "nb_frames": "672",
+          "sha256": "3b5666e0343b14e1ffbdbb923a2309f476be6afd720b0e1bb18639b16c03b561",
+          "bytes": 3813873
+        }
+      },
+      "checkpoint_files_in_episode": 0,
+      "source_sha256": {
+        "meta.json": "0f27ce00925aa952932cc7c643a5a678d76054ab42ec94b3bf161b778a506022",
+        "steps.npz": "e4f5b124b19cfc80ef7137b4e72f023e65d87e0a9a6476ee61dac3468e9c0dbc",
+        "contacts.jsonl.gz": "5b15a157430e2101395c36605ea3c84a4df405153381c4b67690053d41217240"
+      },
+      "scope": "Persisted physical demonstration; not whole-scene zero penetration, formal benchmark qualification or fresh physics replay"
+    },
+    "precursor_3": {
+      "run_id": "20260921T182404_835586600_scripted",
+      "task_success_recorded": true,
+      "grasp_mode": "physical",
+      "physics_hz": 240,
+      "source_ticks": 24470,
+      "step_rows": 24470,
+      "contact_tick_rows": 24470,
+      "contact_ticks_unique": true,
+      "contact_ticks_contiguous": true,
+      "any_negative_separation_tick_rows": 95,
+      "robot_or_bottle_negative_separation_tick_rows": 0,
+      "deeper_than_3mm_tick_rows": 0,
+      "minimum_separation_m": -0.0017508715391159058,
+      "last_negative_time_s": 0.39166666666666666,
+      "placements_mm": [
+        1.6712135402485728,
+        0.4125172272324562
+      ],
+      "full_views": {
+        "a_front": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "102.000000",
+          "nb_frames": "1224",
+          "sha256": "aacb55d31b50821bbacd54bb5f5197e85d0bc1c7bdbb4b8c2cc3acaeb28580ab",
+          "bytes": 8040471
+        },
+        "a_side": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "102.000000",
+          "nb_frames": "1224",
+          "sha256": "a458538c5add6bd62b3ab10f345e81195f99c0d60cac8ef033818cb7110db7f4",
+          "bytes": 6602301
+        },
+        "a_top": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "102.000000",
+          "nb_frames": "1224",
+          "sha256": "fa925e5fcf157b75f20ba74fdf9d7695c215587cd84ecb93d9cb3f672fefb448",
+          "bytes": 8045531
+        },
+        "station_a": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "102.000000",
+          "nb_frames": "1224",
+          "sha256": "bb66065f2a025315c58b315ce46d8a7bbb192febed2cb4c6eb6c4e2e8f253ff4",
+          "bytes": 5417062
+        },
+        "wrist": {
+          "width": 640,
+          "height": 400,
+          "r_frame_rate": "12/1",
+          "duration": "102.000000",
+          "nb_frames": "1224",
+          "sha256": "d19f17bdfacdaa5927e20963620ba86f06526d5806f335d49ee05d430b67f670",
+          "bytes": 6515808
+        }
+      },
+      "checkpoint_files_in_episode": 0,
+      "source_sha256": {
+        "meta.json": "53e64e2aa4d66157f4c60f0de3fe9de26bf7fe96a68c3bda78939a5e16617c87",
+        "steps.npz": "5748057609d2ba8b39ca7c693ba6bd0b3a15d3033ddc7fb55347e9d652266fca",
+        "contacts.jsonl.gz": "eb835320186e4584e07afebc8a734814b5f40489b5334798716f8bb73a5c1c12"
+      },
+      "scope": "Persisted physical demonstration; not whole-scene zero penetration, formal benchmark qualification or fresh physics replay"
+    },
+    "precursor_4": {
+      "run_id": "20260921T185634_832292287_scripted",
+      "task_success_recorded": true,
+      "grasp_mode": "physical",
+      "physics_hz": 240,
+      "source_ticks": 24470,
+      "step_rows": 24470,
+      "contact_tick_rows": 24470,
+      "contact_ticks_unique": true,
+      "contact_ticks_contiguous": true,
+      "any_negative_separation_tick_rows": 95,
+      "robot_or_bottle_negative_separation_tick_rows": 0,
+      "deeper_than_3mm_tick_rows": 0,
+      "minimum_separation_m": -0.0017508715391159058,
+      "last_negative_time_s": 0.39166666666666666,
+      "placements_mm": [
+        1.6486613312736154,
+        0.42046315502375364
+      ],
+      "full_views": {
+        "a_front": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "102.000000",
+          "nb_frames": "1224",
+          "sha256": "a6c7745b912c596c819c9823c85a24dd3f559d875c1129b2523759da1144beef",
+          "bytes": 7568136
+        },
+        "a_side": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "102.000000",
+          "nb_frames": "1224",
+          "sha256": "3cf4b5080fb1c3b96bf9f64cae5c64be1b5216304b83434e7c1572a3f9bda6f3",
+          "bytes": 6427123
+        },
+        "a_top": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "102.000000",
+          "nb_frames": "1224",
+          "sha256": "236fe845ea18aa7db8613ab919f1980f36d3351a9807f6c4052be9c40cf9620c",
+          "bytes": 7331926
+        },
+        "station_a": {
+          "width": 1280,
+          "height": 800,
+          "r_frame_rate": "12/1",
+          "duration": "102.000000",
+          "nb_frames": "1224",
+          "sha256": "d7a1ad7f00db466b6a96c49109bf05b075d1fe295082bf3b3387f87f2470ea14",
+          "bytes": 5506505
+        },
+        "wrist": {
+          "width": 640,
+          "height": 400,
+          "r_frame_rate": "12/1",
+          "duration": "102.000000",
+          "nb_frames": "1224",
+          "sha256": "4063e33e4c0bbc75d60d96252bafe8a5a3365288be3ceb702f281a3c97da9f3b",
+          "bytes": 6019528
+        }
+      },
+      "checkpoint_files_in_episode": 0,
+      "source_sha256": {
+        "meta.json": "806826bdd798e71a889e1820f27fe60a17cb1b0a011f725d78f2e6b7bdda8633",
+        "steps.npz": "9163877220f1f8bb7f77f6a963bc5fc736e7ce460459088360b50c85265107b4",
+        "contacts.jsonl.gz": "f35f7175b5930fb278f73698a26cc310ae5ec8a98e74047acb50cf5ed00d8af9"
+      },
+      "scope": "Persisted physical demonstration; not whole-scene zero penetration, formal benchmark qualification or fresh physics replay"
+    }
+  },
+  "fresh_isaac_replay": "NOT_RUN_NVML_DRIVER_LIBRARY_MISMATCH",
+  "source_mutations": 0,
+  "limits": [
+    "Historical carry success uses verified-grasp kinematic support",
+    "30 settling ticks are excluded",
+    "Whole-scene gate fails; only 19 of 56 rigid bodies tracked after settling",
+    "Nonzero velocity is intentionally discarded by the archived adapter",
+    "No cross-process end-to-end multi-stage physical chain proven",
+    "Render replay is pose playback, not dynamic continuation",
+    "No new learner performance measured in this audit"
+  ],
+  "scope": "Read-only recovery audit of closed historical runs; no fresh Isaac or learning experiment",
+  "history": {
+    "conversations": 7,
+    "visible_messages_read": 5950,
+    "per_conversation": 850,
+    "detail_messages_read": 5,
+    "all_original_conversations_idle": true,
+    "full_history_read": false,
+    "remote_mutations": 0
+  },
+  "auditor_sha256": "bf497ea1f17bf5232f52bd60eaefae63b3bce19c39e5cf9c1723d361a616f9f1"
+}

@@ -3427,5 +3427,7 @@
     "new-method efficacy"
   ],
   "historical_archive_public_revision": "90d923d69e7728f376ae3d3e4ea9cc81dc7bc545",
-  "reference_layout": "https://asimfish.github.io/psibot-dashboard/pick_place.html"
+  "reference_layout": "https://asimfish.github.io/psibot-dashboard/pick_place.html",
+  "scene_page": "scenes.html",
+  "stage_resume_status": "PARTIAL_NOT_COMPLETE"
 }

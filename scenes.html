@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>实验室重建与阶段恢复 · RoboCore</title><meta name="description" content="找回的真实 Isaac 实验室场景、四瓶完整演示、阶段 checkpoint 实现与未闭合的物理恢复证据。">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="learning.css"><link rel="stylesheet" href="scenes.css"><script defer src="scenes.js"></script></head>
+<body><a class="skip" href="#main">跳到正文</a><header class="top"><a class="brand" href="scenes.html"><span class="brand-mark">R</span><span>RoboCore <small>LAB &amp; BENCHMARK</small></span></a><nav><a href="#lab">重建场景</a><a href="#demos">完整演示</a><a href="#resume">阶段恢复</a><a href="learning.html">学习实验 ↗</a><a href="index.html?lang=zh&view=experiments">历史档案 ↗</a></nav></header>
+<div class="layout"><aside class="sidebar"><p class="eyebrow">场景与执行</p><a href="#lab" class="selected">01　真实实验室重建</a><a href="#demos">02　四瓶完整演示</a><a href="#resume">03　保存与重建到哪一步</a><a href="#next">04　下一次物理验收</a><a href="#sources">05　历史来源与复核</a><div class="side-note"><span class="dot"></span>历史资产已找回<p>7 个会话 · 5,950 条消息<br>原场景与旧失败保留</p></div></aside>
+<main id="main"><section id="lab" class="hero"><div class="eyebrow">RECONSTRUCTED LAB / PRESERVED EXPERIMENTS</div><div class="title-row"><h1>场景没有丢。<br>长任务恢复还需闭合。</h1><span class="pill amber">部分实现，未完全通过</span></div><p class="lead">找回原来搭建的实验室、机器人与仪器，恢复真实演示入口；分别报告场景、物理执行和断点恢复。</p><p class="muted">下方是保存的 Isaac RTX / PathTracing 成片，不是 Cooking 网格，也不是新生成的概念图。Cook­ing 只承担任务学习诊断，不替代机器人 benchmark。</p>
+<figure class="lab-overview"><img src="assets/scenes/overview_1.jpg" alt="重建实验室全景：A 站转盘与机械臂、B 站四炉与导轨、C 站仪器和机器人"><figcaption>历史 layout v4 · 实际 Isaac RTX 房间渲染。此图保存其原版本；下方 A r7 视频的瓶位、天平与机位属于后续修订。</figcaption></figure>
+<div class="scene-gallery"><figure><img src="assets/scenes/station_a.jpg" loading="lazy" alt="A 站前驱体处理机器人、转盘和仪器"><figcaption><b>A · 制备与称量</b>　FR3、转盘、瓶架、坩埚架、天平与混料设备。</figcaption></figure><figure><img src="assets/scenes/station_b.jpg" loading="lazy" alt="B 站四台炉和导轨机械臂"><figcaption><b>B · 加热与转运</b>　四台马弗炉、可动炉门、导轨和 UR5e。</figcaption></figure><figure><img src="assets/scenes/station_c.jpg" loading="lazy" alt="C 站 XRD、机器人和样品处理仪器"><figcaption><b>C · 样品处理</b>　XRD、样品架、天平、封盖机和 UR5e。</figcaption></figure></div>
+<p class="note">场景画质与摆放不是完整 benchmark 验收。B/C 仍有资格门与物理失败；不把可看的视频写成全任务、全变体或学习策略通过。</p></section>
+
+<section id="demos" class="card section"><div class="section-head"><div><div class="eyebrow">02 / CLOSED PHYSICAL DEMONSTRATIONS</div><h2>四瓶：取出 → 放秤释放 → 再抓 → 归位。</h2><p class="muted">A r7 旧瓶位、旧机位、天平无玻璃罩。每瓶一条完整站位视频，点击阶段可定位。</p></div><span class="pill green">原片与数据已找回</span></div><div id="video-list" class="video-grid"></div>
+<div class="note">这组视频使用 PathTracing + 原色不透明瓶盖材质覆盖（capC），不是零 override 的原始资产。保存了 4 × 5 路完整视频；此页先展示四条站位原片。它们是脚本物理 demo，不是学习策略的泛化成绩，也没有通过新进程阶段恢复验收。</div><p id="contact-note" class="small"></p></section>
+
+<section id="resume" class="card section"><div class="section-head"><div><div class="eyebrow">03 / STAGED SAVE &amp; RECONSTRUCTION</div><h2>有代码，但不能称为完整解决。</h2><p class="muted">版本化保存、局部恢复、全场景续跑与渲染回放，需要四种不同的证据。</p></div><span class="pill amber">PARTIAL</span></div>
+<div class="table-scroll"><table><caption>实现与验收逐项对应</caption><thead><tr><th>能力</th><th>当前情况</th><th>状态</th></tr></thead><tbody>
+<tr><td>版本化 NPZ / JSON 保存</td><td>已有 schema、原子写入、身份字段；往返的规范化 JSON 载荷相同</td><td>已实现 / 文件层核验</td></tr>
+<tr><td>局部携行恢复</td><td>历史 A100 run 恢复后归位约 0.240 mm；带运动学支撑</td><td>局部 PASS</td></tr>
+<tr><td>全场景恢复</td><td>研杵约 0.568° 超过 0.5°；恢复后跟踪 19 / 56 刚体</td><td>FAIL</td></tr>
+<tr><td>任意运动中断点</td><td>保存了速度，但旧 adapter 恢复时清零；非零输入探针确认</td><td>不支持</td></tr>
+<tr><td>随机状态 / 任务图完整继承</td><td>seed 与 draw_count 不等于 RNG 内部状态；该 adapter 未完整恢复图位置</td><td>未闭合</td></tr>
+<tr><td>新进程跨多个阶段续跑</td><td>未见完整闭合实测；四瓶 episode 未保存阶段 checkpoint 文件</td><td>NOT_RUN</td></tr>
+<tr><td>原轨迹重新渲染</td><td>已有 steps.npz 位姿重放与多视角渲染</td><td>已实现，属于渲染回放</td></tr>
+</tbody></table></div><p id="recovery-note" class="note"></p>
+<p class="small">本机 GPU 驱动 / 库不匹配，因此本轮没有启动新的 Isaac 物理续跑，没有修改共享驱动。只读代码核对、CPU 文件与 setter 探针、原日志重算均有实际结果。</p></section>
+
+<section id="next" class="card section"><div class="eyebrow">04 / NEXT PHYSICAL CHECK</div><h2>先证明阶段连续，再推进长任务学习。</h2><div class="mechanism-grid"><article><span class="number">01</span><h3>同一完整场景保存</h3><p>选已完成任务的取出后、释放后和再抓后。绑定全部资产与布局，保存所有物体、控制器、随机状态、任务图和观测历史。</p></article><article><span class="number">02</span><h3>关闭原进程再重建</h3><p>新进程只凭保存包复原。从恢复后第一帧检查起，不默默清零速度，不用运动学支撑冒充纯物理恢复。</p></article><article><span class="number">03</span><h3>只执行剩余任务</h3><p>和不中断原轨迹比较全场景与终局，给出首个分叉字段。完整通过之后再计入长任务 benchmark。</p></article></div><p class="note">这条基础设施前沿与任务学习实验并行保留。现有 56.80% Cooking 结果支持利用信息，不能证明机器人场景的长任务恢复、OPD 或 Robot RSI。</p></section>
+
+<section id="sources" class="card section"><div class="eyebrow">05 / HISTORY &amp; EVIDENCE</div><h2>保留历史，避免再从粗场景重来。</h2><p>七段会话各恢复最近 850 条可见消息，共 5,950 条；另细读五条关键工具调用。全部会话已结束。本次没有读完全部早期消息，也没有修改原资产、旧轨迹或旧失败结论。</p><div class="resources"><a href="data/scene-recovery-audit.json"><b>本次审计数据</b><span>接触逐 tick、20 路视频与恢复限制</span></a><a href="research/scene-recovery-report.md"><b>方案重新判断</b><span>哪些已做、哪些不能声称通过</span></a><a href="data/scene-media-sources.json"><b>场景与视频身份</b><span>原片、渲染来源与 SHA-256</span></a><a href="https://asimfish.github.io/goai-dashboard/bottles.html"><b>原四瓶展示</b><span>保留已有公开演示入口</span></a><a href="https://asimfish.github.io/goai-dashboard/scenes.html"><b>原五工作流场景档案</b><span>含多版本和原始资格说明</span></a><a href="learning.html"><b>任务学习实验</b><span>独立的三种子学习结果</span></a></div></section>
+<footer>场景重建、脚本 demo、状态恢复、学习策略结果分开记录。</footer></main></div><noscript><p>可直接阅读 <a href="research/scene-recovery-report.md">方案判断</a>。</p></noscript></body></html>

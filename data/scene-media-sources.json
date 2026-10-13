@@ -1,0 +1,74 @@
+[
+  {
+    "name": "overview_1.jpg",
+    "source": "Archived GoAI layout v4 Isaac RTX render",
+    "sha256": "861d00207d39293c33073be637622ca9221292d8d45807eba747dca8a12f4437",
+    "bytes": 106522
+  },
+  {
+    "name": "station_a.jpg",
+    "source": "Archived GoAI layout v4 Isaac RTX render",
+    "sha256": "fda3f3b8acd4da1c19bcaef5a37a664345232dec908221ca5aac15fb48c8f7d1",
+    "bytes": 68655
+  },
+  {
+    "name": "station_b.jpg",
+    "source": "Archived GoAI layout v4 Isaac RTX render",
+    "sha256": "c20fc98b076ba28d70872793ecebade4afc47eb30f85ae600308fdccf06cd2de",
+    "bytes": 86566
+  },
+  {
+    "name": "station_c.jpg",
+    "source": "Archived GoAI layout v4 Isaac RTX render",
+    "sha256": "69b2b4da1c711162cd1c81d3437974438e66785311345d0af0c1973237cf49b8",
+    "bytes": 73622
+  },
+  {
+    "name": "precursor_1.mp4",
+    "source": "A r7 capC PathTracing station render precursor_1; original-color opaque cap override remains",
+    "sha256": "938c17d28eb19d3bed27fdd8a93562801432a6a284b3058eb236be2635e38996",
+    "bytes": 3121403
+  },
+  {
+    "name": "precursor_2.mp4",
+    "source": "A r7 capC PathTracing station render precursor_2; original-color opaque cap override remains",
+    "sha256": "87253f1d149756dbffa5336643651816a37dd5346d09a0ff24db54a6a99769aa",
+    "bytes": 3109563
+  },
+  {
+    "name": "precursor_3.mp4",
+    "source": "A r7 capC PathTracing station render precursor_3; original-color opaque cap override remains",
+    "sha256": "9bcac3d41a71ffccd1df06acac1878533a684ffad78e024bf3fc662178419f2d",
+    "bytes": 5402695
+  },
+  {
+    "name": "precursor_4.mp4",
+    "source": "A r7 capC PathTracing station render precursor_4; original-color opaque cap override remains",
+    "sha256": "40babd13db8ee37a6976a7c485d58c85c668594b605127ccbec2ae824b6a03be",
+    "bytes": 5500325
+  },
+  {
+    "name": "precursor_1.jpg",
+    "source": "2-second frame extracted from preserved precursor_1.mp4",
+    "sha256": "e2df43b4120b2d0d098c4b520ad54a5e8a9ef5eb75062eeb1edf02a94fd8f5b7",
+    "bytes": 81611
+  },
+  {
+    "name": "precursor_2.jpg",
+    "source": "2-second frame extracted from preserved precursor_2.mp4",
+    "sha256": "93b67d56b2e3f3d0656b44c8efd4ce9070088c9b880b4e190e384eca3a9a41f1",
+    "bytes": 81590
+  },
+  {
+    "name": "precursor_3.jpg",
+    "source": "2-second frame extracted from preserved precursor_3.mp4",
+    "sha256": "b0aceedfa07c13a9be35e2eae7240f78e53ab574ccea320c4db316eff726f6dd",
+    "bytes": 81475
+  },
+  {
+    "name": "precursor_4.jpg",
+    "source": "2-second frame extracted from preserved precursor_4.mp4",
+    "sha256": "00e01972425093e416eb102593f11d1493160b0cffed88b7db4cf4810d994724",
+    "bytes": 81538
+  }
+]

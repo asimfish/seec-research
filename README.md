@@ -4,6 +4,10 @@
 
 Nine recurrent BC models (three optimizer seeds) are now trained and independently replayed. Observed-fact auxiliary success is 56.80%, versus 24.21% action-only and 34.29% current-state auxiliary. A separate shared-prefix feedback-redaction diagnostic reports all models, including the action-only improvement. Task-belief auxiliary learning has direct prior art; this is not new-method, OPD, RSI or robot efficacy. Six earlier hand-coded controls and all historical stops remain separate. Code, plans, results, invalid-run costs and figures are provided; raw logs and checkpoints remain local.
 
+**Latest research update (2026-10-13):** https://asimfish.github.io/seec-research/learning.html
+
+Nine recurrent BC models (three optimizer seeds) are now trained and independently replayed. Observed-fact auxiliary success is 56.80%, versus 24.21% action-only and 34.29% current-state auxiliary. A separate shared-prefix feedback-redaction diagnostic reports all models, including the action-only improvement. Task-belief auxiliary learning has direct prior art; this is not new-method, OPD, RSI or robot efficacy. Six earlier hand-coded controls and all historical stops remain separate. Code, plans, results, invalid-run costs and figures are provided; raw logs and checkpoints remain local.
+
 **Student-Executable Experience Consolidation** studies which teacher
 demonstrations can become executable supervision at the student's information
 boundary. This repository is the public presentation package, separate from
@@ -52,3 +56,11 @@ Presentation references: [research report](https://anonymous-report-421.github.i
 [RoboDojo evaluation report](https://robodojo-benchmark.com/report/gpt-6-astra-eval),
 [Awesome Astra Embodied AI](https://github.com/zjwzcx/Awesome-Astra-Embodied-AI).
 Layout inspiration only. Their results, code and media are not our research.
+
+**Recovered robot scenes and staged-resume audit:** https://asimfish.github.io/seec-research/scenes.html
+
+The original reconstructed A/B/C laboratory and four complete PathTracing demonstrations are preserved. Their 20 camera videos are verified locally; the public page presents four station videos. Localized kinematic carry recovery passed, but the full-scene gate remains FAIL, nonzero velocities are discarded by the archived adapter, and a cross-process multistage physical chain is unproven. Rendering replay is distinct from dynamic continuation. No new physics or robot-learning result is claimed.
+
+**Recovered robot scenes and staged-resume audit:** https://asimfish.github.io/seec-research/scenes.html
+
+The original reconstructed A/B/C laboratory and four complete PathTracing demonstrations are preserved. Their 20 camera videos are verified locally; the public page presents four station videos. Localized kinematic carry recovery passed, but the full-scene gate remains FAIL, nonzero velocities are discarded by the archived adapter, and a cross-process multistage physical chain is unproven. Rendering replay is distinct from dynamic continuation. No new physics or robot-learning result is claimed.

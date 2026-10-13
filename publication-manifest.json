@@ -14,8 +14,8 @@
       "bytes": 0
     },
     "README.md": {
-      "sha256": "cb313bbaa9b5cec425b1662e318c33d4e7a8c4cf06989fed2c05de6f85dd2e03",
-      "bytes": 3536
+      "sha256": "59c861c8105352198c392125d14a71af7272b079644f52dea98b789dd713f2e3",
+      "bytes": 5446
     },
     "app.js": {
       "sha256": "eb431cc202bd3048d2cf6a12cd07265631710347ff9d4191de29f08dbe21fb45",
@@ -265,6 +265,54 @@
       "sha256": "80de4485d2c2ce2bc9e605ebd79228d1db631a07b7ee80642e68a52f05c0b994",
       "bytes": 402
     },
+    "assets/scenes/overview_1.jpg": {
+      "sha256": "861d00207d39293c33073be637622ca9221292d8d45807eba747dca8a12f4437",
+      "bytes": 106522
+    },
+    "assets/scenes/precursor_1.jpg": {
+      "sha256": "e2df43b4120b2d0d098c4b520ad54a5e8a9ef5eb75062eeb1edf02a94fd8f5b7",
+      "bytes": 81611
+    },
+    "assets/scenes/precursor_1.mp4": {
+      "sha256": "938c17d28eb19d3bed27fdd8a93562801432a6a284b3058eb236be2635e38996",
+      "bytes": 3121403
+    },
+    "assets/scenes/precursor_2.jpg": {
+      "sha256": "93b67d56b2e3f3d0656b44c8efd4ce9070088c9b880b4e190e384eca3a9a41f1",
+      "bytes": 81590
+    },
+    "assets/scenes/precursor_2.mp4": {
+      "sha256": "87253f1d149756dbffa5336643651816a37dd5346d09a0ff24db54a6a99769aa",
+      "bytes": 3109563
+    },
+    "assets/scenes/precursor_3.jpg": {
+      "sha256": "b0aceedfa07c13a9be35e2eae7240f78e53ab574ccea320c4db316eff726f6dd",
+      "bytes": 81475
+    },
+    "assets/scenes/precursor_3.mp4": {
+      "sha256": "9bcac3d41a71ffccd1df06acac1878533a684ffad78e024bf3fc662178419f2d",
+      "bytes": 5402695
+    },
+    "assets/scenes/precursor_4.jpg": {
+      "sha256": "00e01972425093e416eb102593f11d1493160b0cffed88b7db4cf4810d994724",
+      "bytes": 81538
+    },
+    "assets/scenes/precursor_4.mp4": {
+      "sha256": "40babd13db8ee37a6976a7c485d58c85c668594b605127ccbec2ae824b6a03be",
+      "bytes": 5500325
+    },
+    "assets/scenes/station_a.jpg": {
+      "sha256": "fda3f3b8acd4da1c19bcaef5a37a664345232dec908221ca5aac15fb48c8f7d1",
+      "bytes": 68655
+    },
+    "assets/scenes/station_b.jpg": {
+      "sha256": "c20fc98b076ba28d70872793ecebade4afc47eb30f85ae600308fdccf06cd2de",
+      "bytes": 86566
+    },
+    "assets/scenes/station_c.jpg": {
+      "sha256": "69b2b4da1c711162cd1c81d3437974438e66785311345d0af0c1973237cf49b8",
+      "bytes": 73622
+    },
     "assets/seec-paper.pdf": {
       "sha256": "7a963288be38608258e2c9be0828f3082d90701b8f917e0559437d811bae7dcd",
       "bytes": 850192
@@ -306,8 +354,8 @@
       "bytes": 4511
     },
     "data/learning-progress.json": {
-      "sha256": "f52c30a191043b683bb5b65e8d7917ea76de881f056e1713fdb709be0094f228",
-      "bytes": 105734
+      "sha256": "52253d35b272beef9b1dcb7a879f1c58a345aa97523ccc78e81fb8027ded4026",
+      "bytes": 105814
     },
     "data/learning-reading-notes.json": {
       "sha256": "5aab42a5706c538708c6f0e0d0f11f9ecddb552b619b7f55de70abe4e7aa1558",
@@ -329,21 +377,33 @@
       "sha256": "ec2abb914f82a3e3ae0e4774acef9f4a5df53a3280bfcb85263921deab8fb3cf",
       "bytes": 23659
     },
+    "data/scene-media-sources.json": {
+      "sha256": "396c0e91eb21832e3e9a18dc15aa6fbe4534b680a2435173e243c08660bab0b2",
+      "bytes": 2661
+    },
+    "data/scene-recovery-audit.json": {
+      "sha256": "7d3402d5645be38afd5ebe9bf8826b61abe8e4019915385872b724e4018aad74",
+      "bytes": 16245
+    },
     "index.html": {
-      "sha256": "ee7d117980b1122f30ad8ff841cbb1565e0ee79b0f8395474edaf993c0c88efe",
-      "bytes": 3084
+      "sha256": "eeac61e968851a7b0fa4c335eb0c19ee35338459780cedc580ec563f4eb5f173",
+      "bytes": 3167
     },
     "learning.css": {
       "sha256": "2cfbd5fffd7d884c83538a3d94b9345fc2e93124237a3fa20a98c0ab33264b5a",
       "bytes": 9402
     },
     "learning.html": {
-      "sha256": "d0bfc302e62cd007094da732ee498622ceca14bfd7952fbb926631549004082b",
-      "bytes": 15727
+      "sha256": "94789868dcb3a883162c3faa1292f670f5a74a4f0af8d2207c54aa431e99c038",
+      "bytes": 15947
     },
     "learning.js": {
       "sha256": "0bbb77bac7dc945699e0c208ce8f849c235ee4b52990cd1768f526bca41e61ee",
       "bytes": 9349
+    },
+    "research/audit_recovered_assets.py": {
+      "sha256": "bf497ea1f17bf5232f52bd60eaefae63b3bce19c39e5cf9c1723d361a616f9f1",
+      "bytes": 10144
     },
     "research/cooking-plan.json": {
       "sha256": "75eecf630aa3fb77e141c22f512da0a38394193b3b8ca1d9cb3ed8b0b67c5a29",
@@ -362,8 +422,8 @@
       "bytes": 2865
     },
     "research/interactive-learning-update.md": {
-      "sha256": "9f151c567274b06b1c737395996a0725de4ac6af2585cca8a9f148d6e20f422c",
-      "bytes": 15592
+      "sha256": "4b10394ede81fabf43c926cac7d2daea4e13963435de38a99b3babc4078a9fc5",
+      "bytes": 16336
     },
     "research/learning-pilot/PROTOCOL.md": {
       "sha256": "1ad5150ac3394ed9a69b9159ca7fb3fb6218b38aab48171d39d714f1416f31e6",
@@ -437,6 +497,10 @@
       "sha256": "9a1703ab0d076c7f2b9b23e02d0d21b45407d8b4e98d588c443fbf03b8134aaa",
       "bytes": 10746
     },
+    "research/scene-recovery-report.md": {
+      "sha256": "39a8c1496c96ac1f0ce039336a03f4d09898d88af94e9446533eef3e8c742221",
+      "bytes": 6576
+    },
     "research/test_cooking_diagnostic.py": {
       "sha256": "ee101606cc6774062cb6e2116fa27f07d8f0d6147d34ee2c2fcdf553718997fa",
       "bytes": 2127
@@ -444,6 +508,18 @@
     "research/verify_cooking_diagnostic.py": {
       "sha256": "156cec0d7ea86821614e54d05d738da0ca148fa45abec8e9cf9eab860bcccaa2",
       "bytes": 5502
+    },
+    "scenes.css": {
+      "sha256": "44ee6e7823017a65aacd9fe3b7cc5554a662d085a213148616128bae6742d692",
+      "bytes": 1226
+    },
+    "scenes.html": {
+      "sha256": "e5df195afa4c48fb7e4986eed44371430015f0d46ac5135b3bf324edf36815f0",
+      "bytes": 8450
+    },
+    "scenes.js": {
+      "sha256": "f3bdd77e90a32d2aaa99207f211c3838a20d47cb08b28a8e6e300486ec54c35d",
+      "bytes": 2910
     },
     "styles.css": {
       "sha256": "a7b618ed6e2bd44e36f55c8e1e5697eb96ffd96cd9f1c6b95c594fa6538b4557",
@@ -470,5 +546,10 @@
     "learned_plan_file_sha256": "1410c9c8e72f6e9d5b5edafe40b4b4b98c561a97dd633431c9c58dd6a8274714",
     "matched_summary_sha256": "f215e73bd0ef6f94812147064c8519768cc01711ef1826f1b5820bbddeeca2fc",
     "matched_verification_sha256": "f6aa14d7636c68d4e88a6f0fe0338cb4b1573aa83e96a07081ee463081f775a6"
+  },
+  "scene_recovery_inputs": {
+    "audit_sha256": "7d3402d5645be38afd5ebe9bf8826b61abe8e4019915385872b724e4018aad74",
+    "media_manifest_sha256": "396c0e91eb21832e3e9a18dc15aa6fbe4534b680a2435173e243c08660bab0b2",
+    "source_scope": "Seven recovered histories, closed archived runs and exact original scene renders; fresh physics NOT_RUN"
   }
 }
