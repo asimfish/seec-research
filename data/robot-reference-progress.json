@@ -1,7 +1,7 @@
 {
   "schema": "robot-reference-progress-v1",
-  "captured_at": "2026-10-14T07:14:40.966590+00:00",
-  "status": "RUNNING_REFERENCE_NOT_METHOD_RESULT",
+  "captured_at": "2026-10-14T09:18:32.794594+00:00",
+  "status": "COMPLETE_REFERENCE_NOT_METHOD_RESULT",
   "benchmark": "LIBERO-10",
   "checkpoint": "Qwen3-VL-OFT-LIBERO-4in1 / steps_50000",
   "plan_id": "libero-reference-f1770364fd96ddaa",
@@ -10,10 +10,10 @@
   "code_revision": "0e827270cbe9f20ebc5bdd91adcbf1d7bf4f24d0",
   "source_fidelity": "Content-bound archived integration; exact release Git revision unavailable",
   "planned_cases": 500,
-  "completed_cases": 80,
-  "observed_task_failures": 6,
+  "completed_cases": 500,
+  "observed_task_failures": 24,
   "aborted_cases": 0,
-  "completed_simulation_steps": 21804,
+  "completed_simulation_steps": 134304,
   "gradient_updates": 0,
   "adapter_check": {
     "status": "PASS",
@@ -34,10 +34,102 @@
   "fresh_query_adaptation": "NOT_RUN",
   "generations": "NOT_RUN",
   "limitations": [
-    "Running snapshot, not a full-suite success rate",
-    "Repeated adapter cases are engineering checks, not independent seeds",
+    "One fixed checkpoint and reset seed, not independent training seeds",
+    "Archived integration content is bound; exact release Git revision unavailable",
+    "Repeated control qualification cases are engineering checks, not independent score trials",
     "Standard LIBERO success alone does not establish in-context adaptation",
-    "Reference failure frames are excluded from future correction training on those cases",
+    "Reference cases and failure frames are excluded from future confirmation-training reuse",
+    "Program parity at nominal starts does not qualify the teacher at arbitrary student failure states",
     "Historical negative findings and the legacy Planar CI failure are retained"
-  ]
+  ],
+  "missing_cases": 0,
+  "successes": 476,
+  "success_rate": 0.952,
+  "per_task": {
+    "0": {
+      "completed": 50,
+      "successes": 48
+    },
+    "1": {
+      "completed": 50,
+      "successes": 50
+    },
+    "2": {
+      "completed": 50,
+      "successes": 50
+    },
+    "3": {
+      "completed": 50,
+      "successes": 45
+    },
+    "4": {
+      "completed": 50,
+      "successes": 45
+    },
+    "5": {
+      "completed": 50,
+      "successes": 50
+    },
+    "6": {
+      "completed": 50,
+      "successes": 42
+    },
+    "7": {
+      "completed": 50,
+      "successes": 50
+    },
+    "8": {
+      "completed": 50,
+      "successes": 48
+    },
+    "9": {
+      "completed": 50,
+      "successes": 48
+    }
+  },
+  "policy_control_steps": 129304,
+  "resets": 500,
+  "model_requests": 16381,
+  "artifact_audit": {
+    "status": "PASS",
+    "sha256": "0af623eb179bf5123a44a7630be07d29d5127c9c2b1ac2116226028e4b5fb1d8",
+    "code_revision": "646f22c8f8062578a828aa0e31a0c3b1195c9d71",
+    "trace_checksums_verified": 500,
+    "failed_camera_archives_verified": 24,
+    "independent_verifier": "NOT_AVAILABLE"
+  },
+  "program_check": {
+    "status": "PASS",
+    "registered_cases": 3,
+    "compared_cases": 3,
+    "additional_simulation_steps": 776,
+    "code_revision": "77de939d360a78873f288f07992b8c65fc7c0298"
+  },
+  "teacher_control": {
+    "status": "TEACHER_NOT_QUALIFIED",
+    "scope": "Three fixed executor-control cases, not efficacy or independent seeds",
+    "cases": [
+      {
+        "task": 0,
+        "original_steps": 257,
+        "projected_steps": 520,
+        "projected_success": false
+      },
+      {
+        "task": 4,
+        "original_steps": 230,
+        "projected_steps": 333,
+        "projected_success": true
+      },
+      {
+        "task": 7,
+        "original_steps": 259,
+        "projected_steps": 303,
+        "projected_success": true
+      }
+    ],
+    "additional_simulation_steps": 1186,
+    "gradient_updates": 0
+  },
+  "program_collection_interface": "IMPLEMENTED_CONTRACT_TESTED_NOT_YET_USED_FOR_LEARNING"
 }

@@ -63,7 +63,7 @@ Pin LIBERO source and dependencies. Run actual manipulation environments on expl
 
 Run one official BC/BC-RNN or released VLA checkpoint through its upstream evaluator and the adapter on the same cases. Explain any success mismatch before absorption experiments. A short smoke or compact reimplementation is insufficient.
 
-The October 14 fixed-checkpoint reference visits all 500 LIBERO-10 cases and
+The October 14 fixed-checkpoint reference completed all 500 LIBERO-10 cases and
 uses content-bound archived integration code without Git metadata. Report
 that fidelity level explicitly; the exact checkpoint-release source revision
 is unavailable. A separate adapter check repeats the fixed first case from
@@ -74,6 +74,31 @@ learning target; expert dependence divides by policy control steps. Reference
 failure frames may inform engineering analysis, but cannot be absorbed into a
 policy later scored on those same cases. Correction training needs disjoint
 source states and a separately frozen query protocol.
+
+Control-interface qualification is separate from teacher strength. A frozen
+checkpoint that succeeds when executing eight-action programs is not thereby
+qualified as a one-step expert after projecting each new prediction to its
+first action. In the registered three-case control check, this projection
+timed out at 520 steps on a case where the original program completed in 257;
+the other two completed in 333/303 steps versus the original 230/259. These
+are control/teacher diagnostics, not learned-method gains or a novelty claim.
+Physical control timing, checkpoint and initial states stayed fixed; model
+query/replanning cadence changed. Exact causes beyond that intervention still
+need trajectory analysis. The old frozen qualifier is retained.
+
+All future data-use arms must share the learner's action horizon and executor.
+The source-dependent teacher now rejects silent single-action collection from
+a chunked expert and exposes full program labels at actual student anchors.
+Those future targets belong to the anchor input and output offsets 0–7,
+not the later student states. A program-bound source annotation schema,
+collector and boundary mixing/takeover protocol are now implemented; a
+qualified trainer and concrete budget/data manifest remain required before
+absorption. Program replay matched the fixed reference on all three registered
+cases, with zero updates. The full reference scored 476/500 (95.2%), with
+complete non-aborted coverage and all trace/failure-camera checksums verified.
+This is a released-checkpoint baseline, not an absorption or adaptation gain.
+Teacher-assisted evaluation must not count a changed replanning interval as a
+learning gain; include a frozen-policy executor control wherever they differ.
 
 ### E2: one-round absorption
 
@@ -91,7 +116,11 @@ Only after E1–E3, run generations 0/1/2/3 against repeated training of a fixed
 
 Missing or aborted evaluations invalidate aggregate efficacy statistics; preserve their records and causes. No teacher may intervene or provide labels during a teacher-free evaluation. Success uses the benchmark predicate, not an agent-written replacement. Infrastructure repair cannot silently change task parameters or test cases. Registered historical failures remain unchanged.
 
-Current completed Cooking/credit/Alchemy evidence remains development-only. LIBERO E0 is a simulator/adapter check. The proposed method, standard reference reproduction, adaptation extension and recursive effects are NOT_RUN until their corresponding records exist.
+Current completed Cooking/credit/Alchemy evidence remains development-only.
+LIBERO E0 is a simulator/adapter check; the 500-case standard fixed-checkpoint
+reference is complete at the archived-integration fidelity level above.
+The proposed method's absorption, adaptation extension and recursive effects
+remain NOT_RUN until their corresponding records exist.
 
 ## Sources
 

@@ -1,0 +1,104 @@
+{
+  "schema": "libero-reference-artifact-audit-v1",
+  "status": "PASS",
+  "audited_at": "2026-10-14T09:18:32.794594+00:00",
+  "plan_id": "libero-reference-f1770364fd96ddaa",
+  "plan_digest": "9adbfd4d27a6b53412b7d68ebda209eb0cd64aaf44d0e21f9f4ddba331ac626b",
+  "execution_code_revision": "0e827270cbe9f20ebc5bdd91adcbf1d7bf4f24d0",
+  "checkpoint_sha256": "80d7a2ab0b033ce49d84070eb1124a2f9718e5b1f0ef8e2db6e4c44478b05df9",
+  "summary": {
+    "status": "COMPLETE",
+    "expected": 500,
+    "completed": 500,
+    "missing": 0,
+    "aborted": 0,
+    "successes_observed": 476,
+    "per_task": {
+      "0": {
+        "completed": 50,
+        "successes": 48
+      },
+      "1": {
+        "completed": 50,
+        "successes": 50
+      },
+      "2": {
+        "completed": 50,
+        "successes": 50
+      },
+      "3": {
+        "completed": 50,
+        "successes": 45
+      },
+      "4": {
+        "completed": 50,
+        "successes": 45
+      },
+      "5": {
+        "completed": 50,
+        "successes": 50
+      },
+      "6": {
+        "completed": 50,
+        "successes": 42
+      },
+      "7": {
+        "completed": 50,
+        "successes": 50
+      },
+      "8": {
+        "completed": 50,
+        "successes": 48
+      },
+      "9": {
+        "completed": 50,
+        "successes": 48
+      }
+    },
+    "simulation_steps": 134304,
+    "policy_steps": 129304,
+    "resets": 500,
+    "model_requests": 16381,
+    "gradient_updates": 0,
+    "expert_queries": 0,
+    "claim_scope": "one checkpoint evaluation; not method efficacy or independent seeds",
+    "task_balanced_success_rate": 0.952
+  },
+  "shard_receipts": [
+    {
+      "shard": 0,
+      "records": 200,
+      "journal_sha256": "2f6268242ce3df62246d846a39006063bba79233d3ce35f0261668a422a39900",
+      "binding_sha256": "d85a202d094452ec574dafb8db393978010b06a4bab11e586dfdfbc30e352b57",
+      "summary_sha256": "5055755675e5df87dccd0b9deba445fe16c4d37e0260ab50898b1746afb511d4",
+      "exit_code_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "wall_seconds": 8332.114408700727
+    },
+    {
+      "shard": 1,
+      "records": 150,
+      "journal_sha256": "48fdc9bc695a68cdd14f7d08858c5cb90de0f6f84f8cd45cf41a512211ca05b6",
+      "binding_sha256": "f99fea8dc7f1b4abe62874a1d7bcfbb71a919d2b07ba253247ee5d35e8eb1e55",
+      "summary_sha256": "cf9036f678e6798abdafc291ce7011cd4eba0d428ed66515851840814256d2a5",
+      "exit_code_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "wall_seconds": 3898.760794890113
+    },
+    {
+      "shard": 2,
+      "records": 150,
+      "journal_sha256": "3fc1951990ccb351972ef48d60171908d40bf6df899ba850bb655bd52e121e6c",
+      "binding_sha256": "56d391b2218aee5c731cef6bccf0ef1a109598b560c3ea43087c256271bcf3d9",
+      "summary_sha256": "398d481794c25c568377cf3b3083270f44d6ed31b8554dfec1195667e0892d37",
+      "exit_code_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "wall_seconds": 7205.3287138277665
+    }
+  ],
+  "trace_checksums_verified": 500,
+  "failed_camera_archives_verified": 24,
+  "same_predicate_rechecks": 500,
+  "independent_verifier": "NOT_AVAILABLE",
+  "success_camera_arrays_retained": false,
+  "source_identity": "UNAVAILABLE_EXPORTED_SOURCES",
+  "scope": "Recorded artifact coverage and binding, not independent dynamics replay or method efficacy",
+  "audit_script_sha256": "2eaa3bd45818ea56ab528036f452b41d018018e77dd9f118bb320d6650a322e5"
+}
