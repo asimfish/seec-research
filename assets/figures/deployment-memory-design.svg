@@ -9,42 +9,42 @@
 <rect x="24" y="92" width="1072" height="196" rx="16" fill="#f0f6fc"/>
 <text x="44" y="120" font-size="16" font-weight="700" fill="#285681">FAST CLOCK / DEPLOYMENT — policy weights fixed</text>
 <rect x="44" y="144" width="220" height="115" rx="10" fill="#fff" stroke="#7da9ce"/>
-<text x="62" y="173" font-size="18" font-weight="700">Public interaction</text>
-<text x="62" y="201" font-size="16">RGB · own actions · outcomes</text>
-<text x="62" y="227" font-size="16">Keep conditioning video</text>
+<text x="62" y="173" font-size="17" font-weight="700">Public interaction</text>
+<text x="62" y="201" font-size="16">RGB · own actions</text>
+<text x="62" y="227" font-size="16">Feedback + demo video</text>
 <path d="M269 201H303" stroke="#56687a" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="310" y="144" width="230" height="115" rx="10" fill="#fff" stroke="#7da9ce"/>
-<text x="328" y="173" font-size="18" font-weight="700">Causal memory + policy</text>
+<text x="328" y="173" font-size="17" font-weight="700">Causal memory + policy</text>
 <text x="328" y="201" font-size="16">History available by this step</text>
 <text x="328" y="227" font-size="16">No oracle subgoals</text>
 <path d="M546 201H582" stroke="#56687a" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="590" y="144" width="220" height="115" rx="10" fill="#fff" stroke="#7da9ce"/>
-<text x="608" y="173" font-size="18" font-weight="700">Execute action program</text>
+<text x="608" y="173" font-size="17" font-weight="700">Execute action program</text>
 <text x="608" y="201" font-size="16">Preserve native control rate</text>
 <text x="608" y="227" font-size="16">Record actual failures</text>
 <path d="M816 201H850" stroke="#56687a" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="858" y="144" width="218" height="115" rx="10" fill="#fff" stroke="#7da9ce"/>
-<text x="876" y="173" font-size="18" font-weight="700">Official task outcome</text>
+<text x="876" y="173" font-size="17" font-weight="700">Official task outcome</text>
 <text x="876" y="201" font-size="16">Success · progress · cost</text>
 <text x="876" y="227" font-size="16">Teacher-free main endpoint</text>
 <rect x="24" y="306" width="1072" height="185" rx="16" fill="#f0f7f3"/>
 <text x="44" y="334" font-size="16" font-weight="700" fill="#30684c">SLOW CLOCK / AFTER SOURCE DEPLOYMENT — policy weights updated</text>
 <rect x="44" y="358" width="296" height="104" rx="10" fill="#fff" stroke="#78a68c"/>
-<text x="62" y="386" font-size="18" font-weight="700">Failure → expert correction archive</text>
-<text x="62" y="413" font-size="16">Executed prefix + actual query anchor</text>
-<text x="62" y="438" font-size="16">Expert labels only during collection</text>
+<text x="62" y="386" font-size="17" font-weight="700">Corrective experience archive</text>
+<text x="62" y="413" font-size="16">Executed prefix + query anchor</text>
+<text x="62" y="438" font-size="16">Expert labels during collection</text>
 <path d="M346 407H380" stroke="#56687a" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="388" y="358" width="320" height="104" rx="10" fill="#fff" stroke="#78a68c"/>
-<text x="406" y="386" font-size="18" font-weight="700">Controlled absorption comparison</text>
+<text x="406" y="386" font-size="17" font-weight="700">Controlled absorption comparison</text>
 <text x="406" y="413" font-size="16">Same targets · backbone · update budget</text>
 <text x="406" y="438" font-size="16">Suffix vs full history vs history DAgger</text>
 <path d="M714 407H750" stroke="#56687a" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="758" y="358" width="318" height="104" rx="10" fill="#fff" stroke="#78a68c"/>
-<text x="776" y="386" font-size="18" font-weight="700">Next policy · fresh deployment</text>
+<text x="776" y="386" font-size="17" font-weight="700">Next policy · fresh deployment</text>
 <text x="776" y="413" font-size="16">No expert, correction labels or oracle</text>
 <text x="776" y="438" font-size="16">History use + old-task retention</text>
-<path d="M698 265V300H193V352" fill="none" stroke="#56687a" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
-<text x="32" y="525" font-size="18" font-weight="700">RoboDojo</text><text x="145" y="525" font-size="16">Broad manipulation + corrective execution</text>
-<text x="590" y="525" font-size="18" font-weight="700">RoboMME</text><text x="708" y="525" font-size="16">Four memory suites + history interventions</text>
+<path d="M698 265V348H193V352" fill="none" stroke="#56687a" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<text x="32" y="525" font-size="17" font-weight="700">RoboDojo</text><text x="145" y="525" font-size="16">Broad manipulation + corrective execution</text>
+<text x="590" y="525" font-size="17" font-weight="700">RoboMME</text><text x="708" y="525" font-size="16">Four memory suites + history interventions</text>
 <text x="32" y="558" font-size="15" fill="#56687a">Main evidence: autonomous success, shared expert-budget curve, recovery, memory ablation and total cost.</text>
 </g></svg>

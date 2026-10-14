@@ -89,9 +89,9 @@
     "revision": "c0f565dd40082f32863b3ee9db99de5ed5d3d4e0",
     "archive_bytes": 11878950895,
     "expanded_bytes": 11877152238,
-    "acquisition": "IN_PROGRESS_AT_SNAPSHOT",
+    "acquisition": "NAS_COMPLETE_VERIFIED_GPU_MEMORY_STAGING_IN_PROGRESS",
     "archive_sha256_advertised": "2bfde48a0e9c616c87afcac5359b69f281689765e1af3fecbbec5c918e6faa62",
-    "whole_archive_sha256_recomputed": false,
+    "whole_archive_sha256_recomputed": true,
     "extractor_sha256": "3de905b9d2be45f8976dbda882bf91bd9572083930d02d258249fb99e859711f",
     "policy_config_import": "PASS",
     "model_loaded": false,
@@ -100,5 +100,81 @@
     "completed_file_bytes": 5911003,
     "partial_file_bytes": 394264576,
     "acquisition_timeout_seconds": 3600
+  },
+  "nas_cache": {
+    "robomme_training": {
+      "status": "CACHED_HASHED_NOT_USED",
+      "archives": 16,
+      "bytes": 56435723928
+    },
+    "robomme_reference_model": {
+      "status": "CACHED_HASHED_NOT_USED",
+      "bytes": 11878950926,
+      "archive_sha256_verified": "2bfde48a0e9c616c87afcac5359b69f281689765e1af3fecbbec5c918e6faa62"
+    },
+    "robodojo_assets": {
+      "status": "IN_PROGRESS_AT_SNAPSHOT",
+      "expected_files": 15365,
+      "expected_bytes": 41269513111
+    }
+  },
+  "model_input_capture": {
+    "status": "PASS_NONBLANK_PUBLIC_RGB",
+    "tasks": 4,
+    "cases": [
+      {
+        "task": "PickXtimes",
+        "split": "train",
+        "episode": 0,
+        "goal": "pick up the red cube and place it on the target, repeating this action two times, then press the button to stop",
+        "input_sha256": "e00bc84b76ff9c0392502ac0f2a9b3aa1330354ff18c4eb17526558afa2e0d88",
+        "frames": 1,
+        "camera_spatial_std": {
+          "front": 36.62676189406488,
+          "wrist": 43.94662257683149
+        },
+        "policy_control_steps": 0
+      },
+      {
+        "task": "VideoUnmask",
+        "split": "train",
+        "episode": 0,
+        "goal": "watch the video carefully, then pick up the container hiding the blue cube",
+        "input_sha256": "f5a8010b0de8cd0fa3c8f54612b3686bd7e00cc899cfdd795a7e82eb7911594a",
+        "frames": 67,
+        "camera_spatial_std": {
+          "front": 36.730607568036646,
+          "wrist": 44.080750105883915
+        },
+        "policy_control_steps": 0
+      },
+      {
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 0,
+        "goal": "first press the button, then pick up all cubes that have been highlighteted with white areas on the table",
+        "input_sha256": "41eac9f7508b54e5025bca97a5a2ef454e950148549c5b9ebbda22d93c48d4cc",
+        "frames": 1,
+        "camera_spatial_std": {
+          "front": 38.502846878573656,
+          "wrist": 45.136211879234864
+        },
+        "policy_control_steps": 0
+      },
+      {
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 0,
+        "goal": "watch the video carefully, then use the stick attached to the robot to retrace the same pattern",
+        "input_sha256": "512cb31d400af286c4f800aaa93bc98847289f1a63daadd8f3c3faaac05cb8ac",
+        "frames": 49,
+        "camera_spatial_std": {
+          "front": 37.20470875702036,
+          "wrist": 37.885945993631
+        },
+        "policy_control_steps": 0
+      }
+    ],
+    "executed_policy_steps": 0
   }
 }

@@ -1,0 +1,13 @@
+{
+  "source_task": "VideoUnmask",
+  "split": "train",
+  "episode": 0,
+  "source_npz_sha256": "f5a8010b0de8cd0fa3c8f54612b3686bd7e00cc899cfdd795a7e82eb7911594a",
+  "frame_indices": [
+    0,
+    66
+  ],
+  "source_frame_count": 67,
+  "pixel_editing": "NONE",
+  "scope": "Benchmark input illustration, no learned-policy outcome"
+}
