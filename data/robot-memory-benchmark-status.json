@@ -1,0 +1,104 @@
+{
+  "schema": "robot-memory-benchmark-public-status-v1",
+  "date": "2026-10-15",
+  "source_inventory_sha256": "9d738a7326f87ea1582ea5196ef7c8ae7140a23a3748ecaa93f5afb68b12d5c1",
+  "robomme": {
+    "status": "PASS_TRAIN_ONLY_ENVIRONMENT_QUALIFICATION",
+    "plan_id": "robomme-env-03e3af4e495fe002",
+    "plan_digest": "7329e6daf37039d127e73448584b3e21b2853691b9005f38f1d08505cd4ac1c3",
+    "code_revision": "ab33d6a81544534236de0969be8516103a5ce1ad",
+    "benchmark_revision": "fae9f7300347f1146c2ae4844faa4eef7e38098e",
+    "cases": [
+      {
+        "task": "PickXtimes",
+        "split": "train",
+        "episode": 0,
+        "control_steps": 8,
+        "initial_frames": 1,
+        "public_frames": 9,
+        "terminal_success": null
+      },
+      {
+        "task": "VideoUnmask",
+        "split": "train",
+        "episode": 0,
+        "control_steps": 8,
+        "initial_frames": 67,
+        "public_frames": 75,
+        "terminal_success": null
+      },
+      {
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 0,
+        "control_steps": 8,
+        "initial_frames": 1,
+        "public_frames": 9,
+        "terminal_success": null
+      },
+      {
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 0,
+        "control_steps": 8,
+        "initial_frames": 49,
+        "public_frames": 57,
+        "terminal_success": null
+      }
+    ],
+    "explicit_control_steps": 32,
+    "initial_demonstration_internal_steps": "UNINSTRUMENTED_NOT_ZERO",
+    "packages": {
+      "torch": "2.6.0",
+      "torchvision": "0.21.0",
+      "numpy": "1.26.4",
+      "sapien": "3.0.2",
+      "mani-skill": "3.0.0b21",
+      "mplib": "0.1.1",
+      "h5py": "3.15.1"
+    },
+    "scope": "Torch 2.6 compatibility probe, not the exact Torch 2.9.1 release runtime"
+  },
+  "robodojo": {
+    "status": "BLOCKED_MISSING_SCENE_ASSETS",
+    "official_source_preflight": {
+      "pass": 8,
+      "warning": 4,
+      "fail": 4
+    },
+    "missing": [
+      "Robots",
+      "Object/RoboDojo",
+      "Eval_Layout/RoboDojo",
+      "Material"
+    ],
+    "policy_runtime_check": "NOT_RUN",
+    "isaac_runtime_import_check": "NOT_RUN",
+    "canonical_tasks": 42,
+    "runnable_configs": 54,
+    "native_episodes": 2100
+  },
+  "focused_tests_passed": 74,
+  "gradient_updates": 0,
+  "released_policy_evaluation": "NOT_RUN",
+  "method_efficacy": "NOT_RUN",
+  "scope": "Source inventory and environment engineering, no policy success-rate result",
+  "additional_archive_boundary_tests_passed": 6,
+  "reference_model": {
+    "repository": "Yinpei/perceptual-framesamp-modul",
+    "revision": "c0f565dd40082f32863b3ee9db99de5ed5d3d4e0",
+    "archive_bytes": 11878950895,
+    "expanded_bytes": 11877152238,
+    "acquisition": "IN_PROGRESS_AT_SNAPSHOT",
+    "archive_sha256_advertised": "2bfde48a0e9c616c87afcac5359b69f281689765e1af3fecbbec5c918e6faa62",
+    "whole_archive_sha256_recomputed": false,
+    "extractor_sha256": "3de905b9d2be45f8976dbda882bf91bd9572083930d02d258249fb99e859711f",
+    "policy_config_import": "PASS",
+    "model_loaded": false,
+    "policy_evaluation": "NOT_RUN",
+    "snapshot_unix": 1792001671.9476502,
+    "completed_file_bytes": 5911003,
+    "partial_file_bytes": 394264576,
+    "acquisition_timeout_seconds": 3600
+  }
+}

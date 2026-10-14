@@ -1,0 +1,1188 @@
+{
+  "schema": "robot-memory-benchmark-intake-v1",
+  "status": "METADATA_PASS",
+  "robomme": {
+    "repository": "https://github.com/RoboMME/robomme_benchmark",
+    "revision": "fae9f7300347f1146c2ae4844faa4eef7e38098e",
+    "resolver_sha256": "f4db3e64bbbd3607eb6c28a9ba9f9fbfe90789cf18c2dcb1c570f8890f08ce33",
+    "tasks": [
+      {
+        "task": "PickXtimes",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "8e74205d7b2a6e44405e491f397a5b8976bafe141e0521eb6a081ab301ef7500"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "991bff765dc1defc8a53d1fd8d3c0c3e70e614436844e5a0a569f9a8dd9aaf83"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "ef90bad0a0879431ab949a8f74103c0056c968dc9b67de6131edc2649db5f912"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      },
+      {
+        "task": "StopCube",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "a25b595c7db754fe35c6c6c24ba48c6ba297f1bf4c444cde2e279e1496619f02"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "e4273c56de00c05794d7942d04e5f382df723d382a3f5e08b7a69610cc9be679"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "51939196d43a2613ddee75f86177a00ba405fe3ed83139d88aafdd0dde52fa46"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      },
+      {
+        "task": "SwingXtimes",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "800fe030a9602a8e97591a459b38ac778a35347ff992dad1d128bd77ff944a45"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "ffc9273359d42e187bae2e1cca37d189e4adb6b7b8199f283766102b36a3b55a"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "bdfe0b23b54b369b340ac7ed2ea0ebcbab6a71dc6811e11cea987e686482afb8"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      },
+      {
+        "task": "BinFill",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "9f8d193a7792cbc8ff8e3cf2059b3b2450fbb9657cae19cf5b73c7f79691d908"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "24da5261ef18f91b08c05123bca302b1c0576766a23d1293d4af0cc84b4b7a02"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "eb5899cba506534b697c00f7be6991bd48126612db0ea09683048da2d8d85fdc"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      },
+      {
+        "task": "VideoUnmaskSwap",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "4bc3157f2df0d1366fcd41b751a31fd2424df3edb0a884f6a61b5a73a5b8620d"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "d7c3d5794be8e3a1588cf27bff58722bb9d8656d2321304666d622d214b4dc2d"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "f9e5bc38f6af1a236ce387345ac181abd9d25e217baef35b5c1263c6474addf2"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      },
+      {
+        "task": "VideoUnmask",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "e2b220cd931df41181863756a7dc27d71d77e2f9b879b7b72a1f80c4c3614c8c"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "4718e73a541e1c271de6a59d358d1fd81078f76486eeaf44bce9d948fdff8fba"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "4f17d2506b048acbe3895408f44715ee3962ae4ae4ef12f0bf6f73f600938c9e"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      },
+      {
+        "task": "ButtonUnmaskSwap",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "ab83b540638d43147262927698980a17446d60677e621715f3cfeb10b0211cc7"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "e5560fb4cbdbf85605abb9717c8413cb790f12cf0c43873614aab195b42071f4"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "e87e93d226ee452000a3680de64d642c76f6f58ec1536dc7c1b84ca630c9d928"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      },
+      {
+        "task": "ButtonUnmask",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "1dce0d86fc611bd76c4cf30652a7cd3395bfc1dedcc63afbb1ca5d4429ed7ac7"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "ca6f53225f8be40b10a0ce9b6da729aef338b07f9905ca2555bbcba67a19e966"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "11157cab24a6c510d508cae284f46d5c4bdeaeca721abe770ef01a7442074520"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      },
+      {
+        "task": "VideoRepick",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "bf4e30c0f858fb6c2b4252bccc4537b3b5af5ae3128c7970ba361169fde76077"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "dd62f96344cbaef36f45af4260068e7fae123ff589a170b8abc612ab3593d0ea"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "88bd7aec451c2633b87e55bf61a569435ac14322a0e94bf86e19bd6b0ee5ee78"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      },
+      {
+        "task": "VideoPlaceButton",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "2f86ccd55df940ef0a0bf55096ee6915ee737569385634699d1aa19b2258644a"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "08bad730bffa4dbacb64c1ea9184a256a46f3dc37171b5e29218b82d301614af"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "fee6e76497d6b65c4e5b0f562c5ec927b23c70fe6a767bdad2dcde84420621c9"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      },
+      {
+        "task": "VideoPlaceOrder",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "26f4ec3db11dc029e71665da839b883facd6e339efb5905510ac2702e5df2b7c"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "3f03a284cd4927b9e4271805b3c722c766e1b8ad9dfa5eef9a08c457c382136a"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "3e4f337b2f60312bfc8770fd5def22d1153f5fecb921b55796714cd95858d18e"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      },
+      {
+        "task": "PickHighlight",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "4ecfe6d79ec86bb183a5d7b0c85e3f963f8e617a9e654c052e4c2e61aeff8a00"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "417e4a2dc83143dd9a6c8b0174ea4636a3969fa58521939ccdfc71dcb7a758cc"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "3addfb9bcd429d4a0fce55e7644563200ebb6aa6ecd4767879f0faa00be5663d"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      },
+      {
+        "task": "InsertPeg",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "bb7b9e16fbcd3b317c6d2bc8fae4e25e2f85258a6bacd9fe2d5742fa2353afbb"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "86e86a13e0eb9d3afc72f43ffb01b89acffda17d462d8f04abd2febd419fa347"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "e452dc94c45119b17bc18ef5b74666e645879e94d54f9c3eb0c24e0298ee8b4b"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      },
+      {
+        "task": "MoveCube",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "ffdd7404b3aa10ea76fdf83f37b9020984b8eef530bfa7cd74db9db3f11c7dfd"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "695c2aaa74f3d7852b0def7d6a2e73a8e1584ee288b4bd83d6ae3de9ee2dfbd7"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "544c912f8e5010a79bf6fb8b2a63f9996ba1422d21fdacfd01f49d4f76e6a19e"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      },
+      {
+        "task": "PatternLock",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "636431f1fa2375ddb42d2687a6ee1e91940fb7c75d0a9134efe069eb65a6f4ef"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "733bf5a13aa2373cdaaa08bca7b1e14319fa1cd4da082158f9b08eaf89ec3a28"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "793903e2974e0b006c7ad5632fbff9f0242694b9b23dbee25126dd1a610043cf"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      },
+      {
+        "task": "RouteStick",
+        "splits": {
+          "train": {
+            "episodes": 100,
+            "metadata_sha256": "758fed27d275d167fe98ccdf1c3c64f9aa9f8518bf3e002d605fc36c2fdeb42a"
+          },
+          "val": {
+            "episodes": 50,
+            "metadata_sha256": "54311ab99df2c1fa85c64f2ea268ac048f983dc3c1a8994c4a03ea8c67acc145"
+          },
+          "test": {
+            "episodes": 50,
+            "metadata_sha256": "035056eb89c12b6e1680f751468050ad46b64b0fce96831915b06b4bbe13aba5"
+          }
+        },
+        "reset_identity_overlaps": {
+          "train:val": 0,
+          "train:test": 0,
+          "val:test": 0
+        }
+      }
+    ],
+    "train_episodes": 1600,
+    "validation_episodes": 800,
+    "test_episodes": 800,
+    "split_check": "seed+difficulty per task; not pixel equivalence",
+    "reference_horizon": 1300,
+    "policy_evaluation": "NOT_RUN"
+  },
+  "robodojo": {
+    "repository": "https://github.com/RoboDojo-Benchmark/RoboDojo",
+    "revision": "09bd5f5e762b949f5858ece31347ce62057b3a5e",
+    "inventory": {
+      "benchmark": "RoboDojo",
+      "config_dir": "task/RoboDojo/config",
+      "config_only": [],
+      "counts": {
+        "config_only": 0,
+        "missing_class": 0,
+        "missing_config": 0,
+        "runnable": 54,
+        "tasks": 54
+      },
+      "task_dir": "task/RoboDojo/tasks",
+      "tasks": [
+        {
+          "class_exists": true,
+          "class_name": "align_blocks",
+          "config": "task/RoboDojo/config/align_blocks.yml",
+          "config_exists": true,
+          "dimension": "open",
+          "module": "task/RoboDojo/tasks/align_blocks.py",
+          "name": "align_blocks",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "arrange_largest_number",
+          "config": "task/RoboDojo/config/arrange_largest_number.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/arrange_largest_number.py",
+          "name": "arrange_largest_number",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "arrange_largest_number_random",
+          "config": "task/RoboDojo/config/arrange_largest_number_random.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/arrange_largest_number_random.py",
+          "name": "arrange_largest_number_random",
+          "runnable": true,
+          "variant": "random",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "build_tower",
+          "config": "task/RoboDojo/config/build_tower.yml",
+          "config_exists": true,
+          "dimension": "precision",
+          "module": "task/RoboDojo/tasks/build_tower.py",
+          "name": "build_tower",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "classify_objects",
+          "config": "task/RoboDojo/config/classify_objects.yml",
+          "config_exists": true,
+          "dimension": "long-horizon",
+          "module": "task/RoboDojo/tasks/classify_objects.py",
+          "name": "classify_objects",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "classify_objects_by_language",
+          "config": "task/RoboDojo/config/classify_objects_by_language.yml",
+          "config_exists": true,
+          "dimension": "open",
+          "module": "task/RoboDojo/tasks/classify_objects_by_language.py",
+          "name": "classify_objects_by_language",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "cover_blocks",
+          "config": "task/RoboDojo/config/cover_blocks.yml",
+          "config_exists": true,
+          "dimension": "memory",
+          "module": "task/RoboDojo/tasks/cover_blocks.py",
+          "name": "cover_blocks",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "deposit_coin",
+          "config": "task/RoboDojo/config/deposit_coin.yml",
+          "config_exists": true,
+          "dimension": "precision",
+          "module": "task/RoboDojo/tasks/deposit_coin.py",
+          "name": "deposit_coin",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "fasten_screws",
+          "config": "task/RoboDojo/config/fasten_screws.yml",
+          "config_exists": true,
+          "dimension": "precision",
+          "module": "task/RoboDojo/tasks/fasten_screws.py",
+          "name": "fasten_screws",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "fill_egg_holder",
+          "config": "task/RoboDojo/config/fill_egg_holder.yml",
+          "config_exists": true,
+          "dimension": "long-horizon",
+          "module": "task/RoboDojo/tasks/fill_egg_holder.py",
+          "name": "fill_egg_holder",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "fill_pen_holder",
+          "config": "task/RoboDojo/config/fill_pen_holder.yml",
+          "config_exists": true,
+          "dimension": "long-horizon",
+          "module": "task/RoboDojo/tasks/fill_pen_holder.py",
+          "name": "fill_pen_holder",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "fold_clothes",
+          "config": "task/RoboDojo/config/fold_clothes.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/fold_clothes.py",
+          "name": "fold_clothes",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "fold_clothes_random",
+          "config": "task/RoboDojo/config/fold_clothes_random.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/fold_clothes_random.py",
+          "name": "fold_clothes_random",
+          "runnable": true,
+          "variant": "random",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "general_pickup",
+          "config": "task/RoboDojo/config/general_pickup.yml",
+          "config_exists": true,
+          "dimension": "open",
+          "module": "task/RoboDojo/tasks/general_pickup.py",
+          "name": "general_pickup",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "hang_mugs",
+          "config": "task/RoboDojo/config/hang_mugs.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/hang_mugs.py",
+          "name": "hang_mugs",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "hang_mugs_random",
+          "config": "task/RoboDojo/config/hang_mugs_random.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/hang_mugs_random.py",
+          "name": "hang_mugs_random",
+          "runnable": true,
+          "variant": "random",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "imitate_sorting_sequence",
+          "config": "task/RoboDojo/config/imitate_sorting_sequence.yml",
+          "config_exists": true,
+          "dimension": "memory",
+          "module": "task/RoboDojo/tasks/imitate_sorting_sequence.py",
+          "name": "imitate_sorting_sequence",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "insert_key",
+          "config": "task/RoboDojo/config/insert_key.yml",
+          "config_exists": true,
+          "dimension": "precision",
+          "module": "task/RoboDojo/tasks/insert_key.py",
+          "name": "insert_key",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "insert_tubes",
+          "config": "task/RoboDojo/config/insert_tubes.yml",
+          "config_exists": true,
+          "dimension": "precision",
+          "module": "task/RoboDojo/tasks/insert_tubes.py",
+          "name": "insert_tubes",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "make_kong",
+          "config": "task/RoboDojo/config/make_kong.yml",
+          "config_exists": true,
+          "dimension": "long-horizon",
+          "module": "task/RoboDojo/tasks/make_kong.py",
+          "name": "make_kong",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "make_toast",
+          "config": "task/RoboDojo/config/make_toast.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/make_toast.py",
+          "name": "make_toast",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "make_toast_random",
+          "config": "task/RoboDojo/config/make_toast_random.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/make_toast_random.py",
+          "name": "make_toast_random",
+          "runnable": true,
+          "variant": "random",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "match_and_pick_from_conveyor",
+          "config": "task/RoboDojo/config/match_and_pick_from_conveyor.yml",
+          "config_exists": true,
+          "dimension": "memory",
+          "module": "task/RoboDojo/tasks/match_and_pick_from_conveyor.py",
+          "name": "match_and_pick_from_conveyor",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "organize_table",
+          "config": "task/RoboDojo/config/organize_table.yml",
+          "config_exists": true,
+          "dimension": "long-horizon",
+          "module": "task/RoboDojo/tasks/organize_table.py",
+          "name": "organize_table",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "pack_objects_into_box",
+          "config": "task/RoboDojo/config/pack_objects_into_box.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/pack_objects_into_box.py",
+          "name": "pack_objects_into_box",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "pack_objects_into_box_random",
+          "config": "task/RoboDojo/config/pack_objects_into_box_random.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/pack_objects_into_box_random.py",
+          "name": "pack_objects_into_box_random",
+          "runnable": true,
+          "variant": "random",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "pick_from_conveyor_by_image",
+          "config": "task/RoboDojo/config/pick_from_conveyor_by_image.yml",
+          "config_exists": true,
+          "dimension": "open",
+          "module": "task/RoboDojo/tasks/pick_from_conveyor_by_image.py",
+          "name": "pick_from_conveyor_by_image",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "play_Xylophone",
+          "config": "task/RoboDojo/config/play_Xylophone.yml",
+          "config_exists": true,
+          "dimension": "precision",
+          "module": "task/RoboDojo/tasks/play_Xylophone.py",
+          "name": "play_Xylophone",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "play_stacking_toy",
+          "config": "task/RoboDojo/config/play_stacking_toy.yml",
+          "config_exists": true,
+          "dimension": "long-horizon",
+          "module": "task/RoboDojo/tasks/play_stacking_toy.py",
+          "name": "play_stacking_toy",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "play_tic_tac_toe",
+          "config": "task/RoboDojo/config/play_tic_tac_toe.yml",
+          "config_exists": true,
+          "dimension": "long-horizon",
+          "module": "task/RoboDojo/tasks/play_tic_tac_toe.py",
+          "name": "play_tic_tac_toe",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "plug_in_charger",
+          "config": "task/RoboDojo/config/plug_in_charger.yml",
+          "config_exists": true,
+          "dimension": "precision",
+          "module": "task/RoboDojo/tasks/plug_in_charger.py",
+          "name": "plug_in_charger",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "pour_balls_into_vase",
+          "config": "task/RoboDojo/config/pour_balls_into_vase.yml",
+          "config_exists": true,
+          "dimension": "precision",
+          "module": "task/RoboDojo/tasks/pour_balls_into_vase.py",
+          "name": "pour_balls_into_vase",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "pour_by_language",
+          "config": "task/RoboDojo/config/pour_by_language.yml",
+          "config_exists": true,
+          "dimension": "open",
+          "module": "task/RoboDojo/tasks/pour_by_language.py",
+          "name": "pour_by_language",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "pour_liquid_into_cup",
+          "config": "task/RoboDojo/config/pour_liquid_into_cup.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/pour_liquid_into_cup.py",
+          "name": "pour_liquid_into_cup",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "pour_liquid_into_cup_random",
+          "config": "task/RoboDojo/config/pour_liquid_into_cup_random.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/pour_liquid_into_cup_random.py",
+          "name": "pour_liquid_into_cup_random",
+          "runnable": true,
+          "variant": "random",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "press_by_number",
+          "config": "task/RoboDojo/config/press_by_number.yml",
+          "config_exists": true,
+          "dimension": "memory",
+          "module": "task/RoboDojo/tasks/press_by_number.py",
+          "name": "press_by_number",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "push_T",
+          "config": "task/RoboDojo/config/push_T.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/push_T.py",
+          "name": "push_T",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "push_T_random",
+          "config": "task/RoboDojo/config/push_T_random.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/push_T_random.py",
+          "name": "push_T_random",
+          "runnable": true,
+          "variant": "random",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "put_bottles_into_dustbin",
+          "config": "task/RoboDojo/config/put_bottles_into_dustbin.yml",
+          "config_exists": true,
+          "dimension": "long-horizon",
+          "module": "task/RoboDojo/tasks/put_bottles_into_dustbin.py",
+          "name": "put_bottles_into_dustbin",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "solve_equation",
+          "config": "task/RoboDojo/config/solve_equation.yml",
+          "config_exists": true,
+          "dimension": "open",
+          "module": "task/RoboDojo/tasks/solve_equation.py",
+          "name": "solve_equation",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "sort_nesting_dolls_by_size",
+          "config": "task/RoboDojo/config/sort_nesting_dolls_by_size.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/sort_nesting_dolls_by_size.py",
+          "name": "sort_nesting_dolls_by_size",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "sort_nesting_dolls_by_size_random",
+          "config": "task/RoboDojo/config/sort_nesting_dolls_by_size_random.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/sort_nesting_dolls_by_size_random.py",
+          "name": "sort_nesting_dolls_by_size_random",
+          "runnable": true,
+          "variant": "random",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "stack_blocks",
+          "config": "task/RoboDojo/config/stack_blocks.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/stack_blocks.py",
+          "name": "stack_blocks",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "stack_blocks_by_language",
+          "config": "task/RoboDojo/config/stack_blocks_by_language.yml",
+          "config_exists": true,
+          "dimension": "open",
+          "module": "task/RoboDojo/tasks/stack_blocks_by_language.py",
+          "name": "stack_blocks_by_language",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "stack_blocks_random",
+          "config": "task/RoboDojo/config/stack_blocks_random.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/stack_blocks_random.py",
+          "name": "stack_blocks_random",
+          "runnable": true,
+          "variant": "random",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "stack_bowls",
+          "config": "task/RoboDojo/config/stack_bowls.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/stack_bowls.py",
+          "name": "stack_bowls",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "stack_bowls_random",
+          "config": "task/RoboDojo/config/stack_bowls_random.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/stack_bowls_random.py",
+          "name": "stack_bowls_random",
+          "runnable": true,
+          "variant": "random",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "store_laptop_and_headphones",
+          "config": "task/RoboDojo/config/store_laptop_and_headphones.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/store_laptop_and_headphones.py",
+          "name": "store_laptop_and_headphones",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "store_laptop_and_headphones_random",
+          "config": "task/RoboDojo/config/store_laptop_and_headphones_random.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/store_laptop_and_headphones_random.py",
+          "name": "store_laptop_and_headphones_random",
+          "runnable": true,
+          "variant": "random",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "store_tools_in_toolbox",
+          "config": "task/RoboDojo/config/store_tools_in_toolbox.yml",
+          "config_exists": true,
+          "dimension": "open",
+          "module": "task/RoboDojo/tasks/store_tools_in_toolbox.py",
+          "name": "store_tools_in_toolbox",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "swap_T",
+          "config": "task/RoboDojo/config/swap_T.yml",
+          "config_exists": true,
+          "dimension": "memory",
+          "module": "task/RoboDojo/tasks/swap_T.py",
+          "name": "swap_T",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "swap_blocks",
+          "config": "task/RoboDojo/config/swap_blocks.yml",
+          "config_exists": true,
+          "dimension": "memory",
+          "module": "task/RoboDojo/tasks/swap_blocks.py",
+          "name": "swap_blocks",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 50
+        },
+        {
+          "class_exists": true,
+          "class_name": "sweep_blocks",
+          "config": "task/RoboDojo/config/sweep_blocks.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/sweep_blocks.py",
+          "name": "sweep_blocks",
+          "runnable": true,
+          "variant": "standard",
+          "native_episodes": 25
+        },
+        {
+          "class_exists": true,
+          "class_name": "sweep_blocks_random",
+          "config": "task/RoboDojo/config/sweep_blocks_random.yml",
+          "config_exists": true,
+          "dimension": "generalization",
+          "module": "task/RoboDojo/tasks/sweep_blocks_random.py",
+          "name": "sweep_blocks_random",
+          "runnable": true,
+          "variant": "random",
+          "native_episodes": 25
+        }
+      ]
+    },
+    "dimensions": [
+      {
+        "dimension": "generalization",
+        "canonical_count": 12,
+        "runnable_count": 24,
+        "tasks": [
+          "stack_bowls",
+          "push_T",
+          "pack_objects_into_box",
+          "fold_clothes",
+          "hang_mugs",
+          "sweep_blocks",
+          "pour_liquid_into_cup",
+          "make_toast",
+          "arrange_largest_number",
+          "sort_nesting_dolls_by_size",
+          "store_laptop_and_headphones",
+          "stack_blocks"
+        ],
+        "runnable_tasks": [
+          "arrange_largest_number",
+          "arrange_largest_number_random",
+          "fold_clothes",
+          "fold_clothes_random",
+          "hang_mugs",
+          "hang_mugs_random",
+          "make_toast",
+          "make_toast_random",
+          "pack_objects_into_box",
+          "pack_objects_into_box_random",
+          "pour_liquid_into_cup",
+          "pour_liquid_into_cup_random",
+          "push_T",
+          "push_T_random",
+          "sort_nesting_dolls_by_size",
+          "sort_nesting_dolls_by_size_random",
+          "stack_blocks",
+          "stack_blocks_random",
+          "stack_bowls",
+          "stack_bowls_random",
+          "store_laptop_and_headphones",
+          "store_laptop_and_headphones_random",
+          "sweep_blocks",
+          "sweep_blocks_random"
+        ]
+      },
+      {
+        "dimension": "memory",
+        "canonical_count": 6,
+        "runnable_count": 6,
+        "tasks": [
+          "cover_blocks",
+          "match_and_pick_from_conveyor",
+          "swap_blocks",
+          "swap_T",
+          "press_by_number",
+          "imitate_sorting_sequence"
+        ],
+        "runnable_tasks": [
+          "cover_blocks",
+          "imitate_sorting_sequence",
+          "match_and_pick_from_conveyor",
+          "press_by_number",
+          "swap_T",
+          "swap_blocks"
+        ]
+      },
+      {
+        "dimension": "precision",
+        "canonical_count": 8,
+        "runnable_count": 8,
+        "tasks": [
+          "fasten_screws",
+          "plug_in_charger",
+          "insert_tubes",
+          "pour_balls_into_vase",
+          "play_Xylophone",
+          "deposit_coin",
+          "insert_key",
+          "build_tower"
+        ],
+        "runnable_tasks": [
+          "build_tower",
+          "deposit_coin",
+          "fasten_screws",
+          "insert_key",
+          "insert_tubes",
+          "play_Xylophone",
+          "plug_in_charger",
+          "pour_balls_into_vase"
+        ]
+      },
+      {
+        "dimension": "long-horizon",
+        "canonical_count": 8,
+        "runnable_count": 8,
+        "tasks": [
+          "fill_pen_holder",
+          "classify_objects",
+          "put_bottles_into_dustbin",
+          "play_tic_tac_toe",
+          "fill_egg_holder",
+          "organize_table",
+          "make_kong",
+          "play_stacking_toy"
+        ],
+        "runnable_tasks": [
+          "classify_objects",
+          "fill_egg_holder",
+          "fill_pen_holder",
+          "make_kong",
+          "organize_table",
+          "play_stacking_toy",
+          "play_tic_tac_toe",
+          "put_bottles_into_dustbin"
+        ]
+      },
+      {
+        "dimension": "open",
+        "canonical_count": 8,
+        "runnable_count": 8,
+        "tasks": [
+          "align_blocks",
+          "general_pickup",
+          "solve_equation",
+          "stack_blocks_by_language",
+          "classify_objects_by_language",
+          "pick_from_conveyor_by_image",
+          "store_tools_in_toolbox",
+          "pour_by_language"
+        ],
+        "runnable_tasks": [
+          "align_blocks",
+          "classify_objects_by_language",
+          "general_pickup",
+          "pick_from_conveyor_by_image",
+          "pour_by_language",
+          "solve_equation",
+          "stack_blocks_by_language",
+          "store_tools_in_toolbox"
+        ]
+      }
+    ],
+    "inventory_script_sha256": "ec82252b0f87fa5a3dbec2f682c170b25cbe47fe181e431a81df2c4b0675084d",
+    "native_episode_rules_sha256": "655a87cd59fa6272bf352d32deb8ade162737b49a9824e16d428fecf0803380b",
+    "native_configuration_episodes": 2100,
+    "native_canonical_only_episodes": 1800,
+    "native_episode_note": "Read per-task overrides (25 or 50); do not force 50",
+    "policy_evaluation": "NOT_RUN"
+  },
+  "gradient_updates": 0,
+  "simulation_steps": 0,
+  "scope": "Official source metadata only; no success-rate or method-efficacy result"
+}

@@ -4,6 +4,11 @@
 does not instantiate this study. Choices below are candidates that must be
 resolved in a complete manifest before method-result collection or training.
 
+Benchmark scope updated by the user: **RoboDojo and RoboMME** replace the
+LIBERO/SimplerEnv main-domain proposal below. The detailed current design is
+`ROBODOJO_ROBOMME_DESIGN.md`; the older LIBERO plan remains an unrun historical
+proposal and its completed qualifications remain reference evidence.
+
 ## Scientific question and the two effects
 
 After receiving deployment failures and expert corrections, does a policy's
