@@ -94,11 +94,24 @@ are masked consistently. Filtering targets leaves the observations and actual
 failure history intact. Eleven program tests and seven artifact-audit tests
 pass; 63 focused tests across the affected experiment/bridge boundary pass.
 
+The upstream QwenOFT example bridge is now implemented and qualified against
+the original normalization and image pipeline. The first real transform call
+rejected premature Tensor conversion; `program_transform_failed_attempt.json`
+preserves that interface failure. Repair
+`1d2ac3395f0c58504fb39fd2dc1a6db15b47bf4e` then passed all 129,304 recorded
+controller commands: maximum float32 affine-roundtrip error
+5.960464477539063e-08, below the registered 16-epsilon budget, and no gripper
+command mismatches. The first dual-camera input of all 24 failed cases matches
+the source ModelClient pixels/order exactly. This offline check uses no model
+inferences, gradients or new environment steps. It maps binary controller
+gripper commands to canonical 0/1 targets; discarded expert probabilities
+cannot be recovered. Two new data-bridge tests bring focused coverage to 65.
+
 Not yet implemented/run: a qualified program learner/trainer, collection on
 new disjoint source starts, matched-budget absorption, assisted deployment
-dependence, fresh-query history adaptation and generations 0–3. Controller
-programs still need the upstream training normalization and image pipeline;
-they must not be fed directly to a model expecting normalized actions.
+dependence, fresh-query history adaptation and generations 0–3. The current
+QwenOFT packet sees only the current anchor's two images and instruction;
+longer-history rows are rejected until a qualified context model exists.
 
 All future data-use arms share their program executor, action horizon,
 architecture, initialization and update budget. The 500 reference cases and

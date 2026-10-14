@@ -18,7 +18,7 @@
 <p class="note"><strong>纠正接口的负结果：</strong>同一专家每次执行完整 8 步动作块时成功，改为每个控制步重新预测、只执行第一动作后，task 0 在 520 步超时。完整动作块接口再核对 3 / 3 精确一致。这是执行周期检查，不能当作 DAgger 的一般失败或我们的创新性证据。</p>
 <p class="note">归档代码没有 Git 元数据，使用内容摘要绑定；checkpoint 发布时的原始源码 revision 尚不可核验。因此这轮是归档集成栈上的固定 checkpoint 复现。标准 LIBERO 成功率本身不能证明 ICL。失败轨迹完整保留，但不能训练后再用相同案例作确认性评测。</p>
 <div class="table-scroll"><table><thead><tr><th>学习阶段</th><th>机制与比较</th><th>必须测到什么</th></tr></thead><tbody><tr><td>部署后吸收</td><td>同预算 BC/SFT、实际学生状态 DAgger/OPD、恢复后缀、历史条件纠正</td><td>下一代无教师成功率、恢复率、旧技能保持</td></tr><tr><td>部署中适应</td><td>冻结慢权重；有效自身历史、空历史、打乱反馈；新 query 起点</td><td>绝对尝试 1/2/3/5 成功率、预算内累计成功、专家控制比例</td></tr><tr><td>跨代闭环</td><td>固定数据、普通 OPD、更新经验生产器；第 0–3 代</td><td>收益能否跨代保留；所有采集、标注、更新与评测成本</td></tr></tbody></table></div>
-<p>已实现动作块标注与采集接口：专家在学生实际访问的块起点重新预测，未来动作绑定该起点输入；恢复接管按整块执行，失败动作保留为上下文。学习器、训练变换和新起点上的纠正采集仍待完成。固定策略参考不会因为接入历史接口就变成 ICL 模型。正式的 PLD、RECAP、RoboTTT 复现与这些数据使用对照分开登记。</p>
+<p>已实现动作块标注与采集接口：专家在学生实际访问的块起点重新预测，未来动作绑定该起点输入；恢复接管按整块执行，失败动作保留为上下文。训练变换已用上游代码核对 129,304 条动作及 24 对首帧图像，未训练或调用模型。学习器、新起点上的纠正采集和适应模型仍待完成。固定策略参考不会因为接入历史接口就变成 ICL 模型。正式的 PLD、RECAP、RoboTTT 复现与这些数据使用对照分开登记。</p>
 <p><a href="data/robot-reference-progress.json">最终计数、身份与成本 →</a> · <a href="data/robot-reference-audit.json">500 条档案审计 →</a> · <a href="research/deployment-adaptation/final-reference-report.md">完整结果与负对照 →</a> · <a href="research/deployment-adaptation/experiment-design.md">实验方案 →</a></p></section>
 
 <section id="mechanism" class="card section"><div class="section-head"><div><div class="eyebrow">02 / EARLIER CREDIT HYPOTHESIS</div><h2>历史信用候选：经验是否让下一代更会学习？</h2><p class="muted">同一学习器与实际学生历史，比较不同经验信用。短信用诊断已运行并未通过；完整共同演化闭环尚未运行。</p></div><span class="pill amber">方案，不是结果</span></div>

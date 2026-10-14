@@ -1,0 +1,29 @@
+{
+  "schema": "libero-program-transform-qualification-v1",
+  "status": "PASS",
+  "reference_plan_digest": "9adbfd4d27a6b53412b7d68ebda209eb0cd64aaf44d0e21f9f4ddba331ac626b",
+  "reference_audit_sha256": "0af623eb179bf5123a44a7630be07d29d5127c9c2b1ac2116226028e4b5fb1d8",
+  "code_revision": "1d2ac3395f0c58504fb39fd2dc1a6db15b47bf4e",
+  "script_sha256": "091c2c85dd29a0049ee99c33251a3bd32a88a06351353596dc674046bd41c7d2",
+  "source_fidelity": "Content-bound archived integration; release Git revision unavailable",
+  "traces_checked": 500,
+  "controller_commands_checked": 129304,
+  "failed_case_first_camera_pairs_checked": 24,
+  "maximum_float32_roundtrip_error": 5.960464477539063e-08,
+  "numeric_tolerance": 1.9073486328125e-06,
+  "gripper_command_mismatches": 0,
+  "unnorm_key": "franka",
+  "action_keys": [
+    "action.x",
+    "action.y",
+    "action.z",
+    "action.roll",
+    "action.pitch",
+    "action.yaw",
+    "action.gripper"
+  ],
+  "gradient_updates": 0,
+  "model_inferences": 0,
+  "new_environment_steps": 0,
+  "scope": "Transform compatibility only; original training/recovery efficacy NOT_RUN"
+}

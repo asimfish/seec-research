@@ -97,6 +97,10 @@ absorption. Program replay matched the fixed reference on all three registered
 cases, with zero updates. The full reference scored 476/500 (95.2%), with
 complete non-aborted coverage and all trace/failure-camera checksums verified.
 This is a released-checkpoint baseline, not an absorption or adaptation gain.
+The single-anchor QwenOFT example bridge now reuses the original normalization
+and matches its camera pixels/order in an offline qualification. This is data
+compatibility, not a qualified training run; history rows are rejected until
+an actual context-capable learner is registered. See the final report.
 Teacher-assisted evaluation must not count a changed replanning interval as a
 learning gain; include a frozen-policy executor control wherever they differ.
 

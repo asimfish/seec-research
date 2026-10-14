@@ -1,0 +1,54 @@
+{
+  "status": "TEACHER_NOT_QUALIFIED",
+  "cases": [
+    {
+      "task": 0,
+      "success": false,
+      "cost": {
+        "environment_steps": 530,
+        "policy_control_steps": 520,
+        "reset_stabilization_steps": 10,
+        "resets": 1,
+        "teacher_queries": 0,
+        "expert_actions": 0,
+        "expert_actions_per_1000_steps": 0.0,
+        "expert_fraction_denominator": "policy_control_steps"
+      },
+      "inference_requests": 520
+    },
+    {
+      "task": 4,
+      "success": true,
+      "cost": {
+        "environment_steps": 343,
+        "policy_control_steps": 333,
+        "reset_stabilization_steps": 10,
+        "resets": 1,
+        "teacher_queries": 0,
+        "expert_actions": 0,
+        "expert_actions_per_1000_steps": 0.0,
+        "expert_fraction_denominator": "policy_control_steps"
+      },
+      "inference_requests": 333
+    },
+    {
+      "task": 7,
+      "success": true,
+      "cost": {
+        "environment_steps": 313,
+        "policy_control_steps": 303,
+        "reset_stabilization_steps": 10,
+        "resets": 1,
+        "teacher_queries": 0,
+        "expert_actions": 0,
+        "expert_actions_per_1000_steps": 0.0,
+        "expert_fraction_denominator": "policy_control_steps"
+      },
+      "inference_requests": 303
+    }
+  ],
+  "expected": 3,
+  "compared": 3,
+  "gradient_updates": 0,
+  "stop_reason": "registered three-case budget completed"
+}

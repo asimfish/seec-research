@@ -131,5 +131,17 @@
     "additional_simulation_steps": 1186,
     "gradient_updates": 0
   },
-  "program_collection_interface": "IMPLEMENTED_CONTRACT_TESTED_NOT_YET_USED_FOR_LEARNING"
+  "program_collection_interface": "IMPLEMENTED_CONTRACT_TESTED_NOT_YET_USED_FOR_LEARNING",
+  "program_training_transform": {
+    "status": "PASS",
+    "code_revision": "1d2ac3395f0c58504fb39fd2dc1a6db15b47bf4e",
+    "controller_commands_checked": 129304,
+    "failed_case_first_camera_pairs_checked": 24,
+    "maximum_float32_roundtrip_error": 5.960464477539063e-08,
+    "gripper_command_mismatches": 0,
+    "gradient_updates": 0,
+    "model_inferences": 0,
+    "new_environment_steps": 0,
+    "sha256": "8368d8edaabd35ba67d8634dcdd955caf7644ff8079846a2785c990d10b59740"
+  }
 }

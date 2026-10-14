@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "compared": 3,
+  "expected": 3,
+  "comparisons": [
+    {
+      "shard": 0,
+      "task": 0,
+      "initial_state": 0,
+      "commands_exact": true,
+      "rewards_exact": true,
+      "camera_sequence_exact": true,
+      "initial_state_exact": true,
+      "success_exact": true,
+      "instruction_exact": true,
+      "cost": {
+        "environment_steps": 267,
+        "policy_control_steps": 257,
+        "reset_stabilization_steps": 10,
+        "resets": 1,
+        "teacher_queries": 0,
+        "expert_actions": 0,
+        "expert_actions_per_1000_steps": 0.0,
+        "expert_fraction_denominator": "policy_control_steps"
+      }
+    },
+    {
+      "shard": 1,
+      "task": 4,
+      "initial_state": 0,
+      "commands_exact": true,
+      "rewards_exact": true,
+      "camera_sequence_exact": true,
+      "initial_state_exact": true,
+      "success_exact": true,
+      "instruction_exact": true,
+      "cost": {
+        "environment_steps": 240,
+        "policy_control_steps": 230,
+        "reset_stabilization_steps": 10,
+        "resets": 1,
+        "teacher_queries": 0,
+        "expert_actions": 0,
+        "expert_actions_per_1000_steps": 0.0,
+        "expert_fraction_denominator": "policy_control_steps"
+      }
+    },
+    {
+      "shard": 2,
+      "task": 7,
+      "initial_state": 0,
+      "commands_exact": true,
+      "rewards_exact": true,
+      "camera_sequence_exact": true,
+      "initial_state_exact": true,
+      "success_exact": true,
+      "instruction_exact": true,
+      "cost": {
+        "environment_steps": 269,
+        "policy_control_steps": 259,
+        "reset_stabilization_steps": 10,
+        "resets": 1,
+        "teacher_queries": 0,
+        "expert_actions": 0,
+        "expert_actions_per_1000_steps": 0.0,
+        "expert_fraction_denominator": "policy_control_steps"
+      }
+    }
+  ],
+  "registration": {
+    "reference_plan_digest": "9adbfd4d27a6b53412b7d68ebda209eb0cd64aaf44d0e21f9f4ddba331ac626b",
+    "code_revision": "77de939d360a78873f288f07992b8c65fc7c0298",
+    "policy_mode": "expert_program",
+    "script_sha256": "c1c128ef5e19dc5502c9685a9f0ed78f5291ef2a990079e0855d14fcc940f64d",
+    "cases": [
+      {
+        "shard": 0,
+        "task": 0,
+        "initial_state": 0
+      },
+      {
+        "shard": 1,
+        "task": 4,
+        "initial_state": 0
+      },
+      {
+        "shard": 2,
+        "task": 7,
+        "initial_state": 0
+      }
+    ],
+    "prediction": "identical commands, cameras, rewards, init state and outcome",
+    "claim_scope": "adapter fidelity only; source-dependent implementation and repeated cases"
+  }
+}
