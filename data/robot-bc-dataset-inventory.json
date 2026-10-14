@@ -1,0 +1,91 @@
+{
+  "schema": "libero-static-dataset-inventory-v1",
+  "status": "METADATA_AUDITED_NOT_TRAINING_QUALIFIED",
+  "dataset_name": "libero_10_no_noops_1.0.0_lerobot",
+  "reported_episodes": 379,
+  "metadata_episodes": 379,
+  "reported_frames": 101469,
+  "metadata_frame_sum": 101469,
+  "fps": 20,
+  "dataset_to_benchmark_tasks": [
+    {
+      "dataset_task_index": 0,
+      "benchmark_task_index": 4,
+      "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate"
+    },
+    {
+      "dataset_task_index": 1,
+      "benchmark_task_index": 6,
+      "instruction": "put the white mug on the plate and put the chocolate pudding to the right of the plate"
+    },
+    {
+      "dataset_task_index": 2,
+      "benchmark_task_index": 9,
+      "instruction": "put the yellow and white mug in the microwave and close it"
+    },
+    {
+      "dataset_task_index": 3,
+      "benchmark_task_index": 2,
+      "instruction": "turn on the stove and put the moka pot on it"
+    },
+    {
+      "dataset_task_index": 4,
+      "benchmark_task_index": 7,
+      "instruction": "put both the alphabet soup and the cream cheese box in the basket"
+    },
+    {
+      "dataset_task_index": 5,
+      "benchmark_task_index": 0,
+      "instruction": "put both the alphabet soup and the tomato sauce in the basket"
+    },
+    {
+      "dataset_task_index": 6,
+      "benchmark_task_index": 8,
+      "instruction": "put both moka pots on the stove"
+    },
+    {
+      "dataset_task_index": 7,
+      "benchmark_task_index": 1,
+      "instruction": "put both the cream cheese box and the butter in the basket"
+    },
+    {
+      "dataset_task_index": 8,
+      "benchmark_task_index": 3,
+      "instruction": "put the black bowl in the bottom drawer of the cabinet and close it"
+    },
+    {
+      "dataset_task_index": 9,
+      "benchmark_task_index": 5,
+      "instruction": "pick up the book and place it in the back compartment of the caddy"
+    }
+  ],
+  "episodes_by_dataset_task": {
+    "0": 38,
+    "1": 36,
+    "2": 34,
+    "3": 41,
+    "4": 43,
+    "5": 33,
+    "6": 29,
+    "7": 49,
+    "8": 35,
+    "9": 41
+  },
+  "metadata_sha256": {
+    "info.json": "e5643c4e72e65f133ce0b1a5b9d9aaa5b2f065ed7f0f00ebbc231bde61af96d5",
+    "tasks.jsonl": "45f9eb4d4b6b04999f64640c0aae380555372b7b273a904f5f459ad05d4a0a6a",
+    "episodes.jsonl": "5589f8f87cfddb34812782462160bf55b0d3082e404240682d1d0a89faba8265",
+    "modality.json": "89a88c62ed7746d7769d69b4bfde2d64bb5b7572b0657d15ca796dd4e99d5649"
+  },
+  "video_and_parquet_bytes": "NOT_YET_BOUND",
+  "source_simulator_state_identity": "UNAVAILABLE_IN_CONVERTED_METADATA",
+  "source_release_revision": "UNAVAILABLE",
+  "pickle_indices_loaded": false,
+  "gradient_updates": 0,
+  "training_use": "NOT_RUN",
+  "risks": [
+    "Task ordinal order differs from benchmark; map by exact instruction",
+    "no_noops conversion removes control ticks; preserve its registered timing/label semantics",
+    "Converted metadata does not bind original simulator start arrays"
+  ]
+}

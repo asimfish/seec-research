@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "Artifact/byte/sampling audit; no independent policy evaluation",
+  "plan_id": "program-interface-bb0c5867d76a36a1",
+  "plan_digest": "1a1eb8e700ceea23a31473d34cd00da9812b5f4ea0581e8644c0290a742b813f",
+  "generated_state_files_checked": 6,
+  "source_traces_checked": 2,
+  "training_anchors": 66,
+  "optimizer_updates_checked": 8,
+  "sampled_anchors_checked": 16,
+  "final_head_sha256": "d3b285921b28d53eee452463583bf9148eec72689e64dc48106809d8d2c58c96",
+  "result_sha256": "32df676e37daccf93212b258a704e323b472a32a30bd09ade42f27f7db022979",
+  "new_gradients": 0,
+  "new_inferences": 0,
+  "new_simulation_steps": 0,
+  "loss_note": "Different batches; finite losses do not establish robot improvement",
+  "audit_script_sha256": "e06e2d0b1fa76bfe703471eafb3ead31c29d6cae49c50d3cfaac02b928595aac"
+}
