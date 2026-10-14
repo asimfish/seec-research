@@ -1,0 +1,43 @@
+{
+  "schema": "robot-reference-progress-v1",
+  "captured_at": "2026-10-14T07:14:40.966590+00:00",
+  "status": "RUNNING_REFERENCE_NOT_METHOD_RESULT",
+  "benchmark": "LIBERO-10",
+  "checkpoint": "Qwen3-VL-OFT-LIBERO-4in1 / steps_50000",
+  "plan_id": "libero-reference-f1770364fd96ddaa",
+  "plan_digest": "9adbfd4d27a6b53412b7d68ebda209eb0cd64aaf44d0e21f9f4ddba331ac626b",
+  "checkpoint_sha256": "80d7a2ab0b033ce49d84070eb1124a2f9718e5b1f0ef8e2db6e4c44478b05df9",
+  "code_revision": "0e827270cbe9f20ebc5bdd91adcbf1d7bf4f24d0",
+  "source_fidelity": "Content-bound archived integration; exact release Git revision unavailable",
+  "planned_cases": 500,
+  "completed_cases": 80,
+  "observed_task_failures": 6,
+  "aborted_cases": 0,
+  "completed_simulation_steps": 21804,
+  "gradient_updates": 0,
+  "adapter_check": {
+    "status": "PASS",
+    "registered_cases": 3,
+    "compared_cases": 3,
+    "checks": [
+      "commands_exact",
+      "rewards_exact",
+      "camera_sequence_exact",
+      "initial_state_exact",
+      "success_exact",
+      "instruction_exact"
+    ],
+    "additional_simulation_steps": 776,
+    "code_revision": "6aa110c10a3387fcce7f806261fa6d3825293085"
+  },
+  "method_absorption": "NOT_RUN",
+  "fresh_query_adaptation": "NOT_RUN",
+  "generations": "NOT_RUN",
+  "limitations": [
+    "Running snapshot, not a full-suite success rate",
+    "Repeated adapter cases are engineering checks, not independent seeds",
+    "Standard LIBERO success alone does not establish in-context adaptation",
+    "Reference failure frames are excluded from future correction training on those cases",
+    "Historical negative findings and the legacy Planar CI failure are retained"
+  ]
+}
