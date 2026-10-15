@@ -2,8 +2,10 @@
 
 Actual robot correction data now pass the pinned released FrameSamp+Modul
 model's input transforms, history feature encoder, observation parser and
-original training flow-matching loss. There are **zero gradient updates** and
-no post-training autonomous evaluation. This qualifies inputs and forward
+original training flow-matching loss. The original forward-only stage had zero updates. A subsequent matched
+optimization qualification has now completed **16 updates**, with exact
+checkpoint reload for both arms. No post-training autonomous evaluation has
+run; see [actual results](ACCELERATION_RESULTS_20261016.md). This qualifies inputs and forward
 loss, not absorption efficacy, a memory advantage or a new method.
 
 The successful PatternLock train-0 expert recovery provides 26 executed native

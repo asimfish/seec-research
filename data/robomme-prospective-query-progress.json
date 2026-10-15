@@ -1,0 +1,66 @@
+{
+  "schema": "robomme-student-query-progress-v1",
+  "source_plan_id": "robomme-absorption-screen-5c9451b5a5b9791c",
+  "prefix_exact_checks": 1332,
+  "extra_expert_controls": 274,
+  "replayed_student_controls": 416,
+  "resets": 14,
+  "complete_native_chunks_per_view": 13,
+  "partial_chunk_controls": 14,
+  "views": [
+    "recent_history_intervention_bc",
+    "full_history_intervention_bc"
+  ],
+  "additional_registered_queries_running": 0,
+  "tasks_in_additional_queries": [
+    "PatternLock",
+    "PickHighlight"
+  ],
+  "method_efficacy": "NOT_RUN",
+  "scope": "Student-state oracle labels; source-only; 13 matched chunks per history view; native materialization running; absorption efficacy NOT_RUN",
+  "source_cases": [
+    "PatternLock train-1",
+    "PatternLock train-2",
+    "PickHighlight train-1"
+  ],
+  "executed_queries": 14,
+  "all_registered_additional_queries_completed": true,
+  "first_case_detail": {
+    "source_case": "PatternLock train-1",
+    "registered_anchors": [
+      0,
+      16,
+      32,
+      48,
+      64
+    ],
+    "executed_anchors": [
+      0,
+      16,
+      32,
+      48
+    ],
+    "ineligible_anchors": [
+      64
+    ],
+    "ineligible_reason": "Student terminated at 58; no substitute anchor",
+    "target_set_sha256": "76441f3cf9a6f82414eaec2765c21645ed07dde7fe4ca0e990fa287d89c7364e"
+  },
+  "target_sets_by_source": [
+    {
+      "source_case": "PatternLock train-1",
+      "chunks": 3,
+      "sha256": "76441f3cf9a6f82414eaec2765c21645ed07dde7fe4ca0e990fa287d89c7364e"
+    },
+    {
+      "source_case": "PatternLock train-2",
+      "chunks": 5,
+      "sha256": "94c8eea31807f542fd9e8070012fe70ee87b503b654ee04e89aeee0330e1a2bc"
+    },
+    {
+      "source_case": "PickHighlight train-1",
+      "chunks": 5,
+      "sha256": "44691fde12954d71d74e6272b9381fa59093d70b28294dc71d1bfa69e1a15b0b"
+    }
+  ]
+}

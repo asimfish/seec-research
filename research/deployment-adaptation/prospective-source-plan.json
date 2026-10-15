@@ -1,0 +1,172 @@
+{
+  "schema": "robomme-prospective-absorption-screen-v1",
+  "scope": "train-only development screen; not benchmark efficacy",
+  "own_code_revision": "962d6392cc6113b3585eb6672c52426886075868",
+  "own_files": {
+    "scripts/run_robomme_reference_rollouts.py": "4e56c81de069b63f769de14b769ce790f8dfd0cb0e45904466f06ec9bc8c2573",
+    "scripts/serve_robomme_reference.py": "4329c13648ca1afcc650984363f5f1bfe44ca6f920ba4b27d7b22752920d3af1",
+    "scripts/qualify_robomme_reference_interface.py": "6218d8044291a2bc85e2603bb2491217ce645c477059782f3f9f0ebf29713a9e",
+    "robocore/adaptation/data.py": "0688bed1d2cbc00e85bac59a06bf0f2a35e0a032ddbf4181edc4e20716f76e45",
+    "robocore/adaptation/robomme_stream.py": "8813128a3fa97fc17f33b75aebf73bec4c1bc63a861afa4de46dc521efd953f7",
+    "robocore/adaptation/robomme_rollout.py": "f4edc6779b0004531c3423f55a564e369a9d6838d1b489efe8feb08ec807bf7b",
+    "scripts/collect_robomme_absorption_screen.py": "df600f548bdc8c29e289411b70520798007b3211908407a75092246be2255cfd",
+    "scripts/serve_robomme_validation_transport.py": "dd747b731dfd498f2f8752cb2a274fb88855fc8f3f4931645f79ca4de173e270",
+    "robocore/adaptation/robomme_continuation.py": "568c28365eb72ff0826282fe11fc19c014bb7fbb072f80bc9b3cb891a93d83b2"
+  },
+  "benchmark_revision": "fae9f7300347f1146c2ae4844faa4eef7e38098e",
+  "policy_source_revision": "ecf086c3be7c2223167d9bb2f6ef1f0a6e24353b",
+  "checkpoint_revision": "c0f565dd40082f32863b3ee9db99de5ed5d3d4e0",
+  "checkpoint_archive_sha256": "2bfde48a0e9c616c87afcac5359b69f281689765e1af3fecbbec5c918e6faa62",
+  "metadata_sha256": {
+    "PatternLock": "636431f1fa2375ddb42d2687a6ee1e91940fb7c75d0a9134efe069eb65a6f4ef",
+    "PickHighlight": "4ecfe6d79ec86bb183a5d7b0c85e3f963f8e617a9e654c052e4c2e61aeff8a00"
+  },
+  "cases": [
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 1,
+      "use": "source"
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 1,
+      "use": "source"
+    },
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 2,
+      "use": "source"
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 2,
+      "use": "source"
+    },
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 3,
+      "use": "source"
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 3,
+      "use": "source"
+    },
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 4,
+      "use": "source"
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 4,
+      "use": "source"
+    },
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 5,
+      "use": "development_diagnostic"
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 5,
+      "use": "development_diagnostic"
+    },
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 6,
+      "use": "development_diagnostic"
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 6,
+      "use": "development_diagnostic"
+    },
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 7,
+      "use": "development_diagnostic"
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 7,
+      "use": "development_diagnostic"
+    },
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 8,
+      "use": "development_diagnostic"
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 8,
+      "use": "development_diagnostic"
+    }
+  ],
+  "horizon": 1300,
+  "prediction_steps": 20,
+  "execution_steps": 16,
+  "policy_seed": 7,
+  "port": 9133,
+  "policy_instance": "dedicated; never shares resets or memory RPC with validation",
+  "oracle_policy_input": false,
+  "save_lossless_source_rgb": true,
+  "gradient_updates": 0,
+  "test_used": false,
+  "validation_used": false,
+  "retrospective_instance_zero_used": false,
+  "future_expert_queries": {
+    "source_instances_only": true,
+    "registered_student_control_anchors": [
+      0,
+      16,
+      32,
+      48,
+      64
+    ],
+    "terminal_before_anchor": "ineligible; retain outcome, no alternate anchor",
+    "label": "up to 20 executed oracle actions per independent prefix fork",
+    "prefix_requirement": "all public RGB/state hashes exactly equal",
+    "interpretation": "student-state labels; expert-visited suffix is intervention BC",
+    "max_queries": 40,
+    "max_expert_label_controls": 800
+  },
+  "matched_contrast": {
+    "inputs": "same current RGB/state/prompt; recent32 versus full-prefix32, 512 tokens",
+    "supervision": "same native targets, normalization, backbone and optimizer budget",
+    "baselines": [
+      "released frozen policy",
+      "recent-history intervention BC",
+      "full-history intervention BC",
+      "dense full-history DAgger/OPD"
+    ],
+    "candidate_alias": "full-history intervention BC; not a distinct algorithm",
+    "outcomes": [
+      "autonomous terminal success",
+      "expert query/control cost",
+      "recovery from fixed prefixes",
+      "history interventions",
+      "retention"
+    ],
+    "training_budget": "NOT_FROZEN; profile native optimization first"
+  },
+  "abort_rule": "infrastructure abort stops collection; no task-failure retries",
+  "claim_boundary": "two-task train-side feasibility; no new-rule ICL or RSI result",
+  "plan_id": "robomme-absorption-screen-5c9451b5a5b9791c"
+}

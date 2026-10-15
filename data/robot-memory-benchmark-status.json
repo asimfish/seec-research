@@ -67,9 +67,9 @@
       "fail": 4
     },
     "missing": [
-      "Matched 14D policy checkpoint and native policy rollout"
+      "Qualified native 14D forecast and closed-loop policy rollout"
     ],
-    "policy_runtime_check": "NOT_RUN",
+    "policy_runtime_check": "STRICT_WEIGHT_LOAD_REACHED_GPU_TRANSFER_SHARED_VRAM_OOM",
     "isaac_runtime_import_check": "PASS",
     "canonical_tasks": 42,
     "runnable_configs": 54,
@@ -79,13 +79,16 @@
     "scene_dependency_audit": "UNRESOLVED_EXTERNAL_REFERENCES_RUNTIME_PENDING",
     "scene_staging": "217_FILES_VERIFIED_LOCAL",
     "native_scene": "stack_bowls / eval_seed 0 / layout 0",
-    "native_camera_count": 3
+    "native_camera_count": 3,
+    "checkpoint_acquisition": "14D_CHECKPOINT_AND_CONFIG_HASH_VERIFIED",
+    "forecast_schedule": "QUEUED_AFTER_16_CASE_SOURCE_SCREEN",
+    "flash_attention": "NOT_REQUIRED_PINNED_IMPLEMENTATION_USES_SDPA"
   },
   "focused_tests_passed": 88,
-  "gradient_updates": 0,
+  "gradient_updates": 16,
   "released_policy_evaluation": "IN_PROGRESS_VALIDATION",
   "method_efficacy": "NOT_RUN",
-  "scope": "Released-policy validation and one train learner-prefix expert qualification; absorption and method efficacy NOT_RUN",
+  "scope": "16 native optimization qualification updates; released-policy validation and prospective source queries; absorption efficacy NOT_RUN",
   "additional_archive_boundary_tests_passed": 6,
   "reference_model": {
     "repository": "Yinpei/perceptual-framesamp-modul",
@@ -235,23 +238,23 @@
     "schema": "robomme-validation-progress-v1",
     "plan_id": "robomme-reference-e0ad4d742f53cd15",
     "planned": 800,
-    "completed": 68,
+    "completed": 109,
     "aborted": 0,
     "historical_infrastructure_aborts": 2,
     "aborted_control_steps": 128,
-    "remaining_cases": 732,
+    "remaining_cases": 691,
     "split": "val",
     "test_used": false,
     "gradient_updates": 0,
     "scope": "Fixed released policy, not method efficacy; historical aborts are retained separately from remaining cases",
     "success_rate": null,
-    "snapshot_unix": 1792085568.3837616,
+    "snapshot_unix": 1792092343.2462797,
     "status": "IN_PROGRESS",
     "execution_id": "robomme-continuation-e3fe41c45265a43a",
     "task_coverage": {
       "BinFill": 50,
-      "StopCube": 18,
-      "PickXtimes": 0,
+      "StopCube": 50,
+      "PickXtimes": 9,
       "SwingXtimes": 0,
       "ButtonUnmask": 0,
       "VideoUnmask": 0,
@@ -267,19 +270,26 @@
       "RouteStick": 0
     },
     "artifact_audit": "PASS_FOR_CLOSED_COMPLETED_CASES",
-    "programs_checked": 1934,
-    "files_hashed": 2070,
-    "control_steps": 30441,
+    "programs_checked": 2777,
+    "files_hashed": 2995,
+    "control_steps": 43599,
     "completed_task_results": [
       {
         "task": "BinFill",
         "planned": 50,
         "completed": 50,
         "success_rate": 0.44
+      },
+      {
+        "task": "StopCube",
+        "planned": 50,
+        "completed": 50,
+        "success_rate": 0.4
       }
-    ]
+    ],
+    "snapshot_time_basis": "local saved audit receipt mtime, not live monitoring"
   },
-  "snapshot_utc": "2026-10-15T08:46:18.713890+00:00",
+  "snapshot_utc": "2026-10-15T20:33:24.497884+00:00",
   "expert_recovery_qualification": {
     "schema": "robomme-expert-recovery-public-v1",
     "date": "2026-10-16",
@@ -323,11 +333,208 @@
     "independent_prefix_audit": "PASS_339_ARRAY_PAIRS_BYTEWISE_139_FRAME_HASHES"
   },
   "robomme_native_training": {
-    "status": "NATIVE_TRAINING_BATCH_AND_FORWARD_QUALIFIED",
-    "batches_per_view": 7,
-    "gradient_updates": 0,
-    "native_trainable_parameters": 3027095328,
-    "requested_gpu": "One RTX PRO 6000 96GB, verify actual hardware",
-    "resource_submission": "PREPARED_NOT_SUBMITTED_SERVER_ENTRY_PENDING"
+    "schema": "robomme-native-qualification-pair-v1",
+    "status": "PASS_NATIVE_UPDATES_AND_EXACT_CHECKPOINT_RELOAD_NOT_EFFICACY",
+    "snapshot_unix": 1792096293.0555973,
+    "total_updates": 16,
+    "updates_per_view": 8,
+    "seed": 7,
+    "batch_size": 1,
+    "fsdp_devices": 2,
+    "hardware": "2 x A100 80GB",
+    "trainable_parameters": 3027095328,
+    "full_parameters": 3441899024,
+    "optimizer": "native AdamW; warmup=10000; EMA=0.999",
+    "runner_sha256": "6548e93fa882979cd4d6eb98cf6bffbd11a9646792cc59a81483400842214c0c",
+    "target_set_sha256": "546b590387b66202fde028d493784619135800bc077f7f899239e0f6f4ee0d70",
+    "upstream_revision": "ecf086c3be7c2223167d9bb2f6ef1f0a6e24353b",
+    "arms": [
+      {
+        "view": "full_history_intervention_bc",
+        "updates": 8,
+        "result_sha256": "ccf5fff5cf49a0380dd20ea3b2b138c43db262c58abe9d032e9fe5ea0d809095",
+        "trainable_before_sha256": "6a8e7e1451978727fae1baebc9d53ce45db589a3c1d0c69756646754ffed5de6",
+        "trainable_after_sha256": "bf3f2aee1206ae295526802988b8c5261057755aa8d8c02cfe5d4d75375bcd47",
+        "saved_ema_sha256": "1eca5ca90f0b45982211b766245beebab18f309ca94d82dc3779e8ca173572fd",
+        "reloaded_ema_sha256": "1eca5ca90f0b45982211b766245beebab18f309ca94d82dc3779e8ca173572fd",
+        "warm_update_median_seconds": 0.16452416591346264,
+        "first_update_seconds": 114.64837777800858,
+        "jax_peak_allocated_bytes_per_device": 37878626560
+      },
+      {
+        "view": "recent_history_intervention_bc",
+        "updates": 8,
+        "result_sha256": "3a5e0a831c6dfc5652ab82847022ef9fd54091e9ece722e3893e41c09fc9daa6",
+        "trainable_before_sha256": "6a8e7e1451978727fae1baebc9d53ce45db589a3c1d0c69756646754ffed5de6",
+        "trainable_after_sha256": "59ad6a6200c5114b0bb1e755de5be50ac80df5adc9c13a917905cc44936721c7",
+        "saved_ema_sha256": "88eb17424322fe275adfe3e8646c2fe2fc33fae0d5e7b29d661cf26929b91b07",
+        "reloaded_ema_sha256": "88eb17424322fe275adfe3e8646c2fe2fc33fae0d5e7b29d661cf26929b91b07",
+        "warm_update_median_seconds": 0.16354519734159112,
+        "first_update_seconds": 16.885085123125464,
+        "jax_peak_allocated_bytes_per_device": 37878626560
+      }
+    ],
+    "validation_used": false,
+    "test_used": false,
+    "method_efficacy": "NOT_RUN",
+    "scope": "8-step optimization qualification on retrospective train-0 intervention BC; not the prospective absorption pilot",
+    "resource_submission": "EXECUTED_ON_EXISTING_MAINSKILL_ALLOCATION",
+    "batches_per_view": 7
+  },
+  "prospective_absorption_screen": {
+    "status": "SOURCE_SCREEN_IN_PROGRESS_NOT_EFFICACY",
+    "planned": 16,
+    "completed": 9,
+    "snapshot_unix": 1792096312.4605825,
+    "cases": [
+      {
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 1,
+        "use": "source",
+        "status": "COMPLETED",
+        "success": true,
+        "control_steps": 58
+      },
+      {
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 1,
+        "use": "source",
+        "status": "COMPLETED",
+        "success": true,
+        "control_steps": 215
+      },
+      {
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 2,
+        "use": "source",
+        "status": "COMPLETED",
+        "success": false,
+        "control_steps": 110
+      },
+      {
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 2,
+        "use": "source",
+        "status": "COMPLETED",
+        "success": true,
+        "control_steps": 433
+      },
+      {
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 3,
+        "use": "source",
+        "status": "COMPLETED",
+        "success": true,
+        "control_steps": 152
+      },
+      {
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 3,
+        "use": "source",
+        "status": "COMPLETED",
+        "success": false,
+        "control_steps": 621
+      },
+      {
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 4,
+        "use": "source",
+        "status": "COMPLETED",
+        "success": true,
+        "control_steps": 22
+      },
+      {
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 4,
+        "use": "source",
+        "status": "COMPLETED",
+        "success": true,
+        "control_steps": 313
+      },
+      {
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 5,
+        "use": "development_diagnostic",
+        "status": "COMPLETED",
+        "success": true,
+        "control_steps": 50
+      }
+    ],
+    "method_efficacy": "NOT_RUN"
+  },
+  "student_state_queries": {
+    "schema": "robomme-student-query-progress-v1",
+    "source_plan_id": "robomme-absorption-screen-5c9451b5a5b9791c",
+    "prefix_exact_checks": 1332,
+    "extra_expert_controls": 274,
+    "replayed_student_controls": 416,
+    "resets": 14,
+    "complete_native_chunks_per_view": 13,
+    "partial_chunk_controls": 14,
+    "views": [
+      "recent_history_intervention_bc",
+      "full_history_intervention_bc"
+    ],
+    "additional_registered_queries_running": 0,
+    "tasks_in_additional_queries": [
+      "PatternLock",
+      "PickHighlight"
+    ],
+    "method_efficacy": "NOT_RUN",
+    "scope": "Student-state oracle labels; source-only; 13 matched chunks per history view; native materialization running; absorption efficacy NOT_RUN",
+    "source_cases": [
+      "PatternLock train-1",
+      "PatternLock train-2",
+      "PickHighlight train-1"
+    ],
+    "executed_queries": 14,
+    "all_registered_additional_queries_completed": true,
+    "first_case_detail": {
+      "source_case": "PatternLock train-1",
+      "registered_anchors": [
+        0,
+        16,
+        32,
+        48,
+        64
+      ],
+      "executed_anchors": [
+        0,
+        16,
+        32,
+        48
+      ],
+      "ineligible_anchors": [
+        64
+      ],
+      "ineligible_reason": "Student terminated at 58; no substitute anchor",
+      "target_set_sha256": "76441f3cf9a6f82414eaec2765c21645ed07dde7fe4ca0e990fa287d89c7364e"
+    },
+    "target_sets_by_source": [
+      {
+        "source_case": "PatternLock train-1",
+        "chunks": 3,
+        "sha256": "76441f3cf9a6f82414eaec2765c21645ed07dde7fe4ca0e990fa287d89c7364e"
+      },
+      {
+        "source_case": "PatternLock train-2",
+        "chunks": 5,
+        "sha256": "94c8eea31807f542fd9e8070012fe70ee87b503b654ee04e89aeee0330e1a2bc"
+      },
+      {
+        "source_case": "PickHighlight train-1",
+        "chunks": 5,
+        "sha256": "44691fde12954d71d74e6272b9381fa59093d70b28294dc71d1bfa69e1a15b0b"
+      }
+    ]
   }
 }

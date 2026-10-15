@@ -1,0 +1,47 @@
+{
+  "schema": "robomme-native-qualification-pair-v1",
+  "status": "PASS_NATIVE_UPDATES_AND_EXACT_CHECKPOINT_RELOAD_NOT_EFFICACY",
+  "snapshot_unix": 1792096293.0555973,
+  "total_updates": 16,
+  "updates_per_view": 8,
+  "seed": 7,
+  "batch_size": 1,
+  "fsdp_devices": 2,
+  "hardware": "2 x A100 80GB",
+  "trainable_parameters": 3027095328,
+  "full_parameters": 3441899024,
+  "optimizer": "native AdamW; warmup=10000; EMA=0.999",
+  "runner_sha256": "6548e93fa882979cd4d6eb98cf6bffbd11a9646792cc59a81483400842214c0c",
+  "target_set_sha256": "546b590387b66202fde028d493784619135800bc077f7f899239e0f6f4ee0d70",
+  "upstream_revision": "ecf086c3be7c2223167d9bb2f6ef1f0a6e24353b",
+  "arms": [
+    {
+      "view": "full_history_intervention_bc",
+      "updates": 8,
+      "result_sha256": "ccf5fff5cf49a0380dd20ea3b2b138c43db262c58abe9d032e9fe5ea0d809095",
+      "trainable_before_sha256": "6a8e7e1451978727fae1baebc9d53ce45db589a3c1d0c69756646754ffed5de6",
+      "trainable_after_sha256": "bf3f2aee1206ae295526802988b8c5261057755aa8d8c02cfe5d4d75375bcd47",
+      "saved_ema_sha256": "1eca5ca90f0b45982211b766245beebab18f309ca94d82dc3779e8ca173572fd",
+      "reloaded_ema_sha256": "1eca5ca90f0b45982211b766245beebab18f309ca94d82dc3779e8ca173572fd",
+      "warm_update_median_seconds": 0.16452416591346264,
+      "first_update_seconds": 114.64837777800858,
+      "jax_peak_allocated_bytes_per_device": 37878626560
+    },
+    {
+      "view": "recent_history_intervention_bc",
+      "updates": 8,
+      "result_sha256": "3a5e0a831c6dfc5652ab82847022ef9fd54091e9ece722e3893e41c09fc9daa6",
+      "trainable_before_sha256": "6a8e7e1451978727fae1baebc9d53ce45db589a3c1d0c69756646754ffed5de6",
+      "trainable_after_sha256": "59ad6a6200c5114b0bb1e755de5be50ac80df5adc9c13a917905cc44936721c7",
+      "saved_ema_sha256": "88eb17424322fe275adfe3e8646c2fe2fc33fae0d5e7b29d661cf26929b91b07",
+      "reloaded_ema_sha256": "88eb17424322fe275adfe3e8646c2fe2fc33fae0d5e7b29d661cf26929b91b07",
+      "warm_update_median_seconds": 0.16354519734159112,
+      "first_update_seconds": 16.885085123125464,
+      "jax_peak_allocated_bytes_per_device": 37878626560
+    }
+  ],
+  "validation_used": false,
+  "test_used": false,
+  "method_efficacy": "NOT_RUN",
+  "scope": "8-step optimization qualification on retrospective train-0 intervention BC; not the prospective absorption pilot"
+}

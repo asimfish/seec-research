@@ -1,10 +1,15 @@
 # Native robot training jobs — 2026-10-16
 
-The user authorized PRO 6000 resources and training. No PRO 6000 SSH alias or
-scheduler endpoint is currently configured. These are prepared jobs, not
-submitted or running jobs. The existing 800-case reference evaluation keeps
-running independently; its model, memory buffer and service are not shared
-with training or source collection.
+The user authorized training and PRO 6000 resources. Two existing A100 80GB
+GPUs on mainskill were available and used: both native 8-update qualifications
+completed, changed weights and passed exact EMA checkpoint reload. The source
+collection and full validation service run independently. This completed job
+is infrastructure qualification, not absorption efficacy. See
+[actual results](ACCELERATION_RESULTS_20261016.md).
+
+The original pre-execution resource specification is retained below. Its
+"NOT_RUN" statements describe that earlier stage; current qualified execution
+is recorded in `native_training_20261016/qualification-summary.json`.
 
 ## First job: native RoboMME optimization qualification
 

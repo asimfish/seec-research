@@ -1,0 +1,90 @@
+{
+  "status": "SOURCE_SCREEN_IN_PROGRESS_NOT_EFFICACY",
+  "planned": 16,
+  "completed": 9,
+  "snapshot_unix": 1792096312.4605825,
+  "cases": [
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 1,
+      "use": "source",
+      "status": "COMPLETED",
+      "success": true,
+      "control_steps": 58
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 1,
+      "use": "source",
+      "status": "COMPLETED",
+      "success": true,
+      "control_steps": 215
+    },
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 2,
+      "use": "source",
+      "status": "COMPLETED",
+      "success": false,
+      "control_steps": 110
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 2,
+      "use": "source",
+      "status": "COMPLETED",
+      "success": true,
+      "control_steps": 433
+    },
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 3,
+      "use": "source",
+      "status": "COMPLETED",
+      "success": true,
+      "control_steps": 152
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 3,
+      "use": "source",
+      "status": "COMPLETED",
+      "success": false,
+      "control_steps": 621
+    },
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 4,
+      "use": "source",
+      "status": "COMPLETED",
+      "success": true,
+      "control_steps": 22
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 4,
+      "use": "source",
+      "status": "COMPLETED",
+      "success": true,
+      "control_steps": 313
+    },
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 5,
+      "use": "development_diagnostic",
+      "status": "COMPLETED",
+      "success": true,
+      "control_steps": 50
+    }
+  ],
+  "method_efficacy": "NOT_RUN"
+}

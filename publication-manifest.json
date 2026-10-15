@@ -613,13 +613,25 @@
       "sha256": "a772d06d087167e107b069083b006923a0cd6f5740630bc615b916526e34129d",
       "bytes": 12123
     },
+    "data/robomme-native-qualification.json": {
+      "sha256": "888190d71de0a2da37cec86871a643aa7be8f64464a7ab8e6e495d06da3258cf",
+      "bytes": 2353
+    },
+    "data/robomme-prospective-query-progress.json": {
+      "sha256": "cbc6354a6c9ee3276b1c839264686a8d765fa0e0669181e4d8b90d71df2e6ff7",
+      "bytes": 1843
+    },
+    "data/robomme-prospective-source-progress.json": {
+      "sha256": "47d262a416bbfce1c9c2a1bef3f18866f8f3249c7dea0cebf7551c4822d75ccc",
+      "bytes": 1895
+    },
     "data/robomme-training-resources.json": {
       "sha256": "54d8e54448bdec2f034de71f8665f0ededd2118c37470a3c4c537021fe31a374",
       "bytes": 983
     },
     "data/robomme-validation-progress.json": {
-      "sha256": "59a218beabb758c6794cab51c4da1d1f09b3f348ecb06fe673310fd7b9f34ccc",
-      "bytes": 1249
+      "sha256": "5c317c3ab973fbd2ffdc80f4644867f1d74c8832acc880a3a383f4100b474a88",
+      "bytes": 1440
     },
     "data/robot-bc-dataset-inventory.json": {
       "sha256": "cf6d9a049b2d2c28bb663f58f24aee792b85d96c241b337060d0966c5805ef46",
@@ -630,8 +642,8 @@
       "bytes": 39696
     },
     "data/robot-memory-benchmark-status.json": {
-      "sha256": "6325b3d4df61e360a6d6f87e7039282554d807bbb0f6763a5f0b408c6ee56d52",
-      "bytes": 11043
+      "sha256": "d72ccbc2d52745f91a45a0e0cca2b76eda1de5bf9c84bc1223aa14c259c30687",
+      "bytes": 17868
     },
     "data/robot-program-transform-check.json": {
       "sha256": "8368d8edaabd35ba67d8634dcdd955caf7644ff8079846a2785c990d10b59740",
@@ -682,8 +694,8 @@
       "bytes": 9851
     },
     "learning.html": {
-      "sha256": "d541af9ce70fcb7c10bf47077ae633c2b41cfa80882f9d0531e5d8c87b55db4e",
-      "bytes": 49591
+      "sha256": "a106853da8e8cab6ebd2369d271126449ec5428364e279d94a65f7bb5b486c3f",
+      "bytes": 51448
     },
     "learning.js": {
       "sha256": "4bbfe78547134ed999e8e24047be4269e65fbcbe81189c11588b578dac1fb874",
@@ -717,6 +729,10 @@
       "sha256": "f6cc8473adf9cd28b3ef4de939aacd4b97531337f11441cf59e674f6c26d13b7",
       "bytes": 10048
     },
+    "research/deployment-adaptation/acceleration-results.md": {
+      "sha256": "b38f9e1fd7f5484fa0407c05025df95eda6b41cb027c47da58eb9d40d5db83fd",
+      "bytes": 9491
+    },
     "research/deployment-adaptation/experiment-design.md": {
       "sha256": "c1753aa4aa936526ee1b609185954d2570296982be351293d6e297cba8ac5b27",
       "bytes": 12522
@@ -738,8 +754,8 @@
       "bytes": 6978
     },
     "research/deployment-adaptation/native-training-results.md": {
-      "sha256": "8e15a9099a0b2c09c26157a780a80293f0aaf88ae188522619f4a702c612c44d",
-      "bytes": 4406
+      "sha256": "22a6ebf0d23ec9cd62762df9a5834d57551e5bc6fc74281e8bd5a5765dc2b59a",
+      "bytes": 4606
     },
     "research/deployment-adaptation/plot-closed-loop.py": {
       "sha256": "ad760581442461abda74847b56c99a05fd2772d9eb303dfdc9a6972a5aa315b3",
@@ -756,6 +772,10 @@
     "research/deployment-adaptation/plot-reference.py": {
       "sha256": "e9ed7ff8a169cee5132ab44b8b1656ab155e32df7d3d9ca88032b6c9606961eb",
       "bytes": 4815
+    },
+    "research/deployment-adaptation/prospective-source-plan.json": {
+      "sha256": "f9f8101b8dd997a3386a03f5f0d0a1cd8e641daf738f8f6aa089dac26860397d",
+      "bytes": 5522
     },
     "research/deployment-adaptation/reference-evaluation.md": {
       "sha256": "f4188510f6750405e0ff1d0d97a8c27dc59e3d79653290ed6e7d0f99dff00570",
@@ -778,8 +798,8 @@
       "bytes": 5801
     },
     "research/deployment-adaptation/training-tasks.md": {
-      "sha256": "1a4d683c085a9a5aed246e77aca48456ffca13097e0f9d6b748bd7f52b7e34db",
-      "bytes": 6212
+      "sha256": "757b0336a891e91e5ff464962d7d78e8c7f740dad22220f2b830c142ab881b92",
+      "bytes": 6520
     },
     "research/interactive-learning-update.md": {
       "sha256": "a4c56626d5f9809a679de7f429a2345f316003c4f5728c1f947e6011b8c11d7d",
@@ -1090,7 +1110,7 @@
       "bytes": 15302
     }
   },
-  "research_revision": "d34c622afa24ea1e120176773def1662e0388868",
+  "research_revision": "174d56c7d9342b8fe7f444b9780363f6db759d02",
   "schema": "seec-public-website-v2",
   "source_inputs": {
     "delivery_verification_sha256": "27f2c5b92c756e40e6667fe1ca6bc98b2793bd3202a8fe7ff3cd30d63f1cc6cb",
