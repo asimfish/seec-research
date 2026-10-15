@@ -2,23 +2,47 @@
   "schema": "robomme-validation-progress-v1",
   "plan_id": "robomme-reference-e0ad4d742f53cd15",
   "planned": 800,
-  "completed": 30,
+  "completed": 68,
   "aborted": 0,
   "historical_infrastructure_aborts": 2,
   "aborted_control_steps": 128,
-  "remaining_cases": 770,
+  "remaining_cases": 732,
   "split": "val",
   "test_used": false,
   "gradient_updates": 0,
   "scope": "Fixed released policy, not method efficacy; historical aborts are retained separately from remaining cases",
   "success_rate": null,
-  "snapshot_unix": 1792082472.0782917,
+  "snapshot_unix": 1792085568.3837616,
   "status": "IN_PROGRESS",
   "execution_id": "robomme-continuation-e3fe41c45265a43a",
   "task_coverage": {
-    "BinFill": 30
+    "BinFill": 50,
+    "StopCube": 18,
+    "PickXtimes": 0,
+    "SwingXtimes": 0,
+    "ButtonUnmask": 0,
+    "VideoUnmask": 0,
+    "VideoUnmaskSwap": 0,
+    "ButtonUnmaskSwap": 0,
+    "PickHighlight": 0,
+    "VideoRepick": 0,
+    "VideoPlaceButton": 0,
+    "VideoPlaceOrder": 0,
+    "MoveCube": 0,
+    "InsertPeg": 0,
+    "PatternLock": 0,
+    "RouteStick": 0
   },
   "artifact_audit": "PASS_FOR_CLOSED_COMPLETED_CASES",
-  "programs_checked": 1068,
-  "files_hashed": 1128
+  "programs_checked": 1934,
+  "files_hashed": 2070,
+  "control_steps": 30441,
+  "completed_task_results": [
+    {
+      "task": "BinFill",
+      "planned": 50,
+      "completed": 50,
+      "success_rate": 0.44
+    }
+  ]
 }

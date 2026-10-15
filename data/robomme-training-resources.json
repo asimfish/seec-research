@@ -1,0 +1,26 @@
+{
+  "schema": "robomme-native-training-resources-v1",
+  "status": "ANALYTICAL_PARAMETER_STORAGE_ONLY",
+  "policy_source_revision": "ecf086c3be7c2223167d9bb2f6ef1f0a6e24353b",
+  "history_config": "perceptual-framesamp-modul.yaml",
+  "total_parameters": 3441899024,
+  "trainable_parameters": 3027095328,
+  "frozen_parameters": 414803696,
+  "freeze_rule": "Native HistoryPi0Config.get_freeze_filter; image encoder frozen",
+  "parameter_bytes": 12937988704,
+  "adam_first_second_moment_bytes": 24216762624,
+  "gradient_bytes": 12108381312,
+  "ema_parameter_bytes": 12937988704,
+  "lower_bound_with_grad_and_ema_bytes": 62201121344,
+  "excludes": [
+    "activations",
+    "attention buffers",
+    "compiler workspace",
+    "allocator overhead",
+    "checkpoint restore and optimizer update temporaries"
+  ],
+  "measured_peak_vram": null,
+  "measured_steps_per_second": null,
+  "gradient_updates": 0,
+  "script_sha256": "b2013e00eea81345c313c18918fb9a33ef1e44049b430cbbfc5aec1dbde7bc1e"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "robodojo-native-reset-qualification-v1",
+  "status": "NATIVE_RESET_AND_RGB_QUALIFIED_NOT_POLICY",
+  "stage": "NATIVE_RGB_CAPTURE",
+  "benchmark_revision": "09bd5f5e762b949f5858ece31347ce62057b3a5e",
+  "task": "stack_bowls",
+  "eval_seed": 0,
+  "layout_id": 0,
+  "num_envs": 1,
+  "policy_controls": 0,
+  "gradient_updates": 0,
+  "policy_14d": "NOT_RUN",
+  "reset_simulation_steps": "UNINSTRUMENTED_NOT_ZERO",
+  "success": null,
+  "material_substitution": false,
+  "script_sha256": "ba34e310a0d1ab0a85abc3b4e02f65e91e2ee30a0fe0fdbef36b1af37bd82626",
+  "cameras": [
+    {
+      "name": "cam_head",
+      "file": "cam_head.png",
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "spatial_std": 56.78380421542476
+    },
+    {
+      "name": "cam_left_wrist",
+      "file": "cam_left_wrist.png",
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "spatial_std": 55.194252400855504
+    },
+    {
+      "name": "cam_right_wrist",
+      "file": "cam_right_wrist.png",
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "spatial_std": 55.3915008602725
+    }
+  ]
+}

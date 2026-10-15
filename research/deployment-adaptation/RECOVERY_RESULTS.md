@@ -86,8 +86,9 @@ read-only progress audit checks every closed case's video/trace/program hashes
 and every executed action against its saved prediction. Validation does not
 store lossless H5 images or independently replay physics.
 
-An audited snapshot has 30 completed cases, 16,857 controls, 1,068 programs and
-1,128 hashed artifacts. Both infrastructure aborts are retained, including
+An audited snapshot has 68 completed cases, 30,441 controls, 1,934 programs and
+2,070 hashed artifacts. BinFill is complete: 22/50 successes (44%); other tasks
+are incomplete. This is a released-model per-task result, not a method gain. Both infrastructure aborts are retained, including
 128 aborted controls. This is incomplete coverage, not a full-suite success
 rate. `validation-progress.json` carries its timestamp; it is not a live feed.
 Official test remains untouched. This runtime uses current pinned source,
@@ -107,3 +108,5 @@ The public figure can be regenerated using `plot-expert-recovery.py`,
 `data/robomme-expert-prefix-result.json`, with `--input`, `--result`, and
 `--output-prefix` respectively. It requires NumPy and Matplotlib. These are
 exact exported inputs; rendering does not require the simulator or model.
+
+Native correction batch construction and the original train loss now pass on both views. Gradient updates and post-training evaluation remain NOT_RUN. See NATIVE_TRAINING_RESULTS.md and TRAINING_TASKS_20261016.md.

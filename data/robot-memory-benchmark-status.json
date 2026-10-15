@@ -60,28 +60,28 @@
     "scope": "Torch 2.6 compatibility probe, not the exact Torch 2.9.1 release runtime"
   },
   "robodojo": {
-    "status": "ASSETS_CACHED_RUNTIME_PENDING",
+    "status": "NATIVE_RESET_AND_RGB_QUALIFIED_NOT_POLICY",
     "official_source_preflight": {
       "pass": 8,
       "warning": 4,
       "fail": 4
     },
     "missing": [
-      "GPU-node scene staging and runtime qualification",
-      "Pinned CuRobo/IsaacLab integration",
-      "Matched 14D policy checkpoint"
+      "Matched 14D policy checkpoint and native policy rollout"
     ],
     "policy_runtime_check": "NOT_RUN",
-    "isaac_runtime_import_check": "NOT_RUN",
+    "isaac_runtime_import_check": "PASS",
     "canonical_tasks": 42,
     "runnable_configs": 54,
     "native_episodes": 2100,
     "scene_asset_files": 217,
     "scene_asset_bytes": 464495655,
     "scene_dependency_audit": "UNRESOLVED_EXTERNAL_REFERENCES_RUNTIME_PENDING",
-    "scene_staging": "IN_PROGRESS_HASH_VERIFICATION_PENDING"
+    "scene_staging": "217_FILES_VERIFIED_LOCAL",
+    "native_scene": "stack_bowls / eval_seed 0 / layout 0",
+    "native_camera_count": 3
   },
-  "focused_tests_passed": 84,
+  "focused_tests_passed": 88,
   "gradient_updates": 0,
   "released_policy_evaluation": "IN_PROGRESS_VALIDATION",
   "method_efficacy": "NOT_RUN",
@@ -235,25 +235,49 @@
     "schema": "robomme-validation-progress-v1",
     "plan_id": "robomme-reference-e0ad4d742f53cd15",
     "planned": 800,
-    "completed": 30,
+    "completed": 68,
     "aborted": 0,
     "historical_infrastructure_aborts": 2,
     "aborted_control_steps": 128,
-    "remaining_cases": 770,
+    "remaining_cases": 732,
     "split": "val",
     "test_used": false,
     "gradient_updates": 0,
     "scope": "Fixed released policy, not method efficacy; historical aborts are retained separately from remaining cases",
     "success_rate": null,
-    "snapshot_unix": 1792082472.0782917,
+    "snapshot_unix": 1792085568.3837616,
     "status": "IN_PROGRESS",
     "execution_id": "robomme-continuation-e3fe41c45265a43a",
     "task_coverage": {
-      "BinFill": 30
+      "BinFill": 50,
+      "StopCube": 18,
+      "PickXtimes": 0,
+      "SwingXtimes": 0,
+      "ButtonUnmask": 0,
+      "VideoUnmask": 0,
+      "VideoUnmaskSwap": 0,
+      "ButtonUnmaskSwap": 0,
+      "PickHighlight": 0,
+      "VideoRepick": 0,
+      "VideoPlaceButton": 0,
+      "VideoPlaceOrder": 0,
+      "MoveCube": 0,
+      "InsertPeg": 0,
+      "PatternLock": 0,
+      "RouteStick": 0
     },
     "artifact_audit": "PASS_FOR_CLOSED_COMPLETED_CASES",
-    "programs_checked": 1068,
-    "files_hashed": 1128
+    "programs_checked": 1934,
+    "files_hashed": 2070,
+    "control_steps": 30441,
+    "completed_task_results": [
+      {
+        "task": "BinFill",
+        "planned": 50,
+        "completed": 50,
+        "success_rate": 0.44
+      }
+    ]
   },
   "snapshot_utc": "2026-10-15T08:46:18.713890+00:00",
   "expert_recovery_qualification": {
@@ -297,5 +321,13 @@
     "full_history_dagger_collection": "NOT_RUN",
     "correction_view_revision": "v2 naming clarifies actual intervention BC; targets unchanged, original v1 retained",
     "independent_prefix_audit": "PASS_339_ARRAY_PAIRS_BYTEWISE_139_FRAME_HASHES"
+  },
+  "robomme_native_training": {
+    "status": "NATIVE_TRAINING_BATCH_AND_FORWARD_QUALIFIED",
+    "batches_per_view": 7,
+    "gradient_updates": 0,
+    "native_trainable_parameters": 3027095328,
+    "requested_gpu": "One RTX PRO 6000 96GB, verify actual hardware",
+    "resource_submission": "PREPARED_NOT_SUBMITTED_SERVER_ENTRY_PENDING"
   }
 }
