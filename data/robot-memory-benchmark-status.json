@@ -1,6 +1,6 @@
 {
   "schema": "robot-memory-benchmark-public-status-v1",
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "source_inventory_sha256": "9d738a7326f87ea1582ea5196ef7c8ae7140a23a3748ecaa93f5afb68b12d5c1",
   "robomme": {
     "status": "PASS_TRAIN_ONLY_ENVIRONMENT_QUALIFICATION",
@@ -78,13 +78,14 @@
     "native_episodes": 2100,
     "scene_asset_files": 217,
     "scene_asset_bytes": 464495655,
-    "scene_dependency_audit": "UNRESOLVED_EXTERNAL_REFERENCES_RUNTIME_PENDING"
+    "scene_dependency_audit": "UNRESOLVED_EXTERNAL_REFERENCES_RUNTIME_PENDING",
+    "scene_staging": "IN_PROGRESS_HASH_VERIFICATION_PENDING"
   },
-  "focused_tests_passed": 74,
+  "focused_tests_passed": 84,
   "gradient_updates": 0,
   "released_policy_evaluation": "IN_PROGRESS_VALIDATION",
   "method_efficacy": "NOT_RUN",
-  "scope": "Real released-policy source qualification and ongoing validation; no method efficacy",
+  "scope": "Released-policy validation and one train learner-prefix expert qualification; absorption and method efficacy NOT_RUN",
   "additional_archive_boundary_tests_passed": 6,
   "reference_model": {
     "repository": "Yinpei/perceptual-framesamp-modul",
@@ -234,18 +235,67 @@
     "schema": "robomme-validation-progress-v1",
     "plan_id": "robomme-reference-e0ad4d742f53cd15",
     "planned": 800,
-    "completed": 2,
+    "completed": 30,
     "aborted": 0,
+    "historical_infrastructure_aborts": 2,
+    "aborted_control_steps": 128,
+    "remaining_cases": 770,
     "split": "val",
     "test_used": false,
     "gradient_updates": 0,
-    "scope": "Fixed released policy, not method efficacy",
+    "scope": "Fixed released policy, not method efficacy; historical aborts are retained separately from remaining cases",
     "success_rate": null,
-    "snapshot_unix": 1792053978.7138903,
+    "snapshot_unix": 1792082472.0782917,
     "status": "IN_PROGRESS",
+    "execution_id": "robomme-continuation-e3fe41c45265a43a",
     "task_coverage": {
-      "BinFill": 2
-    }
+      "BinFill": 30
+    },
+    "artifact_audit": "PASS_FOR_CLOSED_COMPLETED_CASES",
+    "programs_checked": 1068,
+    "files_hashed": 1128
   },
-  "snapshot_utc": "2026-10-15T08:46:18.713890+00:00"
+  "snapshot_utc": "2026-10-15T08:46:18.713890+00:00",
+  "expert_recovery_qualification": {
+    "schema": "robomme-expert-recovery-public-v1",
+    "date": "2026-10-16",
+    "task": "PatternLock",
+    "split": "train",
+    "episode": 0,
+    "original_student_terminal_success": false,
+    "original_student_control_steps": 68,
+    "student_controls_before_intervention": 64,
+    "prefix_exact_frames": 113,
+    "expert_control_steps": 26,
+    "expert_terminal_success": true,
+    "nominal_expert_controls": 42,
+    "nominal_expert_success": true,
+    "retrospective_anchor": true,
+    "teacher_hidden_access": true,
+    "autonomous_intervention_trigger": "NOT_RUN",
+    "absorption_training": "NOT_RUN",
+    "method_efficacy": "NOT_RUN",
+    "scope": "One training instance, exact-prefix expert qualification; not an efficacy or generalization score",
+    "qualified_correction_actions": 26,
+    "complete_action_chunks_per_view": 7,
+    "action_horizon": 20,
+    "memory_frames_per_view": 32,
+    "tokens_per_frame": 16,
+    "views": [
+      "recent_history_intervention_bc",
+      "full_history_intervention_bc"
+    ],
+    "candidate_alias": "full_history_intervention_bc",
+    "matched_target_sha256": "546b590387b66202fde028d493784619135800bc077f7f899239e0f6f4ee0d70",
+    "native_stick_action_dimensions": 7,
+    "policy_action_dimensions": 8,
+    "stick_gripper_placeholder": -1,
+    "internal_reset_simulation_steps": "UNINSTRUMENTED_NOT_ZERO",
+    "collection_protocol": "student prefix followed by expert-executed recovery; not dense student-state DAgger",
+    "student_visited_chunk_anchors": 1,
+    "expert_visited_chunk_anchors": 6,
+    "full_history_dagger_collection": "NOT_RUN",
+    "correction_view_revision": "v2 naming clarifies actual intervention BC; targets unchanged, original v1 retained",
+    "independent_prefix_audit": "PASS_339_ARRAY_PAIRS_BYTEWISE_139_FRAME_HASHES"
+  }
 }

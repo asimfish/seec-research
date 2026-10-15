@@ -1,0 +1,21 @@
+{
+  "source_npz_sha256": "f460049da97029284b2c60e8f06e85464812b74bc05b3eae9f35f50c8ecbab1b",
+  "expert_result_sha256": "a75171df5ad76ab31f0b4f2d9fa7e20e9fc82726dfae748a69de71d67a8a5137",
+  "source_frame_indices": {
+    "student": [
+      112,
+      114,
+      116
+    ],
+    "expert": [
+      112,
+      125,
+      138
+    ]
+  },
+  "public_prefix_equal_frames": 113,
+  "student_controls_before_intervention": 64,
+  "expert_controls": 26,
+  "pixel_editing": "NONE",
+  "method_efficacy": "NOT_RUN"
+}

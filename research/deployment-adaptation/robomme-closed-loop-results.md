@@ -1,3 +1,5 @@
+Latest follow-up (2026-10-16): [learner-prefix expert recovery and validation continuation](RECOVERY_RESULTS.md). The earlier launch below did not finish; retain its infrastructure aborts.
+
 # RoboMME closed-loop qualification and validation launch
 
 2026-10-15. Fixed released FrameSamp+Modul, seed 7, zero gradients.
