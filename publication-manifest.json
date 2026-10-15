@@ -305,6 +305,22 @@
       "sha256": "a36810a912c4f2dc7155f60f843383557c4a524fd26cf779170353195dd6efdc",
       "bytes": 9135
     },
+    "assets/figures/robomme-closed-loop.json": {
+      "sha256": "75694669aec15fd9b11a87e5955e1e6d754aa98514cb52aa9797b3a6cc29824e",
+      "bytes": 2591
+    },
+    "assets/figures/robomme-closed-loop.pdf": {
+      "sha256": "99e715d81070a4f8fd70c6de45e9c115dd849aeedb577d39e221baecccd6e723",
+      "bytes": 1471168
+    },
+    "assets/figures/robomme-closed-loop.png": {
+      "sha256": "b1e5bfbdd1ee0ec3b13c2d33801763a8c2c1d0e30da77a89cf966c68dbc4149e",
+      "bytes": 925458
+    },
+    "assets/figures/robomme-closed-loop.svg": {
+      "sha256": "1715c60c03a8d2815b55d58eb21fa5a314b34415d49c7225e38836a11c49d11b",
+      "bytes": 2136748
+    },
     "assets/figures/robomme-history-example.json": {
       "sha256": "334d4365fcffaf21d677022df7db7da2e07c8890764578d22481679d6a7b56a9",
       "bytes": 327
@@ -360,6 +376,22 @@
     "assets/mark.svg": {
       "sha256": "80de4485d2c2ce2bc9e605ebd79228d1db631a07b7ee80642e68a52f05c0b994",
       "bytes": 402
+    },
+    "assets/robot-reference/PatternLock.mp4": {
+      "sha256": "43f2557b485ba04a27395d983da43bc27cf7eb374e424d75b5678c1a6cadc1c9",
+      "bytes": 277449
+    },
+    "assets/robot-reference/PickHighlight.mp4": {
+      "sha256": "1dbca49724146540db9b67bef48b3a0c6ba1e0830bb4a2e83c707180dc4ec016",
+      "bytes": 644353
+    },
+    "assets/robot-reference/PickXtimes.mp4": {
+      "sha256": "afc11060e7ac680cadd16c3a8b13bcbf38e313a5bd23582d193bb9acf1383127",
+      "bytes": 1092749
+    },
+    "assets/robot-reference/VideoUnmask.mp4": {
+      "sha256": "ea0de23ed120761a7984d850e10bed89a358690c78847d486e4580dc385d7062",
+      "bytes": 428370
     },
     "assets/scenes/overview_1.jpg": {
       "sha256": "861d00207d39293c33073be637622ca9221292d8d45807eba747dca8a12f4437",
@@ -521,6 +553,14 @@
       "sha256": "ec2abb914f82a3e3ae0e4774acef9f4a5df53a3280bfcb85263921deab8fb3cf",
       "bytes": 23659
     },
+    "data/robomme-closed-loop-audit.json": {
+      "sha256": "3626bc6903f3bc55c69e6d355a134cae60cf673fc46e4444d7a7da55da79970c",
+      "bytes": 1345
+    },
+    "data/robomme-validation-progress.json": {
+      "sha256": "fb20173c3ed6a8c6c5be52ffe73b4dbae0d04ff78082fec97ebb54d45c86e6d7",
+      "bytes": 371
+    },
     "data/robot-bc-dataset-inventory.json": {
       "sha256": "cf6d9a049b2d2c28bb663f58f24aee792b85d96c241b337060d0966c5805ef46",
       "bytes": 3020
@@ -530,8 +570,8 @@
       "bytes": 39696
     },
     "data/robot-memory-benchmark-status.json": {
-      "sha256": "4b75a0b528b72558561b5180c760acf8c42c55c799bd783a0690a0ab219e3818",
-      "bytes": 5853
+      "sha256": "899469ad753b05528eba4e486f27e7f110e4ca95263c17235b7f88496e7e22b3",
+      "bytes": 7851
     },
     "data/robot-program-transform-check.json": {
       "sha256": "8368d8edaabd35ba67d8634dcdd955caf7644ff8079846a2785c990d10b59740",
@@ -582,8 +622,8 @@
       "bytes": 9402
     },
     "learning.html": {
-      "sha256": "d272eed9ddef93ce2a2a56692d089b4ce8da41cc5ab88a3a2ef5dd5ad2d696a2",
-      "bytes": 42524
+      "sha256": "240fca53774d78e555b70b6093f3fe46f27e0b87f8522a9181e59c5e12aab116",
+      "bytes": 45155
     },
     "learning.js": {
       "sha256": "4bbfe78547134ed999e8e24047be4269e65fbcbe81189c11588b578dac1fb874",
@@ -633,6 +673,10 @@
       "sha256": "2e18f7e54f6aea45100bb4ebb2016bf0073bb9abb69b3fe04b64f1bdccf37277",
       "bytes": 6978
     },
+    "research/deployment-adaptation/plot-closed-loop.py": {
+      "sha256": "ad760581442461abda74847b56c99a05fd2772d9eb303dfdc9a6972a5aa315b3",
+      "bytes": 4357
+    },
     "research/deployment-adaptation/plot-history-example.py": {
       "sha256": "69a2445f2b2aab0330af00b04b595f4ec9f54f4bfb8ede8010e816f29495730c",
       "bytes": 2449
@@ -646,8 +690,12 @@
       "bytes": 2765
     },
     "research/deployment-adaptation/robodojo-robomme-design.md": {
-      "sha256": "cf557b77778acf6ba177a9cc11834bc9f78c2ab37fcdfe85d67e423f4b04eb42",
-      "bytes": 12433
+      "sha256": "3bb153d841393990505b9365b67fa020ea075d32967a2802fb779837e1bb5483",
+      "bytes": 13474
+    },
+    "research/deployment-adaptation/robomme-closed-loop-results.md": {
+      "sha256": "9e1bc80495e1ed90d09e273d25439588616c45ea8ffb158ad241875ccb17aeff",
+      "bytes": 3971
     },
     "research/deployment-adaptation/training-interface-registration.md": {
       "sha256": "0457f10993d5faefaa4d21c2829dd8df123b3469fef35e6573ca3bbaac6a34b2",
@@ -966,7 +1014,7 @@
       "bytes": 15302
     }
   },
-  "research_revision": "c67be1c78540bfbf2e412384f7ed7eecb9d2a78c",
+  "research_revision": "17d0233ff61319f16ab9ab6ef8937fd7fe24a394",
   "schema": "seec-public-website-v2",
   "source_inputs": {
     "delivery_verification_sha256": "27f2c5b92c756e40e6667fe1ca6bc98b2793bd3202a8fe7ff3cd30d63f1cc6cb",

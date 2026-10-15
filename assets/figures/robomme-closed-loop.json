@@ -1,0 +1,75 @@
+{
+  "source_npz_sha256": "55a502dd147a50d85717106344ac959e554bd471323f4a7664fa0dae6b53de5c",
+  "selection": {
+    "selection": "first, midpoint, last executed-control frame, all registered cases",
+    "cases": [
+      {
+        "task": "PickXtimes",
+        "frame_indices": [
+          0,
+          256,
+          512
+        ],
+        "frame_sha256": [
+          "bc0e429bbb845bb82840e49376bc1ea10ce42de768778f7d67ea6f7482f082ed",
+          "4498d34598ae822ebbe016c7bf83fd5b8301b735cabd4239e53076db83e1f9bc",
+          "8e66cd259cecad7fefae86483a5edc6f3f5c7119f9b2c196d41e24b04a269847"
+        ],
+        "success": true,
+        "control_steps": 512,
+        "source_history_sha256": "65510021e973e1f64fde16ae12391b12dd330ab7f98cb44a9d62c97a9987daa7"
+      },
+      {
+        "task": "VideoUnmask",
+        "frame_indices": [
+          66,
+          155,
+          244
+        ],
+        "frame_sha256": [
+          "cc1e07ad3589824a6f900068e995495dbe4678bcebe79508f7639714aaf778b7",
+          "804b9a1b5bf158b5d97e7c9cbabf632ec550c9cf7e1cddb3a048dd5ad62802c8",
+          "4f725123202ef47c40bf4b0313da1df8852e2d6641c32a58a34e80a75aa460e5"
+        ],
+        "success": true,
+        "control_steps": 178,
+        "source_history_sha256": "7122b63b088135262ed954edec95b331f624dd7da7d4d9f2b5d41bd7578633df"
+      },
+      {
+        "task": "PickHighlight",
+        "frame_indices": [
+          0,
+          156,
+          312
+        ],
+        "frame_sha256": [
+          "36f3ce70c477a47a31868bb053e02071e33de99197c89bd5879a7cf13714309e",
+          "01cae78fde3a92a223e1b5d340b747afac9cce7677c614039cbed28fddbd07c1",
+          "905294c50cfb89a0ef4b9d296c8d41a92c4b95f18733f07470f7b1e5924cf5cb"
+        ],
+        "success": true,
+        "control_steps": 312,
+        "source_history_sha256": "c53781c575fda68e9f9828e0c6dcb968442b08e3db5cdc7044545f89e5962c6c"
+      },
+      {
+        "task": "PatternLock",
+        "frame_indices": [
+          48,
+          82,
+          116
+        ],
+        "frame_sha256": [
+          "051d2e23b71b9a7af796b2d096e68e3c5853b48ba8ebfbd671a19ef1eccc484f",
+          "57eef0e9fdb586713f70e2fc373f70fcad7b052bf6ba9fbe8a247b7b7125a016",
+          "6761956ffaf7e19d7eff81c7dffea5295c14f62a701cc4971c2cc8cc9c7df889"
+        ],
+        "success": false,
+        "control_steps": 68,
+        "source_history_sha256": "101f15529c69225fafecf6db8c36096747baf1d47bce15cf5d57133009413f1b"
+      }
+    ]
+  },
+  "plan_id": "robomme-reference-2bd7ed18a9e44765",
+  "pixel_editing": "NONE",
+  "scope": "Four source cases; no method efficacy or full benchmark score"
+}

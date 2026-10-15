@@ -60,46 +60,44 @@
     "scope": "Torch 2.6 compatibility probe, not the exact Torch 2.9.1 release runtime"
   },
   "robodojo": {
-    "status": "BLOCKED_MISSING_SCENE_ASSETS",
+    "status": "ASSETS_CACHED_RUNTIME_PENDING",
     "official_source_preflight": {
       "pass": 8,
       "warning": 4,
       "fail": 4
     },
     "missing": [
-      "Robots",
-      "Object/RoboDojo",
-      "Eval_Layout/RoboDojo",
-      "Material"
+      "GPU-node scene staging and runtime qualification",
+      "Pinned CuRobo/IsaacLab integration",
+      "Matched 14D policy checkpoint"
     ],
     "policy_runtime_check": "NOT_RUN",
     "isaac_runtime_import_check": "NOT_RUN",
     "canonical_tasks": 42,
     "runnable_configs": 54,
-    "native_episodes": 2100
+    "native_episodes": 2100,
+    "scene_asset_files": 217,
+    "scene_asset_bytes": 464495655,
+    "scene_dependency_audit": "UNRESOLVED_EXTERNAL_REFERENCES_RUNTIME_PENDING"
   },
   "focused_tests_passed": 74,
   "gradient_updates": 0,
-  "released_policy_evaluation": "NOT_RUN",
+  "released_policy_evaluation": "IN_PROGRESS_VALIDATION",
   "method_efficacy": "NOT_RUN",
-  "scope": "Source inventory and environment engineering, no policy success-rate result",
+  "scope": "Real released-policy source qualification and ongoing validation; no method efficacy",
   "additional_archive_boundary_tests_passed": 6,
   "reference_model": {
     "repository": "Yinpei/perceptual-framesamp-modul",
     "revision": "c0f565dd40082f32863b3ee9db99de5ed5d3d4e0",
     "archive_bytes": 11878950895,
     "expanded_bytes": 11877152238,
-    "acquisition": "NAS_COMPLETE_VERIFIED_GPU_MEMORY_STAGING_IN_PROGRESS",
+    "acquisition": "VERIFIED_LOCAL_NVME_LOADED",
     "archive_sha256_advertised": "2bfde48a0e9c616c87afcac5359b69f281689765e1af3fecbbec5c918e6faa62",
     "whole_archive_sha256_recomputed": true,
-    "extractor_sha256": "3de905b9d2be45f8976dbda882bf91bd9572083930d02d258249fb99e859711f",
     "policy_config_import": "PASS",
-    "model_loaded": false,
-    "policy_evaluation": "NOT_RUN",
-    "snapshot_unix": 1792001671.9476502,
-    "completed_file_bytes": 5911003,
-    "partial_file_bytes": 394264576,
-    "acquisition_timeout_seconds": 3600
+    "model_loaded": true,
+    "policy_evaluation": "IN_PROGRESS_VALIDATION",
+    "forecast_cases_passed": 4
   },
   "nas_cache": {
     "robomme_training": {
@@ -113,7 +111,7 @@
       "archive_sha256_verified": "2bfde48a0e9c616c87afcac5359b69f281689765e1af3fecbbec5c918e6faa62"
     },
     "robodojo_assets": {
-      "status": "IN_PROGRESS_AT_SNAPSHOT",
+      "status": "CACHED_HASHED_NOT_USED",
       "expected_files": 15365,
       "expected_bytes": 41269513111
     }
@@ -176,5 +174,78 @@
       }
     ],
     "executed_policy_steps": 0
-  }
+  },
+  "closed_loop_qualification": {
+    "schema": "robomme-reference-artifact-audit-v1",
+    "status": "PASS",
+    "plan_id": "robomme-reference-2bd7ed18a9e44765",
+    "plan_sha256": "75df454a53ef68323feb2c476e81e4840c7c24310ac60788f280403c11aed4c8",
+    "cases": [
+      {
+        "task": "PickXtimes",
+        "split": "train",
+        "episode": 0,
+        "success": true,
+        "outcome": "success",
+        "control_steps": 512,
+        "policy_calls": 32,
+        "public_frames": 513
+      },
+      {
+        "task": "VideoUnmask",
+        "split": "train",
+        "episode": 0,
+        "success": true,
+        "outcome": "success",
+        "control_steps": 178,
+        "policy_calls": 12,
+        "public_frames": 245
+      },
+      {
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 0,
+        "success": true,
+        "outcome": "success",
+        "control_steps": 312,
+        "policy_calls": 20,
+        "public_frames": 313
+      },
+      {
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 0,
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 68,
+        "policy_calls": 5,
+        "public_frames": 117
+      }
+    ],
+    "control_steps": 1070,
+    "public_frames": 1188,
+    "programs_checked": 69,
+    "files_hashed": 81,
+    "gradient_updates": 0,
+    "method_efficacy": "NOT_RUN",
+    "scope": "Four train cases, not the full validation baseline; no independent resimulation"
+  },
+  "validation_progress": {
+    "schema": "robomme-validation-progress-v1",
+    "plan_id": "robomme-reference-e0ad4d742f53cd15",
+    "planned": 800,
+    "completed": 2,
+    "aborted": 0,
+    "split": "val",
+    "test_used": false,
+    "gradient_updates": 0,
+    "scope": "Fixed released policy, not method efficacy",
+    "success_rate": null,
+    "snapshot_unix": 1792053978.7138903,
+    "status": "IN_PROGRESS",
+    "task_coverage": {
+      "BinFill": 2
+    }
+  },
+  "snapshot_utc": "2026-10-15T08:46:18.713890+00:00"
 }

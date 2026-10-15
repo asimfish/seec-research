@@ -94,6 +94,19 @@ rule:
    the complete public prefix. This is the candidate mechanism, not a proven
    improvement over arm 3.
 
+If arms 3 and 5 materialize the same anchor IDs and history tensors, they are
+the same training view: train once and report the second name as an alias. A
+renamed full-history DAgger pipeline is not an independent method contribution.
+The first study then tests the history contrast, not algorithmic novelty.
+
+For the proposed history contrast, use the released 512-token memory budget
+(16 pooled tokens per front-camera frame): the recent-history view keeps at
+most the most recent 32 causal frames, and the complete-prefix view uses the
+upstream uniform sampling over the complete executed prefix, at most 32 frames.
+Both keep the current front/wrist images and public robot state. Histories
+shorter than 32 frames are identical and must be reported as such. This is a
+proposed information-use contrast, not a newly claimed algorithm.
+
 First isolate history with arms 4/5 using the exact same target IDs and update
 budget. Then compare against arm 3 to test whether anything exceeds generic
 history-aware aggregation. A separate equal-cost study allows BC to spend the
@@ -167,13 +180,15 @@ probe, **not exact released-build reproduction**. The ManiSkill fork remains
 at the official 07be6fbc66350ddca200abfb0a11b692f078f7fd. Exact-release policy
 evaluation requires its own runtime qualification.
 
-The current shared filesystem has about 33 GB free, with an 8 GB reserve.
-Official RoboMME HDF5 downloads sum to 56.44 GB compressed; the released
-FrameSamp+Modul archive is 11.88 GB before extraction. Do not download the
-whole corpus or create both compressed and unpacked checkpoints blindly.
-Use existing assets read-only where source identities match, budget subset
-data, and register a larger storage target before full-suite training. These
-are access/runtime constraints, not measured method failures.
+Storage execution update: the GPU-node shared filesystem is capacity limited.
+The complete source archives are now SHA verified on the project NAS: RoboMME
+training 56.44 GB, RoboDojo assets 41.27 GB, released memory model 11.88 GB.
+A verified expanded model is on task-local NVMe; the policy runs on local GPU 0
+and sends actions through a private tunnel to the 30109 simulator on GPU 1.
+The first four full source rollouts completed and passed artifact checks;
+all-task validation is running. See robot_memory_benchmarks_20261015/CLOSED_LOOP_RESULTS.md.
+Neither storage completion nor a four-case execution check proves method efficacy.
+All controlled method arms must use the same qualified runtime/hardware.
 
 ## Primary sources
 

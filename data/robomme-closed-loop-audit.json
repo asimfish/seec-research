@@ -1,0 +1,55 @@
+{
+  "schema": "robomme-reference-artifact-audit-v1",
+  "status": "PASS",
+  "plan_id": "robomme-reference-2bd7ed18a9e44765",
+  "plan_sha256": "75df454a53ef68323feb2c476e81e4840c7c24310ac60788f280403c11aed4c8",
+  "cases": [
+    {
+      "task": "PickXtimes",
+      "split": "train",
+      "episode": 0,
+      "success": true,
+      "outcome": "success",
+      "control_steps": 512,
+      "policy_calls": 32,
+      "public_frames": 513
+    },
+    {
+      "task": "VideoUnmask",
+      "split": "train",
+      "episode": 0,
+      "success": true,
+      "outcome": "success",
+      "control_steps": 178,
+      "policy_calls": 12,
+      "public_frames": 245
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 0,
+      "success": true,
+      "outcome": "success",
+      "control_steps": 312,
+      "policy_calls": 20,
+      "public_frames": 313
+    },
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 0,
+      "success": false,
+      "outcome": "fail",
+      "control_steps": 68,
+      "policy_calls": 5,
+      "public_frames": 117
+    }
+  ],
+  "control_steps": 1070,
+  "public_frames": 1188,
+  "programs_checked": 69,
+  "files_hashed": 81,
+  "gradient_updates": 0,
+  "method_efficacy": "NOT_RUN",
+  "scope": "Four train cases, not the full validation baseline; no independent resimulation"
+}
