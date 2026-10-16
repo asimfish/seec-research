@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920" role="img" aria-labelledby="title desc">
+<title id="title">Implemented history-span baseline and unimplemented evidence-acquisition candidate</title>
+<desc id="desc">Left: π0.5 FrameSamp+Modul, sampled public history, native action loss and one absorption round. Right: an unimplemented training-only belief-conditioned recovery planner. Both panels reset memory on independent instances. No new algorithm or outcome is claimed.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#334155" stroke-width="1.6"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172b4d}.small{font-size:17px;fill:#475569}.body{font-size:20px}.head{font-size:24px;font-weight:700}.box{fill:#fff;stroke:#94a3b8;stroke-width:1.3}.draft{fill:#fff;stroke:#64748b;stroke-width:1.3;stroke-dasharray:7 5}.arrow{fill:none;stroke:#334155;stroke-width:1.6;marker-end:url(#arrow)}</style>
+<rect width="1400" height="920" fill="#fff"/>
+<text x="48" y="47" font-size="30" font-weight="700">What exists, and what remains a research question</text>
+<text x="48" y="78" class="body">Deployment corrections → future autonomy: an existing problem, not a certified novelty claim</text>
+<rect x="35" y="108" width="650" height="676" rx="12" fill="#eff6ff" stroke="#bfdbfe"/>
+<rect x="715" y="108" width="650" height="676" rx="12" fill="#f8fafc" stroke="#94a3b8" stroke-dasharray="9 6"/>
+<text x="60" y="146" class="head">A · Implemented baseline</text>
+<text x="740" y="146" class="head">B · Candidate only / NOT IMPLEMENTED</text>
+<text x="60" y="176" class="small">π0.5 / FrameSamp+Modul · research snapshot b3c1473</text>
+<text x="740" y="176" class="small">Closest overlap: A2D, CritiQ/ReTRy, sensing imitation</text>
+<rect x="60" y="200" width="600" height="94" rx="8" class="box"/>
+<text x="78" y="228" class="body" font-weight="700">Public observations + native demo</text>
+<text x="78" y="254" class="small">Initial video and self-interaction share the history.</text>
+<text x="78" y="277" class="small">No simulator secrets or oracle subgoals in student inputs.</text>
+<path d="M360,298 V321" class="arrow"/>
+<rect x="60" y="327" width="600" height="94" rx="8" class="box"/>
+<text x="78" y="355" class="body" font-weight="700">Same-budget history-span control</text>
+<text x="78" y="381" class="small">Uniformly spanning ≤32 frames vs most recent ≤32.</text>
+<text x="78" y="404" class="small">512 memory tokens; current inputs and action targets match.</text>
+<path d="M360,425 V448" class="arrow"/>
+<rect x="60" y="454" width="600" height="94" rx="8" class="box"/>
+<text x="78" y="482" class="body" font-weight="700">Reuse the original native model</text>
+<text x="78" y="508" class="small">FrameSamp visual tokens → memory modulation → actions.</text>
+<text x="78" y="531" class="small">Native JAX backend and native action normalization.</text>
+<path d="M360,552 V575" class="arrow"/>
+<rect x="60" y="581" width="600" height="94" rx="8" class="box"/>
+<text x="78" y="609" class="body" font-weight="700">One source-corpus absorption round</text>
+<text x="78" y="635" class="small">Executed correction chunks are action-loss targets.</text>
+<text x="78" y="658" class="small">No new collector policy or learned help-request mechanism.</text>
+<rect x="740" y="200" width="600" height="94" rx="8" class="draft"/>
+<text x="758" y="228" class="body" font-weight="700">Student-visible evidence, not the hidden answer</text>
+<text x="758" y="254" class="small">A belief over configurations consistent with public history.</text>
+<text x="758" y="277" class="small">Identical histories must imply the same action distribution.</text>
+<path d="M1040,298 V321" class="arrow"/>
+<rect x="740" y="327" width="600" height="94" rx="8" class="draft"/>
+<text x="758" y="355" class="body" font-weight="700">Training-only sensing → recovery planner</text>
+<text x="758" y="381" class="small">Use legal sensing actions, then visible consequences.</text>
+<text x="758" y="404" class="small">Count planning, failed candidates, teacher calls and resets.</text>
+<path d="M1040,425 V448" class="arrow"/>
+<rect x="740" y="454" width="600" height="94" rx="8" class="draft"/>
+<text x="758" y="482" class="body" font-weight="700">Native learner and masked correction loss</text>
+<text x="758" y="508" class="small">Keep the true prefix; suppress targets, not observations.</text>
+<text x="758" y="531" class="small">Same demo allocation and token budget across comparisons.</text>
+<path d="M1040,552 V575" class="arrow"/>
+<rect x="740" y="581" width="600" height="94" rx="8" class="draft"/>
+<text x="758" y="609" class="body" font-weight="700">Fresh deployment with teacher removed</text>
+<text x="758" y="635" class="small">Reset instance memory; acquire new evidence independently.</text>
+<text x="758" y="658" class="small">Measure task success and expert cost, not training loss.</text>
+<text x="60" y="744" class="small">A is student-state BC / one-round DAgger; no algorithm claim.</text>
+<text x="740" y="744" class="small">B proceeds only after a distinct, falsifiable gap is established.</text>
+<rect x="35" y="811" width="1330" height="80" rx="10" fill="#fff7ed" stroke="#fed7aa"/>
+<text x="55" y="840" class="body" font-weight="700">Evidence boundary</text>
+<text x="55" y="867" class="small">100-case initial baseline: 32/50 + 10/50 = 42%. Evaluation coordinator interrupted by SSH; no complete learning conclusion.</text>
+</svg>
