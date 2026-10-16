@@ -1,0 +1,550 @@
+{
+  "schema": "robomme-matched-absorption-evaluation-v1",
+  "code_revision": "26ff8f75b5529c0e9d5324d0a4a16c30d0a26ac4",
+  "own_files": {
+    "scripts/evaluate_robomme_absorption.py": "125c1bed6d11c3980ed50b4cc37e7902e68ec38a57d105f0842828c0edeca1d0",
+    "scripts/serve_robomme_absorption.py": "1c2e6a25c6ffaedf03f6bb1dabcc1748b38d6db4175401fc324ba88e5efd941f",
+    "scripts/run_robomme_reference_rollouts.py": "4e56c81de069b63f769de14b769ce790f8dfd0cb0e45904466f06ec9bc8c2573",
+    "robocore/adaptation/data.py": "0688bed1d2cbc00e85bac59a06bf0f2a35e0a032ddbf4181edc4e20716f76e45",
+    "robocore/adaptation/robomme_rollout.py": "f4edc6779b0004531c3423f55a564e369a9d6838d1b489efe8feb08ec807bf7b",
+    "robocore/adaptation/robomme_stream.py": "8813128a3fa97fc17f33b75aebf73bec4c1bc63a861afa4de46dc521efd953f7",
+    "robocore/adaptation/robomme_continuation.py": "568c28365eb72ff0826282fe11fc19c014bb7fbb072f80bc9b3cb891a93d83b2",
+    "robocore/adaptation/robomme_corrections.py": "793619dcfe34ca709a534480e94a0f4d1a867e925ed806d9bb71cd0897b1657b",
+    "robocore/adaptation/robomme_native_training.py": "3a9536fe1363846cc7453d0c9dae0b466c1e67d7b5d5771ffc150412ec91da5b",
+    "robocore/adaptation/robomme_absorption.py": "f7698a56cbd16c182a161c72b742ad06a9d81ae2915c26ea1966c75d33b0d829",
+    "robocore/adaptation/robomme_absorption_native.py": "8568228662a40bcce4e6c7b6021cbd56f37d46bf7191cd9f0691862ff6ee595c"
+  },
+  "benchmark_revision": "fae9f7300347f1146c2ae4844faa4eef7e38098e",
+  "policy_source_revision": "ecf086c3be7c2223167d9bb2f6ef1f0a6e24353b",
+  "base_native_sha256": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+  "base_deployment_sha256": "f141c6c98361e53ac04f456c0bcbab26c790ed7e3c9781c42083fe0fa2536ca1",
+  "checkpoint_archive_sha256": "2bfde48a0e9c616c87afcac5359b69f281689765e1af3fecbbec5c918e6faa62",
+  "normalization_sha256": "0c3abe8facfb35309b86737ca13f5dbdd16c039611498b305f33b9f3d0ed2175",
+  "qualification_inputs_sha256": "0d9ae422e0255cbebb294767d4bc4062689436c4abd24b3233c75711f587e809",
+  "training_seeds": [
+    7,
+    17,
+    27,
+    37,
+    47,
+    57
+  ],
+  "updates_per_seed": 10000,
+  "cases": [
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 0
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 0
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 1
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 1
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 2
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 2
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 3
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 3
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 4
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 4
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 5
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 5
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 6
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 6
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 7
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 7
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 8
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 8
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 9
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 9
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 10
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 10
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 11
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 11
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 12
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 12
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 13
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 13
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 14
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 14
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 15
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 15
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 16
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 16
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 17
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 17
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 18
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 18
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 19
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 19
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 20
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 20
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 21
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 21
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 22
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 22
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 23
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 23
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 24
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 24
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 25
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 25
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 26
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 26
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 27
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 27
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 28
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 28
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 29
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 29
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 30
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 30
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 31
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 31
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 32
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 32
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 33
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 33
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 34
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 34
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 35
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 35
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 36
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 36
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 37
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 37
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 38
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 38
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 39
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 39
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 40
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 40
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 41
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 41
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 42
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 42
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 43
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 43
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 44
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 44
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 45
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 45
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 46
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 46
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 47
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 47
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 48
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 48
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 49
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 49
+    }
+  ],
+  "metadata_sha256": {
+    "PatternLock": "733bf5a13aa2373cdaaa08bca7b1e14319fa1cd4da082158f9b08eaf89ec3a28",
+    "PickHighlight": "417e4a2dc83143dd9a6c8b0174ea4636a3969fa58521939ccdfc71dcb7a758cc"
+  },
+  "horizon": 1300,
+  "prediction_steps": 20,
+  "execution_steps": 16,
+  "inference_seed": 7,
+  "additional_expert_queries": 0,
+  "session_context": "ISOLATED_PER_CONNECTION",
+  "test_used": false,
+  "checkpoint_rule": "final 10000-update EMA only",
+  "scope": "two-task absorption comparison; not full-suite or new-rule learning",
+  "inference_hardware": "same local RTX 5090 physical GPU 1 for every before/after model",
+  "plan_id": "robomme-absorption-eval-8eeead0ededca5c0"
+}

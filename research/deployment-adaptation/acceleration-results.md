@@ -152,5 +152,21 @@ controls and 14 resets; 13 complete chunks per history view. The partial
 14-control terminal query remains excluded from chunk targets and included
 in cost. No task or infrastructure failure was retried. Both 5-chunk views
 passed the source/plan/trace/target binding validator; inputs remain strictly
-causal. Native model feature materialization of the first three chunks is
-running on the learning server. No trained-policy benefit is reported.
+causal. Native model feature materialization of all 13 chunks per view has
+passed on the learning server. No trained-policy benefit is reported.
+
+The remaining 22 eligible queries were subsequently registered and started,
+completing the prospective source query schedule of 36 eligible and four
+terminal-before-anchor exclusions. The recorded-receipt registration path
+avoids downloading H5 just to register; the executor still independently
+hashes actual source files before reset. Five additional regression cases
+bring the focused gate to 40 passed / one optional skip. Native batches for
+PatternLock-1 (3 chunks/view), PatternLock-2 (5 chunks/view) and PickHighlight-1
+(5 chunks/view) passed the original model transforms/loss. No new
+optimization or autonomous absorption outcome is claimed for these batches.
+
+The research page is published at public revision
+`62e18188a855d087d92e7079f05f6b512799e9c1`; nine static/browser gates and six
+new online artifact hashes passed. Its displayed counts are timestamped
+snapshots, not a live feed. See `absorption_screen_20261016/ACCELERATION_HANDOFF.json`
+for continuing job paths and pending experimental steps.

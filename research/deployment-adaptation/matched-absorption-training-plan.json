@@ -1,0 +1,63 @@
+{
+  "schema": "robomme-matched-native-absorption-training-v1",
+  "code_revision": "8156edb4498260f68264fb81aebfa0a187f91097",
+  "own_files": {
+    "scripts/train_robomme_absorption.py": "db8b72ea3698cd89790f531d5cc1aef21e1940729122e9a677cb177de459c971",
+    "scripts/run_robomme_absorption_queue.py": "cfff2314cc3910f9a90147b168cf8f7b1432fdbeca27c6f3b073babeddce0b39",
+    "scripts/register_robomme_absorption_training.py": "0b099e221f5929696a146a8725f682fa57637dd9ef689de0aeae0c7bf7368cb4",
+    "scripts/analyze_robomme_absorption.py": "332752fc58782efbaa080a206cae1478874dc27a71bfe2a5356eff76021de19c",
+    "robocore/adaptation/robomme_absorption.py": "f7698a56cbd16c182a161c72b742ad06a9d81ae2915c26ea1966c75d33b0d829",
+    "robocore/adaptation/robomme_absorption_native.py": "8568228662a40bcce4e6c7b6021cbd56f37d46bf7191cd9f0691862ff6ee595c",
+    "robocore/adaptation/robomme_native_training.py": "3a9536fe1363846cc7453d0c9dae0b466c1e67d7b5d5771ffc150412ec91da5b",
+    "robocore/adaptation/robomme_continuation.py": "568c28365eb72ff0826282fe11fc19c014bb7fbb072f80bc9b3cb891a93d83b2",
+    "robocore/adaptation/data.py": "0688bed1d2cbc00e85bac59a06bf0f2a35e0a032ddbf4181edc4e20716f76e45"
+  },
+  "batch_manifest_sha256": "448d52a3d666a59a1356f50e90533d4a06ef22990bf72f970f08eb1cb3c1f435",
+  "evaluation_plan_id": "robomme-absorption-eval-8eeead0ededca5c0",
+  "evaluation_plan_sha256": "6c7470da67eb6ef724760fd9e948ea155e6733d28cd0c5326e5daaa913809ba7",
+  "protocol_sha256": "f4bb2b62a581dff0aeec37afeed5287e40a653e9ac7c6786163be5be4baac2ce",
+  "source_transport_sha256": "2e7f596699c6f5fd99da958fff6eeecb0246faa9e1f69c210e4b626ab9aaa15e",
+  "base_native_sha256": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+  "policy_source_revision": "ecf086c3be7c2223167d9bb2f6ef1f0a6e24353b",
+  "training_seeds": [
+    7,
+    17,
+    27,
+    37,
+    47,
+    57
+  ],
+  "views": [
+    "full_history_intervention_bc",
+    "recent_history_intervention_bc"
+  ],
+  "allowed_gpu_pairs": [
+    "0,1",
+    "3,7"
+  ],
+  "updates_per_seed": 10000,
+  "batch_size": 1,
+  "checkpoint": "final EMA only; no development selection",
+  "optimizer": {
+    "name": "AdamW",
+    "b1": 0.9,
+    "b2": 0.95,
+    "eps": 1e-08,
+    "weight_decay": 1e-10,
+    "clip_gradient_norm": 1.0
+  },
+  "schedule": {
+    "warmup_steps": 10000,
+    "peak_lr": 5e-05,
+    "decay_steps": 100000,
+    "decay_lr": 5e-05
+  },
+  "ema": 0.999,
+  "freeze_rule": ".*img.*",
+  "all_models_required": true,
+  "candidate_alias": "full-history student-state BC / one-round DAgger; train once",
+  "initial": "exact released parameters, not the qualification-trained reference",
+  "effect_status": "NOT_RUN",
+  "aborted_runs": "retain and disclose; infrastructure retries only with reason",
+  "plan_id": "robomme-native-absorption-402a4653ebc87208"
+}

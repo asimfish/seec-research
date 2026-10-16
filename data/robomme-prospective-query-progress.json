@@ -1,66 +1,77 @@
 {
-  "schema": "robomme-student-query-progress-v1",
+  "schema": "robomme-student-query-progress-v2",
   "source_plan_id": "robomme-absorption-screen-5c9451b5a5b9791c",
-  "prefix_exact_checks": 1332,
-  "extra_expert_controls": 274,
-  "replayed_student_controls": 416,
-  "resets": 14,
-  "complete_native_chunks_per_view": 13,
-  "partial_chunk_controls": 14,
-  "views": [
-    "recent_history_intervention_bc",
-    "full_history_intervention_bc"
-  ],
-  "additional_registered_queries_running": 0,
-  "tasks_in_additional_queries": [
-    "PatternLock",
-    "PickHighlight"
+  "snapshot_unix": 1792126120.5032003,
+  "executed_queries": 124,
+  "query_complete": 123,
+  "unqualified_queries": 1,
+  "prefix_exact_checks": 26450,
+  "all_query_prefixes_exact": true,
+  "extra_expert_controls": 2456,
+  "replayed_student_controls": 23568,
+  "resets": 124,
+  "complete_native_chunks_per_view": 120,
+  "partial_chunks": 3,
+  "source_policy_decisions": 124,
+  "coverage_by_task": {
+    "PatternLock": 0.8695652173913043,
+    "PickHighlight": 0.9900990099009901
+  },
+  "coverage_gate": "PASS_DENSE_COVERAGE_AND_BINDING",
+  "early_complete_chunks": 33,
+  "dense_supplement_queries": 88,
+  "dense_supplement_complete_chunks": 87,
+  "admission": "exact prefix + QUERY_COMPLETE + all 20 executed controls; no terminal padding or retry selection",
+  "source_cases": [
+    {
+      "task": "PatternLock",
+      "episode": 1,
+      "chunks": 3,
+      "source_policy_decisions": 4
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 1,
+      "chunks": 14,
+      "source_policy_decisions": 14
+    },
+    {
+      "task": "PatternLock",
+      "episode": 2,
+      "chunks": 7,
+      "source_policy_decisions": 7
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 2,
+      "chunks": 28,
+      "source_policy_decisions": 28
+    },
+    {
+      "task": "PatternLock",
+      "episode": 3,
+      "chunks": 9,
+      "source_policy_decisions": 10
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 3,
+      "chunks": 39,
+      "source_policy_decisions": 39
+    },
+    {
+      "task": "PatternLock",
+      "episode": 4,
+      "chunks": 1,
+      "source_policy_decisions": 2
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 4,
+      "chunks": 19,
+      "source_policy_decisions": 20
+    }
   ],
   "method_efficacy": "NOT_RUN",
-  "scope": "Student-state oracle labels; source-only; 13 matched chunks per history view; native materialization running; absorption efficacy NOT_RUN",
-  "source_cases": [
-    "PatternLock train-1",
-    "PatternLock train-2",
-    "PickHighlight train-1"
-  ],
-  "executed_queries": 14,
-  "all_registered_additional_queries_completed": true,
-  "first_case_detail": {
-    "source_case": "PatternLock train-1",
-    "registered_anchors": [
-      0,
-      16,
-      32,
-      48,
-      64
-    ],
-    "executed_anchors": [
-      0,
-      16,
-      32,
-      48
-    ],
-    "ineligible_anchors": [
-      64
-    ],
-    "ineligible_reason": "Student terminated at 58; no substitute anchor",
-    "target_set_sha256": "76441f3cf9a6f82414eaec2765c21645ed07dde7fe4ca0e990fa287d89c7364e"
-  },
-  "target_sets_by_source": [
-    {
-      "source_case": "PatternLock train-1",
-      "chunks": 3,
-      "sha256": "76441f3cf9a6f82414eaec2765c21645ed07dde7fe4ca0e990fa287d89c7364e"
-    },
-    {
-      "source_case": "PatternLock train-2",
-      "chunks": 5,
-      "sha256": "94c8eea31807f542fd9e8070012fe70ee87b503b654ee04e89aeee0330e1a2bc"
-    },
-    {
-      "source_case": "PickHighlight train-1",
-      "chunks": 5,
-      "sha256": "44691fde12954d71d74e6272b9381fa59093d70b28294dc71d1bfa69e1a15b0b"
-    }
-  ]
+  "scope": "two train tasks; original released policy; full-history candidate aliases one-round DAgger"
 }

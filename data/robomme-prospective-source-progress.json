@@ -1,8 +1,8 @@
 {
-  "status": "SOURCE_SCREEN_IN_PROGRESS_NOT_EFFICACY",
+  "status": "SOURCE_SCREEN_COMPLETE_NOT_EFFICACY",
   "planned": 16,
-  "completed": 9,
-  "snapshot_unix": 1792096312.4605825,
+  "completed": 16,
+  "snapshot_unix": 1792126120.5205755,
   "cases": [
     {
       "task": "PatternLock",
@@ -84,7 +84,73 @@
       "status": "COMPLETED",
       "success": true,
       "control_steps": 50
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 5,
+      "use": "development_diagnostic",
+      "status": "COMPLETED",
+      "success": true,
+      "control_steps": 284
+    },
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 6,
+      "use": "development_diagnostic",
+      "status": "COMPLETED",
+      "success": true,
+      "control_steps": 72
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 6,
+      "use": "development_diagnostic",
+      "status": "COMPLETED",
+      "success": true,
+      "control_steps": 395
+    },
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 7,
+      "use": "development_diagnostic",
+      "status": "COMPLETED",
+      "success": false,
+      "control_steps": 98
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 7,
+      "use": "development_diagnostic",
+      "status": "COMPLETED",
+      "success": false,
+      "control_steps": 379
+    },
+    {
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 8,
+      "use": "development_diagnostic",
+      "status": "COMPLETED",
+      "success": true,
+      "control_steps": 72
+    },
+    {
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 8,
+      "use": "development_diagnostic",
+      "status": "COMPLETED",
+      "success": true,
+      "control_steps": 215
     }
   ],
-  "method_efficacy": "NOT_RUN"
+  "method_efficacy": "NOT_RUN",
+  "official_test_used": false,
+  "source_only_labels": true,
+  "pretraining_exposure": "UNKNOWN"
 }

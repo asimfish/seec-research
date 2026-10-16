@@ -1,0 +1,37 @@
+{
+  "schema": "robodojo-native-policy-forecast-v1",
+  "status": "NATIVE_14D_FORECAST_QUALIFIED_NOT_ROLLOUT",
+  "xpolicylab_revision": "53c5da5a01bc720d1cf0e6ab6ed212e8cef0eda2",
+  "base_vlm_revision": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+  "checkpoint_sha256": "62b8333c9af58467a911150e908cc726dd3c2660fd461871ae9300296391a3cd",
+  "script_sha256": "0642218cd15eb4223f3a08d08caf85396b00142c2ebd266cff960af501aa5b35",
+  "initialization": "pinned config skeleton then upstream strict full checkpoint load",
+  "attention": "sdpa, forced by pinned upstream QWen3.py",
+  "policy_controls": 0,
+  "gradient_updates": 0,
+  "success": null,
+  "scope": "native input and forecast qualification; no rollout score",
+  "strict_checkpoint_load": "PASS_UPSTREAM_STRICT_TRUE",
+  "forecasts": [
+    {
+      "shape": [
+        1,
+        50,
+        14
+      ],
+      "sha256": "b32ff0e3dfef0878ade6fcdf5f8f80f80ac029bd9c04ced057696851526459d4",
+      "seconds": 0.8257893016561866
+    },
+    {
+      "shape": [
+        1,
+        50,
+        14
+      ],
+      "sha256": "b32ff0e3dfef0878ade6fcdf5f8f80f80ac029bd9c04ced057696851526459d4",
+      "seconds": 0.05184428999200463
+    }
+  ],
+  "repeat_exact": true,
+  "peak_allocated_bytes": 9431778816
+}
