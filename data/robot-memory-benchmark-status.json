@@ -85,7 +85,7 @@
     "flash_attention": "NOT_REQUIRED_PINNED_IMPLEMENTATION_USES_SDPA"
   },
   "focused_tests_passed": 88,
-  "gradient_updates": 16,
+  "gradient_updates": 20016,
   "released_policy_evaluation": "IN_PROGRESS_VALIDATION",
   "method_efficacy": "NOT_RUN",
   "scope": "Complete source ledger and 124 oracle queries; six-seed two-task absorption training and fixed evaluation running; no efficacy conclusion",
@@ -289,7 +289,7 @@
     ],
     "snapshot_time_basis": "local saved audit receipt mtime, not live monitoring"
   },
-  "snapshot_utc": "2026-10-16T04:56:26.654929+00:00",
+  "snapshot_utc": "2026-10-16T05:49:01.620647+00:00",
   "expert_recovery_qualification": {
     "schema": "robomme-expert-recovery-public-v1",
     "date": "2026-10-16",
@@ -770,7 +770,7 @@
     "source_only_labels": true,
     "pretraining_exposure": "UNKNOWN"
   },
-  "gradient_updates_scope": "16 qualification updates only; full-budget study is separately tracked and has no effect result yet",
+  "gradient_updates_scope": "Known completed RoboMME steps: 16 qualification + 20000 first paired seed; in-progress later seeds excluded",
   "registered_absorption_trial": {
     "training_plan_id": "robomme-native-absorption-402a4653ebc87208",
     "training_plan_sha256": "116110e68b4edadf66c893343abfd93aeadf2227a7bee762b5b5caa09c790e39",
@@ -792,16 +792,38 @@
     "dataset_complete_chunks_per_view": 120,
     "current_inputs_and_targets_equal": true,
     "base_original_all_parameter_bits_verified": true,
-    "training_status": "RUNNING_FORMAL_OPTIMIZER_UPDATES",
+    "training_status": "FIRST_PAIRED_SEED_TRAINED_EXPORT_RELOADED; REMAINING_SEEDS_RUNNING",
     "autonomous_gain": "NOT_EVALUATED",
     "history_interaction": "NOT_EVALUATED",
     "full_history_candidate_alias": "one-round full-history DAgger",
     "analysis_note": "success-count differences computed before rate conversion; arithmetic correction recorded before trained-model outcomes",
     "first_verified_paired_seed": 7,
     "verified_update_snapshot": {
-      "full_history_intervention_bc": 400,
-      "recent_history_intervention_bc": 400
+      "full_history_intervention_bc": 10000,
+      "recent_history_intervention_bc": 10000
     },
-    "matched_row_sampling_through_update": 400
+    "matched_row_sampling_through_update": 10000,
+    "known_completed_training_models": 2,
+    "effect_status": "NOT_EVALUATED",
+    "completed_export_checks": [
+      {
+        "view": "full_history_intervention_bc",
+        "seed": 7,
+        "updates": 10000,
+        "initial_native_sha256": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+        "inference_sha256": "603a7df4b03c6d9c34c04665039853bbfd0502274d52f9581ffb7f34ecaa0054",
+        "archive_sha256": "6f09635b3b5a9d2dcfc13520d8f387eb2b6ff2ac13843a98f67093e35e7e05cb",
+        "archive_bytes": 2744282753
+      },
+      {
+        "view": "recent_history_intervention_bc",
+        "seed": 7,
+        "updates": 10000,
+        "initial_native_sha256": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+        "inference_sha256": "c7b150e9def3e71a8d50d36abf34b47be1dad8cba86b22f952cc5b1c7e782c82",
+        "archive_sha256": "c7b7dc0a74e23e3a5cfc78f0a71d28fffa282e0e0ceaf58f2a1993f73ed90470",
+        "archive_bytes": 2754568114
+      }
+    ]
   }
 }
