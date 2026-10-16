@@ -738,12 +738,12 @@
       "bytes": 10506
     },
     "research/deployment-adaptation/analysis-arithmetic-correction.md": {
-      "sha256": "291af6d6aa8c9c14c4179aa7da28bf70124796531703938c975e76e336c78997",
-      "bytes": 1317
+      "sha256": "87ded5df151a3d11b497f50bce4279926283e7da4a04afcecefc62d95ed4f945",
+      "bytes": 2441
     },
     "research/deployment-adaptation/analyze-matched-absorption.py": {
-      "sha256": "a13a0d3f5d4740d27e6d330856d1efc5e148b60b3a083b36ef59046ccefe8b27",
-      "bytes": 6568
+      "sha256": "129f10d7d5e3f10e8068d29765dc6a8b039c9e2aed96cc3b91951699fc303f84",
+      "bytes": 7437
     },
     "research/deployment-adaptation/experiment-design.md": {
       "sha256": "c1753aa4aa936526ee1b609185954d2570296982be351293d6e297cba8ac5b27",
@@ -1134,7 +1134,7 @@
       "bytes": 15302
     }
   },
-  "research_revision": "d66b66bbaf5005f030965a83b99632eceaae4b11",
+  "research_revision": "5abac09e53a1be8e51965d3e3de0631b753d00df",
   "schema": "seec-public-website-v2",
   "source_inputs": {
     "delivery_verification_sha256": "27f2c5b92c756e40e6667fe1ca6bc98b2793bd3202a8fe7ff3cd30d63f1cc6cb",

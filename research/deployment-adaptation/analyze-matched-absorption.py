@@ -35,14 +35,31 @@ def paired_contrasts(records):
 
 def summarize(values):
     values = np.asarray(values, dtype=float)
+    counts = np.rint(values * 100).astype(np.int64)
+    if not np.array_equal(values, counts / 100):
+        raise ValueError("Registered effects must be integer success-count differences / 100")
     rng = np.random.default_rng(131)
-    means = values[rng.integers(len(values), size=(100000, len(values)))].mean(axis=1)
-    low, high = np.quantile(means, [0.025, 0.975])
+    sums = np.sort(counts[rng.integers(len(counts), size=(100000, len(counts)))].sum(axis=1))
+
+    def percentile_numerator(p):
+        index, remainder = divmod((len(sums) - 1) * p, 40)
+        return (
+            int(sums[index]) * (40 - remainder)
+            + int(sums[min(index + 1, len(sums) - 1)]) * remainder
+        )
+
+    lower, upper = percentile_numerator(1), percentile_numerator(39)
+    denominator = 40 * 100 * len(counts)
+    low, high = lower / denominator, upper / denominator
     positive, negative = int((values > 0).sum()), int((values < 0).sum())
     n = positive + negative
     p = min(1.0, 2 * sum(math.comb(n, k) for k in range(min(positive, negative) + 1)) / 2**n)
     return dict(
-        mean=float(values.mean()),
+        mean=int(counts.sum()) / (100 * len(counts)),
+        mean_count_numerator=int(counts.sum()),
+        mean_rate_denominator=100 * len(counts),
+        ci95_exact_numerators=[lower, upper],
+        ci95_exact_denominator=denominator,
         ci95_seed_bootstrap=[float(low), float(high)],
         exact_two_sided_sign_p=p,
         nonzero_seeds=n,
@@ -90,8 +107,8 @@ def analyze(plan, plan_sha, results):
     recent = summarize([r["recent_absorption_gain"] for r in contrasts])
     interaction = summarize([r["history_interaction"] for r in contrasts])
     primary_pass = (
-        primary["mean"] >= 0.05
-        and primary["ci95_seed_bootstrap"][0] > 0
+        primary["mean_count_numerator"] * 20 >= primary["mean_rate_denominator"]
+        and primary["ci95_exact_numerators"][0] > 0
         and primary["exact_two_sided_sign_p"] <= 0.05
     )
     all_zero = all(r["full_absorption_gain"] == 0 for r in contrasts)
@@ -101,7 +118,7 @@ def analyze(plan, plan_sha, results):
         decision = "UNINFORMATIVE_OR_FAILED_FEASIBILITY"
     elif primary_pass:
         decision = "REGISTERED_TWO_TASK_ABSORPTION_GAIN_SUPPORTED"
-    elif primary["ci95_seed_bootstrap"][1] < 0.05:
+    elif primary["ci95_exact_numerators"][1] * 20 < primary["ci95_exact_denominator"]:
         decision = "PRACTICAL_GAIN_NOT_SUPPORTED_IN_REGISTERED_CONFIGURATION"
     else:
         decision = "INCONCLUSIVE"
@@ -139,7 +156,7 @@ def main():
         plan_sha256=file_sha(args.plan),
         result_files=[{"sha256": file_sha(path), "path": str(path)} for path in args.result],
         analyzer_sha256=file_sha(Path(__file__)),
-        arithmetic_version="v1.1 integer counts before rate differences",
+        arithmetic_version="v1.2 exact success counts, mean threshold and linear percentiles",
     )
     with args.output.open("x") as handle:
         json.dump(result, handle, indent=2)
