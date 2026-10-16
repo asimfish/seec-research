@@ -289,7 +289,7 @@
     ],
     "snapshot_time_basis": "local saved audit receipt mtime, not live monitoring"
   },
-  "snapshot_utc": "2026-10-16T05:49:01.620647+00:00",
+  "snapshot_utc": "2026-10-16T06:14:04.563371+00:00",
   "expert_recovery_qualification": {
     "schema": "robomme-expert-recovery-public-v1",
     "date": "2026-10-16",
@@ -823,6 +823,838 @@
         "inference_sha256": "c7b150e9def3e71a8d50d36abf34b47be1dad8cba86b22f952cc5b1c7e782c82",
         "archive_sha256": "c7b7dc0a74e23e3a5cfc78f0a71d28fffa282e0e0ceaf58f2a1993f73ed90470",
         "archive_bytes": 2754568114
+      }
+    ]
+  },
+  "initial_full_reference": {
+    "status": "COMPLETE_INITIAL_REFERENCE_NOT_METHOD_EFFECT",
+    "plan_id": "robomme-absorption-eval-8eeead0ededca5c0",
+    "plan_sha256": "6c7470da67eb6ef724760fd9e948ea155e6733d28cd0c5326e5daaa913809ba7",
+    "source_result_sha256": "5f406b853329f6729e93892c75fd7a75ea29a247e2bb90fe71c8fb7f2b90b5be",
+    "view": "full_history_intervention_bc",
+    "phase": "before",
+    "training_updates": 0,
+    "training_seed": null,
+    "inference_seed": 7,
+    "completed": 100,
+    "missing": 0,
+    "aborted": 0,
+    "per_task": {
+      "PatternLock": {
+        "successes": 32,
+        "episodes": 50
+      },
+      "PickHighlight": {
+        "successes": 10,
+        "episodes": 50
+      }
+    },
+    "task_balanced_success": 0.42,
+    "scope": "two-task matched-study reference only; not a full-suite or method score",
+    "native_conditioning": "initial demonstration/video retained; zero additional expert interventions",
+    "checkpoint": "unchanged released FrameSamp+Modul",
+    "uncertainty": "one fixed initial policy and inference seed; no training-seed confidence interval",
+    "method_gain": "NOT_EVALUATED",
+    "cases": [
+      {
+        "task": "PatternLock",
+        "episode": 0,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 60
+      },
+      {
+        "task": "PatternLock",
+        "episode": 1,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 89
+      },
+      {
+        "task": "PatternLock",
+        "episode": 2,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 58
+      },
+      {
+        "task": "PatternLock",
+        "episode": 3,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 31
+      },
+      {
+        "task": "PatternLock",
+        "episode": 4,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 87
+      },
+      {
+        "task": "PatternLock",
+        "episode": 5,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 83
+      },
+      {
+        "task": "PatternLock",
+        "episode": 6,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 94
+      },
+      {
+        "task": "PatternLock",
+        "episode": 7,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 187
+      },
+      {
+        "task": "PatternLock",
+        "episode": 8,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 91
+      },
+      {
+        "task": "PatternLock",
+        "episode": 9,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 89
+      },
+      {
+        "task": "PatternLock",
+        "episode": 10,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 35
+      },
+      {
+        "task": "PatternLock",
+        "episode": 11,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 133
+      },
+      {
+        "task": "PatternLock",
+        "episode": 12,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 111
+      },
+      {
+        "task": "PatternLock",
+        "episode": 13,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 63
+      },
+      {
+        "task": "PatternLock",
+        "episode": 14,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 92
+      },
+      {
+        "task": "PatternLock",
+        "episode": 15,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 31
+      },
+      {
+        "task": "PatternLock",
+        "episode": 16,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 56
+      },
+      {
+        "task": "PatternLock",
+        "episode": 17,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 60
+      },
+      {
+        "task": "PatternLock",
+        "episode": 18,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 60
+      },
+      {
+        "task": "PatternLock",
+        "episode": 19,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 61
+      },
+      {
+        "task": "PatternLock",
+        "episode": 20,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 25
+      },
+      {
+        "task": "PatternLock",
+        "episode": 21,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 61
+      },
+      {
+        "task": "PatternLock",
+        "episode": 22,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 55
+      },
+      {
+        "task": "PatternLock",
+        "episode": 23,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 93
+      },
+      {
+        "task": "PatternLock",
+        "episode": 24,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 60
+      },
+      {
+        "task": "PatternLock",
+        "episode": 25,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 28
+      },
+      {
+        "task": "PatternLock",
+        "episode": 26,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 124
+      },
+      {
+        "task": "PatternLock",
+        "episode": 27,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 92
+      },
+      {
+        "task": "PatternLock",
+        "episode": 28,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 27
+      },
+      {
+        "task": "PatternLock",
+        "episode": 29,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 96
+      },
+      {
+        "task": "PatternLock",
+        "episode": 30,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 63
+      },
+      {
+        "task": "PatternLock",
+        "episode": 31,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 30
+      },
+      {
+        "task": "PatternLock",
+        "episode": 32,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 20
+      },
+      {
+        "task": "PatternLock",
+        "episode": 33,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 29
+      },
+      {
+        "task": "PatternLock",
+        "episode": 34,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 102
+      },
+      {
+        "task": "PatternLock",
+        "episode": 35,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 25
+      },
+      {
+        "task": "PatternLock",
+        "episode": 36,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 79
+      },
+      {
+        "task": "PatternLock",
+        "episode": 37,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 55
+      },
+      {
+        "task": "PatternLock",
+        "episode": 38,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 90
+      },
+      {
+        "task": "PatternLock",
+        "episode": 39,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 63
+      },
+      {
+        "task": "PatternLock",
+        "episode": 40,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 27
+      },
+      {
+        "task": "PatternLock",
+        "episode": 41,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 104
+      },
+      {
+        "task": "PatternLock",
+        "episode": 42,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 29
+      },
+      {
+        "task": "PatternLock",
+        "episode": 43,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 34
+      },
+      {
+        "task": "PatternLock",
+        "episode": 44,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 29
+      },
+      {
+        "task": "PatternLock",
+        "episode": 45,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 65
+      },
+      {
+        "task": "PatternLock",
+        "episode": 46,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 37
+      },
+      {
+        "task": "PatternLock",
+        "episode": 47,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 42
+      },
+      {
+        "task": "PatternLock",
+        "episode": 48,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 22
+      },
+      {
+        "task": "PatternLock",
+        "episode": 49,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 28
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 0,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 310
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 1,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 212
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 2,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 445
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 3,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 216
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 4,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 213
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 5,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 224
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 6,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 509
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 7,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 536
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 8,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 309
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 9,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 231
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 10,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 522
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 11,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 379
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 12,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 224
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 13,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 203
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 14,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 202
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 15,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 201
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 16,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 279
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 17,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 216
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 18,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 217
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 19,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 210
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 20,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 200
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 21,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 329
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 22,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 231
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 23,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 205
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 24,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 279
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 25,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 216
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 26,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 207
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 27,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 385
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 28,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 222
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 29,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 234
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 30,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "timeout",
+        "control_steps": 1300
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 31,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 564
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 32,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 220
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 33,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 219
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 34,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 229
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 35,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 196
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 36,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 307
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 37,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 203
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 38,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 378
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 39,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 384
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 40,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 279
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 41,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 215
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 42,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 529
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 43,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 566
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 44,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 219
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 45,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 216
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 46,
+        "status": "COMPLETED",
+        "success": true,
+        "outcome": "success",
+        "control_steps": 487
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 47,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 208
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 48,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 212
+      },
+      {
+        "task": "PickHighlight",
+        "episode": 49,
+        "status": "COMPLETED",
+        "success": false,
+        "outcome": "fail",
+        "control_steps": 225
       }
     ]
   }
