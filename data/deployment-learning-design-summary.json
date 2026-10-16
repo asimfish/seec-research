@@ -1,0 +1,42 @@
+{
+  "schema": "deployment-learning-design-summary-v1",
+  "observed_at": "2026-10-16T18:57:07.811630+00:00",
+  "status": "REVIEWED_DRAFT_NOT_NOVELTY_CERTIFIED",
+  "implementation_revision": "b3c1473c2e8d098d8dc3e237974d2c8a76507385",
+  "documentation_base_revision": "8628603fea6a412b8a5e6537ed155c755b6a8e52",
+  "model": "pi0.5 / FrameSamp+Modul",
+  "current_learning": "fixed-corpus student-state BC / one-round DAgger",
+  "history_control": "at most 32 uniformly spanning versus recent frames, 512 tokens; combined native demo and self history",
+  "selected_route": "A: existing strong history-DAgger system with cross-instance and teacher-removal diagnostics",
+  "candidate_route": "B: unimplemented public-information-conditioned sensing/recovery teacher; novelty unresolved",
+  "gaps": [
+    {
+      "id": "G1",
+      "status": "BROAD_FIRST_CLAIM_WITHDRAWN_NARROW_HYPOTHESIS_PENDING",
+      "question": "Can the student acquire the evidence needed for the correction after removing its teacher?",
+      "closest": [
+        "A2D",
+        "CritiQ/ReTRy",
+        "RoboTTT"
+      ],
+      "withdraw_if": "Matched nearest methods solve the same failure, all evidence is already in the fixed demo, or sensing is impossible."
+    },
+    {
+      "id": "G2",
+      "status": "BROAD_FIRST_CLAIM_WITHDRAWN_NARROW_HYPOTHESIS_PENDING",
+      "question": "Does absorbed experience preserve feedback use when a new policy generates different histories on fresh instances?",
+      "closest": [
+        "AD",
+        "DPT",
+        "LMPC",
+        "RoboTTT",
+        "Sirius-Fleet (method reading pending)"
+      ],
+      "withdraw_if": "Ordinary iterative history-DAgger or correction-sequence training explains the result, or prior work already covers the same setting."
+    }
+  ],
+  "evidence": "SSH-interrupted fixed trial has no complete method verdict; initial 100-case reference is retained separately",
+  "review_scope": "independent method/architecture document review only; not experimental approval",
+  "new_training_jobs": 0,
+  "proof_of_algorithmic_novelty": false
+}

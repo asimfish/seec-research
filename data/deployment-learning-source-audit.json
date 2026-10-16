@@ -1,0 +1,360 @@
+{
+  "schema": "deployment-learning-source-audit-v1",
+  "observed_at": "2026-10-16T18:57:30.288318+00:00",
+  "status": "BOUNDED_AUDIT_NOT_EXHAUSTIVE_NOVELTY_PROOF",
+  "sources": [
+    {
+      "id": "dagger",
+      "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+      "primary_url": "https://proceedings.mlr.press/v15/ross11a.html",
+      "fulltext_url": "https://proceedings.mlr.press/v15/ross11a/ross11a.pdf",
+      "fulltext_sha256": "17bdd6e049e64f09010b322f9e2d4fb5c744c33ff7ac99b4c4561e39bd9082a7",
+      "reading_depth": "fulltext_method_evaluation_targeted_appendices",
+      "fulltext_pending": false,
+      "source_code_reproduction": "NOT_RUN",
+      "sections_checked": [
+        "§2",
+        "§3 / Algorithm 3.1",
+        "§4",
+        "§5"
+      ],
+      "actual_inputs": "Observations/states induced by learner/expert mixture; queried expert actions.",
+      "objective_or_targets": "Supervised surrogate on aggregate learner-induced states.",
+      "updated_quantities": "Stationary student policy; dataset grows across rounds.",
+      "established_overlap": "Student-state collection and aggregation already established.",
+      "shared_limitations_status": "NOT_ESTABLISHED_AS_SHARED",
+      "unresolved_comparison": "History is an allowed policy input; this is not proof that DAgger cannot learn information gathering.",
+      "capabilities_not_reported": "unknown, not no",
+      "verbatim_quotes": []
+    },
+    {
+      "id": "sirius",
+      "title": "Robot Learning on the Job: Human-in-the-Loop Autonomy and Learning During Deployment",
+      "primary_url": "https://roboticsproceedings.org/rss19/p005.pdf",
+      "fulltext_url": "https://roboticsproceedings.org/rss19/p005.pdf",
+      "fulltext_sha256": "dd5333758953b6f0fa28db260c9201121a3c6aafa27fb9ae5d53bc1d9a4d4a6b",
+      "reading_depth": "fulltext_method_evaluation_targeted_appendices",
+      "fulltext_pending": false,
+      "source_code_reproduction": "NOT_RUN",
+      "sections_checked": [
+        "§III-A/B",
+        "§IV-A–D / Algorithm 1",
+        "§V",
+        "Appendix implementation tables"
+      ],
+      "actual_inputs": "Robot RGB and proprioception; demonstrations, autonomous actions, intervention and pre-intervention categories.",
+      "objective_or_targets": "Weighted behavioral cloning; intervention upweighting and pre-intervention suppression.",
+      "updated_quantities": "BC-RNN parameters and finite deployment memory across rounds.",
+      "established_overlap": "Deployment corrections improving autonomy and reducing human workload are prior art.",
+      "shared_limitations_status": "NOT_ESTABLISHED_AS_SHARED",
+      "unresolved_comparison": "Retaining failed observations as context must be distinguished from giving their actions zero loss.",
+      "capabilities_not_reported": "unknown, not no",
+      "verbatim_quotes": []
+    },
+    {
+      "id": "robottt",
+      "title": "RoboTTT: Context Scaling for Robot Policies",
+      "primary_url": "https://arxiv.org/html/2607.15275v1",
+      "fulltext_url": "https://arxiv.org/pdf/2607.15275v1",
+      "fulltext_sha256": "6e3cbcbc0ab4db0c20e693c905c9ff4e7f7afe726b15f8fb6dc3a6d7415e4ca0",
+      "reading_depth": "fulltext_method_evaluation_targeted_appendices",
+      "fulltext_pending": false,
+      "source_code_reproduction": "NOT_RUN",
+      "sections_checked": [
+        "§2",
+        "§3.1–3.4 / Eqs.1–5",
+        "§4 / DAgger Distillation",
+        "§5–6",
+        "Appendix A/B targeted"
+      ],
+      "actual_inputs": "Image, proprioception, language and action-chunk sequences; robot mistakes and human correction segments.",
+      "objective_or_targets": "Flow-matching targets only on corrections; failed actions remain context; self-supervised fast-weight updates.",
+      "updated_quantities": "Slow weights and fast-weight initialization in training; fast weights within rollout; reset each rollout.",
+      "established_overlap": "Failures-as-context, corrections-as-targets and recovery without a runtime human are directly implemented.",
+      "shared_limitations_status": "NOT_ESTABLISHED_AS_SHARED",
+      "unresolved_comparison": "Non-TTT backbones and changing benchmarks are not gaps; novel information-acquisition claims require additional evidence.",
+      "capabilities_not_reported": "unknown, not no",
+      "verbatim_quotes": []
+    },
+    {
+      "id": "lmpc",
+      "title": "Learning to Learn Faster from Human Feedback with Language Model Predictive Control",
+      "primary_url": "https://arxiv.org/html/2402.11450v1",
+      "fulltext_url": "https://arxiv.org/pdf/2402.11450v1",
+      "fulltext_sha256": "b2a767cdc78fe4fc348b9fe3e0a8036ecf06491ad3850afd0414c329548cefe0",
+      "reading_depth": "fulltext_method_evaluation_targeted_appendices",
+      "fulltext_pending": false,
+      "source_code_reproduction": "NOT_RUN",
+      "sections_checked": [
+        "§III-A–C",
+        "§IV",
+        "§V",
+        "Appendix VI-B/C targeted",
+        "§IV / Multiple Fine-tune Iterations",
+        "§V / Discussions"
+      ],
+      "actual_inputs": "Human-language feedback and robot reward-code conversations.",
+      "objective_or_targets": "Successful-session continuation; Rollouts predicts future exchanges, Skip predicts final code.",
+      "updated_quantities": "PaLM-2 slow parameters offline; conversation context and receding-horizon search online.",
+      "established_overlap": "Fast adaptation followed by offline absorption to improve future teachability already exists.",
+      "shared_limitations_status": "NOT_ESTABLISHED_AS_SHARED",
+      "unresolved_comparison": "Action-level vision control differs from code/feedback interface but alone supplies no methodological novelty.",
+      "capabilities_not_reported": "unknown, not no",
+      "verbatim_quotes": [],
+      "reported_limitation": "The paper reports no observed benefit from multiple ICL/fine-tuning cycles; this is its setting-specific finding, not a shared failure theorem."
+    },
+    {
+      "id": "ad",
+      "title": "In-context Reinforcement Learning with Algorithm Distillation",
+      "primary_url": "https://arxiv.org/abs/2210.14215",
+      "fulltext_url": "https://arxiv.org/pdf/2210.14215",
+      "fulltext_sha256": "f9809fde046e6ec4f1ad43ffe8007083938990bff7450794bfa4f3d2fe0d8f01",
+      "reading_depth": "fulltext_method_evaluation_targeted_appendices",
+      "fulltext_pending": false,
+      "source_code_reproduction": "NOT_RUN",
+      "sections_checked": [
+        "§3 / Algorithm 1",
+        "§4–5",
+        "§6",
+        "Appendix A/K targeted"
+      ],
+      "actual_inputs": "Multi-episode observations, executed actions and rewards from learning runs.",
+      "objective_or_targets": "Next-action likelihood over learning histories.",
+      "updated_quantities": "Sequence-model weights offline; context online without slow-weight gradients.",
+      "established_overlap": "Distilling a learning process rather than only a converged policy is prior art.",
+      "shared_limitations_status": "NOT_ESTABLISHED_AS_SHARED",
+      "unresolved_comparison": "Jointly changing collectors and datasets are a comparison question, not established AD failure.",
+      "capabilities_not_reported": "unknown, not no",
+      "verbatim_quotes": []
+    },
+    {
+      "id": "dpt",
+      "title": "Supervised Pretraining Can Learn In-Context Reinforcement Learning",
+      "primary_url": "https://arxiv.org/abs/2306.14892",
+      "fulltext_url": "https://arxiv.org/pdf/2306.14892",
+      "fulltext_sha256": "7b714eb66b09f82441d55ea29005c1aeb905cfb2a1fdcb0d30f1f3bc01eb1670",
+      "reading_depth": "fulltext_method_evaluation_targeted_appendices",
+      "fulltext_pending": false,
+      "source_code_reproduction": "NOT_RUN",
+      "sections_checked": [
+        "§3 / Algorithm 1",
+        "§4–5.3",
+        "§6.1–6.2 / Definition 6.1",
+        "Appendix A targeted"
+      ],
+      "actual_inputs": "Task interaction datasets plus query state; optimal or PPO action labels.",
+      "objective_or_targets": "Supervised query-action prediction conditioned on context.",
+      "updated_quantities": "Decision transformer parameters offline; interaction context online.",
+      "established_overlap": "Supervised acquisition of in-context adaptation and posterior-sampling behavior has direct precedent.",
+      "shared_limitations_status": "NOT_ESTABLISHED_AS_SHARED",
+      "unresolved_comparison": "Compliance/coverage and ideal-fit assumptions qualify theory; they do not imply empirical failure.",
+      "capabilities_not_reported": "unknown, not no",
+      "verbatim_quotes": [],
+      "reported_limitation": "Conclusion qualifies optimal-action pretraining and practical-versus-theoretical posterior-sampling differences."
+    },
+    {
+      "id": "a2d",
+      "title": "Robust Asymmetric Learning in POMDPs",
+      "primary_url": "https://proceedings.mlr.press/v139/warrington21a.html",
+      "fulltext_url": "https://proceedings.mlr.press/v139/warrington21a/warrington21a.pdf",
+      "fulltext_sha256": "7ebe8845e6d6e916e4ae5b5b64fd8c88347f6ae5344a83a566de6bc3f99aa36b",
+      "reading_depth": "fulltext_method_evaluation_targeted_appendices",
+      "fulltext_pending": false,
+      "source_code_reproduction": "NOT_RUN",
+      "sections_checked": [
+        "§2.2–2.4",
+        "§3 / Eqs.13–18",
+        "§4",
+        "§5 / Algorithm 1 / Eq.27",
+        "§6"
+      ],
+      "actual_inputs": "Privileged state for expert; observation/action window as learner belief proxy.",
+      "objective_or_targets": "Refine expert for expected return of its implicit partially observed imitator; imitation projection.",
+      "updated_quantities": "Expert via policy gradient, student via asymmetric imitation, value estimators.",
+      "established_overlap": "Teacher information mismatch and adapting teaching to student observability already addressed.",
+      "shared_limitations_status": "NOT_ESTABLISHED_AS_SHARED",
+      "unresolved_comparison": "Belief-conditioned recovery teaching is not new by itself; full theorem/appendix audit remains pending.",
+      "capabilities_not_reported": "unknown, not no",
+      "verbatim_quotes": []
+    },
+    {
+      "id": "critiq",
+      "title": "Distilling Realizable Students from Unrealizable Teachers",
+      "primary_url": "https://arxiv.org/html/2505.09546v1",
+      "fulltext_url": "https://arxiv.org/pdf/2505.09546v1",
+      "fulltext_sha256": "cb5a51de5be41d1664c5c4d3d2a975b8ba5db62674140a4bd1701926cf6fd18c",
+      "reading_depth": "fulltext_method_evaluation_targeted_appendices",
+      "fulltext_pending": false,
+      "source_code_reproduction": "NOT_RUN",
+      "sections_checked": [
+        "§II",
+        "§III-A / Algorithm 1 / Eqs.1–7",
+        "§III-B / Algorithm 2",
+        "§IV",
+        "§V–VI"
+      ],
+      "actual_inputs": "Privileged-context teacher and context-hidden student; discriminator trajectories; teacher recovery states.",
+      "objective_or_targets": "CritiQ selective corrections plus discriminator objective; ReTRy RL with adaptive recovery resets.",
+      "updated_quantities": "Student, discriminator, or RL/reset buffer depending on method.",
+      "established_overlap": "Privileged action conflicts, correction timing and recovery initialization already addressed.",
+      "shared_limitations_status": "NOT_ESTABLISHED_AS_SHARED",
+      "unresolved_comparison": "CritiQ criticality definitions vary in prose; reimplementation must resolve discriminator labels/sign rather than claiming a guarantee.",
+      "capabilities_not_reported": "unknown, not no",
+      "verbatim_quotes": []
+    },
+    {
+      "id": "robomme",
+      "title": "RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies",
+      "primary_url": "https://robomme.github.io/index.html",
+      "fulltext_url": "https://arxiv.org/pdf/2603.04639",
+      "fulltext_sha256": "5e8a749ecea8a168f75d85c78ef09dc70260b2f43ea299779124b10ab4b76dd0",
+      "reading_depth": "fulltext_method_evaluation_targeted_appendices",
+      "fulltext_pending": false,
+      "source_code_reproduction": "NOT_RUN",
+      "sections_checked": [
+        "§3",
+        "§4.1–4.2",
+        "§5",
+        "Appendix A / B.2 targeted"
+      ],
+      "actual_inputs": "Current images/proprioception/instruction and native initial demonstration/history.",
+      "objective_or_targets": "Native action prediction with alternative memory representations/integrations.",
+      "updated_quantities": "π0.5 memory-augmented model training; causal memory during rollout.",
+      "established_overlap": "Frame sampling and memory-as-modulator are upstream contributions we reuse.",
+      "shared_limitations_status": "NOT_ESTABLISHED_AS_SHARED",
+      "unresolved_comparison": "Current history-span comparison can change demo retention; it cannot isolate self-feedback acquisition.",
+      "capabilities_not_reported": "unknown, not no",
+      "verbatim_quotes": []
+    },
+    {
+      "id": "soar_robot",
+      "title": "Autonomous Improvement of Instruction Following Skills via Foundation Models",
+      "primary_url": "https://auto-improvement.github.io/",
+      "fulltext_url": "https://arxiv.org/pdf/2407.20635",
+      "fulltext_sha256": "42932d57ddee47699e9a4ddb2162a02ec4bd440c9ec2fbe90b079e7eb27d8eb2",
+      "reading_depth": "fulltext_method_evaluation_targeted_appendices",
+      "fulltext_pending": false,
+      "source_code_reproduction": "NOT_RUN",
+      "sections_checked": [
+        "§2",
+        "§3 / Components 1–4",
+        "§4",
+        "Appendix B/H targeted"
+      ],
+      "actual_inputs": "VLM task proposals, generated image goals, autonomous robot data and VLM success labels.",
+      "objective_or_targets": "Goal-conditioned behavioral cloning with hindsight goals and autonomous data.",
+      "updated_quantities": "Goal-conditioned policy fine-tuned; semantic proposal/generation components reused.",
+      "established_overlap": "Autonomous robotic experience generation and policy improvement already exist.",
+      "shared_limitations_status": "NOT_ESTABLISHED_AS_SHARED",
+      "unresolved_comparison": "This is robot SOAR, arXiv:2407.20635, not the separate mathematics experience-generation work.",
+      "capabilities_not_reported": "unknown, not no",
+      "verbatim_quotes": [],
+      "reported_limitation": "Appendix H identifies using unsuccessful trajectories and acquiring skills absent from pretraining as future directions."
+    },
+    {
+      "id": "ideascientist",
+      "title": "IdeaScientist: Orchestrating Agents for Grounded Scientific Ideation",
+      "primary_url": "https://arxiv.org/pdf/2610.04074",
+      "fulltext_url": "https://arxiv.org/pdf/2610.04074",
+      "fulltext_sha256": "f1e4954c2de02ba477ad3f18a1475fe1362aebe30a5e66feb0ccae4618fe3b37",
+      "reading_depth": "requested_gap_finder_sections_only",
+      "fulltext_pending": false,
+      "source_code_reproduction": "NOT_RUN",
+      "sections_checked": [
+        "§3.1",
+        "Appendix A.1",
+        "Appendix A.2 / Table 3"
+      ],
+      "actual_inputs": "Problem setting and challenge; same-problem nearest-neighbor evidence.",
+      "objective_or_targets": "Grounded gap with limitation, importance and observable evidence route; at most two per axis.",
+      "updated_quantities": "Research artifacts; not a robotics algorithm.",
+      "established_overlap": "Audit procedure only; not evidence that our proposed robotics gaps exist.",
+      "shared_limitations_status": "NOT_ESTABLISHED_AS_SHARED",
+      "unresolved_comparison": "We adopt the audit schema without reproducing the agent system.",
+      "capabilities_not_reported": "unknown, not no",
+      "verbatim_quotes": []
+    }
+  ],
+  "followup_queue": [
+    {
+      "id": "iwr",
+      "title": "Human-in-the-Loop Imitation Learning using Remote Teleoperation",
+      "primary_url": "https://arxiv.org/abs/2012.06733",
+      "discovered_via": "Sirius related work and bibliography",
+      "reading_depth": "abstract_and_author_project_method",
+      "fulltext_pending": true,
+      "known": "Intervention and autonomous samples receive equal sampling mass.",
+      "remaining": "Native loss details and sequence semantics require full-text/code audit.",
+      "capabilities_not_reported": "unknown, not no"
+    },
+    {
+      "id": "sirius_fleet",
+      "title": "Multi-Task Interactive Robot Fleet Learning with Visual World Models",
+      "primary_url": "https://proceedings.mlr.press/v270/liu25g.html",
+      "discovered_via": "forward search from Sirius",
+      "reading_depth": "primary_abstract",
+      "fulltext_pending": true,
+      "known": "World-model anomaly monitoring and adaptive human requests across deployment updates.",
+      "remaining": "Full algorithm and workload accounting remain unknown.",
+      "capabilities_not_reported": "unknown, not no"
+    },
+    {
+      "id": "gmps",
+      "title": "Guided Meta-Policy Search",
+      "primary_url": "https://arxiv.org/abs/1904.00956",
+      "discovered_via": "meta-imitation same-problem search",
+      "reading_depth": "primary_abstract",
+      "fulltext_pending": true,
+      "known": "Expert-guided meta-policy training and distribution coverage are relevant.",
+      "remaining": "Do not mark cross-instance acquisition absent without full method audit.",
+      "capabilities_not_reported": "unknown, not no"
+    },
+    {
+      "id": "info_rewards",
+      "title": "Learning to Explore in POMDPs with Informational Rewards",
+      "primary_url": "https://proceedings.mlr.press/v235/xie24a.html",
+      "discovered_via": "same-challenge search after A2D/CritiQ",
+      "reading_depth": "primary_abstract",
+      "fulltext_pending": true,
+      "known": "Information-gathering training from hindsight or privileged information.",
+      "remaining": "Potential strong overlap for B; full mechanism and benchmark alignment pending.",
+      "capabilities_not_reported": "unknown, not no"
+    },
+    {
+      "id": "adaptive_information",
+      "title": "Adaptive Information Gathering via Imitation Learning",
+      "primary_url": "https://www.roboticsproceedings.org/rss13/p41.html",
+      "discovered_via": "same-challenge search from privileged imitation",
+      "reading_depth": "primary_abstract",
+      "fulltext_pending": true,
+      "known": "Clairvoyant training oracle for history-dependent sensing policy.",
+      "remaining": "Potential overlap for evidence-acquisition teacher; full method pending.",
+      "capabilities_not_reported": "unknown, not no"
+    }
+  ],
+  "reading_policy": {
+    "fulltext_pending": "retrieval pending; false does not mean every appendix was read",
+    "fulltext_method_evaluation_targeted_appendices": "Method/evaluation inspected using full text; targeted appendices only. Not full theorem/code replication.",
+    "absence": "Uninspected capabilities are unknown, never no."
+  },
+  "search_axes": [
+    {
+      "id": "G1",
+      "queries": [
+        "robot information gathering privileged teacher student adaptive DAgger POMDP",
+        "privileged action conflict selective correction recovery teacher CritiQ",
+        "RoboTTT failure context correction target teacher removal",
+        "POMDP informational rewards hindsight privileged exploration"
+      ]
+    },
+    {
+      "id": "G2",
+      "queries": [
+        "robot deployment learning intervention failure context DAgger distillation",
+        "robot meta imitation interaction history teachability LMPC",
+        "Sirius Fleet human intervention policy update",
+        "Guided Meta-Policy Search task learning histories"
+      ]
+    }
+  ]
+}
