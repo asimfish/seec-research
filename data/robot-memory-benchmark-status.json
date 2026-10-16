@@ -1657,5 +1657,44 @@
         "control_steps": 225
       }
     ]
+  },
+  "execution_observation": {
+    "schema": "robomme-execution-observation-v1",
+    "observed_at": "2026-10-16T18:46:51.929169+00:00",
+    "last_verified": "2026-10-16T18:46:51.929169+00:00",
+    "status": "ABORTED_NO_COMPLETE_SCIENTIFIC_CONCLUSION",
+    "reason_code": "SSH_READ_EXIT_255",
+    "reason": "SSH connection reset while reading the recent-history initial reference; infrastructure interruption, not a method outcome",
+    "plan_id": "robomme-absorption-eval-8eeead0ededca5c0",
+    "plan_sha256": "6c7470da67eb6ef724760fd9e948ea155e6733d28cd0c5326e5daaa913809ba7",
+    "coordinator_source_revision": "71b600ecc3474a804c94252d8754a62bca77aabe",
+    "research_snapshot_revision": "b3c1473c2e8d098d8dc3e237974d2c8a76507385",
+    "coordinator_record_sha256": "a692b261f166ae5ef0fdbc75b5498e76d77b5e3d77e005e1588d2bb750b7dbfd",
+    "coverage": {
+      "planned_model_cells": 14,
+      "archived_complete_model_cells": 1,
+      "archived_complete_episodes": 100,
+      "planned_episodes": 1400,
+      "coverage_scope": "local coordinator archive only; remote jobs not re-inventoried"
+    },
+    "science": {
+      "analysis": "ABSENT",
+      "verification": "ABSENT",
+      "final_report": "ABSENT",
+      "method_gain": "NO_COMPLETE_SCIENTIFIC_CONCLUSION"
+    },
+    "retained_initial_reference": {
+      "PatternLock": {
+        "successes": 32,
+        "episodes": 50
+      },
+      "PickHighlight": {
+        "successes": 10,
+        "episodes": 50
+      },
+      "task_balanced_success": 0.42,
+      "scope": "fixed released checkpoint and inference seed; two tasks only"
+    },
+    "supervision": "Experiment supervisor must inventory completed work and exact export availability before deciding on protocol-preserving recovery. No jobs changed by this observation."
   }
 }
