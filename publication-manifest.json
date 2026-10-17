@@ -650,8 +650,8 @@
       "bytes": 39696
     },
     "data/robot-memory-benchmark-status.json": {
-      "sha256": "658fae607ab596e315586885afb29850a7224900ee511c03c89dde6a500fce59",
-      "bytes": 61904
+      "sha256": "d41ec10d844f25cc4306e6726f529f4292094f3cf292041a6e08fd5378ee8872",
+      "bytes": 62025
     },
     "data/robot-program-transform-check.json": {
       "sha256": "8368d8edaabd35ba67d8634dcdd955caf7644ff8079846a2785c990d10b59740",
@@ -1138,8 +1138,8 @@
       "bytes": 15302
     },
     "data/robomme-execution-observation.json": {
-      "sha256": "bcdec08c7880b2c457d9706b03c3a63456fe8af72e0a9f79f75bdb95ac7c35f1",
-      "bytes": 15489
+      "sha256": "0cf8b7a9dc3793b487b162de2660c9a5375197d37f1460a0f51ed50eb3f4cefd",
+      "bytes": 15608
     }
   },
   "research_revision": "9697cfc4f026b7a9d8fe7a719f0ddcff55ec8a06",
