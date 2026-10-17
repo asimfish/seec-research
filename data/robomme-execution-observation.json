@@ -1,26 +1,26 @@
 {
   "schema": "robomme-execution-observation-v1",
-  "observed_at": "2026-10-17T08:20:18.391884+00:00",
-  "last_verified": "2026-10-17T08:20:18.391884+00:00",
-  "status": "FIRST_PAIR_COMPLETE_NEGATIVE_SINGLE_SEED_FULL_STUDY_INCOMPLETE",
-  "reason_code": "REGISTERED_FINAL10000EMA_SEED7_100CASE_NEGATIVE",
-  "reason": "Independently verified full first comparison:42/100before versus14/100after,-28percentagepoints. No complete six-seed conclusion. Execution paused after validated cell per preregistered scheduling guard.",
+  "observed_at": "2026-10-17T10:30:59.230322+00:00",
+  "last_verified": "2026-10-17T10:30:59.230322+00:00",
+  "status": "REGISTERED_EVALUATION_RESUMED_AFTER_NEGATIVE_FIRST_PAIR",
+  "reason_code": "SYNCHRONOUS_MAX25_CASE_DRAIN_FIRST_NEW_CASE_COMPLETED",
+  "reason": "Frozen evaluation resumed with independently reviewed case-batch scheduling. recent-before78/100:77reused+1newcomplete;global278/1400. Seed7full42→14negative comparison unchanged;no complete six-seed conclusion.",
   "plan_id": "robomme-absorption-eval-8eeead0ededca5c0",
   "plan_sha256": "6c7470da67eb6ef724760fd9e948ea155e6733d28cd0c5326e5daaa913809ba7",
-  "coordinator_source_revision": "74ac1e91c3a2b55a2429075f62e9d654c221f9c1",
+  "coordinator_source_revision": "262876882b488eb9c5a8561df4160a5ebd863d80",
   "research_snapshot_revision": "b3c1473c2e8d098d8dc3e237974d2c8a76507385",
-  "coordinator_record_sha256": "3ba80d59c9d53ed68721514e4d2bcd84b7e2dd011a7bdccab4dffb15ae12bb46",
+  "coordinator_record_sha256": "1c9a9859885e1f4dbd718699615ee568d0ebd348062e198bd598612b8d3cf6c3",
   "coverage": {
     "planned_model_cells": 14,
     "archived_complete_model_cells": 2,
     "archived_complete_episodes": 200,
     "planned_episodes": 1400,
-    "coverage_scope": "100full-before+100trained-full-seed7+77recent-before uniquecomplete;1123unclosed.7unclosedinfra case slots belong to recent-before parents;historical attempts retained separately.",
+    "coverage_scope": "100full-before+100trained-full-seed7+78recent-before uniquecomplete;1122unclosed. Historicalinfra attempts retained separately;not new scientific samples.",
     "remote_complete_model_cells": 2,
-    "remote_complete_episodes": 277,
-    "remote_infrastructure_aborted_episodes": 7,
+    "remote_complete_episodes": 278,
+    "remote_infrastructure_aborted_episodes": 6,
     "local_partial_completed_case_receipts": 77,
-    "remote_remaining_unclosed_episodes": 1123
+    "remote_remaining_unclosed_episodes": 1122
   },
   "science": {
     "analysis": "ABSENT",
@@ -43,7 +43,7 @@
     "task_balanced_success": 0.42,
     "scope": "fixed released checkpoint and inference seed; two tasks only"
   },
-  "supervision": "First100case comparison independentlyverified anddurable. Source-only240batch action/currentstate transform auditPASS;no GPU/development/val diagnostic run. CauseofnegativegainUNKNOWN;20stepteacherfragmentsnotterminalverified. Remainingstudy paused at reviewedboundary;no resultdependent seed/checkpointchange.",
+  "supervision": "ReviewedPR7 resumes all14registeredcells,seeds/cases/models/budgets unchanged. NewcompletecasePickHighlight-val30;nextPatternLock-val33started. Mostrecent observation isdated,notlive. No six-seed conclusion or diagnosed regressioncause. Source/dev diagnostic separately preregistered;no model outputs yet.",
   "source_inventory_observed_at": "2026-10-17T00:25:49.039360+00:00",
   "source_inventory_sha256": "a9e9f79c056bbb84bc1c75f42932a06f641d249ee8956b6c076095659727f9d2",
   "durable_export_index_sha256": "e6c4e1736c05f9aef172bc201261a447fdb080933542a620a01748ffc27b7e8a",
@@ -210,9 +210,10 @@
     {
       "cell": "before-recent_history_intervention_bc",
       "planned_cases": 100,
-      "completed_cases": 77,
-      "infrastructure_aborted_cases": 7,
-      "not_started_cases": 16
+      "completed_cases": 78,
+      "infrastructure_aborted_cases": 6,
+      "not_started_cases": 16,
+      "remaining_unclosed_cases": 22
     },
     {
       "cell": "after-full_history_intervention_bc-seed-7",
@@ -594,5 +595,15 @@
       "Registered wholehistory binding retained;entireh5filesnotrehashed",
       "Doesnot prove labeloptimality or continuation success;forgetting and dataquality remain hypotheses"
     ]
+  },
+  "recovery_execution": {
+    "pr": "https://github.com/asimfish/robocore/pull/7",
+    "head": "262876882b488eb9c5a8561df4160a5ebd863d80",
+    "independent_review_sha256": "9740d3fa8a592d6e129de16a769e2548cb22ad905f73089917e2b9d5c71d7613",
+    "max_new_cases_per_service": 25,
+    "execution_config_sha256": "6c1e70a98dddcb7ca5c2a08d8b86f5f5b3df3367b0b6ee3f9715230147137145",
+    "scope": "Synchronousworkers→artifactarchive→service.wait→nextmanifest;mitigationnotrootcausefix",
+    "observed_first_case": "PickHighlight-val030COMPLETED;newPatternLock-val033active",
+    "new_infra_aborts": 0
   }
 }
