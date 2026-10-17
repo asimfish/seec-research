@@ -1,7 +1,7 @@
 {
   "schema": "robomme-execution-observation-v1",
-  "observed_at": "2026-10-17T03:10:05.688301+00:00",
-  "last_verified": "2026-10-17T03:10:05.688301+00:00",
+  "observed_at": "2026-10-17T03:17:16.102442+00:00",
+  "last_verified": "2026-10-17T03:17:16.102442+00:00",
   "status": "ABORTED_NO_COMPLETE_SCIENTIFIC_CONCLUSION",
   "reason_code": "WEBSOCKET_KEEPALIVE_TIMEOUT_RECURRED",
   "reason": "Second continuation interrupted after seven client WebSocket keepalive timeouts; no trained model evaluated. Root-cause diagnosis active.",
@@ -20,7 +20,7 @@
     "remote_complete_episodes": 177,
     "remote_infrastructure_aborted_episodes": 7,
     "remote_not_started_episodes": 1216,
-    "local_partial_completed_case_receipts": 44
+    "local_partial_completed_case_receipts": 77
   },
   "science": {
     "analysis": "ABSENT",
@@ -299,11 +299,10 @@
   "recovery": {
     "status": "ABORTED_SECOND_CONTINUATION_DIAGNOSING_WEBSOCKET",
     "pull_request": "https://github.com/asimfish/robocore/pull/4",
-    "new_simulator_work_started": false,
     "original_run2_overwritten": false,
     "worker_retries": "no automatic worker retry; only explicit continuation of unfinished registered cases",
     "exports_durable": 12,
-    "local_export_replication": "IN_PROGRESS_NOT_ALL_VERIFIED",
+    "local_export_replication": "ALL_TWELVE_LOCAL_EXACT_REPLICAS_VERIFIED",
     "shared_reference_800": "UNTOUCHED_SEPARATE_STUDY",
     "ssh_connectivity": "mainskill and tianyiyun-30109 exit0 at2026-10-17T00:23:16Z",
     "reviewed_commit": "36ca96e347aecb2a63361b8b17e47b129fad6bb8",
@@ -312,10 +311,12 @@
     "local_replicas_reverified": 12,
     "original_runtime_directory_error": "Initial all-reuse packaging did not start because launch-log parent was absent; explicit evidence-backed submission after creating task directory; original receipt retained",
     "independent_verifier": "STOPPED_ON_INFRASTRUCTURE_ABORT",
-    "reporter": "NO_REPORT_GENERATED"
+    "reporter": "NO_REPORT_GENERATED",
+    "simulator_work_ever_started": true,
+    "simulator_work_currently_active": false,
+    "runtime_observation_pull_request": "https://github.com/asimfish/robocore/pull/5"
   },
   "recovery_coordinator_record_sha256": "57ea7e7edb3e5df8031eb91d452a2b9ed2d5953c147964c217ebc8cfd5e2ea1e",
-  "local_replica_snapshot_sha256": "1a42844081b7e757acde5610cf3e35db1413bdad452fe03a99fc5b0e22bf708a",
   "second_abort_evidence_sha256": "db4aa2491f241fa29884c68d75fe671f83aa98dbbca5bd7bb669d158e104b46c",
   "incidents": [
     {
@@ -331,5 +332,9 @@
       "newly_completed_recent_cases": 33,
       "infrastructure_aborted_attempts": 7
     }
-  ]
+  ],
+  "historical_local_replica_snapshot_sha256": "1a42844081b7e757acde5610cf3e35db1413bdad452fe03a99fc5b0e22bf708a",
+  "historical_local_replica_snapshot_note": "Earlier 00:45 snapshot; superseded by all-12 reconciliation.",
+  "local_replica_snapshot_sha256": "34df7447fe7ef57ef068326afba28ab3250740239ac6214d25497e84beebd2e9",
+  "local_replica_snapshot_scope": "ALL_TWELVE_LOCAL_EXACT_REPLICAS_VERIFIED; preserves prior original copy interruption receipts; no optimizer state"
 }
