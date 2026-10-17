@@ -108,7 +108,8 @@
     "Public-frame equality covers stored front RGB, wrist RGB and packed float32 seven-joint-plus-one-gripper state; hidden simulator state, unrecorded eef fields and language bytes are outside that frame hash. Task/source/plan identities bind the case.",
     "Action equality is exact for recorded numeric lists canonicalized as little-endian float64 arrays; it is not an assertion that the old runtime native array dtype was archived.",
     "Reset/construction-internal simulator steps remain uninstrumented/unknown, not zero; recorded registered controls are exact.",
-    "No population/generalization success-rate claim follows from these selected source diagnostics. Root cause of the main single-seed degradation remains UNKNOWN."
+    "No population/generalization success-rate claim follows from these selected source diagnostics. Root cause of the main single-seed degradation remains UNKNOWN.",
+    "Original C query provenance:3successful source episodes and1later source failure; fixed-grid/decision-coverage sampling is not a failure detector. Successful expert continuations do not by themselves establish recovery from a failed query state."
   ],
   "student_takeover_detail": {
     "observed_at": "2026-10-17T13:26:29.287673+00:00",
@@ -260,5 +261,69 @@
       "raw_result_sha256": "f192120e79414185af01bf8a37dcda4ae05fe8b788da64cdc6a796ddbadaa128"
     },
     "samehost_continuation": "Reviewedoneexplicitinfrastructurecontinuation;originalfailurepreserved,nocase/model/budgetchangeorautomaticretry"
+  },
+  "original_query_provenance": {
+    "audit_sha256": "520201c5cec38594c317e36500e80667a2f1dfd428843e195cc51d836dfc47fd",
+    "independent_review_sha256": "4594c4f6d4ef03f2ff2d3c78b2f3cc6ceafeb79da9c07bfb6e3c7fda879b6b43",
+    "scope": "Four fixed C queries only. Student-state oracle labels, not established failure-triggered recovery demonstrations.",
+    "original_source_successes": 3,
+    "original_source_cases": 4,
+    "failure_triggered_queries": 0,
+    "rows": [
+      {
+        "case": "PatternLock-train-001",
+        "original_source_success": true,
+        "original_source_terminal_status": "success",
+        "source_control_steps": 58,
+        "query_control_anchor": 16,
+        "query_public_anchor": 79,
+        "query_plan_id": "robomme-student-query-da640aedff11ff60",
+        "query_plan_sha256": "859b653470fe0ecf740253f4d67f23557dcbb0352c2613e7d9426fd98a994b1a",
+        "query_selection_rule": "Original prospective fixed grid controls0,16,32,48,64; independent of source success.",
+        "query_original_success": null,
+        "query_original_terminal_evaluated": false
+      },
+      {
+        "case": "PatternLock-train-002",
+        "original_source_success": false,
+        "original_source_terminal_status": "fail",
+        "source_control_steps": 110,
+        "query_control_anchor": 48,
+        "query_public_anchor": 178,
+        "query_plan_id": "robomme-student-query-a01ab7e44773d559",
+        "query_plan_sha256": "e9f9c82f5bb143346b819a6fde4565f0e2e64d0a669fb08b2ff7b4ba7ebca656",
+        "query_selection_rule": "Original prospective fixed grid controls0,16,32,48,64; independent of source success.",
+        "query_original_success": null,
+        "query_original_terminal_evaluated": false
+      },
+      {
+        "case": "PickHighlight-train-001",
+        "original_source_success": true,
+        "original_source_terminal_status": "success",
+        "source_control_steps": 215,
+        "query_control_anchor": 112,
+        "query_public_anchor": 112,
+        "query_plan_id": "robomme-student-query-02cef880f215044b",
+        "query_plan_sha256": "68437d7788c39e60e5afe898ee9cc705488cbc14897df96b3ff69d3a96927c92",
+        "query_selection_rule": "Post-coverage-audit dense supplement: every actual source policy decision after control64, stride16, no outcome selection; not part of original prospective grid.",
+        "query_original_success": null,
+        "query_original_terminal_evaluated": false
+      },
+      {
+        "case": "PickHighlight-train-002",
+        "original_source_success": true,
+        "original_source_terminal_status": "success",
+        "source_control_steps": 433,
+        "query_control_anchor": 224,
+        "query_public_anchor": 224,
+        "query_plan_id": "robomme-student-query-cf27b12a8154fbb3",
+        "query_plan_sha256": "950cd7842d0e1d5fedadd63dd930f71a58c35b9f3d9eaead933c0e911aed8aab",
+        "query_selection_rule": "Post-coverage-audit dense supplement: every actual source policy decision after control64, stride16, no outcome selection; not part of original prospective grid.",
+        "query_original_success": null,
+        "query_original_terminal_evaluated": false
+      }
+    ],
+    "selection_note": "C uses the upper-middle eligible anchor (sorted anchors[len//2]) from the first two source instances per task; median is not the average of the two middle anchors.",
+    "interpretation": "Three original episodes ended successfully and one failed later. All four queried states were ongoing, and all original20stepqueries had no terminal outcome. Teacher terminal success does not establish a failed query state."
   }
 }
