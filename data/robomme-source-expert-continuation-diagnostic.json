@@ -324,6 +324,9 @@
       }
     ],
     "selection_note": "C uses the upper-middle eligible anchor (sorted anchors[len//2]) from the first two source instances per task; median is not the average of the two middle anchors.",
-    "interpretation": "Three original episodes ended successfully and one failed later. All four queried states were ongoing, and all original20stepqueries had no terminal outcome. Teacher terminal success does not establish a failed query state."
+    "interpretation": "Three original episodes ended successfully and one failed later. All four queried states were ongoing, and all original20stepqueries had no terminal outcome. Teacher terminal success does not establish a failed query state.",
+    "observed_at": "2026-10-17T13:48:06.315644+00:00",
+    "last_verified": "2026-10-17T13:52:05.673825+00:00",
+    "timestamp_scope": "Original source/query provenance supplement; top-level timestamps belong to the earlier continuation diagnostic phase."
   }
 }
