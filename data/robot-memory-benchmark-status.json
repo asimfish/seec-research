@@ -88,7 +88,7 @@
   "gradient_updates": 120016,
   "released_policy_evaluation": "IN_PROGRESS_VALIDATION",
   "method_efficacy": "NOT_RUN",
-  "scope": "12fixedmodels/durableexports;264/1400uniquecomplete;87reused13pendingrunning;all3abortsretained;no complete trainedcomparison",
+  "scope": "12trainedexports;277/1400uniquecomplete;firstfullseed7independentlyverifiednegative42to14;6seedstudyincomplete",
   "additional_archive_boundary_tests_passed": 6,
   "reference_model": {
     "repository": "Yinpei/perceptual-framesamp-modul",
@@ -1660,33 +1660,36 @@
   },
   "execution_observation": {
     "schema": "robomme-execution-observation-v1",
-    "observed_at": "2026-10-17T07:37:37.765968+00:00",
-    "last_verified": "2026-10-17T07:37:37.765968+00:00",
-    "status": "EVALUATION_RESUMED_AFTER_THIRD_INFRASTRUCTURE_ABORT",
-    "reason_code": "REUSE87_ONLY13_UNCLOSED_FRESH_SERVICE_PAUSE_AFTER_COMPLETE_CELL",
-    "reason": "Reviewed PR6 schedule;87 complete reused and13 unclosed running on exact final10k;all14 retained;no complete trained comparison.",
+    "observed_at": "2026-10-17T08:20:18.391884+00:00",
+    "last_verified": "2026-10-17T08:20:18.391884+00:00",
+    "status": "FIRST_PAIR_COMPLETE_NEGATIVE_SINGLE_SEED_FULL_STUDY_INCOMPLETE",
+    "reason_code": "REGISTERED_FINAL10000EMA_SEED7_100CASE_NEGATIVE",
+    "reason": "Independently verified full first comparison:42/100before versus14/100after,-28percentagepoints. No complete six-seed conclusion. Execution paused after validated cell per preregistered scheduling guard.",
     "plan_id": "robomme-absorption-eval-8eeead0ededca5c0",
     "plan_sha256": "6c7470da67eb6ef724760fd9e948ea155e6733d28cd0c5326e5daaa913809ba7",
     "coordinator_source_revision": "74ac1e91c3a2b55a2429075f62e9d654c221f9c1",
     "research_snapshot_revision": "b3c1473c2e8d098d8dc3e237974d2c8a76507385",
-    "coordinator_record_sha256": "4c5a184654c2397bcda9bec93ef47a1e5450bc8eda616e20adc947bb181ef9fd",
+    "coordinator_record_sha256": "3ba80d59c9d53ed68721514e4d2bcd84b7e2dd011a7bdccab4dffb15ae12bb46",
     "coverage": {
       "planned_model_cells": 14,
-      "archived_complete_model_cells": 1,
-      "archived_complete_episodes": 100,
+      "archived_complete_model_cells": 2,
+      "archived_complete_episodes": 200,
       "planned_episodes": 1400,
-      "coverage_scope": "100full-before +77recent-before +87trained-full-seed7 unique complete;1136 unclosed.8 unresolved current infra case slots across recent-before andseed7; prior attempts retained separately. No partial trained success rate.",
-      "remote_complete_model_cells": 1,
-      "remote_complete_episodes": 264,
-      "remote_infrastructure_aborted_episodes": 8,
-      "local_partial_completed_case_receipts": 164,
-      "remote_remaining_unclosed_episodes": 1136
+      "coverage_scope": "100full-before+100trained-full-seed7+77recent-before uniquecomplete;1123unclosed.7unclosedinfra case slots belong to recent-before parents;historical attempts retained separately.",
+      "remote_complete_model_cells": 2,
+      "remote_complete_episodes": 277,
+      "remote_infrastructure_aborted_episodes": 7,
+      "local_partial_completed_case_receipts": 77,
+      "remote_remaining_unclosed_episodes": 1123
     },
     "science": {
       "analysis": "ABSENT",
       "verification": "ABSENT",
       "final_report": "ABSENT",
-      "method_gain": "NO_COMPLETE_SCIENTIFIC_CONCLUSION"
+      "method_gain": "SEED7_DESCRIPTIVE_NEGATIVE_28PP;REGISTERED_6SEED_CONCLUSION_PENDING",
+      "first_pair_status": "COMPLETE_SINGLE_SEED_DESCRIPTIVE_COMPARISON",
+      "first_pair_verification": "INDEPENDENT_PASS",
+      "first_pair_public_result": "data/robomme-first-pair-seed7.json"
     },
     "retained_initial_reference": {
       "PatternLock": {
@@ -1700,7 +1703,7 @@
       "task_balanced_success": 0.42,
       "scope": "fixed released checkpoint and inference seed; two tasks only"
     },
-    "supervision": "Source evidence87 validated and durable-sealed;13 remaining use original worker/model/GPU/actions/horizon/timeout;fresh service requalified;pause only after complete100-cell archive. New runtime output uses local NVMe staging, durable sealing required before claiming NAS durability. No complete trained gain.",
+    "supervision": "Original87complete receipts preserved;13newcasescomplete with0newinfra;100case archive validated and durable-sealed;service/executor stopped at completecell boundary. No next cell submitted. Source/development-only diagnosis pending;no val tuning/retraining.",
     "source_inventory_observed_at": "2026-10-17T00:25:49.039360+00:00",
     "source_inventory_sha256": "a9e9f79c056bbb84bc1c75f42932a06f641d249ee8956b6c076095659727f9d2",
     "durable_export_index_sha256": "e6c4e1736c05f9aef172bc201261a447fdb080933542a620a01748ffc27b7e8a",
@@ -1874,10 +1877,11 @@
       {
         "cell": "after-full_history_intervention_bc-seed-7",
         "planned_cases": 100,
-        "completed_cases": 87,
-        "infrastructure_aborted_cases": 1,
-        "remaining_unclosed_cases": 13,
-        "not_started_cases": 12
+        "completed_cases": 100,
+        "infrastructure_aborted_cases": 0,
+        "remaining_unclosed_cases": 0,
+        "not_started_cases": 0,
+        "parent_infrastructure_abort_attempts": 1
       },
       {
         "cell": "after-full_history_intervention_bc-seed-17",
@@ -1958,7 +1962,7 @@
       }
     ],
     "recovery": {
-      "status": "RUNNING_ONLY13_UNCLOSED_AT_OBSERVED_AT",
+      "status": "PAUSED_AFTER_FIRST_COMPLETE_TRAINED_CELL",
       "pull_request": "https://github.com/asimfish/robocore/pull/4",
       "original_run2_overwritten": false,
       "worker_retries": "no automatic worker retry; only explicit continuation of unfinished registered cases",
@@ -1967,18 +1971,19 @@
       "shared_reference_800": "UNTOUCHED_SEPARATE_STUDY",
       "ssh_connectivity": "tianyiyun-30109 exit0 in current read-only observation; failures remain logged",
       "reviewed_commit": "74ac1e91c3a2b55a2429075f62e9d654c221f9c1",
-      "supervisor_status": "RUNNING",
-      "phase": "EXACT_MODEL_FIRST_TRAINED_COMPARISON_ONLY13_PENDING",
+      "supervisor_status": "PAUSED_AFTER_REGISTERED_CELL_NO_COMPLETE_STUDY_CONCLUSION",
+      "phase": "SOURCE_DEVELOPMENT_DIAGNOSIS_NO_VAL_TUNING",
       "local_replicas_reverified": 12,
       "original_runtime_directory_error": "Initial all-reuse packaging did not start because launch-log parent was absent; explicit evidence-backed submission after creating task directory; original receipt retained",
-      "independent_verifier": "NOT_RUN_INCOMPLETE_STUDY",
-      "reporter": "NOT_RUN_NO_COMPLETE_TRAINED_COMPARISON",
+      "independent_verifier": "SIX_SEED_NOT_RUN_INCOMPLETE;FIRST_PAIR_INDEPENDENT_PASS",
+      "reporter": "FIRST_PAIR_COMPLETE;SIX_SEED_REPORT_NOT_RUN",
       "simulator_work_ever_started": true,
-      "simulator_work_currently_active": true,
+      "simulator_work_currently_active": false,
       "runtime_observation_pull_request": "https://github.com/asimfish/robocore/pull/5",
       "single_lane_simulator_gpu": "0",
       "physical_inference_gpu": "GPU-828bb172-121c-cc55-7f4f-ef09a2bd7599",
-      "bounded_pause_pull_request": "https://github.com/asimfish/robocore/pull/6"
+      "bounded_pause_pull_request": "https://github.com/asimfish/robocore/pull/6",
+      "first_pair_verification": "PASS"
     },
     "recovery_coordinator_record_sha256": "57ea7e7edb3e5df8031eb91d452a2b9ed2d5953c147964c217ebc8cfd5e2ea1e",
     "second_abort_evidence_sha256": "db4aa2491f241fa29884c68d75fe671f83aa98dbbca5bd7bb669d158e104b46c",
@@ -2002,7 +2007,8 @@
         "status": "RETAINED_CONTINUATION_RUN2",
         "complete_trained_seed7_cases": 87,
         "infrastructure_aborted_attempts": 1,
-        "unstarted_cases": 12
+        "unstarted_cases": 12,
+        "resolution": "87complete retained;13unclosed resumed under reviewed74ac1e9;0newinfra;firsttrained100complete;originalabort kept"
       }
     ],
     "historical_local_replica_snapshot_sha256": "1a42844081b7e757acde5610cf3e35db1413bdad452fe03a99fc5b0e22bf708a",
@@ -2011,25 +2017,227 @@
     "local_replica_snapshot_scope": "ALL_TWELVE_LOCAL_EXACT_REPLICAS_VERIFIED; preserves prior original copy interruption receipts; no optimizer state",
     "active_continuation": {
       "revision": "74ac1e91c3a2b55a2429075f62e9d654c221f9c1",
-      "status": "RUNNING_AT_OBSERVED_AT",
-      "coordinator_record_sha256": "4c5a184654c2397bcda9bec93ef47a1e5450bc8eda616e20adc947bb181ef9fd",
+      "status": "PAUSED_AFTER_REGISTERED_CELL_NO_COMPLETE_STUDY_CONCLUSION",
+      "coordinator_record_sha256": "3ba80d59c9d53ed68721514e4d2bcd84b7e2dd011a7bdccab4dffb15ae12bb46",
       "execution_config_sha256": "91fa68aace48c3f12dc223c245ece5a2d8edce97270f53f2e5ae0f0258b1b3f6",
       "independent_review_sha256": "3f2aeca1220a3f973516dca8564ff5d32cedcb472068d7bc94c50cc4dfe78f37",
       "native_qualification_sha256": "4bbdc1d081dabae0632f33aa20baf4b9cad8b40722ca6adf0d5b077d463cd97c",
-      "observed_at": "2026-10-17T07:37:37.765968+00:00",
+      "observed_at": "2026-10-17T08:20:18.391884+00:00",
       "first_trained_cell": "after-full_history_intervention_bc-seed-7",
-      "first_trained_cell_completed": 87,
+      "first_trained_cell_completed": 100,
       "first_trained_cell_infrastructure_aborted": 0,
       "parent_infrastructure_aborted_attempts": 1,
       "reused_completed": 87,
       "pending_at_start": 13,
-      "first_pair_status": "NOT_COMPLETE",
-      "output_storage": "LOCAL_NVME_STAGING;parent87durableNASarchive",
+      "first_pair_status": "COMPLETE_SINGLE_SEED_DESCRIPTIVE_COMPARISON",
+      "output_storage": "DURABLE_NAS_SHA_VERIFIED_RAW_ARCHIVES;LOCAL_STAGING_RETAINED",
       "third_abort_preservation_receipt_sha256": "ae013e35bf83d1577a5792a15799ca8c01be16890cf414226a70d572a1616b67",
       "progress_snapshot_sha256": "76d433ffd56b6b14a99f1150dd48230916cb5a88b244a4074d23e2905a9d044d",
-      "change_scope": "Execution scheduling/staging only;scientific plan unchanged"
+      "change_scope": "Execution scheduling/staging only;scientific plan unchanged",
+      "after_result_sha256": "236f4250ef8885804368d27ad881f30a01af3a24e1bc5dc377b15cdf7e07031c",
+      "durable_provenance_sha256": "ed15087fc162db4f251d23aee5caf325463df0edc392add0fc63eb0b31ee1472"
     },
     "historical_original_coordinator_record_sha256": "a692b261f166ae5ef0fdbc75b5498e76d77b5e3d77e005e1588d2bb750b7dbfd",
-    "historical_third_abort_coordinator_sha256": "e758168b0563ae521e6987ac2dbfdcfe5018bc86a8155104fec0c53996c24552"
+    "historical_third_abort_coordinator_sha256": "e758168b0563ae521e6987ac2dbfdcfe5018bc86a8155104fec0c53996c24552",
+    "first_pair_result": {
+      "training_seed": 7,
+      "tasks": [
+        {
+          "task": "PatternLock",
+          "cases": 50,
+          "before_successes": 32,
+          "after_successes": 14,
+          "delta_percentage_points": -36.0,
+          "failure_to_success": [
+            11,
+            49
+          ],
+          "success_to_failure": [
+            1,
+            2,
+            4,
+            9,
+            12,
+            13,
+            14,
+            16,
+            18,
+            21,
+            22,
+            24,
+            25,
+            27,
+            33,
+            34,
+            36,
+            38,
+            41,
+            45
+          ]
+        },
+        {
+          "task": "PickHighlight",
+          "cases": 50,
+          "before_successes": 10,
+          "after_successes": 0,
+          "delta_percentage_points": -20.0,
+          "failure_to_success": [],
+          "success_to_failure": [
+            0,
+            8,
+            13,
+            28,
+            33,
+            38,
+            42,
+            44,
+            45,
+            46
+          ]
+        },
+        {
+          "task": "ALL",
+          "cases": 100,
+          "before_successes": 42,
+          "after_successes": 14,
+          "delta_percentage_points": -28.0,
+          "failure_to_success": [
+            [
+              "PatternLock",
+              11
+            ],
+            [
+              "PatternLock",
+              49
+            ]
+          ],
+          "success_to_failure": [
+            [
+              "PatternLock",
+              1
+            ],
+            [
+              "PatternLock",
+              2
+            ],
+            [
+              "PatternLock",
+              4
+            ],
+            [
+              "PatternLock",
+              9
+            ],
+            [
+              "PatternLock",
+              12
+            ],
+            [
+              "PatternLock",
+              13
+            ],
+            [
+              "PatternLock",
+              14
+            ],
+            [
+              "PatternLock",
+              16
+            ],
+            [
+              "PatternLock",
+              18
+            ],
+            [
+              "PatternLock",
+              21
+            ],
+            [
+              "PatternLock",
+              22
+            ],
+            [
+              "PatternLock",
+              24
+            ],
+            [
+              "PatternLock",
+              25
+            ],
+            [
+              "PatternLock",
+              27
+            ],
+            [
+              "PatternLock",
+              33
+            ],
+            [
+              "PatternLock",
+              34
+            ],
+            [
+              "PatternLock",
+              36
+            ],
+            [
+              "PatternLock",
+              38
+            ],
+            [
+              "PatternLock",
+              41
+            ],
+            [
+              "PatternLock",
+              45
+            ],
+            [
+              "PickHighlight",
+              0
+            ],
+            [
+              "PickHighlight",
+              8
+            ],
+            [
+              "PickHighlight",
+              13
+            ],
+            [
+              "PickHighlight",
+              28
+            ],
+            [
+              "PickHighlight",
+              33
+            ],
+            [
+              "PickHighlight",
+              38
+            ],
+            [
+              "PickHighlight",
+              42
+            ],
+            [
+              "PickHighlight",
+              44
+            ],
+            [
+              "PickHighlight",
+              45
+            ],
+            [
+              "PickHighlight",
+              46
+            ]
+          ]
+        }
+      ],
+      "verification_receipt_sha256": "18afa7fe42884cdd86fa62bd5f12c5136cef1d6e888fa1b63c5bb59a03360617",
+      "private_report_sha256": "268d9007ffa78f05aaf8850754a1bf8ae57a9b6d10dda0b9e475fc219853e180",
+      "public_summary": "data/robomme-first-pair-seed7.json"
+    }
   }
 }

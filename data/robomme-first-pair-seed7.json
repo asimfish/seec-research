@@ -1,0 +1,944 @@
+{
+  "status": "COMPLETE_SINGLE_SEED_DESCRIPTIVE_COMPARISON",
+  "training_seed": 7,
+  "interpretation": "Single seed only; no early stopping or method selection.",
+  "plan_id": "robomme-absorption-eval-8eeead0ededca5c0",
+  "plan_sha256": "6c7470da67eb6ef724760fd9e948ea155e6733d28cd0c5326e5daaa913809ba7",
+  "inference_sha256": "603a7df4b03c6d9c34c04665039853bbfd0502274d52f9581ffb7f34ecaa0054",
+  "before_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+  "before_result_sha256": "be292a45db1296299aa0c405d379aaa3ffa6b42f7257b88341030a00ba0a1e68",
+  "after_result_sha256": "236f4250ef8885804368d27ad881f30a01af3a24e1bc5dc377b15cdf7e07031c",
+  "tasks": [
+    {
+      "task": "PatternLock",
+      "cases": 50,
+      "before_successes": 32,
+      "after_successes": 14,
+      "delta_percentage_points": -36.0,
+      "failure_to_success": [
+        11,
+        49
+      ],
+      "success_to_failure": [
+        1,
+        2,
+        4,
+        9,
+        12,
+        13,
+        14,
+        16,
+        18,
+        21,
+        22,
+        24,
+        25,
+        27,
+        33,
+        34,
+        36,
+        38,
+        41,
+        45
+      ]
+    },
+    {
+      "task": "PickHighlight",
+      "cases": 50,
+      "before_successes": 10,
+      "after_successes": 0,
+      "delta_percentage_points": -20.0,
+      "failure_to_success": [],
+      "success_to_failure": [
+        0,
+        8,
+        13,
+        28,
+        33,
+        38,
+        42,
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "task": "ALL",
+      "cases": 100,
+      "before_successes": 42,
+      "after_successes": 14,
+      "delta_percentage_points": -28.0,
+      "failure_to_success": [
+        [
+          "PatternLock",
+          11
+        ],
+        [
+          "PatternLock",
+          49
+        ]
+      ],
+      "success_to_failure": [
+        [
+          "PatternLock",
+          1
+        ],
+        [
+          "PatternLock",
+          2
+        ],
+        [
+          "PatternLock",
+          4
+        ],
+        [
+          "PatternLock",
+          9
+        ],
+        [
+          "PatternLock",
+          12
+        ],
+        [
+          "PatternLock",
+          13
+        ],
+        [
+          "PatternLock",
+          14
+        ],
+        [
+          "PatternLock",
+          16
+        ],
+        [
+          "PatternLock",
+          18
+        ],
+        [
+          "PatternLock",
+          21
+        ],
+        [
+          "PatternLock",
+          22
+        ],
+        [
+          "PatternLock",
+          24
+        ],
+        [
+          "PatternLock",
+          25
+        ],
+        [
+          "PatternLock",
+          27
+        ],
+        [
+          "PatternLock",
+          33
+        ],
+        [
+          "PatternLock",
+          34
+        ],
+        [
+          "PatternLock",
+          36
+        ],
+        [
+          "PatternLock",
+          38
+        ],
+        [
+          "PatternLock",
+          41
+        ],
+        [
+          "PatternLock",
+          45
+        ],
+        [
+          "PickHighlight",
+          0
+        ],
+        [
+          "PickHighlight",
+          8
+        ],
+        [
+          "PickHighlight",
+          13
+        ],
+        [
+          "PickHighlight",
+          28
+        ],
+        [
+          "PickHighlight",
+          33
+        ],
+        [
+          "PickHighlight",
+          38
+        ],
+        [
+          "PickHighlight",
+          42
+        ],
+        [
+          "PickHighlight",
+          44
+        ],
+        [
+          "PickHighlight",
+          45
+        ],
+        [
+          "PickHighlight",
+          46
+        ]
+      ]
+    }
+  ],
+  "case_pairs": [
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 0,
+      "before_success": true,
+      "after_success": true
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 1,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 2,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 3,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 4,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 5,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 6,
+      "before_success": true,
+      "after_success": true
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 7,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 8,
+      "before_success": true,
+      "after_success": true
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 9,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 10,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 11,
+      "before_success": false,
+      "after_success": true
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 12,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 13,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 14,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 15,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 16,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 17,
+      "before_success": true,
+      "after_success": true
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 18,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 19,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 20,
+      "before_success": true,
+      "after_success": true
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 21,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 22,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 23,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 24,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 25,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 26,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 27,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 28,
+      "before_success": true,
+      "after_success": true
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 29,
+      "before_success": true,
+      "after_success": true
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 30,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 31,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 32,
+      "before_success": true,
+      "after_success": true
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 33,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 34,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 35,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 36,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 37,
+      "before_success": true,
+      "after_success": true
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 38,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 39,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 40,
+      "before_success": true,
+      "after_success": true
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 41,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 42,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 43,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 44,
+      "before_success": true,
+      "after_success": true
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 45,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 46,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 47,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 48,
+      "before_success": true,
+      "after_success": true
+    },
+    {
+      "task": "PatternLock",
+      "split": "val",
+      "episode": 49,
+      "before_success": false,
+      "after_success": true
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 0,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 1,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 2,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 3,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 4,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 5,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 6,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 7,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 8,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 9,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 10,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 11,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 12,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 13,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 14,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 15,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 16,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 17,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 18,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 19,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 20,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 21,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 22,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 23,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 24,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 25,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 26,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 27,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 28,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 29,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 30,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 31,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 32,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 33,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 34,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 35,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 36,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 37,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 38,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 39,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 40,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 41,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 42,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 43,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 44,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 45,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 46,
+      "before_success": true,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 47,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 48,
+      "before_success": false,
+      "after_success": false
+    },
+    {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 49,
+      "before_success": false,
+      "after_success": false
+    }
+  ],
+  "schema": "robomme-first-pair-descriptive-v1",
+  "observed_at": "2026-10-17T08:20:18.391884+00:00",
+  "last_verified": "2026-10-17T08:20:18.391884+00:00",
+  "model": "pi0.5/FrameSamp+Modul;32uniform-historyframes;one-roundstudent-stateBC/DAgger",
+  "gradient_updates": 10000,
+  "additional_expert_queries": 0,
+  "official_demonstration_context": "RETAINED",
+  "verification": "INDEPENDENT_PASS_200_RECEIPTS_5982_ARTIFACTS",
+  "verification_receipt_sha256": "18afa7fe42884cdd86fa62bd5f12c5136cef1d6e888fa1b63c5bb59a03360617",
+  "private_report_sha256": "268d9007ffa78f05aaf8850754a1bf8ae57a9b6d10dda0b9e475fc219853e180",
+  "durable_archives": [
+    {
+      "bytes": 164290560,
+      "sha256": "c02595315993f374c2125c8c12e6e92146b606e1e6197b0fb7fd65aa249b2e96"
+    },
+    {
+      "bytes": 64460800,
+      "sha256": "9b96cce8bce069bfb02f0a607fd98d96595222137326723801735a9d4b2541ce"
+    }
+  ],
+  "durable_provenance_sha256": "ed15087fc162db4f251d23aee5caf325463df0edc392add0fc63eb0b31ee1472",
+  "code_revision": "74ac1e91c3a2b55a2429075f62e9d654c221f9c1",
+  "recovery": {
+    "reused_completed": 87,
+    "newly_completed": 13,
+    "parent_infrastructure_abort_attempts": 1,
+    "new_infrastructure_aborts": 0,
+    "previous3interruption_records": "RETAINED"
+  },
+  "limits": [
+    "One trainingseed andtwo officialvaltasks only;not registered six-seed inference or newlearningalgorithm evidence.",
+    "Pairing uses officialcase identifiers/metadata seeds;identical initialpixel history and crossprocess action parity are not established.",
+    "Only matched-history correctionabsorption recipe tested;no new-rulelearning or RSI claim.",
+    "Full14cell/6seed study remains incomplete;no result-dependent seed/checkpoint/threshold change."
+  ],
+  "failure_to_success_count": 2,
+  "success_to_failure_count": 30
+}
