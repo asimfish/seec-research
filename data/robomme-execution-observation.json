@@ -1,30 +1,30 @@
 {
   "schema": "robomme-execution-observation-v1",
-  "observed_at": "2026-10-17T13:29:40.787327+00:00",
-  "last_verified": "2026-10-17T13:29:40.787327+00:00",
+  "observed_at": "2026-10-17T14:51:09.711464+00:00",
+  "last_verified": "2026-10-17T14:51:09.711464+00:00",
   "status": "REGISTERED_EVALUATION_RESUMED_AFTER_NEGATIVE_FIRST_PAIR",
-  "reason_code": "RECENT_SEED7_PROGRESS;SOURCE_A32_B32_C4_CLOSED_INDEPENDENTLY",
-  "reason": "Main evaluation: 357/1400 unique completed cases; recent seed7: 57/100. Three complete cells, one partial, ten unstarted. Source/dev diagnostics are separate. Full seed7 result42/100 to14/100 is retained; six-seed conclusion pending.",
+  "reason_code": "RECENT_SEED7_PROGRESS;SOURCE_A_B_C_CLOSED;NEW_REPLAY_BLOCKED_BY_NATIVE_INPUT_MISMATCH",
+  "reason": "Main read-only snapshot387/1400; recent seed7:87/100. Three complete cells, one partial, ten unstarted. New single-seed source-success replay recipe remains0updates after two source anchors found unequal cached/live history image features. Native input disagreement is not a demonstrated cause of full42to14 or a terminal-success result.",
   "plan_id": "robomme-absorption-eval-8eeead0ededca5c0",
   "plan_sha256": "6c7470da67eb6ef724760fd9e948ea155e6733d28cd0c5326e5daaa913809ba7",
   "coordinator_source_revision": "262876882b488eb9c5a8561df4160a5ebd863d80",
   "research_snapshot_revision": "b3c1473c2e8d098d8dc3e237974d2c8a76507385",
-  "coordinator_record_sha256": "c768873822d7e6df671722a6e5575ca393a861c9914d5bcfbf9220e14a3a40fc",
+  "coordinator_record_sha256": "3d03f9e2ab7106773087e330f2b06bf6e1bc0c213c2b74f17eee206e78484161",
   "coverage": {
     "planned_model_cells": 14,
     "archived_complete_model_cells": 3,
-    "archived_complete_episodes": 350,
+    "archived_complete_episodes": 375,
     "planned_episodes": 1400,
-    "coverage_scope": "3complete100casecells+recentseed757uniquecomplete;source/devnotincluded.50recentseed7casesdurablyarchived;infraattemptsnotadditionalsamples.",
+    "coverage_scope": "3complete100casecells+recentseed787uniquecomplete;75recentseed7casesdurablyarchived;source/devandnativeinputsnotincluded;infraattemptsnotadditionalsamples.",
     "remote_complete_model_cells": 3,
-    "remote_complete_episodes": 357,
+    "remote_complete_episodes": 387,
     "remote_infrastructure_aborted_episodes": 0,
-    "local_partial_completed_case_receipts": 50,
-    "remote_remaining_unclosed_episodes": 1043,
+    "local_partial_completed_case_receipts": 75,
+    "remote_remaining_unclosed_episodes": 1013,
     "partial_model_cells": 1,
     "unstarted_model_cells": 10,
     "archived_complete_cell_episodes": 300,
-    "durable_partial_completed_episodes": 50
+    "durable_partial_completed_episodes": 75
   },
   "science": {
     "analysis": "ABSENT",
@@ -47,7 +47,7 @@
     "task_balanced_success": 0.42,
     "scope": "fixed released checkpoint and inference seed; two tasks only"
   },
-  "supervision": "Dated read-only snapshot, not live. SourceA32, sourceB32 and four sourceC takeover conditions are independently audited and separate from official validation. All task failures and infrastructure incidents are retained. Two native25-case drain/archive/service-exit boundaries have been observed; future lifecycle correctness is not thereby guaranteed.",
+  "supervision": "Dated read-only snapshot, not live. SourceA32,B32,C4 retained. Three native25-new-case drain/archive/service-exit boundaries observed; no general lifecycle guarantee. New input contract has independent array/hash verification; replay mixture0updates, feature discrepancy not a proven task-regression cause.",
   "source_inventory_observed_at": "2026-10-17T00:25:49.039360+00:00",
   "source_inventory_sha256": "a9e9f79c056bbb84bc1c75f42932a06f641d249ee8956b6c076095659727f9d2",
   "durable_export_index_sha256": "e6c4e1736c05f9aef172bc201261a447fdb080933542a620a01748ffc27b7e8a",
@@ -1006,5 +1006,68 @@
     "coordinator_sha256": "774a2dc11b3184b63cd1c4210cb03de3d5a7a904e6790516309324219f249cb5",
     "read_only_observation_sha256": "46d47bab872db00eebbf24b25754d032e92c03e8be6b43756bbf6739d535d8fa"
   },
-  "prior_public_status_snapshot_sha256": "0ec54748aa451ae1d42386878f0afcb79e7d8e1aeafa08165785618a94d34900"
+  "prior_public_status_snapshot_sha256": "0ec54748aa451ae1d42386878f0afcb79e7d8e1aeafa08165785618a94d34900",
+  "source_success_replay_native_contract": {
+    "schema": "robomme-native-input-contract-public-v1",
+    "observed_at": "2026-10-17T14:47:16.905845+00:00",
+    "status": "CACHE_LIVE_INPUT_MISMATCH_NO_TRAINING",
+    "verification_status": "INDEPENDENT_RAW_ARRAY_AND_HASH_REVIEW",
+    "parent_source_plan_id": "robomme-absorption-screen-5c9451b5a5b9791c",
+    "parent_source_plan_sha256": "f9f8101b8dd997a3386a03f5f0d0a1cd8e641daf738f8f6aa089dac26860397d",
+    "code_revision": "8a296aff9fb96f26f0f22b54b238d351473d8455",
+    "pull_request": "https://github.com/asimfish/robocore/pull/12",
+    "config_sha256": "7726cc369fc3216998c1237d73e27de10cfce11c6d9c9798dbe7b77c75dea82e",
+    "source_report_sha256": "7b2bf9d7d2bce655bc8dd5cd28ae25caf5ddd8c7e9ceb59daabb39d25a1ba861",
+    "raw_archive_sha256": "ddfca9c34ed23748c30532d7f14a745a9022717fdf6e6007e901b7920f1f4016",
+    "independent_review_sha256": "0622d7f9ef9f73e134a0958235af5fb62c82f16a2683758912b127583f1e587e",
+    "anchors_completed": 2,
+    "registered_anchors": 2,
+    "native_forward_calls": 2,
+    "encoded_frame_occurrences": 386,
+    "optimizer_updates": 0,
+    "environment_controls": 0,
+    "replay_rows_verified": 71,
+    "native_replay_training_batches": 0,
+    "mixture_fixed_source_dev_results": "NOT_RUN",
+    "scope": "Two fixed source inputs only; rawH5 through released encoder/native transforms and actual server policy+msgpack. No websocket/simulator; no method efficacy.",
+    "finding": "Only static_image_emb differs among11expandedpolicyfields; other10match byte-for-byte. Real numerical differences exceed lossless bf16/f32 storage. Batching is a supported unisolated hypothesis, old42to14cause remainsUNKNOWN.",
+    "comparisons": [
+      {
+        "case": "PatternLock-train-001",
+        "control": 16,
+        "public_anchor": 79,
+        "different_field": "static_image_emb",
+        "training_dtype": "float32",
+        "serving_dtype": "bfloat16",
+        "shape": [
+          1,
+          512,
+          2048
+        ],
+        "differing_values": 792057,
+        "max_abs_difference": 1.0,
+        "original_vs_reconstructed_exact": true
+      },
+      {
+        "case": "PickHighlight-train-001",
+        "control": 112,
+        "public_anchor": 112,
+        "different_field": "static_image_emb",
+        "training_dtype": "float32",
+        "serving_dtype": "bfloat16",
+        "shape": [
+          1,
+          512,
+          2048
+        ],
+        "differing_values": 768001,
+        "max_abs_difference": 1.0,
+        "original_vs_reconstructed_exact": false
+      }
+    ],
+    "next_isolation": "Separate preregistered same-source batching and dtype sensitivity; no future113..119images, training, val selection or hidden feature repair.",
+    "original_source_episodes": 8,
+    "successful_source_episodes": 6,
+    "unsuccessful_source_episodes_preserved": 2
+  }
 }
