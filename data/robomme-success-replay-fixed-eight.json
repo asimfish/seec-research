@@ -1,0 +1,207 @@
+{
+  "schema": "source-success-replay-fixed-eight-descriptive-v1",
+  "status": "COMPLETE_FIXED_EIGHT_PILOT_NOT_CONFIRMATORY",
+  "generated_at": "2026-10-17T17:09:47.236206+00:00",
+  "plan_id": "robomme-success-replay-source-eval-1f4aba6da4f56cb0",
+  "plan_sha256": "44deafd4fd042652e315035a9b91fdd9a0b6b484ffa9cfdf2a5392d4cb75ce11",
+  "trainer_revision": "344cb4cc5887a577735892d80cbd5bfed4c4a4f0",
+  "worker_revision": "5064b9110ed3b26a637b32fc164b61dd35e1b010",
+  "validator_revision": "0448189506e8b1e986f434674dd3ea026d5586e2",
+  "source_rows": {
+    "successful_source_episodes": 6,
+    "original_source_episodes": 8,
+    "replay_rows": 71,
+    "PatternLock_replay_rows": 13,
+    "PickHighlight_replay_rows": 58,
+    "unchanged_oracle_rows": 120
+  },
+  "actual_updates": 10000,
+  "actual_oracle_updates": 5000,
+  "actual_replay_updates": 5000,
+  "training_result_sha256": "a3faab417069fbbca54ce5717bbecf5e401b5f144aa2933c2160fdd0a1344d87",
+  "model_sha256": "8b25d1d62cbbabcb26c027f5f9f77df2b9459d2f19d08b0df2ce227385d70c10",
+  "coordinator_sha256": "1a2aa1a6c71371ea54b06ba563428f80a6c96ed35b44ebec7dcafb2b92132750",
+  "archive_sha256": "f9fefe87fba845123be47ac4dec8c8094efe09ae1ba43837355ed7d238486015",
+  "baseline_B_report_sha256": "77ce167926b2b90306c342327d3760dc116cba30490cd5834515cf7dde576fa0",
+  "report_code_sha256": "d680b03b90d06e7e8d8d4d7a48357f2616a244d1ffab0be597f55d7df8216c35",
+  "comparisons": [
+    {
+      "reference": "initial",
+      "reference_successes": 7,
+      "mixture_successes": 2,
+      "episodes_each": 8,
+      "difference_percentage_points": -62.5,
+      "failure_to_success": 0,
+      "success_to_failure": 5
+    },
+    {
+      "reference": "correction_only",
+      "reference_successes": 3,
+      "mixture_successes": 2,
+      "episodes_each": 8,
+      "difference_percentage_points": -12.5,
+      "failure_to_success": 1,
+      "success_to_failure": 2
+    }
+  ],
+  "strata": [
+    {
+      "task": "PatternLock",
+      "use": "source",
+      "episodes": 2,
+      "initial_successes": 1,
+      "correction_only_successes": 2,
+      "mixture_successes": 1
+    },
+    {
+      "task": "PatternLock",
+      "use": "development",
+      "episodes": 2,
+      "initial_successes": 2,
+      "correction_only_successes": 1,
+      "mixture_successes": 1
+    },
+    {
+      "task": "PickHighlight",
+      "use": "source",
+      "episodes": 2,
+      "initial_successes": 2,
+      "correction_only_successes": 0,
+      "mixture_successes": 0
+    },
+    {
+      "task": "PickHighlight",
+      "use": "development",
+      "episodes": 2,
+      "initial_successes": 2,
+      "correction_only_successes": 0,
+      "mixture_successes": 0
+    }
+  ],
+  "case_pairs": [
+    {
+      "case": "PatternLock-train-001",
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 1,
+      "use": "source",
+      "initial_success": true,
+      "correction_only_success": true,
+      "mixture_success": true,
+      "mixture_outcome": "success",
+      "mixture_control_steps": 66,
+      "case_receipt_sha256": "014e3ee05758a616fc1f226da0939fa16ba92eb25a3c37b54cf97459017a7e12"
+    },
+    {
+      "case": "PickHighlight-train-001",
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 1,
+      "use": "source",
+      "initial_success": true,
+      "correction_only_success": false,
+      "mixture_success": false,
+      "mixture_outcome": "timeout",
+      "mixture_control_steps": 1300,
+      "case_receipt_sha256": "36536254bdba847d6348b66727867b3518709b65d6e7887dcc06292d14520933"
+    },
+    {
+      "case": "PatternLock-train-002",
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 2,
+      "use": "source",
+      "initial_success": false,
+      "correction_only_success": true,
+      "mixture_success": false,
+      "mixture_outcome": "fail",
+      "mixture_control_steps": 100,
+      "case_receipt_sha256": "f16ff6638100b46dc25147bc547bc66e32b11ab03b857eb1aa7404bb3c1ca043"
+    },
+    {
+      "case": "PickHighlight-train-002",
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 2,
+      "use": "source",
+      "initial_success": true,
+      "correction_only_success": false,
+      "mixture_success": false,
+      "mixture_outcome": "timeout",
+      "mixture_control_steps": 1300,
+      "case_receipt_sha256": "bd0b179d3608afd012eb808caa2a9f8e70425eabd39824b2d41f9658249b04d5"
+    },
+    {
+      "case": "PatternLock-train-005",
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 5,
+      "use": "development",
+      "initial_success": true,
+      "correction_only_success": false,
+      "mixture_success": true,
+      "mixture_outcome": "success",
+      "mixture_control_steps": 52,
+      "case_receipt_sha256": "e71937f4169ff01e6a02c78373e4c270c2ef0ade71f39a3f6de1a0203fee847e"
+    },
+    {
+      "case": "PickHighlight-train-005",
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 5,
+      "use": "development",
+      "initial_success": true,
+      "correction_only_success": false,
+      "mixture_success": false,
+      "mixture_outcome": "timeout",
+      "mixture_control_steps": 1300,
+      "case_receipt_sha256": "902ceab4c163ed98d8e87aaa4375f19eb331aa4472f84a5fc53ec04e86d545b5"
+    },
+    {
+      "case": "PatternLock-train-006",
+      "task": "PatternLock",
+      "split": "train",
+      "episode": 6,
+      "use": "development",
+      "initial_success": true,
+      "correction_only_success": true,
+      "mixture_success": false,
+      "mixture_outcome": "fail",
+      "mixture_control_steps": 88,
+      "case_receipt_sha256": "87718beed0e325fc9c40bc07d21d718d4ee901ba60e0995c719d43a527c22959"
+    },
+    {
+      "case": "PickHighlight-train-006",
+      "task": "PickHighlight",
+      "split": "train",
+      "episode": 6,
+      "use": "development",
+      "initial_success": true,
+      "correction_only_success": false,
+      "mixture_success": false,
+      "mixture_outcome": "timeout",
+      "mixture_control_steps": 1300,
+      "case_receipt_sha256": "ade51b86a0b5db2086055b076ef7fc4b9a937e6e78f1710ca58d4103d143bd8f"
+    }
+  ],
+  "outcomes": {
+    "success": 2,
+    "timeout": 4,
+    "fail": 2
+  },
+  "actual_controls": 5506,
+  "extra_expert_queries": 0,
+  "interventions": 0,
+  "native_qualification_calls": 13,
+  "reset_constructor_internal_steps": "UNKNOWN_NOT_ZERO",
+  "infra_aborts_in_this_fixed_eight": 0,
+  "known_cache_live_equality_gate": "FAILED_PRESERVED_NO_FEATURE_REPAIR",
+  "limits": [
+    "One seed,8fixedsource/developmentcases,not official val or untouched confirmation.",
+    "Paired by case IDs;pixels/actions acrossprocesses and physicalGPUs not guaranteed bitexact.",
+    "Mixture halves oracle update exposure;retention versus dose not identified.",
+    "Known cached/live image-feature discrepancy remains;not a proved cause of prior regression.",
+    "Atmost32uniform historyframes with demonstration context,not full-history learning or multi-generationRSI.",
+    "No formal hypothesis test or generalization/equivalence claim."
+  ]
+}
