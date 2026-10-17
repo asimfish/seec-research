@@ -2354,8 +2354,8 @@
     "source_development_autonomous_diagnostic": {
       "worker_revision": "1911da4ea3b234c214af8f91267146ca77281b91",
       "execution_config_sha256": "21cf203a8378fa6945ef09f35a332df220ca7f7b9b57a62c88bcb90baddf65b6",
-      "snapshot_utc": "2026-10-17T12:00:08.391550+00:00",
-      "completed_cases": 13,
+      "snapshot_utc": "2026-10-17T12:05:21.922282+00:00",
+      "completed_cases": 14,
       "planned_cases": 32,
       "completed_trained_model_cases": 0,
       "status": "RUN3_RUNNING_AFTER_TWO_RETAINED_INFRASTRUCTURE_ABORTS",
@@ -2366,7 +2366,9 @@
       "run3_native_qualification_calls_so_far": 26,
       "renderer_only_preflight_contexts": 1,
       "unknown_constructor_reset_steps_not_zero": true,
-      "main_val_used_for_selection": false
+      "main_val_used_for_selection": false,
+      "coordinator_sha256": "774a2dc11b3184b63cd1c4210cb03de3d5a7a904e6790516309324219f249cb5",
+      "read_only_observation_sha256": "46d47bab872db00eebbf24b25754d032e92c03e8be6b43756bbf6739d535d8fa"
     }
   }
 }
