@@ -618,8 +618,8 @@
       "bytes": 1345
     },
     "data/robomme-execution-observation.json": {
-      "sha256": "c1822fd7b8fa397555f9cc7833d11b39e987f2b61fdf08960985a74f6ee44d6a",
-      "bytes": 59065
+      "sha256": "e3b6ca6edcc9ea9b78eedeff90b0bca138307b25dc861487901ee98b09fa8a9c",
+      "bytes": 58864
     },
     "data/robomme-expert-prefix-result.json": {
       "sha256": "a75171df5ad76ab31f0b4f2d9fa7e20e9fc82726dfae748a69de71d67a8a5137",
@@ -1250,18 +1250,17 @@
   },
   "execution_observation": {
     "observed_at": "2026-10-17T19:26:15.597581+00:00",
-    "source_scope": "Dated original14cell continuation:407durablyverified+4remoteCOMPLETEreceipts pending batchrawguard;no source/dev mixed into1400",
+    "source_scope": "Dated original14cell continuation:457unique durably verified cases;4completecells plus full17partial57;currentbatch provisional receipts excluded;source/dev pilots excluded.",
     "source_record_sha256": "9953eecabdbb93e33310931ea39d3e37f7ba8857cade7f85f80d5a534439bcd7",
-    "public_status_sha256": "c1822fd7b8fa397555f9cc7833d11b39e987f2b61fdf08960985a74f6ee44d6a",
+    "public_status_sha256": "e3b6ca6edcc9ea9b78eedeff90b0bca138307b25dc861487901ee98b09fa8a9c",
     "recovery_revision": "669344a350b552d1d326c0b806c4249263c24e77",
     "execution_config_sha256": "c972effbc9595709b7195371784153cc053d319c49440c935ea49e34529d1b46",
     "independent_execution_review_sha256": "dfb8fdd5f9b77662486a6897048aef2e93514624a1f4fffe11a6b93fe696d352",
-    "archived_durable_complete_episodes": 407,
-    "reported_new_remote_receipts": 4,
+    "archived_durable_complete_episodes": 457,
     "six_seed_conclusion": "PENDING",
-    "coverage_observed_at": "2026-10-17T17:07:53.503798+00:00",
-    "coordinator_observation_record_sha256": "9d1de2157b9b817249578f4d875976249a575180b6d16a7871844d3541c09955",
-    "coordinator_observed_at": "2026-10-17T17:14:20.577976+00:00",
+    "coverage_observed_at": "2026-10-17T19:26:15.597581+00:00",
+    "coordinator_observation_record_sha256": "9953eecabdbb93e33310931ea39d3e37f7ba8857cade7f85f80d5a534439bcd7",
+    "coordinator_observed_at": "2026-10-17T19:26:15.597581+00:00",
     "durably_verified_cases": 457,
     "scope": "Dated457uniquecompletecases;4completecells+full17partial57;currentbatchprovisionalexcluded."
   },
