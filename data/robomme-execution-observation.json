@@ -1,7 +1,7 @@
 {
   "schema": "robomme-execution-observation-v1",
-  "observed_at": "2026-10-17T17:07:53.503798+00:00",
-  "last_verified": "2026-10-17T17:07:53.503798+00:00",
+  "observed_at": "2026-10-17T17:14:20.577976+00:00",
+  "last_verified": "2026-10-17T17:14:20.577976+00:00",
   "status": "RUNNING_AT_DATED_OBSERVATION_SIX_SEED_CONCLUSION_INCOMPLETE",
   "reason_code": "ORIGINAL_PLAN_CONTINUATION_AFTER_ARCHIVE_READ_ABORT",
   "reason": "Original registered queue resumed with reviewed bounded archive-read retries.407complete cases durably verified;4additional remote case receipts report COMPLETED,full raw guard pending current25case batch boundary.4model cells fully closed;no sixseed conclusion.Original successes,task failures and all infrastructure aborts retained.",
@@ -9,7 +9,6 @@
   "plan_sha256": "6c7470da67eb6ef724760fd9e948ea155e6733d28cd0c5326e5daaa913809ba7",
   "coordinator_source_revision": "669344a350b552d1d326c0b806c4249263c24e77",
   "research_snapshot_revision": "b3c1473c2e8d098d8dc3e237974d2c8a76507385",
-  "coordinator_record_sha256": "4bcc93a034ac67808c4593655b9f02276b10a130aebf82f5f36a53499b5e4eb0",
   "coverage": {
     "planned_model_cells": 14,
     "archived_complete_model_cells": 4,
@@ -29,7 +28,8 @@
     "remote_reported_new_complete_receipts": 4,
     "new_receipts_full_raw_guard": "PENDING_SYNCHRONOUS_BATCH_BOUNDARY",
     "remote_reported_unfinished_episodes": 989,
-    "infra_count_scope": "This continuation at dated observation;historical aborts retained separately."
+    "infra_count_scope": "This continuation at dated observation;historical aborts retained separately.",
+    "observed_at": "2026-10-17T17:07:53.503798+00:00"
   },
   "science": {
     "analysis": "ABSENT",
@@ -215,7 +215,8 @@
       "planned_cases": 100,
       "completed_cases": 100,
       "infrastructure_aborted_cases": 0,
-      "not_started_cases": 0
+      "not_started_cases": 0,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
     },
     {
       "cell": "before-recent_history_intervention_bc",
@@ -227,7 +228,8 @@
       "parent_infrastructure_abort_attempts": 7,
       "new_infrastructure_aborts": 0,
       "reused_completed": 77,
-      "new_completed": 23
+      "new_completed": 23,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
     },
     {
       "cell": "after-full_history_intervention_bc-seed-7",
@@ -236,44 +238,54 @@
       "infrastructure_aborted_cases": 0,
       "remaining_unclosed_cases": 0,
       "not_started_cases": 0,
-      "parent_infrastructure_abort_attempts": 1
+      "parent_infrastructure_abort_attempts": 1,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
     },
     {
       "cell": "after-full_history_intervention_bc-seed-17",
       "planned_cases": 100,
       "completed_cases": 7,
-      "infrastructure_aborted_cases": 1,
-      "not_started_cases": 92,
       "remaining_unclosed_cases": 93,
-      "active_cases": 0
+      "completion_scope": "DURABLE_VERIFIED_ONLY",
+      "historical_active_cases_at_1601": 0,
+      "historical_not_started_cases_at_1601": 92,
+      "historical_infrastructure_abort_attempts_at_1601": 1,
+      "new_remote_reported_completed_cases": 4,
+      "new_remote_observed_at": "2026-10-17T17:07:53.503798+00:00",
+      "new_remote_raw_guard": "PENDING_BATCH_BOUNDARY_NOT_ADDED_TO_COMPLETED_CASES",
+      "verified_remaining_unclosed_cases": 93
     },
     {
       "cell": "after-full_history_intervention_bc-seed-27",
       "planned_cases": 100,
       "completed_cases": 0,
       "infrastructure_aborted_cases": 0,
-      "not_started_cases": 100
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
     },
     {
       "cell": "after-full_history_intervention_bc-seed-37",
       "planned_cases": 100,
       "completed_cases": 0,
       "infrastructure_aborted_cases": 0,
-      "not_started_cases": 100
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
     },
     {
       "cell": "after-full_history_intervention_bc-seed-47",
       "planned_cases": 100,
       "completed_cases": 0,
       "infrastructure_aborted_cases": 0,
-      "not_started_cases": 100
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
     },
     {
       "cell": "after-full_history_intervention_bc-seed-57",
       "planned_cases": 100,
       "completed_cases": 0,
       "infrastructure_aborted_cases": 0,
-      "not_started_cases": 100
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
     },
     {
       "cell": "after-recent_history_intervention_bc-seed-7",
@@ -282,42 +294,48 @@
       "infrastructure_aborted_cases": 0,
       "not_started_cases": 0,
       "active_cases": 0,
-      "remaining_unclosed_cases": 0
+      "remaining_unclosed_cases": 0,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
     },
     {
       "cell": "after-recent_history_intervention_bc-seed-17",
       "planned_cases": 100,
       "completed_cases": 0,
       "infrastructure_aborted_cases": 0,
-      "not_started_cases": 100
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
     },
     {
       "cell": "after-recent_history_intervention_bc-seed-27",
       "planned_cases": 100,
       "completed_cases": 0,
       "infrastructure_aborted_cases": 0,
-      "not_started_cases": 100
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
     },
     {
       "cell": "after-recent_history_intervention_bc-seed-37",
       "planned_cases": 100,
       "completed_cases": 0,
       "infrastructure_aborted_cases": 0,
-      "not_started_cases": 100
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
     },
     {
       "cell": "after-recent_history_intervention_bc-seed-47",
       "planned_cases": 100,
       "completed_cases": 0,
       "infrastructure_aborted_cases": 0,
-      "not_started_cases": 100
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
     },
     {
       "cell": "after-recent_history_intervention_bc-seed-57",
       "planned_cases": 100,
       "completed_cases": 0,
       "infrastructure_aborted_cases": 0,
-      "not_started_cases": 100
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
     }
   ],
   "recovery": {
@@ -389,7 +407,8 @@
     "current_stage": "EVALUATING_REGISTERED_CASES",
     "observed_at": "2026-10-17T17:07:53.503798+00:00",
     "max_new_cases_per_service": 25,
-    "source_observation_sha256": "e8c0d335284bc2c7f47d8523eb0e96c74193b4b597138cc4b885f75e7468e811"
+    "source_observation_sha256": "e8c0d335284bc2c7f47d8523eb0e96c74193b4b597138cc4b885f75e7468e811",
+    "process_observed_at": "2026-10-17T17:14:20.577976+00:00"
   },
   "historical_original_coordinator_record_sha256": "a692b261f166ae5ef0fdbc75b5498e76d77b5e3d77e005e1588d2bb750b7dbfd",
   "historical_third_abort_coordinator_sha256": "e758168b0563ae521e6987ac2dbfdcfe5018bc86a8155104fec0c53996c24552",
@@ -1131,19 +1150,16 @@
       "archived_complete_model_cells": 4,
       "archived_complete_episodes": 407,
       "planned_episodes": 1400,
-      "coverage_scope": "407durably verified originals +4new remote COMPLETEDreceipts pending raw/archive guard;source-dev pilot excluded.411is provisional,not independently sealed scientific coverage.",
+      "coverage_scope": "400completecells+7individuallyverifiedandpreservedcase receipts;infraattemptnotadditionalscientificsample;source/devnotincluded",
       "remote_complete_model_cells": 4,
-      "remote_complete_episodes": null,
-      "remote_infrastructure_aborted_episodes": "Historical aborts retained;no inference of current failures from old PIDs",
+      "remote_complete_episodes": 407,
+      "remote_infrastructure_aborted_episodes": 1,
       "local_partial_completed_case_receipts": 7,
-      "remote_remaining_unclosed_episodes": 989,
+      "remote_remaining_unclosed_episodes": 993,
       "partial_model_cells": 1,
       "unstarted_model_cells": 9,
       "archived_complete_cell_episodes": 400,
-      "durable_partial_completed_episodes": 7,
-      "remote_reported_complete_episodes": 411,
-      "remote_reported_new_complete_receipts": 4,
-      "new_receipts_full_raw_guard": "PENDING_SYNCHRONOUS_BATCH_BOUNDARY"
+      "durable_partial_completed_episodes": 7
     },
     "supervision": "Datedread-onlysnapshot,notlive. All4completecells archived;newseed17abortrawpreserved. Prior synchronous25case boundaries do not prove lifecycle rootcause fixed. SourceB/C closed;no new recovery training claim.",
     "preservation_observed_at": "2026-10-17T16:06:05.890236+00:00",
@@ -1173,6 +1189,125 @@
     "extra_expert_queries": 0,
     "infra_aborts": 0,
     "scope": "Single seed fixed source/development pilot,not official val;no novel IWR/Sirius claim;doseandknownfeaturepath alternatives remain.",
-    "independent_review_sha256": "74ab032c9a015b93437264f765638dd15562e8ccfe78125ce729a6a81486de72"
+    "independent_review_sha256": "74ab032c9a015b93437264f765638dd15562e8ccfe78125ce729a6a81486de72",
+    "last_verified": "2026-10-17T17:12:16.249339+00:00"
+  },
+  "historical_last_durable_evaluation_cells_20261017_1601": [
+    {
+      "cell": "before-full_history_intervention_bc",
+      "planned_cases": 100,
+      "completed_cases": 100,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 0
+    },
+    {
+      "cell": "before-recent_history_intervention_bc",
+      "planned_cases": 100,
+      "completed_cases": 100,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 0,
+      "remaining_unclosed_cases": 0,
+      "parent_infrastructure_abort_attempts": 7,
+      "new_infrastructure_aborts": 0,
+      "reused_completed": 77,
+      "new_completed": 23
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-7",
+      "planned_cases": 100,
+      "completed_cases": 100,
+      "infrastructure_aborted_cases": 0,
+      "remaining_unclosed_cases": 0,
+      "not_started_cases": 0,
+      "parent_infrastructure_abort_attempts": 1
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-17",
+      "planned_cases": 100,
+      "completed_cases": 7,
+      "infrastructure_aborted_cases": 1,
+      "not_started_cases": 92,
+      "remaining_unclosed_cases": 93,
+      "active_cases": 0
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-27",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-37",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-47",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-57",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-7",
+      "planned_cases": 100,
+      "completed_cases": 100,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 0,
+      "active_cases": 0,
+      "remaining_unclosed_cases": 0
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-17",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-27",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-37",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-47",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-57",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    }
+  ],
+  "evaluation_cells_scope": "Durable verified completion coverage only,from16:01snapshot/preserved16:06. Runtime activity and4newreportedreceipts are separate below;newreceiptsare not counted as verified.",
+  "coordinator_observation": {
+    "observed_at": "2026-10-17T17:14:20.577976+00:00",
+    "record_sha256": "9d1de2157b9b817249578f4d875976249a575180b6d16a7871844d3541c09955",
+    "contained_coordinator_sha256": "4bcc93a034ac67808c4593655b9f02276b10a130aebf82f5f36a53499b5e4eb0",
+    "scope": "RUNNING owned supervisor,4closedcells,fullseed17evaluating at17:14:20;not the source of17:07rawcasecounts."
   }
 }
