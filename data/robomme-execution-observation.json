@@ -270,11 +270,11 @@
     {
       "cell": "after-recent_history_intervention_bc-seed-7",
       "planned_cases": 100,
-      "completed_cases": 57,
+      "completed_cases": 87,
       "infrastructure_aborted_cases": 0,
-      "not_started_cases": 42,
+      "not_started_cases": 12,
       "active_cases": 1,
-      "remaining_unclosed_cases": 43
+      "remaining_unclosed_cases": 13
     },
     {
       "cell": "after-recent_history_intervention_bc-seed-17",
@@ -1068,6 +1068,7 @@
     "next_isolation": "Separate preregistered same-source batching and dtype sensitivity; no future113..119images, training, val selection or hidden feature repair.",
     "original_source_episodes": 8,
     "successful_source_episodes": 6,
-    "unsuccessful_source_episodes_preserved": 2
+    "unsuccessful_source_episodes_preserved": 2,
+    "last_verified": "2026-10-17T14:49:54+00:00"
   }
 }

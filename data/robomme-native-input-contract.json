@@ -59,5 +59,6 @@
   "next_isolation": "Separate preregistered same-source batching and dtype sensitivity; no future113..119images, training, val selection or hidden feature repair.",
   "original_source_episodes": 8,
   "successful_source_episodes": 6,
-  "unsuccessful_source_episodes_preserved": 2
+  "unsuccessful_source_episodes_preserved": 2,
+  "last_verified": "2026-10-17T14:49:54+00:00"
 }
