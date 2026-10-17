@@ -1705,7 +1705,7 @@
       "task_balanced_success": 0.42,
       "scope": "fixed released checkpoint and inference seed; two tasks only"
     },
-    "supervision": "Recent-before100 independentlyverified;ownedservice waitedafterlocalarchive,andrecentseed7next. Datedsnapshot,notlive. Sourceactiondiagnostic32predictions independentlyverified;boundedlabel-fitimprovement,notterminalgain. Source/dev attempt1importabortedbeforeenv/controls;configurationcorrectionunderindependentreview. No6seedconclusion.",
+    "supervision": "Recent-before100 independentlyverified;ownedservice waitedafterlocalarchive,andrecentseed7next. Datedsnapshot,notlive. Sourceactiondiagnostic32predictions independentlyverified;boundedlabel-fitimprovement,notterminalgain. Source/dev attempt1abortedwhileimportingenvmodulebeforeconstruction/controls;13nativequalificationcallsincurred;configurationcorrectionunderindependentreview. No6seedconclusion.",
     "source_inventory_observed_at": "2026-10-17T00:25:49.039360+00:00",
     "source_inventory_sha256": "a9e9f79c056bbb84bc1c75f42932a06f641d249ee8956b6c076095659727f9d2",
     "durable_export_index_sha256": "e6c4e1736c05f9aef172bc201261a447fdb080933542a620a01748ffc27b7e8a",

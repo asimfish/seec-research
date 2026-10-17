@@ -1,7 +1,7 @@
 {
   "schema": "robomme-source-action-diagnostic-public-v1",
-  "observed_at": "2026-10-17T11:01:47.661773+00:00",
-  "last_verified": "2026-10-17T11:01:47.661773+00:00",
+  "observed_at": "2026-10-17T11:16:05.740989+00:00",
+  "last_verified": "2026-10-17T11:16:05.740989+00:00",
   "status": "PASS_BOUNDED_OFFLINE_SOURCE_ACTION_DIAGNOSTIC",
   "plan_id": "robomme-source-dev-diagnostic-107184e71449977a",
   "plan_sha256": "1b37747fb6dff5e969698640ce8d4ba57d95d728092c532a58364ce811e24713",
@@ -118,7 +118,15 @@
     "PickHighlight_training_chunks": 100,
     "all120_terminal_verification": "NOT_RUN"
   },
-  "closed_loop_source_dev": "ATTEMPT1_ABORTED_BEFORE_ENV_IMPORT;0CONTROLS;CONFIGURATION_RECOVERY_UNDER_REVIEW",
+  "closed_loop_source_dev": {
+    "status": "ATTEMPT1_ABORTED_DURING_ENV_MODULE_IMPORT_BEFORE_ENV_CONSTRUCTION",
+    "observed_at": "2026-10-17T11:16:05.740989+00:00",
+    "environment_controls": 0,
+    "terminal_outcomes": 0,
+    "qualification_native_calls_already_incurred": 13,
+    "recovery_status_at_snapshot": "EXECUTION_CONFIGURATION_CORRECTION_UNDER_INDEPENDENT_REVIEW",
+    "scientific_diagnostic_plan": "UNCHANGED"
+  },
   "frozen_official_val_comparison": {
     "before": 42,
     "after_full_seed7": 14,
@@ -126,5 +134,6 @@
     "root_cause": "UNKNOWN"
   },
   "code_pr": "https://github.com/asimfish/robocore/pull/8",
-  "rollout_code_pr": "https://github.com/asimfish/robocore/pull/9"
+  "rollout_code_pr": "https://github.com/asimfish/robocore/pull/9",
+  "offline_source_result_verified_at": "2026-10-17T11:01:47.661773+00:00"
 }
