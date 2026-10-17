@@ -1,8 +1,8 @@
 {
   "schema": "robomme-execution-observation-v1",
-  "observed_at": "2026-10-17T00:36:04.805885+00:00",
-  "last_verified": "2026-10-17T00:36:04.805885+00:00",
-  "status": "ABORTED_NO_COMPLETE_SCIENTIFIC_CONCLUSION",
+  "observed_at": "2026-10-17T00:45:41.265202+00:00",
+  "last_verified": "2026-10-17T00:45:41.265202+00:00",
+  "status": "RECOVERING_AFTER_INFRASTRUCTURE_ABORT",
   "reason_code": "SSH_READ_EXIT_255",
   "reason": "SSH connection reset while reading the recent-history initial reference; infrastructure interruption, not a method outcome",
   "plan_id": "robomme-absorption-eval-8eeead0ededca5c0",
@@ -40,7 +40,7 @@
     "task_balanced_success": 0.42,
     "scope": "fixed released checkpoint and inference seed; two tasks only"
   },
-  "supervision": "All12 models/all14 cells inventoried,12 exact inference exports preserved. Original144 completed cases including task failures will not be rerun. Continuation awaits independent code review; no new training or scientific conclusion.",
+  "supervision": "Recovery commit36ca96e passed independent review and26 tests; native service qualified on original GPU1. Seven simulator worker logs exist for unfinished recent-reference cases. Original144 completed cases retained. No retraining or scientific conclusion. Original run2 abort preserved; all14cells required before frozen analyzer/verifier/report.",
   "source_inventory_observed_at": "2026-10-17T00:25:49.039360+00:00",
   "source_inventory_sha256": "a9e9f79c056bbb84bc1c75f42932a06f641d249ee8956b6c076095659727f9d2",
   "durable_export_index_sha256": "e6c4e1736c05f9aef172bc201261a447fdb080933542a620a01748ffc27b7e8a",
@@ -57,7 +57,7 @@
         "finite_metrics": true,
         "training_receipt_sha256": "607e1f3279d4ba24be005367c683d27db32bf555d3434c97de9a8135fcd8a175",
         "archive_sha256": "6f09635b3b5a9d2dcfc13520d8f387eb2b6ff2ac13843a98f67093e35e7e05cb",
-        "export_storage": "LOCAL_NAS_VERIFIED",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
         "original_ram_expires_at": "2026-10-18T05:42:21.241273+00:00",
         "optimizer_resume": false
       },
@@ -69,7 +69,7 @@
         "finite_metrics": true,
         "training_receipt_sha256": "60a51b47a2e95cb8e37e2e45cad0eff68055b551c7c242254921521c7a1ee1c9",
         "archive_sha256": "c9873322ba0810c8637de1e43d7a6101eb5beb6f15720964244b237babf2d058",
-        "export_storage": "LOCAL_NAS_VERIFIED",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
         "original_ram_expires_at": "2026-10-18T06:31:40.150243+00:00",
         "optimizer_resume": false
       },
@@ -81,7 +81,7 @@
         "finite_metrics": true,
         "training_receipt_sha256": "035822f91d5f1fce158988f741cdc801f43ff289ef8d95fad0c0539112673888",
         "archive_sha256": "77414be527a7cd6ef8ef3a23eac186b2e95e2e0d2c866d8a4d55f3425f18d491",
-        "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
         "original_ram_expires_at": "2026-10-18T07:17:13.830828+00:00",
         "optimizer_resume": false
       },
@@ -93,7 +93,7 @@
         "finite_metrics": true,
         "training_receipt_sha256": "3ec5d57f0c2f309489c4271fa181fc4cb06c953a132b9656ba53ea89ae33a540",
         "archive_sha256": "d237d011fbebe793b53ea9d78e192c468bf6503fb956d6cafcce7ccdd786954c",
-        "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
         "original_ram_expires_at": "2026-10-18T08:03:13.582453+00:00",
         "optimizer_resume": false
       },
@@ -129,7 +129,7 @@
         "finite_metrics": true,
         "training_receipt_sha256": "a874cabb324f702215ec0a734c3cd00d23b701ca84093dd597fc11777c4f888c",
         "archive_sha256": "c7b7dc0a74e23e3a5cfc78f0a71d28fffa282e0e0ceaf58f2a1993f73ed90470",
-        "export_storage": "LOCAL_NAS_VERIFIED",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
         "original_ram_expires_at": "2026-10-18T05:42:12.834112+00:00",
         "optimizer_resume": false
       },
@@ -141,7 +141,7 @@
         "finite_metrics": true,
         "training_receipt_sha256": "459624ecb78e56f2859ce4a3ede6b14bf9e406737298e8125d79a8682f8aa8f4",
         "archive_sha256": "be902feb2b64a98bb789a4d082cd827984f49bd7994eef255fb5b6876921b67f",
-        "export_storage": "LOCAL_NAS_VERIFIED",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
         "original_ram_expires_at": "2026-10-18T06:31:51.566224+00:00",
         "optimizer_resume": false
       },
@@ -153,7 +153,7 @@
         "finite_metrics": true,
         "training_receipt_sha256": "47b1ea5e220b1fa21bc85cd478a84e617914ed1e5ad2131a5e841a7c0880fc6d",
         "archive_sha256": "8e43669a732e65e78561232307bda82bfb971b033723487b73a1371f673e1bf1",
-        "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
         "original_ram_expires_at": "2026-10-18T07:17:38.383447+00:00",
         "optimizer_resume": false
       },
@@ -165,7 +165,7 @@
         "finite_metrics": true,
         "training_receipt_sha256": "6b128c390c0db57fe32d76aa510e74c74693992e0fe5b3fa4f89eea1a4eb1048",
         "archive_sha256": "29b57d274e0577d046fc55f9d072f553b17c2a477d12e2e82d4e7f0e912b56f3",
-        "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
         "original_ram_expires_at": "2026-10-18T08:03:22.376366+00:00",
         "optimizer_resume": false
       },
@@ -297,14 +297,35 @@
     }
   ],
   "recovery": {
-    "status": "INFRASTRUCTURE_PR_UNDER_INDEPENDENT_REVIEW",
+    "status": "RUNNING_REVIEWED_INFRASTRUCTURE_CONTINUATION",
     "pull_request": "https://github.com/asimfish/robocore/pull/4",
-    "new_simulator_work_started": false,
+    "new_simulator_work_started": true,
     "original_run2_overwritten": false,
     "worker_retries": "no automatic worker retry; only explicit continuation of unfinished registered cases",
     "exports_durable": 12,
     "local_export_replication": "IN_PROGRESS_NOT_ALL_VERIFIED",
     "shared_reference_800": "UNTOUCHED_SEPARATE_STUDY",
-    "ssh_connectivity": "mainskill and tianyiyun-30109 exit0 at2026-10-17T00:23:16Z"
-  }
+    "ssh_connectivity": "mainskill and tianyiyun-30109 exit0 at2026-10-17T00:23:16Z",
+    "reviewed_commit": "36ca96e347aecb2a63361b8b17e47b129fad6bb8",
+    "supervisor_status": "RUNNING",
+    "phase": "RECENT_INITIAL_REFERENCE_UNFINISHED_CASES",
+    "local_replicas_reverified": 8,
+    "original_runtime_directory_error": "Initial all-reuse packaging did not start because launch-log parent was absent; explicit evidence-backed submission after creating task directory; original receipt retained",
+    "independent_verifier": "WATCHING_FOR_COMPLETE_STUDY",
+    "reporter": "WATCHING_FOR_INDEPENDENT_VERIFICATION",
+    "recent_reference_snapshot": {
+      "observed_at": "2026-10-17T00:45:41.265202+00:00",
+      "cell_exists": true,
+      "status_counts": {
+        "COMPLETED": 44
+      },
+      "reused": 44,
+      "newly_completed": 0,
+      "worker_logs": 7,
+      "server_qualification": "PASS",
+      "server_ready_sha256": "cadf35d5b110012f58d5ca677afc5c14109ab3739e08454db0c626bb13fdc7ad"
+    }
+  },
+  "recovery_coordinator_record_sha256": "de26ad16f6db69a0055fc3bb25a249d074bcb6c8897cf0eb5f3b8be3a2fd5398",
+  "local_replica_snapshot_sha256": "1a42844081b7e757acde5610cf3e35db1413bdad452fe03a99fc5b0e22bf708a"
 }
