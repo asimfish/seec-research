@@ -2024,7 +2024,8 @@
       "first_pair_status": "NOT_COMPLETE",
       "progress_snapshot_sha256": "3421df983b8eeaa30e3e1158ad8bd269b3c658b3ee933c5a53ed9ac8a5ff7bb4",
       "runtime_receipt_sha256": "0f32a7768afccf00cb0c52136033c3d448b8b734400f28765f7715cf99fbd358",
-      "status": "ABORTED_NO_COMPLETE_SCIENTIFIC_CONCLUSION"
+      "status": "ABORTED_NO_COMPLETE_SCIENTIFIC_CONCLUSION",
+      "runtime_receipt_scope": "Historical first50 journal receipt only;87 covered by separate third-abort journal/progress snapshot"
     },
     "historical_original_coordinator_record_sha256": "a692b261f166ae5ef0fdbc75b5498e76d77b5e3d77e005e1588d2bb750b7dbfd"
   }
