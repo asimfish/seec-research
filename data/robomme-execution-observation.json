@@ -43,7 +43,7 @@
     "task_balanced_success": 0.42,
     "scope": "fixed released checkpoint and inference seed; two tasks only"
   },
-  "supervision": "Original87complete receipts preserved;13newcasescomplete with0newinfra;100case archive validated and durable-sealed;service/executor stopped at completecell boundary. No next cell submitted. Source/development-only diagnosis pending;no val tuning/retraining.",
+  "supervision": "First100case comparison independentlyverified anddurable. Source-only240batch action/currentstate transform auditPASS;no GPU/development/val diagnostic run. CauseofnegativegainUNKNOWN;20stepteacherfragmentsnotterminalverified. Remainingstudy paused at reviewedboundary;no resultdependent seed/checkpointchange.",
   "source_inventory_observed_at": "2026-10-17T00:25:49.039360+00:00",
   "source_inventory_sha256": "a9e9f79c056bbb84bc1c75f42932a06f641d249ee8956b6c076095659727f9d2",
   "durable_export_index_sha256": "e6c4e1736c05f9aef172bc201261a447fdb080933542a620a01748ffc27b7e8a",
@@ -578,5 +578,21 @@
     "verification_receipt_sha256": "18afa7fe42884cdd86fa62bd5f12c5136cef1d6e888fa1b63c5bb59a03360617",
     "private_report_sha256": "268d9007ffa78f05aaf8850754a1bf8ae57a9b6d10dda0b9e475fc219853e180",
     "public_summary": "data/robomme-first-pair-seed7.json"
+  },
+  "source_only_diagnostic": {
+    "status": "PASS_BOUNDED_ACTION_AND_CURRENT_STATE_CONVENTION",
+    "train_cases": 8,
+    "unique_correction_chunks": 120,
+    "materialized_batches_checked": 240,
+    "forward_action_and_state_exact": true,
+    "inverse_action_max_error": 1.4901161193847656e-08,
+    "review_sha256": "35f631f09957f94a1e834eb7493c355148ae90dc7214d427f8e625a9eb42d7c4",
+    "root_cause_of_negative_gain": "UNKNOWN",
+    "expert_chunk_quality": "All120 admitted20steporaclefragments have terminal_evaluated=false/successnull;not120verifiedterminalrecoveries",
+    "limits": [
+      "No model/GPU/visionfeature recomputation or development/val rollouts",
+      "Registered wholehistory binding retained;entireh5filesnotrehashed",
+      "Doesnot prove labeloptimality or continuation success;forgetting and dataquality remain hypotheses"
+    ]
   }
 }

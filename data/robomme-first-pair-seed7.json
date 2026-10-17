@@ -940,5 +940,21 @@
     "Full14cell/6seed study remains incomplete;no result-dependent seed/checkpoint/threshold change."
   ],
   "failure_to_success_count": 2,
-  "success_to_failure_count": 30
+  "success_to_failure_count": 30,
+  "source_only_diagnostic": {
+    "status": "PASS_BOUNDED_ACTION_AND_CURRENT_STATE_CONVENTION",
+    "train_cases": 8,
+    "unique_correction_chunks": 120,
+    "materialized_batches_checked": 240,
+    "forward_action_and_state_exact": true,
+    "inverse_action_max_error": 1.4901161193847656e-08,
+    "review_sha256": "35f631f09957f94a1e834eb7493c355148ae90dc7214d427f8e625a9eb42d7c4",
+    "root_cause_of_negative_gain": "UNKNOWN",
+    "expert_chunk_quality": "All120 admitted20steporaclefragments have terminal_evaluated=false/successnull;not120verifiedterminalrecoveries",
+    "limits": [
+      "No model/GPU/visionfeature recomputation or development/val rollouts",
+      "Registered wholehistory binding retained;entireh5filesnotrehashed",
+      "Doesnot prove labeloptimality or continuation success;forgetting and dataquality remain hypotheses"
+    ]
+  }
 }
