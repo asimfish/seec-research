@@ -1,7 +1,7 @@
 {
   "schema": "robomme-source-expert-continuation-diagnostic-v1",
   "observed_at": "2026-10-17T12:02:38.727638+00:00",
-  "last_verified": "2026-10-17T12:01:05.920315+00:00",
+  "last_verified": "2026-10-17T13:28:50.678637+00:00",
   "status": "FOUR_FIXED_SOURCE_PRIVILEGED_CONTINUATIONS_INDEPENDENT_PASS",
   "plan_id": "robomme-source-dev-diagnostic-107184e71449977a",
   "plan_sha256": "1b37747fb6dff5e969698640ce8d4ba57d95d728092c532a58364ce811e24713",
@@ -96,7 +96,7 @@
     "optimizer_updates": 0,
     "reset_internal_steps": "UNKNOWN_UNINSTRUMENTED_NOT_ZERO"
   },
-  "student_takeover": "NOT_RUN_CODE_PR10_UNDER_INDEPENDENT_REVIEW",
+  "student_takeover": "COMPLETE_FOUR_FIXED_SOURCE_DIAGNOSTICS",
   "original_training_fragments": 120,
   "fragments_with_later_verified_privileged_continuation": 4,
   "unexamined_fragments": 116,
@@ -109,5 +109,156 @@
     "Action equality is exact for recorded numeric lists canonicalized as little-endian float64 arrays; it is not an assertion that the old runtime native array dtype was archived.",
     "Reset/construction-internal simulator steps remain uninstrumented/unknown, not zero; recorded registered controls are exact.",
     "No population/generalization success-rate claim follows from these selected source diagnostics. Root cause of the main single-seed degradation remains UNKNOWN."
-  ]
+  ],
+  "student_takeover_detail": {
+    "observed_at": "2026-10-17T13:26:29.287673+00:00",
+    "last_verified": "2026-10-17T13:28:50.678637+00:00",
+    "readout_sha256": "1c71e122d276ddabed0673995661789836bbee3457bb96f145c846241513ff02",
+    "independent_review_sha256": "a2de9015a8f0504df399b8884bd4edc3b6474710ba81e6269aba93d4c20e2d83",
+    "worker_revision": "755e5723f9edd7dd1ef451c1ffff7a63426cf69e",
+    "execution_config_sha256": "dc7ae9e6c3b7343a9c02dfadefe4b8128fd3a5264882913c2f888832f68ecaeb",
+    "rows": [
+      {
+        "case": "PatternLock-train-001",
+        "teacher_only": {
+          "success": true,
+          "total_prefix_plus_teacher_controls": 57,
+          "teacher_controls": 41,
+          "terminal_evaluated": true
+        },
+        "after_20_correction_then_student": {
+          "plan_id": "source-c-takeover-3058ae9d606197a7",
+          "plan_sha256": "97bc393b39a9b8e24eaeaa5721ac0710c7f6d50cfb7be14b2981547d29f43c25",
+          "status": "COMPLETED",
+          "success": true,
+          "outcome": "success",
+          "prefix_exact": true,
+          "prefix_frames_checked": 100,
+          "actual_prefix_controls": 16,
+          "actual_expert_controls": 20,
+          "actual_student_controls": 39,
+          "terminal_evaluated": true,
+          "termination_reason": "official_environment_terminal",
+          "policy_calls": 3,
+          "extra_expert_query_count": 0,
+          "step_calls": 75,
+          "unresolved_step_calls": 0
+        }
+      },
+      {
+        "case": "PickHighlight-train-001",
+        "teacher_only": {
+          "success": true,
+          "total_prefix_plus_teacher_controls": 202,
+          "teacher_controls": 90,
+          "terminal_evaluated": true
+        },
+        "after_20_correction_then_student": {
+          "plan_id": "source-c-takeover-985f8ad4cff2f14f",
+          "plan_sha256": "76de99a52e2555b5931114b49dda88813975a26f3e92a88ce32d9d17d230ff00",
+          "status": "COMPLETED",
+          "success": false,
+          "outcome": "timeout",
+          "prefix_exact": true,
+          "prefix_frames_checked": 133,
+          "actual_prefix_controls": 112,
+          "actual_expert_controls": 20,
+          "actual_student_controls": 1168,
+          "terminal_evaluated": false,
+          "termination_reason": "registered_total_control_budget",
+          "policy_calls": 73,
+          "extra_expert_query_count": 0,
+          "step_calls": 1300,
+          "unresolved_step_calls": 0
+        }
+      },
+      {
+        "case": "PatternLock-train-002",
+        "teacher_only": {
+          "success": true,
+          "total_prefix_plus_teacher_controls": 122,
+          "teacher_controls": 74,
+          "terminal_evaluated": true
+        },
+        "after_20_correction_then_student": {
+          "plan_id": "source-c-takeover-8780d657d39f2f1e",
+          "plan_sha256": "90b4127ab170be499633c459c50e0bbc478b35bfe3b61f57776dcf8ff6c9b46c",
+          "status": "COMPLETED",
+          "success": true,
+          "outcome": "success",
+          "prefix_exact": true,
+          "prefix_frames_checked": 199,
+          "actual_prefix_controls": 48,
+          "actual_expert_controls": 20,
+          "actual_student_controls": 90,
+          "terminal_evaluated": true,
+          "termination_reason": "official_environment_terminal",
+          "policy_calls": 6,
+          "extra_expert_query_count": 0,
+          "step_calls": 158,
+          "unresolved_step_calls": 0
+        }
+      },
+      {
+        "case": "PickHighlight-train-002",
+        "teacher_only": {
+          "success": true,
+          "total_prefix_plus_teacher_controls": 382,
+          "teacher_controls": 158,
+          "terminal_evaluated": true
+        },
+        "after_20_correction_then_student": {
+          "plan_id": "source-c-takeover-27d03d1a868d9df0",
+          "plan_sha256": "d4814d4da74246f9b1f39bbbc9bdd24bdfa7e5bd40df870a158a8a22f503a0af",
+          "status": "COMPLETED",
+          "success": false,
+          "outcome": "timeout",
+          "prefix_exact": true,
+          "prefix_frames_checked": 245,
+          "actual_prefix_controls": 224,
+          "actual_expert_controls": 20,
+          "actual_student_controls": 1056,
+          "terminal_evaluated": false,
+          "termination_reason": "registered_total_control_budget",
+          "policy_calls": 66,
+          "extra_expert_query_count": 0,
+          "step_calls": 1300,
+          "unresolved_step_calls": 0
+        }
+      }
+    ],
+    "completed": 4,
+    "successes": 2,
+    "not_replayable_cases": [],
+    "costs": {
+      "original_expert4_prefix_plus_teacher_controls": 763,
+      "prior_transport_aborted_prefix_plus_recorded20_controls": 36,
+      "current_takeover_actual_controls": 2833,
+      "all_C_observed_registered_controls": 3632,
+      "original_service_qualification_calls": 13,
+      "additional_qualification_calls": 0,
+      "new_expert_queries_for_takeover": 0,
+      "recorded_privileged_correction_controls_replayed": 80,
+      "reset_constructor_steps": "UNKNOWN_NOT_ZERO"
+    },
+    "scope": "Fourpreselectedsourcestates,onefixedfullseed7model;notpopulationSR,notinitial-vs-trainedgain,notall120trainingfragmentsvalidated",
+    "limits": [
+      "No matched initial-student takeover arm, so no learning-benefit attribution from C.",
+      "Newhostsamevisibleprefixexactness doesnotprovehidden-stateidentity oroldnativearraydtype.",
+      "FreshnativeRNGresetattakeover,notcontinuationofhistoricalrandomstream.",
+      "Fulloriginaldemo/publichistoryandsource/correctionconsequencesgated,notonlylastframe.",
+      "Fourprivilegedteachercontinuationssucceedwithadditionalexpertcontrols;original20stepchunkswere not terminalverifiedattrainingtime.",
+      "Originalinfraattemptisnotstudentfailure;retainedseparatelywith36controls.",
+      "Bootstrapparseerrorreceipt documentsPythoncompilationfailurebeforeanyjobclaim;notanextraexperimentcondition."
+    ],
+    "prior_transport_infra_attempt": {
+      "status": "ABORTED_INFRASTRUCTURE",
+      "success": null,
+      "prefix_controls": 16,
+      "recorded_expert_controls": 20,
+      "student_controls": 0,
+      "raw_result_sha256": "f192120e79414185af01bf8a37dcda4ae05fe8b788da64cdc6a796ddbadaa128"
+    },
+    "samehost_continuation": "Reviewedoneexplicitinfrastructurecontinuation;originalfailurepreserved,nocase/model/budgetchangeorautomaticretry"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "schema": "robot-memory-benchmark-public-status-v1",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "source_inventory_sha256": "9d738a7326f87ea1582ea5196ef7c8ae7140a23a3748ecaa93f5afb68b12d5c1",
   "robomme": {
     "status": "PASS_TRAIN_ONLY_ENVIRONMENT_QUALIFICATION",
@@ -87,8 +87,8 @@
   "focused_tests_passed": 88,
   "gradient_updates": 120016,
   "released_policy_evaluation": "IN_PROGRESS_VALIDATION",
-  "method_efficacy": "NOT_RUN",
-  "scope": "12trainedexports;277/1400uniquecomplete;firstfullseed7independentlyverifiednegative42to14;6seedstudyincomplete",
+  "method_efficacy": "SINGLE_SEED_MAIN_NEGATIVE;SIX_SEED_CONCLUSION_PENDING",
+  "scope": "Main evaluation: 357/1400 unique completed cases; recent seed7: 57/100. Three complete cells, one partial, ten unstarted. Source/dev diagnostics are separate. Full seed7 result42/100 to14/100 is retained; six-seed conclusion pending.",
   "additional_archive_boundary_tests_passed": 6,
   "reference_model": {
     "repository": "Yinpei/perceptual-framesamp-modul",
@@ -289,7 +289,7 @@
     ],
     "snapshot_time_basis": "local saved audit receipt mtime, not live monitoring"
   },
-  "snapshot_utc": "2026-10-16T06:14:04.563371+00:00",
+  "snapshot_utc": "2026-10-17T13:29:40.787327+00:00",
   "expert_recovery_qualification": {
     "schema": "robomme-expert-recovery-public-v1",
     "date": "2026-10-16",
@@ -1660,29 +1660,31 @@
   },
   "execution_observation": {
     "schema": "robomme-execution-observation-v1",
-    "observed_at": "2026-10-17T12:01:27.442555+00:00",
-    "last_verified": "2026-10-17T12:01:27.442555+00:00",
+    "observed_at": "2026-10-17T13:29:40.787327+00:00",
+    "last_verified": "2026-10-17T13:29:40.787327+00:00",
     "status": "REGISTERED_EVALUATION_RESUMED_AFTER_NEGATIVE_FIRST_PAIR",
-    "reason_code": "RECENT_BEFORE100_COMPLETE;RECENT_SEED7_CASES_PROGRESSING;SOURCE_C4_INDEPENDENT_PASS",
-    "reason": "Threecomplete100casecells;recentseed7 23/100complete,0newinfra;global323/1400. Fullseed7negative42to14retained. SourceC4privilegedcontinuationsverified;studenttakeoverNOT_RUN;6seedconclusionpending.",
+    "reason_code": "RECENT_SEED7_PROGRESS;SOURCE_A32_B32_C4_CLOSED_INDEPENDENTLY",
+    "reason": "Main evaluation: 357/1400 unique completed cases; recent seed7: 57/100. Three complete cells, one partial, ten unstarted. Source/dev diagnostics are separate. Full seed7 result42/100 to14/100 is retained; six-seed conclusion pending.",
     "plan_id": "robomme-absorption-eval-8eeead0ededca5c0",
     "plan_sha256": "6c7470da67eb6ef724760fd9e948ea155e6733d28cd0c5326e5daaa913809ba7",
     "coordinator_source_revision": "262876882b488eb9c5a8561df4160a5ebd863d80",
     "research_snapshot_revision": "b3c1473c2e8d098d8dc3e237974d2c8a76507385",
-    "coordinator_record_sha256": "d22dc14dbb758f5ea5552e29c87e843a9ab5f892a361086f8bbda7f14dc2bc48",
+    "coordinator_record_sha256": "c768873822d7e6df671722a6e5575ca393a861c9914d5bcfbf9220e14a3a40fc",
     "coverage": {
       "planned_model_cells": 14,
       "archived_complete_model_cells": 3,
-      "archived_complete_episodes": 300,
+      "archived_complete_episodes": 350,
       "planned_episodes": 1400,
-      "coverage_scope": "Fullbefore100+fullafterseed7 100+recentbefore100+recentafterseed7 23uniquecomplete;1077unclosed. Infraattemptsarenotadditionalscientificsamples.",
+      "coverage_scope": "3complete100casecells+recentseed757uniquecomplete;source/devnotincluded.50recentseed7casesdurablyarchived;infraattemptsnotadditionalsamples.",
       "remote_complete_model_cells": 3,
-      "remote_complete_episodes": 323,
+      "remote_complete_episodes": 357,
       "remote_infrastructure_aborted_episodes": 0,
-      "local_partial_completed_case_receipts": 0,
-      "remote_remaining_unclosed_episodes": 1077,
+      "local_partial_completed_case_receipts": 50,
+      "remote_remaining_unclosed_episodes": 1043,
       "partial_model_cells": 1,
-      "unstarted_model_cells": 10
+      "unstarted_model_cells": 10,
+      "archived_complete_cell_episodes": 300,
+      "durable_partial_completed_episodes": 50
     },
     "science": {
       "analysis": "ABSENT",
@@ -1705,7 +1707,7 @@
       "task_balanced_success": 0.42,
       "scope": "fixed released checkpoint and inference seed; two tasks only"
     },
-    "supervision": "Datedread-only snapshot,notlive. Recent-before100 independentlyverifiedandNASsealed. Mainrecentseed7continuesunderreviewed25case synchronousdrain. SourceA32offlinepredictionsindependentlyverified. SourceB32autonomousdiagnosticsseparate:run3hasactualterminalcasesaftertwo preservedinfrastructureaborts,notanabsorptiongain. SourceCfourfixedqueryprefixesandfirst20actionsreproduced,followedbyofficialprivilegedterminalsuccess;independentreviewPASS. Studenttakeoverunderreview. No6seedconclusion.",
+    "supervision": "Dated read-only snapshot, not live. SourceA32, sourceB32 and four sourceC takeover conditions are independently audited and separate from official validation. All task failures and infrastructure incidents are retained. Two native25-case drain/archive/service-exit boundaries have been observed; future lifecycle correctness is not thereby guaranteed.",
     "source_inventory_observed_at": "2026-10-17T00:25:49.039360+00:00",
     "source_inventory_sha256": "a9e9f79c056bbb84bc1c75f42932a06f641d249ee8956b6c076095659727f9d2",
     "durable_export_index_sha256": "e6c4e1736c05f9aef172bc201261a447fdb080933542a620a01748ffc27b7e8a",
@@ -1928,11 +1930,11 @@
       {
         "cell": "after-recent_history_intervention_bc-seed-7",
         "planned_cases": 100,
-        "completed_cases": 1,
+        "completed_cases": 57,
         "infrastructure_aborted_cases": 0,
-        "not_started_cases": 98,
+        "not_started_cases": 42,
         "active_cases": 1,
-        "remaining_unclosed_cases": 99
+        "remaining_unclosed_cases": 43
       },
       {
         "cell": "after-recent_history_intervention_bc-seed-17",
@@ -2347,11 +2349,305 @@
       "independent_review_sha256": "a902322046cda29347dd2f2ea8ccef329ece7cdc06f22ef5a79c6a5e8a2f5fe0",
       "fixed_source_queries": 4,
       "observed_privileged_terminal_successes": 4,
-      "student_takeover": "NOT_RUN",
+      "student_takeover": "COMPLETE_FOUR_FIXED_SOURCE_DIAGNOSTICS",
       "all120_verified": false,
-      "root_cause": "UNKNOWN"
+      "root_cause": "UNKNOWN",
+      "detail": "data/robomme-source-expert-continuation-diagnostic.json"
     },
     "source_development_autonomous_diagnostic": {
+      "schema": "robomme-source-dev-alignment-public-v1",
+      "observed_at": "2026-10-17T13:10:43.175862+00:00",
+      "last_verified": "2026-10-17T13:14:01.561004+00:00",
+      "status": "INDEPENDENT_PASS_DESCRIPTIVE_SOURCE_DEV_ONLY",
+      "plan_id": "robomme-source-dev-diagnostic-107184e71449977a",
+      "plan_sha256": "1b37747fb6dff5e969698640ce8d4ba57d95d728092c532a58364ce811e24713",
+      "worker_revision": "1911da4ea3b234c214af8f91267146ca77281b91",
+      "aligned_report_sha256": "77ce167926b2b90306c342327d3760dc116cba30490cd5834515cf7dde576fa0",
+      "independent_review_sha256": "d25c3b246c7d07ca70c778489837314ca8fbc13ec00b7321aeec34bf71d7fba1",
+      "coverage": {
+        "cached_source_predictions": 32,
+        "closed_loop_rollouts": 32,
+        "unique_model_sessions": 32,
+        "cases_per_view_model": 8,
+        "source_cases_per_view_model": 4,
+        "development_cases_per_view_model": 4,
+        "official_environment_terminal_cases": 22,
+        "nonterminal_budget_exhausted_cases": 10,
+        "main_validation_cases": 0
+      },
+      "comparisons": [
+        {
+          "view": "full",
+          "cases": 8,
+          "before_successes": 7,
+          "after_successes": 3,
+          "paired_gain_percentage_points": -50.0,
+          "pairs": [
+            {
+              "case": "PatternLock-train-001",
+              "task": "PatternLock",
+              "use": "source",
+              "before": true,
+              "after": true,
+              "flip": "unchanged"
+            },
+            {
+              "case": "PickHighlight-train-001",
+              "task": "PickHighlight",
+              "use": "source",
+              "before": true,
+              "after": false,
+              "flip": "success_to_failure"
+            },
+            {
+              "case": "PatternLock-train-002",
+              "task": "PatternLock",
+              "use": "source",
+              "before": false,
+              "after": true,
+              "flip": "failure_to_success"
+            },
+            {
+              "case": "PickHighlight-train-002",
+              "task": "PickHighlight",
+              "use": "source",
+              "before": true,
+              "after": false,
+              "flip": "success_to_failure"
+            },
+            {
+              "case": "PatternLock-train-005",
+              "task": "PatternLock",
+              "use": "development",
+              "before": true,
+              "after": false,
+              "flip": "success_to_failure"
+            },
+            {
+              "case": "PickHighlight-train-005",
+              "task": "PickHighlight",
+              "use": "development",
+              "before": true,
+              "after": false,
+              "flip": "success_to_failure"
+            },
+            {
+              "case": "PatternLock-train-006",
+              "task": "PatternLock",
+              "use": "development",
+              "before": true,
+              "after": true,
+              "flip": "unchanged"
+            },
+            {
+              "case": "PickHighlight-train-006",
+              "task": "PickHighlight",
+              "use": "development",
+              "before": true,
+              "after": false,
+              "flip": "success_to_failure"
+            }
+          ],
+          "strata": [
+            {
+              "use": "source",
+              "task": "PatternLock",
+              "cases": 2,
+              "before_successes": 1,
+              "after_successes": 2
+            },
+            {
+              "use": "source",
+              "task": "PickHighlight",
+              "cases": 2,
+              "before_successes": 2,
+              "after_successes": 0
+            },
+            {
+              "use": "development",
+              "task": "PatternLock",
+              "cases": 2,
+              "before_successes": 2,
+              "after_successes": 1
+            },
+            {
+              "use": "development",
+              "task": "PickHighlight",
+              "cases": 2,
+              "before_successes": 2,
+              "after_successes": 0
+            }
+          ],
+          "expert_query_count_before": 0,
+          "expert_query_count_after": 0,
+          "scope": "Eightfixedsource/devcases,onefixedtrainingseed;notmainvalandnotaseedlevelhypothesistest"
+        },
+        {
+          "view": "recent",
+          "cases": 8,
+          "before_successes": 1,
+          "after_successes": 0,
+          "paired_gain_percentage_points": -12.5,
+          "pairs": [
+            {
+              "case": "PatternLock-train-001",
+              "task": "PatternLock",
+              "use": "source",
+              "before": false,
+              "after": false,
+              "flip": "unchanged"
+            },
+            {
+              "case": "PickHighlight-train-001",
+              "task": "PickHighlight",
+              "use": "source",
+              "before": true,
+              "after": false,
+              "flip": "success_to_failure"
+            },
+            {
+              "case": "PatternLock-train-002",
+              "task": "PatternLock",
+              "use": "source",
+              "before": false,
+              "after": false,
+              "flip": "unchanged"
+            },
+            {
+              "case": "PickHighlight-train-002",
+              "task": "PickHighlight",
+              "use": "source",
+              "before": false,
+              "after": false,
+              "flip": "unchanged"
+            },
+            {
+              "case": "PatternLock-train-005",
+              "task": "PatternLock",
+              "use": "development",
+              "before": false,
+              "after": false,
+              "flip": "unchanged"
+            },
+            {
+              "case": "PickHighlight-train-005",
+              "task": "PickHighlight",
+              "use": "development",
+              "before": false,
+              "after": false,
+              "flip": "unchanged"
+            },
+            {
+              "case": "PatternLock-train-006",
+              "task": "PatternLock",
+              "use": "development",
+              "before": false,
+              "after": false,
+              "flip": "unchanged"
+            },
+            {
+              "case": "PickHighlight-train-006",
+              "task": "PickHighlight",
+              "use": "development",
+              "before": false,
+              "after": false,
+              "flip": "unchanged"
+            }
+          ],
+          "strata": [
+            {
+              "use": "source",
+              "task": "PatternLock",
+              "cases": 2,
+              "before_successes": 0,
+              "after_successes": 0
+            },
+            {
+              "use": "source",
+              "task": "PickHighlight",
+              "cases": 2,
+              "before_successes": 1,
+              "after_successes": 0
+            },
+            {
+              "use": "development",
+              "task": "PatternLock",
+              "cases": 2,
+              "before_successes": 0,
+              "after_successes": 0
+            },
+            {
+              "use": "development",
+              "task": "PickHighlight",
+              "cases": 2,
+              "before_successes": 0,
+              "after_successes": 0
+            }
+          ],
+          "expert_query_count_before": 0,
+          "expert_query_count_after": 0,
+          "scope": "Eightfixedsource/devcases,onefixedtrainingseed;notmainvalandnotaseedlevelhypothesistest"
+        }
+      ],
+      "local_label_fit": [
+        {
+          "view": "full",
+          "source_inputs": 8,
+          "improved_cases": [
+            "PickHighlight-train-001",
+            "PatternLock-train-002",
+            "PickHighlight-train-002",
+            "PatternLock-train-003",
+            "PickHighlight-train-003",
+            "PickHighlight-train-004"
+          ],
+          "worsened_cases": [
+            "PatternLock-train-001",
+            "PatternLock-train-004"
+          ],
+          "equal_case_mae20_before": 0.017318829355913546,
+          "equal_case_mae20_after": 0.004174535759415963
+        },
+        {
+          "view": "recent",
+          "source_inputs": 8,
+          "improved_cases": [
+            "PickHighlight-train-001",
+            "PatternLock-train-002",
+            "PickHighlight-train-002",
+            "PatternLock-train-003",
+            "PickHighlight-train-003",
+            "PickHighlight-train-004"
+          ],
+          "worsened_cases": [
+            "PatternLock-train-001",
+            "PatternLock-train-004"
+          ],
+          "equal_case_mae20_before": 0.023486488413767097,
+          "equal_case_mae20_after": 0.004092468510586533
+        }
+      ],
+      "costs": {
+        "registered_controls": 17193,
+        "qualification_native_calls": 78,
+        "prior_infrastructure_qualification_calls": 26,
+        "current4service_qualification_calls": 52,
+        "extra_expert_queries": 0,
+        "optimizer_updates": 0,
+        "reset_constructor_internal_steps": "UNKNOWN_NOT_ZERO"
+      },
+      "root_cause": "UNKNOWN",
+      "limits": [
+        "A contains eight cached source-query inputs (episodes1–4 per task). B contains four source and four development instances (episodes1,2,5,6 per task); the sets overlap on four source instances.",
+        "Each history view uses its own matched before model. Demonstration retention remains a confound between views.",
+        "This is a descriptive diagnostic on one fixed training seed and eight fixed cases per model, separate from official validation and the six-seed analysis.",
+        "Twenty-two rollouts reached an official environment terminal; ten exhausted the fixed1300-control budget without a terminal and count as nonsuccess. All outcomes are retained.",
+        "These data do not distinguish retained skills, visited-state shift, short correction coverage or cached-versus-fresh feature paths. Root cause remains unknown."
+      ],
+      "figure": "assets/figures/source-dev-diagnostic-ab-v3.svg",
+      "code_pr": "https://github.com/asimfish/robocore/pull/9"
+    },
+    "historical_source_development_autonomous_diagnostic": {
       "worker_revision": "1911da4ea3b234c214af8f91267146ca77281b91",
       "execution_config_sha256": "21cf203a8378fa6945ef09f35a332df220ca7f7b9b57a62c88bcb90baddf65b6",
       "snapshot_utc": "2026-10-17T12:05:21.922282+00:00",
@@ -2369,6 +2665,8 @@
       "main_val_used_for_selection": false,
       "coordinator_sha256": "774a2dc11b3184b63cd1c4210cb03de3d5a7a904e6790516309324219f249cb5",
       "read_only_observation_sha256": "46d47bab872db00eebbf24b25754d032e92c03e8be6b43756bbf6739d535d8fa"
-    }
-  }
+    },
+    "prior_public_status_snapshot_sha256": "0ec54748aa451ae1d42386878f0afcb79e7d8e1aeafa08165785618a94d34900"
+  },
+  "historical_fields_notice": "Earlier qualification, collection and training sections retain their original observations. Current frozen evaluation coverage and diagnostic status are in execution_observation with observed_at; earlier phase counts are not current coverage."
 }

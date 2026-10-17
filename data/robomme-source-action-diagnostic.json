@@ -1,7 +1,7 @@
 {
   "schema": "robomme-source-action-diagnostic-public-v1",
   "observed_at": "2026-10-17T11:16:05.740989+00:00",
-  "last_verified": "2026-10-17T11:16:05.740989+00:00",
+  "last_verified": "2026-10-17T13:14:01.561004+00:00",
   "status": "PASS_BOUNDED_OFFLINE_SOURCE_ACTION_DIAGNOSTIC",
   "plan_id": "robomme-source-dev-diagnostic-107184e71449977a",
   "plan_sha256": "1b37747fb6dff5e969698640ce8d4ba57d95d728092c532a58364ce811e24713",
@@ -104,7 +104,7 @@
     "task_RMSE": "Arithmeticmeanof4percaseRMSEs;notpooledrootmeanover4casesresiduals.",
     "original_task_20_to_100_weighted_MAE20": "Reweightthetwotaskmeanerrorsbyactualoriginal20PatternLock:100PickHighlightchunks.Sensitivityonlyon8fixedanchors,not120chunkmodelinference."
   },
-  "conclusion": "Bothtrainedseed7viewsreduceoraclelabeljointMAEonthe8fixedcachedsourcemediananchorsrelativetomatchedinitialview.Thisdoesnotmeasureterminalsuccessoridentifythereasonfornegativeofficialvalperformance.",
+  "conclusion": "AggregatedjointMAEdecreasesbutonly6/8anchorsimproveineachview;PatternLocksource1/4worsen. Completefreshsource/devrolloutsdecline7to3and1to0permatched8cases;notmainvalornovelmechanismproof.",
   "limits": [
     "Notcomplete120chunklabelfit",
     "Notfreshrawhistoryorvisionfeatureinference",
@@ -119,13 +119,21 @@
     "all120_terminal_verification": "NOT_RUN"
   },
   "closed_loop_source_dev": {
-    "status": "ATTEMPT1_ABORTED_DURING_ENV_MODULE_IMPORT_BEFORE_ENV_CONSTRUCTION",
-    "observed_at": "2026-10-17T11:16:05.740989+00:00",
-    "environment_controls": 0,
-    "terminal_outcomes": 0,
-    "qualification_native_calls_already_incurred": 13,
-    "recovery_status_at_snapshot": "EXECUTION_CONFIGURATION_CORRECTION_UNDER_INDEPENDENT_REVIEW",
-    "scientific_diagnostic_plan": "UNCHANGED"
+    "status": "INDEPENDENT_PASS_DESCRIPTIVE_SOURCE_DEV_ONLY",
+    "observed_at": "2026-10-17T13:10:43.175862+00:00",
+    "coverage": {
+      "cached_source_predictions": 32,
+      "closed_loop_rollouts": 32,
+      "unique_model_sessions": 32,
+      "cases_per_view_model": 8,
+      "source_cases_per_view_model": 4,
+      "development_cases_per_view_model": 4,
+      "official_environment_terminal_cases": 22,
+      "nonterminal_budget_exhausted_cases": 10,
+      "main_validation_cases": 0
+    },
+    "results": "data/robomme-source-dev-alignment.json",
+    "preserved_prior_infrastructure_attempts": 2
   },
   "frozen_official_val_comparison": {
     "before": 42,
@@ -135,5 +143,34 @@
   },
   "code_pr": "https://github.com/asimfish/robocore/pull/8",
   "rollout_code_pr": "https://github.com/asimfish/robocore/pull/9",
-  "offline_source_result_verified_at": "2026-10-17T11:01:47.661773+00:00"
+  "offline_source_result_verified_at": "2026-10-17T11:01:47.661773+00:00",
+  "per_view_input_improvement": [
+    {
+      "view": "full",
+      "improved": 6,
+      "total": 8,
+      "worsened_cases": [
+        "PatternLock-train-001",
+        "PatternLock-train-004"
+      ]
+    },
+    {
+      "view": "recent",
+      "improved": 6,
+      "total": 8,
+      "worsened_cases": [
+        "PatternLock-train-001",
+        "PatternLock-train-004"
+      ]
+    }
+  ],
+  "closed_loop_source_dev_historical": {
+    "status": "ATTEMPT1_ABORTED_DURING_ENV_MODULE_IMPORT_BEFORE_ENV_CONSTRUCTION",
+    "observed_at": "2026-10-17T11:16:05.740989+00:00",
+    "environment_controls": 0,
+    "terminal_outcomes": 0,
+    "qualification_native_calls_already_incurred": 13,
+    "recovery_status_at_snapshot": "EXECUTION_CONFIGURATION_CORRECTION_UNDER_INDEPENDENT_REVIEW",
+    "scientific_diagnostic_plan": "UNCHANGED"
+  }
 }
