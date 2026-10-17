@@ -1,7 +1,7 @@
 {
   "schema": "robomme-execution-observation-v1",
-  "observed_at": "2026-10-16T18:46:51.929169+00:00",
-  "last_verified": "2026-10-16T18:46:51.929169+00:00",
+  "observed_at": "2026-10-17T00:36:04.805885+00:00",
+  "last_verified": "2026-10-17T00:36:04.805885+00:00",
   "status": "ABORTED_NO_COMPLETE_SCIENTIFIC_CONCLUSION",
   "reason_code": "SSH_READ_EXIT_255",
   "reason": "SSH connection reset while reading the recent-history initial reference; infrastructure interruption, not a method outcome",
@@ -15,7 +15,12 @@
     "archived_complete_model_cells": 1,
     "archived_complete_episodes": 100,
     "planned_episodes": 1400,
-    "coverage_scope": "local coordinator archive only; remote jobs not re-inventoried"
+    "coverage_scope": "100 archived complete baseline +44 separately archived completed recent-baseline cases; remote verified144/1400;7 infrastructure attempts retained separately",
+    "remote_complete_model_cells": 1,
+    "remote_complete_episodes": 144,
+    "remote_infrastructure_aborted_episodes": 7,
+    "remote_not_started_episodes": 1249,
+    "local_partial_completed_case_receipts": 44
   },
   "science": {
     "analysis": "ABSENT",
@@ -35,5 +40,271 @@
     "task_balanced_success": 0.42,
     "scope": "fixed released checkpoint and inference seed; two tasks only"
   },
-  "supervision": "Experiment supervisor must inventory completed work and exact export availability before deciding on protocol-preserving recovery. No jobs changed by this observation."
+  "supervision": "All12 models/all14 cells inventoried,12 exact inference exports preserved. Original144 completed cases including task failures will not be rerun. Continuation awaits independent code review; no new training or scientific conclusion.",
+  "source_inventory_observed_at": "2026-10-17T00:25:49.039360+00:00",
+  "source_inventory_sha256": "a9e9f79c056bbb84bc1c75f42932a06f641d249ee8956b6c076095659727f9d2",
+  "durable_export_index_sha256": "e6c4e1736c05f9aef172bc201261a447fdb080933542a620a01748ffc27b7e8a",
+  "training": {
+    "completed_models": 12,
+    "planned_models": 12,
+    "actual_optimizer_updates": 120000,
+    "models": [
+      {
+        "view": "full_history_intervention_bc",
+        "seed": 7,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "607e1f3279d4ba24be005367c683d27db32bf555d3434c97de9a8135fcd8a175",
+        "archive_sha256": "6f09635b3b5a9d2dcfc13520d8f387eb2b6ff2ac13843a98f67093e35e7e05cb",
+        "export_storage": "LOCAL_NAS_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T05:42:21.241273+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "full_history_intervention_bc",
+        "seed": 17,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "60a51b47a2e95cb8e37e2e45cad0eff68055b551c7c242254921521c7a1ee1c9",
+        "archive_sha256": "c9873322ba0810c8637de1e43d7a6101eb5beb6f15720964244b237babf2d058",
+        "export_storage": "LOCAL_NAS_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T06:31:40.150243+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "full_history_intervention_bc",
+        "seed": 27,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "035822f91d5f1fce158988f741cdc801f43ff289ef8d95fad0c0539112673888",
+        "archive_sha256": "77414be527a7cd6ef8ef3a23eac186b2e95e2e0d2c866d8a4d55f3425f18d491",
+        "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+        "original_ram_expires_at": "2026-10-18T07:17:13.830828+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "full_history_intervention_bc",
+        "seed": 37,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "3ec5d57f0c2f309489c4271fa181fc4cb06c953a132b9656ba53ea89ae33a540",
+        "archive_sha256": "d237d011fbebe793b53ea9d78e192c468bf6503fb956d6cafcce7ccdd786954c",
+        "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+        "original_ram_expires_at": "2026-10-18T08:03:13.582453+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "full_history_intervention_bc",
+        "seed": 47,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "e7e636468be53e04bf5d119d7173f88a2101abb87d74b5b1d48a6d32a29ddee7",
+        "archive_sha256": "9a92b330c75dd74b7886e7925a445f59a31867ba526160746a2a96a36f954524",
+        "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+        "original_ram_expires_at": "2026-10-18T08:49:42.957793+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "full_history_intervention_bc",
+        "seed": 57,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "19ec08625415ce20bb7a1d1d700fa51ffc1e53193f4968d35e9ed9b42054ee50",
+        "archive_sha256": "83f782f5ff482c1ca95713d1b8a268a8f26fac013e1d9b292dfe495b77e89b26",
+        "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+        "original_ram_expires_at": "2026-10-18T09:36:11.514123+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "recent_history_intervention_bc",
+        "seed": 7,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "a874cabb324f702215ec0a734c3cd00d23b701ca84093dd597fc11777c4f888c",
+        "archive_sha256": "c7b7dc0a74e23e3a5cfc78f0a71d28fffa282e0e0ceaf58f2a1993f73ed90470",
+        "export_storage": "LOCAL_NAS_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T05:42:12.834112+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "recent_history_intervention_bc",
+        "seed": 17,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "459624ecb78e56f2859ce4a3ede6b14bf9e406737298e8125d79a8682f8aa8f4",
+        "archive_sha256": "be902feb2b64a98bb789a4d082cd827984f49bd7994eef255fb5b6876921b67f",
+        "export_storage": "LOCAL_NAS_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T06:31:51.566224+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "recent_history_intervention_bc",
+        "seed": 27,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "47b1ea5e220b1fa21bc85cd478a84e617914ed1e5ad2131a5e841a7c0880fc6d",
+        "archive_sha256": "8e43669a732e65e78561232307bda82bfb971b033723487b73a1371f673e1bf1",
+        "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+        "original_ram_expires_at": "2026-10-18T07:17:38.383447+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "recent_history_intervention_bc",
+        "seed": 37,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "6b128c390c0db57fe32d76aa510e74c74693992e0fe5b3fa4f89eea1a4eb1048",
+        "archive_sha256": "29b57d274e0577d046fc55f9d072f553b17c2a477d12e2e82d4e7f0e912b56f3",
+        "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+        "original_ram_expires_at": "2026-10-18T08:03:22.376366+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "recent_history_intervention_bc",
+        "seed": 47,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "f21d73fae2d69a9bd242e8dd1dd689162b0426b1cb1bcd28c723cfdc3b23c565",
+        "archive_sha256": "7e3a6df29660816995ff8630540dc6ec1e0a0856f26e5fbb5c23a152384df9e9",
+        "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+        "original_ram_expires_at": "2026-10-18T08:49:52.590994+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "recent_history_intervention_bc",
+        "seed": 57,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "5e0b802368c5d9a1295e002807e7544f95499ebdb0eaf7d0c37f5dfa8713c560",
+        "archive_sha256": "1e1139856a66b2b3fab0addb524ba8d25eb2e1aa0ed5f69c51c20268f41ccd32",
+        "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+        "original_ram_expires_at": "2026-10-18T09:36:19.942805+00:00",
+        "optimizer_resume": false
+      }
+    ],
+    "scope": "update traces/exports; no efficacy conclusion"
+  },
+  "evaluation_cells": [
+    {
+      "cell": "before-full_history_intervention_bc",
+      "planned_cases": 100,
+      "completed_cases": 100,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 0
+    },
+    {
+      "cell": "before-recent_history_intervention_bc",
+      "planned_cases": 100,
+      "completed_cases": 44,
+      "infrastructure_aborted_cases": 7,
+      "not_started_cases": 49
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-7",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-17",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-27",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-37",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-47",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-57",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-7",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-17",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-27",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-37",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-47",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-57",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    }
+  ],
+  "recovery": {
+    "status": "INFRASTRUCTURE_PR_UNDER_INDEPENDENT_REVIEW",
+    "pull_request": "https://github.com/asimfish/robocore/pull/4",
+    "new_simulator_work_started": false,
+    "original_run2_overwritten": false,
+    "worker_retries": "no automatic worker retry; only explicit continuation of unfinished registered cases",
+    "exports_durable": 12,
+    "local_export_replication": "IN_PROGRESS_NOT_ALL_VERIFIED",
+    "shared_reference_800": "UNTOUCHED_SEPARATE_STUDY",
+    "ssh_connectivity": "mainskill and tianyiyun-30109 exit0 at2026-10-17T00:23:16Z"
+  }
 }

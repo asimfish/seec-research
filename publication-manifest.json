@@ -650,8 +650,8 @@
       "bytes": 39696
     },
     "data/robot-memory-benchmark-status.json": {
-      "sha256": "ff3b32c94cbfc69c90bc57d72b2b3d2a9a417f7125c0e765ce8592d8a0549f14",
-      "bytes": 47472
+      "sha256": "4d54c583f81670db123b655e3b61e747c232ef8215a3635bf1cf04415fd197e3",
+      "bytes": 58973
     },
     "data/robot-program-transform-check.json": {
       "sha256": "8368d8edaabd35ba67d8634dcdd955caf7644ff8079846a2785c990d10b59740",
@@ -702,8 +702,8 @@
       "bytes": 9851
     },
     "learning.html": {
-      "sha256": "6294de5d96785c3b62d3f7224edeb6765805b3a48fba190eb9f04a604560d419",
-      "bytes": 54048
+      "sha256": "e5e824e5bbc7654376ba6e45d0760c73b7cdfccdc93b7c73b8c08b58578489da",
+      "bytes": 54416
     },
     "learning.js": {
       "sha256": "4bbfe78547134ed999e8e24047be4269e65fbcbe81189c11588b578dac1fb874",
@@ -1138,8 +1138,8 @@
       "bytes": 15302
     },
     "data/robomme-execution-observation.json": {
-      "sha256": "ad689cc312765271eb85ed0f9ba03d5ca6d38aa16fc2c66821330155935f1c57",
-      "bytes": 1679
+      "sha256": "abe12fcf700a50f238e5de4554107313f3939863b58431da559aaf6c8fa40ee6",
+      "bytes": 12636
     }
   },
   "research_revision": "9697cfc4f026b7a9d8fe7a719f0ddcff55ec8a06",
@@ -1201,8 +1201,9 @@
     "gradient_updates": 0
   },
   "execution_observation": {
-    "observed_at": "2026-10-16T18:46:51.929169+00:00",
+    "observed_at": "2026-10-17T00:36:04.805885+00:00",
     "source_record_sha256": "a692b261f166ae5ef0fdbc75b5498e76d77b5e3d77e005e1588d2bb750b7dbfd",
-    "prior_public_revision": "3d91a423634c5b4f0ed5f32034ca1e18b554947b"
+    "prior_public_revision": "3d91a423634c5b4f0ed5f32034ca1e18b554947b",
+    "inventory_sha256": "a9e9f79c056bbb84bc1c75f42932a06f641d249ee8956b6c076095659727f9d2"
   }
 }
