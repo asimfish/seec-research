@@ -88,7 +88,7 @@
   "gradient_updates": 120016,
   "released_policy_evaluation": "IN_PROGRESS_VALIDATION",
   "method_efficacy": "NOT_RUN",
-  "scope": "12 frozen models trained, exports preserved; original protocol restored after infrastructure interruption, recent initial reference unfinished cases active; no efficacy conclusion",
+  "scope": "Second continuation infrastructure-aborted at177/1400 complete cases;12 trained models unevaluated; no gain evidence",
   "additional_archive_boundary_tests_passed": 6,
   "reference_model": {
     "repository": "Yinpei/perceptual-framesamp-modul",
@@ -1660,11 +1660,11 @@
   },
   "execution_observation": {
     "schema": "robomme-execution-observation-v1",
-    "observed_at": "2026-10-17T00:45:41.265202+00:00",
-    "last_verified": "2026-10-17T00:45:41.265202+00:00",
-    "status": "RECOVERING_AFTER_INFRASTRUCTURE_ABORT",
-    "reason_code": "SSH_READ_EXIT_255",
-    "reason": "SSH connection reset while reading the recent-history initial reference; infrastructure interruption, not a method outcome",
+    "observed_at": "2026-10-17T03:10:05.688301+00:00",
+    "last_verified": "2026-10-17T03:10:05.688301+00:00",
+    "status": "ABORTED_NO_COMPLETE_SCIENTIFIC_CONCLUSION",
+    "reason_code": "WEBSOCKET_KEEPALIVE_TIMEOUT_RECURRED",
+    "reason": "Second continuation interrupted after seven client WebSocket keepalive timeouts; no trained model evaluated. Root-cause diagnosis active.",
     "plan_id": "robomme-absorption-eval-8eeead0ededca5c0",
     "plan_sha256": "6c7470da67eb6ef724760fd9e948ea155e6733d28cd0c5326e5daaa913809ba7",
     "coordinator_source_revision": "71b600ecc3474a804c94252d8754a62bca77aabe",
@@ -1675,11 +1675,11 @@
       "archived_complete_model_cells": 1,
       "archived_complete_episodes": 100,
       "planned_episodes": 1400,
-      "coverage_scope": "100 archived complete baseline +44 separately archived completed recent-baseline cases; remote verified144/1400;7 infrastructure attempts retained separately",
+      "coverage_scope": "100 full-before+77 recent-before unique completed cases;7 current infra attempts+16 recent not-started;12after not started; previous abort attempts retained separately",
       "remote_complete_model_cells": 1,
-      "remote_complete_episodes": 144,
+      "remote_complete_episodes": 177,
       "remote_infrastructure_aborted_episodes": 7,
-      "remote_not_started_episodes": 1249,
+      "remote_not_started_episodes": 1216,
       "local_partial_completed_case_receipts": 44
     },
     "science": {
@@ -1700,7 +1700,7 @@
       "task_balanced_success": 0.42,
       "scope": "fixed released checkpoint and inference seed; two tasks only"
     },
-    "supervision": "Recovery commit36ca96e passed independent review and26 tests; native service qualified on original GPU1. Seven simulator worker logs exist for unfinished recent-reference cases. Original144 completed cases retained. No retraining or scientific conclusion. Original run2 abort preserved; all14cells required before frozen analyzer/verifier/report.",
+    "supervision": "All processes/ports checked; old recovery/service stopped. All12 exact inference exports now verified on local durable NAS. No trained-model outcome exists. Next priority is full-history seed7 complete100-case comparison, after bounded runtime diagnosis and reviewed scheduling change; all14cells remain required.",
     "source_inventory_observed_at": "2026-10-17T00:25:49.039360+00:00",
     "source_inventory_sha256": "a9e9f79c056bbb84bc1c75f42932a06f641d249ee8956b6c076095659727f9d2",
     "durable_export_index_sha256": "e6c4e1736c05f9aef172bc201261a447fdb080933542a620a01748ffc27b7e8a",
@@ -1765,7 +1765,7 @@
           "finite_metrics": true,
           "training_receipt_sha256": "e7e636468be53e04bf5d119d7173f88a2101abb87d74b5b1d48a6d32a29ddee7",
           "archive_sha256": "9a92b330c75dd74b7886e7925a445f59a31867ba526160746a2a96a36f954524",
-          "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+          "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
           "original_ram_expires_at": "2026-10-18T08:49:42.957793+00:00",
           "optimizer_resume": false
         },
@@ -1777,7 +1777,7 @@
           "finite_metrics": true,
           "training_receipt_sha256": "19ec08625415ce20bb7a1d1d700fa51ffc1e53193f4968d35e9ed9b42054ee50",
           "archive_sha256": "83f782f5ff482c1ca95713d1b8a268a8f26fac013e1d9b292dfe495b77e89b26",
-          "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+          "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
           "original_ram_expires_at": "2026-10-18T09:36:11.514123+00:00",
           "optimizer_resume": false
         },
@@ -1837,7 +1837,7 @@
           "finite_metrics": true,
           "training_receipt_sha256": "f21d73fae2d69a9bd242e8dd1dd689162b0426b1cb1bcd28c723cfdc3b23c565",
           "archive_sha256": "7e3a6df29660816995ff8630540dc6ec1e0a0856f26e5fbb5c23a152384df9e9",
-          "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+          "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
           "original_ram_expires_at": "2026-10-18T08:49:52.590994+00:00",
           "optimizer_resume": false
         },
@@ -1849,7 +1849,7 @@
           "finite_metrics": true,
           "training_receipt_sha256": "5e0b802368c5d9a1295e002807e7544f95499ebdb0eaf7d0c37f5dfa8713c560",
           "archive_sha256": "1e1139856a66b2b3fab0addb524ba8d25eb2e1aa0ed5f69c51c20268f41ccd32",
-          "export_storage": "REMOTE_NAS_VERIFIED_LOCAL_COPY_PENDING_VERIFICATION",
+          "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
           "original_ram_expires_at": "2026-10-18T09:36:19.942805+00:00",
           "optimizer_resume": false
         }
@@ -1867,9 +1867,9 @@
       {
         "cell": "before-recent_history_intervention_bc",
         "planned_cases": 100,
-        "completed_cases": 44,
+        "completed_cases": 77,
         "infrastructure_aborted_cases": 7,
-        "not_started_cases": 49
+        "not_started_cases": 16
       },
       {
         "cell": "after-full_history_intervention_bc-seed-7",
@@ -1957,9 +1957,9 @@
       }
     ],
     "recovery": {
-      "status": "RUNNING_REVIEWED_INFRASTRUCTURE_CONTINUATION",
+      "status": "ABORTED_SECOND_CONTINUATION_DIAGNOSING_WEBSOCKET",
       "pull_request": "https://github.com/asimfish/robocore/pull/4",
-      "new_simulator_work_started": true,
+      "new_simulator_work_started": false,
       "original_run2_overwritten": false,
       "worker_retries": "no automatic worker retry; only explicit continuation of unfinished registered cases",
       "exports_durable": 12,
@@ -1967,26 +1967,30 @@
       "shared_reference_800": "UNTOUCHED_SEPARATE_STUDY",
       "ssh_connectivity": "mainskill and tianyiyun-30109 exit0 at2026-10-17T00:23:16Z",
       "reviewed_commit": "36ca96e347aecb2a63361b8b17e47b129fad6bb8",
-      "supervisor_status": "RUNNING",
-      "phase": "RECENT_INITIAL_REFERENCE_UNFINISHED_CASES",
-      "local_replicas_reverified": 8,
+      "supervisor_status": "ABORTED_NO_COMPLETE_SCIENTIFIC_CONCLUSION",
+      "phase": "DIAGNOSIS_BEFORE_PRIMARY_TRAINED_COMPARISON",
+      "local_replicas_reverified": 12,
       "original_runtime_directory_error": "Initial all-reuse packaging did not start because launch-log parent was absent; explicit evidence-backed submission after creating task directory; original receipt retained",
-      "independent_verifier": "WATCHING_FOR_COMPLETE_STUDY",
-      "reporter": "WATCHING_FOR_INDEPENDENT_VERIFICATION",
-      "recent_reference_snapshot": {
-        "observed_at": "2026-10-17T00:45:41.265202+00:00",
-        "cell_exists": true,
-        "status_counts": {
-          "COMPLETED": 44
-        },
-        "reused": 44,
-        "newly_completed": 0,
-        "worker_logs": 7,
-        "server_qualification": "PASS",
-        "server_ready_sha256": "cadf35d5b110012f58d5ca677afc5c14109ab3739e08454db0c626bb13fdc7ad"
-      }
+      "independent_verifier": "STOPPED_ON_INFRASTRUCTURE_ABORT",
+      "reporter": "NO_REPORT_GENERATED"
     },
-    "recovery_coordinator_record_sha256": "de26ad16f6db69a0055fc3bb25a249d074bcb6c8897cf0eb5f3b8be3a2fd5398",
-    "local_replica_snapshot_sha256": "1a42844081b7e757acde5610cf3e35db1413bdad452fe03a99fc5b0e22bf708a"
+    "recovery_coordinator_record_sha256": "57ea7e7edb3e5df8031eb91d452a2b9ed2d5953c147964c217ebc8cfd5e2ea1e",
+    "local_replica_snapshot_sha256": "1a42844081b7e757acde5610cf3e35db1413bdad452fe03a99fc5b0e22bf708a",
+    "second_abort_evidence_sha256": "db4aa2491f241fa29884c68d75fe671f83aa98dbbca5bd7bb669d158e104b46c",
+    "incidents": [
+      {
+        "ordinal": 1,
+        "reason": "SSH_RESULT_READ_255",
+        "status": "RETAINED_ORIGINAL_RUN2"
+      },
+      {
+        "ordinal": 2,
+        "reason": "WEBSOCKET_KEEPALIVE_TIMEOUT",
+        "status": "RETAINED_CONTINUATION_RUN1",
+        "complete_recent_cases": 77,
+        "newly_completed_recent_cases": 33,
+        "infrastructure_aborted_attempts": 7
+      }
+    ]
   }
 }
