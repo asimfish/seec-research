@@ -1,10 +1,10 @@
 {
   "schema": "robomme-execution-observation-v1",
-  "observed_at": "2026-10-17T11:16:05.740989+00:00",
-  "last_verified": "2026-10-17T11:16:05.740989+00:00",
+  "observed_at": "2026-10-17T12:01:27.442555+00:00",
+  "last_verified": "2026-10-17T12:01:27.442555+00:00",
   "status": "REGISTERED_EVALUATION_RESUMED_AFTER_NEGATIVE_FIRST_PAIR",
-  "reason_code": "RECENT_BEFORE100_INDEPENDENT_PASS;RECENT_SEED7_REAL_CASES_STARTED",
-  "reason": "Recent-before100/100verified;77reused+23new,0newinfra. Recentseed71/100complete;global301/1400. Fullseed7negative42to14unchanged;6seedconclusionpending.",
+  "reason_code": "RECENT_BEFORE100_COMPLETE;RECENT_SEED7_CASES_PROGRESSING;SOURCE_C4_INDEPENDENT_PASS",
+  "reason": "Threecomplete100casecells;recentseed7 23/100complete,0newinfra;global323/1400. Fullseed7negative42to14retained. SourceC4privilegedcontinuationsverified;studenttakeoverNOT_RUN;6seedconclusionpending.",
   "plan_id": "robomme-absorption-eval-8eeead0ededca5c0",
   "plan_sha256": "6c7470da67eb6ef724760fd9e948ea155e6733d28cd0c5326e5daaa913809ba7",
   "coordinator_source_revision": "262876882b488eb9c5a8561df4160a5ebd863d80",
@@ -15,12 +15,12 @@
     "archived_complete_model_cells": 3,
     "archived_complete_episodes": 300,
     "planned_episodes": 1400,
-    "coverage_scope": "Fullbefore100+fullafterseed7 100+recentbefore100+recentafterseed7 1 uniquecomplete;1099unclosed. Historicalinfraattemptsnotnewscientificsamples.",
+    "coverage_scope": "Fullbefore100+fullafterseed7 100+recentbefore100+recentafterseed7 23uniquecomplete;1077unclosed. Infraattemptsarenotadditionalscientificsamples.",
     "remote_complete_model_cells": 3,
-    "remote_complete_episodes": 301,
+    "remote_complete_episodes": 323,
     "remote_infrastructure_aborted_episodes": 0,
     "local_partial_completed_case_receipts": 0,
-    "remote_remaining_unclosed_episodes": 1099,
+    "remote_remaining_unclosed_episodes": 1077,
     "partial_model_cells": 1,
     "unstarted_model_cells": 10
   },
@@ -45,7 +45,7 @@
     "task_balanced_success": 0.42,
     "scope": "fixed released checkpoint and inference seed; two tasks only"
   },
-  "supervision": "Recent-before100 independentlyverified;ownedservice waitedafterlocalarchive,andrecentseed7next. Datedsnapshot,notlive. Sourceactiondiagnostic32predictions independentlyverified;boundedlabel-fitimprovement,notterminalgain. Source/dev attempt1abortedwhileimportingenvmodulebeforeconstruction/controls;13nativequalificationcallsincurred;configurationcorrectionunderindependentreview. No6seedconclusion.",
+  "supervision": "Datedread-only snapshot,notlive. Recent-before100 independentlyverifiedandNASsealed. Mainrecentseed7continuesunderreviewed25case synchronousdrain. SourceA32offlinepredictionsindependentlyverified. SourceB32autonomousdiagnosticsseparate:run3hasactualterminalcasesaftertwo preservedinfrastructureaborts,notanabsorptiongain. SourceCfourfixedqueryprefixesandfirst20actionsreproduced,followedbyofficialprivilegedterminalsuccess;independentreviewPASS. Studenttakeoverunderreview. No6seedconclusion.",
   "source_inventory_observed_at": "2026-10-17T00:25:49.039360+00:00",
   "source_inventory_sha256": "a9e9f79c056bbb84bc1c75f42932a06f641d249ee8956b6c076095659727f9d2",
   "durable_export_index_sha256": "e6c4e1736c05f9aef172bc201261a447fdb080933542a620a01748ffc27b7e8a",
@@ -587,7 +587,7 @@
     "inverse_action_max_error": 1.4901161193847656e-08,
     "review_sha256": "35f631f09957f94a1e834eb7493c355148ae90dc7214d427f8e625a9eb42d7c4",
     "root_cause_of_negative_gain": "UNKNOWN",
-    "expert_chunk_quality": "All120 admitted20steporaclefragments have terminal_evaluated=false/successnull;not120verifiedterminalrecoveries",
+    "expert_chunk_quality": "Original120footersremainnonterminal20controlfragments;fourfixedfragmentsnowhavelaterindependentlyverifiedprivilegedterminalcontinuations,not20stepstandalonesuccessorstudenttakeover.",
     "limits": [
       "No model/GPU/visionfeature recomputation or development/val rollouts",
       "Registered wholehistory binding retained;entireh5filesnotrehashed",
@@ -681,5 +681,31 @@
     "review_sha256": "a088ab135e501d695ff78221cde91e541775bd8d36cbf0124e970e6bc4197aef",
     "terminal_success_claim": false,
     "root_cause": "UNKNOWN"
+  },
+  "source_expert_continuation_diagnostic": {
+    "public_summary": "data/robomme-source-expert-continuation-diagnostic.json",
+    "independent_review_sha256": "a902322046cda29347dd2f2ea8ccef329ece7cdc06f22ef5a79c6a5e8a2f5fe0",
+    "fixed_source_queries": 4,
+    "observed_privileged_terminal_successes": 4,
+    "student_takeover": "NOT_RUN",
+    "all120_verified": false,
+    "root_cause": "UNKNOWN"
+  },
+  "source_development_autonomous_diagnostic": {
+    "worker_revision": "1911da4ea3b234c214af8f91267146ca77281b91",
+    "execution_config_sha256": "21cf203a8378fa6945ef09f35a332df220ca7f7b9b57a62c88bcb90baddf65b6",
+    "snapshot_utc": "2026-10-17T12:00:08.391550+00:00",
+    "completed_cases": 13,
+    "planned_cases": 32,
+    "completed_trained_model_cases": 0,
+    "status": "RUN3_RUNNING_AFTER_TWO_RETAINED_INFRASTRUCTURE_ABORTS",
+    "source_vs_development": "Officialtrain1/2source;train5/6developmentrole",
+    "not_main_val_samples": true,
+    "prior_infrastructure_attempts": 2,
+    "prior_native_qualification_calls": 26,
+    "run3_native_qualification_calls_so_far": 26,
+    "renderer_only_preflight_contexts": 1,
+    "unknown_constructor_reset_steps_not_zero": true,
+    "main_val_used_for_selection": false
   }
 }
