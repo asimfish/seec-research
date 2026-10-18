@@ -1,0 +1,753 @@
+{
+  "schema": "robomme-matched-single-seed-public-v1",
+  "status": "COMPLETE_SINGLE_SEED_DESCRIPTIVE_COMPARISON",
+  "observed_at": "2026-10-17T15:30:15.403500+00:00",
+  "last_verified": "2026-10-17T15:47:36.354266+00:00",
+  "view": "recent_history_intervention_bc",
+  "training_seed": 7,
+  "plan_id": "robomme-absorption-eval-8eeead0ededca5c0",
+  "plan_sha256": "6c7470da67eb6ef724760fd9e948ea155e6733d28cd0c5326e5daaa913809ba7",
+  "code_revision": "262876882b488eb9c5a8561df4160a5ebd863d80",
+  "training_code_revision": "8156edb4498260f68264fb81aebfa0a187f91097",
+  "inference_sha256": "c7b150e9def3e71a8d50d36abf34b47be1dad8cba86b22f952cc5b1c7e782c82",
+  "before_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+  "before_result_sha256": "f31cdfdb3f3eb95775bf8e5769b74cfd6ed2df0e2d921f9ff8857964e6f60b22",
+  "after_result_sha256": "04bbd59814daea0d255c99784652ec80d6c8d65d388cc148e93528a852f5c023",
+  "source_report_sha256": "bbe7cab0be0fdb245b3bc4af90420984da9f89713e3b884b23515db2fc843025",
+  "independent_review_sha256": "5b1224c72f66ffd368b3c65724b1217d0dd890b24b7c7e7508200d37151a6adf",
+  "durable_receipt_sha256": "7b34868a4dca4ab0db19719d7bcd3bbe9035df78e68a3451275883499a046f73",
+  "per_task": {
+    "PatternLock": {
+      "before_success": 9,
+      "after_success": 6,
+      "total": 50,
+      "failed_to_succeeded": 1,
+      "succeeded_to_failed": 4
+    },
+    "PickHighlight": {
+      "before_success": 3,
+      "after_success": 0,
+      "total": 50,
+      "failed_to_succeeded": 0,
+      "succeeded_to_failed": 3
+    }
+  },
+  "overall": {
+    "before_success": 12,
+    "after_success": 6,
+    "total": 100,
+    "failed_to_succeeded": 1,
+    "succeeded_to_failed": 7,
+    "gain_percentage_points": -6
+  },
+  "case_pairs": [
+    {
+      "task": "PatternLock",
+      "episode": 0,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 0,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 1,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 1,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 2,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 2,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 3,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 3,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 4,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 4,
+      "before_success": true,
+      "after_success": false,
+      "transition": "1->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 5,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 5,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 6,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 6,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 7,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 7,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 8,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 8,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 9,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 9,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 10,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 10,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 11,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 11,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 12,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 12,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 13,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 13,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 14,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 14,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 15,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 15,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 16,
+      "before_success": false,
+      "after_success": true,
+      "transition": "0->1"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 16,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 17,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 17,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 18,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 18,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 19,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 19,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 20,
+      "before_success": true,
+      "after_success": false,
+      "transition": "1->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 20,
+      "before_success": true,
+      "after_success": false,
+      "transition": "1->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 21,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 21,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 22,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 22,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 23,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 23,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 24,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 24,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 25,
+      "before_success": true,
+      "after_success": false,
+      "transition": "1->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 25,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 26,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 26,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 27,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 27,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 28,
+      "before_success": true,
+      "after_success": true,
+      "transition": "1->1"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 28,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 29,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 29,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 30,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 30,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 31,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 31,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 32,
+      "before_success": true,
+      "after_success": true,
+      "transition": "1->1"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 32,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 33,
+      "before_success": true,
+      "after_success": false,
+      "transition": "1->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 33,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 34,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 34,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 35,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 35,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 36,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 36,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 37,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 37,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 38,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 38,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 39,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 39,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 40,
+      "before_success": true,
+      "after_success": true,
+      "transition": "1->1"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 40,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 41,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 41,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 42,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 42,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 43,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 43,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 44,
+      "before_success": true,
+      "after_success": true,
+      "transition": "1->1"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 44,
+      "before_success": true,
+      "after_success": false,
+      "transition": "1->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 45,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 45,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 46,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 46,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 47,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 47,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 48,
+      "before_success": true,
+      "after_success": true,
+      "transition": "1->1"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 48,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    },
+    {
+      "task": "PatternLock",
+      "episode": 49,
+      "before_success": true,
+      "after_success": false,
+      "transition": "1->0"
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 49,
+      "before_success": false,
+      "after_success": false,
+      "transition": "0->0"
+    }
+  ],
+  "new_infrastructure_aborts": 0,
+  "all_task_failures_retained": true,
+  "limits": [
+    "Singletrainingseed,notthesixseedscientificresult.",
+    "Eachviewusesitsownbefore:full42\u219214;recent12\u21926.",
+    "Atmost32framehistoryspancontrast;demo retentionremainsaconfound,noRSI/learningnewrules/selffeedbackcauseclaim.",
+    "Scheduleddrain/restartsusecaseIDpairing,nopixelidenticalcrossprocesscounterfactualclaim."
+  ]
+}

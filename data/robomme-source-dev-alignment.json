@@ -1,0 +1,293 @@
+{
+  "schema": "robomme-source-dev-alignment-public-v1",
+  "observed_at": "2026-10-17T13:10:43.175862+00:00",
+  "last_verified": "2026-10-17T13:14:01.561004+00:00",
+  "status": "INDEPENDENT_PASS_DESCRIPTIVE_SOURCE_DEV_ONLY",
+  "plan_id": "robomme-source-dev-diagnostic-107184e71449977a",
+  "plan_sha256": "1b37747fb6dff5e969698640ce8d4ba57d95d728092c532a58364ce811e24713",
+  "worker_revision": "1911da4ea3b234c214af8f91267146ca77281b91",
+  "aligned_report_sha256": "77ce167926b2b90306c342327d3760dc116cba30490cd5834515cf7dde576fa0",
+  "independent_review_sha256": "d25c3b246c7d07ca70c778489837314ca8fbc13ec00b7321aeec34bf71d7fba1",
+  "coverage": {
+    "cached_source_predictions": 32,
+    "closed_loop_rollouts": 32,
+    "unique_model_sessions": 32,
+    "cases_per_view_model": 8,
+    "source_cases_per_view_model": 4,
+    "development_cases_per_view_model": 4,
+    "official_environment_terminal_cases": 22,
+    "nonterminal_budget_exhausted_cases": 10,
+    "main_validation_cases": 0
+  },
+  "comparisons": [
+    {
+      "view": "full",
+      "cases": 8,
+      "before_successes": 7,
+      "after_successes": 3,
+      "paired_gain_percentage_points": -50.0,
+      "pairs": [
+        {
+          "case": "PatternLock-train-001",
+          "task": "PatternLock",
+          "use": "source",
+          "before": true,
+          "after": true,
+          "flip": "unchanged"
+        },
+        {
+          "case": "PickHighlight-train-001",
+          "task": "PickHighlight",
+          "use": "source",
+          "before": true,
+          "after": false,
+          "flip": "success_to_failure"
+        },
+        {
+          "case": "PatternLock-train-002",
+          "task": "PatternLock",
+          "use": "source",
+          "before": false,
+          "after": true,
+          "flip": "failure_to_success"
+        },
+        {
+          "case": "PickHighlight-train-002",
+          "task": "PickHighlight",
+          "use": "source",
+          "before": true,
+          "after": false,
+          "flip": "success_to_failure"
+        },
+        {
+          "case": "PatternLock-train-005",
+          "task": "PatternLock",
+          "use": "development",
+          "before": true,
+          "after": false,
+          "flip": "success_to_failure"
+        },
+        {
+          "case": "PickHighlight-train-005",
+          "task": "PickHighlight",
+          "use": "development",
+          "before": true,
+          "after": false,
+          "flip": "success_to_failure"
+        },
+        {
+          "case": "PatternLock-train-006",
+          "task": "PatternLock",
+          "use": "development",
+          "before": true,
+          "after": true,
+          "flip": "unchanged"
+        },
+        {
+          "case": "PickHighlight-train-006",
+          "task": "PickHighlight",
+          "use": "development",
+          "before": true,
+          "after": false,
+          "flip": "success_to_failure"
+        }
+      ],
+      "strata": [
+        {
+          "use": "source",
+          "task": "PatternLock",
+          "cases": 2,
+          "before_successes": 1,
+          "after_successes": 2
+        },
+        {
+          "use": "source",
+          "task": "PickHighlight",
+          "cases": 2,
+          "before_successes": 2,
+          "after_successes": 0
+        },
+        {
+          "use": "development",
+          "task": "PatternLock",
+          "cases": 2,
+          "before_successes": 2,
+          "after_successes": 1
+        },
+        {
+          "use": "development",
+          "task": "PickHighlight",
+          "cases": 2,
+          "before_successes": 2,
+          "after_successes": 0
+        }
+      ],
+      "expert_query_count_before": 0,
+      "expert_query_count_after": 0,
+      "scope": "Eightfixedsource/devcases,onefixedtrainingseed;notmainvalandnotaseedlevelhypothesistest"
+    },
+    {
+      "view": "recent",
+      "cases": 8,
+      "before_successes": 1,
+      "after_successes": 0,
+      "paired_gain_percentage_points": -12.5,
+      "pairs": [
+        {
+          "case": "PatternLock-train-001",
+          "task": "PatternLock",
+          "use": "source",
+          "before": false,
+          "after": false,
+          "flip": "unchanged"
+        },
+        {
+          "case": "PickHighlight-train-001",
+          "task": "PickHighlight",
+          "use": "source",
+          "before": true,
+          "after": false,
+          "flip": "success_to_failure"
+        },
+        {
+          "case": "PatternLock-train-002",
+          "task": "PatternLock",
+          "use": "source",
+          "before": false,
+          "after": false,
+          "flip": "unchanged"
+        },
+        {
+          "case": "PickHighlight-train-002",
+          "task": "PickHighlight",
+          "use": "source",
+          "before": false,
+          "after": false,
+          "flip": "unchanged"
+        },
+        {
+          "case": "PatternLock-train-005",
+          "task": "PatternLock",
+          "use": "development",
+          "before": false,
+          "after": false,
+          "flip": "unchanged"
+        },
+        {
+          "case": "PickHighlight-train-005",
+          "task": "PickHighlight",
+          "use": "development",
+          "before": false,
+          "after": false,
+          "flip": "unchanged"
+        },
+        {
+          "case": "PatternLock-train-006",
+          "task": "PatternLock",
+          "use": "development",
+          "before": false,
+          "after": false,
+          "flip": "unchanged"
+        },
+        {
+          "case": "PickHighlight-train-006",
+          "task": "PickHighlight",
+          "use": "development",
+          "before": false,
+          "after": false,
+          "flip": "unchanged"
+        }
+      ],
+      "strata": [
+        {
+          "use": "source",
+          "task": "PatternLock",
+          "cases": 2,
+          "before_successes": 0,
+          "after_successes": 0
+        },
+        {
+          "use": "source",
+          "task": "PickHighlight",
+          "cases": 2,
+          "before_successes": 1,
+          "after_successes": 0
+        },
+        {
+          "use": "development",
+          "task": "PatternLock",
+          "cases": 2,
+          "before_successes": 0,
+          "after_successes": 0
+        },
+        {
+          "use": "development",
+          "task": "PickHighlight",
+          "cases": 2,
+          "before_successes": 0,
+          "after_successes": 0
+        }
+      ],
+      "expert_query_count_before": 0,
+      "expert_query_count_after": 0,
+      "scope": "Eightfixedsource/devcases,onefixedtrainingseed;notmainvalandnotaseedlevelhypothesistest"
+    }
+  ],
+  "local_label_fit": [
+    {
+      "view": "full",
+      "source_inputs": 8,
+      "improved_cases": [
+        "PickHighlight-train-001",
+        "PatternLock-train-002",
+        "PickHighlight-train-002",
+        "PatternLock-train-003",
+        "PickHighlight-train-003",
+        "PickHighlight-train-004"
+      ],
+      "worsened_cases": [
+        "PatternLock-train-001",
+        "PatternLock-train-004"
+      ],
+      "equal_case_mae20_before": 0.017318829355913546,
+      "equal_case_mae20_after": 0.004174535759415963
+    },
+    {
+      "view": "recent",
+      "source_inputs": 8,
+      "improved_cases": [
+        "PickHighlight-train-001",
+        "PatternLock-train-002",
+        "PickHighlight-train-002",
+        "PatternLock-train-003",
+        "PickHighlight-train-003",
+        "PickHighlight-train-004"
+      ],
+      "worsened_cases": [
+        "PatternLock-train-001",
+        "PatternLock-train-004"
+      ],
+      "equal_case_mae20_before": 0.023486488413767097,
+      "equal_case_mae20_after": 0.004092468510586533
+    }
+  ],
+  "costs": {
+    "registered_controls": 17193,
+    "qualification_native_calls": 78,
+    "prior_infrastructure_qualification_calls": 26,
+    "current4service_qualification_calls": 52,
+    "extra_expert_queries": 0,
+    "optimizer_updates": 0,
+    "reset_constructor_internal_steps": "UNKNOWN_NOT_ZERO"
+  },
+  "root_cause": "UNKNOWN",
+  "limits": [
+    "A contains eight cached source-query inputs (episodes1–4 per task). B contains four source and four development instances (episodes1,2,5,6 per task); the sets overlap on four source instances.",
+    "Each history view uses its own matched before model. Demonstration retention remains a confound between views.",
+    "This is a descriptive diagnostic on one fixed training seed and eight fixed cases per model, separate from official validation and the six-seed analysis.",
+    "Twenty-two rollouts reached an official environment terminal; ten exhausted the fixed1300-control budget without a terminal and count as nonsuccess. All outcomes are retained.",
+    "These data do not distinguish retained skills, visited-state shift, short correction coverage or cached-versus-fresh feature paths. Root cause remains unknown."
+  ],
+  "figure": "assets/figures/source-dev-diagnostic-ab-v3.svg",
+  "code_pr": "https://github.com/asimfish/robocore/pull/9"
+}

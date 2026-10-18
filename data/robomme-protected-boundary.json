@@ -1,0 +1,108 @@
+{
+  "schema": "robomme-protected-boundary-public-v1",
+  "observed_at": "2026-10-18T01:09:36.618016+00:00",
+  "last_verified": "2026-10-18T01:12:44.639022+00:00",
+  "status": "NATIVE_INITIALIZATION_RUNNING_ZERO_RECORDED_UPDATES_AT_OBSERVATION",
+  "publication": "OPEN_UNMERGED_UNPUBLISHED_FACT_PR",
+  "plan": {
+    "registered_at": "2026-10-18T01:06:29.389113+00:00",
+    "code_revision": "b9ba062124c1752ef253d8b4c58e183a04eebf49",
+    "training_plan_id": "robomme-protected-action-bc-788e373d688e9b15",
+    "training_plan_sha256": "cf0f08ebb9e33be05c037b64d21c6827b07bc62fe7e316d5dbbe72846e0fe234",
+    "readout_plan_id": "robomme-protected-boundary-readout-af357112f8f11387",
+    "readout_plan_sha256": "a9475b7b714449dbaff1f630069bdace9217f5da5c7cbc61161a9fe0d3f9e992",
+    "execution_config_sha256": "0cae2118cfde80c92afbc6dc052eb830c994b74d8a1655a69715b101be12e942",
+    "parameter_roles_sha256": "c9ad01cf0a92a3ab4bfba5dd6b3dd963d6351dfb47663cd99b83946b27a05ff7",
+    "prior_use_inventory_sha256": "1e883bb3c6be1d47b8f42cc33604ad19201ba3264643e5d6f4551f1562934d75",
+    "original120_input_binding_sha256": "6ed97a2428cdffb871f7c9f4815b5845a9292c3b41a8ce64940db8faa415df59",
+    "native_cpu_component_qualification_sha256": "229ad9bbf8a21f7cd21f00e5da0ff08351aecbd103f37d769f668e5e1331ff3d",
+    "code_archive_sha256": "b02ea4963f6e4de32636e5c3df80c6154154a36315bd04ab09dc8af38d146b0f",
+    "new_candidate_optimizer_updates": 0,
+    "state": "AWAITING_EXACT_INDEPENDENT_REVIEW_NO_COMPUTE_AUTHORIZED_BY_THIS_FILE"
+  },
+  "recipe": {
+    "data": "Same original120 full-history correction tensors",
+    "updates": 10000,
+    "seed": 7,
+    "optimization": "19existing actionexpert/projection leaves;42vision/language/history leaves protected",
+    "precision": "Original native initialization casting preserved;separate optimization filter",
+    "deployment": "19actionEMA+42protectedfinal-live;protectedserializedbf16mustmatchinitialbytes;rawfullEMA audited separately",
+    "new_method_claim": false
+  },
+  "readout": {
+    "fresh_train_instances": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "tasks": [
+      "PatternLock",
+      "PickHighlight"
+    ],
+    "fresh16_models": [
+      "released",
+      "original-full-correction-seed7",
+      "protected-seed7"
+    ],
+    "candidate_old8_once": true,
+    "rollouts": 56,
+    "max_logged_controls": 72800,
+    "extra_expert_queries": 0,
+    "scope": "Single-seed development baseline;not confirmation,newmechanism or generalized RSI evidence"
+  },
+  "test_evidence": {
+    "focused_cpu_contracts": 126,
+    "passed": true,
+    "native_cpu_component": "61real parameter paths;19gradientfilter;nativecast/hybridexport on tinyarrays;notGPUendtoend"
+  },
+  "pr": "https://github.com/asimfish/robocore/pull/21",
+  "unchanged_prior_results": {
+    "initial": {
+      "success": 7,
+      "total": 8
+    },
+    "correction": {
+      "success": 3,
+      "total": 8
+    },
+    "mixture": {
+      "success": 2,
+      "total": 8
+    },
+    "pure_replay": {
+      "success": 4,
+      "total": 8
+    }
+  },
+  "qualification_gpu_calls": 0,
+  "candidate_optimizer_updates": 0,
+  "preflight_incident": {
+    "at": "2026-10-18T01:04:57.325652+00:00",
+    "code": "e54ed83f41aac9c795f02dd18ace9922c8fd8465",
+    "error": "JSON string passed to Path-only fileSHA helper;identity preflight AttributeError",
+    "candidate_updates": 0,
+    "GPU_model_environment_calls": 0,
+    "scope": "Infrastructure type conversion,not learning/model/data failure",
+    "evidence_preserved": true,
+    "repair": "CLOSED:two explicit Path conversions;nonempty-file/positive preflight regression;new b9exact independentreviewPASS beforeattempt2"
+  },
+  "independent_execution_review": {
+    "code": "b9ba062124c1752ef253d8b4c58e183a04eebf49",
+    "sha256": "76a2e16836ff93017519a0a3299df348ce62f8bbc9fddb37a8af3198e2ffc9d6",
+    "launch_allowed": true,
+    "scope": "Exactsingle10k+56;no merge/publication permission"
+  },
+  "launch": {
+    "at": "2026-10-18T01:09:08.035065+00:00",
+    "attempt": 2,
+    "prior_preflight_abort_retained": true,
+    "phase": "Nativeinitialization;no observedoptimizerstepyet",
+    "resource_check": "PASS registeredmainskillGPU0/1UUIDs/memory/driver/9156exclusive"
+  },
+  "plan_state_scope": "Immutable registration.state describes generation time before final review,not the current runtime status."
+}
