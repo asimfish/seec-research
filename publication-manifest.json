@@ -1645,7 +1645,6 @@
     "executed_revision": "85c3af5cd29750a7465ec2d0d7a6f90792c1b811",
     "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278",
     "released_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
-    "source_master": "/mnt/nas/data/lyf/agentic_robot/benchmark_outputs/robomme_deployment_baseline_pilot_20261018_v1/registration-v1/stage/master.json",
     "public_summary_sha256": "843a37bd33ce272bbea763110a71032d5758a48d105491147dc7b75002445828",
     "runtime_snapshot": "data/robomme-baseline-pilot-operator-20261018T164215Z.json",
     "runtime_snapshot_sha256": "3271654da7eeb8b92988bb14d59d0c0b649a27985346a90f4b74f0f074a605f8",
@@ -1662,6 +1661,7 @@
     "source_updates": 0,
     "source_rollouts": 0,
     "whole32_success_rate_generated": false,
-    "publication": "OPEN_UNMERGED_UNPUBLISHED"
+    "publication": "OPEN_UNMERGED_UNPUBLISHED",
+    "source_master_kind": "private immutable registered master; public plan_id and SHA only"
   }
 }
