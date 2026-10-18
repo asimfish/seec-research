@@ -734,8 +734,8 @@
       "bytes": 9851
     },
     "learning.html": {
-      "sha256": "be33efc97b0cdf6bfff8b8afd8f83a185e541cc1b8704b57abfb5b4cf95a0a3d",
-      "bytes": 81715
+      "sha256": "304e6066db6ec5e631363d0d0e7c4fc3b36ba55f038a3743246113f2a92bcfec",
+      "bytes": 81748
     },
     "learning.js": {
       "sha256": "4bbfe78547134ed999e8e24047be4269e65fbcbe81189c11588b578dac1fb874",
@@ -1571,5 +1571,17 @@
     "public_status_sha256": "46d3618c01b26a733c88ac4461277630298dd9009e47751fe410d3efdc4b9dc4",
     "scope": "196metadata descriptions;55CPUcontracts;0native calls/rollouts/updates;notunseen certification or runtime authorization;oldnegative results unchanged",
     "publication": "OPEN_UNMERGED_UNPUBLISHED"
+  },
+  "native_integration_inputs": {
+    "code_revision": "b112fe78899634b67a77c9ce2d8ef0e0a308e38c",
+    "scope": "Small-file producer provenance and independent pre-execution admission; no native evidence exists. Original sources remain private; only hashes and dated factual summary exported.",
+    "plan_sha256": "5d988fcb0dd684a61d99837565d2b1b100142066e9d939008de43e21b5267524",
+    "config_sha256": "15a0b559e034b1d5f93ee2827bf89e7c2181e089242825158954d5200213e5fd",
+    "execution_review_sha256": "039d2160f80ed8d4c9328803b176abcc404af4b2fc900e9f3409b5b2935d2618",
+    "failure_sha256": "b66481046643a588b6a0bfa6f55ba6ebb336c1df361e320e28e7f47e202691d5",
+    "readback_sha256": "f8cc8e15989b3f05205d7e51cf747d181e49bdeecf0e33758f44c24392ee63d3",
+    "invocation_provenance_sha256": "ec56a945cc641dcf48ea72037019d7b80b98b93f78ffa61d1dfb699f6fc129a2",
+    "final_handoff_sha256": "4a1346dd7eddf94cfff0d9688b79890b72ac8bf9429bb8bd67a373f39c198d10",
+    "public_summary_sha256": "d2a62324586ebe3444ddcf5a4a14d6f0038f9fc40cee9ba03e9db7c1167a8bd8"
   }
 }
