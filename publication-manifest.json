@@ -1214,8 +1214,8 @@
       "bytes": 10885
     },
     "data/robomme-source-qualification.json": {
-      "sha256": "1462d0bddcf199dbd2905cff107e872c88932ac5733f270359304c07f38d465e",
-      "bytes": 9115
+      "sha256": "ba13755ac875edbe2958ba534fab9059525514b12964cd62ef9c342c27aaca58",
+      "bytes": 9403
     }
   },
   "research_revision": "9697cfc4f026b7a9d8fe7a719f0ddcff55ec8a06",
@@ -1543,7 +1543,7 @@
       "code_revision": "30c21b9440044056a2ef1eb2a9f6b89a18191660",
       "scope": "one finite source qualification; zero training/dev; exact independent review required"
     },
-    "public_status_sha256": "1462d0bddcf199dbd2905cff107e872c88932ac5733f270359304c07f38d465e",
+    "public_status_sha256": "ba13755ac875edbe2958ba534fab9059525514b12964cd62ef9c342c27aaca58",
     "publication": "OPEN_UNMERGED_UNPUBLISHED",
     "last_verified": "2026-10-18T08:40:43.962099+00:00",
     "final_independent_raw_review_sha256": "958be36510bb402cb3ac3d619d19f4fbf8e321edc3915aaba0cc92455305b1b9"
