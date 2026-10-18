@@ -1238,8 +1238,8 @@
       "bytes": 19139
     },
     "data/robomme-baseline-pilot.json": {
-      "sha256": "1455b15ea066238a750b15e34a8ab5538e1687dd4903a48db613cb8e6ce5e374",
-      "bytes": 5534
+      "sha256": "ec03f62d0955eb376824be2b514a93f282ac96f55bab756311b1d91f87b63319",
+      "bytes": 5786
     },
     "data/robomme-baseline-pilot-operator-20261018T164215Z.json": {
       "sha256": "3271654da7eeb8b92988bb14d59d0c0b649a27985346a90f4b74f0f074a605f8",
@@ -1661,10 +1661,10 @@
     "executed_revision": "85c3af5cd29750a7465ec2d0d7a6f90792c1b811",
     "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278",
     "released_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
-    "public_summary_sha256": "1455b15ea066238a750b15e34a8ab5538e1687dd4903a48db613cb8e6ce5e374",
+    "public_summary_sha256": "ec03f62d0955eb376824be2b514a93f282ac96f55bab756311b1d91f87b63319",
     "runtime_snapshot": "data/robomme-baseline-pilot-operator-complete-20261018T170836Z.json",
     "runtime_snapshot_sha256": "ce54e1fb149d6c15dc62cc25f8330946055272a12889837003138c2c971c5f5c",
-    "source_observed_at_unix": 1792343316.7351255,
+    "source_observed_at_unix": 1792347301.2331266,
     "closed_durable_cases": 32,
     "independent_code_review_sha256": "f1f30d1d0b8d66ec53f3c91730ba13a202ab9e4e816bc65a7210c97cfa55f726",
     "independent_exact_packet_review_sha256": "92293ff3c1241a39b1cc25e4b89d836f43a913be0c224a6d8c5fa07176da73f7",
@@ -1702,7 +1702,10 @@
     "source_preservation_scope": "data-only; oldoperatorSTOPPED durablecounter0 retained;54NOT_RUN",
     "corpus_code_revision": "dd8595c6736a37c8f784a7b8891231222dab6d55",
     "corpus_code_review_sha256": "1108600c3df759e5fcd40c98024ebd92ed2e9735ba280a74fc27869d682cff66",
-    "source_preserved_raw_review_sha256": "524f41f4adc2db98bfaafbc2ae50ffaea14093ab140588044b44bc87d802cd6d"
+    "source_preserved_raw_review_sha256": "524f41f4adc2db98bfaafbc2ae50ffaea14093ab140588044b44bc87d802cd6d",
+    "released_runtime_observed_at_unix": 1792343316.7351255,
+    "original_source_transport_observed_at_unix": 1792345842.081339,
+    "source_observed_at_scope": "new data-only preservation completion; old operator remains stopped"
   },
   "historical_deployment_baseline_pilot_inputs_20261018_164215": {
     "master_plan_id": "robomme-deployment-pilot-64c9fc3a7cbc48c3",

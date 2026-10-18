@@ -66,7 +66,7 @@
   "observed_at_kind": "source preservation completion; independently verified actual files and bounded raw readout at last_verified",
   "runtime_snapshot": "data/robomme-baseline-pilot-operator-complete-20261018T170836Z.json",
   "runtime_snapshot_sha256": "ce54e1fb149d6c15dc62cc25f8330946055272a12889837003138c2c971c5f5c",
-  "source_observed_at_unix": 1792345842.081339,
+  "source_observed_at_unix": 1792347301.2331266,
   "headroom_decision": "CONTINUE_FIXED_PILOT",
   "released_analysis_sha256": "bfabc4c3e1862c0ee108b5bd6a850947ba3643e72584675240cbe01074c753da",
   "released_owner_sha256": "5a66ae14904447046064556bd66ba710c01b6887dcd89497bf1912bd4ed76999",
@@ -122,5 +122,8 @@
     "native_resets": 16,
     "setup_controls": 965,
     "source_seconds": 1010.5286760088056
-  }
+  },
+  "original_source_transport_observed_at_unix": 1792345842.081339,
+  "released_runtime_observed_at_unix": 1792343316.7351255,
+  "source_observed_at_scope": "new data-only preservation completion; original transport/released snapshot epochs separate"
 }
