@@ -1,0 +1,13 @@
+{
+  "status": "EXECUTING",
+  "completed_durable_cases": 16,
+  "batches": {
+    "0": "COMPLETE_DURABLE",
+    "1": "COMPLETE_DURABLE",
+    "2": "SUPERVISOR_FORKED",
+    "3": "NOT_RUN"
+  },
+  "active_batch": 2,
+  "observed_at": 1792341413.5673122,
+  "operator_seconds": 1651.762018551999
+}

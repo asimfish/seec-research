@@ -1,6 +1,6 @@
 {
   "schema": "robomme-baseline-pilot-status-v1",
-  "observed_at": "2026-10-18T16:39:53.598710+00:00",
+  "observed_at": "2026-10-18T16:42:15.515400+00:00",
   "phase": "RUNNING_RELEASED32",
   "plan_id": "robomme-deployment-pilot-64c9fc3a7cbc48c3",
   "master_sha256": "709406731926ab4bd88b5a625f8d0a4fda8ef5f5b05f557aa3cfad6a0e96384e",
@@ -42,5 +42,9 @@
   "current_batch": 2,
   "current_stage_scope": "Stable operator and durable batches; current service/case is a dated snapshot, not a continuous health guarantee",
   "released_model_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
-  "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278"
+  "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278",
+  "observed_at_kind": "retrieval of exact saved operator snapshot; not continuous host health",
+  "runtime_snapshot": "data/robomme-baseline-pilot-operator-20261018T164215Z.json",
+  "runtime_snapshot_sha256": "3271654da7eeb8b92988bb14d59d0c0b649a27985346a90f4b74f0f074a605f8",
+  "source_observed_at_unix": 1792341413.5673122
 }
