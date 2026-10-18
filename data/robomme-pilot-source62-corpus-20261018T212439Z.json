@@ -1,0 +1,228 @@
+{
+  "schema": "robomme-pilot-source62-corpus-public-v1",
+  "observed_at": "2026-10-18T21:24:39.958654+00:00",
+  "last_verified": "2026-10-18T21:34:18.293976+00:00",
+  "status": "COMPLETE_SOURCE62_CORPUS_FROZEN",
+  "completed_durable_cases": 62,
+  "source_registered_cases": 62,
+  "active_batch": null,
+  "batches": {
+    "0": "COMPLETE_PARENT_DURABLE",
+    "1": "COMPLETE_DURABLE",
+    "2": "COMPLETE_DURABLE",
+    "3": "COMPLETE_DURABLE",
+    "4": "COMPLETE_DURABLE",
+    "5": "COMPLETE_DURABLE",
+    "6": "COMPLETE_DURABLE",
+    "7": "COMPLETE_DURABLE"
+  },
+  "incremental_raw_reviews": {
+    "0": "524f41f4adc2db98bfaafbc2ae50ffaea14093ab140588044b44bc87d802cd6d",
+    "1": "0b789289bc2c46a6d7e56bba6cbc14c157b8fc46197c3ab2a4316da255514e2e",
+    "2": "cc9433112f5095641591024cb7ab59924f4cf2b2c99149096c976d03df7bcf65",
+    "3": "bd7cc83483e45752ea4ddf24df98ae18d4b8cb99a6482593c8db5b02de10618b",
+    "4": "e23baf3baa4855a3742b2f40a5bde9a3b51e4d16be0f624a490b403eb4ed4a67",
+    "5": "cf2f69326b64e2e6649280e5b9fbf3600fb60a1b61d9f7d61f1759ffba1e1f3a",
+    "6": "db217e7f5f3595bd5b17d8c7032b232cba5fd3fd4eeb459ec1fd8db46bb8b1ad",
+    "7": "4a887f2354307322b751b1145ef88195c53344ea5232f6704617a4969a6f3e21"
+  },
+  "source_classifications": {
+    "OFFICIAL_TERMINAL_FAILURE": 36,
+    "SUCCESS": 25,
+    "CONTROL_BUDGET_NONSUCCESS": 1
+  },
+  "per_task": {
+    "PatternLock": {
+      "episodes": 31,
+      "classifications": {
+        "OFFICIAL_TERMINAL_FAILURE": 11,
+        "SUCCESS": 20
+      },
+      "queries": 26,
+      "category_chunks": {
+        "D_I": 22,
+        "D_R": 86
+      },
+      "target_occurrences": 2160,
+      "distinct_controls": 2012,
+      "zero_complete_chunk_episodes": [
+        {
+          "difficulty": "easy",
+          "namespace": "robomme-deployment-prototype-20261018-v1",
+          "native_episode_index": 5,
+          "role": "source",
+          "seed": 2084701765,
+          "task": "PatternLock"
+        }
+      ],
+      "rejected_reasons": {
+        "MIXED_ORIGIN": 29,
+        "INSUFFICIENT_ACTUAL_CONTROLS": 35
+      }
+    },
+    "PickHighlight": {
+      "episodes": 31,
+      "classifications": {
+        "OFFICIAL_TERMINAL_FAILURE": 25,
+        "SUCCESS": 5,
+        "CONTROL_BUDGET_NONSUCCESS": 1
+      },
+      "queries": 31,
+      "category_chunks": {
+        "D_I": 31,
+        "D_R": 494
+      },
+      "target_occurrences": 10500,
+      "distinct_controls": 8772,
+      "zero_complete_chunk_episodes": [],
+      "rejected_reasons": {
+        "MIXED_ORIGIN": 31,
+        "INSUFFICIENT_ACTUAL_CONTROLS": 34
+      }
+    }
+  },
+  "costs": {
+    "expert_controls": 1119,
+    "native_resets": 124,
+    "qualification_forecasts": 104,
+    "queries": 57,
+    "services": 8,
+    "setup_controls": 8051,
+    "source_seconds": 8950.189106227364,
+    "task_attempts": 62,
+    "task_controls": 11940,
+    "task_forecasts": 762,
+    "student_controls": 10821,
+    "setup_seconds": 1996.8247257452458
+  },
+  "corpus_id": "b43763a6575e04b33a9db7ecc02b1bf4728e14af613dcda813b1841de99015e8",
+  "corpus_sha256": "e00e6b8fc9937f277f4cabae5cae29bd214c0060d5442faf116d4eba9eeb36c5",
+  "category_counts": {
+    "D_I": 53,
+    "D_R": 580
+  },
+  "target_occurrences": 12660,
+  "distinct_target_controls": 10784,
+  "short_expert_segments": [
+    {
+      "case": {
+        "difficulty": "easy",
+        "namespace": "robomme-deployment-prototype-20261018-v1",
+        "native_episode_index": 6,
+        "role": "source",
+        "seed": 480391297,
+        "task": "PatternLock"
+      },
+      "expert_controls": 17,
+      "query_status": "TERMINAL",
+      "official_terminal": true,
+      "all_episode_retained": true
+    },
+    {
+      "case": {
+        "difficulty": "medium",
+        "namespace": "robomme-deployment-prototype-20261018-v1",
+        "native_episode_index": 19,
+        "role": "source",
+        "seed": 189083447,
+        "task": "PatternLock"
+      },
+      "expert_controls": 11,
+      "query_status": "PARTIAL",
+      "official_terminal": true,
+      "all_episode_retained": true
+    },
+    {
+      "case": {
+        "difficulty": "hard",
+        "namespace": "robomme-deployment-prototype-20261018-v1",
+        "native_episode_index": 24,
+        "role": "source",
+        "seed": 727153753,
+        "task": "PatternLock"
+      },
+      "expert_controls": 17,
+      "query_status": "PARTIAL",
+      "official_terminal": true,
+      "all_episode_retained": true
+    },
+    {
+      "case": {
+        "difficulty": "hard",
+        "namespace": "robomme-deployment-prototype-20261018-v1",
+        "native_episode_index": 26,
+        "role": "source",
+        "seed": 1523518882,
+        "task": "PatternLock"
+      },
+      "expert_controls": 14,
+      "query_status": "PARTIAL",
+      "official_terminal": true,
+      "all_episode_retained": true
+    }
+  ],
+  "draw_file_sha256": {
+    "bc": "cadca5ec5f6b914b471239de49ec3f220581a13bfd925658ab7d88ea48f09905",
+    "pooled": "0257217f3ec140c58c379548b2691b899aef7e53211efcab4d7260ea6243d103",
+    "iwr": "6b4c2d5e71cd66f84082f1c0f0a20592cd194fe1a26d387b91b718fbc4eabc9e"
+  },
+  "prospective_exposures": {
+    "bc": {
+      "draw_file_sha256": "cadca5ec5f6b914b471239de49ec3f220581a13bfd925658ab7d88ea48f09905",
+      "seed": 101,
+      "updates": 1000,
+      "concrete_chunk_draws": 2000,
+      "target_occurrences": 40000,
+      "category_draws": {
+        "D_I": 2000,
+        "D_R": 0
+      },
+      "per_task_draws": {
+        "PatternLock": 892,
+        "PickHighlight": 1108
+      },
+      "selected_distinct_controls": 1060
+    },
+    "pooled": {
+      "draw_file_sha256": "0257217f3ec140c58c379548b2691b899aef7e53211efcab4d7260ea6243d103",
+      "seed": 101,
+      "updates": 1000,
+      "concrete_chunk_draws": 2000,
+      "target_occurrences": 40000,
+      "category_draws": {
+        "D_I": 188,
+        "D_R": 1812
+      },
+      "per_task_draws": {
+        "PatternLock": 356,
+        "PickHighlight": 1644
+      },
+      "selected_distinct_controls": 10436
+    },
+    "iwr": {
+      "draw_file_sha256": "6b4c2d5e71cd66f84082f1c0f0a20592cd194fe1a26d387b91b718fbc4eabc9e",
+      "seed": 101,
+      "updates": 1000,
+      "concrete_chunk_draws": 2000,
+      "target_occurrences": 40000,
+      "category_draws": {
+        "D_I": 1000,
+        "D_R": 1000
+      },
+      "per_task_draws": {
+        "PatternLock": 617,
+        "PickHighlight": 1383
+      },
+      "selected_distinct_controls": 9124
+    }
+  },
+  "inventory_review_sha256": "6514c60620c8862a1be0733022c8f0d7e668905d1d3a90f2eef2019d35eb40f0",
+  "corpus_draw_review_sha256": "199e0fd63e5042e198232c9630e1afe9625d93f8ebf19217061217b847aec95f",
+  "optimizer_updates": 0,
+  "learner_plan_id": "robomme-deployment-pilot-learner-53644247d6c032d2",
+  "learner_plan_sha256": "ddcf8f0a7324cf6a0bcb5f5c125bc289aabb48b61d2c308b13e39e2d8a5535e5",
+  "learner_code_revision": "1e6b92dbdf494dcde44b91641927eb72da65a4e2",
+  "learner_phase": "EXACT_CORE_REVIEW_NOT_INSTALLED",
+  "scope": "All62 episodes retained,no success filtering.633 complete20-control chunks. Source hybrid outcomes do not estimate causal assistance or absorption gain; normalization remains pinned producer provenance,not physical tracking. Concrete draws are prospective exposure,not optimizer updates.",
+  "publication": "OPEN_UNMERGED_UNPUBLISHED"
+}
