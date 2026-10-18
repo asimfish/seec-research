@@ -1202,7 +1202,7 @@
     "frequency_result_sha256": "eb135042e726cc6d4de1e905daa72d9bf44066db33d474642759dbac34624b68",
     "paper_pdf_sha256": "7a963288be38608258e2c9be0828f3082d90701b8f917e0559437d811bae7dcd"
   },
-  "updated": "2026-10-18T01:12:44.639022+00:00",
+  "updated": "2026-10-18T02:05:35.365543+00:00",
   "archive_public_revision": "90d923d69e7728f376ae3d3e4ea9cc81dc7bc545",
   "new_research_inputs": {
     "summary_sha256": "d0221a27287af14e67c2b051b590746b9ddb310a91782a2ad3d18d8903a6d7c2",
@@ -1390,7 +1390,7 @@
     "result": "4/8vsinitial7/8;singleuseddevelopmentseed7;notnewmethodorpositivegeneralization"
   },
   "protected_boundary_inputs": {
-    "status": "NATIVE_INITIALIZATION_RUNNING_ZERO_RECORDED_UPDATES_AT_OBSERVATION",
+    "status": "NATIVE10000_COMPLETE_PRE_REGISTERED_56_READOUT_IN_PROGRESS",
     "registration": {
       "registered_at": "2026-10-18T01:06:29.389113+00:00",
       "code_revision": "b9ba062124c1752ef253d8b4c58e183a04eebf49",
@@ -1407,7 +1407,13 @@
       "new_candidate_optimizer_updates": 0,
       "state": "AWAITING_EXACT_INDEPENDENT_REVIEW_NO_COMPUTE_AUTHORIZED_BY_THIS_FILE"
     },
-    "private_raw_data_excluded": true
+    "private_raw_data_excluded": true,
+    "observed_at": "2026-10-18T02:04:29.230980+00:00",
+    "last_verified": "2026-10-18T02:05:35.365543+00:00",
+    "public_status_sha256": "4c290f7c8a88dab93f001a7f6e5357f2da0efa90c023dd08afa5526b1b5df1a7",
+    "runtime_source_sha256": "f559bc941633004bb374c18a89cfcb71646609e491f225e5ad818d8a94670b46",
+    "independent_native_final_identity_review_sha256": "e9a83a57ac6097a0ad657af08b9f2c0cbe26dfad9dd99f4e1648d62e998620d6",
+    "independent_complete_training_small_records_review_sha256": "bb287906228cedf3b8ca642112965dc15b607c693a055d991653133d29dffaca"
   },
   "historical_execution_observation_before_protected_boundary": {
     "observed_at": "2026-10-17T19:26:15.597581+00:00",
