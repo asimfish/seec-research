@@ -1,0 +1,50 @@
+{
+  "schema": "robomme-pilot-source-continuation-public-v1",
+  "observed_at": "2026-10-18T20:40:29.949162+00:00",
+  "last_verified": "2026-10-18T20:42:40.393039+00:00",
+  "status": "EXECUTING",
+  "completed_durable_cases": 48,
+  "source_registered_cases": 62,
+  "active_batch": 6,
+  "active_batch_receipts_not_counted": true,
+  "batches": {
+    "0": "COMPLETE_PARENT_DURABLE",
+    "1": "COMPLETE_DURABLE",
+    "2": "COMPLETE_DURABLE",
+    "3": "COMPLETE_DURABLE",
+    "4": "COMPLETE_DURABLE",
+    "5": "COMPLETE_DURABLE",
+    "6": "SUPERVISOR_FORKED",
+    "7": "NOT_RUN"
+  },
+  "continuation_code_revision": "a754e3cc7f77f0a16969fbe1fe6407f0a9f5377b",
+  "continuation_config_sha256": "38476b0cdc340b42d3b91f5a1ec31c6417fed4c1f97c7d203e6ec5ffb5b819f8",
+  "incremental_raw_reviews": {
+    "0": "524f41f4adc2db98bfaafbc2ae50ffaea14093ab140588044b44bc87d802cd6d",
+    "1": "0b789289bc2c46a6d7e56bba6cbc14c157b8fc46197c3ab2a4316da255514e2e",
+    "2": "cc9433112f5095641591024cb7ab59924f4cf2b2c99149096c976d03df7bcf65",
+    "3": "bd7cc83483e45752ea4ddf24df98ae18d4b8cb99a6482593c8db5b02de10618b",
+    "4": "e23baf3baa4855a3742b2f40a5bde9a3b51e4d16be0f624a490b403eb4ed4a67",
+    "5": "cf2f69326b64e2e6649280e5b9fbf3600fb60a1b61d9f7d61f1759ffba1e1f3a"
+  },
+  "closed48_data": {
+    "D_I": 41,
+    "D_R": 418,
+    "target_occurrences": 9180,
+    "distinct_target_controls": 7848
+  },
+  "closed48_costs": {
+    "task_attempts": 48,
+    "services": 6,
+    "qualification_forecasts": 78,
+    "task_forecasts": 560,
+    "task_controls": 8763,
+    "queries": 44,
+    "expert_controls": 865,
+    "native_resets": 96,
+    "setup_controls": 5847,
+    "source_seconds": 6668.127606434282
+  },
+  "scope": "Only48/62 NAS-durable and independently verified by disjoint incremental reviews; no full corpus/draw freeze or pilot updates. Source hybrid outcomes are not the released32 development reference or a help/absorption effect.",
+  "publication": "OPEN_UNMERGED_UNPUBLISHED"
+}
