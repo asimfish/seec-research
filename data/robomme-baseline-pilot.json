@@ -92,7 +92,7 @@
   },
   "operator_seconds": 3554.9298322569994,
   "independent_readout_sha256": "a19055b9518c28065284276bbe10892d8a4ab5750e428ef4499959bad4ce88c5",
-  "last_verified": "2026-10-18T17:51:53.150460+00:00",
+  "last_verified": "2026-10-18T17:52:30.570139+00:00",
   "released_milestone_handoff_sha256": "ed6c91fe844a49ab9c22b68b18a7f5e0cdbe77ae5b8c31fb68f3d1956ea7594c",
   "native_setup_seconds": 1020.2142859487794,
   "source_producer_complete_cases": 8,
@@ -113,5 +113,7 @@
     "setup_controls": 965,
     "source_seconds": 1010.5286760088056
   },
-  "costs_scope": "released32 only; provisional source costs are separately labelled pending raw review"
+  "costs_scope": "released32 only; provisional source costs are separately labelled pending raw review",
+  "source_independent_reviewed_at": "2026-10-18T17:52:30.570139+00:00",
+  "source_review_scope": "transport headers/closed lifecycle/call receipt/partial lstat, not raw source verification"
 }

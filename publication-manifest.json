@@ -1238,8 +1238,8 @@
       "bytes": 19139
     },
     "data/robomme-baseline-pilot.json": {
-      "sha256": "f4759d86adca0acbdd45ff4151c557605ea7465c822286325a2e346e875b4f74",
-      "bytes": 4750
+      "sha256": "0a2e2b4f0b6af82143063541f651ef3026503d5597f74e7071f378ff8ddaa867",
+      "bytes": 4941
     },
     "data/robomme-baseline-pilot-operator-20261018T164215Z.json": {
       "sha256": "3271654da7eeb8b92988bb14d59d0c0b649a27985346a90f4b74f0f074a605f8",
@@ -1657,7 +1657,7 @@
     "executed_revision": "85c3af5cd29750a7465ec2d0d7a6f90792c1b811",
     "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278",
     "released_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
-    "public_summary_sha256": "f4759d86adca0acbdd45ff4151c557605ea7465c822286325a2e346e875b4f74",
+    "public_summary_sha256": "0a2e2b4f0b6af82143063541f651ef3026503d5597f74e7071f378ff8ddaa867",
     "runtime_snapshot": "data/robomme-baseline-pilot-operator-complete-20261018T170836Z.json",
     "runtime_snapshot_sha256": "ce54e1fb149d6c15dc62cc25f8330946055272a12889837003138c2c971c5f5c",
     "source_observed_at_unix": 1792343316.7351255,
@@ -1687,7 +1687,7 @@
     "source_code_revision": "38ff1d2f1e228b13faa52fb9e8eb3dd5faed3dd7",
     "source_code_pr": "https://github.com/asimfish/robocore/pull/30",
     "readout_generated_at": "2026-10-18T17:09:38.292924+00:00",
-    "last_verified": "2026-10-18T17:51:53.150460+00:00",
+    "last_verified": "2026-10-18T17:52:30.570139+00:00",
     "source_values_as_of": "2026-10-18T17:51:53.150460+00:00",
     "source_durable_cases": 0,
     "source_phase": "STOPPED_INFRA_NO_RETRY",
