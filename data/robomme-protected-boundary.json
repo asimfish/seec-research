@@ -1,7 +1,7 @@
 {
   "schema": "robomme-protected-boundary-public-v1",
   "observed_at": "2026-10-18T01:09:36.618016+00:00",
-  "last_verified": "2026-10-18T01:09:36.618016+00:00",
+  "last_verified": "2026-10-18T01:12:44.639022+00:00",
   "status": "NATIVE_INITIALIZATION_RUNNING_ZERO_RECORDED_UPDATES_AT_OBSERVATION",
   "publication": "OPEN_UNMERGED_UNPUBLISHED_FACT_PR",
   "plan": {
@@ -89,7 +89,7 @@
     "GPU_model_environment_calls": 0,
     "scope": "Infrastructure type conversion,not learning/model/data failure",
     "evidence_preserved": true,
-    "repair": "Two explicit Path conversions;nonempty boundfile and positive mock preflight regression;new exact review pending"
+    "repair": "CLOSED:two explicit Path conversions;nonempty-file/positive preflight regression;new b9exact independentreviewPASS beforeattempt2"
   },
   "independent_execution_review": {
     "code": "b9ba062124c1752ef253d8b4c58e183a04eebf49",
@@ -103,5 +103,6 @@
     "prior_preflight_abort_retained": true,
     "phase": "Nativeinitialization;no observedoptimizerstepyet",
     "resource_check": "PASS registeredmainskillGPU0/1UUIDs/memory/driver/9156exclusive"
-  }
+  },
+  "plan_state_scope": "Immutable registration.state describes generation time before final review,not the current runtime status."
 }
