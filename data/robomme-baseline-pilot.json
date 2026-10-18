@@ -1,12 +1,12 @@
 {
   "schema": "robomme-baseline-pilot-status-v1",
-  "observed_at": "2026-10-18T16:42:15.515400+00:00",
-  "phase": "RUNNING_RELEASED32",
+  "observed_at": "2026-10-18T17:09:38.292924+00:00",
+  "phase": "COMPLETE_RELEASED32_HEADROOM_CONTINUE",
   "plan_id": "robomme-deployment-pilot-64c9fc3a7cbc48c3",
   "master_sha256": "709406731926ab4bd88b5a625f8d0a4fda8ef5f5b05f557aa3cfad6a0e96384e",
   "code_revision": "85c3af5cd29750a7465ec2d0d7a6f90792c1b811",
   "pr": "https://github.com/asimfish/robocore/pull/29",
-  "released_cases_complete": 16,
+  "released_cases_complete": 32,
   "released_cases_registered": 32,
   "released_native_started": true,
   "source_attempts": 0,
@@ -14,10 +14,30 @@
   "development_gate": "released >=31/32 stops this pilot; otherwise follow frozen source62 and three baseline recipes",
   "arms": {
     "released": {
-      "status": "IN_PROGRESS",
-      "success": null,
+      "status": "COMPLETE_DURABLE",
+      "complete_cases": 32,
+      "complete": true,
+      "per_task": {
+        "PatternLock": {
+          "success": 11,
+          "N": 16,
+          "incomplete": 0
+        },
+        "PickHighlight": {
+          "success": 6,
+          "N": 16,
+          "incomplete": 0
+        }
+      },
+      "success": 17,
       "N": 32,
-      "complete_cases": 16
+      "task_balanced_success": 0.53125,
+      "categories": {
+        "SUCCESS": 17,
+        "OFFICIAL_TERMINAL_FAILURE": 15,
+        "CONTROL_BUDGET_NONSUCCESS": 0,
+        "INFRA_INCOMPLETE": 0
+      }
     },
     "bc": {
       "status": "NOT_RUN",
@@ -38,13 +58,41 @@
   "inputs": "native initial demo; <=32frames/512tokens;20predict/16execute; per-case fresh memory/RNG7; no extra evaluator query/shadow",
   "training": "seed101;1000updates/globalbatch2;nativeflow/AdamW/whole-treeEMA.999;LR1e-6*min((u+1)/100,1);finalonly",
   "publication": "open/unmerged/unpublished",
-  "interpretation": "standard baseline development feasibility only; no positive absorption or new mechanism result",
-  "current_batch": 2,
-  "current_stage_scope": "Stable operator and durable batches; current service/case is a dated snapshot, not a continuous health guarantee",
+  "interpretation": "released development reference only; no trained-arm result or net absorption benefit established",
+  "current_batch": null,
+  "current_stage_scope": "All32 cases durably archived; source exact packet pending review; no source or optimizer start",
   "released_model_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
   "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278",
-  "observed_at_kind": "retrieval of exact saved operator snapshot; not continuous host health",
-  "runtime_snapshot": "data/robomme-baseline-pilot-operator-20261018T164215Z.json",
-  "runtime_snapshot_sha256": "3271654da7eeb8b92988bb14d59d0c0b649a27985346a90f4b74f0f074a605f8",
-  "source_observed_at_unix": 1792341413.5673122
+  "observed_at_kind": "completed operator plus pre-outcome frozen analyzer and independent complete32 readout",
+  "runtime_snapshot": "data/robomme-baseline-pilot-operator-complete-20261018T170836Z.json",
+  "runtime_snapshot_sha256": "ce54e1fb149d6c15dc62cc25f8330946055272a12889837003138c2c971c5f5c",
+  "source_observed_at_unix": 1792343316.7351255,
+  "headroom_decision": "CONTINUE_FIXED_PILOT",
+  "released_analysis_sha256": "bfabc4c3e1862c0ee108b5bd6a850947ba3643e72584675240cbe01074c753da",
+  "released_owner_sha256": "5a66ae14904447046064556bd66ba710c01b6887dcd89497bf1912bd4ed76999",
+  "source_code_revision": "38ff1d2f1e228b13faa52fb9e8eb3dd5faed3dd7",
+  "source_code_pr": "https://github.com/asimfish/robocore/pull/30",
+  "source_phase": "EXACT_PACKET_UNDER_REVIEW_NOT_STARTED",
+  "independent_readout": "PASS_COMPLETE32",
+  "costs": {
+    "task_attempts": 32,
+    "task_controls": 6755,
+    "queries": 0,
+    "expert_controls": 0,
+    "services": 4,
+    "qualification_forecasts": 52,
+    "task_forecasts": 435,
+    "native_resets": 64,
+    "setup_controls": 4005,
+    "updates": 0,
+    "initializations": 0,
+    "source_seconds": 0,
+    "train_seconds": 0,
+    "dev_seconds": 3512.272567607928
+  },
+  "operator_seconds": 3554.9298322569994,
+  "independent_readout_sha256": "a19055b9518c28065284276bbe10892d8a4ab5750e428ef4499959bad4ce88c5",
+  "last_verified": "2026-10-18T17:13:28.254243+00:00",
+  "released_milestone_handoff_sha256": "ed6c91fe844a49ab9c22b68b18a7f5e0cdbe77ae5b8c31fb68f3d1956ea7594c",
+  "native_setup_seconds": 1020.2142859487794
 }

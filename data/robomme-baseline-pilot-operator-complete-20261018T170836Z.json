@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE_RELEASED32_DURABLE",
+  "completed_durable_cases": 32,
+  "batches": {
+    "0": "COMPLETE_DURABLE",
+    "1": "COMPLETE_DURABLE",
+    "2": "COMPLETE_DURABLE",
+    "3": "COMPLETE_DURABLE"
+  },
+  "active_batch": null,
+  "operator_ssh_scp_invocations": 18,
+  "observed_at": 1792343316.7351255,
+  "operator_seconds": 3554.9298322569994
+}
