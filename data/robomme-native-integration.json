@@ -1,0 +1,63 @@
+{
+  "schema": "robomme-native-integration-public-v1",
+  "observed_at": "2026-10-18T10:28:06.761676+00:00",
+  "status": "ABORTED_BEFORE_CONFIRMED_REMOTE_LAUNCH_NO_RETRY",
+  "publication_status": "OPEN_PR_UNMERGED_UNPUBLISHED",
+  "pr": "https://github.com/asimfish/robocore/pull/26",
+  "code_revision": "b112fe78899634b67a77c9ce2d8ef0e0a308e38c",
+  "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278",
+  "plan_id": "robomme-native-integration-faabe0a43d13706f",
+  "plan_sha256": "5d988fcb0dd684a61d99837565d2b1b100142066e9d939008de43e21b5267524",
+  "config_sha256": "15a0b559e034b1d5f93ee2827bf89e7c2181e089242825158954d5200213e5fd",
+  "model_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+  "cases": [
+    {
+      "task": "PatternLock",
+      "role": "source",
+      "native_episode_index": 0,
+      "seed": 1597831442,
+      "difficulty": "easy",
+      "status": "NOT_RUN"
+    },
+    {
+      "task": "PickHighlight",
+      "role": "source",
+      "native_episode_index": 0,
+      "seed": 1582525021,
+      "difficulty": "easy",
+      "status": "NOT_RUN"
+    }
+  ],
+  "code_admission": {
+    "focused_cpu_contracts_passed": 21,
+    "independent_exact_packet_passed": true,
+    "review_sha256": "039d2160f80ed8d4c9328803b176abcc404af4b2fc900e9f3409b5b2935d2618",
+    "scope": "pre-execution code/identity admission only"
+  },
+  "failure": {
+    "kind": "SSH_LAUNCH_TIMEOUT",
+    "timeout_seconds": 45,
+    "readback_at": "2026-10-18T10:26:43.516439+00:00",
+    "launch_receipt_present": false,
+    "coordinator_log_present": false,
+    "coordinator_status_present": false,
+    "exact_owned_coordinator_processes": 0,
+    "no_retry": true
+  },
+  "native_capture": "NOT_RUN",
+  "eligible_actual_target_chunks": "NOT_MATERIALIZED",
+  "recorded_costs": {
+    "case_attempts": 0,
+    "service_starts": 0,
+    "task_controls": 0,
+    "setup_controls": 0,
+    "native_resets": 0,
+    "queries": 0,
+    "task_forecasts": 0,
+    "qualification_forecasts": 0,
+    "optimizer_updates": 0
+  },
+  "cost_boundary": "Absent-start evidence, not measured GPU utilization/physical substeps; no successful native qualification or training claim.",
+  "baseline_recipe": "Numerical BC/pooled/IWR-style draft only, not frozen full study or training permission.",
+  "preserved": "All absorption negatives; source19 NO_GO; main1400 dated458 infra-blocked; reference800 unchanged."
+}
