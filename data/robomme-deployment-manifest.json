@@ -1,0 +1,123 @@
+{
+  "schema": "robomme-deployment-manifest-public-v1",
+  "observed_at": "2026-10-18T09:40:04.504070+00:00",
+  "study_status": "PROPOSED",
+  "native_status": "NOT_RUN",
+  "execution_authorized": false,
+  "code_pr": "https://github.com/asimfish/robocore/pull/25",
+  "code_head": "7a206e9b65be2907cc9f635d90795e5e6a2f1469",
+  "code_review": {
+    "status": "PASS_PURE_CPU_MANIFEST_SCOPE",
+    "exact_head": "7a206e9b65be2907cc9f635d90795e5e6a2f1469",
+    "receipt_sha256": "2c5bb810f2f1eac2935cdd4b4793146aa5fb4601c56dbc22a631ae8a8496abbe",
+    "launch_allowed": false,
+    "training_ready": false
+  },
+  "model_calls": 0,
+  "rollouts": 0,
+  "optimizer_updates": 0,
+  "manifest": {
+    "episode_descriptions": 196,
+    "execution_authorized": false,
+    "manifest_id": "robomme-deployment-0a33caa9d3a934836d8e85e9687bc6a2a895f6977a0afe38d1fff946d57d6bf3",
+    "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278"
+  },
+  "role_counts": [
+    {
+      "task": "PatternLock",
+      "role": "source",
+      "total": 32,
+      "quotas": {
+        "easy": 16,
+        "medium": 8,
+        "hard": 8
+      }
+    },
+    {
+      "task": "PatternLock",
+      "role": "development",
+      "total": 16,
+      "quotas": {
+        "easy": 8,
+        "medium": 4,
+        "hard": 4
+      }
+    },
+    {
+      "task": "PatternLock",
+      "role": "final_reserved",
+      "total": 50,
+      "quotas": {
+        "easy": 26,
+        "medium": 12,
+        "hard": 12
+      }
+    },
+    {
+      "task": "PickHighlight",
+      "role": "source",
+      "total": 32,
+      "quotas": {
+        "easy": 16,
+        "medium": 8,
+        "hard": 8
+      }
+    },
+    {
+      "task": "PickHighlight",
+      "role": "development",
+      "total": 16,
+      "quotas": {
+        "easy": 8,
+        "medium": 4,
+        "hard": 4
+      }
+    },
+    {
+      "task": "PickHighlight",
+      "role": "final_reserved",
+      "total": 50,
+      "quotas": {
+        "easy": 26,
+        "medium": 12,
+        "hard": 12
+      }
+    }
+  ],
+  "metadata": [
+    {
+      "filename": "record_dataset_PatternLock_metadata.json",
+      "sha256": "9e9e52ee51d7707da9d1a092c3a05d1d84982aa3ba5a41c545858f44419fc0d5"
+    },
+    {
+      "filename": "record_dataset_PickHighlight_metadata.json",
+      "sha256": "7facce5465ecdd5e57f65ba429dd20889339b44572fbee743815e001af1fd504"
+    }
+  ],
+  "checked_exclusions": {
+    "benchmark_revision": "fae9f7300347f1146c2ae4844faa4eef7e38098e",
+    "files": 6,
+    "records": 400,
+    "unique_seeds": 332,
+    "generated_unique_seeds": 196,
+    "overlap": 0,
+    "limit": "bounded published metadata; exact historical training members UNAVAILABLE"
+  },
+  "cpu_evidence": {
+    "contracts_passed": 55,
+    "fake_resolved_records": 196,
+    "native_runtime_qualified": false
+  },
+  "unset": [
+    "training seeds",
+    "LR/effective batch/schedule",
+    "updates/checkpoint selection",
+    "parameter/precision/EMA recipe",
+    "query schedule/unit/count",
+    "D_I/D_R and target sampling",
+    "full task/setup/expert/compute costs",
+    "runtime/code/assets/ownership and native integration"
+  ],
+  "publication": "OPEN_PR_UNMERGED_UNPUBLISHED",
+  "scientific_results": "No new success result. Existing negative/zero results unchanged; source panel NO_GO."
+}
