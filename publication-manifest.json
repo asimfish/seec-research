@@ -734,7 +734,7 @@
       "bytes": 9851
     },
     "learning.html": {
-      "sha256": "7416f34f24b120963bbf943da9903e5f3f034432e7dec393a8bec11661c9682a",
+      "sha256": "53d6a396b73e9cfeb082a0e83740a2203193be384f124d4b548c4bd0e286f877",
       "bytes": 94472
     },
     "learning.js": {
@@ -1278,7 +1278,7 @@
     "frequency_result_sha256": "eb135042e726cc6d4de1e905daa72d9bf44066db33d474642759dbac34624b68",
     "paper_pdf_sha256": "7a963288be38608258e2c9be0828f3082d90701b8f917e0559437d811bae7dcd"
   },
-  "updated": "2026-10-18T20:00:56.431750+00:00",
+  "updated": "2026-10-18T20:01:16.176648+00:00",
   "archive_public_revision": "90d923d69e7728f376ae3d3e4ea9cc81dc7bc545",
   "new_research_inputs": {
     "summary_sha256": "d0221a27287af14e67c2b051b590746b9ddb310a91782a2ad3d18d8903a6d7c2",
