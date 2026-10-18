@@ -1,10 +1,10 @@
 {
   "schema": "robomme-execution-observation-v1",
-  "observed_at": "2026-10-17T19:26:15.597581+00:00",
-  "last_verified": "2026-10-17T19:26:15.597581+00:00",
-  "status": "RUNNING_AT_DATED_OBSERVATION_SIX_SEED_CONCLUSION_INCOMPLETE",
-  "reason_code": "ORIGINAL_PLAN_CONTINUATION_AFTER_ARCHIVE_READ_ABORT",
-  "reason": "Original frozen queue continues;457unique cases durably raw-validated and archived.4completecells;full17partial. No partial-cell success rate or sixseed conclusion. Historical aborts retained.",
+  "observed_at": "2026-10-18T01:08:50.446716+00:00",
+  "last_verified": "2026-10-18T01:08:50.446716+00:00",
+  "status": "INFRASTRUCTURE_INTERRUPTED_NO_COMPLETE_SCIENTIFIC_CONCLUSION",
+  "reason_code": "WORKER_EXIT1_BATCH_DRAIN_REJECTION_AND_SERVICE_CLEANUP_TIMEOUT",
+  "reason": "Supervisor exited;old coordinator RUNNING is stale. Remote worker58 exited1;batchguard rejected incomplete drain;cleanup wait exceeded60s. Local GPU status query subsequently timed out20s. Underlying cause UNKNOWN;no task failure reclassified or completed case rerun.",
   "plan_id": "robomme-absorption-eval-8eeead0ededca5c0",
   "plan_sha256": "6c7470da67eb6ef724760fd9e948ea155e6733d28cd0c5326e5daaa913809ba7",
   "coordinator_source_revision": "669344a350b552d1d326c0b806c4249263c24e77",
@@ -12,24 +12,24 @@
   "coverage": {
     "planned_model_cells": 14,
     "archived_complete_model_cells": 4,
-    "archived_complete_episodes": 457,
+    "archived_complete_episodes": 458,
     "planned_episodes": 1400,
     "coverage_scope": "Unique durably validated and archived cases only;currentbatch provisional receipts not queried here and not counted. Source/dev pilots excluded.",
     "remote_complete_model_cells": 4,
     "remote_complete_episodes": null,
-    "remote_infrastructure_aborted_episodes": null,
-    "local_partial_completed_case_receipts": 57,
-    "remote_remaining_unclosed_episodes": 943,
+    "remote_infrastructure_aborted_episodes": 1,
+    "local_partial_completed_case_receipts": 58,
+    "remote_remaining_unclosed_episodes": 942,
     "partial_model_cells": 1,
     "unstarted_model_cells": 9,
     "archived_complete_cell_episodes": 400,
-    "durable_partial_completed_episodes": 57,
-    "remote_reported_complete_episodes": null,
-    "remote_reported_new_complete_receipts": null,
-    "new_receipts_full_raw_guard": "CURRENT_BATCH_PENDING_NOT_COUNTED",
-    "remote_reported_unfinished_episodes": null,
-    "infra_count_scope": "This continuation at dated observation;historical aborts retained separately.",
-    "observed_at": "2026-10-17T19:26:15.597581+00:00"
+    "durable_partial_completed_episodes": 58,
+    "remote_reported_complete_episodes": 458,
+    "remote_reported_new_complete_receipts": 0,
+    "new_receipts_full_raw_guard": "PREVIOUSLY_PROVISIONAL_PH_VAL28_PASSED_FROZEN_GUARD_84_ARTIFACTS_NOW_DURABLE",
+    "remote_reported_unfinished_episodes": 942,
+    "infra_count_scope": "One worker exit1 in latest batch;not a unique scientific episode;historical infra receipts retained.",
+    "observed_at": "2026-10-18T01:07:27.905173+00:00"
   },
   "science": {
     "analysis": "ABSENT",
@@ -1516,5 +1516,82 @@
       "contained_coordinator_sha256": "4bcc93a034ac67808c4593655b9f02276b10a130aebf82f5f36a53499b5e4eb0",
       "scope": "RUNNING owned supervisor,4closedcells,fullseed17evaluating at17:14:20;not the source of17:07rawcasecounts."
     }
+  },
+  "historical_observations": [
+    {
+      "observed_at": "2026-10-17T19:26:15.597581+00:00",
+      "last_verified": "2026-10-17T19:26:15.597581+00:00",
+      "status": "RUNNING_AT_DATED_OBSERVATION_SIX_SEED_CONCLUSION_INCOMPLETE",
+      "reason_code": "ORIGINAL_PLAN_CONTINUATION_AFTER_ARCHIVE_READ_ABORT",
+      "reason": "Original frozen queue continues;457unique cases durably raw-validated and archived.4completecells;full17partial. No partial-cell success rate or sixseed conclusion. Historical aborts retained.",
+      "coverage": {
+        "planned_model_cells": 14,
+        "archived_complete_model_cells": 4,
+        "archived_complete_episodes": 457,
+        "planned_episodes": 1400,
+        "coverage_scope": "Unique durably validated and archived cases only;currentbatch provisional receipts not queried here and not counted. Source/dev pilots excluded.",
+        "remote_complete_model_cells": 4,
+        "remote_complete_episodes": null,
+        "remote_infrastructure_aborted_episodes": 1,
+        "local_partial_completed_case_receipts": 57,
+        "remote_remaining_unclosed_episodes": 943,
+        "partial_model_cells": 1,
+        "unstarted_model_cells": 9,
+        "archived_complete_cell_episodes": 400,
+        "durable_partial_completed_episodes": 57,
+        "remote_reported_complete_episodes": 458,
+        "remote_reported_new_complete_receipts": 1,
+        "new_receipts_full_raw_guard": "PENDING_NOT_INCLUDED_IN457_DURABLE",
+        "remote_reported_unfinished_episodes": 942,
+        "infra_count_scope": "One worker exit1 in latest batch;not a unique scientific episode;historical infra receipts retained.",
+        "observed_at": "2026-10-18T01:03:32.242121+00:00"
+      }
+    }
+  ],
+  "incident": {
+    "observed_at": "2026-10-18T00:56:38.369031+00:00",
+    "status": "SUPERVISOR_EXITED_INFRASTRUCTURE_INCOMPLETE_STALE_RUNNING_FILE",
+    "durable_verified_cases": 457,
+    "full17_durable": 57,
+    "full17_remote_reported_complete": 58,
+    "new_remote_complete_pending_rawguard": 1,
+    "remote_workers_drained": true,
+    "batch_guard_error": "Batch has not drained its exact registered workers/receipts",
+    "cleanup_error": "Owned policy service wait exceeded60seconds",
+    "worker_errors": [],
+    "worker_log_tail": "/home/dataset-assist-0/liyufeng/robot_benchmarks_20261015/env/lib/python3.11/site-packages/sapien/__init__.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.\n  import pkg_resources\n/home/dataset-assist-0/liyufeng/robot_benchmarks_20261015/env/lib/python3.11/site-packages/sapien/_vulkan_tricks.py:95: UserWarning: Failed to find glvnd ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.\n  warn(\n/home/dataset-assist-0/liyufeng/envs/starvla/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.\n  import pynvml  # type: ignore[import]\n",
+    "cause_scope": "Exactexceptiontrace,not proof of learning failure or inference rootcause;no tasksrerun/oldartifacts changed.",
+    "source_coordinator_sha256": "9953eecabdbb93e33310931ea39d3e37f7ba8857cade7f85f80d5a534439bcd7",
+    "source_log_sha256": "ce7e18dbf7c1980171bf17299f818e7b1c25c9ed5373ff3c3cad4b0bac05a950",
+    "worker_errors_scope": "The empty aggregate worker_errors list did not mean no error;continuation receipt explicitly records frozen worker index58 exit1.",
+    "local_gpu_query": {
+      "status": "TIMEOUT_AFTER20SECONDS",
+      "query": [
+        "index",
+        "uuid",
+        "memory.used",
+        "memory.free",
+        "utilization.gpu"
+      ],
+      "reason_unknown": true,
+      "no_process_terminated": true
+    },
+    "recovery": "Not resumed at this observation;need non-destructive driver/resource diagnosis and reviewed continuation,not retraining.",
+    "assigned_gpu1_query": "TIMEOUT5SECONDS_READONLY_NO_RESET"
+  },
+  "extra_case_preservation": {
+    "observed_at": "2026-10-18T01:07:27.905173+00:00",
+    "status": "PASS_RAW_BOUND_ARTIFACTS_AND_REGISTERED_MODEL",
+    "case": {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 28
+    },
+    "success": false,
+    "artifact_count": 84,
+    "artifact_bytes": 2630971,
+    "receipt_sha256": "e7a49f1b465e4162942547464f2e25c49ec607648749b97df07a0efcd5afb70e",
+    "guard_implementation_sha256": "fa05b3402c5a054781ac4d6000c330096ebae98d0d3a7b3a27d859cbdc69d673",
+    "new_rollouts": 0
   }
 }
