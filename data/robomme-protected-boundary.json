@@ -1,7 +1,7 @@
 {
   "schema": "robomme-protected-boundary-public-v1",
-  "observed_at": "2026-10-18T02:04:29.230980+00:00",
-  "last_verified": "2026-10-18T02:05:35.365543+00:00",
+  "observed_at": "2026-10-18T02:42:24.114828+00:00",
+  "last_verified": "2026-10-18T02:43:16.254273+00:00",
   "status": "NATIVE10000_COMPLETE_PRE_REGISTERED_56_READOUT_IN_PROGRESS",
   "publication": "OPEN_UNMERGED_UNPUBLISHED_FACT_PR",
   "plan": {
@@ -54,8 +54,9 @@
     "max_logged_controls": 72800,
     "extra_expert_queries": 0,
     "scope": "Single-seed development baseline;not confirmation,newmechanism or generalized RSI evidence",
-    "completed_at_observation": 2,
-    "status": "IN_PROGRESS_NO_COMPLETE_COMPARISON"
+    "completed_at_observation": 16,
+    "status": "IN_PROGRESS_RELEASED_REFERENCE_COMPLETE_COMPARISONS_NOT_YET_COMPLETE",
+    "fresh_scope": "Officialtrain9–16 per task,fresh to managed development runs;not claimed unseen in pretraining or independent confirmation"
   },
   "test_evidence": {
     "focused_cpu_contracts": 126,
@@ -119,24 +120,48 @@
         "resource_check": "PASS registeredmainskillGPU0/1UUIDs/memory/driver/9156exclusive"
       },
       "qualification_gpu_calls": 0
+    },
+    {
+      "observed_at": "2026-10-18T02:04:29.230980+00:00",
+      "status": "NATIVE10000_COMPLETE_PRE_REGISTERED_56_READOUT_IN_PROGRESS",
+      "runtime": {
+        "source_observation_sha256": "f559bc941633004bb374c18a89cfcb71646609e491f225e5ad818d8a94670b46",
+        "stage": "EVALUATING_CASE",
+        "completed": 2,
+        "all_pre_registered_cases_remain_required": true,
+        "extra_expert_queries": 0,
+        "qualification_forecasts_at_observation": 13,
+        "new_efficacy_conclusion": null
+      },
+      "model": {
+        "inference_sha256": "399d4b79e728d6925b48667212e8e5e38bec32ced2603958db02a71956eef986",
+        "archive_sha256": "7398e083f9849eef1ff5eef9d9b94e8b7018429ec0fc1344a329e853e290c0ad",
+        "archive_bytes": 526832119,
+        "remote_ordinary_durable_copy": "COMPLETE",
+        "local_NAS_copy": "IN_PROGRESS_NOT_YET_COMPLETE",
+        "optimizer_resume": false
+      }
     }
   ],
   "runtime": {
-    "source_observation_sha256": "f559bc941633004bb374c18a89cfcb71646609e491f225e5ad818d8a94670b46",
-    "stage": "EVALUATING_CASE",
-    "completed": 2,
+    "source_observation_sha256": "5b8598c5b1526cc77ca22a0be8a928948e10cf8c60523853dfa75458ad23a1a4",
+    "stage": "QUALIFYING_SERVICE",
+    "completed": 16,
     "all_pre_registered_cases_remain_required": true,
     "extra_expert_queries": 0,
-    "qualification_forecasts_at_observation": 13,
-    "new_efficacy_conclusion": null
+    "qualification_forecasts_at_observation": 26,
+    "new_efficacy_conclusion": null,
+    "current_model": "full_correction_seed7"
   },
   "model": {
     "inference_sha256": "399d4b79e728d6925b48667212e8e5e38bec32ced2603958db02a71956eef986",
     "archive_sha256": "7398e083f9849eef1ff5eef9d9b94e8b7018429ec0fc1344a329e853e290c0ad",
     "archive_bytes": 526832119,
     "remote_ordinary_durable_copy": "COMPLETE",
-    "local_NAS_copy": "IN_PROGRESS_NOT_YET_COMPLETE",
-    "optimizer_resume": false
+    "local_NAS_copy": "COMPLETE_ORDINARY_EXACT_DELTA_ARCHIVE_READBACK_VERIFIED",
+    "optimizer_resume": false,
+    "local_copy_receipt_sha256": "045597a77d4863dee7923a6d70263a822e99d85a551fc3cd5bc1cd944fd03d22",
+    "inference_export_scope": "Exactbf16 delta withboundreleasedbase;not optimizerresume"
   },
   "parameter_boundary": {
     "protected_native_live_initial_first_final": "42of42 BYTE_EQUAL",
@@ -159,6 +184,31 @@
     {
       "sha256": "bb287906228cedf3b8ca642112965dc15b607c693a055d991653133d29dffaca",
       "scope": "All10000 contiguous finite updates,seed7 original120 schedule,source bindings and smallrecords;not fullmodel localcopy or56 outcomes"
+    },
+    {
+      "sha256": "61477f00321371c3dcc2ca516eb22cb05d4da8590f18f663c07246774b4d5a22",
+      "scope": "LocalNAS ordinary deltaarchive preservation/metadata chain;not56 outcomes or secondlargehash"
     }
-  ]
+  ],
+  "released_fresh16_reference": {
+    "observed_at": "2026-10-18T02:42:24.114828+00:00",
+    "tasks": {
+      "PatternLock": {
+        "success": 7,
+        "total": 8,
+        "controls": 768
+      },
+      "PickHighlight": {
+        "success": 8,
+        "total": 8,
+        "controls": 2820
+      }
+    },
+    "success": 15,
+    "total": 16,
+    "verification": "Remoteindividualrawvalidated+2batcharchives;ownerrecount;finalindependent56caseauditPENDING",
+    "source_milestone_sha256": "356825a3463fb05b469765ce889bd654a0db8e80126c9a695510beaeddbcb0f0",
+    "primary_candidate_effect": "NOT_YET_AVAILABLE",
+    "all56_still_required": true
+  }
 }
