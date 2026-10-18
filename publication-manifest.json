@@ -1426,8 +1426,8 @@
     "private_raw_data_excluded": true,
     "observed_at": "2026-10-18T04:57:21.925406+00:00",
     "last_verified": "2026-10-18T05:05:28.723652+00:00",
-    "public_status_sha256": "aa88250cd72ad9c00b6005dde7ba1e4007818cff53aa260e7825649bd2aa25d6",
-    "runtime_source_sha256": "5b31e386eb0dd71fedee75e8de56d4c507254595205a5865e8312cb125623248",
+    "public_status_sha256": "ac0383a525a5c7658e2836748bda94722f8b8028b26e82191f5e39fdca9d5cfe",
+    "runtime_source_sha256": "b2c535a87ebbc1e5a15e803c682d2f2395202eb346095574b7811e9d5efefd99",
     "independent_native_final_identity_review_sha256": "e9a83a57ac6097a0ad657af08b9f2c0cbe26dfad9dd99f4e1648d62e998620d6",
     "independent_complete_training_small_records_review_sha256": "bb287906228cedf3b8ca642112965dc15b607c693a055d991653133d29dffaca",
     "independent_final_model_preservation_review_sha256": "61477f00321371c3dcc2ca516eb22cb05d4da8590f18f663c07246774b4d5a22",
@@ -1451,6 +1451,12 @@
       "plot_script_sha256": "e8882f45f7bf16237a5f2f638478eeaed9bf40346eb7def40eab46bbae490fa9",
       "renderer": "matplotlib3.10.9/numpy2.2.6 isolated CPU-only plotting packages; native training env unchanged",
       "scope": "Two-dimensional descriptive count/rate figure; no confidence, confirmation or causal root-cause inference"
+    },
+    "runtime_source_kind": "Finalcomplete56pipeline-status.json SHA from local sealed raw copy; independently verified",
+    "prepublication_binding_correction": {
+      "parent_commit": "c5c33f185c3cc827b6d320a1bbe791005ea3073a",
+      "corrected_at": "2026-10-18T05:08:10.702366+00:00",
+      "reason": "Two current-source metadata hashes retained the prior40of56binding;corrected after independent fact review before merge/publication. Source data/model/results unchanged."
     }
   },
   "historical_execution_observation_before_protected_boundary": {
@@ -1468,5 +1474,12 @@
     "coordinator_observed_at": "2026-10-17T19:26:15.597581+00:00",
     "durably_verified_cases": 457,
     "scope": "Dated457uniquecompletecases;4completecells+full17partial57;currentbatchprovisionalexcluded."
+  },
+  "historical_protected_boundary_binding_20261018_0409": {
+    "source_commit": "282ed09f1f5ebd71230de1b405ced9eb8953309b",
+    "observed_at": "2026-10-18T04:09:07.084560+00:00",
+    "public_status_sha256": "aa88250cd72ad9c00b6005dde7ba1e4007818cff53aa260e7825649bd2aa25d6",
+    "runtime_source_sha256": "5b31e386eb0dd71fedee75e8de56d4c507254595205a5865e8312cb125623248",
+    "scope": "Historical40of56sourcebindings;notcurrent56state"
   }
 }
