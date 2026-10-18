@@ -23,7 +23,7 @@
     "operational_entry_retired_same_bytes": true,
     "local_frozen_originals_preserved": true,
     "timeout_root_cause": "UNKNOWN",
-    "original_readback_limit": "producer process filter did not fully exclude outer launcher; current quiet checks apply only to exact registered root/lease and literal matching processes"
+    "original_readback_limit": "Producer readback excluded some python-c/bash-c outer launchers and did not cover every matching process; its zero coordinator count is not global no-process proof. Current quiet checks apply only to the exact registered root/lease and literal matching processes."
   },
   "native": {
     "compute_submissions": 1,
