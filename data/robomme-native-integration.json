@@ -42,7 +42,9 @@
     "coordinator_log_present": false,
     "coordinator_status_present": false,
     "exact_owned_coordinator_processes": 0,
-    "no_retry": true
+    "no_retry": true,
+    "original_readback_limitation": "Producer readback excluded some python-c/bash-c launchers; its zero matched coordinator count is not global no-process proof.",
+    "root_cause": "UNKNOWN"
   },
   "native_capture": "NOT_RUN",
   "eligible_actual_target_chunks": "NOT_MATERIALIZED",
