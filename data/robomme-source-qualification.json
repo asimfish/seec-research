@@ -1,8 +1,8 @@
 {
   "schema": "robomme-source-qualification-public-v1",
   "observed_at": "2026-10-18T08:33:47.333400+00:00",
-  "last_verified": "2026-10-18T08:33:47.333400+00:00",
-  "status": "NATIVE_PACKAGE_CLOSED_PENDING_FINAL_INDEPENDENT_RAW_REVIEW",
+  "last_verified": "2026-10-18T08:40:43.962099+00:00",
+  "status": "COMPLETE_INDEPENDENT_RAW_REVIEWED_PANEL_NO_GO",
   "registration": {
     "plan_id": "robomme-source-qualification-43fbe4328b474138",
     "plan_sha256": "530bc27dd4d92e0c268d02852d170da13b8004e70da07916e4af3433a6b831df",
@@ -101,7 +101,8 @@
     "owner_report_sha256": "ad75932ee00219d19ce9b36338e808175d6c44b11e2744d16f05de2f92e7a6de",
     "registered_report_sha256": "5df8f248b093321e93b902dfc5a5d16602247c1ea5e7060aa386b83da92cb1ab",
     "final_status_sha256": "5b5ffad219d9b0319494bac52ee8c098fce86e9db6edc492b093b972f9248e54",
-    "postflight_sha256": "033c87b3245facf7c80b17310994e003a053e22a3c7d638270f8615582251558"
+    "postflight_sha256": "033c87b3245facf7c80b17310994e003a053e22a3c7d638270f8615582251558",
+    "final_independent_raw_review_sha256": "958be36510bb402cb3ac3d619d19f4fbf8e321edc3915aaba0cc92455305b1b9"
   },
   "limitations": [
     "CPU and staged-file checks are not native integration or scientific success.",
@@ -109,9 +110,10 @@
     "These tasks currently support memory/cue retention/execution/recovery,not new-rule learning.",
     "Managed prior-use inventory checked;unrecorded external and pretraining use unknown.",
     "Main1400 remains dated458 infra-blocked;reference800 and resources unchanged.",
-    "All native outcomes closed:source15of16,N=false,H=false,Q20nonterminal. Source16 raw review passed;final NQH raw review pending. No absorption update or benefit estimate."
+    "All native outcomes closed:source15of16,N=false,H=false,Q20nonterminal. Source16 and final NQH raw review passed. No absorption update or benefit estimate.",
+    "Whole public-history/action consistency is supported by actual H5/program/recorded-command comparisons and reviewed core ordering;no packet-level trace,original in-memory teacher dtype or hidden-state/physical-tracking proof."
   ],
-  "stage": "FINAL_RAW_REVIEW",
+  "stage": "CLOSED",
   "actual": {
     "completed_attempts": 19,
     "attempts_started": 19,
@@ -137,7 +139,7 @@
     "local_full_archive_copy": "COMPLETE_SHA_VERIFIED"
   },
   "native_coordinator_stage": "COMPLETE",
-  "stage_scope": "All19attempts closed;owned workers/services exited;final NQH independent raw review pending.",
+  "stage_scope": "All19attempts closed and final independent raw evidence/readout/cost review passed. Registered panel no-go applies.",
   "registered_readout": {
     "schema": "robomme-source-qualification-descriptive-v1",
     "plan_id": "robomme-source-qualification-43fbe4328b474138",
@@ -248,5 +250,14 @@
     "lease_released": true,
     "task_port_closed": true,
     "scoped_owned_devices_no_compute_apps": true
+  },
+  "interface": {
+    "native_input_profile": "unchanged released perceptual-framesamp-modul; original512tokens/32historyframes; original packet/padding/dtype",
+    "predict": 20,
+    "execute": 16,
+    "horizon_including_replay_and_help": 1300,
+    "policy_seed": 7,
+    "demo": "original native task convention",
+    "training_receipt": null
   }
 }
