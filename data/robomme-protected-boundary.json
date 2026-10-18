@@ -1,8 +1,8 @@
 {
   "schema": "robomme-protected-boundary-public-v1",
-  "observed_at": "2026-10-18T01:09:36.618016+00:00",
-  "last_verified": "2026-10-18T01:12:44.639022+00:00",
-  "status": "NATIVE_INITIALIZATION_RUNNING_ZERO_RECORDED_UPDATES_AT_OBSERVATION",
+  "observed_at": "2026-10-18T02:04:29.230980+00:00",
+  "last_verified": "2026-10-18T02:05:35.365543+00:00",
+  "status": "NATIVE10000_COMPLETE_PRE_REGISTERED_56_READOUT_IN_PROGRESS",
   "publication": "OPEN_UNMERGED_UNPUBLISHED_FACT_PR",
   "plan": {
     "registered_at": "2026-10-18T01:06:29.389113+00:00",
@@ -53,7 +53,9 @@
     "rollouts": 56,
     "max_logged_controls": 72800,
     "extra_expert_queries": 0,
-    "scope": "Single-seed development baseline;not confirmation,newmechanism or generalized RSI evidence"
+    "scope": "Single-seed development baseline;not confirmation,newmechanism or generalized RSI evidence",
+    "completed_at_observation": 2,
+    "status": "IN_PROGRESS_NO_COMPLETE_COMPARISON"
   },
   "test_evidence": {
     "focused_cpu_contracts": 126,
@@ -79,8 +81,7 @@
       "total": 8
     }
   },
-  "qualification_gpu_calls": 0,
-  "candidate_optimizer_updates": 0,
+  "candidate_optimizer_updates": 10000,
   "preflight_incident": {
     "at": "2026-10-18T01:04:57.325652+00:00",
     "code": "e54ed83f41aac9c795f02dd18ace9922c8fd8465",
@@ -101,8 +102,63 @@
     "at": "2026-10-18T01:09:08.035065+00:00",
     "attempt": 2,
     "prior_preflight_abort_retained": true,
-    "phase": "Nativeinitialization;no observedoptimizerstepyet",
+    "phase": "Native10000 complete;all56 pre-registered readout continues",
     "resource_check": "PASS registeredmainskillGPU0/1UUIDs/memory/driver/9156exclusive"
   },
-  "plan_state_scope": "Immutable registration.state describes generation time before final review,not the current runtime status."
+  "plan_state_scope": "Immutable registration.state describes generation time before final review,not the current runtime status.",
+  "historical_snapshots": [
+    {
+      "observed_at": "2026-10-18T01:09:36.618016+00:00",
+      "status": "NATIVE_INITIALIZATION_RUNNING_ZERO_RECORDED_UPDATES_AT_OBSERVATION",
+      "candidate_optimizer_updates": 0,
+      "launch": {
+        "at": "2026-10-18T01:09:08.035065+00:00",
+        "attempt": 2,
+        "prior_preflight_abort_retained": true,
+        "phase": "Nativeinitialization;no observedoptimizerstepyet",
+        "resource_check": "PASS registeredmainskillGPU0/1UUIDs/memory/driver/9156exclusive"
+      },
+      "qualification_gpu_calls": 0
+    }
+  ],
+  "runtime": {
+    "source_observation_sha256": "f559bc941633004bb374c18a89cfcb71646609e491f225e5ad818d8a94670b46",
+    "stage": "EVALUATING_CASE",
+    "completed": 2,
+    "all_pre_registered_cases_remain_required": true,
+    "extra_expert_queries": 0,
+    "qualification_forecasts_at_observation": 13,
+    "new_efficacy_conclusion": null
+  },
+  "model": {
+    "inference_sha256": "399d4b79e728d6925b48667212e8e5e38bec32ced2603958db02a71956eef986",
+    "archive_sha256": "7398e083f9849eef1ff5eef9d9b94e8b7018429ec0fc1344a329e853e290c0ad",
+    "archive_bytes": 526832119,
+    "remote_ordinary_durable_copy": "COMPLETE",
+    "local_NAS_copy": "IN_PROGRESS_NOT_YET_COMPLETE",
+    "optimizer_resume": false
+  },
+  "parameter_boundary": {
+    "protected_native_live_initial_first_final": "42of42 BYTE_EQUAL",
+    "trainable_action_leaves_changed": "19of19",
+    "protected_serialized_bf16": "42of42 BYTE_EQUAL",
+    "deployment": "19 action EMA leaves plus42 protected final-live leaves",
+    "raw_full_ema_is_not_deployed": true,
+    "raw_ema_protected_changed_at_final": {
+      "native_leaves": 18,
+      "bf16_inference_leaves": 16,
+      "max_abs_vs_live": 8.106231689453125e-05
+    },
+    "old_task_regression_root_cause": "UNKNOWN"
+  },
+  "independent_reviews": [
+    {
+      "sha256": "e9a83a57ac6097a0ad657af08b9f2c0cbe26dfad9dd99f4e1648d62e998620d6",
+      "scope": "Finalmodel metadata and native/serialized parameter boundary;not outcomes"
+    },
+    {
+      "sha256": "bb287906228cedf3b8ca642112965dc15b607c693a055d991653133d29dffaca",
+      "scope": "All10000 contiguous finite updates,seed7 original120 schedule,source bindings and smallrecords;not fullmodel localcopy or56 outcomes"
+    }
+  ]
 }
