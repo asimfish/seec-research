@@ -147,7 +147,7 @@
     "7": "4a887f2354307322b751b1145ef88195c53344ea5232f6704617a4969a6f3e21"
   },
   "learner_transport_pr": "https://github.com/asimfish/robocore/pull/36",
-  "learner_transport_code_review_scope": "CPU code only; actual full62/corpus/draw/runtime/resource execution packet not yet generated",
+  "learner_transport_code_review_scope": "Dated corpus-close snapshot: actual learner plan/packet generated; core review,byte-preserving installation and final transport review still pending at this snapshot. No training update.",
   "source_closed48_data": {
     "D_I": 41,
     "D_R": 418,

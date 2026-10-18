@@ -1238,8 +1238,8 @@
       "bytes": 19139
     },
     "data/robomme-baseline-pilot.json": {
-      "bytes": 8587,
-      "sha256": "3ca008299716637134f9c2d477400d7aa1333d82c4e535b64c5d9855dbe6c2d4"
+      "sha256": "42e541311c1e7df79b56393d09f542837c66551cc9b840721ba96851a102c520",
+      "bytes": 8681
     },
     "data/robomme-baseline-pilot-operator-20261018T164215Z.json": {
       "sha256": "3271654da7eeb8b92988bb14d59d0c0b649a27985346a90f4b74f0f074a605f8",
@@ -1677,10 +1677,10 @@
     "executed_revision": "85c3af5cd29750a7465ec2d0d7a6f90792c1b811",
     "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278",
     "released_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
-    "public_summary_sha256": "0e5d772ed18f8486ec3353a934d8513ae6ad0cb552e412e33c63ce645cfee5ea",
+    "public_summary_sha256": "42e541311c1e7df79b56393d09f542837c66551cc9b840721ba96851a102c520",
     "runtime_snapshot": "data/robomme-baseline-pilot-operator-complete-20261018T170836Z.json",
     "runtime_snapshot_sha256": "ce54e1fb149d6c15dc62cc25f8330946055272a12889837003138c2c971c5f5c",
-    "source_observed_at_unix": 1792356029.9491622,
+    "source_observed_at_unix": 1792358679.9586544,
     "closed_durable_cases": 32,
     "independent_code_review_sha256": "f1f30d1d0b8d66ec53f3c91730ba13a202ab9e4e816bc65a7210c97cfa55f726",
     "independent_exact_packet_review_sha256": "92293ff3c1241a39b1cc25e4b89d836f43a913be0c224a6d8c5fa07176da73f7",
@@ -1692,7 +1692,7 @@
       "3": "2536e33fd9b804b78a06a94fd97c9b7ad024f9702352cc27b96348477d40cc2c"
     },
     "source_updates": 0,
-    "source_rollouts": 32,
+    "source_rollouts": 62,
     "whole32_success_rate_generated": true,
     "publication": "OPEN_UNMERGED_UNPUBLISHED",
     "source_master_kind": "private immutable registered master; public plan_id and SHA only",
@@ -1707,10 +1707,10 @@
     "source_code_revision": "38ff1d2f1e228b13faa52fb9e8eb3dd5faed3dd7",
     "source_code_pr": "https://github.com/asimfish/robocore/pull/30",
     "readout_generated_at": "2026-10-18T17:09:38.292924+00:00",
-    "last_verified": "2026-10-18T20:42:40.393039+00:00",
-    "source_values_as_of": "2026-10-18T20:40:29.949162+00:00",
-    "source_durable_cases": 48,
-    "source_phase": "CONTINUATION_EXECUTING",
+    "last_verified": "2026-10-18T21:34:18.293976+00:00",
+    "source_values_as_of": "2026-10-18T21:24:39.958654+00:00",
+    "source_durable_cases": 62,
+    "source_phase": "COMPLETE_CORPUS_FROZEN",
     "source_incident_snapshot": "data/robomme-pilot-source-transport-20261018T175153Z.json",
     "source_incident_snapshot_sha256": "02da26cd1b3f3914f712f760f91f71b505d0239b1a558bebf752bf91e7d8fc9c",
     "source_preserved_snapshot": "data/robomme-pilot-source-preserved8-20261018T181501Z.json",
@@ -1721,9 +1721,9 @@
     "source_preserved_raw_review_sha256": "524f41f4adc2db98bfaafbc2ae50ffaea14093ab140588044b44bc87d802cd6d",
     "released_runtime_observed_at_unix": 1792343316.7351255,
     "original_source_transport_observed_at_unix": 1792345842.081339,
-    "source_observed_at_scope": "new continuation; only closed48 counted; batch6 active excluded",
-    "source_continuation_snapshot": "data/robomme-pilot-source-continuation48-20261018T204029Z.json",
-    "source_continuation_snapshot_sha256": "30b180198d5aafa04a444d977376a40a8630a7b26a9d9f779266a3df927e0fcb",
+    "source_observed_at_scope": "Immutable complete62source pointer; corpus review separately dated; no pilot updates",
+    "source_continuation_snapshot": "data/robomme-pilot-source62-corpus-20261018T212439Z.json",
+    "source_continuation_snapshot_sha256": "4ef1c0175259ba28e4a062e791c190c244775c1e4512353b63040cbcb253907a",
     "source_continuation_revision": "a754e3cc7f77f0a16969fbe1fe6407f0a9f5377b",
     "source_batch1_raw_review_sha256": "0b789289bc2c46a6d7e56bba6cbc14c157b8fc46197c3ab2a4316da255514e2e",
     "source_incremental_raw_reviews": {
@@ -1732,8 +1732,21 @@
       "2": "cc9433112f5095641591024cb7ab59924f4cf2b2c99149096c976d03df7bcf65",
       "3": "bd7cc83483e45752ea4ddf24df98ae18d4b8cb99a6482593c8db5b02de10618b",
       "4": "e23baf3baa4855a3742b2f40a5bde9a3b51e4d16be0f624a490b403eb4ed4a67",
-      "5": "cf2f69326b64e2e6649280e5b9fbf3600fb60a1b61d9f7d61f1759ffba1e1f3a"
-    }
+      "5": "cf2f69326b64e2e6649280e5b9fbf3600fb60a1b61d9f7d61f1759ffba1e1f3a",
+      "6": "db217e7f5f3595bd5b17d8c7032b232cba5fd3fd4eeb459ec1fd8db46bb8b1ad",
+      "7": "4a887f2354307322b751b1145ef88195c53344ea5232f6704617a4969a6f3e21"
+    },
+    "released_rollouts": 32,
+    "source_inventory_review_sha256": "6514c60620c8862a1be0733022c8f0d7e668905d1d3a90f2eef2019d35eb40f0",
+    "source_corpus_review_sha256": "199e0fd63e5042e198232c9630e1afe9625d93f8ebf19217061217b847aec95f",
+    "corpus_sha256": "e00e6b8fc9937f277f4cabae5cae29bd214c0060d5442faf116d4eba9eeb36c5",
+    "draw_file_sha256": {
+      "bc": "cadca5ec5f6b914b471239de49ec3f220581a13bfd925658ab7d88ea48f09905",
+      "pooled": "0257217f3ec140c58c379548b2691b899aef7e53211efcab4d7260ea6243d103",
+      "iwr": "6b4c2d5e71cd66f84082f1c0f0a20592cd194fe1a26d387b91b718fbc4eabc9e"
+    },
+    "learner_plan_sha256": "ddcf8f0a7324cf6a0bcb5f5c125bc289aabb48b61d2c308b13e39e2d8a5535e5",
+    "learner_execution_status": "Dated snapshot0updates;exact core/staging/transport required"
   },
   "historical_deployment_baseline_pilot_inputs_20261018_164215": {
     "master_plan_id": "robomme-deployment-pilot-64c9fc3a7cbc48c3",
@@ -1802,5 +1815,69 @@
     "source_values_as_of": "2026-10-18T17:09:38.292924+00:00",
     "public_summary": "data/robomme-baseline-pilot-released32-summary-20261018T170938Z.json"
   },
-  "generated_at": "2026-10-18T21:39:47.131036+00:00"
+  "generated_at": "2026-10-18T21:41:26.433143+00:00",
+  "deployment_baseline_pilot_historical_source48_inputs": {
+    "master_plan_id": "robomme-deployment-pilot-64c9fc3a7cbc48c3",
+    "master_sha256": "709406731926ab4bd88b5a625f8d0a4fda8ef5f5b05f557aa3cfad6a0e96384e",
+    "executed_revision": "85c3af5cd29750a7465ec2d0d7a6f90792c1b811",
+    "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278",
+    "released_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+    "public_summary_sha256": "0e5d772ed18f8486ec3353a934d8513ae6ad0cb552e412e33c63ce645cfee5ea",
+    "runtime_snapshot": "data/robomme-baseline-pilot-operator-complete-20261018T170836Z.json",
+    "runtime_snapshot_sha256": "ce54e1fb149d6c15dc62cc25f8330946055272a12889837003138c2c971c5f5c",
+    "source_observed_at_unix": 1792356029.9491622,
+    "closed_durable_cases": 32,
+    "independent_code_review_sha256": "f1f30d1d0b8d66ec53f3c91730ba13a202ab9e4e816bc65a7210c97cfa55f726",
+    "independent_exact_packet_review_sha256": "92293ff3c1241a39b1cc25e4b89d836f43a913be0c224a6d8c5fa07176da73f7",
+    "independent_transport_review_sha256": "e4ed2a00e0c48edbb79919850f8496784105fa9eec4ea1f08341525740167ef5",
+    "independent_closed_batch_reviews": {
+      "0": "a7514b73fa64e11b5c4a5ce4809d9c02b4b3f647b21239be8979eff06925ca11",
+      "1": "f45d9e42f5de7f08c0afa0464abb7600e826e7c849c81dcc77b66dfc6e2edcea",
+      "2": "4fc4db89e5a9a478d78aed8a225045f663e259f434a639bfba9806d91d8eed73",
+      "3": "2536e33fd9b804b78a06a94fd97c9b7ad024f9702352cc27b96348477d40cc2c"
+    },
+    "source_updates": 0,
+    "source_rollouts": 32,
+    "whole32_success_rate_generated": true,
+    "publication": "OPEN_UNMERGED_UNPUBLISHED",
+    "source_master_kind": "private immutable registered master; public plan_id and SHA only",
+    "released32_analysis_sha256": "bfabc4c3e1862c0ee108b5bd6a850947ba3643e72584675240cbe01074c753da",
+    "released32_owner_sha256": "5a66ae14904447046064556bd66ba710c01b6887dcd89497bf1912bd4ed76999",
+    "released32_readout_review_sha256": "a19055b9518c28065284276bbe10892d8a4ab5750e428ef4499959bad4ce88c5",
+    "released32_handoff_sha256": "ed6c91fe844a49ab9c22b68b18a7f5e0cdbe77ae5b8c31fb68f3d1956ea7594c",
+    "released32_complete_snapshot": {
+      "path": "data/robomme-baseline-pilot-operator-complete-20261018T170836Z.json",
+      "sha256": "ce54e1fb149d6c15dc62cc25f8330946055272a12889837003138c2c971c5f5c"
+    },
+    "source_code_revision": "38ff1d2f1e228b13faa52fb9e8eb3dd5faed3dd7",
+    "source_code_pr": "https://github.com/asimfish/robocore/pull/30",
+    "readout_generated_at": "2026-10-18T17:09:38.292924+00:00",
+    "last_verified": "2026-10-18T20:42:40.393039+00:00",
+    "source_values_as_of": "2026-10-18T20:40:29.949162+00:00",
+    "source_durable_cases": 48,
+    "source_phase": "CONTINUATION_EXECUTING",
+    "source_incident_snapshot": "data/robomme-pilot-source-transport-20261018T175153Z.json",
+    "source_incident_snapshot_sha256": "02da26cd1b3f3914f712f760f91f71b505d0239b1a558bebf752bf91e7d8fc9c",
+    "source_preserved_snapshot": "data/robomme-pilot-source-preserved8-20261018T181501Z.json",
+    "source_preserved_snapshot_sha256": "486f481bda04f46f1bc16bf27f4dbf4fe0c98968f29b517e2990894068f14680",
+    "source_preservation_scope": "historical parent8 data-only; original stopped unchanged; new continuation separately registered",
+    "corpus_code_revision": "dd8595c6736a37c8f784a7b8891231222dab6d55",
+    "corpus_code_review_sha256": "1108600c3df759e5fcd40c98024ebd92ed2e9735ba280a74fc27869d682cff66",
+    "source_preserved_raw_review_sha256": "524f41f4adc2db98bfaafbc2ae50ffaea14093ab140588044b44bc87d802cd6d",
+    "released_runtime_observed_at_unix": 1792343316.7351255,
+    "original_source_transport_observed_at_unix": 1792345842.081339,
+    "source_observed_at_scope": "new continuation; only closed48 counted; batch6 active excluded",
+    "source_continuation_snapshot": "data/robomme-pilot-source-continuation48-20261018T204029Z.json",
+    "source_continuation_snapshot_sha256": "30b180198d5aafa04a444d977376a40a8630a7b26a9d9f779266a3df927e0fcb",
+    "source_continuation_revision": "a754e3cc7f77f0a16969fbe1fe6407f0a9f5377b",
+    "source_batch1_raw_review_sha256": "0b789289bc2c46a6d7e56bba6cbc14c157b8fc46197c3ab2a4316da255514e2e",
+    "source_incremental_raw_reviews": {
+      "0": "524f41f4adc2db98bfaafbc2ae50ffaea14093ab140588044b44bc87d802cd6d",
+      "1": "0b789289bc2c46a6d7e56bba6cbc14c157b8fc46197c3ab2a4316da255514e2e",
+      "2": "cc9433112f5095641591024cb7ab59924f4cf2b2c99149096c976d03df7bcf65",
+      "3": "bd7cc83483e45752ea4ddf24df98ae18d4b8cb99a6482593c8db5b02de10618b",
+      "4": "e23baf3baa4855a3742b2f40a5bde9a3b51e4d16be0f624a490b403eb4ed4a67",
+      "5": "cf2f69326b64e2e6649280e5b9fbf3600fb60a1b61d9f7d61f1759ffba1e1f3a"
+    }
+  }
 }
