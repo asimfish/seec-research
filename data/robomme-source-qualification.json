@@ -1,8 +1,8 @@
 {
   "schema": "robomme-source-qualification-public-v1",
-  "observed_at": "2026-10-18T08:25:35.732578+00:00",
-  "last_verified": "2026-10-18T08:25:35.732578+00:00",
-  "status": "SOURCE16_INDEPENDENT_RAW_PASS_NQH_IN_PROGRESS",
+  "observed_at": "2026-10-18T08:33:47.333400+00:00",
+  "last_verified": "2026-10-18T08:33:47.333400+00:00",
+  "status": "NATIVE_PACKAGE_CLOSED_PENDING_FINAL_INDEPENDENT_RAW_REVIEW",
   "registration": {
     "plan_id": "robomme-source-qualification-43fbe4328b474138",
     "plan_sha256": "530bc27dd4d92e0c268d02852d170da13b8004e70da07916e4af3433a6b831df",
@@ -97,7 +97,11 @@
     "launch_receipt_sha256": "4830a5c8a3162d7ef7762a0bd695bbae9a75ba531fde70d8ff9c6e8339d148e3",
     "observation_status_sha256": "9baabe65052568f499143868fd513908b7bc555c3d3bab3eff12f9d9c5c738a1",
     "first_native_raw_review_sha256": "f04de83616c74cc4f23fa36af6c1f8948f179bfc37a3042ed320ad518c706c7a",
-    "full_source16_independent_review_sha256": "d3d1c0a819f6b4fef19fb42ba7c032033732efccb18ed007b60774164b2219c2"
+    "full_source16_independent_review_sha256": "d3d1c0a819f6b4fef19fb42ba7c032033732efccb18ed007b60774164b2219c2",
+    "owner_report_sha256": "ad75932ee00219d19ce9b36338e808175d6c44b11e2744d16f05de2f92e7a6de",
+    "registered_report_sha256": "5df8f248b093321e93b902dfc5a5d16602247c1ea5e7060aa386b83da92cb1ab",
+    "final_status_sha256": "5b5ffad219d9b0319494bac52ee8c098fce86e9db6edc492b093b972f9248e54",
+    "postflight_sha256": "033c87b3245facf7c80b17310994e003a053e22a3c7d638270f8615582251558"
   },
   "limitations": [
     "CPU and staged-file checks are not native integration or scientific success.",
@@ -105,23 +109,24 @@
     "These tasks currently support memory/cue retention/execution/recovery,not new-rule learning.",
     "Managed prior-use inventory checked;unrecorded external and pretraining use unknown.",
     "Main1400 remains dated458 infra-blocked;reference800 and resources unchanged.",
-    "All source16 is closed and independently reviewed;N/Q/H outcomes are pending. Source-panel SR is not absorption benefit and is separate from the earlier development16."
+    "All native outcomes closed:source15of16,N=false,H=false,Q20nonterminal. Source16 raw review passed;final NQH raw review pending. No absorption update or benefit estimate."
   ],
-  "stage": "NQH",
+  "stage": "FINAL_RAW_REVIEW",
   "actual": {
-    "completed_attempts": 16,
-    "attempts_started": 17,
+    "completed_attempts": 19,
+    "attempts_started": 19,
     "service_starts": 3,
     "qualification_forecasts_recorded": 39,
-    "completed_attempt_logged_controls": 3690,
+    "student_forecasts": 249,
+    "logged_controls": 4030,
     "optimizer_updates": 0,
     "development_rollouts": 0,
-    "active": {
-      "stage": "N",
-      "task": "PatternLock",
-      "train_id": 23
-    },
-    "NQH_terminal_result": "NOT_YET_AVAILABLE"
+    "active": null,
+    "NQH_terminal_result": {
+      "N": false,
+      "Q": "QUERY_COMPLETE_NONTERMINAL20",
+      "H": false
+    }
   },
   "first_batch": {
     "remote_sealed": true,
@@ -131,6 +136,117 @@
     "owned_service_exited": true,
     "local_full_archive_copy": "COMPLETE_SHA_VERIFIED"
   },
-  "native_coordinator_stage": "ATTEMPT",
-  "stage_scope": "Logical NQH stage; actual coordinator state retained below."
+  "native_coordinator_stage": "COMPLETE",
+  "stage_scope": "All19attempts closed;owned workers/services exited;final NQH independent raw review pending.",
+  "registered_readout": {
+    "schema": "robomme-source-qualification-descriptive-v1",
+    "plan_id": "robomme-source-qualification-43fbe4328b474138",
+    "source": {
+      "PatternLock": {
+        "successes": 7,
+        "total": 8,
+        "terminal_failures": 1,
+        "budget_nonsuccesses": 0
+      },
+      "PickHighlight": {
+        "successes": 8,
+        "total": 8,
+        "terminal_failures": 0,
+        "budget_nonsuccesses": 0
+      }
+    },
+    "funnel": {
+      "source_total": 16,
+      "eligible_failures": 1,
+      "selected_slots": 1,
+      "valid_pairs": 1,
+      "rescues": 0,
+      "harms": 0
+    },
+    "pairs": [
+      {
+        "slot": 0,
+        "case": {
+          "task": "PatternLock",
+          "split": "train",
+          "episode": 23,
+          "use": "source"
+        },
+        "anchor": 48,
+        "selection_status": "SELECTED",
+        "branch_statuses": {
+          "N": "COMPLETED",
+          "Q": "QUERY_COMPLETE",
+          "H": "COMPLETED"
+        },
+        "valid_pair": true,
+        "N": false,
+        "H": false
+      }
+    ],
+    "no_go": true,
+    "interpretation": "finite fresh-session development qualification; no absorption or general impossibility claim",
+    "cost": {
+      "attempts_started": 19,
+      "actual_submitted_controls": 4030,
+      "raw_logged_controls": 4030,
+      "expert_queries": 1,
+      "additional_expert_commands": 40,
+      "prefix_replay": 144,
+      "setup_control_calls": 3445,
+      "native_resets": 38,
+      "physics_substeps": "UNKNOWN_NOT_ZERO",
+      "qualification_forecasts": 39,
+      "student_forecasts": 249,
+      "owned_wall_seconds": 4055.4273853302,
+      "updates": 0
+    }
+  },
+  "cost_detail": {
+    "prefix_replay": 144,
+    "new_expert_queries": 1,
+    "new_expert_controls": 20,
+    "replayed_expert_controls": 20,
+    "student_controls": 3846,
+    "setup_native_resets": 38,
+    "setup_native_control_calls": 3445,
+    "setup_seconds": 892.8069336372428,
+    "owned_wall_seconds": 4055.4273853302,
+    "summed_reserved_device_hours": 2.2530152140723336,
+    "scope": "two task-reserved GPUs over pipeline wall;not measured active utilization/FLOPs;physics substeps UNKNOWN"
+  },
+  "conditional_case": {
+    "task": "PatternLock",
+    "train_id": 23,
+    "anchor": 48,
+    "N": {
+      "terminal_success": false,
+      "controls": 122,
+      "prefix": 48,
+      "expert": 0,
+      "student": 74
+    },
+    "Q": {
+      "status": "QUERY_COMPLETE_NONTERMINAL",
+      "controls": 68,
+      "prefix": 48,
+      "new_expert": 20
+    },
+    "H": {
+      "terminal_success": false,
+      "controls": 150,
+      "prefix": 48,
+      "recorded_expert": 20,
+      "student": 82
+    },
+    "scope": "one selected fresh-session conditional pair;not training/generalization or exact physical counterfactual"
+  },
+  "protocol_decision": "NO_GO_NO_RESCUE_IN_THIS_FINITE_PANEL",
+  "decision_scope": "Stop panel mechanism escalation;no added help length/seed/search/training. Not a claim that recovery is generally impossible or an explanation for old absorption regressions.",
+  "postflight": {
+    "owned_coordinator_exited": true,
+    "lease_released": true,
+    "task_port_closed": true,
+    "scoped_owned_devices_no_compute_apps": true
+  }
 }
