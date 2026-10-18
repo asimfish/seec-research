@@ -1,7 +1,7 @@
 {
   "schema": "robomme-baseline-pilot-status-v1",
-  "observed_at": "2026-10-18T21:24:39.958654+00:00",
-  "phase": "SOURCE62_CORPUS_CLOSED_TRAINING_NOT_RUN",
+  "observed_at": "2026-10-18T22:12:30.163559+00:00",
+  "phase": "BC_TRAINING_PARTIAL_FINAL_MODEL_NOT_RUN",
   "plan_id": "robomme-deployment-pilot-64c9fc3a7cbc48c3",
   "master_sha256": "709406731926ab4bd88b5a625f8d0a4fda8ef5f5b05f557aa3cfad6a0e96384e",
   "code_revision": "85c3af5cd29750a7465ec2d0d7a6f90792c1b811",
@@ -10,7 +10,7 @@
   "released_cases_registered": 32,
   "released_native_started": true,
   "source_attempts": 62,
-  "optimizer_updates": 0,
+  "optimizer_updates": 472,
   "development_gate": "released >=31/32 stops this pilot; otherwise follow frozen source62 and three baseline recipes",
   "arms": {
     "released": {
@@ -60,10 +60,10 @@
   "publication": "open/unmerged/unpublished",
   "interpretation": "released development reference only; no trained-arm result or net absorption benefit established",
   "current_batch": null,
-  "current_stage_scope": "All62 source episodes durable and independently reviewed;633 complete20-control chunks and three draw lists frozen.0pilot updates; learner exact execution review/staging required.",
+  "current_stage_scope": "Source62/corpus/draw frozen+reviewed. One BC initialization;472completed updates/473native callsstarted;0complete final model. Updated32x3NOT_RUN. Actual progress only;final checks pending.",
   "released_model_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
   "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278",
-  "observed_at_kind": "Complete62 source plus actual corpus/draw freeze; prospective learner not executed",
+  "observed_at_kind": "Saved BC producer progress472; source62/corpus closure times remain separate",
   "runtime_snapshot": "data/robomme-baseline-pilot-operator-complete-20261018T170836Z.json",
   "runtime_snapshot_sha256": "ce54e1fb149d6c15dc62cc25f8330946055272a12889837003138c2c971c5f5c",
   "source_observed_at_unix": 1792358679.9586544,
@@ -147,7 +147,7 @@
     "7": "4a887f2354307322b751b1145ef88195c53344ea5232f6704617a4969a6f3e21"
   },
   "learner_transport_pr": "https://github.com/asimfish/robocore/pull/36",
-  "learner_transport_code_review_scope": "Dated corpus-close snapshot: actual learner plan/packet generated; core review,byte-preserving installation and final transport review still pending at this snapshot. No training update.",
+  "learner_transport_code_review_scope": "Core and final transport actual packet review PASS; one BC job executing. Not final learner/export acceptance or efficacy.",
   "source_closed48_data": {
     "D_I": 41,
     "D_R": 418,
@@ -174,5 +174,8 @@
     }
   },
   "source_inventory_review_sha256": "6514c60620c8862a1be0733022c8f0d7e668905d1d3a90f2eef2019d35eb40f0",
-  "source_corpus_review_sha256": "199e0fd63e5042e198232c9630e1afe9625d93f8ebf19217061217b847aec95f"
+  "source_corpus_review_sha256": "199e0fd63e5042e198232c9630e1afe9625d93f8ebf19217061217b847aec95f",
+  "training_progress": "data/robomme-pilot-bc-progress472-20261018T221230Z.json",
+  "training_progress_sha256": "f8e7f8f6572b81f0dbd1818e7853bc05e6464a7ef737ecd725be06be6c96fd23",
+  "training_phase": "BC472_OF1000_POOLED_IWR_NOT_STARTED"
 }
