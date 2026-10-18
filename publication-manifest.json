@@ -734,8 +734,8 @@
       "bytes": 9851
     },
     "learning.html": {
-      "bytes": 76536,
-      "sha256": "7ade3bcb159a885fc7cc558d9ceb4f3cb9df57b0f75c7671eb09680a688cd306"
+      "sha256": "8c95d7cce542e1946e8069acac2b29cc0ead4620a1e387f73faf2ddd09d24222",
+      "bytes": 78133
     },
     "learning.js": {
       "sha256": "4bbfe78547134ed999e8e24047be4269e65fbcbe81189c11588b578dac1fb874",
@@ -1212,6 +1212,10 @@
     "data/robomme-released-assistance.json": {
       "sha256": "e51ec320b6b7b247ac1b6f0885901d892089faa18ce5c5759cee74f4d14d36dd",
       "bytes": 10885
+    },
+    "data/robomme-source-qualification.json": {
+      "sha256": "9613478caa0a51d4f83b7ff28734faa3d31436855ba9da167908b7e4d0fe1c3c",
+      "bytes": 3354
     }
   },
   "research_revision": "9697cfc4f026b7a9d8fe7a719f0ddcff55ec8a06",
@@ -1528,5 +1532,18 @@
     "optimizer_updates": 0,
     "new_expert_queries": 0,
     "scope": "Four fixed reused source prefixes,released0/20conditionalhelp;all8nativecompletedandindependentH5rawreviewed;notabsorption/ICL/generalineffectiveness. PublicPRopen/unmerged/unpublished."
+  },
+  "source_qualification_inputs": {
+    "observed_at": "2026-10-18T07:24:48.470815+00:00",
+    "status": "RUNNING_SERVICE_QUALIFICATION_NO_SOURCE_OUTCOME",
+    "registration": {
+      "plan_id": "robomme-source-qualification-43fbe4328b474138",
+      "plan_sha256": "530bc27dd4d92e0c268d02852d170da13b8004e70da07916e4af3433a6b831df",
+      "execution_config_sha256": "36a10233c4dbee398b0a4a468b5aca28c9e6a482761a217bb1e2be88beae62a6",
+      "code_revision": "30c21b9440044056a2ef1eb2a9f6b89a18191660",
+      "scope": "one finite source qualification; zero training/dev; exact independent review required"
+    },
+    "public_status_sha256": "9613478caa0a51d4f83b7ff28734faa3d31436855ba9da167908b7e4d0fe1c3c",
+    "publication": "OPEN_UNMERGED_UNPUBLISHED"
   }
 }

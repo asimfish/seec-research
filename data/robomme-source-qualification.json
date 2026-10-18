@@ -1,0 +1,91 @@
+{
+  "schema": "robomme-source-qualification-public-v1",
+  "observed_at": "2026-10-18T07:24:48.470815+00:00",
+  "last_verified": "2026-10-18T07:24:48.470815+00:00",
+  "status": "RUNNING_SERVICE_QUALIFICATION_NO_SOURCE_OUTCOME",
+  "registration": {
+    "plan_id": "robomme-source-qualification-43fbe4328b474138",
+    "plan_sha256": "530bc27dd4d92e0c268d02852d170da13b8004e70da07916e4af3433a6b831df",
+    "execution_config_sha256": "36a10233c4dbee398b0a4a468b5aca28c9e6a482761a217bb1e2be88beae62a6",
+    "code_revision": "30c21b9440044056a2ef1eb2a9f6b89a18191660",
+    "scope": "one finite source qualification; zero training/dev; exact independent review required"
+  },
+  "implementation_pr": "https://github.com/asimfish/robocore/pull/24",
+  "design_pr": "https://github.com/asimfish/robocore/pull/23",
+  "publication": "OPEN_UNMERGED_UNPUBLISHED",
+  "model_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+  "source": {
+    "tasks": [
+      "PatternLock",
+      "PickHighlight"
+    ],
+    "train_ids": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "ordered_cases": 16,
+    "completed": 0
+  },
+  "development": {
+    "reserved_train_ids": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "rollouts": 0
+  },
+  "selection": {
+    "eligible": "33 <= T <=1300 completed nonsuccess;actual nonterminal program boundary",
+    "anchor": "16*((T-1)//32)",
+    "slots": "first2 eligible/task,max4;invalid selected slots not replaced"
+  },
+  "budget_caps": {
+    "attempts": 28,
+    "logged_controls": 36400,
+    "new_expert_queries": 4,
+    "new_expert_controls": 80,
+    "replayed_expert_controls": 80,
+    "setup_native_resets": 112,
+    "setup_native_controls": 280000,
+    "qualification_forecasts": 39,
+    "owned_wall_hours": 8,
+    "optimizer_updates": 0,
+    "development_rollouts": 0
+  },
+  "evidence": {
+    "implementation_review_sha256": "60ae1942894566e3e0024db5103453fad3df1dbfcd60f983112fe18515ed3c38",
+    "staged_byte_receipt_sha256": "1169545c0178065adec37b91d49781bdf5cedb63c792c57cdc5d5461dd6844fa",
+    "preflight_sha256": "5498124ac5fed12e637bbdf7c2ac49ae47d93c577cf85522267b74073efd270e",
+    "independent_final_launch_review_sha256": "56059536eb39cf862fca330d4ff29deb6339dc9b2e9c007fae573ba7d2a320e4",
+    "launch_receipt_sha256": "4830a5c8a3162d7ef7762a0bd695bbae9a75ba531fde70d8ff9c6e8339d148e3",
+    "observation_status_sha256": "16b44582c754d20dcec73769101cbb84e38b29eb7575f25044bcb0329a13ad44"
+  },
+  "limitations": [
+    "CPU and staged-file checks are not native integration or scientific success.",
+    "No new source outcome yet;midpoint rule is post-source-duration selection,not an online failure detector.",
+    "Fresh continuation resets policy/RNG;no exact hidden-state counterfactual claim.",
+    "These tasks currently support memory/cue retention/execution/recovery,not new-rule learning.",
+    "Managed prior-use inventory checked;unrecorded external and pretraining use unknown.",
+    "Main1400 remains dated458 infra-blocked;reference800 and resources unchanged."
+  ],
+  "stage": "STARTING",
+  "actual": {
+    "completed_attempts": 0,
+    "attempts_started": 0,
+    "service_starts": 1,
+    "qualification_forecasts_recorded": 0,
+    "optimizer_updates": 0,
+    "development_rollouts": 0
+  }
+}
