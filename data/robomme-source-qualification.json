@@ -77,7 +77,7 @@
   },
   "limitations": [
     "CPU and staged-file checks are not native integration or scientific success.",
-    "No new source outcome yet;midpoint rule is post-source-duration selection,not an online failure detector.",
+    "Only first8of16 source cases closed at this snapshot;full-panel and absorption results not established. Midpoint is post-source-duration selection,not an online failure detector.",
     "Fresh continuation resets policy/RNG;no exact hidden-state counterfactual claim.",
     "These tasks currently support memory/cue retention/execution/recovery,not new-rule learning.",
     "Managed prior-use inventory checked;unrecorded external and pretraining use unknown.",
@@ -101,5 +101,7 @@
     "workers_drained": true,
     "owned_service_exited": true,
     "local_full_archive_copy": "IN_PROGRESS"
-  }
+  },
+  "native_coordinator_stage": "ATTEMPT",
+  "stage_scope": "SOURCE16 is the logical panel stage; native coordinator retains ATTEMPT while next service qualifies."
 }
