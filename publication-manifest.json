@@ -1194,12 +1194,12 @@
       "bytes": 51592
     },
     "assets/figures/protected-boundary-development-v1.py": {
-      "sha256": "e8882f45f7bf16237a5f2f638478eeaed9bf40346eb7def40eab46bbae490fa9",
-      "bytes": 5172
+      "sha256": "26253ca9a8d9cea2fd35deaa3313cda539ee8b4e8a2ffac3859b2f32bfd9f9a2",
+      "bytes": 5315
     },
     "assets/figures/protected-boundary-development-v1.svg": {
-      "sha256": "10dbea902ca71d39343852f3e98357e06f1d3fb4f24c2a12f1505cb17f1763df",
-      "bytes": 18434
+      "sha256": "187097c47c0f4b791a956d3464d909ae3afc2655f6a44c45f9e82cab55fdd99e",
+      "bytes": 18326
     },
     "assets/figures/protected-boundary-development-v1.pdf": {
       "sha256": "5880e918f9a1e3841d347c5815a1605d37f1cea0825fa6b491c9f06af4f020b8",
@@ -1447,10 +1447,11 @@
     "publication": "OPEN_UNMERGED_UNPUBLISHED",
     "result_figure": {
       "source_data_sha256": "ac0383a525a5c7658e2836748bda94722f8b8028b26e82191f5e39fdca9d5cfe",
-      "svg_sha256": "10dbea902ca71d39343852f3e98357e06f1d3fb4f24c2a12f1505cb17f1763df",
-      "plot_script_sha256": "e8882f45f7bf16237a5f2f638478eeaed9bf40346eb7def40eab46bbae490fa9",
+      "svg_sha256": "187097c47c0f4b791a956d3464d909ae3afc2655f6a44c45f9e82cab55fdd99e",
+      "plot_script_sha256": "26253ca9a8d9cea2fd35deaa3313cda539ee8b4e8a2ffac3859b2f32bfd9f9a2",
       "renderer": "matplotlib3.10.9/numpy2.2.6 isolated CPU-only plotting packages; native training env unchanged",
-      "scope": "Two-dimensional descriptive count/rate figure; no confidence, confirmation or causal root-cause inference"
+      "scope": "Two-dimensional descriptive count/rate figure; no confidence, confirmation or causal root-cause inference",
+      "generated_svg_normalization": "Line-ending trailing whitespace removed mechanically; plot source applies same normalization; no redraw or numeric/data changes"
     },
     "runtime_source_kind": "Final56read-only observation envelope SHA, same as public runtime.source_observation_sha256; raw pipeline separately bound by final_pipeline_status_sha256",
     "prepublication_binding_correction": {

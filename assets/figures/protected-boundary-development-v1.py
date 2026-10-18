@@ -71,6 +71,8 @@ def main():
     stem = args.output_dir / 'protected-boundary-development-v1'
     description = 'Data SHA256: ' + hashlib.sha256(payload).hexdigest() + '; owner report SHA256: ' + data['development_readout']['owner_report_sha256']
     fig.savefig(stem.with_suffix('.svg'), metadata={'Date': None, 'Description': description})
+    svg_path = stem.with_suffix('.svg')
+    svg_path.write_text('\n'.join(line.rstrip() for line in svg_path.read_text().splitlines()) + '\n')
     fig.savefig(stem.with_suffix('.pdf'), metadata={'CreationDate': None, 'ModDate': None, 'Subject': description})
     fig.savefig(stem.with_suffix('.png'), dpi=190, metadata={'Description': description})
     plt.close(fig)
