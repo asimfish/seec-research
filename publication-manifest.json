@@ -618,8 +618,8 @@
       "bytes": 1345
     },
     "data/robomme-execution-observation.json": {
-      "sha256": "2275755735b022d685ad93c7c652bd79ebb552828bc5c6faef599517885a7b7f",
-      "bytes": 64051
+      "sha256": "c86a6dcc931c5f14849267ce05063480f50dfbf3fde9ff3cef24073c3a05f5df",
+      "bytes": 64169
     },
     "data/robomme-expert-prefix-result.json": {
       "sha256": "a75171df5ad76ab31f0b4f2d9fa7e20e9fc82726dfae748a69de71d67a8a5137",
@@ -1259,7 +1259,7 @@
     "status": "INFRASTRUCTURE_INTERRUPTED_NO_COMPLETE_SCIENTIFIC_CONCLUSION",
     "source_incident_sha256": "b640424516b32a402e6cf9c49439ee3072f77795f428d81d004bb668e5a3b7d0",
     "extra_case_rawguard_sha256": "321c70fb81849fafe00bcd52990ff0cf3b185df98da0f6e13cef2f3111927a29",
-    "public_status_sha256": "2275755735b022d685ad93c7c652bd79ebb552828bc5c6faef599517885a7b7f"
+    "public_status_sha256": "c86a6dcc931c5f14849267ce05063480f50dfbf3fde9ff3cef24073c3a05f5df"
   },
   "source_expert_continuation_inputs": {
     "plan_id": "robomme-source-dev-diagnostic-107184e71449977a",
