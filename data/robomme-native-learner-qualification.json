@@ -34,11 +34,10 @@
     "before_native_collation_or_preloss": true,
     "registered_source_native_sha256": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
     "registered_bits_inference_sha256": "f141c6c98361e53ac04f456c0bcbab26c790ed7e3c9781c42083fe0fa2536ca1",
-    "required_released_serving_identity": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
-    "registration_error": "Inherited old base_deployment_sha256=f141... into bits_digest expectation and omitted explicit required1a5... serving-domain check. These domains must be separately named and bridged; blindly substituting one digest into another algorithm is invalid.",
+    "registration_error": "The historical plan supplied serving-factory native/path+dtype+shape+bytes digest f141... as a bits_digest/path+shape+uint16-bf16 expectation. This is a definite algorithm-domain mismatch. Correct bits identity is1a5...; separate source-derived initialization references and algorithms are required, not a literal substitution.",
     "actual_combined_hash_values": "NOT_RECORDED: both were compared before record[initial] assignment; 61 actual leaf SHA/dtype/shape records survive",
     "which_comparison_failed": "UNKNOWN",
-    "source_restore": "OriginalWeightLoader verifies0d790... before native initialization; reaching later guard supports that code path, not1a5... serving identity",
+    "source_restore": "OriginalWeightLoader checked source raw0d790... before native initialization. The old combined guard did not persist its actual native or bits aggregates; neither can be reconstructed from leaf SHAs.",
     "possible_domain_boundary": "Native initialization casts freeze_filter-selected image leaves tobf16. Source-restoration raw digest vs initialized raw digest requires an explicit bridge; this is a static boundary, not a proven cause of the combined failure.",
     "not_claimed": [
       "wrong model loaded",
@@ -46,7 +45,8 @@
       "OOM",
       "root cause of previous42to14",
       "new method negative or positive effect"
-    ]
+    ],
+    "required_released_bf16_bits_identity": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a"
   },
   "initial_leaf_audit": {
     "leaves": 61,
@@ -118,5 +118,13 @@
     "sha256": "712bc180989735731da2b5f7443f63a74bcb6252cfeda385c0b5314193892c25",
     "scope": "22 archived/raw file hashes, ledger/exit/lease and7operator call receipts verified; actual whole-tree parameter hashes and the10extra executor-reported metadata/log calls were not independently recomputed."
   },
-  "last_verified": "2026-10-18T13:37:50.552112+00:00"
+  "last_verified": "2026-10-18T13:37:50.552112+00:00",
+  "interpretation_correction": {
+    "recorded_at": "2026-10-18T14:44:00Z",
+    "prior_public_snapshot_commit": "278f60c043e4cbf4505411a0c75f3178a03cceeb",
+    "correction": "Prior public wording reversed the two fingerprint domains. f141 is native serving-factory raw;1a5 is bf16 bits. Historical bad registered expectation, failure, costs and UNKNOWN actual comparator remain unchanged. Prospective repair is a separate plan/job lineage.",
+    "reference": "https://github.com/asimfish/robocore/pull/28",
+    "old_frozen_evidence_mutated": false
+  },
+  "historical_scope": "Counts, NOT_RUN arms and remaining native qualification fields in this file describe only the original closed13:34UTC plan. The separately authorized prospective repair has a different plan/job lineage and is reported in robomme-native-learner-identity-repair.json; it does not rewrite this failed package."
 }
