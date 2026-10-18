@@ -1,8 +1,8 @@
 {
   "schema": "robomme-source-qualification-public-v1",
-  "observed_at": "2026-10-18T07:55:09.267926+00:00",
-  "last_verified": "2026-10-18T07:55:09.267926+00:00",
-  "status": "RUNNING_SOURCE_PANEL_FIRST_BATCH_SEALED",
+  "observed_at": "2026-10-18T08:25:35.732578+00:00",
+  "last_verified": "2026-10-18T08:25:35.732578+00:00",
+  "status": "SOURCE16_INDEPENDENT_RAW_PASS_NQH_IN_PROGRESS",
   "registration": {
     "plan_id": "robomme-source-qualification-43fbe4328b474138",
     "plan_sha256": "530bc27dd4d92e0c268d02852d170da13b8004e70da07916e4af3433a6b831df",
@@ -30,10 +30,23 @@
       24
     ],
     "ordered_cases": 16,
-    "completed": 8,
-    "remote_completed": 8,
-    "local_raw_verified": 1,
-    "full_panel_complete": false
+    "completed": 16,
+    "remote_completed": 16,
+    "local_raw_verified": 16,
+    "full_panel_complete": true,
+    "terminal_success": {
+      "PatternLock": [
+        7,
+        8
+      ],
+      "PickHighlight": [
+        8,
+        8
+      ]
+    },
+    "official_terminal_failures": 1,
+    "budget_nonsuccesses": 0,
+    "infra_aborts": 0
   },
   "development": {
     "reserved_train_ids": [
@@ -51,7 +64,17 @@
   "selection": {
     "eligible": "33 <= T <=1300 completed nonsuccess;actual nonterminal program boundary",
     "anchor": "16*((T-1)//32)",
-    "slots": "first2 eligible/task,max4;invalid selected slots not replaced"
+    "slots": "first2 eligible/task,max4;invalid selected slots not replaced",
+    "selected_slots": [
+      {
+        "slot": 0,
+        "task": "PatternLock",
+        "train_id": 23,
+        "source_terminal_controls": 123,
+        "anchor": 48
+      }
+    ],
+    "replacement_count": 0
   },
   "budget_caps": {
     "attempts": 28,
@@ -72,27 +95,33 @@
     "preflight_sha256": "5498124ac5fed12e637bbdf7c2ac49ae47d93c577cf85522267b74073efd270e",
     "independent_final_launch_review_sha256": "56059536eb39cf862fca330d4ff29deb6339dc9b2e9c007fae573ba7d2a320e4",
     "launch_receipt_sha256": "4830a5c8a3162d7ef7762a0bd695bbae9a75ba531fde70d8ff9c6e8339d148e3",
-    "observation_status_sha256": "c49f700ad96832f5488e96c499e28458f5eeeee6d06b118adbaa7443eef602b6",
-    "first_native_raw_review_sha256": "f04de83616c74cc4f23fa36af6c1f8948f179bfc37a3042ed320ad518c706c7a"
+    "observation_status_sha256": "9baabe65052568f499143868fd513908b7bc555c3d3bab3eff12f9d9c5c738a1",
+    "first_native_raw_review_sha256": "f04de83616c74cc4f23fa36af6c1f8948f179bfc37a3042ed320ad518c706c7a",
+    "full_source16_independent_review_sha256": "d3d1c0a819f6b4fef19fb42ba7c032033732efccb18ed007b60774164b2219c2"
   },
   "limitations": [
     "CPU and staged-file checks are not native integration or scientific success.",
-    "Only first8of16 source cases closed at this snapshot;full-panel and absorption results not established. Midpoint is post-source-duration selection,not an online failure detector.",
     "Fresh continuation resets policy/RNG;no exact hidden-state counterfactual claim.",
     "These tasks currently support memory/cue retention/execution/recovery,not new-rule learning.",
     "Managed prior-use inventory checked;unrecorded external and pretraining use unknown.",
-    "Main1400 remains dated458 infra-blocked;reference800 and resources unchanged."
+    "Main1400 remains dated458 infra-blocked;reference800 and resources unchanged.",
+    "All source16 is closed and independently reviewed;N/Q/H outcomes are pending. Source-panel SR is not absorption benefit and is separate from the earlier development16."
   ],
-  "stage": "SOURCE16",
+  "stage": "NQH",
   "actual": {
-    "completed_attempts": 8,
-    "attempts_started": 8,
-    "service_starts": 2,
-    "qualification_forecasts_recorded": 13,
-    "student_forecasts": 122,
-    "logged_controls": 1897,
+    "completed_attempts": 16,
+    "attempts_started": 17,
+    "service_starts": 3,
+    "qualification_forecasts_recorded": 39,
+    "completed_attempt_logged_controls": 3690,
     "optimizer_updates": 0,
-    "development_rollouts": 0
+    "development_rollouts": 0,
+    "active": {
+      "stage": "N",
+      "task": "PatternLock",
+      "train_id": 23
+    },
+    "NQH_terminal_result": "NOT_YET_AVAILABLE"
   },
   "first_batch": {
     "remote_sealed": true,
@@ -100,8 +129,8 @@
     "bytes": 704972800,
     "workers_drained": true,
     "owned_service_exited": true,
-    "local_full_archive_copy": "IN_PROGRESS"
+    "local_full_archive_copy": "COMPLETE_SHA_VERIFIED"
   },
   "native_coordinator_stage": "ATTEMPT",
-  "stage_scope": "SOURCE16 is the logical panel stage; native coordinator retains ATTEMPT while next service qualifies."
+  "stage_scope": "Logical NQH stage; actual coordinator state retained below."
 }
