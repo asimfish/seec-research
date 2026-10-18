@@ -1,7 +1,7 @@
 {
   "schema": "robomme-protected-boundary-public-v1",
-  "observed_at": "2026-10-18T03:47:00.767451+00:00",
-  "last_verified": "2026-10-18T03:47:36.696622+00:00",
+  "observed_at": "2026-10-18T04:09:07.084560+00:00",
+  "last_verified": "2026-10-18T04:13:46.211204+00:00",
   "status": "NATIVE10000_COMPLETE_PRE_REGISTERED_56_READOUT_IN_PROGRESS",
   "publication": "OPEN_UNMERGED_UNPUBLISHED_FACT_PR",
   "plan": {
@@ -54,8 +54,8 @@
     "max_logged_controls": 72800,
     "extra_expert_queries": 0,
     "scope": "Single-seed development baseline;not confirmation,newmechanism or generalized RSI evidence",
-    "completed_at_observation": 32,
-    "status": "REFERENCES_COMPLETE_PROTECTED_CANDIDATE_NOT_YET_EVALUATED",
+    "completed_at_observation": 40,
+    "status": "PROTECTED_OLD8_COMPLETE_PRIMARY_FRESH16_STILL_PENDING",
     "fresh_scope": "Officialtrain9–16 per task,fresh to managed development runs;not claimed unseen in pretraining or independent confirmation"
   },
   "test_evidence": {
@@ -165,15 +165,39 @@
         "local_copy_receipt_sha256": "045597a77d4863dee7923a6d70263a822e99d85a551fc3cd5bc1cd944fd03d22",
         "inference_export_scope": "Exactbf16 delta withboundreleasedbase;not optimizerresume"
       }
+    },
+    {
+      "observed_at": "2026-10-18T03:47:00.767451+00:00",
+      "status": "NATIVE10000_COMPLETE_PRE_REGISTERED_56_READOUT_IN_PROGRESS",
+      "runtime": {
+        "source_observation_sha256": "2bf8d89bf150c382983d5b42dae077ba69bb58f7fccab924ee73adaaa3be45fd",
+        "stage": "QUALIFYING_SERVICE",
+        "completed": 32,
+        "all_pre_registered_cases_remain_required": true,
+        "extra_expert_queries": 0,
+        "qualification_forecasts_at_observation": 52,
+        "new_efficacy_conclusion": null,
+        "current_model": "protected_seed7"
+      },
+      "model": {
+        "inference_sha256": "399d4b79e728d6925b48667212e8e5e38bec32ced2603958db02a71956eef986",
+        "archive_sha256": "7398e083f9849eef1ff5eef9d9b94e8b7018429ec0fc1344a329e853e290c0ad",
+        "archive_bytes": 526832119,
+        "remote_ordinary_durable_copy": "COMPLETE",
+        "local_NAS_copy": "COMPLETE_ORDINARY_EXACT_DELTA_ARCHIVE_READBACK_VERIFIED",
+        "optimizer_resume": false,
+        "local_copy_receipt_sha256": "045597a77d4863dee7923a6d70263a822e99d85a551fc3cd5bc1cd944fd03d22",
+        "inference_export_scope": "Exactbf16 delta withboundreleasedbase;not optimizerresume"
+      }
     }
   ],
   "runtime": {
-    "source_observation_sha256": "2bf8d89bf150c382983d5b42dae077ba69bb58f7fccab924ee73adaaa3be45fd",
+    "source_observation_sha256": "5b31e386eb0dd71fedee75e8de56d4c507254595205a5865e8312cb125623248",
     "stage": "QUALIFYING_SERVICE",
-    "completed": 32,
+    "completed": 40,
     "all_pre_registered_cases_remain_required": true,
     "extra_expert_queries": 0,
-    "qualification_forecasts_at_observation": 52,
+    "qualification_forecasts_at_observation": 65,
     "new_efficacy_conclusion": null,
     "current_model": "protected_seed7"
   },
@@ -261,5 +285,207 @@
     "source_milestone_sha256": "e430181252833a8e8722acce19b2150beddc3af619331820b247dbfa40226fa0",
     "root_cause": "UNKNOWN",
     "scope": "Oneexistingseed7 model on16manageddevelopment instances;notnewprotectedresult orsixseedconclusion"
+  },
+  "protected_old8_readout": {
+    "observed_at": "2026-10-18T04:09:07.084560+00:00",
+    "versions": {
+      "initial": {
+        "success": 7,
+        "total": 8
+      },
+      "correction_only": {
+        "success": 3,
+        "total": 8
+      },
+      "mixture": {
+        "success": 2,
+        "total": 8
+      },
+      "pure_replay": {
+        "success": 4,
+        "total": 8
+      },
+      "protected": {
+        "success": 4,
+        "total": 8
+      }
+    },
+    "protected_tasks": {
+      "PatternLock": {
+        "success": 4,
+        "total": 4
+      },
+      "PickHighlight": {
+        "success": 0,
+        "total": 4
+      }
+    },
+    "protected_roles": {
+      "source": {
+        "success": 2,
+        "total": 4
+      },
+      "development": {
+        "success": 2,
+        "total": 4
+      }
+    },
+    "paired_transitions": {
+      "initial": {
+        "fail_to_success": [
+          "PatternLock-train-002"
+        ],
+        "success_to_fail": [
+          "PickHighlight-train-001",
+          "PickHighlight-train-002",
+          "PickHighlight-train-005",
+          "PickHighlight-train-006"
+        ]
+      },
+      "correction_only": {
+        "fail_to_success": [
+          "PatternLock-train-005"
+        ],
+        "success_to_fail": []
+      },
+      "mixture": {
+        "fail_to_success": [
+          "PatternLock-train-002",
+          "PatternLock-train-006"
+        ],
+        "success_to_fail": []
+      },
+      "pure_replay": {
+        "fail_to_success": [
+          "PatternLock-train-002",
+          "PatternLock-train-006"
+        ],
+        "success_to_fail": [
+          "PickHighlight-train-001",
+          "PickHighlight-train-002"
+        ]
+      }
+    },
+    "logged_controls": 5568,
+    "verification": "Remote8individualrawvalidated+batcharchive;ownerrecount;finalindependent56caseauditPENDING",
+    "source_milestone_sha256": "f03479d45fc28a3fefd1bfc297445224481947ea88a2d0bac929071b256ece8f",
+    "prior_four_report_sha256": "c6d08e4218e2d54ec3bf6573e1c3321fed67bd3ae6274b0b794f2408e0aba43d",
+    "scope": "Old8alreadyusedfordevelopment;onlynewcandidateevaluatedonce,oldfourreferencedwithout rerun;notfresh16effect/confirmation",
+    "root_cause": "UNKNOWN",
+    "all_fresh16_still_required": true,
+    "rows": [
+      {
+        "case": "PatternLock-train-001",
+        "task": "PatternLock",
+        "episode": 1,
+        "use": "source",
+        "initial": true,
+        "correction_only": true,
+        "mixture": true,
+        "pure_replay": true,
+        "protected": true,
+        "protected_outcome": "success",
+        "protected_controls": 72,
+        "protected_receipt_sha256": "81ac6b4dfa69f5755548ff13b74686ee3a350cf3a957ec1fd77fb142f6148dcb"
+      },
+      {
+        "case": "PickHighlight-train-001",
+        "task": "PickHighlight",
+        "episode": 1,
+        "use": "source",
+        "initial": true,
+        "correction_only": false,
+        "mixture": false,
+        "pure_replay": true,
+        "protected": false,
+        "protected_outcome": "timeout",
+        "protected_controls": 1300,
+        "protected_receipt_sha256": "8917d238749b31ecbe114b7a13ceb711f53e50a4dce52b0793ed8bbe8f00a852"
+      },
+      {
+        "case": "PatternLock-train-002",
+        "task": "PatternLock",
+        "episode": 2,
+        "use": "source",
+        "initial": false,
+        "correction_only": true,
+        "mixture": false,
+        "pure_replay": false,
+        "protected": true,
+        "protected_outcome": "success",
+        "protected_controls": 138,
+        "protected_receipt_sha256": "83cdc11202d247cfd949ef4d99447865fdd64c8ae9b0503fb9021ca1e89b84a6"
+      },
+      {
+        "case": "PickHighlight-train-002",
+        "task": "PickHighlight",
+        "episode": 2,
+        "use": "source",
+        "initial": true,
+        "correction_only": false,
+        "mixture": false,
+        "pure_replay": true,
+        "protected": false,
+        "protected_outcome": "timeout",
+        "protected_controls": 1300,
+        "protected_receipt_sha256": "2a470b5821da431d860910bd202f1f67a5a4f84fa21eafdbf340991e7fc6b35f"
+      },
+      {
+        "case": "PatternLock-train-005",
+        "task": "PatternLock",
+        "episode": 5,
+        "use": "development",
+        "initial": true,
+        "correction_only": false,
+        "mixture": true,
+        "pure_replay": true,
+        "protected": true,
+        "protected_outcome": "success",
+        "protected_controls": 71,
+        "protected_receipt_sha256": "bb6b844ae6c0ddfc44bd14086c4cbfe9f6706989b09b18adf9e766df1742a576"
+      },
+      {
+        "case": "PickHighlight-train-005",
+        "task": "PickHighlight",
+        "episode": 5,
+        "use": "development",
+        "initial": true,
+        "correction_only": false,
+        "mixture": false,
+        "pure_replay": false,
+        "protected": false,
+        "protected_outcome": "timeout",
+        "protected_controls": 1300,
+        "protected_receipt_sha256": "5707b67489dab8ef085415a1fe701d363ba16baf52db3ef14aecb797c499df0f"
+      },
+      {
+        "case": "PatternLock-train-006",
+        "task": "PatternLock",
+        "episode": 6,
+        "use": "development",
+        "initial": true,
+        "correction_only": true,
+        "mixture": false,
+        "pure_replay": false,
+        "protected": true,
+        "protected_outcome": "success",
+        "protected_controls": 87,
+        "protected_receipt_sha256": "85d70f7c8082e67d96a0c7094c3c099e12803e1cc66e091c6c73a1f0a046cc6d"
+      },
+      {
+        "case": "PickHighlight-train-006",
+        "task": "PickHighlight",
+        "episode": 6,
+        "use": "development",
+        "initial": true,
+        "correction_only": false,
+        "mixture": false,
+        "pure_replay": false,
+        "protected": false,
+        "protected_outcome": "timeout",
+        "protected_controls": 1300,
+        "protected_receipt_sha256": "851c89dcc316e1ef9b4701d1ae497b0e02a0efb9fcdda95434b0742f239941ec"
+      }
+    ]
   }
 }
