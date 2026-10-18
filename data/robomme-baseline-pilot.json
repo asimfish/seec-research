@@ -1,0 +1,41 @@
+{
+  "schema": "robomme-baseline-pilot-status-v1",
+  "observed_at": "2026-10-18T16:07:43.677853+00:00",
+  "phase": "EXACT_EXECUTION_REVIEW_PENDING",
+  "plan_id": "robomme-deployment-pilot-64c9fc3a7cbc48c3",
+  "master_sha256": "709406731926ab4bd88b5a625f8d0a4fda8ef5f5b05f557aa3cfad6a0e96384e",
+  "code_revision": "85c3af5cd29750a7465ec2d0d7a6f90792c1b811",
+  "pr": "https://github.com/asimfish/robocore/pull/29",
+  "released_cases_complete": 0,
+  "released_cases_registered": 32,
+  "released_native_started": false,
+  "source_attempts": 0,
+  "optimizer_updates": 0,
+  "development_gate": "released >=31/32 stops this pilot; otherwise follow frozen source62 and three baseline recipes",
+  "arms": {
+    "released": {
+      "status": "NOT_RUN",
+      "success": null,
+      "N": 32
+    },
+    "bc": {
+      "status": "NOT_RUN",
+      "success": null,
+      "N": 32
+    },
+    "pooled": {
+      "status": "NOT_RUN",
+      "success": null,
+      "N": 32
+    },
+    "iwr": {
+      "status": "NOT_RUN",
+      "success": null,
+      "N": 32
+    }
+  },
+  "inputs": "native initial demo; <=32frames/512tokens;20predict/16execute; per-case fresh memory/RNG7; no extra evaluator query/shadow",
+  "training": "seed101;1000updates/globalbatch2;nativeflow/AdamW/whole-treeEMA.999;LR1e-6*min((u+1)/100,1);finalonly",
+  "publication": "open/unmerged/unpublished",
+  "interpretation": "standard baseline development feasibility only; no positive absorption or new mechanism result"
+}
