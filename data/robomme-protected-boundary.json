@@ -27,7 +27,10 @@
     "optimization": "19existing actionexpert/projection leaves;42vision/language/history leaves protected",
     "precision": "Original native initialization casting preserved;separate optimization filter",
     "deployment": "19actionEMA+42protectedfinal-live;protectedserializedbf16mustmatchinitialbytes;rawfullEMA audited separately",
-    "new_method_claim": false
+    "new_method_claim": false,
+    "treatment": "Joint recipe:19-leaf optimization boundary plus prospectively registered protected-live/action-EMA hybrid deployment",
+    "trainable_parameters": 430098464,
+    "causal_scope": "Not a single-factor mask/freezing experiment. No lightweight or budget advantage claim. Native EMA observations do not diagnose the old full-correction regression."
   },
   "readout": {
     "fresh_train_instances": [
@@ -238,7 +241,12 @@
     "local_NAS_copy": "COMPLETE_ORDINARY_EXACT_DELTA_ARCHIVE_READBACK_VERIFIED",
     "optimizer_resume": false,
     "local_copy_receipt_sha256": "045597a77d4863dee7923a6d70263a822e99d85a551fc3cd5bc1cd944fd03d22",
-    "inference_export_scope": "Exactbf16 delta withboundreleasedbase;not optimizerresume"
+    "inference_export_scope": "Exactbf16 delta withboundreleasedbase;not optimizerresume",
+    "final_live_native_sha256": "bdc38a837d95e231891221c4e22d1e2f191a40daca74a8148559b99355ffa709",
+    "final_raw_native_ema_sha256": "76b963c27904cb954e46e306c228ba19ec1ffdaf4470f6e3aef4cb8a671d72d4",
+    "final_deployed_native_sha256": "23d4ec36eb6f1fe47ac7352fb47e9e61d2e1fdc7fc3150a7297ff3d9007e4370",
+    "serialized_inference_sha256": "399d4b79e728d6925b48667212e8e5e38bec32ced2603958db02a71956eef986",
+    "weight_identity_source_sha256": "f0016cac2fb9725371726e73353e732038642a7d823afbc199235656478a4abc"
   },
   "parameter_boundary": {
     "protected_native_live_initial_first_final": "42of42 BYTE_EQUAL",
@@ -251,7 +259,12 @@
       "bf16_inference_leaves": 16,
       "max_abs_vs_live": 8.106231689453125e-05
     },
-    "old_task_regression_root_cause": "UNKNOWN"
+    "old_task_regression_root_cause": "UNKNOWN",
+    "first_update_raw_ema_observation": {
+      "protected_native_ema_changed": 18,
+      "protected_inference_ema_changed": 11,
+      "causal_status": "This run numerical observation only;not cause of old full-correction regression"
+    }
   },
   "independent_reviews": [
     {
@@ -1499,5 +1512,21 @@
     "established": "Partial recovery relative to full-correction BC; still below released autonomy. Protected deployment representations remain byte-identical to initialization.",
     "not_established": "Generalized efficacy, catastrophic forgetting, software root cause, new learning mechanism, RSI, or population main effect.",
     "next_frontier": "Data/target and closed-loop supervision compatibility; no automatic LR, LoRA, mask, or replay-ratio grid."
+  },
+  "main_queue_status_pointer": {
+    "durable": 458,
+    "planned": 1400,
+    "status": "INFRASTRUCTURE_BLOCKED_NOT_RUNNING",
+    "latest_phase_pointer": "FINAL_HANDOFF.json",
+    "latest_phase_pointer_sha256": "3bea6280a061adc47d96131a03f35299473f702c5eac63a740fc3c2958fda62c",
+    "phase_pointer_updated_at": "2026-10-18T05:18:56.312615+00:00",
+    "latest_health_read": "main-assigned-gpu1-followup-0509.json",
+    "health_observed_at": "2026-10-18T05:09:04Z",
+    "health_result": "5s assignedGPU1 metadata deadline timed out;no reset/kill/reference use",
+    "historical457_files": [
+      "MAIN_QUEUE_BLOCKER.md",
+      "main-queue-current-incident.json"
+    ],
+    "historical_scope": "00:56–01:04older457snapshot;preserved,not conflicting current458pointer;no new main health probe in this reconciliation"
   }
 }
