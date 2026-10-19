@@ -1,0 +1,87 @@
+{
+  "schema": "robomme-pilot-bc-export-timeout-public-v1",
+  "observed_at": "2026-10-18T22:48:26.850194+00:00",
+  "last_verified": "2026-10-19T09:37:23.750894+00:00",
+  "status": "STOPPED_NO_RETRY_EXPORT_INCOMPLETE",
+  "plan_id": "robomme-deployment-pilot-64c9fc3a7cbc48c3",
+  "master_sha256": "709406731926ab4bd88b5a625f8d0a4fda8ef5f5b05f557aa3cfad6a0e96384e",
+  "learner_plan_sha256": "ddcf8f0a7324cf6a0bcb5f5c125bc289aabb48b61d2c308b13e39e2d8a5535e5",
+  "executed_revision": "1e6b92dbdf494dcde44b91641927eb72da65a4e2",
+  "executed_pr": "https://github.com/asimfish/robocore/pull/36",
+  "actual_training": {
+    "arm": "bc",
+    "initializations": 1,
+    "completed_optimizer_updates": 1000,
+    "native_train_calls_started": 1000,
+    "chunk_draws": 2000,
+    "target_occurrences": 40000,
+    "initial": {
+      "native_sha256": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+      "inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a"
+    },
+    "last_live": {
+      "native_sha256": "3f036739b85deef48e615329c0cc43e2d77f38b370455597659f0c51b5e5c15a",
+      "inference_sha256": "034adec5a45043efa922e1f769b1fb41c7502236f1aad5a446430ce4e10d2ae2"
+    },
+    "changed_trainable_leaves": 37,
+    "frozen_live_unchanged": true,
+    "compiled_preloss_exact": [
+      0,
+      999
+    ],
+    "full_EMA_aggregate_identity": "UNAVAILABLE_not_persisted_before_termination",
+    "serialized_EMA_inference_identity": "UNAVAILABLE_partial_file",
+    "admitted_durable_models": 0,
+    "optimizer_resume_checkpoint": false
+  },
+  "registered_job": {
+    "job_id": "deployment-pilot-learner-20261018-bc-v1",
+    "exit_code": -15,
+    "request_limit_seconds": 3750,
+    "cause": "Timeout during post-update audit/export; exact time split unavailable"
+  },
+  "model_export": {
+    "status": "INVALID_INCOMPLETE_EXPORT",
+    "bytes": 826293711,
+    "zip_central_directory": false,
+    "complete_export_reload_proof": false,
+    "optimizer_resume_checkpoint": false
+  },
+  "archive": {
+    "bytes": 849100800,
+    "sha256": "99974209a2b1b5ac2f6944db72667f0b8c91c96ee23ec1ca90a8649b037c4783",
+    "members": 1039,
+    "ordinary_NAS_ingestion_completed_before_complete_guard": true
+  },
+  "independent_readout": {
+    "status": "PASS_FAILURE_EVIDENCE",
+    "sha256": "c66a6fe48ac0c27312124bc94f8b1bac4aa2e31297cdf555cd170e30bc3242e8",
+    "scope": "Saved1000 counters/draws/LRs/finite metrics;u0/u99924field reconstructions;61leaf metadata;1037non-model file hashes;large NPZ header/tail only;not fresh native optimization or full model rehash"
+  },
+  "operator_seconds": 3933.1765095920055,
+  "initialization_seconds": 114.70977118611336,
+  "training_step_seconds_sum": 2927.1903698653914,
+  "last_saved_native_seconds_lower_bound": 3378.536989411805,
+  "native_peak_device_memory": "UNAVAILABLE_final_record_not_reached",
+  "other_internal_encoder_physics_counts": "UNKNOWN",
+  "admitted_completed_models": 0,
+  "updated_development_cases": 0,
+  "pooled": "NOT_RUN",
+  "iwr": "NOT_RUN",
+  "released_reference": {
+    "PatternLock": "11/16",
+    "PickHighlight": "6/16",
+    "total": "17/32"
+  },
+  "source_and_corpus": "Closed62/62;633chunks/I53R580;unchanged",
+  "interpretation": "Infrastructure abort, not task/method efficacy failure. No trained-arm task-success result or net absorption benefit exists.",
+  "retry_allowed": false,
+  "prospective_storage_candidate": {
+    "pr": "https://github.com/asimfish/robocore/pull/39",
+    "head": "fd806493121a5f936ceb5c60ab5cbf6c41956099",
+    "status": "CPU_CANDIDATE_PENDING_INDEPENDENT_REVIEW_NOT_WIRED_OR_RUN",
+    "full_model_deadline_verified": false,
+    "new_native_calls": 0
+  },
+  "publication": "OPEN_UNMERGED_UNPUBLISHED"
+}
