@@ -7,7 +7,7 @@
     "unselected logs",
     "user working-tree edits"
   ],
-  "export_scope": "Existing archive preserved; symbolic, learned, coverage and separately registered 51-model experience-credit diagnostics with all positive and negative outcomes, costs, reproducible adapters and figures. Full learning loop NOT_RUN. No raw logs or checkpoints.",
+  "export_scope": "Existing archive preserved; symbolic, learned, coverage and separately registered 51-model experience-credit diagnostics with all positive and negative outcomes, costs, reproducible adapters and figures. Full learning loop NOT_RUN. No raw logs or checkpoints. The separately registered seed7 autonomous-success replay baseline is complete at4/8 vs initial7/8;all failures,costs and limits retained. No new-method or positive generalization claim. Protected-action-expert baseline completed all56 registered development rollouts: fresh16 released15,correction2,protected7;partial recovery,no net gain;independent raw verification and limitations retained. New two-case native integration is recorded as SSH launch infrastructure abort before confirmed remote start:0native receipts/0updates,not efficacy;21CPU admission does not establish live input qualification. Historical b112/v4 remains closed after unacknowledged45s SSH timeout. A separately reviewed stable-job recovery completed exactly2 zero-update native integration cases,168task controls and6actual20-command chunks with independent raw qualification; both CONTROL_BUDGET_STOP, no efficacy/training claim. No merge or publication. A separately registered common batch2 learner qualification stopped at initial identity guard after one initialization,0updates; two remaining arms NOT_RUN. Fingerprint-domain admission error and missing actual hashes disclosed; no efficacy claim or automatic retry. A separate prospectively registered identity repair completed three fresh two-update native learner arms with durable archives. Six updates are engineering qualification only; at that repair stage no efficacy rollout/full pilot was authorized. A subsequent separately registered baseline pilot has conditional forward authorization, with dated released32 progress only; no positive absorption claim. Historical public fingerprint-domain wording is explicitly corrected without rewriting old failed artifacts.",
   "files": {
     ".nojekyll": {
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -377,6 +377,18 @@
       "sha256": "977d6917463ca9cd80b7d18ec76ae4fb843358e03a163e116ae044aaaad85a50",
       "bytes": 46342
     },
+    "assets/figures/source-dev-diagnostic-ab-v3.pdf": {
+      "sha256": "3b632c73acae227fc0cda5a27329ff90aa32f0236e4650e65366f56c2f8c5227",
+      "bytes": 31734
+    },
+    "assets/figures/source-dev-diagnostic-ab-v3.png": {
+      "sha256": "54f9c35784a01dc4d7c7830ee88733de359677961f5423c0a111780fc839edc9",
+      "bytes": 166862
+    },
+    "assets/figures/source-dev-diagnostic-ab-v3.svg": {
+      "sha256": "a5b461a068dc7db9b3cdc7f1fc99760a05da69d1e3e22f8a6745265440bfdd68",
+      "bytes": 32021
+    },
     "assets/figures/source_label_variance.pdf": {
       "sha256": "eab73e09e0d1134879750a0a3a0083de9e844a0607809080896118376384a840",
       "bytes": 12906
@@ -605,6 +617,10 @@
       "sha256": "3626bc6903f3bc55c69e6d355a134cae60cf673fc46e4444d7a7da55da79970c",
       "bytes": 1345
     },
+    "data/robomme-execution-observation.json": {
+      "sha256": "c86a6dcc931c5f14849267ce05063480f50dfbf3fde9ff3cef24073c3a05f5df",
+      "bytes": 64169
+    },
     "data/robomme-expert-prefix-result.json": {
       "sha256": "a75171df5ad76ab31f0b4f2d9fa7e20e9fc82726dfae748a69de71d67a8a5137",
       "bytes": 933
@@ -612,6 +628,10 @@
     "data/robomme-expert-recovery.json": {
       "sha256": "8f87c98898053f1dfe0d2285aa8b0214cc0be9309384d07b65bf790582594690",
       "bytes": 1725
+    },
+    "data/robomme-first-pair-seed7.json": {
+      "sha256": "8ed482d45cf31c427e93d66bdead1706f0618726ad28cd56d0513c80a5b3a66e",
+      "bytes": 20888
     },
     "data/robomme-initial-full-reference.json": {
       "sha256": "78d851590a84aba0e8d0b198d500727b501f79425562154025520ce19b09e9f1",
@@ -633,6 +653,18 @@
       "sha256": "120e3c88223ad1f8287f71955278b6ca92f8a1b49b37561103be61c3c1329c01",
       "bytes": 3426
     },
+    "data/robomme-source-action-diagnostic.json": {
+      "sha256": "5ea97d052b7a1065f6556451b8a31036aeabee67fa9d2683d1842e261683899b",
+      "bytes": 6745
+    },
+    "data/robomme-source-dev-alignment.json": {
+      "sha256": "747c176647c608f945fbd75369bfae5812ead1f96f6ab5b0085ef4aa7954010e",
+      "bytes": 8942
+    },
+    "data/robomme-source-expert-continuation-diagnostic.json": {
+      "sha256": "bf8a23f1ca267a343e0d2c3e79e08fbdf72763a33fe0de700b2971b65efdf438",
+      "bytes": 17106
+    },
     "data/robomme-training-resources.json": {
       "sha256": "54d8e54448bdec2f034de71f8665f0ededd2118c37470a3c4c537021fe31a374",
       "bytes": 983
@@ -650,8 +682,8 @@
       "bytes": 39696
     },
     "data/robot-memory-benchmark-status.json": {
-      "sha256": "9231e303295ed375c85f8a23dd2965e83e179a876907f0992d4e3916310e3b34",
-      "bytes": 45689
+      "sha256": "25f70e4416693e912556930031c11ce352bb248bab5ced427ff92fb9aed55bf7",
+      "bytes": 85689
     },
     "data/robot-program-transform-check.json": {
       "sha256": "8368d8edaabd35ba67d8634dcdd955caf7644ff8079846a2785c990d10b59740",
@@ -702,8 +734,8 @@
       "bytes": 9851
     },
     "learning.html": {
-      "sha256": "e762ef960c557abef98a07b1f0fb5f6a9ab99f443e107952216e6a05d155affd",
-      "bytes": 53184
+      "sha256": "87d41851f29b68fb616ec1a3b8cadd75109f0ae636baac541ff7d503b0f50809",
+      "bytes": 98398
     },
     "learning.js": {
       "sha256": "4bbfe78547134ed999e8e24047be4269e65fbcbe81189c11588b578dac1fb874",
@@ -1136,6 +1168,122 @@
     "styles.css": {
       "sha256": "a7b618ed6e2bd44e36f55c8e1e5697eb96ffd96cd9f1c6b95c594fa6538b4557",
       "bytes": 15302
+    },
+    "data/robomme-native-input-contract.json": {
+      "sha256": "d232cf2ea88ad8656aa12427fa2b0ba80a1a02433451de888de8c353ee7a1b39",
+      "bytes": 2745
+    },
+    "data/robomme-recent-pair-seed7.json": {
+      "sha256": "5ec7e495e1a055469112ce6062f9f53a10517bc60096e2fabbc6b1bcff70d533",
+      "bytes": 17367
+    },
+    "data/robomme-success-replay-fixed-eight.json": {
+      "sha256": "562aaa0465f13546cdfb47dd8b85fda7e4a83f34a709fe39b46ef8ed90570ba0",
+      "bytes": 7002
+    },
+    "data/robomme-native-numerical-profile.json": {
+      "sha256": "7e6d6e44a1936657ffd16270308be045da7c4282857283f6d066a52a5d7e1eee",
+      "bytes": 17824
+    },
+    "data/robomme-autonomous-replay-only.json": {
+      "sha256": "73c448a262c5ede77c6fd418a9fcee5d9bff89bbc2768fb58b7dc0660337577b",
+      "bytes": 15781
+    },
+    "data/robomme-protected-boundary.json": {
+      "bytes": 53532,
+      "sha256": "c52bc38256529a2bffcb35cffbe5f6d639e6a7d776989446278e2eacbb4ebfdf"
+    },
+    "assets/figures/protected-boundary-development-v1.py": {
+      "sha256": "26253ca9a8d9cea2fd35deaa3313cda539ee8b4e8a2ffac3859b2f32bfd9f9a2",
+      "bytes": 5315
+    },
+    "assets/figures/protected-boundary-development-v1.svg": {
+      "sha256": "187097c47c0f4b791a956d3464d909ae3afc2655f6a44c45f9e82cab55fdd99e",
+      "bytes": 18326
+    },
+    "assets/figures/protected-boundary-development-v1.pdf": {
+      "sha256": "5880e918f9a1e3841d347c5815a1605d37f1cea0825fa6b491c9f06af4f020b8",
+      "bytes": 25157
+    },
+    "assets/figures/protected-boundary-development-v1.png": {
+      "sha256": "1ca36e1810b0b8b46499518d6011e6251ecc6f19b36101c0690dae2a018c8ff8",
+      "bytes": 176542
+    },
+    "data/robomme-released-assistance.json": {
+      "sha256": "e51ec320b6b7b247ac1b6f0885901d892089faa18ce5c5759cee74f4d14d36dd",
+      "bytes": 10885
+    },
+    "data/robomme-source-qualification.json": {
+      "sha256": "ba13755ac875edbe2958ba534fab9059525514b12964cd62ef9c342c27aaca58",
+      "bytes": 9403
+    },
+    "data/robomme-deployment-manifest.json": {
+      "sha256": "46d3618c01b26a733c88ac4461277630298dd9009e47751fe410d3efdc4b9dc4",
+      "bytes": 3274
+    },
+    "data/robomme-native-integration.json": {
+      "sha256": "ded8c8db4cc89b98f940ac8f58477bec2e97dae6ea19f1ea675ee0ec33040633",
+      "bytes": 2625
+    },
+    "data/robomme-registered-launch-recovery.json": {
+      "sha256": "fc1890c914490aa5c345babf0a8b6ff2c6e6f2675f92bcb1714f06ba10f6d681",
+      "bytes": 4988
+    },
+    "data/robomme-native-learner-qualification.json": {
+      "sha256": "ac3d202bf08e350ebb8f7712f5e79eec79aadc6a46ec53c48f28484755fac35f",
+      "bytes": 7515
+    },
+    "data/robomme-native-learner-identity-repair.json": {
+      "sha256": "ec8375f096309a6e04937ebf985f29302fbb598f8a3838b3f6cfd11195e7bb2b",
+      "bytes": 19139
+    },
+    "data/robomme-baseline-pilot.json": {
+      "sha256": "cb272353184ef66d48109fcd1479a97c81ec7cae1a3bb2ea4a4dd62fce49846e",
+      "bytes": 9538
+    },
+    "data/robomme-baseline-pilot-operator-20261018T164215Z.json": {
+      "sha256": "3271654da7eeb8b92988bb14d59d0c0b649a27985346a90f4b74f0f074a605f8",
+      "bytes": 287
+    },
+    "data/robomme-baseline-pilot-operator-complete-20261018T170836Z.json": {
+      "sha256": "ce54e1fb149d6c15dc62cc25f8330946055272a12889837003138c2c971c5f5c",
+      "bytes": 355
+    },
+    "data/robomme-pilot-source-transport-20261018T175153Z.json": {
+      "sha256": "02da26cd1b3f3914f712f760f91f71b505d0239b1a558bebf752bf91e7d8fc9c",
+      "bytes": 1947
+    },
+    "data/robomme-baseline-pilot-released32-summary-20261018T170938Z.json": {
+      "sha256": "e7fc3393ef8c0ada22915455c6b4854e3713608b83803e9a76d1cd97a92cbf38",
+      "bytes": 3882
+    },
+    "data/robomme-pilot-source-preserved8-20261018T181501Z.json": {
+      "sha256": "486f481bda04f46f1bc16bf27f4dbf4fe0c98968f29b517e2990894068f14680",
+      "bytes": 7507
+    },
+    "data/robomme-pilot-source-continuation16-20261018T191907Z.json": {
+      "sha256": "c1e830ae449b80daa66b1ab192bd277501dca917450c41837b240b37c3cc4b27",
+      "bytes": 3285
+    },
+    "data/robomme-pilot-source-continuation32-20261018T195835Z.json": {
+      "sha256": "facbea3c3e525fc00a9dc94738bd7d47c01400e473fd69eeca719587cff0d02d",
+      "bytes": 1788
+    },
+    "data/robomme-pilot-source-continuation48-20261018T204029Z.json": {
+      "sha256": "30b180198d5aafa04a444d977376a40a8630a7b26a9d9f779266a3df927e0fcb",
+      "bytes": 1960
+    },
+    "data/robomme-pilot-source62-corpus-20261018T212439Z.json": {
+      "bytes": 7271,
+      "sha256": "4ef1c0175259ba28e4a062e791c190c244775c1e4512353b63040cbcb253907a"
+    },
+    "data/robomme-pilot-bc-progress472-20261018T221230Z.json": {
+      "sha256": "f8e7f8f6572b81f0dbd1818e7853bc05e6464a7ef737ecd725be06be6c96fd23",
+      "bytes": 1508
+    },
+    "data/robomme-pilot-bc-export-timeout-20261018T224826Z.json": {
+      "sha256": "e3208dde80dcdbe5157e0c613da8f320244ef86daf37c315d608f3efb8d1df3d",
+      "bytes": 3721
     }
   },
   "research_revision": "9697cfc4f026b7a9d8fe7a719f0ddcff55ec8a06",
@@ -1146,7 +1294,7 @@
     "frequency_result_sha256": "eb135042e726cc6d4de1e905daa72d9bf44066db33d474642759dbac34624b68",
     "paper_pdf_sha256": "7a963288be38608258e2c9be0828f3082d90701b8f917e0559437d811bae7dcd"
   },
-  "updated": "2026-10-14",
+  "updated": "2026-10-18T20:43:21.488920+00:00",
   "archive_public_revision": "90d923d69e7728f376ae3d3e4ea9cc81dc7bc545",
   "new_research_inputs": {
     "summary_sha256": "d0221a27287af14e67c2b051b590746b9ddb310a91782a2ad3d18d8903a6d7c2",
@@ -1195,5 +1343,558 @@
     "registered_gap_decision": "FAIL",
     "verification_status": "PASS",
     "gradient_updates": 0
+  },
+  "execution_observation": {
+    "observed_at": "2026-10-18T01:07:27.905173+00:00",
+    "durable_cases": 458,
+    "remote_new_receipt_pending": 0,
+    "status": "INFRASTRUCTURE_INTERRUPTED_NO_COMPLETE_SCIENTIFIC_CONCLUSION",
+    "source_incident_sha256": "b640424516b32a402e6cf9c49439ee3072f77795f428d81d004bb668e5a3b7d0",
+    "extra_case_rawguard_sha256": "321c70fb81849fafe00bcd52990ff0cf3b185df98da0f6e13cef2f3111927a29",
+    "public_status_sha256": "c86a6dcc931c5f14849267ce05063480f50dfbf3fde9ff3cef24073c3a05f5df"
+  },
+  "source_expert_continuation_inputs": {
+    "plan_id": "robomme-source-dev-diagnostic-107184e71449977a",
+    "independent_review_sha256": "a902322046cda29347dd2f2ea8ccef329ece7cdc06f22ef5a79c6a5e8a2f5fe0",
+    "observed_at": "2026-10-17T12:02:38.727638+00:00",
+    "case_count": 4,
+    "scope": "Historical expert-only phase: four fixed source privileged continuations; all120 original fragments were not validated. Later student takeover is recorded separately in source_student_takeover_inputs."
+  },
+  "source_development_diagnostic_inputs": {
+    "aligned_report_sha256": "77ce167926b2b90306c342327d3760dc116cba30490cd5834515cf7dde576fa0",
+    "independent_AB_sha256": "d25c3b246c7d07ca70c778489837314ca8fbc13ec00b7321aeec34bf71d7fba1",
+    "C_readout_sha256": "1c71e122d276ddabed0673995661789836bbee3457bb96f145c846241513ff02",
+    "independent_C_sha256": "a2de9015a8f0504df399b8884bd4edc3b6474710ba81e6269aba93d4c20e2d83",
+    "figure_manifest_sha256": "8c5c9d748c023277b8f6d1ad4d774370515461075dc8dc6f60814dbb6c16ab6f"
+  },
+  "source_student_takeover_inputs": {
+    "independent_review_sha256": "a2de9015a8f0504df399b8884bd4edc3b6474710ba81e6269aba93d4c20e2d83",
+    "readout_sha256": "1c71e122d276ddabed0673995661789836bbee3457bb96f145c846241513ff02",
+    "reviewed_at": "2026-10-17T13:28:50.678637+00:00",
+    "conditions": 4,
+    "completed": 4,
+    "successes": 2,
+    "scope": "Four fixed source conditions only; no initial-student matched takeover or learning-gain attribution."
+  },
+  "public_svg_formatting": {
+    "source_svg_sha256": "21660cb60eda2a9d940acbed988b4a6a9ab8865d4723c1e3a26dc65e7d4dbc06",
+    "source_plot_manifest_sha256": "8c5c9d748c023277b8f6d1ad4d774370515461075dc8dc6f60814dbb6c16ab6f",
+    "transformation": "Strip trailing line whitespace only; retain SVG geometry, numbers and text. PNG/PDF bytes unchanged.",
+    "public_svg_sha256": "a5b461a068dc7db9b3cdc7f1fc99760a05da69d1e3e22f8a6745265440bfdd68"
+  },
+  "source_query_provenance_inputs": {
+    "audit_sha256": "520201c5cec38594c317e36500e80667a2f1dfd428843e195cc51d836dfc47fd",
+    "independent_review_sha256": "4594c4f6d4ef03f2ff2d3c78b2f3cc6ceafeb79da9c07bfb6e3c7fda879b6b43",
+    "cases": 4,
+    "scope": "Original source outcomes and fixed-grid versus coverage-supplement query selection; no new rollout or label."
+  },
+  "native_input_contract_inputs": {
+    "parent_result_sha256": "7b2bf9d7d2bce655bc8dd5cd28ae25caf5ddd8c7e9ceb59daabb39d25a1ba861",
+    "raw_archive_sha256": "ddfca9c34ed23748c30532d7f14a745a9022717fdf6e6007e901b7920f1f4016",
+    "independent_review_sha256": "0622d7f9ef9f73e134a0958235af5fb62c82f16a2683758912b127583f1e587e",
+    "code_revision": "8a296aff9fb96f26f0f22b54b238d351473d8455",
+    "execution_config_sha256": "7726cc369fc3216998c1237d73e27de10cfce11c6d9c9798dbe7b77c75dea82e",
+    "public_status_sha256": "d232cf2ea88ad8656aa12427fa2b0ba80a1a02433451de888de8c353ee7a1b39",
+    "scope": "Two fixed sourceanchors only; eleven inputs,onlyhistoryimagefeaturesdiffer;0optimizerupdates,0env; not causeof42to14."
+  },
+  "historical_execution_observation_20261017_1451": {
+    "observed_at": "2026-10-17T14:51:09.711464+00:00",
+    "source_record_sha256": "3ac2d1219a7e8e63a1219be2d01aa5a1b20276054e85fd9ccc224ed51a03ad15",
+    "prior_public_revision": "3d91a423634c5b4f0ed5f32034ca1e18b554947b",
+    "inventory_sha256": "a9e9f79c056bbb84bc1c75f42932a06f641d249ee8956b6c076095659727f9d2",
+    "recovery_revision": "262876882b488eb9c5a8561df4160a5ebd863d80",
+    "public_status_sha256": "3febb36d43114831c1f665bc8d7ed89d9db09124256e7c3b4084dd78ea8e1187",
+    "prior_fact_branch_revision": "36712209f0da69ed369282ad6e21caf1ae5cbac9"
+  },
+  "historical_execution_observation_20261017_1601": {
+    "observed_at": "2026-10-17T16:01:57.886642+00:00",
+    "preserved_at": "2026-10-17T16:06:05.890236+00:00",
+    "source_record_sha256": "c187fe3a7938d435ab2010f84a1632552e17f380cdd6ca66e2ea9ac9291fa10a",
+    "source_scope": "Independent remote7complete+1infra proof; not public JSON hash",
+    "incident_sha256": "7b65b3ec77f9a1004d038d655ff795338dbde359b27ee169ac648104f38d2077",
+    "independent_incident_review_sha256": "5d5e81bd12ce01b45fc2a1280fcb060e22a912e7282fa17bf41342d739df2d71",
+    "preservation_receipt_sha256": "7a7981aa73548d40584ddac6fffd3292319db02f5c0e7c298cfb7748076c6ca1",
+    "preservation_independent_review_sha256": "cdcbde816b0ed65e1acc24e577f783c61ceedb3d2a954105a76bf1000ead1453",
+    "public_status_sha256": "56a3a56146267f8a2023b9b05744f17726df1b0d199cde0f84fb76cf74dcad4f",
+    "recent_matched_report_sha256": "bbe7cab0be0fdb245b3bc4af90420984da9f89713e3b884b23515db2fc843025",
+    "recent_matched_independent_review_sha256": "5b1224c72f66ffd368b3c65724b1217d0dd890b24b7c7e7508200d37151a6adf",
+    "recovery_revision": "262876882b488eb9c5a8561df4160a5ebd863d80"
+  },
+  "success_replay_pilot_inputs": {
+    "source_plan_id": "robomme-absorption-screen-5c9451b5a5b9791c",
+    "source_plan_sha256": "f9f8101b8dd997a3386a03f5f0d0a1cd8e641daf738f8f6aa089dac26860397d",
+    "actual_rows_sha256": "3ded01880085ffdb6a7f8312f864ff14ddaf3ded7feb4e9c8558bed236d0a660",
+    "batch_plan_id": "robomme-replay-native-batches-0fd452f58335a7f6",
+    "batch_manifest_sha256": "d854d97237c496c60997eb63c8dc1c1d4a7f82a5396cb6deef2073c5609ea903",
+    "training_plan_id": "robomme-native-success-replay-cbec9d3a365ca6d6",
+    "training_plan_sha256": "a3bbe04dfbc798780325f88a5edaf3c1cace1746ca52c184e943f8d41672b57a",
+    "trainer_revision": "344cb4cc5887a577735892d80cbd5bfed4c4a4f0",
+    "evaluation_plan_id": "robomme-success-replay-source-eval-1f4aba6da4f56cb0",
+    "evaluation_plan_sha256": "44deafd4fd042652e315035a9b91fdd9a0b6b484ffa9cfdf2a5392d4cb75ce11",
+    "training_result_sha256": "a3faab417069fbbca54ce5717bbecf5e401b5f144aa2933c2160fdd0a1344d87",
+    "model_sha256": "8b25d1d62cbbabcb26c027f5f9f77df2b9459d2f19d08b0df2ce227385d70c10",
+    "report_sha256": "562aaa0465f13546cdfb47dd8b85fda7e4a83f34a709fe39b46ef8ed90570ba0",
+    "independent_result_review_sha256": "74ab032c9a015b93437264f765638dd15562e8ccfe78125ce729a6a81486de72",
+    "preservation_receipt_sha256": "a9ab16c01c79ec92078718acc2536b566f9089136a50c9211ba7e4d7112b852d",
+    "scope": "Complete8fixedsource/devpilot;single seed,notsixseedresult;2successes,no positiveeffectclaim;allfailuresretained.",
+    "last_verified": "2026-10-17T17:12:16.249339+00:00"
+  },
+  "native_numerical_qualification_inputs": {
+    "observed_at": "2026-10-17T17:35:44.701215+00:00",
+    "public_profile_sha256": "7e6d6e44a1936657ffd16270308be045da7c4282857283f6d066a52a5d7e1eee",
+    "private_cpu_profile_sha256": "8f6686c76451a76234e9a9d9d7b750c82ff376aae4242b97ce13ea64cb6452a4",
+    "isolation_result_sha256": "1c724704da701e46faafbbf3189cbaa78789d149f04f542ece1fbba454cac33b",
+    "isolation_archive_sha256": "d44368ec6765abea0e3a9dde47b6faaad45ab53301270c2d1eda879be33dd004",
+    "old_byte_gate": "FAILED_PRESERVED",
+    "code_head": "1d1af2f8e0a649af182122456259b245c23f43b7",
+    "independent_review_sha256": "c6d1558ac995a14cde6937409173a9c80b12c5431e3424d15c0a115d0393b993",
+    "scope": "CPU profile/evidence-contract only;newqualificationforward;old10k/8notrerun;noinputrepair"
+  },
+  "historical_execution_observation_20261017_1714": {
+    "observed_at": "2026-10-17T17:14:20.577976+00:00",
+    "source_scope": "Dated original14cell continuation:407durablyverified+4remoteCOMPLETEreceipts pending batchrawguard;no source/dev mixed into1400",
+    "source_record_sha256": "e8c0d335284bc2c7f47d8523eb0e96c74193b4b597138cc4b885f75e7468e811",
+    "public_status_sha256": "351d091b49b82a20035334b689be1f1472f004e22d9f7e3395094b90641ec877",
+    "recovery_revision": "669344a350b552d1d326c0b806c4249263c24e77",
+    "execution_config_sha256": "c972effbc9595709b7195371784153cc053d319c49440c935ea49e34529d1b46",
+    "independent_execution_review_sha256": "dfb8fdd5f9b77662486a6897048aef2e93514624a1f4fffe11a6b93fe696d352",
+    "archived_durable_complete_episodes": 407,
+    "reported_new_remote_receipts": 4,
+    "six_seed_conclusion": "PENDING",
+    "coverage_observed_at": "2026-10-17T17:07:53.503798+00:00",
+    "coordinator_observation_record_sha256": "9d1de2157b9b817249578f4d875976249a575180b6d16a7871844d3541c09955",
+    "coordinator_observed_at": "2026-10-17T17:14:20.577976+00:00"
+  },
+  "autonomous_replay_only_inputs": {
+    "observed_at": "2026-10-17T19:21:40.950290+00:00",
+    "last_verified": "2026-10-17T19:25:59.511115+00:00",
+    "plan_id": "robomme-native-autonomous-replay-957d5c09ec99f1c4",
+    "plan_sha256": "7da8343e01721905879cf2f67ec8bb9082be2167153c45506b016ce737dd3a34",
+    "evaluation_plan_id": "robomme-autonomous-replay-source-eval-aec81de16d2dd70f",
+    "evaluation_plan_sha256": "f715620a0dc47eab1d5e1dbcf39bc4d6d7414d7f6d77ece00eb1fba2135c6841",
+    "code_revision": "6d4e9e82bd1abf70c0df2bc463c3bb7f76cb82c8",
+    "native_manifest_sha256": "e28bdb169b94f2732378438f7eccf1d98b690459c6e0515fbf4740d277cb22d1",
+    "input_qualification_sha256": "7aaa08e9a30a846b57e01918793339188b420b532c90c093add98ee3c2309e6e",
+    "independent_prelaunch_review_sha256": "98f31d35fd6a95b55d3c1d64eafecbb0b6285b6884b9d0b9ba102e1cb78bf85e",
+    "independent_result_review_sha256": "a3d17cfe4ccc92fdb14a85c6705d86d5e9bf44403c44f3dc975afb15df61dc76",
+    "report_sha256": "c6d08e4218e2d54ec3bf6573e1c3321fed67bd3ae6274b0b794f2408e0aba43d",
+    "cost_sha256": "f9b2f77b397429f38879bdf18721783e1cb549f6517458d42e44fc0658644c8f",
+    "result": "4/8vsinitial7/8;singleuseddevelopmentseed7;notnewmethodorpositivegeneralization"
+  },
+  "protected_boundary_inputs": {
+    "status": "COMPLETE56_INDEPENDENT_RAW_VERIFIED_SINGLE_SEED_DEVELOPMENT_NO_NET_GAIN",
+    "registration": {
+      "registered_at": "2026-10-18T01:06:29.389113+00:00",
+      "code_revision": "b9ba062124c1752ef253d8b4c58e183a04eebf49",
+      "training_plan_id": "robomme-protected-action-bc-788e373d688e9b15",
+      "training_plan_sha256": "cf0f08ebb9e33be05c037b64d21c6827b07bc62fe7e316d5dbbe72846e0fe234",
+      "readout_plan_id": "robomme-protected-boundary-readout-af357112f8f11387",
+      "readout_plan_sha256": "a9475b7b714449dbaff1f630069bdace9217f5da5c7cbc61161a9fe0d3f9e992",
+      "execution_config_sha256": "0cae2118cfde80c92afbc6dc052eb830c994b74d8a1655a69715b101be12e942",
+      "parameter_roles_sha256": "c9ad01cf0a92a3ab4bfba5dd6b3dd963d6351dfb47663cd99b83946b27a05ff7",
+      "prior_use_inventory_sha256": "1e883bb3c6be1d47b8f42cc33604ad19201ba3264643e5d6f4551f1562934d75",
+      "original120_input_binding_sha256": "6ed97a2428cdffb871f7c9f4815b5845a9292c3b41a8ce64940db8faa415df59",
+      "native_cpu_component_qualification_sha256": "229ad9bbf8a21f7cd21f00e5da0ff08351aecbd103f37d769f668e5e1331ff3d",
+      "code_archive_sha256": "b02ea4963f6e4de32636e5c3df80c6154154a36315bd04ab09dc8af38d146b0f",
+      "new_candidate_optimizer_updates": 0,
+      "state": "AWAITING_EXACT_INDEPENDENT_REVIEW_NO_COMPUTE_AUTHORIZED_BY_THIS_FILE"
+    },
+    "private_raw_data_excluded": true,
+    "observed_at": "2026-10-18T04:57:21.925406+00:00",
+    "last_verified": "2026-10-18T05:05:28.723652+00:00",
+    "public_status_sha256": "c52bc38256529a2bffcb35cffbe5f6d639e6a7d776989446278e2eacbb4ebfdf",
+    "runtime_source_sha256": "a99841ed8aa8605fe7f02ad880b9f7c0dd8418a497f4469d90e77e8c37ecd8d6",
+    "independent_native_final_identity_review_sha256": "e9a83a57ac6097a0ad657af08b9f2c0cbe26dfad9dd99f4e1648d62e998620d6",
+    "independent_complete_training_small_records_review_sha256": "bb287906228cedf3b8ca642112965dc15b607c693a055d991653133d29dffaca",
+    "independent_final_model_preservation_review_sha256": "61477f00321371c3dcc2ca516eb22cb05d4da8590f18f663c07246774b4d5a22",
+    "released_fresh16_milestone_sha256": "356825a3463fb05b469765ce889bd654a0db8e80126c9a695510beaeddbcb0f0",
+    "full_correction_fresh16_milestone_sha256": "e430181252833a8e8722acce19b2150beddc3af619331820b247dbfa40226fa0",
+    "protected_old8_milestone_sha256": "f03479d45fc28a3fefd1bfc297445224481947ea88a2d0bac929071b256ece8f",
+    "owner_report_sha256": "e015416037b31f6cc9ff262df7a5822e42d51dbd27b0e18aa81fcae75a174536",
+    "independent_final56_review_sha256": "c483dd75ca459fc0a57eebab2a4ae648cc9be2c22e8028e9b77ce8338a2605d1",
+    "completed_rollouts": 56,
+    "fresh16_counts": {
+      "released": 15,
+      "full_correction_seed7": 2,
+      "protected_seed7": 7
+    },
+    "logged_controls": 31823,
+    "bounded_action_audit_sha256": "950eb33b4c55630982c7dc0615bc49fce43760990f203b75db7bccabf16eb42c",
+    "publication": "OPEN_UNMERGED_UNPUBLISHED",
+    "result_figure": {
+      "source_data_sha256": "ac0383a525a5c7658e2836748bda94722f8b8028b26e82191f5e39fdca9d5cfe",
+      "svg_sha256": "187097c47c0f4b791a956d3464d909ae3afc2655f6a44c45f9e82cab55fdd99e",
+      "plot_script_sha256": "26253ca9a8d9cea2fd35deaa3313cda539ee8b4e8a2ffac3859b2f32bfd9f9a2",
+      "renderer": "matplotlib3.10.9/numpy2.2.6 isolated CPU-only plotting packages; native training env unchanged",
+      "scope": "Two-dimensional descriptive count/rate figure; no confidence, confirmation or causal root-cause inference",
+      "generated_svg_normalization": "Line-ending trailing whitespace removed mechanically; plot source applies same normalization; no redraw or numeric/data changes"
+    },
+    "runtime_source_kind": "Final56read-only observation envelope SHA, same as public runtime.source_observation_sha256; raw pipeline separately bound by final_pipeline_status_sha256",
+    "prepublication_binding_correction": {
+      "parent_commit": "c5c33f185c3cc827b6d320a1bbe791005ea3073a",
+      "corrected_at": "2026-10-18T05:08:10.702366+00:00",
+      "reason": "Two current-source metadata hashes retained the prior40of56binding;corrected after independent fact review before merge/publication. Source data/model/results unchanged."
+    },
+    "final_pipeline_status_sha256": "b2c535a87ebbc1e5a15e803c682d2f2395202eb346095574b7811e9d5efefd99",
+    "source_field_normalization": {
+      "parent_commit": "810d81465229738fe2eb424b1045480e777b9751",
+      "corrected_at": "2026-10-18T05:08:48.478400+00:00",
+      "reason": "Use observation-envelope SHA consistently for runtime_source;retain raw final-pipeline SHA as separate explicitly typed source. Both source files and all results unchanged."
+    },
+    "treatment_scope": "Joint19leafoptimizationboundary+prospectiveprotected-live/actionEMAexport;430098464parameters;notmaskonlycausalityorbudgetadvantage",
+    "weight_identity_source_sha256": "f0016cac2fb9725371726e73353e732038642a7d823afbc199235656478a4abc"
+  },
+  "historical_execution_observation_before_protected_boundary": {
+    "observed_at": "2026-10-17T19:26:15.597581+00:00",
+    "source_scope": "Dated original14cell continuation:457unique durably verified cases;4completecells plus full17partial57;currentbatch provisional receipts excluded;source/dev pilots excluded.",
+    "source_record_sha256": "9953eecabdbb93e33310931ea39d3e37f7ba8857cade7f85f80d5a534439bcd7",
+    "public_status_sha256": "e3b6ca6edcc9ea9b78eedeff90b0bca138307b25dc861487901ee98b09fa8a9c",
+    "recovery_revision": "669344a350b552d1d326c0b806c4249263c24e77",
+    "execution_config_sha256": "c972effbc9595709b7195371784153cc053d319c49440c935ea49e34529d1b46",
+    "independent_execution_review_sha256": "dfb8fdd5f9b77662486a6897048aef2e93514624a1f4fffe11a6b93fe696d352",
+    "archived_durable_complete_episodes": 457,
+    "six_seed_conclusion": "PENDING",
+    "coverage_observed_at": "2026-10-17T19:26:15.597581+00:00",
+    "coordinator_observation_record_sha256": "9953eecabdbb93e33310931ea39d3e37f7ba8857cade7f85f80d5a534439bcd7",
+    "coordinator_observed_at": "2026-10-17T19:26:15.597581+00:00",
+    "durably_verified_cases": 457,
+    "scope": "Dated457uniquecompletecases;4completecells+full17partial57;currentbatchprovisionalexcluded."
+  },
+  "historical_protected_boundary_binding_20261018_0409": {
+    "source_commit": "282ed09f1f5ebd71230de1b405ced9eb8953309b",
+    "observed_at": "2026-10-18T04:09:07.084560+00:00",
+    "public_status_sha256": "aa88250cd72ad9c00b6005dde7ba1e4007818cff53aa260e7825649bd2aa25d6",
+    "runtime_source_sha256": "5b31e386eb0dd71fedee75e8de56d4c507254595205a5865e8312cb125623248",
+    "scope": "Historical40of56sourcebindings;notcurrent56state"
+  },
+  "released_assistance_contrast_inputs": {
+    "observed_at": "2026-10-18T06:09:17.815994+00:00",
+    "last_verified": "2026-10-18T06:08:56.230602+00:00",
+    "status": "COMPLETE_INDEPENDENT_RAW_REVIEW_PASSED",
+    "code_revision": "7ede12697d66439c1fc1dae2fcc4d2f410c0786f",
+    "plan_id": "robomme-released-assistance-eb84fb55a7039503",
+    "plan_sha256": "2504c0b93b03b6655306f20f250cc4ea74a49887ba504475f7fdfa8d10236768",
+    "execution_config_sha256": "02e5612bc82a6628cd532e2ad9d89cad676efa6528e2ce09b405f052ef0aa148",
+    "owner_report_sha256": "fed3b5fad086cd949d3dfa5a1eaa2d3b5eae14b00afb1c8801f2bd38be12768e",
+    "independent_review_sha256": "cacb415204c73b9ce5120bf82dc4afedad305ec3f5bb6463a21b4cfb37cebd9f",
+    "archive_sha256": "75747fa134f8aa2827e6df5f3ef0af022dff2f8abb2ce29734ee9686689ef1f4",
+    "public_status_sha256": "e51ec320b6b7b247ac1b6f0885901d892089faa18ce5c5759cee74f4d14d36dd",
+    "model_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+    "completed_conditions": 8,
+    "terminal_success": {
+      "no_assist": [
+        4,
+        4
+      ],
+      "recorded_assist20": [
+        4,
+        4
+      ]
+    },
+    "logged_controls": 1740,
+    "source_replay_controls": 800,
+    "recorded_expert_controls": 80,
+    "student_controls": 860,
+    "student_forecasts": 58,
+    "qualification_forecasts": 13,
+    "optimizer_updates": 0,
+    "new_expert_queries": 0,
+    "scope": "Four fixed reused source prefixes,released0/20conditionalhelp;all8nativecompletedandindependentH5rawreviewed;notabsorption/ICL/generalineffectiveness. PublicPRopen/unmerged/unpublished."
+  },
+  "source_qualification_inputs": {
+    "observed_at": "2026-10-18T08:33:47.333400+00:00",
+    "status": "COMPLETE_INDEPENDENT_RAW_REVIEWED_PANEL_NO_GO",
+    "registration": {
+      "plan_id": "robomme-source-qualification-43fbe4328b474138",
+      "plan_sha256": "530bc27dd4d92e0c268d02852d170da13b8004e70da07916e4af3433a6b831df",
+      "execution_config_sha256": "36a10233c4dbee398b0a4a468b5aca28c9e6a482761a217bb1e2be88beae62a6",
+      "code_revision": "30c21b9440044056a2ef1eb2a9f6b89a18191660",
+      "scope": "one finite source qualification; zero training/dev; exact independent review required"
+    },
+    "public_status_sha256": "ba13755ac875edbe2958ba534fab9059525514b12964cd62ef9c342c27aaca58",
+    "publication": "OPEN_UNMERGED_UNPUBLISHED",
+    "last_verified": "2026-10-18T08:40:43.962099+00:00",
+    "final_independent_raw_review_sha256": "958be36510bb402cb3ac3d619d19f4fbf8e321edc3915aaba0cc92455305b1b9"
+  },
+  "deployment_manifest_inputs": {
+    "observed_at": "2026-10-18T09:40:04.504070+00:00",
+    "status": "PROPOSED_NATIVE_NOT_RUN",
+    "execution_authorized": false,
+    "code_revision": "7a206e9b65be2907cc9f635d90795e5e6a2f1469",
+    "manifest_id": "robomme-deployment-0a33caa9d3a934836d8e85e9687bc6a2a895f6977a0afe38d1fff946d57d6bf3",
+    "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278",
+    "generator_config_sha256": "53f0652e877dd551f54c8fe9e1b7d6a0ae04d219d29d0a8dfe3fff66b5da1266",
+    "exclusion_index_sha256": "d48fad746027669b2043bb1473bb7170622a69c3261e4218716b0487845b76f1",
+    "prototype_registration_sha256": "bc426955dab51e0c20becb018c8c85b485c73b123cc85a036a5195e29f693dfc",
+    "actual_prototype_cpu_preflight_sha256": "d8da5e48a63791ccb3760d200ecc8ea2bfb9478661301ba9c92b87b1a81ed41c",
+    "independent_pure_cpu_review_sha256": "2c5bb810f2f1eac2935cdd4b4793146aa5fb4601c56dbc22a631ae8a8496abbe",
+    "public_status_sha256": "46d3618c01b26a733c88ac4461277630298dd9009e47751fe410d3efdc4b9dc4",
+    "scope": "196metadata descriptions;55CPUcontracts;0native calls/rollouts/updates;notunseen certification or runtime authorization;oldnegative results unchanged",
+    "publication": "OPEN_UNMERGED_UNPUBLISHED"
+  },
+  "native_integration_inputs": {
+    "code_revision": "b112fe78899634b67a77c9ce2d8ef0e0a308e38c",
+    "scope": "Historical closed b112/v4 pre-execution admission and unacknowledged transport abort only; no native receipts existed at its closure. New qualified recovery is separately listed; old originals unchanged.",
+    "plan_sha256": "5d988fcb0dd684a61d99837565d2b1b100142066e9d939008de43e21b5267524",
+    "config_sha256": "15a0b559e034b1d5f93ee2827bf89e7c2181e089242825158954d5200213e5fd",
+    "execution_review_sha256": "039d2160f80ed8d4c9328803b176abcc404af4b2fc900e9f3409b5b2935d2618",
+    "failure_sha256": "b66481046643a588b6a0bfa6f55ba6ebb336c1df361e320e28e7f47e202691d5",
+    "readback_sha256": "f8cc8e15989b3f05205d7e51cf747d181e49bdeecf0e33758f44c24392ee63d3",
+    "invocation_provenance_sha256": "ec56a945cc641dcf48ea72037019d7b80b98b93f78ffa61d1dfb699f6fc129a2",
+    "final_handoff_sha256": "4a1346dd7eddf94cfff0d9688b79890b72ac8bf9429bb8bd67a373f39c198d10",
+    "public_summary_sha256": "ded8c8db4cc89b98f940ac8f58477bec2e97dae6ea19f1ea675ee0ec33040633"
+  },
+  "native_recovery_inputs": {
+    "code_revision": "b88b906cbc190d3f61edd67c04a7b43316cce96b",
+    "plan_id": "robomme-native-integration-395cd0988ad1cd3c",
+    "plan_sha256": "365484286701b3d78f790d131942348deea1f19d3681c810f316e7dc150c1450",
+    "request_sha256": "30288651d93b2f530b9e60df0c127699e146c54419ca0b6ea2e2066bddc6bc9e",
+    "last_verified": "2026-10-18T12:10:59.982377+00:00",
+    "independent_raw_review_sha256": "9c46edd1319746ccf80179e2e4292e24d79940c329b9f640d8cad5f29c163df6",
+    "outer_archive_sha256": "12679a08b074dcf20cdf37eb0dc2a1b43c20cf64c798d9658fcb5598acf374c9",
+    "raw_archive_sha256": "543ef67dad363f7e1430dffd1920d14b2f5bcceafe1e6b3b6bbeccae2028ad1e",
+    "public_summary_sha256": "fc1890c914490aa5c345babf0a8b6ff2c6e6f2675f92bcb1714f06ba10f6d681",
+    "scope": "2source qualification cases only;0updates/dev/final;6actual20chunks;not recovery/efficacy;old negatives preserved",
+    "publication": "OPEN_UNMERGED_UNPUBLISHED"
+  },
+  "native_learner_qualification_inputs": {
+    "producer_report_sha256": "7e3dd613b0f940fc76db81780523f2a493038e726269a196e0fda47f1372c4c3",
+    "independent_outcome_review_sha256": "712bc180989735731da2b5f7443f63a74bcb6252cfeda385c0b5314193892c25",
+    "independent_evidence_sha256": "ac91386b2adf24a2584d162120161a57ec26292999d0f7ae8b89344c05e2bf39",
+    "plan_sha256": "37370d18dd74cd88cd4687eaf576101be6a7f8f7cb0312b0a44cf89a7de5ae25",
+    "config_sha256": "c59a06f887533555dca73eb890b8550b6e0428f50dd46fcff36154461e4256ac",
+    "executed_revision": "cfb27202bc01e79a967d89bd642c33ca7acce791",
+    "public_summary_sha256": "ac3d202bf08e350ebb8f7712f5e79eec79aadc6a46ec53c48f28484755fac35f",
+    "last_verified": "2026-10-18T13:37:50.552112+00:00",
+    "qualification_passed": false,
+    "interpretation_corrected": "f141 serving-factory native raw;1a5 bf16 bits; prior snapshot278f60c preserved"
+  },
+  "native_learner_identity_repair_inputs": {
+    "owner_report_sha256": "f2893cbb88ec3cdb0e163c482101b3d981717f1e3d2335d620a9ef651f92cf32",
+    "plan_sha256": "9b4626a67a309933da5d1580093fadacdb3d097eff5b2526ebb95170023d9539",
+    "config_sha256": "588d1a714cc14f8da1d6a19752b4e1031eb1a3e20beeab8c845d25c23b8ff50c",
+    "executed_revision": "bcafaf1ca241146f5fd3d02b86ac8d3808e06f0b",
+    "public_summary_sha256": "ec8375f096309a6e04937ebf985f29302fbb598f8a3838b3f6cfd11195e7bb2b",
+    "last_verified": "2026-10-18T14:58:39.731207+00:00",
+    "qualification_passed": true,
+    "efficacy_evaluated": false
+  },
+  "deployment_baseline_pilot_inputs": {
+    "master_plan_id": "robomme-deployment-pilot-64c9fc3a7cbc48c3",
+    "master_sha256": "709406731926ab4bd88b5a625f8d0a4fda8ef5f5b05f557aa3cfad6a0e96384e",
+    "executed_revision": "85c3af5cd29750a7465ec2d0d7a6f90792c1b811",
+    "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278",
+    "released_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+    "public_summary_sha256": "cb272353184ef66d48109fcd1479a97c81ec7cae1a3bb2ea4a4dd62fce49846e",
+    "runtime_snapshot": "data/robomme-baseline-pilot-operator-complete-20261018T170836Z.json",
+    "runtime_snapshot_sha256": "ce54e1fb149d6c15dc62cc25f8330946055272a12889837003138c2c971c5f5c",
+    "source_observed_at_unix": 1792358679.9586544,
+    "closed_durable_cases": 32,
+    "independent_code_review_sha256": "f1f30d1d0b8d66ec53f3c91730ba13a202ab9e4e816bc65a7210c97cfa55f726",
+    "independent_exact_packet_review_sha256": "92293ff3c1241a39b1cc25e4b89d836f43a913be0c224a6d8c5fa07176da73f7",
+    "independent_transport_review_sha256": "e4ed2a00e0c48edbb79919850f8496784105fa9eec4ea1f08341525740167ef5",
+    "independent_closed_batch_reviews": {
+      "0": "a7514b73fa64e11b5c4a5ce4809d9c02b4b3f647b21239be8979eff06925ca11",
+      "1": "f45d9e42f5de7f08c0afa0464abb7600e826e7c849c81dcc77b66dfc6e2edcea",
+      "2": "4fc4db89e5a9a478d78aed8a225045f663e259f434a639bfba9806d91d8eed73",
+      "3": "2536e33fd9b804b78a06a94fd97c9b7ad024f9702352cc27b96348477d40cc2c"
+    },
+    "source_updates": 0,
+    "source_rollouts": 62,
+    "whole32_success_rate_generated": true,
+    "publication": "OPEN_UNMERGED_UNPUBLISHED",
+    "source_master_kind": "private immutable registered master; public plan_id and SHA only",
+    "released32_analysis_sha256": "bfabc4c3e1862c0ee108b5bd6a850947ba3643e72584675240cbe01074c753da",
+    "released32_owner_sha256": "5a66ae14904447046064556bd66ba710c01b6887dcd89497bf1912bd4ed76999",
+    "released32_readout_review_sha256": "a19055b9518c28065284276bbe10892d8a4ab5750e428ef4499959bad4ce88c5",
+    "released32_handoff_sha256": "ed6c91fe844a49ab9c22b68b18a7f5e0cdbe77ae5b8c31fb68f3d1956ea7594c",
+    "released32_complete_snapshot": {
+      "path": "data/robomme-baseline-pilot-operator-complete-20261018T170836Z.json",
+      "sha256": "ce54e1fb149d6c15dc62cc25f8330946055272a12889837003138c2c971c5f5c"
+    },
+    "source_code_revision": "38ff1d2f1e228b13faa52fb9e8eb3dd5faed3dd7",
+    "source_code_pr": "https://github.com/asimfish/robocore/pull/30",
+    "readout_generated_at": "2026-10-18T17:09:38.292924+00:00",
+    "last_verified": "2026-10-19T09:37:23.750894+00:00",
+    "source_values_as_of": "2026-10-18T21:24:39.958654+00:00",
+    "source_durable_cases": 62,
+    "source_phase": "COMPLETE_CORPUS_FROZEN",
+    "source_incident_snapshot": "data/robomme-pilot-source-transport-20261018T175153Z.json",
+    "source_incident_snapshot_sha256": "02da26cd1b3f3914f712f760f91f71b505d0239b1a558bebf752bf91e7d8fc9c",
+    "source_preserved_snapshot": "data/robomme-pilot-source-preserved8-20261018T181501Z.json",
+    "source_preserved_snapshot_sha256": "486f481bda04f46f1bc16bf27f4dbf4fe0c98968f29b517e2990894068f14680",
+    "source_preservation_scope": "historical parent8 data-only; original stopped unchanged; new continuation separately registered",
+    "corpus_code_revision": "dd8595c6736a37c8f784a7b8891231222dab6d55",
+    "corpus_code_review_sha256": "1108600c3df759e5fcd40c98024ebd92ed2e9735ba280a74fc27869d682cff66",
+    "source_preserved_raw_review_sha256": "524f41f4adc2db98bfaafbc2ae50ffaea14093ab140588044b44bc87d802cd6d",
+    "released_runtime_observed_at_unix": 1792343316.7351255,
+    "original_source_transport_observed_at_unix": 1792345842.081339,
+    "source_observed_at_scope": "Immutable complete62source pointer; corpus review separately dated; no pilot updates",
+    "source_continuation_snapshot": "data/robomme-pilot-source62-corpus-20261018T212439Z.json",
+    "source_continuation_snapshot_sha256": "4ef1c0175259ba28e4a062e791c190c244775c1e4512353b63040cbcb253907a",
+    "source_continuation_revision": "a754e3cc7f77f0a16969fbe1fe6407f0a9f5377b",
+    "source_batch1_raw_review_sha256": "0b789289bc2c46a6d7e56bba6cbc14c157b8fc46197c3ab2a4316da255514e2e",
+    "source_incremental_raw_reviews": {
+      "0": "524f41f4adc2db98bfaafbc2ae50ffaea14093ab140588044b44bc87d802cd6d",
+      "1": "0b789289bc2c46a6d7e56bba6cbc14c157b8fc46197c3ab2a4316da255514e2e",
+      "2": "cc9433112f5095641591024cb7ab59924f4cf2b2c99149096c976d03df7bcf65",
+      "3": "bd7cc83483e45752ea4ddf24df98ae18d4b8cb99a6482593c8db5b02de10618b",
+      "4": "e23baf3baa4855a3742b2f40a5bde9a3b51e4d16be0f624a490b403eb4ed4a67",
+      "5": "cf2f69326b64e2e6649280e5b9fbf3600fb60a1b61d9f7d61f1759ffba1e1f3a",
+      "6": "db217e7f5f3595bd5b17d8c7032b232cba5fd3fd4eeb459ec1fd8db46bb8b1ad",
+      "7": "4a887f2354307322b751b1145ef88195c53344ea5232f6704617a4969a6f3e21"
+    },
+    "released_rollouts": 32,
+    "source_inventory_review_sha256": "6514c60620c8862a1be0733022c8f0d7e668905d1d3a90f2eef2019d35eb40f0",
+    "source_corpus_review_sha256": "199e0fd63e5042e198232c9630e1afe9625d93f8ebf19217061217b847aec95f",
+    "corpus_sha256": "e00e6b8fc9937f277f4cabae5cae29bd214c0060d5442faf116d4eba9eeb36c5",
+    "draw_file_sha256": {
+      "bc": "cadca5ec5f6b914b471239de49ec3f220581a13bfd925658ab7d88ea48f09905",
+      "pooled": "0257217f3ec140c58c379548b2691b899aef7e53211efcab4d7260ea6243d103",
+      "iwr": "6b4c2d5e71cd66f84082f1c0f0a20592cd194fe1a26d387b91b718fbc4eabc9e"
+    },
+    "learner_plan_sha256": "ddcf8f0a7324cf6a0bcb5f5c125bc289aabb48b61d2c308b13e39e2d8a5535e5",
+    "learner_execution_status": "STOPPED_NO_RETRY_EXPORT_INCOMPLETE",
+    "training_progress": "data/robomme-pilot-bc-export-timeout-20261018T224826Z.json",
+    "training_progress_sha256": "e3208dde80dcdbe5157e0c613da8f320244ef86daf37c315d608f3efb8d1df3d",
+    "training_observed_at": "2026-10-18T22:48:26.850194+00:00",
+    "training_observed_completed_updates": 1000,
+    "training_completed_durable_arms": 0,
+    "learner_exact_core_review_sha256": "3b8d59350994d15d10b2719c2ceac5199d266faa8f9d9302232047ae146aa1f6",
+    "learner_exact_transport_review_sha256": "0032ddce1ff767fb87f10ffbc3175a03ed35ff5febba6ab6ac17bfb64c7854b3",
+    "learner_failure_review_sha256": "c66a6fe48ac0c27312124bc94f8b1bac4aa2e31297cdf555cd170e30bc3242e8",
+    "training_retry_allowed": false
+  },
+  "historical_deployment_baseline_pilot_inputs_20261018_164215": {
+    "master_plan_id": "robomme-deployment-pilot-64c9fc3a7cbc48c3",
+    "master_sha256": "709406731926ab4bd88b5a625f8d0a4fda8ef5f5b05f557aa3cfad6a0e96384e",
+    "executed_revision": "85c3af5cd29750a7465ec2d0d7a6f90792c1b811",
+    "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278",
+    "released_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+    "public_summary_sha256": "843a37bd33ce272bbea763110a71032d5758a48d105491147dc7b75002445828",
+    "runtime_snapshot": "data/robomme-baseline-pilot-operator-20261018T164215Z.json",
+    "runtime_snapshot_sha256": "3271654da7eeb8b92988bb14d59d0c0b649a27985346a90f4b74f0f074a605f8",
+    "snapshot_retrieved_at": "2026-10-18T16:42:15.515400+00:00",
+    "source_observed_at_unix": 1792341413.5673122,
+    "closed_durable_cases": 16,
+    "independent_code_review_sha256": "f1f30d1d0b8d66ec53f3c91730ba13a202ab9e4e816bc65a7210c97cfa55f726",
+    "independent_exact_packet_review_sha256": "92293ff3c1241a39b1cc25e4b89d836f43a913be0c224a6d8c5fa07176da73f7",
+    "independent_transport_review_sha256": "e4ed2a00e0c48edbb79919850f8496784105fa9eec4ea1f08341525740167ef5",
+    "independent_closed_batch_reviews": {
+      "0": "a7514b73fa64e11b5c4a5ce4809d9c02b4b3f647b21239be8979eff06925ca11",
+      "1": "f45d9e42f5de7f08c0afa0464abb7600e826e7c849c81dcc77b66dfc6e2edcea"
+    },
+    "source_updates": 0,
+    "source_rollouts": 0,
+    "whole32_success_rate_generated": false,
+    "publication": "OPEN_UNMERGED_UNPUBLISHED",
+    "source_master_kind": "private immutable registered master; public plan_id and SHA only",
+    "public_summary_git_revision": "e73de3062ab9feb4a1473f45fe032bebcfa26730",
+    "scope": "Historical16/32 snapshot; summary path at this git revision only, not the current summary bytes"
+  },
+  "historical_deployment_baseline_pilot_inputs_20261018_170938": {
+    "master_plan_id": "robomme-deployment-pilot-64c9fc3a7cbc48c3",
+    "master_sha256": "709406731926ab4bd88b5a625f8d0a4fda8ef5f5b05f557aa3cfad6a0e96384e",
+    "executed_revision": "85c3af5cd29750a7465ec2d0d7a6f90792c1b811",
+    "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278",
+    "released_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+    "public_summary_sha256": "e7fc3393ef8c0ada22915455c6b4854e3713608b83803e9a76d1cd97a92cbf38",
+    "runtime_snapshot": "data/robomme-baseline-pilot-operator-complete-20261018T170836Z.json",
+    "runtime_snapshot_sha256": "ce54e1fb149d6c15dc62cc25f8330946055272a12889837003138c2c971c5f5c",
+    "source_observed_at_unix": 1792343316.7351255,
+    "closed_durable_cases": 32,
+    "independent_code_review_sha256": "f1f30d1d0b8d66ec53f3c91730ba13a202ab9e4e816bc65a7210c97cfa55f726",
+    "independent_exact_packet_review_sha256": "92293ff3c1241a39b1cc25e4b89d836f43a913be0c224a6d8c5fa07176da73f7",
+    "independent_transport_review_sha256": "e4ed2a00e0c48edbb79919850f8496784105fa9eec4ea1f08341525740167ef5",
+    "independent_closed_batch_reviews": {
+      "0": "a7514b73fa64e11b5c4a5ce4809d9c02b4b3f647b21239be8979eff06925ca11",
+      "1": "f45d9e42f5de7f08c0afa0464abb7600e826e7c849c81dcc77b66dfc6e2edcea",
+      "2": "4fc4db89e5a9a478d78aed8a225045f663e259f434a639bfba9806d91d8eed73",
+      "3": "2536e33fd9b804b78a06a94fd97c9b7ad024f9702352cc27b96348477d40cc2c"
+    },
+    "source_updates": 0,
+    "source_rollouts": 0,
+    "whole32_success_rate_generated": true,
+    "publication": "OPEN_UNMERGED_UNPUBLISHED",
+    "source_master_kind": "private immutable registered master; public plan_id and SHA only",
+    "released32_analysis_sha256": "bfabc4c3e1862c0ee108b5bd6a850947ba3643e72584675240cbe01074c753da",
+    "released32_owner_sha256": "5a66ae14904447046064556bd66ba710c01b6887dcd89497bf1912bd4ed76999",
+    "released32_readout_review_sha256": "a19055b9518c28065284276bbe10892d8a4ab5750e428ef4499959bad4ce88c5",
+    "released32_handoff_sha256": "ed6c91fe844a49ab9c22b68b18a7f5e0cdbe77ae5b8c31fb68f3d1956ea7594c",
+    "released32_complete_snapshot": {
+      "path": "data/robomme-baseline-pilot-operator-complete-20261018T170836Z.json",
+      "sha256": "ce54e1fb149d6c15dc62cc25f8330946055272a12889837003138c2c971c5f5c"
+    },
+    "source_code_revision": "38ff1d2f1e228b13faa52fb9e8eb3dd5faed3dd7",
+    "source_code_pr": "https://github.com/asimfish/robocore/pull/30",
+    "readout_generated_at": "2026-10-18T17:09:38.292924+00:00",
+    "last_verified": "2026-10-18T17:13:28.254243+00:00",
+    "source_values_as_of": "2026-10-18T17:09:38.292924+00:00",
+    "public_summary": "data/robomme-baseline-pilot-released32-summary-20261018T170938Z.json"
+  },
+  "generated_at": "2026-10-19T09:51:23.793920+00:00",
+  "deployment_baseline_pilot_historical_source48_inputs": {
+    "master_plan_id": "robomme-deployment-pilot-64c9fc3a7cbc48c3",
+    "master_sha256": "709406731926ab4bd88b5a625f8d0a4fda8ef5f5b05f557aa3cfad6a0e96384e",
+    "executed_revision": "85c3af5cd29750a7465ec2d0d7a6f90792c1b811",
+    "manifest_sha256": "5857b377fba852b33e2c4f587ad7f79582b8e1aea7259b4938ac03b3f7ab4278",
+    "released_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+    "public_summary_sha256": "0e5d772ed18f8486ec3353a934d8513ae6ad0cb552e412e33c63ce645cfee5ea",
+    "runtime_snapshot": "data/robomme-baseline-pilot-operator-complete-20261018T170836Z.json",
+    "runtime_snapshot_sha256": "ce54e1fb149d6c15dc62cc25f8330946055272a12889837003138c2c971c5f5c",
+    "source_observed_at_unix": 1792356029.9491622,
+    "closed_durable_cases": 32,
+    "independent_code_review_sha256": "f1f30d1d0b8d66ec53f3c91730ba13a202ab9e4e816bc65a7210c97cfa55f726",
+    "independent_exact_packet_review_sha256": "92293ff3c1241a39b1cc25e4b89d836f43a913be0c224a6d8c5fa07176da73f7",
+    "independent_transport_review_sha256": "e4ed2a00e0c48edbb79919850f8496784105fa9eec4ea1f08341525740167ef5",
+    "independent_closed_batch_reviews": {
+      "0": "a7514b73fa64e11b5c4a5ce4809d9c02b4b3f647b21239be8979eff06925ca11",
+      "1": "f45d9e42f5de7f08c0afa0464abb7600e826e7c849c81dcc77b66dfc6e2edcea",
+      "2": "4fc4db89e5a9a478d78aed8a225045f663e259f434a639bfba9806d91d8eed73",
+      "3": "2536e33fd9b804b78a06a94fd97c9b7ad024f9702352cc27b96348477d40cc2c"
+    },
+    "source_updates": 0,
+    "source_rollouts": 32,
+    "whole32_success_rate_generated": true,
+    "publication": "OPEN_UNMERGED_UNPUBLISHED",
+    "source_master_kind": "private immutable registered master; public plan_id and SHA only",
+    "released32_analysis_sha256": "bfabc4c3e1862c0ee108b5bd6a850947ba3643e72584675240cbe01074c753da",
+    "released32_owner_sha256": "5a66ae14904447046064556bd66ba710c01b6887dcd89497bf1912bd4ed76999",
+    "released32_readout_review_sha256": "a19055b9518c28065284276bbe10892d8a4ab5750e428ef4499959bad4ce88c5",
+    "released32_handoff_sha256": "ed6c91fe844a49ab9c22b68b18a7f5e0cdbe77ae5b8c31fb68f3d1956ea7594c",
+    "released32_complete_snapshot": {
+      "path": "data/robomme-baseline-pilot-operator-complete-20261018T170836Z.json",
+      "sha256": "ce54e1fb149d6c15dc62cc25f8330946055272a12889837003138c2c971c5f5c"
+    },
+    "source_code_revision": "38ff1d2f1e228b13faa52fb9e8eb3dd5faed3dd7",
+    "source_code_pr": "https://github.com/asimfish/robocore/pull/30",
+    "readout_generated_at": "2026-10-18T17:09:38.292924+00:00",
+    "last_verified": "2026-10-18T20:42:40.393039+00:00",
+    "source_values_as_of": "2026-10-18T20:40:29.949162+00:00",
+    "source_durable_cases": 48,
+    "source_phase": "CONTINUATION_EXECUTING",
+    "source_incident_snapshot": "data/robomme-pilot-source-transport-20261018T175153Z.json",
+    "source_incident_snapshot_sha256": "02da26cd1b3f3914f712f760f91f71b505d0239b1a558bebf752bf91e7d8fc9c",
+    "source_preserved_snapshot": "data/robomme-pilot-source-preserved8-20261018T181501Z.json",
+    "source_preserved_snapshot_sha256": "486f481bda04f46f1bc16bf27f4dbf4fe0c98968f29b517e2990894068f14680",
+    "source_preservation_scope": "historical parent8 data-only; original stopped unchanged; new continuation separately registered",
+    "corpus_code_revision": "dd8595c6736a37c8f784a7b8891231222dab6d55",
+    "corpus_code_review_sha256": "1108600c3df759e5fcd40c98024ebd92ed2e9735ba280a74fc27869d682cff66",
+    "source_preserved_raw_review_sha256": "524f41f4adc2db98bfaafbc2ae50ffaea14093ab140588044b44bc87d802cd6d",
+    "released_runtime_observed_at_unix": 1792343316.7351255,
+    "original_source_transport_observed_at_unix": 1792345842.081339,
+    "source_observed_at_scope": "new continuation; only closed48 counted; batch6 active excluded",
+    "source_continuation_snapshot": "data/robomme-pilot-source-continuation48-20261018T204029Z.json",
+    "source_continuation_snapshot_sha256": "30b180198d5aafa04a444d977376a40a8630a7b26a9d9f779266a3df927e0fcb",
+    "source_continuation_revision": "a754e3cc7f77f0a16969fbe1fe6407f0a9f5377b",
+    "source_batch1_raw_review_sha256": "0b789289bc2c46a6d7e56bba6cbc14c157b8fc46197c3ab2a4316da255514e2e",
+    "source_incremental_raw_reviews": {
+      "0": "524f41f4adc2db98bfaafbc2ae50ffaea14093ab140588044b44bc87d802cd6d",
+      "1": "0b789289bc2c46a6d7e56bba6cbc14c157b8fc46197c3ab2a4316da255514e2e",
+      "2": "cc9433112f5095641591024cb7ab59924f4cf2b2c99149096c976d03df7bcf65",
+      "3": "bd7cc83483e45752ea4ddf24df98ae18d4b8cb99a6482593c8db5b02de10618b",
+      "4": "e23baf3baa4855a3742b2f40a5bde9a3b51e4d16be0f624a490b403eb4ed4a67",
+      "5": "cf2f69326b64e2e6649280e5b9fbf3600fb60a1b61d9f7d61f1759ffba1e1f3a"
+    }
   }
 }

@@ -1,0 +1,100 @@
+{
+  "schema": "robomme-pilot-source-continuation-public-v1",
+  "observed_at": "2026-10-18T19:19:07.972105+00:00",
+  "last_verified": "2026-10-18T19:23:27.954746+00:00",
+  "status": "EXECUTING",
+  "completed_durable_cases": 16,
+  "source_registered_cases": 62,
+  "active_batch": 2,
+  "active_batch_receipts_not_counted": true,
+  "batches": {
+    "0": "COMPLETE_PARENT_DURABLE",
+    "1": "COMPLETE_DURABLE",
+    "2": "SUPERVISOR_FORKED",
+    "3": "NOT_RUN",
+    "4": "NOT_RUN",
+    "5": "NOT_RUN",
+    "6": "NOT_RUN",
+    "7": "NOT_RUN"
+  },
+  "continuation_code_revision": "a754e3cc7f77f0a16969fbe1fe6407f0a9f5377b",
+  "continuation_config_sha256": "38476b0cdc340b42d3b91f5a1ec31c6417fed4c1f97c7d203e6ec5ffb5b819f8",
+  "continuation_review_sha256": "2b1025e683ffef13353421bbdcc720878cb44a589052c9204505033ce4fbc971",
+  "parent8_raw_review_sha256": "524f41f4adc2db98bfaafbc2ae50ffaea14093ab140588044b44bc87d802cd6d",
+  "batch1_raw_review_sha256": "0b789289bc2c46a6d7e56bba6cbc14c157b8fc46197c3ab2a4316da255514e2e",
+  "batch1_cases": {
+    "N": 8,
+    "indices": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "classifications": {
+      "SUCCESS": 4,
+      "OFFICIAL_TERMINAL_FAILURE": 3,
+      "CONTROL_BUDGET_NONSUCCESS": 1
+    },
+    "per_task": {
+      "PatternLock": {
+        "N": 4,
+        "success": 4
+      },
+      "PickHighlight": {
+        "N": 4,
+        "success": 0
+      }
+    },
+    "unique_sessions": 8,
+    "all_worker_returncodes": 0,
+    "infra_incomplete": 0
+  },
+  "batch1_data": {
+    "materialized_native_rows": 126,
+    "D_I": 6,
+    "D_R": 120,
+    "target_occurrences": 2520,
+    "distinct_target_controls": 2088,
+    "logical_NPZ_fields_recomputed": 1512,
+    "lossless_public_H5_frames_rehashed": 2506,
+    "program_arrays": 142,
+    "rejections": {
+      "INSUFFICIENT_ACTUAL_CONTROLS": 9,
+      "MIXED_ORIGIN": 7
+    },
+    "partial_query_note": "PatternLock source6 ended after17 actual expert controls; no padded D_I20 target. PatternLock source5 terminal at17 controls has no eligible complete20 target. All8 episodes retained."
+  },
+  "batch1_costs": {
+    "task_controls": 2259,
+    "task_forecasts": 142,
+    "queries": 7,
+    "expert_controls": 137,
+    "native_resets": 16,
+    "setup_controls": 850,
+    "setup_seconds": 238.9378548352979,
+    "student_controls": 2122,
+    "qualification_forecasts": 13,
+    "services": 1,
+    "source_attempts": 8,
+    "worker_recorded_updates": 0,
+    "worker_recorded_backward_calls": 0,
+    "source_owned_status_seconds": 1366.000824179966,
+    "ledger_source_cost_boundary_seconds": 1365.9977616891265,
+    "copy_seconds": 396.9219384889984,
+    "local_preservation_total_seconds": 405.20254063099856,
+    "reserved_two_device_hours_status_boundary": 0.7588893467666478
+  },
+  "closed16_data": {
+    "D_I": 13,
+    "D_R": 172,
+    "target_occurrences": 3700,
+    "distinct_target_controls": 3116
+  },
+  "scope": "Only16/62 NAS-durable and independently reviewed; no full corpus/draw freeze or pilot optimizer updates. Source hybrid outcomes are not a help-effect or absorption estimate.",
+  "original_operator": "STOPPED_INFRA_NO_RETRY preserved; new registered continuation reuses completed8 and never reruns them",
+  "publication": "OPEN_UNMERGED_UNPUBLISHED"
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "robomme-pilot-source-continuation-public-v1",
+  "observed_at": "2026-10-18T19:58:36.461359+00:00",
+  "last_verified": "2026-10-18T19:59:51.738860+00:00",
+  "status": "EXECUTING",
+  "completed_durable_cases": 32,
+  "source_registered_cases": 62,
+  "active_batch": 4,
+  "active_batch_receipts_not_counted": true,
+  "batches": {
+    "0": "COMPLETE_PARENT_DURABLE",
+    "1": "COMPLETE_DURABLE",
+    "2": "COMPLETE_DURABLE",
+    "3": "COMPLETE_DURABLE",
+    "4": "SUPERVISOR_FORKED",
+    "5": "NOT_RUN",
+    "6": "NOT_RUN",
+    "7": "NOT_RUN"
+  },
+  "continuation_code_revision": "a754e3cc7f77f0a16969fbe1fe6407f0a9f5377b",
+  "continuation_config_sha256": "38476b0cdc340b42d3b91f5a1ec31c6417fed4c1f97c7d203e6ec5ffb5b819f8",
+  "incremental_raw_reviews": {
+    "0": "524f41f4adc2db98bfaafbc2ae50ffaea14093ab140588044b44bc87d802cd6d",
+    "1": "0b789289bc2c46a6d7e56bba6cbc14c157b8fc46197c3ab2a4316da255514e2e",
+    "2": "cc9433112f5095641591024cb7ab59924f4cf2b2c99149096c976d03df7bcf65",
+    "3": "bd7cc83483e45752ea4ddf24df98ae18d4b8cb99a6482593c8db5b02de10618b"
+  },
+  "closed32_data": {
+    "D_I": 28,
+    "D_R": 296,
+    "target_occurrences": 6480,
+    "distinct_target_controls": 5524
+  },
+  "closed32_costs": {
+    "task_attempts": 32,
+    "services": 4,
+    "qualification_forecasts": 52,
+    "task_forecasts": 390,
+    "task_controls": 6117,
+    "queries": 29,
+    "expert_controls": 577,
+    "native_resets": 64,
+    "setup_controls": 3800,
+    "source_seconds": 4489.676767495461
+  },
+  "scope": "Only32/62 NAS-durable and independently verified by disjoint incremental reviews; no full corpus/draw freeze or pilot updates. Source hybrid outcomes are not the released32 development reference or a help/absorption effect.",
+  "publication": "OPEN_UNMERGED_UNPUBLISHED"
+}

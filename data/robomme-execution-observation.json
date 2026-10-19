@@ -1,0 +1,1614 @@
+{
+  "schema": "robomme-execution-observation-v1",
+  "observed_at": "2026-10-18T01:07:27.905173+00:00",
+  "last_verified": "2026-10-18T01:12:44.639022+00:00",
+  "status": "INFRASTRUCTURE_INTERRUPTED_NO_COMPLETE_SCIENTIFIC_CONCLUSION",
+  "reason_code": "WORKER_EXIT1_BATCH_DRAIN_REJECTION_AND_SERVICE_CLEANUP_TIMEOUT",
+  "reason": "Supervisor exited;old coordinator RUNNING is stale. Remote worker58 exited1;batchguard rejected incomplete drain;cleanup wait exceeded60s. Local GPU status query subsequently timed out20s. Underlying cause UNKNOWN;no task failure reclassified or completed case rerun.",
+  "plan_id": "robomme-absorption-eval-8eeead0ededca5c0",
+  "plan_sha256": "6c7470da67eb6ef724760fd9e948ea155e6733d28cd0c5326e5daaa913809ba7",
+  "coordinator_source_revision": "669344a350b552d1d326c0b806c4249263c24e77",
+  "research_snapshot_revision": "b3c1473c2e8d098d8dc3e237974d2c8a76507385",
+  "coverage": {
+    "planned_model_cells": 14,
+    "archived_complete_model_cells": 4,
+    "archived_complete_episodes": 458,
+    "planned_episodes": 1400,
+    "coverage_scope": "Unique durably validated and archived cases only;currentbatch provisional receipts not queried here and not counted. Source/dev pilots excluded.",
+    "remote_complete_model_cells": 4,
+    "remote_complete_episodes": null,
+    "remote_infrastructure_aborted_episodes": 1,
+    "local_partial_completed_case_receipts": 58,
+    "remote_remaining_unclosed_episodes": 942,
+    "partial_model_cells": 1,
+    "unstarted_model_cells": 9,
+    "archived_complete_cell_episodes": 400,
+    "durable_partial_completed_episodes": 58,
+    "remote_reported_complete_episodes": 458,
+    "remote_reported_new_complete_receipts": 0,
+    "new_receipts_full_raw_guard": "PREVIOUSLY_PROVISIONAL_PH_VAL28_PASSED_FROZEN_GUARD_84_ARTIFACTS_NOW_DURABLE",
+    "remote_reported_unfinished_episodes": 942,
+    "infra_count_scope": "One worker exit1 in latest batch;not a unique scientific episode;historical infra receipts retained.",
+    "observed_at": "2026-10-18T01:07:27.905173+00:00"
+  },
+  "science": {
+    "analysis": "ABSENT",
+    "verification": "ABSENT",
+    "final_report": "ABSENT",
+    "method_gain": "TWO_MATCHED_SEED7_DESCRIPTIVE_NEGATIVE_COMPARISONS;SIX_SEED_CONCLUSION_PENDING",
+    "first_pair_status": "COMPLETE_SINGLE_SEED_DESCRIPTIVE_COMPARISON",
+    "first_pair_verification": "INDEPENDENT_PASS",
+    "first_pair_public_result": "data/robomme-first-pair-seed7.json",
+    "recent_pair_public_result": "data/robomme-recent-pair-seed7.json"
+  },
+  "retained_initial_reference": {
+    "PatternLock": {
+      "successes": 32,
+      "episodes": 50
+    },
+    "PickHighlight": {
+      "successes": 10,
+      "episodes": 50
+    },
+    "task_balanced_success": 0.42,
+    "scope": "fixed released checkpoint and inference seed; two tasks only"
+  },
+  "supervision": "Datedread-only snapshot,notlive. Remote newreceipts are provisional until full raw guard and archive. Original model bytes,scientificplan,budget,case list unchanged;readretry does not prove WebSocket rootcause fixed.",
+  "source_inventory_observed_at": "2026-10-17T00:25:49.039360+00:00",
+  "source_inventory_sha256": "a9e9f79c056bbb84bc1c75f42932a06f641d249ee8956b6c076095659727f9d2",
+  "durable_export_index_sha256": "e6c4e1736c05f9aef172bc201261a447fdb080933542a620a01748ffc27b7e8a",
+  "training": {
+    "completed_models": 12,
+    "planned_models": 12,
+    "actual_optimizer_updates": 120000,
+    "models": [
+      {
+        "view": "full_history_intervention_bc",
+        "seed": 7,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "607e1f3279d4ba24be005367c683d27db32bf555d3434c97de9a8135fcd8a175",
+        "archive_sha256": "6f09635b3b5a9d2dcfc13520d8f387eb2b6ff2ac13843a98f67093e35e7e05cb",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T05:42:21.241273+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "full_history_intervention_bc",
+        "seed": 17,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "60a51b47a2e95cb8e37e2e45cad0eff68055b551c7c242254921521c7a1ee1c9",
+        "archive_sha256": "c9873322ba0810c8637de1e43d7a6101eb5beb6f15720964244b237babf2d058",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T06:31:40.150243+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "full_history_intervention_bc",
+        "seed": 27,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "035822f91d5f1fce158988f741cdc801f43ff289ef8d95fad0c0539112673888",
+        "archive_sha256": "77414be527a7cd6ef8ef3a23eac186b2e95e2e0d2c866d8a4d55f3425f18d491",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T07:17:13.830828+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "full_history_intervention_bc",
+        "seed": 37,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "3ec5d57f0c2f309489c4271fa181fc4cb06c953a132b9656ba53ea89ae33a540",
+        "archive_sha256": "d237d011fbebe793b53ea9d78e192c468bf6503fb956d6cafcce7ccdd786954c",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T08:03:13.582453+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "full_history_intervention_bc",
+        "seed": 47,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "e7e636468be53e04bf5d119d7173f88a2101abb87d74b5b1d48a6d32a29ddee7",
+        "archive_sha256": "9a92b330c75dd74b7886e7925a445f59a31867ba526160746a2a96a36f954524",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T08:49:42.957793+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "full_history_intervention_bc",
+        "seed": 57,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "19ec08625415ce20bb7a1d1d700fa51ffc1e53193f4968d35e9ed9b42054ee50",
+        "archive_sha256": "83f782f5ff482c1ca95713d1b8a268a8f26fac013e1d9b292dfe495b77e89b26",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T09:36:11.514123+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "recent_history_intervention_bc",
+        "seed": 7,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "a874cabb324f702215ec0a734c3cd00d23b701ca84093dd597fc11777c4f888c",
+        "archive_sha256": "c7b7dc0a74e23e3a5cfc78f0a71d28fffa282e0e0ceaf58f2a1993f73ed90470",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T05:42:12.834112+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "recent_history_intervention_bc",
+        "seed": 17,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "459624ecb78e56f2859ce4a3ede6b14bf9e406737298e8125d79a8682f8aa8f4",
+        "archive_sha256": "be902feb2b64a98bb789a4d082cd827984f49bd7994eef255fb5b6876921b67f",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T06:31:51.566224+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "recent_history_intervention_bc",
+        "seed": 27,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "47b1ea5e220b1fa21bc85cd478a84e617914ed1e5ad2131a5e841a7c0880fc6d",
+        "archive_sha256": "8e43669a732e65e78561232307bda82bfb971b033723487b73a1371f673e1bf1",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T07:17:38.383447+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "recent_history_intervention_bc",
+        "seed": 37,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "6b128c390c0db57fe32d76aa510e74c74693992e0fe5b3fa4f89eea1a4eb1048",
+        "archive_sha256": "29b57d274e0577d046fc55f9d072f553b17c2a477d12e2e82d4e7f0e912b56f3",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T08:03:22.376366+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "recent_history_intervention_bc",
+        "seed": 47,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "f21d73fae2d69a9bd242e8dd1dd689162b0426b1cb1bcd28c723cfdc3b23c565",
+        "archive_sha256": "7e3a6df29660816995ff8630540dc6ec1e0a0856f26e5fbb5c23a152384df9e9",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T08:49:52.590994+00:00",
+        "optimizer_resume": false
+      },
+      {
+        "view": "recent_history_intervention_bc",
+        "seed": 57,
+        "actual_updates": 10000,
+        "updates_contiguous": true,
+        "finite_metrics": true,
+        "training_receipt_sha256": "5e0b802368c5d9a1295e002807e7544f95499ebdb0eaf7d0c37f5dfa8713c560",
+        "archive_sha256": "1e1139856a66b2b3fab0addb524ba8d25eb2e1aa0ed5f69c51c20268f41ccd32",
+        "export_storage": "LOCAL_NAS_RECONCILED_AND_VERIFIED",
+        "original_ram_expires_at": "2026-10-18T09:36:19.942805+00:00",
+        "optimizer_resume": false
+      }
+    ],
+    "scope": "update traces/exports; no efficacy conclusion"
+  },
+  "evaluation_cells": [
+    {
+      "cell": "before-full_history_intervention_bc",
+      "planned_cases": 100,
+      "completed_cases": 100,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 0,
+      "completion_scope": "DURABLE_VERIFIED_ONLY",
+      "remaining_unclosed_cases": 0
+    },
+    {
+      "cell": "before-recent_history_intervention_bc",
+      "planned_cases": 100,
+      "completed_cases": 100,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 0,
+      "remaining_unclosed_cases": 0,
+      "parent_infrastructure_abort_attempts": 7,
+      "new_infrastructure_aborts": 0,
+      "reused_completed": 77,
+      "new_completed": 23,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-7",
+      "planned_cases": 100,
+      "completed_cases": 100,
+      "infrastructure_aborted_cases": 0,
+      "remaining_unclosed_cases": 0,
+      "not_started_cases": 0,
+      "parent_infrastructure_abort_attempts": 1,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-17",
+      "planned_cases": 100,
+      "completed_cases": 58,
+      "remaining_unclosed_cases": 42,
+      "completion_scope": "DURABLE_VERIFIED_ONLY",
+      "historical_active_cases_at_1601": 0,
+      "historical_not_started_cases_at_1601": 92,
+      "historical_infrastructure_abort_attempts_at_1601": 1,
+      "verified_remaining_unclosed_cases": 42,
+      "not_started_cases": null,
+      "active_cases": 0,
+      "historical_infrastructure_aborted_attempts": 1,
+      "infrastructure_aborted_cases": 1,
+      "scope": "58uniquecompleteoutcomes;oneinfrastructureattemptfornextcasepreserved,notscientificfailure;allremaining42unclosed"
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-27",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-37",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-47",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-57",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-7",
+      "planned_cases": 100,
+      "completed_cases": 100,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 0,
+      "active_cases": 0,
+      "remaining_unclosed_cases": 0,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-17",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-27",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-37",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-47",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-57",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100,
+      "completion_scope": "DURABLE_VERIFIED_ONLY"
+    }
+  ],
+  "recovery": {
+    "status": "RESUMED_REGISTERED_CASE_BATCHES",
+    "pull_request": "https://github.com/asimfish/robocore/pull/7",
+    "reviewed_commit": "262876882b488eb9c5a8561df4160a5ebd863d80",
+    "supervisor_status": "RUNNING",
+    "phase": "EVALUATING_REGISTERED_CASES",
+    "observed_at": "2026-10-17T11:16:05.740989+00:00",
+    "simulator_work_currently_active": true,
+    "exports_durable": 12,
+    "shared_reference_800": "UNTOUCHED_SEPARATE_STUDY",
+    "worker_retries": "Onlyexplicitinfra-continuation;completeincludingtaskfailuresneverrerun",
+    "root_cause": "UNKNOWN",
+    "current_cell": "after-recent_history_intervention_bc-seed-7",
+    "current_stage": "EVALUATING_REGISTERED_CASES"
+  },
+  "recovery_coordinator_record_sha256": "d22dc14dbb758f5ea5552e29c87e843a9ab5f892a361086f8bbda7f14dc2bc48",
+  "second_abort_evidence_sha256": "db4aa2491f241fa29884c68d75fe671f83aa98dbbca5bd7bb669d158e104b46c",
+  "incidents": [
+    {
+      "ordinal": 1,
+      "reason": "SSH_RESULT_READ_255",
+      "status": "RETAINED_ORIGINAL_RUN2"
+    },
+    {
+      "ordinal": 2,
+      "reason": "WEBSOCKET_KEEPALIVE_TIMEOUT",
+      "status": "RETAINED_CONTINUATION_RUN1",
+      "complete_recent_cases": 77,
+      "newly_completed_recent_cases": 33,
+      "infrastructure_aborted_attempts": 7
+    },
+    {
+      "ordinal": 3,
+      "reason": "CONNECTION_LOST_AND_SERVICE_EXIT_CAUSE_UNCONFIRMED",
+      "status": "RETAINED_CONTINUATION_RUN2",
+      "complete_trained_seed7_cases": 87,
+      "infrastructure_aborted_attempts": 1,
+      "unstarted_cases": 12,
+      "resolution": "87complete retained;13unclosed resumed under reviewed74ac1e9;0newinfra;firsttrained100complete;originalabort kept"
+    },
+    {
+      "ordinal": 4,
+      "reason": "CONNECTION_RESET_ERRNO104_WITH_OWNED_PROCESSES_EXIT;ROOT_CAUSE_UNKNOWN",
+      "status": "RETAINED_CASE_BATCHES_RUN1",
+      "case": "PickHighlight-val-003",
+      "view": "full_history_intervention_bc",
+      "seed": 17,
+      "control_steps": 1232,
+      "success": null,
+      "completed_cases_preserved": 7,
+      "independent_review_sha256": "5d5e81bd12ce01b45fc2a1280fcb060e22a912e7282fa17bf41342d739df2d71",
+      "preservation_receipt_sha256": "7a7981aa73548d40584ddac6fffd3292319db02f5c0e7c298cfb7748076c6ca1"
+    }
+  ],
+  "historical_local_replica_snapshot_sha256": "1a42844081b7e757acde5610cf3e35db1413bdad452fe03a99fc5b0e22bf708a",
+  "historical_local_replica_snapshot_note": "Earlier 00:45 snapshot; superseded by all-12 reconciliation.",
+  "local_replica_snapshot_sha256": "34df7447fe7ef57ef068326afba28ab3250740239ac6214d25497e84beebd2e9",
+  "local_replica_snapshot_scope": "ALL_TWELVE_LOCAL_EXACT_REPLICAS_VERIFIED; preserves prior original copy interruption receipts; no optimizer state",
+  "active_continuation": {
+    "observed_at": "2026-10-18T01:03:32.242121+00:00",
+    "status": "INTERRUPTED_NO_ACTIVE_SUPERVISOR",
+    "prior_execution_revision": "669344a350b552d1d326c0b806c4249263c24e77",
+    "reason": "Workerexit1/incompletebatch;ownedservicecleanup60stimeout;assignedGPUquerytimeout",
+    "resume_status": "NOT_RESUMED_NO_COMPLETED_CASE_RERUN"
+  },
+  "historical_original_coordinator_record_sha256": "a692b261f166ae5ef0fdbc75b5498e76d77b5e3d77e005e1588d2bb750b7dbfd",
+  "historical_third_abort_coordinator_sha256": "e758168b0563ae521e6987ac2dbfdcfe5018bc86a8155104fec0c53996c24552",
+  "first_pair_result": {
+    "training_seed": 7,
+    "tasks": [
+      {
+        "task": "PatternLock",
+        "cases": 50,
+        "before_successes": 32,
+        "after_successes": 14,
+        "delta_percentage_points": -36.0,
+        "failure_to_success": [
+          11,
+          49
+        ],
+        "success_to_failure": [
+          1,
+          2,
+          4,
+          9,
+          12,
+          13,
+          14,
+          16,
+          18,
+          21,
+          22,
+          24,
+          25,
+          27,
+          33,
+          34,
+          36,
+          38,
+          41,
+          45
+        ]
+      },
+      {
+        "task": "PickHighlight",
+        "cases": 50,
+        "before_successes": 10,
+        "after_successes": 0,
+        "delta_percentage_points": -20.0,
+        "failure_to_success": [],
+        "success_to_failure": [
+          0,
+          8,
+          13,
+          28,
+          33,
+          38,
+          42,
+          44,
+          45,
+          46
+        ]
+      },
+      {
+        "task": "ALL",
+        "cases": 100,
+        "before_successes": 42,
+        "after_successes": 14,
+        "delta_percentage_points": -28.0,
+        "failure_to_success": [
+          [
+            "PatternLock",
+            11
+          ],
+          [
+            "PatternLock",
+            49
+          ]
+        ],
+        "success_to_failure": [
+          [
+            "PatternLock",
+            1
+          ],
+          [
+            "PatternLock",
+            2
+          ],
+          [
+            "PatternLock",
+            4
+          ],
+          [
+            "PatternLock",
+            9
+          ],
+          [
+            "PatternLock",
+            12
+          ],
+          [
+            "PatternLock",
+            13
+          ],
+          [
+            "PatternLock",
+            14
+          ],
+          [
+            "PatternLock",
+            16
+          ],
+          [
+            "PatternLock",
+            18
+          ],
+          [
+            "PatternLock",
+            21
+          ],
+          [
+            "PatternLock",
+            22
+          ],
+          [
+            "PatternLock",
+            24
+          ],
+          [
+            "PatternLock",
+            25
+          ],
+          [
+            "PatternLock",
+            27
+          ],
+          [
+            "PatternLock",
+            33
+          ],
+          [
+            "PatternLock",
+            34
+          ],
+          [
+            "PatternLock",
+            36
+          ],
+          [
+            "PatternLock",
+            38
+          ],
+          [
+            "PatternLock",
+            41
+          ],
+          [
+            "PatternLock",
+            45
+          ],
+          [
+            "PickHighlight",
+            0
+          ],
+          [
+            "PickHighlight",
+            8
+          ],
+          [
+            "PickHighlight",
+            13
+          ],
+          [
+            "PickHighlight",
+            28
+          ],
+          [
+            "PickHighlight",
+            33
+          ],
+          [
+            "PickHighlight",
+            38
+          ],
+          [
+            "PickHighlight",
+            42
+          ],
+          [
+            "PickHighlight",
+            44
+          ],
+          [
+            "PickHighlight",
+            45
+          ],
+          [
+            "PickHighlight",
+            46
+          ]
+        ]
+      }
+    ],
+    "verification_receipt_sha256": "18afa7fe42884cdd86fa62bd5f12c5136cef1d6e888fa1b63c5bb59a03360617",
+    "private_report_sha256": "268d9007ffa78f05aaf8850754a1bf8ae57a9b6d10dda0b9e475fc219853e180",
+    "public_summary": "data/robomme-first-pair-seed7.json"
+  },
+  "source_only_diagnostic": {
+    "status": "PASS_BOUNDED_ACTION_AND_CURRENT_STATE_CONVENTION",
+    "train_cases": 8,
+    "unique_correction_chunks": 120,
+    "materialized_batches_checked": 240,
+    "forward_action_and_state_exact": true,
+    "inverse_action_max_error": 1.4901161193847656e-08,
+    "review_sha256": "35f631f09957f94a1e834eb7493c355148ae90dc7214d427f8e625a9eb42d7c4",
+    "root_cause_of_negative_gain": "UNKNOWN",
+    "expert_chunk_quality": "Original120footersremainnonterminal20controlfragments;fourfixedfragmentsnowhavelaterindependentlyverifiedprivilegedterminalcontinuations,not20stepstandalonesuccessorstudenttakeover.",
+    "limits": [
+      "No model/GPU/visionfeature recomputation or development/val rollouts",
+      "Registered wholehistory binding retained;entireh5filesnotrehashed",
+      "Doesnot prove labeloptimality or continuation success;forgetting and dataquality remain hypotheses"
+    ]
+  },
+  "recovery_execution": {
+    "pr": "https://github.com/asimfish/robocore/pull/7",
+    "head": "262876882b488eb9c5a8561df4160a5ebd863d80",
+    "independent_review_sha256": "9740d3fa8a592d6e129de16a769e2548cb22ad905f73089917e2b9d5c71d7613",
+    "max_new_cases_per_service": 25,
+    "execution_config_sha256": "6c1e70a98dddcb7ca5c2a08d8b86f5f5b3df3367b0b6ee3f9715230147137145",
+    "scope": "Synchronousworkers\u2192artifactarchive\u2192service.wait\u2192nextmanifest;mitigationnotrootcausefix",
+    "new_infra_aborts": 1,
+    "observed_recent_before": "100complete;77reused+23new;0newinfra;independentNASartifactverificationPASS",
+    "current_cell": "after-full_history_intervention_bc-seed-17",
+    "current_stage": "PREPARING_CONTINUATION",
+    "observed_at": "2026-10-17T16:01:57.886642+00:00",
+    "phase": "INFRASTRUCTURE_ABORTED"
+  },
+  "historical_complete_cell_pause": {
+    "observed_at": "2026-10-17T08:20:18.391884+00:00",
+    "recovery": {
+      "status": "PAUSED_AFTER_FIRST_COMPLETE_TRAINED_CELL",
+      "pull_request": "https://github.com/asimfish/robocore/pull/4",
+      "original_run2_overwritten": false,
+      "worker_retries": "no automatic worker retry; only explicit continuation of unfinished registered cases",
+      "exports_durable": 12,
+      "local_export_replication": "ALL_TWELVE_LOCAL_EXACT_REPLICAS_VERIFIED",
+      "shared_reference_800": "UNTOUCHED_SEPARATE_STUDY",
+      "ssh_connectivity": "tianyiyun-30109 exit0 in current read-only observation; failures remain logged",
+      "reviewed_commit": "74ac1e91c3a2b55a2429075f62e9d654c221f9c1",
+      "supervisor_status": "PAUSED_AFTER_REGISTERED_CELL_NO_COMPLETE_STUDY_CONCLUSION",
+      "phase": "SOURCE_DEVELOPMENT_DIAGNOSIS_NO_VAL_TUNING",
+      "local_replicas_reverified": 12,
+      "original_runtime_directory_error": "Initial all-reuse packaging did not start because launch-log parent was absent; explicit evidence-backed submission after creating task directory; original receipt retained",
+      "independent_verifier": "SIX_SEED_NOT_RUN_INCOMPLETE;FIRST_PAIR_INDEPENDENT_PASS",
+      "reporter": "FIRST_PAIR_COMPLETE;SIX_SEED_REPORT_NOT_RUN",
+      "simulator_work_ever_started": true,
+      "simulator_work_currently_active": false,
+      "runtime_observation_pull_request": "https://github.com/asimfish/robocore/pull/5",
+      "single_lane_simulator_gpu": "0",
+      "physical_inference_gpu": "GPU-828bb172-121c-cc55-7f4f-ef09a2bd7599",
+      "bounded_pause_pull_request": "https://github.com/asimfish/robocore/pull/6",
+      "first_pair_verification": "PASS"
+    },
+    "continuation": {
+      "revision": "74ac1e91c3a2b55a2429075f62e9d654c221f9c1",
+      "status": "PAUSED_AFTER_REGISTERED_CELL_NO_COMPLETE_STUDY_CONCLUSION",
+      "coordinator_record_sha256": "3ba80d59c9d53ed68721514e4d2bcd84b7e2dd011a7bdccab4dffb15ae12bb46",
+      "execution_config_sha256": "91fa68aace48c3f12dc223c245ece5a2d8edce97270f53f2e5ae0f0258b1b3f6",
+      "independent_review_sha256": "3f2aeca1220a3f973516dca8564ff5d32cedcb472068d7bc94c50cc4dfe78f37",
+      "native_qualification_sha256": "4bbdc1d081dabae0632f33aa20baf4b9cad8b40722ca6adf0d5b077d463cd97c",
+      "observed_at": "2026-10-17T08:20:18.391884+00:00",
+      "first_trained_cell": "after-full_history_intervention_bc-seed-7",
+      "first_trained_cell_completed": 100,
+      "first_trained_cell_infrastructure_aborted": 0,
+      "parent_infrastructure_aborted_attempts": 1,
+      "reused_completed": 87,
+      "pending_at_start": 13,
+      "first_pair_status": "COMPLETE_SINGLE_SEED_DESCRIPTIVE_COMPARISON",
+      "output_storage": "DURABLE_NAS_SHA_VERIFIED_RAW_ARCHIVES;LOCAL_STAGING_RETAINED",
+      "third_abort_preservation_receipt_sha256": "ae013e35bf83d1577a5792a15799ca8c01be16890cf414226a70d572a1616b67",
+      "progress_snapshot_sha256": "76d433ffd56b6b14a99f1150dd48230916cb5a88b244a4074d23e2905a9d044d",
+      "change_scope": "Execution scheduling/staging only;scientific plan unchanged",
+      "after_result_sha256": "236f4250ef8885804368d27ad881f30a01af3a24e1bc5dc377b15cdf7e07031c",
+      "durable_provenance_sha256": "ed15087fc162db4f251d23aee5caf325463df0edc392add0fc63eb0b31ee1472"
+    },
+    "scope": "Historical74ac1e9complete-cell pause;superseded bycurrent2628768 execution"
+  },
+  "recent_before_result": {
+    "PatternLock": {
+      "successes": 9,
+      "episodes": 50
+    },
+    "PickHighlight": {
+      "successes": 3,
+      "episodes": 50
+    },
+    "successes": 12,
+    "episodes": 100,
+    "verification": "INDEPENDENT_PASS",
+    "result_sha256": "f31cdfdb3f3eb95775bf8e5769b74cfd6ed2df0e2d921f9ff8857964e6f60b22",
+    "review_sha256": "91219299b502a54bfc4777b1e98cce4f395895350c5913a9d64524502a266303",
+    "durable_tar_sha256": "29f40b90ade29afe05feaf5902086c5e3c57dfeb4b4bb6c0f28ac9aacf3e5d5c",
+    "scope": "Matchedinitialrecent32frameview;notanabsorptiongain,notreplacementforfull42/100baseline."
+  },
+  "source_action_diagnostic": {
+    "status": "COMPLETE32_INDEPENDENT_PASS_OFFLINE_ONLY",
+    "public_summary": "data/robomme-source-action-diagnostic.json",
+    "review_sha256": "a088ab135e501d695ff78221cde91e541775bd8d36cbf0124e970e6bc4197aef",
+    "terminal_success_claim": false,
+    "root_cause": "UNKNOWN"
+  },
+  "source_expert_continuation_diagnostic": {
+    "public_summary": "data/robomme-source-expert-continuation-diagnostic.json",
+    "independent_review_sha256": "a902322046cda29347dd2f2ea8ccef329ece7cdc06f22ef5a79c6a5e8a2f5fe0",
+    "fixed_source_queries": 4,
+    "observed_privileged_terminal_successes": 4,
+    "student_takeover": "COMPLETE_FOUR_FIXED_SOURCE_DIAGNOSTICS",
+    "all120_verified": false,
+    "root_cause": "UNKNOWN",
+    "detail": "data/robomme-source-expert-continuation-diagnostic.json"
+  },
+  "source_development_autonomous_diagnostic": {
+    "schema": "robomme-source-dev-alignment-public-v1",
+    "observed_at": "2026-10-17T13:10:43.175862+00:00",
+    "last_verified": "2026-10-17T13:14:01.561004+00:00",
+    "status": "INDEPENDENT_PASS_DESCRIPTIVE_SOURCE_DEV_ONLY",
+    "plan_id": "robomme-source-dev-diagnostic-107184e71449977a",
+    "plan_sha256": "1b37747fb6dff5e969698640ce8d4ba57d95d728092c532a58364ce811e24713",
+    "worker_revision": "1911da4ea3b234c214af8f91267146ca77281b91",
+    "aligned_report_sha256": "77ce167926b2b90306c342327d3760dc116cba30490cd5834515cf7dde576fa0",
+    "independent_review_sha256": "d25c3b246c7d07ca70c778489837314ca8fbc13ec00b7321aeec34bf71d7fba1",
+    "coverage": {
+      "cached_source_predictions": 32,
+      "closed_loop_rollouts": 32,
+      "unique_model_sessions": 32,
+      "cases_per_view_model": 8,
+      "source_cases_per_view_model": 4,
+      "development_cases_per_view_model": 4,
+      "official_environment_terminal_cases": 22,
+      "nonterminal_budget_exhausted_cases": 10,
+      "main_validation_cases": 0
+    },
+    "comparisons": [
+      {
+        "view": "full",
+        "cases": 8,
+        "before_successes": 7,
+        "after_successes": 3,
+        "paired_gain_percentage_points": -50.0,
+        "pairs": [
+          {
+            "case": "PatternLock-train-001",
+            "task": "PatternLock",
+            "use": "source",
+            "before": true,
+            "after": true,
+            "flip": "unchanged"
+          },
+          {
+            "case": "PickHighlight-train-001",
+            "task": "PickHighlight",
+            "use": "source",
+            "before": true,
+            "after": false,
+            "flip": "success_to_failure"
+          },
+          {
+            "case": "PatternLock-train-002",
+            "task": "PatternLock",
+            "use": "source",
+            "before": false,
+            "after": true,
+            "flip": "failure_to_success"
+          },
+          {
+            "case": "PickHighlight-train-002",
+            "task": "PickHighlight",
+            "use": "source",
+            "before": true,
+            "after": false,
+            "flip": "success_to_failure"
+          },
+          {
+            "case": "PatternLock-train-005",
+            "task": "PatternLock",
+            "use": "development",
+            "before": true,
+            "after": false,
+            "flip": "success_to_failure"
+          },
+          {
+            "case": "PickHighlight-train-005",
+            "task": "PickHighlight",
+            "use": "development",
+            "before": true,
+            "after": false,
+            "flip": "success_to_failure"
+          },
+          {
+            "case": "PatternLock-train-006",
+            "task": "PatternLock",
+            "use": "development",
+            "before": true,
+            "after": true,
+            "flip": "unchanged"
+          },
+          {
+            "case": "PickHighlight-train-006",
+            "task": "PickHighlight",
+            "use": "development",
+            "before": true,
+            "after": false,
+            "flip": "success_to_failure"
+          }
+        ],
+        "strata": [
+          {
+            "use": "source",
+            "task": "PatternLock",
+            "cases": 2,
+            "before_successes": 1,
+            "after_successes": 2
+          },
+          {
+            "use": "source",
+            "task": "PickHighlight",
+            "cases": 2,
+            "before_successes": 2,
+            "after_successes": 0
+          },
+          {
+            "use": "development",
+            "task": "PatternLock",
+            "cases": 2,
+            "before_successes": 2,
+            "after_successes": 1
+          },
+          {
+            "use": "development",
+            "task": "PickHighlight",
+            "cases": 2,
+            "before_successes": 2,
+            "after_successes": 0
+          }
+        ],
+        "expert_query_count_before": 0,
+        "expert_query_count_after": 0,
+        "scope": "Eightfixedsource/devcases,onefixedtrainingseed;notmainvalandnotaseedlevelhypothesistest"
+      },
+      {
+        "view": "recent",
+        "cases": 8,
+        "before_successes": 1,
+        "after_successes": 0,
+        "paired_gain_percentage_points": -12.5,
+        "pairs": [
+          {
+            "case": "PatternLock-train-001",
+            "task": "PatternLock",
+            "use": "source",
+            "before": false,
+            "after": false,
+            "flip": "unchanged"
+          },
+          {
+            "case": "PickHighlight-train-001",
+            "task": "PickHighlight",
+            "use": "source",
+            "before": true,
+            "after": false,
+            "flip": "success_to_failure"
+          },
+          {
+            "case": "PatternLock-train-002",
+            "task": "PatternLock",
+            "use": "source",
+            "before": false,
+            "after": false,
+            "flip": "unchanged"
+          },
+          {
+            "case": "PickHighlight-train-002",
+            "task": "PickHighlight",
+            "use": "source",
+            "before": false,
+            "after": false,
+            "flip": "unchanged"
+          },
+          {
+            "case": "PatternLock-train-005",
+            "task": "PatternLock",
+            "use": "development",
+            "before": false,
+            "after": false,
+            "flip": "unchanged"
+          },
+          {
+            "case": "PickHighlight-train-005",
+            "task": "PickHighlight",
+            "use": "development",
+            "before": false,
+            "after": false,
+            "flip": "unchanged"
+          },
+          {
+            "case": "PatternLock-train-006",
+            "task": "PatternLock",
+            "use": "development",
+            "before": false,
+            "after": false,
+            "flip": "unchanged"
+          },
+          {
+            "case": "PickHighlight-train-006",
+            "task": "PickHighlight",
+            "use": "development",
+            "before": false,
+            "after": false,
+            "flip": "unchanged"
+          }
+        ],
+        "strata": [
+          {
+            "use": "source",
+            "task": "PatternLock",
+            "cases": 2,
+            "before_successes": 0,
+            "after_successes": 0
+          },
+          {
+            "use": "source",
+            "task": "PickHighlight",
+            "cases": 2,
+            "before_successes": 1,
+            "after_successes": 0
+          },
+          {
+            "use": "development",
+            "task": "PatternLock",
+            "cases": 2,
+            "before_successes": 0,
+            "after_successes": 0
+          },
+          {
+            "use": "development",
+            "task": "PickHighlight",
+            "cases": 2,
+            "before_successes": 0,
+            "after_successes": 0
+          }
+        ],
+        "expert_query_count_before": 0,
+        "expert_query_count_after": 0,
+        "scope": "Eightfixedsource/devcases,onefixedtrainingseed;notmainvalandnotaseedlevelhypothesistest"
+      }
+    ],
+    "local_label_fit": [
+      {
+        "view": "full",
+        "source_inputs": 8,
+        "improved_cases": [
+          "PickHighlight-train-001",
+          "PatternLock-train-002",
+          "PickHighlight-train-002",
+          "PatternLock-train-003",
+          "PickHighlight-train-003",
+          "PickHighlight-train-004"
+        ],
+        "worsened_cases": [
+          "PatternLock-train-001",
+          "PatternLock-train-004"
+        ],
+        "equal_case_mae20_before": 0.017318829355913546,
+        "equal_case_mae20_after": 0.004174535759415963
+      },
+      {
+        "view": "recent",
+        "source_inputs": 8,
+        "improved_cases": [
+          "PickHighlight-train-001",
+          "PatternLock-train-002",
+          "PickHighlight-train-002",
+          "PatternLock-train-003",
+          "PickHighlight-train-003",
+          "PickHighlight-train-004"
+        ],
+        "worsened_cases": [
+          "PatternLock-train-001",
+          "PatternLock-train-004"
+        ],
+        "equal_case_mae20_before": 0.023486488413767097,
+        "equal_case_mae20_after": 0.004092468510586533
+      }
+    ],
+    "costs": {
+      "registered_controls": 17193,
+      "qualification_native_calls": 78,
+      "prior_infrastructure_qualification_calls": 26,
+      "current4service_qualification_calls": 52,
+      "extra_expert_queries": 0,
+      "optimizer_updates": 0,
+      "reset_constructor_internal_steps": "UNKNOWN_NOT_ZERO"
+    },
+    "root_cause": "UNKNOWN",
+    "limits": [
+      "A contains eight cached source-query inputs (episodes1\u20134 per task). B contains four source and four development instances (episodes1,2,5,6 per task); the sets overlap on four source instances.",
+      "Each history view uses its own matched before model. Demonstration retention remains a confound between views.",
+      "This is a descriptive diagnostic on one fixed training seed and eight fixed cases per model, separate from official validation and the six-seed analysis.",
+      "Twenty-two rollouts reached an official environment terminal; ten exhausted the fixed1300-control budget without a terminal and count as nonsuccess. All outcomes are retained.",
+      "These data do not distinguish retained skills, visited-state shift, short correction coverage or cached-versus-fresh feature paths. Root cause remains unknown."
+    ],
+    "figure": "assets/figures/source-dev-diagnostic-ab-v3.svg",
+    "code_pr": "https://github.com/asimfish/robocore/pull/9"
+  },
+  "historical_source_development_autonomous_diagnostic": {
+    "worker_revision": "1911da4ea3b234c214af8f91267146ca77281b91",
+    "execution_config_sha256": "21cf203a8378fa6945ef09f35a332df220ca7f7b9b57a62c88bcb90baddf65b6",
+    "snapshot_utc": "2026-10-17T12:05:21.922282+00:00",
+    "completed_cases": 14,
+    "planned_cases": 32,
+    "completed_trained_model_cases": 0,
+    "status": "RUN3_RUNNING_AFTER_TWO_RETAINED_INFRASTRUCTURE_ABORTS",
+    "source_vs_development": "Officialtrain1/2source;train5/6developmentrole",
+    "not_main_val_samples": true,
+    "prior_infrastructure_attempts": 2,
+    "prior_native_qualification_calls": 26,
+    "run3_native_qualification_calls_so_far": 26,
+    "renderer_only_preflight_contexts": 1,
+    "unknown_constructor_reset_steps_not_zero": true,
+    "main_val_used_for_selection": false,
+    "coordinator_sha256": "774a2dc11b3184b63cd1c4210cb03de3d5a7a904e6790516309324219f249cb5",
+    "read_only_observation_sha256": "46d47bab872db00eebbf24b25754d032e92c03e8be6b43756bbf6739d535d8fa"
+  },
+  "prior_public_status_snapshot_sha256": "3febb36d43114831c1f665bc8d7ed89d9db09124256e7c3b4084dd78ea8e1187",
+  "source_success_replay_native_contract": {
+    "schema": "robomme-native-input-contract-public-v1",
+    "observed_at": "2026-10-17T14:47:16.905845+00:00",
+    "status": "CACHE_LIVE_INPUT_MISMATCH_NO_TRAINING",
+    "verification_status": "INDEPENDENT_RAW_ARRAY_AND_HASH_REVIEW",
+    "parent_source_plan_id": "robomme-absorption-screen-5c9451b5a5b9791c",
+    "parent_source_plan_sha256": "f9f8101b8dd997a3386a03f5f0d0a1cd8e641daf738f8f6aa089dac26860397d",
+    "code_revision": "8a296aff9fb96f26f0f22b54b238d351473d8455",
+    "pull_request": "https://github.com/asimfish/robocore/pull/12",
+    "config_sha256": "7726cc369fc3216998c1237d73e27de10cfce11c6d9c9798dbe7b77c75dea82e",
+    "source_report_sha256": "7b2bf9d7d2bce655bc8dd5cd28ae25caf5ddd8c7e9ceb59daabb39d25a1ba861",
+    "raw_archive_sha256": "ddfca9c34ed23748c30532d7f14a745a9022717fdf6e6007e901b7920f1f4016",
+    "independent_review_sha256": "0622d7f9ef9f73e134a0958235af5fb62c82f16a2683758912b127583f1e587e",
+    "anchors_completed": 2,
+    "registered_anchors": 2,
+    "native_forward_calls": 2,
+    "encoded_frame_occurrences": 386,
+    "optimizer_updates": 0,
+    "environment_controls": 0,
+    "replay_rows_verified": 71,
+    "native_replay_training_batches": 0,
+    "mixture_fixed_source_dev_results": "NOT_RUN",
+    "scope": "Two fixed source inputs only; rawH5 through released encoder/native transforms and actual server policy+msgpack. No websocket/simulator; no method efficacy.",
+    "finding": "Only static_image_emb differs among11expandedpolicyfields; other10match byte-for-byte. Real numerical differences exceed lossless bf16/f32 storage. Batching is a supported unisolated hypothesis, old42to14cause remainsUNKNOWN.",
+    "comparisons": [
+      {
+        "case": "PatternLock-train-001",
+        "control": 16,
+        "public_anchor": 79,
+        "different_field": "static_image_emb",
+        "training_dtype": "float32",
+        "serving_dtype": "bfloat16",
+        "shape": [
+          1,
+          512,
+          2048
+        ],
+        "differing_values": 792057,
+        "max_abs_difference": 1.0,
+        "original_vs_reconstructed_exact": true
+      },
+      {
+        "case": "PickHighlight-train-001",
+        "control": 112,
+        "public_anchor": 112,
+        "different_field": "static_image_emb",
+        "training_dtype": "float32",
+        "serving_dtype": "bfloat16",
+        "shape": [
+          1,
+          512,
+          2048
+        ],
+        "differing_values": 768001,
+        "max_abs_difference": 1.0,
+        "original_vs_reconstructed_exact": false
+      }
+    ],
+    "next_isolation": "Separate preregistered same-source batching and dtype sensitivity; no future113..119images, training, val selection or hidden feature repair.",
+    "original_source_episodes": 8,
+    "successful_source_episodes": 6,
+    "unsuccessful_source_episodes_preserved": 2,
+    "last_verified": "2026-10-17T14:49:54+00:00"
+  },
+  "recent_seed7_result": {
+    "before": 12,
+    "after": 6,
+    "episodes_each": 100,
+    "failed_to_success": 1,
+    "success_to_failed": 7,
+    "report_sha256": "bbe7cab0be0fdb245b3bc4af90420984da9f89713e3b884b23515db2fc843025",
+    "independent_review_sha256": "5b1224c72f66ffd368b3c65724b1217d0dd890b24b7c7e7508200d37151a6adf",
+    "raw_archive_sha256": "4b19bdb4d8878c2a7b374236f5f30927ae661bacbb7e1266d42b889fa38d5d83",
+    "scope": "Single seed,matched recent baseline;descriptive,not six-seed conclusion"
+  },
+  "historical_prior_active_continuation": {
+    "pr": "https://github.com/asimfish/robocore/pull/7",
+    "head": "262876882b488eb9c5a8561df4160a5ebd863d80",
+    "independent_review_sha256": "9740d3fa8a592d6e129de16a769e2548cb22ad905f73089917e2b9d5c71d7613",
+    "max_new_cases_per_service": 25,
+    "execution_config_sha256": "6c1e70a98dddcb7ca5c2a08d8b86f5f5b3df3367b0b6ee3f9715230147137145",
+    "scope": "Datedread-onlysnapshot,notlive;scientificplanunchanged",
+    "observed_first_case": "Recentseed7PatternLock-val000COMPLETED;PickHighlight-val000active",
+    "new_infra_aborts": 0,
+    "revision": "262876882b488eb9c5a8561df4160a5ebd863d80",
+    "status": "RUNNING",
+    "observed_at": "2026-10-17T11:16:05.740989+00:00",
+    "coordinator_record_sha256": "d22dc14dbb758f5ea5552e29c87e843a9ab5f892a361086f8bbda7f14dc2bc48",
+    "cell": "after-recent_history_intervention_bc-seed-7",
+    "complete_cases_at_snapshot": 1,
+    "reused_at_start": 0,
+    "pending_at_start": 100,
+    "current_cell": "after-recent_history_intervention_bc-seed-7",
+    "phase": "EVALUATING_REGISTERED_CASES",
+    "current_stage": "EVALUATING_REGISTERED_CASES"
+  },
+  "preservation_observed_at": "2026-10-17T16:06:05.890236+00:00",
+  "preservation_independent_review_sha256": "cdcbde816b0ed65e1acc24e577f783c61ceedb3d2a954105a76bf1000ead1453",
+  "historical_execution_observation_20261017_1601": {
+    "observed_at": "2026-10-17T16:01:57.886642+00:00",
+    "last_verified": "2026-10-17T16:06:05.890236+00:00",
+    "status": "INFRASTRUCTURE_ABORTED_SIX_SEED_CONCLUSION_INCOMPLETE",
+    "reason_code": "SEED17_CONNECTION_RESET_AND_OWNED_PROCESSES_EXITED",
+    "reason": "407/1400 unique complete cases: four complete100case cells plus seven seed17full cases. Next PickHighlight-val003 aborted at1232controls with ConnectionResetError and successnull;coordinatorRUNNING is stale. RootcauseUNKNOWN. Completed successes and task failures preserved;new continuation preparation only.",
+    "coordinator_source_revision": "262876882b488eb9c5a8561df4160a5ebd863d80",
+    "coordinator_record_sha256": "fd89387d7a262f6c1946e0d5cf744ee687f1d5503083372c26c02aa124af124a",
+    "coverage": {
+      "planned_model_cells": 14,
+      "archived_complete_model_cells": 4,
+      "archived_complete_episodes": 407,
+      "planned_episodes": 1400,
+      "coverage_scope": "400completecells+7individuallyverifiedandpreservedcase receipts;infraattemptnotadditionalscientificsample;source/devnotincluded",
+      "remote_complete_model_cells": 4,
+      "remote_complete_episodes": 407,
+      "remote_infrastructure_aborted_episodes": 1,
+      "local_partial_completed_case_receipts": 7,
+      "remote_remaining_unclosed_episodes": 993,
+      "partial_model_cells": 1,
+      "unstarted_model_cells": 9,
+      "archived_complete_cell_episodes": 400,
+      "durable_partial_completed_episodes": 7
+    },
+    "supervision": "Datedread-onlysnapshot,notlive. All4completecells archived;newseed17abortrawpreserved. Prior synchronous25case boundaries do not prove lifecycle rootcause fixed. SourceB/C closed;no new recovery training claim.",
+    "preservation_observed_at": "2026-10-17T16:06:05.890236+00:00",
+    "preservation_independent_review_sha256": "cdcbde816b0ed65e1acc24e577f783c61ceedb3d2a954105a76bf1000ead1453"
+  },
+  "archive_read_abort_20261017_1614": {
+    "status": "ABORTED_ARCHIVE_SSH_READ_TIMEOUT",
+    "reason": "rsync255while reading existing before-recent archive;no new simulation or training in this parent",
+    "new_scientific_cases": 0,
+    "incident_sha256": "31d04662d97c04c8940cd038a733dd2a82bf8e3492a23fc8aa411050d79666aa",
+    "original_results_overwritten": false
+  },
+  "source_success_replay_pilot": {
+    "status": "COMPLETE_FIXED_EIGHT_PILOT_NOT_CONFIRMATORY",
+    "observed_at": "2026-10-17T17:09:47.236206+00:00",
+    "public_result": "data/robomme-success-replay-fixed-eight.json",
+    "report_sha256": "562aaa0465f13546cdfb47dd8b85fda7e4a83f34a709fe39b46ef8ed90570ba0",
+    "verification": "INDEPENDENT_RAW_AND_STAT_PASS",
+    "episodes": 8,
+    "initial_successes": 7,
+    "correction_only_successes": 3,
+    "mixture_successes": 2,
+    "actual_updates": 10000,
+    "oracle_updates": 5000,
+    "replay_updates": 5000,
+    "actual_controls": 5506,
+    "extra_expert_queries": 0,
+    "infra_aborts": 0,
+    "scope": "Single seed fixed source/development pilot,not official val;no novel IWR/Sirius claim;doseandknownfeaturepath alternatives remain.",
+    "independent_review_sha256": "74ab032c9a015b93437264f765638dd15562e8ccfe78125ce729a6a81486de72",
+    "last_verified": "2026-10-17T17:12:16.249339+00:00"
+  },
+  "historical_last_durable_evaluation_cells_20261017_1601": [
+    {
+      "cell": "before-full_history_intervention_bc",
+      "planned_cases": 100,
+      "completed_cases": 100,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 0
+    },
+    {
+      "cell": "before-recent_history_intervention_bc",
+      "planned_cases": 100,
+      "completed_cases": 100,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 0,
+      "remaining_unclosed_cases": 0,
+      "parent_infrastructure_abort_attempts": 7,
+      "new_infrastructure_aborts": 0,
+      "reused_completed": 77,
+      "new_completed": 23
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-7",
+      "planned_cases": 100,
+      "completed_cases": 100,
+      "infrastructure_aborted_cases": 0,
+      "remaining_unclosed_cases": 0,
+      "not_started_cases": 0,
+      "parent_infrastructure_abort_attempts": 1
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-17",
+      "planned_cases": 100,
+      "completed_cases": 7,
+      "infrastructure_aborted_cases": 1,
+      "not_started_cases": 92,
+      "remaining_unclosed_cases": 93,
+      "active_cases": 0
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-27",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-37",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-47",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-full_history_intervention_bc-seed-57",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-7",
+      "planned_cases": 100,
+      "completed_cases": 100,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 0,
+      "active_cases": 0,
+      "remaining_unclosed_cases": 0
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-17",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-27",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-37",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-47",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    },
+    {
+      "cell": "after-recent_history_intervention_bc-seed-57",
+      "planned_cases": 100,
+      "completed_cases": 0,
+      "infrastructure_aborted_cases": 0,
+      "not_started_cases": 100
+    }
+  ],
+  "evaluation_cells_scope": "458unique durablecompleteoutcomes:existing457passedregisteredbatchrawguards/archives;additionalPHval28passedunchangedpercase84artifactguardanddurablepreservation. LatestincompletebatchDID_NOTPASSregistereddrain;no full fifthcell. Infrastructureattempts arenot scientificsamples.",
+  "coordinator_observation": {
+    "observed_at": "2026-10-18T01:03:32.242121+00:00",
+    "owned_process_alive": false,
+    "status": "SUPERVISOR_EXITED_INFRASTRUCTURE_INCOMPLETE",
+    "coordinator_file_label": "RUNNING_IS_STALE_NOT_CURRENT",
+    "contained_coordinator_sha256": "9953eecabdbb93e33310931ea39d3e37f7ba8857cade7f85f80d5a534439bcd7",
+    "last_cell": "after-full_history_intervention_bc-seed-17",
+    "last_batch": 2,
+    "current_stage": "STOPPED_AFTER_BATCH_DRAIN_REJECTION_AND_CLEANUP_TIMEOUT",
+    "scope": "Read-only process and preserved log observation;not rootcause attribution"
+  },
+  "historical_execution_observation_20261017_1714": {
+    "observed_at": "2026-10-17T17:14:20.577976+00:00",
+    "last_verified": "2026-10-17T17:14:20.577976+00:00",
+    "status": "RUNNING_AT_DATED_OBSERVATION_SIX_SEED_CONCLUSION_INCOMPLETE",
+    "reason": "Original registered queue resumed with reviewed bounded archive-read retries.407complete cases durably verified;4additional remote case receipts report COMPLETED,full raw guard pending current25case batch boundary.4model cells fully closed;no sixseed conclusion.Original successes,task failures and all infrastructure aborts retained.",
+    "coverage": {
+      "planned_model_cells": 14,
+      "archived_complete_model_cells": 4,
+      "archived_complete_episodes": 407,
+      "planned_episodes": 1400,
+      "coverage_scope": "407durably verified originals +4new remote COMPLETEDreceipts pending raw/archive guard;source-dev pilot excluded.411is provisional,not independently sealed scientific coverage.",
+      "remote_complete_model_cells": 4,
+      "remote_complete_episodes": null,
+      "remote_infrastructure_aborted_episodes": 0,
+      "local_partial_completed_case_receipts": 7,
+      "remote_remaining_unclosed_episodes": 993,
+      "partial_model_cells": 1,
+      "unstarted_model_cells": 9,
+      "archived_complete_cell_episodes": 400,
+      "durable_partial_completed_episodes": 7,
+      "remote_reported_complete_episodes": 411,
+      "remote_reported_new_complete_receipts": 4,
+      "new_receipts_full_raw_guard": "PENDING_SYNCHRONOUS_BATCH_BOUNDARY",
+      "remote_reported_unfinished_episodes": 989,
+      "infra_count_scope": "This continuation at dated observation;historical aborts retained separately.",
+      "observed_at": "2026-10-17T17:07:53.503798+00:00"
+    },
+    "evaluation_cells": [
+      {
+        "cell": "before-full_history_intervention_bc",
+        "planned_cases": 100,
+        "completed_cases": 100,
+        "infrastructure_aborted_cases": 0,
+        "not_started_cases": 0,
+        "completion_scope": "DURABLE_VERIFIED_ONLY"
+      },
+      {
+        "cell": "before-recent_history_intervention_bc",
+        "planned_cases": 100,
+        "completed_cases": 100,
+        "infrastructure_aborted_cases": 0,
+        "not_started_cases": 0,
+        "remaining_unclosed_cases": 0,
+        "parent_infrastructure_abort_attempts": 7,
+        "new_infrastructure_aborts": 0,
+        "reused_completed": 77,
+        "new_completed": 23,
+        "completion_scope": "DURABLE_VERIFIED_ONLY"
+      },
+      {
+        "cell": "after-full_history_intervention_bc-seed-7",
+        "planned_cases": 100,
+        "completed_cases": 100,
+        "infrastructure_aborted_cases": 0,
+        "remaining_unclosed_cases": 0,
+        "not_started_cases": 0,
+        "parent_infrastructure_abort_attempts": 1,
+        "completion_scope": "DURABLE_VERIFIED_ONLY"
+      },
+      {
+        "cell": "after-full_history_intervention_bc-seed-17",
+        "planned_cases": 100,
+        "completed_cases": 7,
+        "remaining_unclosed_cases": 93,
+        "completion_scope": "DURABLE_VERIFIED_ONLY",
+        "historical_active_cases_at_1601": 0,
+        "historical_not_started_cases_at_1601": 92,
+        "historical_infrastructure_abort_attempts_at_1601": 1,
+        "new_remote_reported_completed_cases": 4,
+        "new_remote_observed_at": "2026-10-17T17:07:53.503798+00:00",
+        "new_remote_raw_guard": "PENDING_BATCH_BOUNDARY_NOT_ADDED_TO_COMPLETED_CASES",
+        "verified_remaining_unclosed_cases": 93
+      },
+      {
+        "cell": "after-full_history_intervention_bc-seed-27",
+        "planned_cases": 100,
+        "completed_cases": 0,
+        "infrastructure_aborted_cases": 0,
+        "not_started_cases": 100,
+        "completion_scope": "DURABLE_VERIFIED_ONLY"
+      },
+      {
+        "cell": "after-full_history_intervention_bc-seed-37",
+        "planned_cases": 100,
+        "completed_cases": 0,
+        "infrastructure_aborted_cases": 0,
+        "not_started_cases": 100,
+        "completion_scope": "DURABLE_VERIFIED_ONLY"
+      },
+      {
+        "cell": "after-full_history_intervention_bc-seed-47",
+        "planned_cases": 100,
+        "completed_cases": 0,
+        "infrastructure_aborted_cases": 0,
+        "not_started_cases": 100,
+        "completion_scope": "DURABLE_VERIFIED_ONLY"
+      },
+      {
+        "cell": "after-full_history_intervention_bc-seed-57",
+        "planned_cases": 100,
+        "completed_cases": 0,
+        "infrastructure_aborted_cases": 0,
+        "not_started_cases": 100,
+        "completion_scope": "DURABLE_VERIFIED_ONLY"
+      },
+      {
+        "cell": "after-recent_history_intervention_bc-seed-7",
+        "planned_cases": 100,
+        "completed_cases": 100,
+        "infrastructure_aborted_cases": 0,
+        "not_started_cases": 0,
+        "active_cases": 0,
+        "remaining_unclosed_cases": 0,
+        "completion_scope": "DURABLE_VERIFIED_ONLY"
+      },
+      {
+        "cell": "after-recent_history_intervention_bc-seed-17",
+        "planned_cases": 100,
+        "completed_cases": 0,
+        "infrastructure_aborted_cases": 0,
+        "not_started_cases": 100,
+        "completion_scope": "DURABLE_VERIFIED_ONLY"
+      },
+      {
+        "cell": "after-recent_history_intervention_bc-seed-27",
+        "planned_cases": 100,
+        "completed_cases": 0,
+        "infrastructure_aborted_cases": 0,
+        "not_started_cases": 100,
+        "completion_scope": "DURABLE_VERIFIED_ONLY"
+      },
+      {
+        "cell": "after-recent_history_intervention_bc-seed-37",
+        "planned_cases": 100,
+        "completed_cases": 0,
+        "infrastructure_aborted_cases": 0,
+        "not_started_cases": 100,
+        "completion_scope": "DURABLE_VERIFIED_ONLY"
+      },
+      {
+        "cell": "after-recent_history_intervention_bc-seed-47",
+        "planned_cases": 100,
+        "completed_cases": 0,
+        "infrastructure_aborted_cases": 0,
+        "not_started_cases": 100,
+        "completion_scope": "DURABLE_VERIFIED_ONLY"
+      },
+      {
+        "cell": "after-recent_history_intervention_bc-seed-57",
+        "planned_cases": 100,
+        "completed_cases": 0,
+        "infrastructure_aborted_cases": 0,
+        "not_started_cases": 100,
+        "completion_scope": "DURABLE_VERIFIED_ONLY"
+      }
+    ],
+    "evaluation_cells_scope": "Durable verified completion coverage only,from16:01snapshot/preserved16:06. Runtime activity and4newreportedreceipts are separate below;newreceiptsare not counted as verified.",
+    "coordinator_observation": {
+      "observed_at": "2026-10-17T17:14:20.577976+00:00",
+      "record_sha256": "9d1de2157b9b817249578f4d875976249a575180b6d16a7871844d3541c09955",
+      "contained_coordinator_sha256": "4bcc93a034ac67808c4593655b9f02276b10a130aebf82f5f36a53499b5e4eb0",
+      "scope": "RUNNING owned supervisor,4closedcells,fullseed17evaluating at17:14:20;not the source of17:07rawcasecounts."
+    }
+  },
+  "historical_observations": [
+    {
+      "observed_at": "2026-10-17T19:26:15.597581+00:00",
+      "last_verified": "2026-10-17T19:26:15.597581+00:00",
+      "status": "RUNNING_AT_DATED_OBSERVATION_SIX_SEED_CONCLUSION_INCOMPLETE",
+      "reason_code": "ORIGINAL_PLAN_CONTINUATION_AFTER_ARCHIVE_READ_ABORT",
+      "reason": "Original frozen queue continues;457unique cases durably raw-validated and archived.4completecells;full17partial. No partial-cell success rate or sixseed conclusion. Historical aborts retained.",
+      "coverage": {
+        "planned_model_cells": 14,
+        "archived_complete_model_cells": 4,
+        "archived_complete_episodes": 457,
+        "planned_episodes": 1400,
+        "coverage_scope": "Unique durably validated and archived cases only;currentbatch provisional receipts not queried here and not counted. Source/dev pilots excluded.",
+        "remote_complete_model_cells": 4,
+        "remote_complete_episodes": null,
+        "remote_infrastructure_aborted_episodes": null,
+        "local_partial_completed_case_receipts": 57,
+        "remote_remaining_unclosed_episodes": 943,
+        "partial_model_cells": 1,
+        "unstarted_model_cells": 9,
+        "archived_complete_cell_episodes": 400,
+        "durable_partial_completed_episodes": 57,
+        "remote_reported_complete_episodes": null,
+        "remote_reported_new_complete_receipts": null,
+        "new_receipts_full_raw_guard": "CURRENT_BATCH_PENDING_NOT_COUNTED",
+        "remote_reported_unfinished_episodes": null,
+        "infra_count_scope": "This continuation at dated observation;historical aborts retained separately.",
+        "observed_at": "2026-10-17T19:26:15.597581+00:00"
+      },
+      "coordinator_observation": {
+        "observed_at": "2026-10-17T19:26:15.597581+00:00",
+        "owned_process_alive": true,
+        "contained_coordinator_sha256": "9953eecabdbb93e33310931ea39d3e37f7ba8857cade7f85f80d5a534439bcd7",
+        "current_cell": "after-full_history_intervention_bc-seed-17",
+        "current_batch": 2,
+        "current_stage": "EVALUATING_REGISTERED_CASES",
+        "last_completed_batch": {
+          "cell": "after-full_history_intervention_bc-seed-17",
+          "batch": 1,
+          "completed": 57,
+          "archive_sha256": "7d36d7fc7b98733100f3fb1ec7ce208d12bc22a2f8115f32fa11f0d860ff7a26",
+          "archived_at_unix": 1792264679.3527582,
+          "drain": true,
+          "scheduled_indices": [
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56
+          ],
+          "service_was_started": true,
+          "service_exited_after_archive_at_unix": 1792264682.9737806
+        },
+        "scope": "Read-only local coordinator after registered raw guard/archive and service wait;not a sixseed scientific result."
+      },
+      "active_continuation": {
+        "pr": "https://github.com/asimfish/robocore/pull/18",
+        "head": "669344a350b552d1d326c0b806c4249263c24e77",
+        "merge_state": "OPEN_UNMERGED",
+        "execution_config_sha256": "c972effbc9595709b7195371784153cc053d319c49440c935ea49e34529d1b46",
+        "independent_review_sha256": "dfb8fdd5f9b77662486a6897048aef2e93514624a1f4fffe11a6b93fe696d352",
+        "read_retry_scope": "Same archive read only,max3bounded transport retries,no training/simulation resubmission",
+        "current_cell": "after-full_history_intervention_bc-seed-17",
+        "current_stage": "EVALUATING_REGISTERED_CASES",
+        "observed_at": "2026-10-17T17:07:53.503798+00:00",
+        "max_new_cases_per_service": 25,
+        "source_observation_sha256": "e8c0d335284bc2c7f47d8523eb0e96c74193b4b597138cc4b885f75e7468e811",
+        "process_observed_at": "2026-10-17T17:14:20.577976+00:00"
+      }
+    }
+  ],
+  "incident": {
+    "observed_at": "2026-10-18T00:56:38.369031+00:00",
+    "status": "SUPERVISOR_EXITED_INFRASTRUCTURE_INCOMPLETE_STALE_RUNNING_FILE",
+    "durable_verified_cases": 457,
+    "full17_durable": 57,
+    "full17_remote_reported_complete": 58,
+    "new_remote_complete_pending_rawguard": 1,
+    "remote_workers_drained": true,
+    "batch_guard_error": "Batch has not drained its exact registered workers/receipts",
+    "cleanup_error": "Owned policy service wait exceeded60seconds",
+    "cause_scope": "Exactexceptiontrace,not proof of learning failure or inference rootcause;no tasksrerun/oldartifacts changed.",
+    "source_coordinator_sha256": "9953eecabdbb93e33310931ea39d3e37f7ba8857cade7f85f80d5a534439bcd7",
+    "source_log_sha256": "ce7e18dbf7c1980171bf17299f818e7b1c25c9ed5373ff3c3cad4b0bac05a950",
+    "worker_errors_scope": "The empty aggregate worker_errors list did not mean no error;continuation receipt explicitly records frozen worker index58 exit1.",
+    "local_gpu_query": {
+      "status": "TIMEOUT_AFTER20SECONDS",
+      "query": [
+        "index",
+        "uuid",
+        "memory.used",
+        "memory.free",
+        "utilization.gpu"
+      ],
+      "reason_unknown": true,
+      "no_process_terminated": true
+    },
+    "recovery": "Not resumed at this observation;need non-destructive driver/resource diagnosis and reviewed continuation,not retraining.",
+    "assigned_gpu1_query": "TIMEOUT5SECONDS_READONLY_NO_RESET",
+    "coverage_scope": "Historical457/provisional58 at incident observation;current458passedrawguard given separately."
+  },
+  "extra_case_preservation": {
+    "observed_at": "2026-10-18T01:07:27.905173+00:00",
+    "status": "PASS_RAW_BOUND_ARTIFACTS_AND_REGISTERED_MODEL",
+    "case": {
+      "task": "PickHighlight",
+      "split": "val",
+      "episode": 28
+    },
+    "success": false,
+    "artifact_count": 84,
+    "artifact_bytes": 2630971,
+    "receipt_sha256": "e7a49f1b465e4162942547464f2e25c49ec607648749b97df07a0efcd5afb70e",
+    "guard_implementation_sha256": "fa05b3402c5a054781ac4d6000c330096ebae98d0d3a7b3a27d859cbdc69d673",
+    "new_rollouts": 0
+  }
+}

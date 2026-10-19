@@ -1,0 +1,268 @@
+{
+  "schema": "robomme-source-qualification-public-v1",
+  "observed_at": "2026-10-18T08:33:47.333400+00:00",
+  "last_verified": "2026-10-18T08:40:43.962099+00:00",
+  "status": "COMPLETE_INDEPENDENT_RAW_REVIEWED_PANEL_NO_GO",
+  "registration": {
+    "plan_id": "robomme-source-qualification-43fbe4328b474138",
+    "plan_sha256": "530bc27dd4d92e0c268d02852d170da13b8004e70da07916e4af3433a6b831df",
+    "execution_config_sha256": "36a10233c4dbee398b0a4a468b5aca28c9e6a482761a217bb1e2be88beae62a6",
+    "code_revision": "30c21b9440044056a2ef1eb2a9f6b89a18191660",
+    "scope": "one finite source qualification; zero training/dev; exact independent review required"
+  },
+  "implementation_pr": "https://github.com/asimfish/robocore/pull/24",
+  "design_pr": "https://github.com/asimfish/robocore/pull/23",
+  "publication": "OPEN_UNMERGED_UNPUBLISHED",
+  "model_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+  "source": {
+    "tasks": [
+      "PatternLock",
+      "PickHighlight"
+    ],
+    "train_ids": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "ordered_cases": 16,
+    "completed": 16,
+    "remote_completed": 16,
+    "local_raw_verified": 16,
+    "full_panel_complete": true,
+    "terminal_success": {
+      "PatternLock": [
+        7,
+        8
+      ],
+      "PickHighlight": [
+        8,
+        8
+      ]
+    },
+    "official_terminal_failures": 1,
+    "budget_nonsuccesses": 0,
+    "infra_aborts": 0
+  },
+  "development": {
+    "reserved_train_ids": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "rollouts": 0
+  },
+  "selection": {
+    "eligible": "33 <= T <=1300 completed nonsuccess;actual nonterminal program boundary",
+    "anchor": "16*((T-1)//32)",
+    "slots": "first2 eligible/task,max4;invalid selected slots not replaced",
+    "selected_slots": [
+      {
+        "slot": 0,
+        "task": "PatternLock",
+        "train_id": 23,
+        "source_terminal_controls": 123,
+        "anchor": 48
+      }
+    ],
+    "replacement_count": 0
+  },
+  "budget_caps": {
+    "attempts": 28,
+    "logged_controls": 36400,
+    "new_expert_queries": 4,
+    "new_expert_controls": 80,
+    "replayed_expert_controls": 80,
+    "setup_native_resets": 112,
+    "setup_native_controls": 280000,
+    "qualification_forecasts": 39,
+    "owned_wall_hours": 8,
+    "optimizer_updates": 0,
+    "development_rollouts": 0
+  },
+  "evidence": {
+    "implementation_review_sha256": "60ae1942894566e3e0024db5103453fad3df1dbfcd60f983112fe18515ed3c38",
+    "staged_byte_receipt_sha256": "1169545c0178065adec37b91d49781bdf5cedb63c792c57cdc5d5461dd6844fa",
+    "preflight_sha256": "5498124ac5fed12e637bbdf7c2ac49ae47d93c577cf85522267b74073efd270e",
+    "independent_final_launch_review_sha256": "56059536eb39cf862fca330d4ff29deb6339dc9b2e9c007fae573ba7d2a320e4",
+    "launch_receipt_sha256": "4830a5c8a3162d7ef7762a0bd695bbae9a75ba531fde70d8ff9c6e8339d148e3",
+    "observation_status_sha256": "5b5ffad219d9b0319494bac52ee8c098fce86e9db6edc492b093b972f9248e54",
+    "first_native_raw_review_sha256": "f04de83616c74cc4f23fa36af6c1f8948f179bfc37a3042ed320ad518c706c7a",
+    "full_source16_independent_review_sha256": "d3d1c0a819f6b4fef19fb42ba7c032033732efccb18ed007b60774164b2219c2",
+    "owner_report_sha256": "ad75932ee00219d19ce9b36338e808175d6c44b11e2744d16f05de2f92e7a6de",
+    "registered_report_sha256": "5df8f248b093321e93b902dfc5a5d16602247c1ea5e7060aa386b83da92cb1ab",
+    "final_status_sha256": "5b5ffad219d9b0319494bac52ee8c098fce86e9db6edc492b093b972f9248e54",
+    "postflight_sha256": "033c87b3245facf7c80b17310994e003a053e22a3c7d638270f8615582251558",
+    "final_independent_raw_review_sha256": "958be36510bb402cb3ac3d619d19f4fbf8e321edc3915aaba0cc92455305b1b9",
+    "historical_observation_20261018_082535": {
+      "observed_at": "2026-10-18T08:25:35.732578+00:00",
+      "status_sha256": "9baabe65052568f499143868fd513908b7bc555c3d3bab3eff12f9d9c5c738a1",
+      "scope": "Historical source16closed,Nactive snapshot;not current closed state"
+    }
+  },
+  "limitations": [
+    "CPU and staged-file checks are not native integration or scientific success.",
+    "Fresh continuation resets policy/RNG;no exact hidden-state counterfactual claim.",
+    "These tasks currently support memory/cue retention/execution/recovery,not new-rule learning.",
+    "Managed prior-use inventory checked;unrecorded external and pretraining use unknown.",
+    "Main1400 remains dated458 infra-blocked;reference800 and resources unchanged.",
+    "All native outcomes closed:source15of16,N=false,H=false,Q20nonterminal. Source16 and final NQH raw review passed. No absorption update or benefit estimate.",
+    "Whole public-history/action consistency is supported by actual H5/program/recorded-command comparisons and reviewed core ordering;no packet-level trace,original in-memory teacher dtype or hidden-state/physical-tracking proof."
+  ],
+  "stage": "CLOSED",
+  "actual": {
+    "completed_attempts": 19,
+    "attempts_started": 19,
+    "service_starts": 3,
+    "qualification_forecasts_recorded": 39,
+    "student_forecasts": 249,
+    "logged_controls": 4030,
+    "optimizer_updates": 0,
+    "development_rollouts": 0,
+    "active": null,
+    "NQH_terminal_result": {
+      "N": false,
+      "Q": "QUERY_COMPLETE_NONTERMINAL20",
+      "H": false
+    }
+  },
+  "first_batch": {
+    "remote_sealed": true,
+    "sha256": "6807e30d34eda4be5c6a894da9a420abd89595069d0269c8387dab025e1583c0",
+    "bytes": 704972800,
+    "workers_drained": true,
+    "owned_service_exited": true,
+    "local_full_archive_copy": "COMPLETE_SHA_VERIFIED"
+  },
+  "native_coordinator_stage": "COMPLETE",
+  "stage_scope": "All19attempts closed and final independent raw evidence/readout/cost review passed. Registered panel no-go applies.",
+  "registered_readout": {
+    "schema": "robomme-source-qualification-descriptive-v1",
+    "plan_id": "robomme-source-qualification-43fbe4328b474138",
+    "source": {
+      "PatternLock": {
+        "successes": 7,
+        "total": 8,
+        "terminal_failures": 1,
+        "budget_nonsuccesses": 0
+      },
+      "PickHighlight": {
+        "successes": 8,
+        "total": 8,
+        "terminal_failures": 0,
+        "budget_nonsuccesses": 0
+      }
+    },
+    "funnel": {
+      "source_total": 16,
+      "eligible_failures": 1,
+      "selected_slots": 1,
+      "valid_pairs": 1,
+      "rescues": 0,
+      "harms": 0
+    },
+    "pairs": [
+      {
+        "slot": 0,
+        "case": {
+          "task": "PatternLock",
+          "split": "train",
+          "episode": 23,
+          "use": "source"
+        },
+        "anchor": 48,
+        "selection_status": "SELECTED",
+        "branch_statuses": {
+          "N": "COMPLETED",
+          "Q": "QUERY_COMPLETE",
+          "H": "COMPLETED"
+        },
+        "valid_pair": true,
+        "N": false,
+        "H": false
+      }
+    ],
+    "no_go": true,
+    "interpretation": "finite fresh-session development qualification; no absorption or general impossibility claim",
+    "cost": {
+      "attempts_started": 19,
+      "actual_submitted_controls": 4030,
+      "raw_logged_controls": 4030,
+      "expert_queries": 1,
+      "additional_expert_commands": 40,
+      "prefix_replay": 144,
+      "setup_control_calls": 3445,
+      "native_resets": 38,
+      "physics_substeps": "UNKNOWN_NOT_ZERO",
+      "qualification_forecasts": 39,
+      "student_forecasts": 249,
+      "owned_wall_seconds": 4055.4273853302,
+      "updates": 0
+    }
+  },
+  "cost_detail": {
+    "prefix_replay": 144,
+    "new_expert_queries": 1,
+    "new_expert_controls": 20,
+    "replayed_expert_controls": 20,
+    "student_controls": 3846,
+    "setup_native_resets": 38,
+    "setup_native_control_calls": 3445,
+    "setup_seconds": 892.8069336372428,
+    "owned_wall_seconds": 4055.4273853302,
+    "summed_reserved_device_hours": 2.2530152140723336,
+    "scope": "two task-reserved GPUs over pipeline wall;not measured active utilization/FLOPs;physics substeps UNKNOWN"
+  },
+  "conditional_case": {
+    "task": "PatternLock",
+    "train_id": 23,
+    "anchor": 48,
+    "N": {
+      "terminal_success": false,
+      "controls": 122,
+      "prefix": 48,
+      "expert": 0,
+      "student": 74
+    },
+    "Q": {
+      "status": "QUERY_COMPLETE_NONTERMINAL",
+      "controls": 68,
+      "prefix": 48,
+      "new_expert": 20
+    },
+    "H": {
+      "terminal_success": false,
+      "controls": 150,
+      "prefix": 48,
+      "recorded_expert": 20,
+      "student": 82
+    },
+    "scope": "one selected fresh-session conditional pair;not training/generalization or exact physical counterfactual"
+  },
+  "protocol_decision": "NO_GO_NO_RESCUE_IN_THIS_FINITE_PANEL",
+  "decision_scope": "Stop panel mechanism escalation;no added help length/seed/search/training. Not a claim that recovery is generally impossible or an explanation for old absorption regressions.",
+  "postflight": {
+    "owned_coordinator_exited": true,
+    "lease_released": true,
+    "task_port_closed": true,
+    "scoped_owned_devices_no_compute_apps": true
+  },
+  "interface": {
+    "native_input_profile": "unchanged released perceptual-framesamp-modul; original512tokens/32historyframes; original packet/padding/dtype",
+    "predict": 20,
+    "execute": 16,
+    "horizon_including_replay_and_help": 1300,
+    "policy_seed": 7,
+    "demo": "original native task convention",
+    "training_receipt": null
+  }
+}

@@ -1,0 +1,438 @@
+{
+  "schema": "robomme-native-learner-identity-repair-public-v1",
+  "observed_at": "2026-10-18T14:59:50.375439+00:00",
+  "last_verified": "2026-10-18T14:58:39.731207+00:00",
+  "publication_status": "OPEN_PR_UNMERGED_UNPUBLISHED",
+  "status": "CLOSED_COMPLETE_SIX_UPDATE_ENGINEERING_QUALIFICATION",
+  "qualification_passed": true,
+  "code_revision_executed": "bcafaf1ca241146f5fd3d02b86ac8d3808e06f0b",
+  "code_pr": "https://github.com/asimfish/robocore/pull/28",
+  "plan_id": "robomme-native-learner-repair-3c34bcef8a49d909",
+  "plan_sha256": "9b4626a67a309933da5d1580093fadacdb3d097eff5b2526ebb95170023d9539",
+  "config_sha256": "588d1a714cc14f8da1d6a19752b4e1031eb1a3e20beeab8c845d25c23b8ff50c",
+  "parent_closed_handoff_sha256": "74cf011bca0646f7fd6dc2775f88721e299aacd1ea789304857575f634a63f09",
+  "owner_report_sha256": "f2893cbb88ec3cdb0e163c482101b3d981717f1e3d2335d620a9ef651f92cf32",
+  "identity_domains": {
+    "source_and_this_native_initialization_raw": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+    "released_bf16_bits": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+    "historical_serving_factory_native_raw": "f141c6c98361e53ac04f456c0bcbab26c790ed7e3c9781c42083fe0fa2536ca1",
+    "source_derived_reference": "Derived from the one verified source restore and native abstract shape/filter; not from admitted live state. This run cast is idempotent. Serving receipt referenced, no new serving init."
+  },
+  "arms": {
+    "bc": {
+      "status": "COMPLETE_TWO_UPDATE_LEARNER_QUALIFICATION",
+      "initial": {
+        "native_sha256": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+        "inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a"
+      },
+      "initial_checks": {
+        "initialized_native": {
+          "stage": "post-native-init-freeze-cast",
+          "algorithm": "native_parameter_digest:path-json/dtype/shape/array-bytes-v1",
+          "expected": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+          "observed": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+          "passed": true,
+          "reason": "MATCH"
+        },
+        "bf16_export": {
+          "stage": "bf16-inference-bits",
+          "algorithm": "bits_digest:path-shape-json/uint16-bf16-bytes-v1",
+          "expected": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+          "source_derived": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+          "observed": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+          "passed": true,
+          "reason": "MATCH"
+        }
+      },
+      "source_reference_sha256": "7dd5b85a2fda212ea072fa021bc19e2854dd121cd301d24f0d07073b466f86a2",
+      "actual_updates": 2,
+      "optimizer_counters_initial": [
+        {
+          "path": "[1][0].count",
+          "value": 0
+        },
+        {
+          "path": "[1][2].count",
+          "value": 0
+        }
+      ],
+      "steps": [
+        {
+          "update": 0,
+          "completed_updates": 1,
+          "lr": 1e-08,
+          "metrics": {
+            "grad_norm": 0.19157850742340088,
+            "llm_grad_norm": 0.1074196919798851,
+            "loss": 0.017697172239422798,
+            "mem_enc_norm": 0.0033748853020370007,
+            "param_norm": 1874.8099365234375
+          },
+          "optimizer_counters": [
+            {
+              "path": "[1][0].count",
+              "value": 1
+            },
+            {
+              "path": "[1][2].count",
+              "value": 1
+            }
+          ],
+          "step_seconds_including_debug_capture": 108.26949343038723,
+          "live": {
+            "native_sha256": "de031dad1c3509391d4f297685096ce2da3a21d1b4e843468b84d89ff97289c7",
+            "inference_sha256": "68f0a34e8d50087ae9e2daa48b159a46e8d9a5e0fa2e6c0b9f9f5cea46dc173d"
+          },
+          "changed_trainable_leaves": 37,
+          "frozen_live_unchanged": true
+        },
+        {
+          "update": 1,
+          "completed_updates": 2,
+          "lr": 2e-08,
+          "metrics": {
+            "grad_norm": 0.15716713666915894,
+            "llm_grad_norm": 0.1050165593624115,
+            "loss": 0.01320734340697527,
+            "mem_enc_norm": 0.005451090633869171,
+            "param_norm": 1874.8099365234375
+          },
+          "optimizer_counters": [
+            {
+              "path": "[1][0].count",
+              "value": 2
+            },
+            {
+              "path": "[1][2].count",
+              "value": 2
+            }
+          ],
+          "step_seconds_including_debug_capture": 5.310507895890623,
+          "live": {
+            "native_sha256": "929a5d722c57d305dea0ae65475e90d445d5803f3745cdd4fd0a0ca2665271f7",
+            "inference_sha256": "91706a98547c5d27eea0a1431085e79aa512f0a31f0644e8b782b6d803ab24ad"
+          },
+          "changed_trainable_leaves": 37,
+          "frozen_live_unchanged": true
+        }
+      ],
+      "raw_whole_tree_ema": {
+        "native_sha256": "055b2a28997377bc46402f3219c3e953f2da4e1e99c592783a256c453a2e7892",
+        "inference_sha256": "97892c2edf3c183a751cca8745a6caf8a05629569650d386743a5f45cb37ffe9"
+      },
+      "frozen_ema_rounding_changed_leaves": [],
+      "final_export": {
+        "file_sha256": "bca024a6b7c297fac169bd76fb7d67bfae26fa7bb97ebe970d6177e4af09565a",
+        "bytes": 6772402,
+        "reload_identity": "97892c2edf3c183a751cca8745a6caf8a05629569650d386743a5f45cb37ffe9",
+        "seconds": 93.50568666681647
+      },
+      "initialization_seconds": 111.39125980623066,
+      "native_owned_seconds": 639.7461044290103,
+      "reserved_device_hours": 0.35541338994219485,
+      "peak_per_device_jax_allocator_bytes": [
+        37878626304,
+        37878626560
+      ],
+      "independent_review": {
+        "path": "review/independent-bc-actual-evidence.json",
+        "sha256": "d718707521911619c07cc5a772379321ce5b1f265a211cd202cf004c99389a12",
+        "reviewed_at": "2026-10-18T14:41:37.512855+00:00",
+        "files_verified": 42
+      },
+      "result_sha256": "e2c7c521e7711ae45bab56b59ad6d32da9c3df286e0f6bfdb9946c22ba32cf60",
+      "archive_sha256": "b47df938dd9a9fb196d2650be40716a9842d9b804f65ff1b62d5d603fc75f31e",
+      "durable_receipt_sha256": "7797183c9d996f81a9485f1141c44a4eed37873efc569a61370aa23b1c9a6a7f"
+    },
+    "pooled": {
+      "status": "COMPLETE_TWO_UPDATE_LEARNER_QUALIFICATION",
+      "initial": {
+        "native_sha256": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+        "inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a"
+      },
+      "initial_checks": {
+        "initialized_native": {
+          "stage": "post-native-init-freeze-cast",
+          "algorithm": "native_parameter_digest:path-json/dtype/shape/array-bytes-v1",
+          "expected": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+          "observed": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+          "passed": true,
+          "reason": "MATCH"
+        },
+        "bf16_export": {
+          "stage": "bf16-inference-bits",
+          "algorithm": "bits_digest:path-shape-json/uint16-bf16-bytes-v1",
+          "expected": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+          "source_derived": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+          "observed": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+          "passed": true,
+          "reason": "MATCH"
+        }
+      },
+      "source_reference_sha256": "7dd5b85a2fda212ea072fa021bc19e2854dd121cd301d24f0d07073b466f86a2",
+      "actual_updates": 2,
+      "optimizer_counters_initial": [
+        {
+          "path": "[1][0].count",
+          "value": 0
+        },
+        {
+          "path": "[1][2].count",
+          "value": 0
+        }
+      ],
+      "steps": [
+        {
+          "update": 0,
+          "completed_updates": 1,
+          "lr": 1e-08,
+          "metrics": {
+            "grad_norm": 0.011659099720418453,
+            "llm_grad_norm": 0.0058976225554943085,
+            "loss": 0.00014903115516062826,
+            "mem_enc_norm": 0.00038089652662165463,
+            "param_norm": 1874.8099365234375
+          },
+          "optimizer_counters": [
+            {
+              "path": "[1][0].count",
+              "value": 1
+            },
+            {
+              "path": "[1][2].count",
+              "value": 1
+            }
+          ],
+          "step_seconds_including_debug_capture": 113.44644781807438,
+          "live": {
+            "native_sha256": "cd9a52063b363ec23e03771621cc64085fa5232bb94c51596f073a8c980b034b",
+            "inference_sha256": "3965a67b12ca430f1d50a55e9f2e2dba88e08a664bfaf978ff8cb8d97b1ec957"
+          },
+          "changed_trainable_leaves": 37,
+          "frozen_live_unchanged": true
+        },
+        {
+          "update": 1,
+          "completed_updates": 2,
+          "lr": 2e-08,
+          "metrics": {
+            "grad_norm": 0.045377813279628754,
+            "llm_grad_norm": 0.0314406156539917,
+            "loss": 0.001674904371611774,
+            "mem_enc_norm": 0.0009507227223366499,
+            "param_norm": 1874.8099365234375
+          },
+          "optimizer_counters": [
+            {
+              "path": "[1][0].count",
+              "value": 2
+            },
+            {
+              "path": "[1][2].count",
+              "value": 2
+            }
+          ],
+          "step_seconds_including_debug_capture": 63.6983888130635,
+          "live": {
+            "native_sha256": "2b1385191110d7afd753afde0585e2c2cf9f0f8c293d27ca8ff18e4f2f59c07d",
+            "inference_sha256": "7c72c6bbdff943a199c05d27bbe5303ade46bb0dd1454a26f55b81dfaef3083b"
+          },
+          "changed_trainable_leaves": 37,
+          "frozen_live_unchanged": true
+        }
+      ],
+      "raw_whole_tree_ema": {
+        "native_sha256": "c5dca8314f4f57fb8cc8eeab63049f52ebd710727e39161afb5c36395b0064fc",
+        "inference_sha256": "2757bb982a790f53a988067c46d0ab1009420541278c9c228ea9202410a1eff2"
+      },
+      "frozen_ema_rounding_changed_leaves": [],
+      "final_export": {
+        "file_sha256": "125b886fb411e7ac4de2ec7eb74242f60f6f1c8efeb340aab7c5fcf03e62e121",
+        "bytes": 6764694,
+        "reload_identity": "2757bb982a790f53a988067c46d0ab1009420541278c9c228ea9202410a1eff2",
+        "seconds": 106.79512391565368
+      },
+      "initialization_seconds": 109.13413340505213,
+      "native_owned_seconds": 614.0518857985735,
+      "reserved_device_hours": 0.34113906178261255,
+      "peak_per_device_jax_allocator_bytes": [
+        37878626304,
+        37878626560
+      ],
+      "independent_review": {
+        "path": "review/independent-pooled-actual-evidence.json",
+        "sha256": "3a0fde5b9c4ef30dd59d236a89aba48f106de49e9f4a07de4f7e09e6866abe14",
+        "reviewed_at": "2026-10-18T14:49:25.482838+00:00",
+        "files_verified": 48
+      },
+      "result_sha256": "c106c4dace9d93296f72f69564d359361ba026b1edb3046d2057812610312657",
+      "archive_sha256": "1683e74832f6c4a0e83a892bc9134e699d5a5d3098048154dab0146e4c5a63f1",
+      "durable_receipt_sha256": "9a6b02ff226a4a2922f88698052e02a0c6da14b89b8f36840ac99828620317d1"
+    },
+    "iwr": {
+      "status": "COMPLETE_TWO_UPDATE_LEARNER_QUALIFICATION",
+      "initial": {
+        "native_sha256": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+        "inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a"
+      },
+      "initial_checks": {
+        "initialized_native": {
+          "stage": "post-native-init-freeze-cast",
+          "algorithm": "native_parameter_digest:path-json/dtype/shape/array-bytes-v1",
+          "expected": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+          "observed": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+          "passed": true,
+          "reason": "MATCH"
+        },
+        "bf16_export": {
+          "stage": "bf16-inference-bits",
+          "algorithm": "bits_digest:path-shape-json/uint16-bf16-bytes-v1",
+          "expected": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+          "source_derived": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+          "observed": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+          "passed": true,
+          "reason": "MATCH"
+        }
+      },
+      "source_reference_sha256": "7dd5b85a2fda212ea072fa021bc19e2854dd121cd301d24f0d07073b466f86a2",
+      "actual_updates": 2,
+      "optimizer_counters_initial": [
+        {
+          "path": "[1][0].count",
+          "value": 0
+        },
+        {
+          "path": "[1][2].count",
+          "value": 0
+        }
+      ],
+      "steps": [
+        {
+          "update": 0,
+          "completed_updates": 1,
+          "lr": 1e-08,
+          "metrics": {
+            "grad_norm": 0.053346116095781326,
+            "llm_grad_norm": 0.03538917750120163,
+            "loss": 0.002305475529283285,
+            "mem_enc_norm": 0.001296616392210126,
+            "param_norm": 1874.8099365234375
+          },
+          "optimizer_counters": [
+            {
+              "path": "[1][0].count",
+              "value": 1
+            },
+            {
+              "path": "[1][2].count",
+              "value": 1
+            }
+          ],
+          "step_seconds_including_debug_capture": 106.10731181129813,
+          "live": {
+            "native_sha256": "6453a2af44fe833dd0f4bfa0afab64340dd75f3efcc7e5e79c84060f23084302",
+            "inference_sha256": "f38a7a9ab05ce5e3554f6871cb7e6c70ea7a1dc7f4e26d255e8a02db6653f5b6"
+          },
+          "changed_trainable_leaves": 37,
+          "frozen_live_unchanged": true
+        },
+        {
+          "update": 1,
+          "completed_updates": 2,
+          "lr": 2e-08,
+          "metrics": {
+            "grad_norm": 0.11217695474624634,
+            "llm_grad_norm": 0.07243573665618896,
+            "loss": 0.008051200769841671,
+            "mem_enc_norm": 0.0017196222906932235,
+            "param_norm": 1874.8099365234375
+          },
+          "optimizer_counters": [
+            {
+              "path": "[1][0].count",
+              "value": 2
+            },
+            {
+              "path": "[1][2].count",
+              "value": 2
+            }
+          ],
+          "step_seconds_including_debug_capture": 58.51261012768373,
+          "live": {
+            "native_sha256": "340eeeb65a9d14d9d6c18ec0ed9f31b9c7ef6ce76ae0b83b4dcc17fef1a04698",
+            "inference_sha256": "54b411681a238a96aba0edfba89eeea4ce48e614ab677f3c03e77128ad27f572"
+          },
+          "changed_trainable_leaves": 37,
+          "frozen_live_unchanged": true
+        }
+      ],
+      "raw_whole_tree_ema": {
+        "native_sha256": "f75ca998d828a20fd2aff244d5a76b168853e013f1cdd60968673370bd6dfa99",
+        "inference_sha256": "9d29e85a159e2d0fa511131239a019f5a7b8f17894972c82afaa3167ea57d507"
+      },
+      "frozen_ema_rounding_changed_leaves": [],
+      "final_export": {
+        "file_sha256": "90bed1d91a5a8ddcaa000c46845c2ff367172b20cfb998df275f5f4d968abdc8",
+        "bytes": 6768375,
+        "reload_identity": "9d29e85a159e2d0fa511131239a019f5a7b8f17894972c82afaa3167ea57d507",
+        "seconds": 94.36662553390488
+      },
+      "initialization_seconds": 110.61058371793479,
+      "native_owned_seconds": 584.046168809291,
+      "reserved_device_hours": 0.3244693253799859,
+      "peak_per_device_jax_allocator_bytes": [
+        37878626304,
+        37878626560
+      ],
+      "independent_review": {
+        "path": "review/independent-iwr-actual-evidence.json",
+        "sha256": "ffb1613a0919856ecddea453f24d953da7c37161e5981cc6d223c6624fa85b94",
+        "reviewed_at": "2026-10-18T14:58:39.731207+00:00",
+        "files_verified": 55
+      },
+      "result_sha256": "a532c82d537df80453c021fb40cbc98cdf4236fb6af885c14c919eb544ce618e",
+      "archive_sha256": "a277bca9d14121bdd1c5b8be87a39bc82c87b679f23dd4a8ac94a452b10402dd",
+      "durable_receipt_sha256": "8082c3d614ad3c376e420ed60fbd775954027eb41d85ce0ccc370a1759538060"
+    }
+  },
+  "counts": {
+    "new_train_state_initializations": 3,
+    "actual_native_train_steps_and_optimizer_updates": 6,
+    "initial_export_checks": 1,
+    "final_export_reload_checks": 3,
+    "batch_size": 2,
+    "chunk_draws": 12,
+    "target_control_occurrences": 240,
+    "distinct_source_controls": 120,
+    "standalone_predict_env_expert_history_encoder_calls": 0,
+    "rollout_dev_final": 0,
+    "internal_training_vision_operations": "included in six native steps; count UNKNOWN"
+  },
+  "costs": {
+    "native_owned_seconds": 1837.8441590368748,
+    "native_reserved_device_hours": 1.0210217771047934,
+    "operator_wall_seconds_including_transfer_and_NAS": 1887.0853202130002,
+    "two_device_outer_window_conservative_hours": 1.0483807334516668,
+    "operator_ssh_scp_invocations": 15,
+    "operator_nonzero_or_error_calls": 0,
+    "readonly_progress_ssh_invocations": 16,
+    "readonly_progress_nonzero_calls": 0,
+    "cpu_preparation_small_pinned_source_scp_invocations": 2,
+    "known_ssh_scp_invocations": 33,
+    "prior_closed_failed_package_known_ssh_scp_invocations": 17,
+    "cumulative_known_old_and_repair_ssh_scp_invocations": 50,
+    "metadata_call_scope": "Operator and progress calls have saved receipts; two successful CPU preparation SCPs copied only pinned small source files and are executor-reported in tool history. No old base-weight/hash diagnostic or host canary rerun.",
+    "prior_closed_failed_package_native_owned_seconds": 179.28263080120087,
+    "prior_closed_failed_package_reserved_device_hours": 0.09960057112672883,
+    "cumulative_old_and_repair_native_owned_seconds": 2017.1267898380756,
+    "cumulative_old_and_repair_reserved_device_hours": 1.1206223482315223,
+    "prior_failed_package_train_state_initializations": 1,
+    "cumulative_train_state_initializations": 4,
+    "time_scope": "Step timings include debug capture; first call includes compilation. No isolated compilation/steady-state benchmark. Device hours are reserved, not active utilization; JAX peaks are allocator, not whole-hardware peaks."
+  },
+  "review_limits": "Independent CPU review hashes saved files, reconstructs preloss arrays from six bound NPZ and fixed draws with explicit storage codec, and checks counters/metadata/lifecycle. Live full-tree parameter/EMA digests and export reload checks are producer-runtime assertions; no independent cold base-weight read or rerun.",
+  "warnings": "XLA SPMD full-rematerialization warnings retained. No runtime adjustments or hidden retry. No efficacy inference from loss, changed digest, or qualification PASS.",
+  "full_pilot_execution_authorized": false,
+  "full_source62_dev32_three_by_1000": "NOT_RUN; requires separate protocol/runtime authorization",
+  "science": "No terminal task evaluation or net absorption result; all old negative/zero results, source19 NO_GO and dated458 infra-blocked remain unchanged. Reference800 and canonical dirty tree untouched."
+}

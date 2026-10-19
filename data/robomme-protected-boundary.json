@@ -1,0 +1,1532 @@
+{
+  "schema": "robomme-protected-boundary-public-v1",
+  "observed_at": "2026-10-18T04:57:21.925406+00:00",
+  "last_verified": "2026-10-18T05:05:28.723652+00:00",
+  "status": "COMPLETE56_INDEPENDENT_RAW_VERIFIED_SINGLE_SEED_DEVELOPMENT_NO_NET_GAIN",
+  "publication": "OPEN_UNMERGED_UNPUBLISHED_FACT_PR",
+  "plan": {
+    "registered_at": "2026-10-18T01:06:29.389113+00:00",
+    "code_revision": "b9ba062124c1752ef253d8b4c58e183a04eebf49",
+    "training_plan_id": "robomme-protected-action-bc-788e373d688e9b15",
+    "training_plan_sha256": "cf0f08ebb9e33be05c037b64d21c6827b07bc62fe7e316d5dbbe72846e0fe234",
+    "readout_plan_id": "robomme-protected-boundary-readout-af357112f8f11387",
+    "readout_plan_sha256": "a9475b7b714449dbaff1f630069bdace9217f5da5c7cbc61161a9fe0d3f9e992",
+    "execution_config_sha256": "0cae2118cfde80c92afbc6dc052eb830c994b74d8a1655a69715b101be12e942",
+    "parameter_roles_sha256": "c9ad01cf0a92a3ab4bfba5dd6b3dd963d6351dfb47663cd99b83946b27a05ff7",
+    "prior_use_inventory_sha256": "1e883bb3c6be1d47b8f42cc33604ad19201ba3264643e5d6f4551f1562934d75",
+    "original120_input_binding_sha256": "6ed97a2428cdffb871f7c9f4815b5845a9292c3b41a8ce64940db8faa415df59",
+    "native_cpu_component_qualification_sha256": "229ad9bbf8a21f7cd21f00e5da0ff08351aecbd103f37d769f668e5e1331ff3d",
+    "code_archive_sha256": "b02ea4963f6e4de32636e5c3df80c6154154a36315bd04ab09dc8af38d146b0f",
+    "new_candidate_optimizer_updates": 0,
+    "state": "AWAITING_EXACT_INDEPENDENT_REVIEW_NO_COMPUTE_AUTHORIZED_BY_THIS_FILE"
+  },
+  "recipe": {
+    "data": "Same original120 full-history correction tensors",
+    "updates": 10000,
+    "seed": 7,
+    "optimization": "19existing actionexpert/projection leaves;42vision/language/history leaves protected",
+    "precision": "Original native initialization casting preserved;separate optimization filter",
+    "deployment": "19actionEMA+42protectedfinal-live;protectedserializedbf16mustmatchinitialbytes;rawfullEMA audited separately",
+    "new_method_claim": false,
+    "treatment": "Joint recipe:19-leaf optimization boundary plus prospectively registered protected-live/action-EMA hybrid deployment",
+    "trainable_parameters": 430098464,
+    "causal_scope": "Not a single-factor mask/freezing experiment. No lightweight or budget advantage claim. Native EMA observations do not diagnose the old full-correction regression."
+  },
+  "readout": {
+    "fresh_train_instances": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "tasks": [
+      "PatternLock",
+      "PickHighlight"
+    ],
+    "fresh16_models": [
+      "released",
+      "original-full-correction-seed7",
+      "protected-seed7"
+    ],
+    "candidate_old8_once": true,
+    "rollouts": 56,
+    "max_logged_controls": 72800,
+    "extra_expert_queries": 0,
+    "scope": "Single-seed development baseline;not confirmation,newmechanism or generalized RSI evidence",
+    "completed_at_observation": 56,
+    "status": "ALL56_COMPLETE_RAW_ARCHIVED_INDEPENDENTLY_VERIFIED",
+    "fresh_scope": "Officialtrain9–16 per task,fresh to managed development runs;not claimed unseen in pretraining or independent confirmation",
+    "new_candidate_fresh16": {
+      "success": 7,
+      "total": 16
+    },
+    "scientific_verdict": "Partialrecoveryversusoldcorrection;netbenefitversusreleasednotestablished"
+  },
+  "test_evidence": {
+    "focused_cpu_contracts": 126,
+    "passed": true,
+    "native_cpu_component": "61real parameter paths;19gradientfilter;nativecast/hybridexport on tinyarrays;notGPUendtoend"
+  },
+  "pr": "https://github.com/asimfish/robocore/pull/21",
+  "unchanged_prior_results": {
+    "initial": {
+      "success": 7,
+      "total": 8
+    },
+    "correction": {
+      "success": 3,
+      "total": 8
+    },
+    "mixture": {
+      "success": 2,
+      "total": 8
+    },
+    "pure_replay": {
+      "success": 4,
+      "total": 8
+    }
+  },
+  "candidate_optimizer_updates": 10000,
+  "preflight_incident": {
+    "at": "2026-10-18T01:04:57.325652+00:00",
+    "code": "e54ed83f41aac9c795f02dd18ace9922c8fd8465",
+    "error": "JSON string passed to Path-only fileSHA helper;identity preflight AttributeError",
+    "candidate_updates": 0,
+    "GPU_model_environment_calls": 0,
+    "scope": "Infrastructure type conversion,not learning/model/data failure",
+    "evidence_preserved": true,
+    "repair": "CLOSED:two explicit Path conversions;nonempty-file/positive preflight regression;new b9exact independentreviewPASS beforeattempt2"
+  },
+  "independent_execution_review": {
+    "code": "b9ba062124c1752ef253d8b4c58e183a04eebf49",
+    "sha256": "76a2e16836ff93017519a0a3299df348ce62f8bbc9fddb37a8af3198e2ffc9d6",
+    "launch_allowed": true,
+    "scope": "Exactsingle10k+56;no merge/publication permission"
+  },
+  "launch": {
+    "at": "2026-10-18T01:09:08.035065+00:00",
+    "attempt": 2,
+    "prior_preflight_abort_retained": true,
+    "phase": "Native10000 complete;all56 pre-registered readout continues",
+    "resource_check": "PASS registeredmainskillGPU0/1UUIDs/memory/driver/9156exclusive"
+  },
+  "plan_state_scope": "Immutable registration.state describes generation time before final review,not the current runtime status.",
+  "historical_snapshots": [
+    {
+      "observed_at": "2026-10-18T01:09:36.618016+00:00",
+      "status": "NATIVE_INITIALIZATION_RUNNING_ZERO_RECORDED_UPDATES_AT_OBSERVATION",
+      "candidate_optimizer_updates": 0,
+      "launch": {
+        "at": "2026-10-18T01:09:08.035065+00:00",
+        "attempt": 2,
+        "prior_preflight_abort_retained": true,
+        "phase": "Nativeinitialization;no observedoptimizerstepyet",
+        "resource_check": "PASS registeredmainskillGPU0/1UUIDs/memory/driver/9156exclusive"
+      },
+      "qualification_gpu_calls": 0
+    },
+    {
+      "observed_at": "2026-10-18T02:04:29.230980+00:00",
+      "status": "NATIVE10000_COMPLETE_PRE_REGISTERED_56_READOUT_IN_PROGRESS",
+      "runtime": {
+        "source_observation_sha256": "f559bc941633004bb374c18a89cfcb71646609e491f225e5ad818d8a94670b46",
+        "stage": "EVALUATING_CASE",
+        "completed": 2,
+        "all_pre_registered_cases_remain_required": true,
+        "extra_expert_queries": 0,
+        "qualification_forecasts_at_observation": 13,
+        "new_efficacy_conclusion": null
+      },
+      "model": {
+        "inference_sha256": "399d4b79e728d6925b48667212e8e5e38bec32ced2603958db02a71956eef986",
+        "archive_sha256": "7398e083f9849eef1ff5eef9d9b94e8b7018429ec0fc1344a329e853e290c0ad",
+        "archive_bytes": 526832119,
+        "remote_ordinary_durable_copy": "COMPLETE",
+        "local_NAS_copy": "IN_PROGRESS_NOT_YET_COMPLETE",
+        "optimizer_resume": false
+      }
+    },
+    {
+      "observed_at": "2026-10-18T02:42:24.114828+00:00",
+      "status": "NATIVE10000_COMPLETE_PRE_REGISTERED_56_READOUT_IN_PROGRESS",
+      "runtime": {
+        "source_observation_sha256": "5b8598c5b1526cc77ca22a0be8a928948e10cf8c60523853dfa75458ad23a1a4",
+        "stage": "QUALIFYING_SERVICE",
+        "completed": 16,
+        "all_pre_registered_cases_remain_required": true,
+        "extra_expert_queries": 0,
+        "qualification_forecasts_at_observation": 26,
+        "new_efficacy_conclusion": null,
+        "current_model": "full_correction_seed7"
+      },
+      "model": {
+        "inference_sha256": "399d4b79e728d6925b48667212e8e5e38bec32ced2603958db02a71956eef986",
+        "archive_sha256": "7398e083f9849eef1ff5eef9d9b94e8b7018429ec0fc1344a329e853e290c0ad",
+        "archive_bytes": 526832119,
+        "remote_ordinary_durable_copy": "COMPLETE",
+        "local_NAS_copy": "COMPLETE_ORDINARY_EXACT_DELTA_ARCHIVE_READBACK_VERIFIED",
+        "optimizer_resume": false,
+        "local_copy_receipt_sha256": "045597a77d4863dee7923a6d70263a822e99d85a551fc3cd5bc1cd944fd03d22",
+        "inference_export_scope": "Exactbf16 delta withboundreleasedbase;not optimizerresume"
+      }
+    },
+    {
+      "observed_at": "2026-10-18T03:47:00.767451+00:00",
+      "status": "NATIVE10000_COMPLETE_PRE_REGISTERED_56_READOUT_IN_PROGRESS",
+      "runtime": {
+        "source_observation_sha256": "2bf8d89bf150c382983d5b42dae077ba69bb58f7fccab924ee73adaaa3be45fd",
+        "stage": "QUALIFYING_SERVICE",
+        "completed": 32,
+        "all_pre_registered_cases_remain_required": true,
+        "extra_expert_queries": 0,
+        "qualification_forecasts_at_observation": 52,
+        "new_efficacy_conclusion": null,
+        "current_model": "protected_seed7"
+      },
+      "model": {
+        "inference_sha256": "399d4b79e728d6925b48667212e8e5e38bec32ced2603958db02a71956eef986",
+        "archive_sha256": "7398e083f9849eef1ff5eef9d9b94e8b7018429ec0fc1344a329e853e290c0ad",
+        "archive_bytes": 526832119,
+        "remote_ordinary_durable_copy": "COMPLETE",
+        "local_NAS_copy": "COMPLETE_ORDINARY_EXACT_DELTA_ARCHIVE_READBACK_VERIFIED",
+        "optimizer_resume": false,
+        "local_copy_receipt_sha256": "045597a77d4863dee7923a6d70263a822e99d85a551fc3cd5bc1cd944fd03d22",
+        "inference_export_scope": "Exactbf16 delta withboundreleasedbase;not optimizerresume"
+      }
+    },
+    {
+      "observed_at": "2026-10-18T04:09:07.084560+00:00",
+      "status": "NATIVE10000_COMPLETE_PRE_REGISTERED_56_READOUT_IN_PROGRESS",
+      "runtime": {
+        "source_observation_sha256": "5b31e386eb0dd71fedee75e8de56d4c507254595205a5865e8312cb125623248",
+        "stage": "QUALIFYING_SERVICE",
+        "completed": 40,
+        "all_pre_registered_cases_remain_required": true,
+        "extra_expert_queries": 0,
+        "qualification_forecasts_at_observation": 65,
+        "new_efficacy_conclusion": null,
+        "current_model": "protected_seed7"
+      },
+      "model": {
+        "inference_sha256": "399d4b79e728d6925b48667212e8e5e38bec32ced2603958db02a71956eef986",
+        "archive_sha256": "7398e083f9849eef1ff5eef9d9b94e8b7018429ec0fc1344a329e853e290c0ad",
+        "archive_bytes": 526832119,
+        "remote_ordinary_durable_copy": "COMPLETE",
+        "local_NAS_copy": "COMPLETE_ORDINARY_EXACT_DELTA_ARCHIVE_READBACK_VERIFIED",
+        "optimizer_resume": false,
+        "local_copy_receipt_sha256": "045597a77d4863dee7923a6d70263a822e99d85a551fc3cd5bc1cd944fd03d22",
+        "inference_export_scope": "Exactbf16 delta withboundreleasedbase;not optimizerresume"
+      }
+    }
+  ],
+  "runtime": {
+    "source_observation_sha256": "a99841ed8aa8605fe7f02ad880b9f7c0dd8418a497f4469d90e77e8c37ecd8d6",
+    "stage": "COMPLETE",
+    "completed": 56,
+    "all_pre_registered_cases_completed": true,
+    "extra_expert_queries": 0,
+    "qualification_forecasts": 91,
+    "new_efficacy_conclusion": "No net gain versus released in this single-seed development readout",
+    "current_model": null
+  },
+  "model": {
+    "inference_sha256": "399d4b79e728d6925b48667212e8e5e38bec32ced2603958db02a71956eef986",
+    "archive_sha256": "7398e083f9849eef1ff5eef9d9b94e8b7018429ec0fc1344a329e853e290c0ad",
+    "archive_bytes": 526832119,
+    "remote_ordinary_durable_copy": "COMPLETE",
+    "local_NAS_copy": "COMPLETE_ORDINARY_EXACT_DELTA_ARCHIVE_READBACK_VERIFIED",
+    "optimizer_resume": false,
+    "local_copy_receipt_sha256": "045597a77d4863dee7923a6d70263a822e99d85a551fc3cd5bc1cd944fd03d22",
+    "inference_export_scope": "Exactbf16 delta withboundreleasedbase;not optimizerresume",
+    "final_live_native_sha256": "bdc38a837d95e231891221c4e22d1e2f191a40daca74a8148559b99355ffa709",
+    "final_raw_native_ema_sha256": "76b963c27904cb954e46e306c228ba19ec1ffdaf4470f6e3aef4cb8a671d72d4",
+    "final_deployed_native_sha256": "23d4ec36eb6f1fe47ac7352fb47e9e61d2e1fdc7fc3150a7297ff3d9007e4370",
+    "serialized_inference_sha256": "399d4b79e728d6925b48667212e8e5e38bec32ced2603958db02a71956eef986",
+    "weight_identity_source_sha256": "f0016cac2fb9725371726e73353e732038642a7d823afbc199235656478a4abc"
+  },
+  "parameter_boundary": {
+    "protected_native_live_initial_first_final": "42of42 BYTE_EQUAL",
+    "trainable_action_leaves_changed": "19of19",
+    "protected_serialized_bf16": "42of42 BYTE_EQUAL",
+    "deployment": "19 action EMA leaves plus42 protected final-live leaves",
+    "raw_full_ema_is_not_deployed": true,
+    "raw_ema_protected_changed_at_final": {
+      "native_leaves": 18,
+      "bf16_inference_leaves": 16,
+      "max_abs_vs_live": 8.106231689453125e-05
+    },
+    "old_task_regression_root_cause": "UNKNOWN",
+    "first_update_raw_ema_observation": {
+      "protected_native_ema_changed": 18,
+      "protected_inference_ema_changed": 11,
+      "causal_status": "This run numerical observation only;not cause of old full-correction regression"
+    }
+  },
+  "independent_reviews": [
+    {
+      "sha256": "e9a83a57ac6097a0ad657af08b9f2c0cbe26dfad9dd99f4e1648d62e998620d6",
+      "scope": "Finalmodel metadata and native/serialized parameter boundary;not outcomes"
+    },
+    {
+      "sha256": "bb287906228cedf3b8ca642112965dc15b607c693a055d991653133d29dffaca",
+      "scope": "All10000 contiguous finite updates,seed7 original120 schedule,source bindings and smallrecords;not fullmodel localcopy or56 outcomes"
+    },
+    {
+      "sha256": "61477f00321371c3dcc2ca516eb22cb05d4da8590f18f663c07246774b4d5a22",
+      "scope": "LocalNAS ordinary deltaarchive preservation/metadata chain;not56 outcomes or secondlargehash"
+    }
+  ],
+  "released_fresh16_reference": {
+    "observed_at": "2026-10-18T02:42:24.114828+00:00",
+    "tasks": {
+      "PatternLock": {
+        "success": 7,
+        "total": 8,
+        "controls": 768
+      },
+      "PickHighlight": {
+        "success": 8,
+        "total": 8,
+        "controls": 2820
+      }
+    },
+    "success": 15,
+    "total": 16,
+    "verification": "Remoteindividualrawvalidated+2batcharchives;ownerrecount;finalindependent56caseauditPENDING",
+    "source_milestone_sha256": "356825a3463fb05b469765ce889bd654a0db8e80126c9a695510beaeddbcb0f0",
+    "primary_candidate_effect": "NOT_YET_AVAILABLE",
+    "all56_still_required": true
+  },
+  "full_correction_fresh16_reference": {
+    "observed_at": "2026-10-18T03:46:14.242351+00:00",
+    "tasks": {
+      "PatternLock": {
+        "success": 2,
+        "total": 8,
+        "controls": 843
+      },
+      "PickHighlight": {
+        "success": 0,
+        "total": 8,
+        "controls": 10400
+      }
+    },
+    "success": 2,
+    "total": 16,
+    "paired_vs_released": {
+      "released": 15,
+      "full_correction": 2,
+      "fail_to_success": 0,
+      "success_to_fail": 13
+    },
+    "verification": "Remoteindividualrawvalidated+4referencebatcharchives;ownerrecount;finalindependent56caseauditPENDING",
+    "source_milestone_sha256": "e430181252833a8e8722acce19b2150beddc3af619331820b247dbfa40226fa0",
+    "root_cause": "UNKNOWN",
+    "scope": "Oneexistingseed7 model on16manageddevelopment instances;notnewprotectedresult orsixseedconclusion"
+  },
+  "protected_old8_readout": {
+    "observed_at": "2026-10-18T04:09:07.084560+00:00",
+    "versions": {
+      "initial": {
+        "success": 7,
+        "total": 8
+      },
+      "correction_only": {
+        "success": 3,
+        "total": 8
+      },
+      "mixture": {
+        "success": 2,
+        "total": 8
+      },
+      "pure_replay": {
+        "success": 4,
+        "total": 8
+      },
+      "protected": {
+        "success": 4,
+        "total": 8
+      }
+    },
+    "protected_tasks": {
+      "PatternLock": {
+        "success": 4,
+        "total": 4
+      },
+      "PickHighlight": {
+        "success": 0,
+        "total": 4
+      }
+    },
+    "protected_roles": {
+      "source": {
+        "success": 2,
+        "total": 4
+      },
+      "development": {
+        "success": 2,
+        "total": 4
+      }
+    },
+    "paired_transitions": {
+      "initial": {
+        "fail_to_success": [
+          "PatternLock-train-002"
+        ],
+        "success_to_fail": [
+          "PickHighlight-train-001",
+          "PickHighlight-train-002",
+          "PickHighlight-train-005",
+          "PickHighlight-train-006"
+        ]
+      },
+      "correction_only": {
+        "fail_to_success": [
+          "PatternLock-train-005"
+        ],
+        "success_to_fail": []
+      },
+      "mixture": {
+        "fail_to_success": [
+          "PatternLock-train-002",
+          "PatternLock-train-006"
+        ],
+        "success_to_fail": []
+      },
+      "pure_replay": {
+        "fail_to_success": [
+          "PatternLock-train-002",
+          "PatternLock-train-006"
+        ],
+        "success_to_fail": [
+          "PickHighlight-train-001",
+          "PickHighlight-train-002"
+        ]
+      }
+    },
+    "logged_controls": 5568,
+    "verification": "All8localrawcasesandinheritedfourversionreferencesindependentlyverified;no oldbaseline reruns",
+    "source_milestone_sha256": "f03479d45fc28a3fefd1bfc297445224481947ea88a2d0bac929071b256ece8f",
+    "prior_four_report_sha256": "c6d08e4218e2d54ec3bf6573e1c3321fed67bd3ae6274b0b794f2408e0aba43d",
+    "scope": "Old8alreadyusedfordevelopment;onlynewcandidateevaluatedonce,oldfourreferencedwithout rerun;notfresh16effect/confirmation",
+    "root_cause": "UNKNOWN",
+    "all_fresh16_still_required": true,
+    "rows": [
+      {
+        "case": "PatternLock-train-001",
+        "task": "PatternLock",
+        "episode": 1,
+        "use": "source",
+        "initial": true,
+        "correction_only": true,
+        "mixture": true,
+        "pure_replay": true,
+        "protected": true,
+        "protected_outcome": "success",
+        "protected_controls": 72,
+        "protected_receipt_sha256": "81ac6b4dfa69f5755548ff13b74686ee3a350cf3a957ec1fd77fb142f6148dcb"
+      },
+      {
+        "case": "PickHighlight-train-001",
+        "task": "PickHighlight",
+        "episode": 1,
+        "use": "source",
+        "initial": true,
+        "correction_only": false,
+        "mixture": false,
+        "pure_replay": true,
+        "protected": false,
+        "protected_outcome": "timeout",
+        "protected_controls": 1300,
+        "protected_receipt_sha256": "8917d238749b31ecbe114b7a13ceb711f53e50a4dce52b0793ed8bbe8f00a852"
+      },
+      {
+        "case": "PatternLock-train-002",
+        "task": "PatternLock",
+        "episode": 2,
+        "use": "source",
+        "initial": false,
+        "correction_only": true,
+        "mixture": false,
+        "pure_replay": false,
+        "protected": true,
+        "protected_outcome": "success",
+        "protected_controls": 138,
+        "protected_receipt_sha256": "83cdc11202d247cfd949ef4d99447865fdd64c8ae9b0503fb9021ca1e89b84a6"
+      },
+      {
+        "case": "PickHighlight-train-002",
+        "task": "PickHighlight",
+        "episode": 2,
+        "use": "source",
+        "initial": true,
+        "correction_only": false,
+        "mixture": false,
+        "pure_replay": true,
+        "protected": false,
+        "protected_outcome": "timeout",
+        "protected_controls": 1300,
+        "protected_receipt_sha256": "2a470b5821da431d860910bd202f1f67a5a4f84fa21eafdbf340991e7fc6b35f"
+      },
+      {
+        "case": "PatternLock-train-005",
+        "task": "PatternLock",
+        "episode": 5,
+        "use": "development",
+        "initial": true,
+        "correction_only": false,
+        "mixture": true,
+        "pure_replay": true,
+        "protected": true,
+        "protected_outcome": "success",
+        "protected_controls": 71,
+        "protected_receipt_sha256": "bb6b844ae6c0ddfc44bd14086c4cbfe9f6706989b09b18adf9e766df1742a576"
+      },
+      {
+        "case": "PickHighlight-train-005",
+        "task": "PickHighlight",
+        "episode": 5,
+        "use": "development",
+        "initial": true,
+        "correction_only": false,
+        "mixture": false,
+        "pure_replay": false,
+        "protected": false,
+        "protected_outcome": "timeout",
+        "protected_controls": 1300,
+        "protected_receipt_sha256": "5707b67489dab8ef085415a1fe701d363ba16baf52db3ef14aecb797c499df0f"
+      },
+      {
+        "case": "PatternLock-train-006",
+        "task": "PatternLock",
+        "episode": 6,
+        "use": "development",
+        "initial": true,
+        "correction_only": true,
+        "mixture": false,
+        "pure_replay": false,
+        "protected": true,
+        "protected_outcome": "success",
+        "protected_controls": 87,
+        "protected_receipt_sha256": "85d70f7c8082e67d96a0c7094c3c099e12803e1cc66e091c6c73a1f0a046cc6d"
+      },
+      {
+        "case": "PickHighlight-train-006",
+        "task": "PickHighlight",
+        "episode": 6,
+        "use": "development",
+        "initial": true,
+        "correction_only": false,
+        "mixture": false,
+        "pure_replay": false,
+        "protected": false,
+        "protected_outcome": "timeout",
+        "protected_controls": 1300,
+        "protected_receipt_sha256": "851c89dcc316e1ef9b4701d1ae497b0e02a0efb9fcdda95434b0742f239941ec"
+      }
+    ],
+    "final_independent56_review_sha256": "c483dd75ca459fc0a57eebab2a4ae648cc9be2c22e8028e9b77ce8338a2605d1"
+  },
+  "development_readout": {
+    "status": "COMPLETE_SINGLE_SEED_DEVELOPMENT_DESCRIPTIVE_READOUT",
+    "registered_rollouts": 56,
+    "groups": {
+      "released:fresh16": {
+        "cases": 16,
+        "successes": 15,
+        "controls": 3588,
+        "tasks": {
+          "PatternLock": {
+            "successes": 7,
+            "cases": 8
+          },
+          "PickHighlight": {
+            "successes": 8,
+            "cases": 8
+          }
+        },
+        "case_ids": [
+          "PatternLock-train-009",
+          "PatternLock-train-010",
+          "PatternLock-train-011",
+          "PatternLock-train-012",
+          "PatternLock-train-013",
+          "PatternLock-train-014",
+          "PatternLock-train-015",
+          "PatternLock-train-016",
+          "PickHighlight-train-009",
+          "PickHighlight-train-010",
+          "PickHighlight-train-011",
+          "PickHighlight-train-012",
+          "PickHighlight-train-013",
+          "PickHighlight-train-014",
+          "PickHighlight-train-015",
+          "PickHighlight-train-016"
+        ]
+      },
+      "full_correction_seed7:fresh16": {
+        "cases": 16,
+        "successes": 2,
+        "controls": 11243,
+        "tasks": {
+          "PatternLock": {
+            "successes": 2,
+            "cases": 8
+          },
+          "PickHighlight": {
+            "successes": 0,
+            "cases": 8
+          }
+        },
+        "case_ids": [
+          "PatternLock-train-009",
+          "PatternLock-train-010",
+          "PatternLock-train-011",
+          "PatternLock-train-012",
+          "PatternLock-train-013",
+          "PatternLock-train-014",
+          "PatternLock-train-015",
+          "PatternLock-train-016",
+          "PickHighlight-train-009",
+          "PickHighlight-train-010",
+          "PickHighlight-train-011",
+          "PickHighlight-train-012",
+          "PickHighlight-train-013",
+          "PickHighlight-train-014",
+          "PickHighlight-train-015",
+          "PickHighlight-train-016"
+        ]
+      },
+      "protected_seed7:old8": {
+        "cases": 8,
+        "successes": 4,
+        "controls": 5568,
+        "tasks": {
+          "PatternLock": {
+            "successes": 4,
+            "cases": 4
+          },
+          "PickHighlight": {
+            "successes": 0,
+            "cases": 4
+          }
+        },
+        "case_ids": [
+          "PatternLock-train-001",
+          "PickHighlight-train-001",
+          "PatternLock-train-002",
+          "PickHighlight-train-002",
+          "PatternLock-train-005",
+          "PickHighlight-train-005",
+          "PatternLock-train-006",
+          "PickHighlight-train-006"
+        ]
+      },
+      "protected_seed7:fresh16": {
+        "cases": 16,
+        "successes": 7,
+        "controls": 11424,
+        "tasks": {
+          "PatternLock": {
+            "successes": 7,
+            "cases": 8
+          },
+          "PickHighlight": {
+            "successes": 0,
+            "cases": 8
+          }
+        },
+        "case_ids": [
+          "PatternLock-train-009",
+          "PatternLock-train-010",
+          "PatternLock-train-011",
+          "PatternLock-train-012",
+          "PatternLock-train-013",
+          "PatternLock-train-014",
+          "PatternLock-train-015",
+          "PatternLock-train-016",
+          "PickHighlight-train-009",
+          "PickHighlight-train-010",
+          "PickHighlight-train-011",
+          "PickHighlight-train-012",
+          "PickHighlight-train-013",
+          "PickHighlight-train-014",
+          "PickHighlight-train-015",
+          "PickHighlight-train-016"
+        ]
+      }
+    },
+    "paired_fresh16": {
+      "released": {
+        "paired_cases": 16,
+        "failure_to_success": [
+          "PatternLock-train-011"
+        ],
+        "success_to_failure": [
+          "PatternLock-train-014",
+          "PickHighlight-train-009",
+          "PickHighlight-train-010",
+          "PickHighlight-train-011",
+          "PickHighlight-train-012",
+          "PickHighlight-train-013",
+          "PickHighlight-train-014",
+          "PickHighlight-train-015",
+          "PickHighlight-train-016"
+        ],
+        "difference_percentage_points": -50.0
+      },
+      "full_correction_seed7": {
+        "paired_cases": 16,
+        "failure_to_success": [
+          "PatternLock-train-010",
+          "PatternLock-train-011",
+          "PatternLock-train-012",
+          "PatternLock-train-015",
+          "PatternLock-train-016"
+        ],
+        "success_to_failure": [],
+        "difference_percentage_points": 31.25
+      }
+    },
+    "logged_controls": 31823,
+    "extra_expert_queries": 0,
+    "limitations": "One training seed;fresh development instances,not a confirmation/test set;case-ID pairing is not pixel-exact counterfactual replay. No positive generalization,new mechanism,causal rootcause or population main-effect conclusion.",
+    "owner_report_sha256": "e015416037b31f6cc9ff262df7a5822e42d51dbd27b0e18aa81fcae75a174536",
+    "independent_review_sha256": "c483dd75ca459fc0a57eebab2a4ae648cc9be2c22e8028e9b77ce8338a2605d1",
+    "owner_report_observed_at": "2026-10-18T04:57:21.925406+00:00",
+    "verification": "ALL56_LOCAL_RAW_AND_LIFECYCLE_INDEPENDENTLY_REVIEWED",
+    "all56": [
+      {
+        "index": 0,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 9,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 20,
+        "receipt_sha256": "bb5a231d497ff2b4fd0d7c2bc8c5729898603b6c1dded6ba7383dab3c6368e76"
+      },
+      {
+        "index": 1,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 10,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 105,
+        "receipt_sha256": "256e02ca41121de31b188f6adf30ef14e3741d6b1b7f49588bdd13392695b78c"
+      },
+      {
+        "index": 2,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 11,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "fail",
+        "controls": 101,
+        "receipt_sha256": "a90bdabac92a06e9c715bf95ad7798c76709a88ce55f170d650ca808b9adb4ad"
+      },
+      {
+        "index": 3,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 12,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 85,
+        "receipt_sha256": "1a6e34805d3c81cc47e43da7284aadbd6a828217278addc2f82dda78f6c43f36"
+      },
+      {
+        "index": 4,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 13,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 61,
+        "receipt_sha256": "49439e957e5adcacfa81b33847a192ab5199aedabde19a1ae548653008ec32b9"
+      },
+      {
+        "index": 5,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 14,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 141,
+        "receipt_sha256": "a8b465be53a7b145489c5a47b81e80a97229cc796b72fc95dfdada51539c96dd"
+      },
+      {
+        "index": 6,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 15,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 166,
+        "receipt_sha256": "098a9d9a341890d8e7bb56284f9530f438933443209017b98b99a5749f58bad1"
+      },
+      {
+        "index": 7,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 16,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 89,
+        "receipt_sha256": "a7e783c9628457288a8a2bafb5f16a178377e86c7693aa313f0552bf1c96492f"
+      },
+      {
+        "index": 8,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 9,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 219,
+        "receipt_sha256": "fcda968d8a66a5bbb8436451996e7cf3e5840174a53d7f3cdddaa30bbcfd0f38"
+      },
+      {
+        "index": 9,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 10,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 410,
+        "receipt_sha256": "3caa0ae24d6ec5082b5910f8de974dbdf7ea13cb34b3e902901d41bc623b4feb"
+      },
+      {
+        "index": 10,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 11,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 608,
+        "receipt_sha256": "169de8d67c5f50d2b7a8952b394598dc91a48201ed31a28262d8b856b6447a8c"
+      },
+      {
+        "index": 11,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 12,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 206,
+        "receipt_sha256": "c2f29ffe7c1a13506cf2ec2f9ceaf4e4e59fe03fa105e773b4331dd151d4dc49"
+      },
+      {
+        "index": 12,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 13,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 218,
+        "receipt_sha256": "46690e8cd03475bcc196aeff41a825c6f9f9f82ce80ea5de7e8510b3a16a7aa4"
+      },
+      {
+        "index": 13,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 14,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 382,
+        "receipt_sha256": "f655dc2b7287532f4e92f33006acf9b93f61807a1a51506ce73abe0a1d6a3f55"
+      },
+      {
+        "index": 14,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 15,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 560,
+        "receipt_sha256": "a960e03a36035c9afab3271e43ee1d819d2a4a14b0f0e8fe31e078cbb6c4d0c1"
+      },
+      {
+        "index": 15,
+        "model": "released",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 16,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 217,
+        "receipt_sha256": "bc1d54304df44db4823e5b4ff1da16f27e4f27411e4e7489ad3995b4dd363a07"
+      },
+      {
+        "index": 16,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 9,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 37,
+        "receipt_sha256": "13b4acb9132aa0351cca2e8e431599f413c5fa330d2b1f85ae3faf494b7ea32f"
+      },
+      {
+        "index": 17,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 10,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "fail",
+        "controls": 183,
+        "receipt_sha256": "e36a984b072c4caa44cbe1dbb48e99ef63a20c25ece87e42332710ad1ab38fb4"
+      },
+      {
+        "index": 18,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 11,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "fail",
+        "controls": 86,
+        "receipt_sha256": "4d32d6cfadd677b8ff51c2b6ec261fa570424ee7e601a8720566690587d4bc88"
+      },
+      {
+        "index": 19,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 12,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "fail",
+        "controls": 106,
+        "receipt_sha256": "4057d38c07c3b88b533cd03300950684d72ae92bd52ac0f7156354078de07466"
+      },
+      {
+        "index": 20,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 13,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 83,
+        "receipt_sha256": "f62cce275550aeef536a3e7bbce3189fc07bf65b0afc826a98327d7223485ebd"
+      },
+      {
+        "index": 21,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 14,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "fail",
+        "controls": 141,
+        "receipt_sha256": "79a3d2999db2b3b48e4e7f462ced7c3232149657b7eb2cd09884005500b76790"
+      },
+      {
+        "index": 22,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 15,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "fail",
+        "controls": 88,
+        "receipt_sha256": "77e180d6b789d2894c8a6e76c62cdb04055de53d99f562425725e48bea304b91"
+      },
+      {
+        "index": 23,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 16,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "fail",
+        "controls": 119,
+        "receipt_sha256": "1b0879a9b9b94fc5cc7dda109fd6c39037359659660a3d501f51522017a0e848"
+      },
+      {
+        "index": 24,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 9,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "ff0a6214fb6c72d2bc3efb79d8fa2856c8a19eb4f7a64ed3c9086fb0a5f4785f"
+      },
+      {
+        "index": 25,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 10,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "af06ade7077249ae35d01103a49fa126da82eaa7a3c89c090302d4771c372ae9"
+      },
+      {
+        "index": 26,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 11,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "e551b510d870515e2bbd490d86fa0c963fc6722c0c25a2e8179fdf253aed040f"
+      },
+      {
+        "index": 27,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 12,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "d206c0cebf0f23da593f4b060853a5a8b230b5094c3c4276d3d4748d75e7f92c"
+      },
+      {
+        "index": 28,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 13,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "08d3aa819f5c4003b482c0a6a7dc42b11b40535ac7a7946724beae6c2748f6ac"
+      },
+      {
+        "index": 29,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 14,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "b31dd34b314189b0c207f597aaa3c9bb5c169ccd53003c7b2a707487460ae221"
+      },
+      {
+        "index": 30,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 15,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "633b15993bf443ecc6b1da19432945cbd855c14b086c744468f83d176e88bd6a"
+      },
+      {
+        "index": 31,
+        "model": "full_correction_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 16,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "1a4868b3b01879c04dc2f17312e841012e501dd70f6602dbd2ea0c9773526245"
+      },
+      {
+        "index": 32,
+        "model": "protected_seed7",
+        "block": "old8",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 1,
+        "use": "source",
+        "success": true,
+        "outcome": "success",
+        "controls": 72,
+        "receipt_sha256": "81ac6b4dfa69f5755548ff13b74686ee3a350cf3a957ec1fd77fb142f6148dcb"
+      },
+      {
+        "index": 33,
+        "model": "protected_seed7",
+        "block": "old8",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 1,
+        "use": "source",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "8917d238749b31ecbe114b7a13ceb711f53e50a4dce52b0793ed8bbe8f00a852"
+      },
+      {
+        "index": 34,
+        "model": "protected_seed7",
+        "block": "old8",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 2,
+        "use": "source",
+        "success": true,
+        "outcome": "success",
+        "controls": 138,
+        "receipt_sha256": "83cdc11202d247cfd949ef4d99447865fdd64c8ae9b0503fb9021ca1e89b84a6"
+      },
+      {
+        "index": 35,
+        "model": "protected_seed7",
+        "block": "old8",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 2,
+        "use": "source",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "2a470b5821da431d860910bd202f1f67a5a4f84fa21eafdbf340991e7fc6b35f"
+      },
+      {
+        "index": 36,
+        "model": "protected_seed7",
+        "block": "old8",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 5,
+        "use": "development",
+        "success": true,
+        "outcome": "success",
+        "controls": 71,
+        "receipt_sha256": "bb6b844ae6c0ddfc44bd14086c4cbfe9f6706989b09b18adf9e766df1742a576"
+      },
+      {
+        "index": 37,
+        "model": "protected_seed7",
+        "block": "old8",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 5,
+        "use": "development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "5707b67489dab8ef085415a1fe701d363ba16baf52db3ef14aecb797c499df0f"
+      },
+      {
+        "index": 38,
+        "model": "protected_seed7",
+        "block": "old8",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 6,
+        "use": "development",
+        "success": true,
+        "outcome": "success",
+        "controls": 87,
+        "receipt_sha256": "85d70f7c8082e67d96a0c7094c3c099e12803e1cc66e091c6c73a1f0a046cc6d"
+      },
+      {
+        "index": 39,
+        "model": "protected_seed7",
+        "block": "old8",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 6,
+        "use": "development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "851c89dcc316e1ef9b4701d1ae497b0e02a0efb9fcdda95434b0742f239941ec"
+      },
+      {
+        "index": 40,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 9,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 26,
+        "receipt_sha256": "905dd489de8acabb5ef3dea50857f11a6dd9b42703bfedfbc419fe39de8c3034"
+      },
+      {
+        "index": 41,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 10,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 134,
+        "receipt_sha256": "eb006d14cfe510361f98c9797ef5f3e226410f629f08af97189d4fd08413bcdf"
+      },
+      {
+        "index": 42,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 11,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 159,
+        "receipt_sha256": "720d3ae8563b79c10369c02d79b2fec38e51e4a7bdd2f471d8462b159cd58be3"
+      },
+      {
+        "index": 43,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 12,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 104,
+        "receipt_sha256": "d868e6e2dcb2cd48ca77f17491c82f9b004f6bc9282919688fb114e3097fed1b"
+      },
+      {
+        "index": 44,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 13,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 76,
+        "receipt_sha256": "c6cbdc1015cdcde161a8b18a1e128b4bb734c47b45c6661320ef0ab9f33b808c"
+      },
+      {
+        "index": 45,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 14,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "fail",
+        "controls": 190,
+        "receipt_sha256": "28f2b6784d756eedf0fd2197bad23c16f82a9327cd34d33acccbd1500f4e6641"
+      },
+      {
+        "index": 46,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 15,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 216,
+        "receipt_sha256": "c1d632fa05430214d21a9dbf786865b2cdfe6a71bc1c2e687d4ed631fdb77a1a"
+      },
+      {
+        "index": 47,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 16,
+        "use": "fresh_development",
+        "success": true,
+        "outcome": "success",
+        "controls": 119,
+        "receipt_sha256": "97c1c1770b3370de944c45b2c455946083dbd570bf80afb2667b4c8ff5cda739"
+      },
+      {
+        "index": 48,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 9,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "b7d25991c0a285d688c836c40a42ff9c06f822b9efa9179e67ed21b521609bf7"
+      },
+      {
+        "index": 49,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 10,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "968d8f75cbf069b5ebb9118618e7eb3b7149fce23c8dd0f5d83d7d9292576591"
+      },
+      {
+        "index": 50,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 11,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "2c9b84b384bcffa93bbae19d45bc0dc4f7d02a5438c08e76d3b192c82aecac76"
+      },
+      {
+        "index": 51,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 12,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "65523092ab13907b64fa0a2329dec248e2e5d8c47a425937dfc4eefc1db948d7"
+      },
+      {
+        "index": 52,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 13,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "ef36e1277f6f0f0906b7c54b3da30147def5bb95d456a75bff6b64f31cdec1f2"
+      },
+      {
+        "index": 53,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 14,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "37c8f05cc711fe8200a7acd79141ea0fda7ed0c98c867feee0d2c576c07955f0"
+      },
+      {
+        "index": 54,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 15,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "45a79aaec9ae89c3a17c3355bcc19593e652fce59bfb376404f3daaf3c4ae849"
+      },
+      {
+        "index": 55,
+        "model": "protected_seed7",
+        "block": "fresh16",
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 16,
+        "use": "fresh_development",
+        "success": false,
+        "outcome": "timeout",
+        "controls": 1300,
+        "receipt_sha256": "9fbee0acef983bf9483c710e4ceb995d8d4d0141149e2533a28b60cf2312b9bb"
+      }
+    ],
+    "cost": {
+      "new_models": 1,
+      "actual_optimizer_updates": 10000,
+      "original_oracle_row_updates": 10000,
+      "replay_updates": 0,
+      "new_expert_queries": 0,
+      "new_offline_encoder_preparation": 0,
+      "logged_controls": 31823,
+      "rollouts": 56,
+      "service_qualification_forecasts": 91,
+      "rollout_forecasts": 2019,
+      "optimizer_step_wall_seconds_including_first_compile": 1319.8569702627137,
+      "first_update_host_audit_seconds": 96.00886409776285,
+      "final_host_audit_seconds": 93.80609922809526,
+      "pipeline_start_to_training_exit_seconds": 2756.692459344864,
+      "pipeline_elapsed_seconds": 13568.754361152649,
+      "reserved_two_gpu_wall_hours_not_active_utilization": 7.538196867307027,
+      "other_scope": "CPUtests/2tinycomponentsteps and initialpreflightabort separately archived;resetinternal/unloggedrenderersteps/liveencoderFLOPs not measured,notzero;bf16exportisnotoptimizerresume"
+    },
+    "verification_counts": {
+      "raw_artifacts": 2131,
+      "native_20x8_programs": 2019,
+      "all_controls_match_program_prefix": true,
+      "isolated_sessions": 56,
+      "batch_drain_archive_exit_order": true,
+      "source_update_schedule_exact": true,
+      "finite10000metrics": true
+    },
+    "prior_four_report_sha256": "c6d08e4218e2d54ec3bf6573e1c3321fed67bd3ae6274b0b794f2408e0aba43d"
+  },
+  "model_bindings": {
+    "released": {
+      "model": "released",
+      "view": "full_history_intervention_bc",
+      "base_native_sha256": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+      "training_result_sha256": null,
+      "training_seed": null,
+      "gradient_updates": 0,
+      "inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a",
+      "training_code_revision": null,
+      "training_plan_sha256": null,
+      "binding_file_sha256": "956dff533052f7796e08d3755a24e4138139cf0b8f2b96ea878b48ee1a30bf3d"
+    },
+    "full_correction_seed7": {
+      "model": "full_correction_seed7",
+      "view": "full_history_intervention_bc",
+      "base_native_sha256": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+      "training_result_sha256": "607e1f3279d4ba24be005367c683d27db32bf555d3434c97de9a8135fcd8a175",
+      "training_seed": 7,
+      "gradient_updates": 10000,
+      "inference_sha256": "603a7df4b03c6d9c34c04665039853bbfd0502274d52f9581ffb7f34ecaa0054",
+      "training_code_revision": "8156edb4498260f68264fb81aebfa0a187f91097",
+      "training_plan_sha256": "116110e68b4edadf66c893343abfd93aeadf2227a7bee762b5b5caa09c790e39",
+      "binding_file_sha256": "9c77e9fb5325c9318cc21eba8781fd7ad4a393c34fa9317492e5723c8954de21"
+    },
+    "protected_seed7": {
+      "model": "protected_seed7",
+      "view": "full_history_intervention_bc",
+      "base_native_sha256": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+      "training_result_sha256": "f0016cac2fb9725371726e73353e732038642a7d823afbc199235656478a4abc",
+      "training_seed": 7,
+      "gradient_updates": 10000,
+      "inference_sha256": "399d4b79e728d6925b48667212e8e5e38bec32ced2603958db02a71956eef986",
+      "training_code_revision": "b9ba062124c1752ef253d8b4c58e183a04eebf49",
+      "training_plan_sha256": "cf0f08ebb9e33be05c037b64d21c6827b07bc62fe7e316d5dbbe72846e0fe234",
+      "binding_file_sha256": "ac7b922fec5f6d81b156c5f01e8a7c0f10cde6cee9de5303618c6f43515939f0"
+    }
+  },
+  "bounded_action_contract_audit": {
+    "source_sha256": "950eb33b4c55630982c7dc0615bc49fce43760990f203b75db7bccabf16eb42c",
+    "completed_at": "2026-10-18T04:25:22.882778+00:00",
+    "scope": "Readonlytargetedsource/dataaudit;notallinputsorphysicaltrackingcertification",
+    "active_action_space_mismatch_found": false,
+    "PatternLock_inactive_channel8": "Correction appends -1; replay retains ignored student values; physical arm control unchanged by this channel. No root-cause claim.",
+    "PickHighlight_gripper": "Submitted command is clipped/scaled by controller; 426/1160 replay target occurrences saturate. Submitted command is not a measured physical target.",
+    "native_transform_checks": "Two existing source anchors recomputed; saved transforms and inverse float32 targets match exactly. Prior cached/live feature FAILED status unchanged.",
+    "RoboDojo_14D_physical_contract": "UNKNOWN",
+    "new_scientific_calls": 0
+  },
+  "interpretation": {
+    "established": "Partial recovery relative to full-correction BC; still below released autonomy. Protected deployment representations remain byte-identical to initialization.",
+    "not_established": "Generalized efficacy, catastrophic forgetting, software root cause, new learning mechanism, RSI, or population main effect.",
+    "next_frontier": "Data/target and closed-loop supervision compatibility; no automatic LR, LoRA, mask, or replay-ratio grid."
+  },
+  "main_queue_status_pointer": {
+    "durable": 458,
+    "planned": 1400,
+    "status": "INFRASTRUCTURE_BLOCKED_NOT_RUNNING",
+    "latest_phase_pointer": "FINAL_HANDOFF.json",
+    "latest_phase_pointer_sha256": "3bea6280a061adc47d96131a03f35299473f702c5eac63a740fc3c2958fda62c",
+    "phase_pointer_updated_at": "2026-10-18T05:18:56.312615+00:00",
+    "latest_health_read": "main-assigned-gpu1-followup-0509.json",
+    "health_observed_at": "2026-10-18T05:09:04Z",
+    "health_result": "5s assignedGPU1 metadata deadline timed out;no reset/kill/reference use",
+    "historical457_files": [
+      "MAIN_QUEUE_BLOCKER.md",
+      "main-queue-current-incident.json"
+    ],
+    "historical_scope": "00:56–01:04older457snapshot;preserved,not conflicting current458pointer;no new main health probe in this reconciliation"
+  }
+}

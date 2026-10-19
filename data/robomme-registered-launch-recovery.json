@@ -1,0 +1,136 @@
+{
+  "schema": "robomme-registered-launch-recovery-public-v1",
+  "observed_at": "2026-10-18T12:11:52.596656+00:00",
+  "status": "COMPLETE_INDEPENDENT_TWO_CASE_ZERO_UPDATE_QUALIFICATION",
+  "publication_status": "OPEN_PR_UNMERGED_UNPUBLISHED",
+  "code_revision": "b88b906cbc190d3f61edd67c04a7b43316cce96b",
+  "plan_id": "robomme-native-integration-395cd0988ad1cd3c",
+  "plan_sha256": "365484286701b3d78f790d131942348deea1f19d3681c810f316e7dc150c1450",
+  "request_sha256": "30288651d93b2f530b9e60df0c127699e146c54419ca0b6ea2e2066bddc6bc9e",
+  "host_canaries": {
+    "actual_child_starts": [
+      1,
+      1
+    ],
+    "transport_invocations": 4,
+    "wall_seconds": 6.507859103999863,
+    "native_calls": 0,
+    "lost_ack_same_id_no_duplicate": true,
+    "independent_raw_review_passed": true
+  },
+  "old_v4": {
+    "status": "CLOSED_NO_RETRY",
+    "operational_entry_retired_same_bytes": true,
+    "local_frozen_originals_preserved": true,
+    "timeout_root_cause": "UNKNOWN",
+    "original_readback_limit": "Producer readback excluded some python-c/bash-c outer launchers and did not cover every matching process; its zero coordinator count is not global no-process proof. Current quiet checks apply only to the exact registered root/lease and literal matching processes."
+  },
+  "native": {
+    "compute_submissions": 1,
+    "service_starts": 1,
+    "cases": [
+      {
+        "case": {
+          "difficulty": "easy",
+          "namespace": "robomme-deployment-prototype-20261018-v1",
+          "native_episode_index": 0,
+          "role": "source",
+          "seed": 1597831442,
+          "task": "PatternLock"
+        },
+        "status": "COMPLETE_ZERO_UPDATE_QUALIFICATION",
+        "outcome": "CONTROL_BUDGET_STOP",
+        "terminal_evaluated": false,
+        "task_controls": 84,
+        "student_controls": 64,
+        "expert_controls": 20,
+        "task_forecasts": 5,
+        "eligible_anchors": [
+          0,
+          32,
+          52
+        ],
+        "rejected": {
+          "16": "MIXED_ORIGIN",
+          "68": "INSUFFICIENT_ACTUAL_CONTROLS"
+        },
+        "result_sha256": "95dd7fedbbf3cc8e7c6ca34195d5428533bebba532701d25dfce333db23b8d10"
+      },
+      {
+        "case": {
+          "difficulty": "easy",
+          "namespace": "robomme-deployment-prototype-20261018-v1",
+          "native_episode_index": 0,
+          "role": "source",
+          "seed": 1582525021,
+          "task": "PickHighlight"
+        },
+        "status": "COMPLETE_ZERO_UPDATE_QUALIFICATION",
+        "outcome": "CONTROL_BUDGET_STOP",
+        "terminal_evaluated": false,
+        "task_controls": 84,
+        "student_controls": 64,
+        "expert_controls": 20,
+        "task_forecasts": 5,
+        "eligible_anchors": [
+          0,
+          32,
+          52
+        ],
+        "rejected": {
+          "16": "MIXED_ORIGIN",
+          "68": "INSUFFICIENT_ACTUAL_CONTROLS"
+        },
+        "result_sha256": "a90465e823b2549c0a6d52acfb168b988d7238294e8b103d6d0e695c7b1b4a4c"
+      }
+    ],
+    "totals": {
+      "case_attempts": 2,
+      "task_controls": 168,
+      "student_controls": 128,
+      "extra_expert_controls": 40,
+      "new_expert_queries": 2,
+      "task_forecasts": 10,
+      "shadow_forecasts": 2,
+      "qualification_forecasts": 13,
+      "eligible_chunks": 6,
+      "D_R_chunks": 4,
+      "D_I_chunks": 2,
+      "actual_target_controls": 120,
+      "distinct_target_controls": 120,
+      "setup_controls": 257,
+      "native_resets": 4,
+      "setup_seconds": 68.72869088454172,
+      "owned_seconds": 455.63214348675683,
+      "reserved_device_hours": 0.2531289400331055,
+      "backward_calls": 0,
+      "optimizer_updates": 0
+    },
+    "live_ready_vs_training_saved_fields_exact": 66,
+    "independent_raw_review": {
+      "passed": true,
+      "sha256": "9c46edd1319746ccf80179e2e4292e24d79940c329b9f640d8cad5f29c163df6",
+      "scope": "both archives/regular files,275 H5 frames,actual commands/programs,6 target normalization,66 saved input fields,forecast ledger,one claim and lifecycle",
+      "training_authorized": false,
+      "full_pipeline_verified": false
+    },
+    "efficacy_claim": false,
+    "archive_sha256": "12679a08b074dcf20cdf37eb0dc2a1b43c20cf64c798d9658fcb5598acf374c9",
+    "raw_archive_sha256": "543ef67dad363f7e1430dffd1920d14b2f5bcceafe1e6b3b6bbeccae2028ad1e",
+    "unknown_costs": [
+      "internal encoder invocation count",
+      "physics substeps",
+      "old v4 unconfirmed hardware use"
+    ],
+    "public_frames_verified": 275,
+    "transport": {
+      "host_canary_invocations": 4,
+      "native_operator_invocations": 6,
+      "read_only_status_log_copies": 3,
+      "all_phase_invocations": 13,
+      "note": "12-invocation/600s limit applies to the host-canary/fence phase; native observations are separately charged. No submit retry."
+    }
+  },
+  "preserved": "All prior negative results, source19 NO_GO, main1400 dated458 infra-blocked, reference800 untouched.",
+  "last_verified": "2026-10-18T12:10:59.982377+00:00"
+}

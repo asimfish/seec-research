@@ -1,0 +1,130 @@
+{
+  "schema": "robomme-native-learner-qualification-public-v1",
+  "observed_at": "2026-10-18T13:34:16.989213+00:00",
+  "status": "CLOSED_FAILED_INITIAL_IDENTITY_GUARD_NO_RETRY",
+  "qualification_passed": false,
+  "publication_status": "OPEN_PR_UNMERGED_UNPUBLISHED",
+  "code_revision_executed": "cfb27202bc01e79a967d89bd642c33ca7acce791",
+  "code_pr": "https://github.com/asimfish/robocore/pull/28",
+  "plan_id": "robomme-native-learner-76d5541c60112597",
+  "plan_sha256": "37370d18dd74cd88cd4687eaf576101be6a7f8f7cb0312b0a44cf89a7de5ae25",
+  "config_sha256": "c59a06f887533555dca73eb890b8550b6e0428f50dd46fcff36154461e4256ac",
+  "core_review_sha256": "fbc11f50a6777a03e773a6a15a91854cd0496bd28bd1a4d315806f87e6cc5613",
+  "transport_review_sha256": "0a011eba596f751b421382a0597bba70d175611cbb318001b5d583a9e030cf0d",
+  "arms": {
+    "bc": "FAILED_BEFORE_TRAIN_STEP",
+    "pooled": "NOT_RUN",
+    "iwr": "NOT_RUN"
+  },
+  "actual": {
+    "state_initializations": 1,
+    "native_train_steps_started": 0,
+    "optimizer_updates_completed": 0,
+    "initial_export_checks": 0,
+    "final_export_reload_checks": 0,
+    "new_environment_expert_rollout_dev_final": 0,
+    "new_history_reencodings": 0,
+    "training_vision_forward_backward_calls": 0,
+    "initialization_internal_operations": "UNKNOWN; initialization occurred; do not describe GPU/model cost as zero"
+  },
+  "failure": {
+    "type": "ValueError",
+    "message": "Fresh initial native/inference hash domains differ",
+    "location": "robocore/adaptation/native_learner.py:229 at executed cfb2720",
+    "before_native_collation_or_preloss": true,
+    "registered_source_native_sha256": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+    "registered_bits_inference_sha256": "f141c6c98361e53ac04f456c0bcbab26c790ed7e3c9781c42083fe0fa2536ca1",
+    "registration_error": "The historical plan supplied serving-factory native/path+dtype+shape+bytes digest f141... as a bits_digest/path+shape+uint16-bf16 expectation. This is a definite algorithm-domain mismatch. Correct bits identity is1a5...; separate source-derived initialization references and algorithms are required, not a literal substitution.",
+    "actual_combined_hash_values": "NOT_RECORDED: both were compared before record[initial] assignment; 61 actual leaf SHA/dtype/shape records survive",
+    "which_comparison_failed": "UNKNOWN",
+    "source_restore": "OriginalWeightLoader checked source raw0d790... before native initialization. The old combined guard did not persist its actual native or bits aggregates; neither can be reconstructed from leaf SHAs.",
+    "possible_domain_boundary": "Native initialization casts freeze_filter-selected image leaves tobf16. Source-restoration raw digest vs initialized raw digest requires an explicit bridge; this is a static boundary, not a proven cause of the combined failure.",
+    "not_claimed": [
+      "wrong model loaded",
+      "native numerical failure",
+      "OOM",
+      "root cause of previous42to14",
+      "new method negative or positive effect"
+    ],
+    "required_released_bf16_bits_identity": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a"
+  },
+  "initial_leaf_audit": {
+    "leaves": 61,
+    "dtype_counts": {
+      "bfloat16": 23,
+      "float32": 38
+    },
+    "frozen_leaves": 23,
+    "all_frozen_dtype_bf16": true,
+    "scope": "producer runtime gathered leaf hashes; not independently rehashed full parameter arrays"
+  },
+  "costs": {
+    "initialization_seconds": 105.41645192867145,
+    "native_owned_seconds": 179.28263080120087,
+    "native_reserved_device_hours": 0.09960057112672883,
+    "operator_wall_seconds_including_transfer_and_NAS": 262.85649739699966,
+    "operator_ssh_scp_invocations": 7,
+    "additional_readonly_child_log_ssh_invocations": 3,
+    "cpu_preparation_metadata_ssh_scp_invocations": 7,
+    "all_package_known_ssh_scp_invocations": 17,
+    "cpu_preparation_elapsed_seconds": "UNMEASURED total; all7 calls included, one missing-YAML-path failure retained in session history",
+    "peak_per_device_jax_allocator_bytes": [
+      37878626304,
+      37878626560
+    ],
+    "peak_per_device_pool_bytes": [
+      39730544640,
+      39730544640
+    ],
+    "hardware_total_peak_or_active_device_hours": "UNKNOWN; allocator and reserved-time observations only",
+    "ordinary_package_file_bytes": 61238826,
+    "archive_bytes": 92160,
+    "worker_reported_artifact_bytes_before_final_result_save": 17381,
+    "final_worker_file_bytes": 18999
+  },
+  "durability": {
+    "archive_sha256": "6a19bf816bea2779f01e8c27ad8ca34e20f89f62c7bb8675c28ed5ee0e13fdb7",
+    "archive_seal_sha256": "54799e40ea2aa1fb79465365b0558c36f7a51dbd8374923c11061d762b0957f4",
+    "result_sha256": "4f3fb785ba2f8b185b11f7c03465526297d932c46e8d529d7b1281d6789681d9",
+    "archive_index_files": 22,
+    "owned_child_and_supervisor_dead": true,
+    "resource_lease_absent": true,
+    "durable_receipt_sha256": "2d1eab6506f910ced04461b0bd312bb5c38a6610e2a7b2b3557a6d875021bac5"
+  },
+  "full_pilot": {
+    "config_sha256": "e79698f025ed9c46c2603deaa278d718e7e531c7c73b13c1a93cefc381c97d41",
+    "execution_authorized": false,
+    "qualification_source0_excluded": true,
+    "source62_dev32_final100": "NOT_RUN",
+    "remaining_runtime_bindings": [
+      "resolve explicitly named source/native-init/bf16bits/serving fingerprint domains and save actuals before assertions",
+      "actual batch2 preloss/backward/optimizer/EMA/export qualifications remain NOT_RUN",
+      "source1to31 actual corpus and categories",
+      "full draw lists from frozen corpus",
+      "exact source/learner/eval/analyzer configs, requests, devices, leases, independent review"
+    ]
+  },
+  "old_science_unchanged": {
+    "full_seed7": "42to14/100",
+    "recent_seed7": "12to6/100",
+    "source19": "NO_GO_CLOSED",
+    "main1400": "dated458 infra-blocked; not probed",
+    "reference800": "not probed/changed"
+  },
+  "scope": "Engineering qualification stopped before backward/optimizer; no terminal success, no efficacy result. Initial source-native, bf16 bits, and serving fingerprint domains must be separately named; do not replace literals across digest algorithms.",
+  "independent_outcome_review": {
+    "evidence_review_passed": true,
+    "qualification_passed": false,
+    "sha256": "712bc180989735731da2b5f7443f63a74bcb6252cfeda385c0b5314193892c25",
+    "scope": "22 archived/raw file hashes, ledger/exit/lease and7operator call receipts verified; actual whole-tree parameter hashes and the10extra executor-reported metadata/log calls were not independently recomputed."
+  },
+  "last_verified": "2026-10-18T13:37:50.552112+00:00",
+  "interpretation_correction": {
+    "recorded_at": "2026-10-18T14:44:00Z",
+    "prior_public_snapshot_commit": "278f60c043e4cbf4505411a0c75f3178a03cceeb",
+    "correction": "Prior public wording reversed the two fingerprint domains. f141 is native serving-factory raw;1a5 is bf16 bits. Historical bad registered expectation, failure, costs and UNKNOWN actual comparator remain unchanged. Prospective repair is a separate plan/job lineage.",
+    "reference": "https://github.com/asimfish/robocore/pull/28",
+    "old_frozen_evidence_mutated": false
+  },
+  "historical_scope": "Counts, NOT_RUN arms and remaining native qualification fields in this file describe only the original closed13:34UTC plan. The separately authorized prospective repair has a different plan/job lineage and is reported in robomme-native-learner-identity-repair.json; it does not rewrite this failed package."
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "robomme-native-input-contract-public-v1",
+  "observed_at": "2026-10-17T14:47:16.905845+00:00",
+  "status": "CACHE_LIVE_INPUT_MISMATCH_NO_TRAINING",
+  "verification_status": "INDEPENDENT_RAW_ARRAY_AND_HASH_REVIEW",
+  "parent_source_plan_id": "robomme-absorption-screen-5c9451b5a5b9791c",
+  "parent_source_plan_sha256": "f9f8101b8dd997a3386a03f5f0d0a1cd8e641daf738f8f6aa089dac26860397d",
+  "code_revision": "8a296aff9fb96f26f0f22b54b238d351473d8455",
+  "pull_request": "https://github.com/asimfish/robocore/pull/12",
+  "config_sha256": "7726cc369fc3216998c1237d73e27de10cfce11c6d9c9798dbe7b77c75dea82e",
+  "source_report_sha256": "7b2bf9d7d2bce655bc8dd5cd28ae25caf5ddd8c7e9ceb59daabb39d25a1ba861",
+  "raw_archive_sha256": "ddfca9c34ed23748c30532d7f14a745a9022717fdf6e6007e901b7920f1f4016",
+  "independent_review_sha256": "0622d7f9ef9f73e134a0958235af5fb62c82f16a2683758912b127583f1e587e",
+  "anchors_completed": 2,
+  "registered_anchors": 2,
+  "native_forward_calls": 2,
+  "encoded_frame_occurrences": 386,
+  "optimizer_updates": 0,
+  "environment_controls": 0,
+  "replay_rows_verified": 71,
+  "native_replay_training_batches": 0,
+  "mixture_fixed_source_dev_results": "NOT_RUN",
+  "scope": "Two fixed source inputs only; rawH5 through released encoder/native transforms and actual server policy+msgpack. No websocket/simulator; no method efficacy.",
+  "finding": "Only static_image_emb differs among11expandedpolicyfields; other10match byte-for-byte. Real numerical differences exceed lossless bf16/f32 storage. Batching is a supported unisolated hypothesis, old42to14cause remainsUNKNOWN.",
+  "comparisons": [
+    {
+      "case": "PatternLock-train-001",
+      "control": 16,
+      "public_anchor": 79,
+      "different_field": "static_image_emb",
+      "training_dtype": "float32",
+      "serving_dtype": "bfloat16",
+      "shape": [
+        1,
+        512,
+        2048
+      ],
+      "differing_values": 792057,
+      "max_abs_difference": 1.0,
+      "original_vs_reconstructed_exact": true
+    },
+    {
+      "case": "PickHighlight-train-001",
+      "control": 112,
+      "public_anchor": 112,
+      "different_field": "static_image_emb",
+      "training_dtype": "float32",
+      "serving_dtype": "bfloat16",
+      "shape": [
+        1,
+        512,
+        2048
+      ],
+      "differing_values": 768001,
+      "max_abs_difference": 1.0,
+      "original_vs_reconstructed_exact": false
+    }
+  ],
+  "next_isolation": "Separate preregistered same-source batching and dtype sensitivity; no future113..119images, training, val selection or hidden feature repair.",
+  "original_source_episodes": 8,
+  "successful_source_episodes": 6,
+  "unsuccessful_source_episodes_preserved": 2,
+  "last_verified": "2026-10-17T14:49:54+00:00"
+}

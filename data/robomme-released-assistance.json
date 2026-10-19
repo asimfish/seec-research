@@ -1,0 +1,308 @@
+{
+  "schema": "public-released-assistance-status-v1",
+  "observed_at": "2026-10-18T06:09:17.815994+00:00",
+  "last_verified": "2026-10-18T06:08:56.230602+00:00",
+  "status": "COMPLETE_INDEPENDENT_RAW_REVIEW_PASSED",
+  "publication_status": "OPEN_PR_UNMERGED_UNPUBLISHED",
+  "code_pr": "https://github.com/asimfish/robocore/pull/22",
+  "code_revision": "7ede12697d66439c1fc1dae2fcc4d2f410c0786f",
+  "plan_id": "robomme-released-assistance-eb84fb55a7039503",
+  "plan_sha256": "2504c0b93b03b6655306f20f250cc4ea74a49887ba504475f7fdfa8d10236768",
+  "execution_config_sha256": "02e5612bc82a6628cd532e2ad9d89cad676efa6528e2ce09b405f052ef0aa148",
+  "model": {
+    "model": "released",
+    "view": "full_history_intervention_bc",
+    "phase": "before",
+    "training_seed": null,
+    "gradient_updates": 0,
+    "training_result_sha256": null,
+    "base_native_sha256": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+    "inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a"
+  },
+  "readout": {
+    "coverage": {
+      "registered_conditions": 8,
+      "completed": 8,
+      "not_replayable": 0,
+      "infra_aborts": 0
+    },
+    "arms": {
+      "released_no_assist": {
+        "registered": 4,
+        "completed": 4,
+        "successes": 4,
+        "not_replayable": 0
+      },
+      "released_recorded_assist20": {
+        "registered": 4,
+        "completed": 4,
+        "successes": 4,
+        "not_replayable": 0
+      }
+    },
+    "pairs": [
+      {
+        "case": "PatternLock-train-001",
+        "no_assist": true,
+        "recorded_assist20": true,
+        "no_assist_status": "COMPLETED",
+        "assist_status": "COMPLETED",
+        "difference": 0
+      },
+      {
+        "case": "PickHighlight-train-001",
+        "no_assist": true,
+        "recorded_assist20": true,
+        "no_assist_status": "COMPLETED",
+        "assist_status": "COMPLETED",
+        "difference": 0
+      },
+      {
+        "case": "PatternLock-train-002",
+        "no_assist": true,
+        "recorded_assist20": true,
+        "no_assist_status": "COMPLETED",
+        "assist_status": "COMPLETED",
+        "difference": 0
+      },
+      {
+        "case": "PickHighlight-train-002",
+        "no_assist": true,
+        "recorded_assist20": true,
+        "no_assist_status": "COMPLETED",
+        "assist_status": "COMPLETED",
+        "difference": 0
+      }
+    ],
+    "logged_controls": 1740,
+    "source_replay_controls": 800,
+    "recorded_expert_controls": 80,
+    "student_controls": 860,
+    "student_forecasts": 58,
+    "qualification_forecasts": 13,
+    "evaluation_wall_seconds": 1251.8333191871643,
+    "resource_reservation_gpu_hours": 0.6954629551039802,
+    "resource_cost_limitation": "Two owned GPUs reserved for wall time, not measured active utilization/FLOPs; preprocessing/I-O/reset internals not zero.",
+    "reset_internal_controls": "UNKNOWN_NOT_ZERO",
+    "original_source_query_provenance": {
+      "PatternLock-train-001": {
+        "source_success": true,
+        "source_outcome": "success",
+        "source_controls": 58,
+        "query_rule": "Fixed registered control/coverage query; not a failure detector",
+        "original_query_terminal_evaluated": false
+      },
+      "PickHighlight-train-001": {
+        "source_success": true,
+        "source_outcome": "success",
+        "source_controls": 215,
+        "query_rule": "Fixed registered control/coverage query; not a failure detector",
+        "original_query_terminal_evaluated": false
+      },
+      "PatternLock-train-002": {
+        "source_success": false,
+        "source_outcome": "fail",
+        "source_controls": 110,
+        "query_rule": "Fixed registered control/coverage query; not a failure detector",
+        "original_query_terminal_evaluated": false
+      },
+      "PickHighlight-train-002": {
+        "source_success": true,
+        "source_outcome": "success",
+        "source_controls": 433,
+        "query_rule": "Fixed registered control/coverage query; not a failure detector",
+        "original_query_terminal_evaluated": false
+      }
+    },
+    "limits": [
+      "Four reused development prefixes, fixed released policy, fresh isolated RNG at takeover",
+      "Both physical state and public information change with help",
+      "Full hidden simulator-state identity not demonstrated",
+      "No absorption effect, ICL, new-rule learning, population benefit or novelty claim",
+      "Existing trained C2/4 is historical only, not a concurrent training-effect control",
+      "Recorded80 expert controls charged despite zero new expert queries"
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "prefix_index": 0,
+      "arm": "released_no_assist",
+      "task": "PatternLock",
+      "episode": 1,
+      "status": "COMPLETED",
+      "success": true,
+      "outcome": "success",
+      "controls": 58,
+      "prefix_controls": 16,
+      "expert_controls": 0,
+      "student_controls": 42,
+      "policy_calls": 3,
+      "receipt_sha256": "310f0f8cf7435ebab583a437a2156eb784f9cea8405ceff6566a4ee052901f50",
+      "terminal_evaluated": true,
+      "termination_reason": "official_environment_terminal"
+    },
+    {
+      "index": 1,
+      "prefix_index": 0,
+      "arm": "released_recorded_assist20",
+      "task": "PatternLock",
+      "episode": 1,
+      "status": "COMPLETED",
+      "success": true,
+      "outcome": "success",
+      "controls": 59,
+      "prefix_controls": 16,
+      "expert_controls": 20,
+      "student_controls": 23,
+      "policy_calls": 2,
+      "receipt_sha256": "41946f8c6b2e73cddb6d4151ce0ee38267d35f5d200f338c9a1ea7d5ea7eb686",
+      "terminal_evaluated": true,
+      "termination_reason": "official_environment_terminal"
+    },
+    {
+      "index": 2,
+      "prefix_index": 1,
+      "arm": "released_no_assist",
+      "task": "PickHighlight",
+      "episode": 1,
+      "status": "COMPLETED",
+      "success": true,
+      "outcome": "success",
+      "controls": 213,
+      "prefix_controls": 112,
+      "expert_controls": 0,
+      "student_controls": 101,
+      "policy_calls": 7,
+      "receipt_sha256": "54e9a66783c6cfee2851312e5bcb6d3026dfe9833fb5c0e33e5759f4a54625b8",
+      "terminal_evaluated": true,
+      "termination_reason": "official_environment_terminal"
+    },
+    {
+      "index": 3,
+      "prefix_index": 1,
+      "arm": "released_recorded_assist20",
+      "task": "PickHighlight",
+      "episode": 1,
+      "status": "COMPLETED",
+      "success": true,
+      "outcome": "success",
+      "controls": 203,
+      "prefix_controls": 112,
+      "expert_controls": 20,
+      "student_controls": 71,
+      "policy_calls": 5,
+      "receipt_sha256": "78f9cd524996efb19f42d6eb5e11d8efa2ffd9f1cf4b2ea2c016869218367bd6",
+      "terminal_evaluated": true,
+      "termination_reason": "official_environment_terminal"
+    },
+    {
+      "index": 4,
+      "prefix_index": 2,
+      "arm": "released_no_assist",
+      "task": "PatternLock",
+      "episode": 2,
+      "status": "COMPLETED",
+      "success": true,
+      "outcome": "success",
+      "controls": 125,
+      "prefix_controls": 48,
+      "expert_controls": 0,
+      "student_controls": 77,
+      "policy_calls": 5,
+      "receipt_sha256": "1261e23ebd4dd2ced77668e2d5b7915ac1efd6c2419db49bf8bfc47e75933f11",
+      "terminal_evaluated": true,
+      "termination_reason": "official_environment_terminal"
+    },
+    {
+      "index": 5,
+      "prefix_index": 2,
+      "arm": "released_recorded_assist20",
+      "task": "PatternLock",
+      "episode": 2,
+      "status": "COMPLETED",
+      "success": true,
+      "outcome": "success",
+      "controls": 125,
+      "prefix_controls": 48,
+      "expert_controls": 20,
+      "student_controls": 57,
+      "policy_calls": 4,
+      "receipt_sha256": "a69867ce5e83423ea9af3223e34669bd07b381ecb1b49776a3cdfe7cfe6c98af",
+      "terminal_evaluated": true,
+      "termination_reason": "official_environment_terminal"
+    },
+    {
+      "index": 6,
+      "prefix_index": 3,
+      "arm": "released_no_assist",
+      "task": "PickHighlight",
+      "episode": 2,
+      "status": "COMPLETED",
+      "success": true,
+      "outcome": "success",
+      "controls": 449,
+      "prefix_controls": 224,
+      "expert_controls": 0,
+      "student_controls": 225,
+      "policy_calls": 15,
+      "receipt_sha256": "c2f179da05500fd9e496c463ba1308f261c4d5764eb20572e0589b5075f36588",
+      "terminal_evaluated": true,
+      "termination_reason": "official_environment_terminal"
+    },
+    {
+      "index": 7,
+      "prefix_index": 3,
+      "arm": "released_recorded_assist20",
+      "task": "PickHighlight",
+      "episode": 2,
+      "status": "COMPLETED",
+      "success": true,
+      "outcome": "success",
+      "controls": 508,
+      "prefix_controls": 224,
+      "expert_controls": 20,
+      "student_controls": 264,
+      "policy_calls": 17,
+      "receipt_sha256": "f7e330377a0eed59b7cb74abe39440a5ecf5a8e45a03b345df875159e5dff504",
+      "terminal_evaluated": true,
+      "termination_reason": "official_environment_terminal"
+    }
+  ],
+  "updates": 0,
+  "new_expert_queries": 0,
+  "owner_report_sha256": "fed3b5fad086cd949d3dfa5a1eaa2d3b5eae14b00afb1c8801f2bd38be12768e",
+  "independent_review_sha256": "cacb415204c73b9ce5120bf82dc4afedad305ec3f5bb6463a21b4cfb37cebd9f",
+  "archive_sha256": "75747fa134f8aa2827e6df5f3ef0af022dff2f8abb2ce29734ee9686689ef1f4",
+  "new_training_models": 0,
+  "code_entrypoints": {
+    "robocore/bench/correction_takeover.py": "https://github.com/asimfish/robocore/blob/7ede12697d66439c1fc1dae2fcc4d2f410c0786f/robocore/bench/correction_takeover.py",
+    "robocore/bench/released_assistance.py": "https://github.com/asimfish/robocore/blob/7ede12697d66439c1fc1dae2fcc4d2f410c0786f/robocore/bench/released_assistance.py",
+    "scripts/evaluate_robomme_released_assistance.py": "https://github.com/asimfish/robocore/blob/7ede12697d66439c1fc1dae2fcc4d2f410c0786f/scripts/evaluate_robomme_released_assistance.py",
+    "scripts/run_robomme_released_assistance.py": "https://github.com/asimfish/robocore/blob/7ede12697d66439c1fc1dae2fcc4d2f410c0786f/scripts/run_robomme_released_assistance.py",
+    "experiments/robomme_released_assistance_20261018/PROTOCOL.md": "https://github.com/asimfish/robocore/blob/7ede12697d66439c1fc1dae2fcc4d2f410c0786f/experiments/robomme_released_assistance_20261018/PROTOCOL.md"
+  },
+  "prior_complete_result": {
+    "fresh16": {
+      "released": 15,
+      "original_correction": 2,
+      "protected": 7,
+      "total": 16
+    },
+    "old8": {
+      "released": 7,
+      "correction": 3,
+      "mix": 2,
+      "pure_replay": 4,
+      "protected": 4,
+      "total": 8
+    }
+  },
+  "main1400": {
+    "durable": 458,
+    "total": 1400,
+    "status": "INFRA_BLOCKED_DATED_SNAPSHOT_UNTOUCHED"
+  },
+  "reference800": "UNTOUCHED_SEPARATE",
+  "interpretation": "Immediate conditional help contrast; no absorption, information-only causality, ICL, new-rule or population claim."
+}

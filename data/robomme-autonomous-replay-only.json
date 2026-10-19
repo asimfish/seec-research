@@ -1,0 +1,438 @@
+{
+  "schema": "robomme-autonomous-replay-only-public-v1",
+  "observed_at": "2026-10-17T19:21:40.950290+00:00",
+  "status": "COMPLETE_FIXED_EIGHT_DEVELOPMENT_PILOT",
+  "recipe": "autonomous-success replay only",
+  "code_revision": "6d4e9e82bd1abf70c0df2bc463c3bb7f76cb82c8",
+  "pull_request": "https://github.com/asimfish/robocore/pull/20",
+  "merge_state": "OPEN_UNMERGED",
+  "plan_id": "robomme-native-autonomous-replay-957d5c09ec99f1c4",
+  "plan_sha256": "7da8343e01721905879cf2f67ec8bb9082be2167153c45506b016ce737dd3a34",
+  "evaluation_plan_id": "robomme-autonomous-replay-source-eval-aec81de16d2dd70f",
+  "evaluation_plan_sha256": "f715620a0dc47eab1d5e1dbcf39bc4d6d7414d7f6d77ece00eb1fba2135c6841",
+  "input_qualification_sha256": "7aaa08e9a30a846b57e01918793339188b420b532c90c093add98ee3c2309e6e",
+  "native_manifest_sha256": "e28bdb169b94f2732378438f7eccf1d98b690459c6e0515fbf4740d277cb22d1",
+  "independent_prelaunch_review_sha256": "98f31d35fd6a95b55d3c1d64eafecbb0b6285b6884b9d0b9ba102e1cb78bf85e",
+  "source_rows": {
+    "rows": 71,
+    "PatternLock": 13,
+    "PickHighlight": 58,
+    "successful_sources": 6,
+    "all_sources": 8,
+    "target_occurrences": 1420,
+    "distinct_controls": 1160
+  },
+  "training": {
+    "status": "TRAINED_INFERENCE_EXPORT_RELOADED_NOT_EVALUATED",
+    "updates": 10000,
+    "replay_updates": 10000,
+    "correction_updates": 0,
+    "seed": 7,
+    "view": "full_history_intervention_bc",
+    "initial_fp32_or_native_sha256": "0d790d2e797784a5e7ee94b7f26d9805719174754437cf7df9eb4bba4a7687b1",
+    "initial_inference_sha256": "1a5d72e3678d33fc42b5114164dbe225cde990c63e7c8cb2c5e1b904115e3a4a"
+  },
+  "scheduled_updates": {
+    "replay": 10000,
+    "oracle": 0
+  },
+  "fixed_eight_status": "ALL_EIGHT_RAW_VERIFIED",
+  "prior_development_outcomes": {
+    "initial": {
+      "PatternLock": 3,
+      "PickHighlight": 4,
+      "total": 7,
+      "cases": 8
+    },
+    "correction_only": {
+      "PatternLock": 3,
+      "PickHighlight": 0,
+      "total": 3,
+      "cases": 8
+    },
+    "mixture": {
+      "PatternLock": 2,
+      "PickHighlight": 0,
+      "total": 2,
+      "cases": 8
+    }
+  },
+  "qualification": "Exact71 existing native files and prior causal/source/loss evidence;no feature interface repair;original FAILED cache/live byte gate retained.",
+  "limitation": "One seed and8 previously used source/dev cases(initial7/8);not new generalization evidence,not novel method,not a causal dose comparison. Root cause of prior regressions remains UNKNOWN.",
+  "publication_state": "Draft factual update in open website PR1;not published.",
+  "result": {
+    "schema": "robomme-autonomous-replay-fixed-eight-descriptive-v1",
+    "observed_at": "2026-10-17T19:21:40.950290+00:00",
+    "status": "COMPLETE_DESCRIPTIVE_DEVELOPMENT_PILOT_PENDING_INDEPENDENT_RAW_REVIEW",
+    "plan_id": "robomme-native-autonomous-replay-957d5c09ec99f1c4",
+    "plan_sha256": "7da8343e01721905879cf2f67ec8bb9082be2167153c45506b016ce737dd3a34",
+    "evaluation_plan_id": "robomme-autonomous-replay-source-eval-aec81de16d2dd70f",
+    "evaluation_plan_sha256": "f715620a0dc47eab1d5e1dbcf39bc4d6d7414d7f6d77ece00eb1fba2135c6841",
+    "code_revision": "6d4e9e82bd1abf70c0df2bc463c3bb7f76cb82c8",
+    "inference_sha256": "fac1fb08803eb2a893f58af9bc48c67b88523c662a0de704df64e5d6d6dad551",
+    "model_archive_sha256": "670bdddc718748426f39c4d25ff734d29b735ace6de371051b40947bbc4ae79e",
+    "training_result_sha256": "c273945318e1ff5a7b1bf04df276f340ba7ef053a97d5e6d2764db42eb17256a",
+    "prior_b_report_sha256": "77ce167926b2b90306c342327d3760dc116cba30490cd5834515cf7dde576fa0",
+    "prior_mixture_report_sha256": "562aaa0465f13546cdfb47dd8b85fda7e4a83f34a709fe39b46ef8ed90570ba0",
+    "summary": {
+      "initial": {
+        "successes": 7,
+        "cases": 8,
+        "tasks": {
+          "PatternLock": {
+            "successes": 3,
+            "cases": 4
+          },
+          "PickHighlight": {
+            "successes": 4,
+            "cases": 4
+          }
+        },
+        "roles": {
+          "source": {
+            "successes": 3,
+            "cases": 4
+          },
+          "development": {
+            "successes": 4,
+            "cases": 4
+          }
+        }
+      },
+      "correction_only": {
+        "successes": 3,
+        "cases": 8,
+        "tasks": {
+          "PatternLock": {
+            "successes": 3,
+            "cases": 4
+          },
+          "PickHighlight": {
+            "successes": 0,
+            "cases": 4
+          }
+        },
+        "roles": {
+          "source": {
+            "successes": 2,
+            "cases": 4
+          },
+          "development": {
+            "successes": 1,
+            "cases": 4
+          }
+        }
+      },
+      "mixture": {
+        "successes": 2,
+        "cases": 8,
+        "tasks": {
+          "PatternLock": {
+            "successes": 2,
+            "cases": 4
+          },
+          "PickHighlight": {
+            "successes": 0,
+            "cases": 4
+          }
+        },
+        "roles": {
+          "source": {
+            "successes": 1,
+            "cases": 4
+          },
+          "development": {
+            "successes": 1,
+            "cases": 4
+          }
+        }
+      },
+      "pure_replay": {
+        "successes": 4,
+        "cases": 8,
+        "tasks": {
+          "PatternLock": {
+            "successes": 2,
+            "cases": 4
+          },
+          "PickHighlight": {
+            "successes": 2,
+            "cases": 4
+          }
+        },
+        "roles": {
+          "source": {
+            "successes": 3,
+            "cases": 4
+          },
+          "development": {
+            "successes": 1,
+            "cases": 4
+          }
+        }
+      }
+    },
+    "rows": [
+      {
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 1,
+        "use": "source",
+        "case": "PatternLock-train-001",
+        "initial": true,
+        "correction_only": true,
+        "mixture": true,
+        "pure_replay": true,
+        "pure_outcome": "success",
+        "pure_controls": 62,
+        "receipt_sha256": "d35305dcd7359ae033f68645c598549ad2834f17ef9d175cf2f3fd0cdab3cbd4",
+        "mixture_receipt_sha256": "014e3ee05758a616fc1f226da0939fa16ba92eb25a3c37b54cf97459017a7e12"
+      },
+      {
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 1,
+        "use": "source",
+        "case": "PickHighlight-train-001",
+        "initial": true,
+        "correction_only": false,
+        "mixture": false,
+        "pure_replay": true,
+        "pure_outcome": "success",
+        "pure_controls": 212,
+        "receipt_sha256": "d76fdf4724383f0328af24ee667add5d3ab4bb71846b6c8b4400c282f432dbc7",
+        "mixture_receipt_sha256": "36536254bdba847d6348b66727867b3518709b65d6e7887dcc06292d14520933"
+      },
+      {
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 2,
+        "use": "source",
+        "case": "PatternLock-train-002",
+        "initial": false,
+        "correction_only": true,
+        "mixture": false,
+        "pure_replay": false,
+        "pure_outcome": "fail",
+        "pure_controls": 75,
+        "receipt_sha256": "eb4a21a0375d684c2501b8b22c22b5d8234a706e73eccd35f90d43dedbfb730a",
+        "mixture_receipt_sha256": "f16ff6638100b46dc25147bc547bc66e32b11ab03b857eb1aa7404bb3c1ca043"
+      },
+      {
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 2,
+        "use": "source",
+        "case": "PickHighlight-train-002",
+        "initial": true,
+        "correction_only": false,
+        "mixture": false,
+        "pure_replay": true,
+        "pure_outcome": "success",
+        "pure_controls": 505,
+        "receipt_sha256": "d76abb3334546bf31996fea98b063ce4f2938d34a18ce9f81f5bfe05d2f4ce36",
+        "mixture_receipt_sha256": "bd0b179d3608afd012eb808caa2a9f8e70425eabd39824b2d41f9658249b04d5"
+      },
+      {
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 5,
+        "use": "development",
+        "case": "PatternLock-train-005",
+        "initial": true,
+        "correction_only": false,
+        "mixture": true,
+        "pure_replay": true,
+        "pure_outcome": "success",
+        "pure_controls": 81,
+        "receipt_sha256": "448451686376fcf860ad444f8ee884d6cc3f95e7799c30e8a075972635a98c4f",
+        "mixture_receipt_sha256": "e71937f4169ff01e6a02c78373e4c270c2ef0ade71f39a3f6de1a0203fee847e"
+      },
+      {
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 5,
+        "use": "development",
+        "case": "PickHighlight-train-005",
+        "initial": true,
+        "correction_only": false,
+        "mixture": false,
+        "pure_replay": false,
+        "pure_outcome": "fail",
+        "pure_controls": 302,
+        "receipt_sha256": "8ac47167a10ba27f335e52374066bd4c098c0e9f540d8ad66bd82c70d71c1b64",
+        "mixture_receipt_sha256": "902ceab4c163ed98d8e87aaa4375f19eb331aa4472f84a5fc53ec04e86d545b5"
+      },
+      {
+        "task": "PatternLock",
+        "split": "train",
+        "episode": 6,
+        "use": "development",
+        "case": "PatternLock-train-006",
+        "initial": true,
+        "correction_only": true,
+        "mixture": false,
+        "pure_replay": false,
+        "pure_outcome": "fail",
+        "pure_controls": 87,
+        "receipt_sha256": "98a0fb5b387844b28a302450984562ac88a7b026fda5839b2ac365bd0172d67a",
+        "mixture_receipt_sha256": "87718beed0e325fc9c40bc07d21d718d4ee901ba60e0995c719d43a527c22959"
+      },
+      {
+        "task": "PickHighlight",
+        "split": "train",
+        "episode": 6,
+        "use": "development",
+        "case": "PickHighlight-train-006",
+        "initial": true,
+        "correction_only": false,
+        "mixture": false,
+        "pure_replay": false,
+        "pure_outcome": "timeout",
+        "pure_controls": 1300,
+        "receipt_sha256": "4ffb4243d96cd9aa71b6e23d333b025eb19e92f05391e89885563cab962c9582",
+        "mixture_receipt_sha256": "ade51b86a0b5db2086055b076ef7fc4b9a937e6e78f1710ca58d4103d143bd8f"
+      }
+    ],
+    "transitions_vs_pure_replay": {
+      "initial": {
+        "failure_to_success": [],
+        "success_to_failure": [
+          "PickHighlight-train-005",
+          "PatternLock-train-006",
+          "PickHighlight-train-006"
+        ],
+        "unchanged_success": [
+          "PatternLock-train-001",
+          "PickHighlight-train-001",
+          "PickHighlight-train-002",
+          "PatternLock-train-005"
+        ],
+        "unchanged_nonsuccess": [
+          "PatternLock-train-002"
+        ]
+      },
+      "correction_only": {
+        "failure_to_success": [
+          "PickHighlight-train-001",
+          "PickHighlight-train-002",
+          "PatternLock-train-005"
+        ],
+        "success_to_failure": [
+          "PatternLock-train-002",
+          "PatternLock-train-006"
+        ],
+        "unchanged_success": [
+          "PatternLock-train-001"
+        ],
+        "unchanged_nonsuccess": [
+          "PickHighlight-train-005",
+          "PickHighlight-train-006"
+        ]
+      },
+      "mixture": {
+        "failure_to_success": [
+          "PickHighlight-train-001",
+          "PickHighlight-train-002"
+        ],
+        "success_to_failure": [],
+        "unchanged_success": [
+          "PatternLock-train-001",
+          "PatternLock-train-005"
+        ],
+        "unchanged_nonsuccess": [
+          "PatternLock-train-002",
+          "PickHighlight-train-005",
+          "PatternLock-train-006",
+          "PickHighlight-train-006"
+        ]
+      }
+    },
+    "actual_optimizer_updates": 10000,
+    "origin_counts": {
+      "original_student_autonomous_executed": 10000
+    },
+    "optimizer_step_wall_seconds": 1735.4120536786504,
+    "outcomes": {
+      "success": 4,
+      "fail": 3,
+      "timeout": 1
+    },
+    "logged_environment_controls": 2624,
+    "extra_expert_queries": 0,
+    "infrastructure_aborts_in_eight": 0,
+    "new_offline_encoder_calls": 0,
+    "new_native_diagnostic_forecasts": 0,
+    "service_qualification_forecasts": 13,
+    "cost_limits": "Resetinternalphysicsunknown;oldlossqualificationreusednotnewcalls;liveforecastsincludeon-the-flyencoding.GPUallocationtime/exportcostrecordedinpipeline receipts.",
+    "readout": "Ifreplayregresses,oraclelabelsarenotnecessaryforregressioninthissetting;notproofofbug.Ifpreserved,onlymotivatescontrolledfuturetest.Nocausal-doseisolation.",
+    "limitations": [
+      "seed7 only",
+      "8previouslyuseddevelopmentcases,initial7/8",
+      "Notgeneralizationevidence",
+      "10000purevs5000mixedreplaydoseconfound",
+      "case-IDpaired,notpixelidenticalcounterfactual",
+      "cache/liveFAILEDgatepreserved,nofeatureinterface repair",
+      "Original14cellstudyindependentandunfinished"
+    ]
+  },
+  "independent_result_review_sha256": "a3d17cfe4ccc92fdb14a85c6705d86d5e9bf44403c44f3dc975afb15df61dc76",
+  "costs": {
+    "schema": "robomme-autonomous-replay-cost-ledger-v1",
+    "observed_at": "2026-10-17T19:21:41.059244+00:00",
+    "new_models": 1,
+    "optimizer_updates": 10000,
+    "autonomous_update_exposures": 10000,
+    "oracle_update_exposures": 0,
+    "native_rows": 71,
+    "native_row_bytes": 153399916,
+    "target_occurrences": 1420,
+    "distinct_source_controls": 1160,
+    "new_offline_encoder_calls": 0,
+    "new_pretraining_native_forecasts": 0,
+    "source_qualification": "Existing two stored-input loss checks reused by exact identity;not new forward calls.",
+    "service_qualification_forecasts": 13,
+    "rollout_policy_calls": 168,
+    "total_new_evaluation_forecasts": 181,
+    "rollouts": 8,
+    "logged_environment_controls": 2624,
+    "expert_queries": 0,
+    "training_native_step_wall_seconds": 1735.4120536786504,
+    "training_initialization_update_export_subprocess_wall_seconds": 2938.421893596649,
+    "durable_copy_wall_seconds": 62.40233254432678,
+    "service_qualification_eight_rollout_archive_wall_seconds": 1214.2920358181,
+    "total_pipeline_wall_seconds": 4215.116261959076,
+    "two_reserved_gpu_wall_seconds_envelope": 8430.232523918152,
+    "gpu_wall_semantics": "Two registered A100 devices reserved for the pipeline. This is a device allocation-wall envelope,not utilization-integrated active-compute time.",
+    "training_inference_archive_bytes": 2690202001,
+    "inference_archive_sha256": "670bdddc718748426f39c4d25ff734d29b735ace6de371051b40947bbc4ae79e",
+    "raw_case_archive_bytes": 7772160,
+    "infrastructure_aborted_training_or_rollout_attempts": 0,
+    "read_only_monitoring_cpu_error": {
+      "count": 1,
+      "reason": "shellquotingSyntaxErrorwhilecountingoriginalqueuefiles",
+      "model_calls": 0,
+      "environment_controls": 0,
+      "optimizer_updates": 0
+    },
+    "pre_optimizer_packaging_cpu_import_failure": {
+      "count": 1,
+      "preserved_before_fix": true,
+      "model_calls": 0,
+      "environment_controls": 0,
+      "optimizer_updates": 0
+    },
+    "unknowns": [
+      "Reset-internal simulator substeps",
+      "Live encoder frame counts inside native policy calls",
+      "CPU preparation/review wall time not separately instrumented",
+      "Utilization-integrated GPU time",
+      "Network/hash/copy energy and monetary cost"
+    ],
+    "not_a_budget_advantage_claim": true,
+    "prior_experiments": "Original6seed/14cell,reference800,andpriorB/C/mixcostsremainseparate;no duplicate training or evalcharged to this single baseline."
+  },
+  "last_verified": "2026-10-17T19:25:59.511115+00:00",
+  "training_receipt_scope": "The training receipt was finalized before rollout;its NOT_EVALUATED suffix records that stage. Completed fixed-eight evaluation and independent review are reported separately.",
+  "result_review_scope": "Source report status records its pre-review generation stage;the bound independent result review below completes this eight-case audit."
+}
